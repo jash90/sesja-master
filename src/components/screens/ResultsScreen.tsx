@@ -1,18 +1,20 @@
 'use client';
 
-import { Home, CheckCircle, XCircle } from 'lucide-react';
+import { Home, CheckCircle, XCircle, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import type { Quiz, QuizState } from '@/types';
 
 export function ResultsScreen({
   quiz,
   quizState,
+  timeElapsed,
   onTryAgain,
   onGoHome,
 }: {
   quiz: Quiz;
   quizState: QuizState;
+  timeElapsed: number;
   onTryAgain: () => void;
   onGoHome: () => void;
 }) {
@@ -89,7 +91,7 @@ export function ResultsScreen({
                 <p className="text-sm text-muted-foreground">błędnych</p>
               </div>
               <div className="bg-muted/50 rounded-lg p-4">
-                <p className="text-2xl font-bold">{formatTime(quizState.timeElapsed)}</p>
+                <p className="text-2xl font-bold">{formatTime(timeElapsed)}</p>
                 <p className="text-sm text-muted-foreground">czas</p>
               </div>
             </div>

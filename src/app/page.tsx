@@ -198,6 +198,7 @@ export default function QuizApp() {
         <ResultsScreen
           quiz={quiz}
           quizState={quizState}
+          timeElapsed={timeElapsed}
           onTryAgain={() => {
             resetQuiz();
             setView('quiz-question');
