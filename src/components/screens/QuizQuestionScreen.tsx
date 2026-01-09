@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, ChevronRight, ChevronLeft, Clock, Trophy, Home } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Clock, Trophy, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
