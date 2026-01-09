@@ -8,7 +8,7 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const audioMaterialsDir = path.join(process.cwd(), 'public', 'audio-materials');
+    const audioMaterialsDir = path.join(process.cwd(), 'public', 'test', 'audio-materials');
     const filePath = path.join(audioMaterialsDir, id);
 
     try {

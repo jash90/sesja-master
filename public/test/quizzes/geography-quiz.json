@@ -1,0 +1,17 @@
+{
+  "title": "Geografia Europy",
+  "description": "Poznaj najważniejsze fakty geograficzne o Europie",
+  "questions": [
+    {
+      "question": "Która rzeka jest najdłuższą w Europie?",
+      "options": [
+        "Dunaj",
+        "Rhein",
+        "Wolga",
+        "Łaba"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Wolga jest najdłuższą rzeką w Europie, ma około 3530 km długości."
+    }
+  ]
+}

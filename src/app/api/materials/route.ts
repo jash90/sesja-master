@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function GET() {
   try {
-    const materialsDir = path.join(process.cwd(), 'public', 'materials');
+    const materialsDir = path.join(process.cwd(), 'public', 'test', 'materials');
 
     // Check if directory exists, if not create it
     try {
