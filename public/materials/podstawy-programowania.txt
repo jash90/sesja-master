@@ -1,0 +1,49 @@
+PODSTAWY PROGRAMOWANIA
+========================
+
+1. Czym jest programowanie?
+Programowanie to proces tworzenia instrukcji dla komputera za pomocą języka programowania. 
+Te instrukcje nazywamy kodem.
+
+2. Popularne języki programowania:
+   - Python - prosty i wszechstronny, idealny dla początkujących
+   - JavaScript - niezbędny do tworzenia stron internetowych
+   - Java - wykorzystywany w dużych systemach korporacyjnych
+   - C++ - szybki, używany w grach i systemach operacyjnych
+
+3. Zmienne i typy danych:
+   Zmienna to pojemnik na dane. Typy danych określają, co można w niej przechowywać:
+   - liczby całkowite (int)
+   - liczby zmiennoprzecinkowe (float)
+   - tekst (string)
+   - wartości logiczne (true/false)
+
+4. Instrukcje warunkowe:
+   Pozwalają programowi podejmować decyzje na podstawie warunków.
+   Najczęstsza to if/else:
+   
+   if (warunek) {
+       // kod jeśli warunek jest prawdziwy
+   } else {
+       // kod jeśli warunek jest fałszywy
+   }
+
+5. Pętle:
+   Umożliwiają wielokrotne wykonanie tego samego kodu.
+   Najpopularniejsze to:
+   - for - gdy znamy liczbę powtórzeń
+   - while - gdy pętla ma działać dopóki warunek jest spełniony
+
+6. Funkcje:
+   To bloki kodu, które można wielokrotnie wywoływać.
+   Pomagają organizować kod i unikać powtórzeń.
+
+7. Debugowanie:
+   To proces znajdowania i naprawiania błędów w kodzie.
+   Ważne umiejętności każdego programisty!
+
+8. Jak zacząć naukę?
+   - Wybierz język (polecamy Python lub JavaScript)
+   - Zainstaluj odpowiednie narzędzia
+   - Rozwiązywuj proste zadania
+   - Nie bój się błędów - to część nauki!

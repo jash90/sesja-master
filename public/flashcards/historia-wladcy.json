@@ -1,0 +1,57 @@
+{
+  "title": "Historia Polski - Władcy Polski",
+  "description": "Ważni władcy i królowie Polski w chronologii",
+  "category": "Historia",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Kto był pierwszym księciem Polski?",
+      "back": "Mieszko I (ok. 960–992)"
+    },
+    {
+      "id": 2,
+      "front": "W którym roku odbyła się bitwa pod Grunwaldem?",
+      "back": "15 lipca 1410"
+    },
+    {
+      "id": 3,
+      "front": "Kto był pierwszym koronowanym królem Polski?",
+      "back": "Bolesław Chrobry w 1025"
+    },
+    {
+      "id": 4,
+      "front": "Która dynastia rządziła w latach 1385-1569?",
+      "back": "Dynastia Jagiellonów"
+    },
+    {
+      "id": 5,
+      "front": "Kto był twórcą reformacji z 1589?",
+      "back": "Jan Zamoyski (kanclerz)"
+    },
+    {
+      "id": 6,
+      "front": "W którym roku Polska odzyskała niepodległość po I wojnie światowej?",
+      "back": "11 listopada 1918"
+    },
+    {
+      "id": 7,
+      "front": "Kto był przywódcą powstania styczniowego?",
+      "back": "Józef Piłsudski"
+    },
+    {
+      "id": 8,
+      "front": "Kiedy był rozbiór wśród trzech zaborców?",
+      "back": "1772 (I rozbiór)"
+    },
+    {
+      "id": 9,
+      "front": "Kto był ostatnim królem Polski?",
+      "back": "Stanisław August Poniatowski (1795-1831)"
+    },
+    {
+      "id": 10,
+      "front": "Kto był pierwszym prezydentem III RP?",
+      "back": "Gabriel Narutowicz (1922-1926)"
+    }
+  ]
+}

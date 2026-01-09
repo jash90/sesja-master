@@ -1,0 +1,118 @@
+WEB DEVELOPMENT - WPROWADZENIE
+===============================
+
+Czym jest Web Development?
+---------------------------
+Web Development to proces tworzenia stron i aplikacji internetowych.
+Dzielimy go na trzy główne obszary:
+
+1. FRONTEND (Client-side)
+   To to, co widzi użytkownik w przeglądarce.
+   Główne technologie:
+   - HTML - struktura strony
+   - CSS - stylowanie i wygląd
+   - JavaScript - interaktywność
+
+2. BACKEND (Server-side)
+   To to, co dzieje się "za kulisami" na serwerze.
+   Główne zadania:
+   - Obsługa bazy danych
+   - Logika aplikacji
+   - Autoryzacja użytkowników
+   - API (Application Programming Interface)
+
+3. FULLSTACK
+   Kombinacja frontendu i backendu.
+   Fullstack Developer potrafi tworzyć całą aplikację.
+
+HTML (HyperText Markup Language)
+--------------------------------
+Podstawowy język do tworzenia struktur stron.
+Kluczowe elementy:
+   <html> - główny element dokumentu
+   <head> - metadane (tytuł, style, skrypty)
+   <body> - widoczna treść strony
+   <div> - kontener na treść
+   <p> - paragraf
+   <h1>-<h6> - nagłówki
+   <a> - link
+   <img> - obrazek
+   <ul>/<ol> - listy
+
+CSS (Cascading Style Sheets)
+----------------------------
+Służy do stylowania stron.
+Podstawowe właściwości:
+   - color - kolor tekstu
+   - background-color - kolor tła
+   - font-size - rozmiar czcionki
+   - margin - margines zewnętrzny
+   - padding - margines wewnętrzny
+   - display - sposób wyświetlania elementu
+
+JavaScript
+-----------
+Język programowania do interaktywności.
+Podstawowe operacje:
+   - Zmienne: let, const, var
+   - Funkcje: function, arrow functions
+   - Tablice i obiekty
+   - Event listeners (kliknięcia, wpisywanie tekstu)
+   - DOM manipulation (zmiana treści strony)
+
+Popularne frameworki:
+FRONTEND:
+   - React (Facebook)
+   - Vue.js
+   - Angular (Google)
+   - Next.js (oparty na React)
+
+BACKEND:
+   - Node.js (JavaScript)
+   - Express.js (Node.js framework)
+   - Django (Python)
+   - Laravel (PHP)
+   - Spring Boot (Java)
+
+Bazy danych:
+-------------
+SQL (relacyjne):
+   - MySQL
+   - PostgreSQL
+   - SQLite
+
+NoSQL:
+   - MongoDB
+   - Redis
+   - Firebase
+
+Narzędzia dla web developerów:
+------------------------------
+- Edytory kodu: VS Code, WebStorm, Sublime Text
+- Przeglądarki: Chrome, Firefox, Safari z DevTools
+- Kontrola wersji: Git, GitHub, GitLab
+- Narzędzia do stylowania: Tailwind CSS, Bootstrap
+- Narzędzia do budowania: Vite, Webpack
+
+Jak zacząć naukę web developmentu?
+-----------------------------------
+1. Naucz się HTML (tydzień)
+2. Naucz się CSS (2-3 tygodnie)
+3. Naucz się podstaw JavaScript (4-6 tygodni)
+4. Wybierz framework (np. React)
+5. Naucz się podstaw backendu (Node.js)
+6. Pracuj nad własnymi projektami!
+
+Ważne zasady:
+- Czytaj dokumentację
+- Praktykuj codziennie
+- Twórz projekty
+- Ucz się z innych
+- Nie bój się błędów - to normalne!
+
+Dalsza nauka:
+- Responsive design (mobilność)
+- SEO (optymalizacja dla wyszukiwarek)
+- Bezpieczeństwo aplikacji
+- Testowanie kodu
+- CI/CD (automatyzacja)

@@ -1,0 +1,57 @@
+{
+  "title": "Fizyka - Wielkości fizyczne",
+  "description": "Nauka wielkości fizycznych i ich wartości",
+  "category": "Fizyka",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Jakie jest prędkość świata?",
+      "back": "c ≈ 299,792,458 m/s (dokładnie 299,792,458)"
+    },
+    {
+      "id": 2,
+      "front": "Co oznacza g?",
+      "back": "Przyspieszenie ziemskie ≈ 9,81 m/s²"
+    },
+    {
+      "id": 3,
+      "front": "Jaka jest masa Ziemi?",
+      "back": "≈ 5,97 × 10²⁴ kg"
+    },
+    {
+      "id": 4,
+      "front": "Co oznacza ρ (ro)?",
+      "back": "Gęstość, typowo dla ciał stałych i cieczy"
+    },
+    {
+      "id": 5,
+      "front": "Co oznacza P?",
+      "back": "Ciśnienie (siła działająca na powierzchnię jednostkową)"
+    },
+    {
+      "id": 6,
+      "front": "Co oznacza N?",
+      "back": "Siła (wielkość wektorowa)"
+    },
+    {
+      "id": 7,
+      "front": "Co oznacza E?",
+      "back": "Energia (zdolność do wykonywania pracy)"
+    },
+    {
+      "id": 8,
+      "front": "Co oznacza λ (lambda)?",
+      "back": "Długość fali"
+    },
+    {
+      "id": 9,
+      "front": "Co oznacza f?",
+      "back": "Częstotliwość (liczba drgań na jednostkę czasu)"
+    },
+    {
+      "id": 10,
+      "front": "Co oznacza T?",
+      "back": "Okres (czas jednego pełnego cyklu drgań)"
+    }
+  ]
+}
