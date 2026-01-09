@@ -41,6 +41,8 @@ yarn-error.log*
 next-env.d.ts
 local-*
 .claude
+.claude-flow/
+.swarm/
 .z-ai-config
 dev.log
 test
