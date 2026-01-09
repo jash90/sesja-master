@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function GET() {
   try {
-    const quizzesDir = path.join(process.cwd(), 'public', 'quizzes');
+    const quizzesDir = path.join(process.cwd(), 'public', 'test', 'quizzes');
 
     // Check if directory exists, if not create it
     try {

@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function GET() {
   try {
-    const audioMaterialsDir = path.join(process.cwd(), 'public', 'audio-materials');
+    const audioMaterialsDir = path.join(process.cwd(), 'public', 'test', 'audio-materials');
 
     // Check if directory exists, if not create it
     try {
