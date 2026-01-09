@@ -1,0 +1,57 @@
+{
+  "title": "Angielski - Czasowniki",
+  "description": "Nauka czasu w języku angielskim",
+  "category": "Języki obce",
+  "cards": [
+    {
+      "id": 1,
+      "front": "What time is it?",
+      "back": "Jaką jest teraz godzina?"
+    },
+    {
+      "id": 2,
+      "front": "It's 3 o'clock",
+      "back": "Jest trzecia"
+    },
+    {
+      "id": 3,
+      "front": "At 8:30 PM",
+      "back": "O 20:30"
+    },
+    {
+      "id": 4,
+      "front": "in the morning",
+      "back": "rano"
+    },
+    {
+      "id": 5,
+      "front": "at noon",
+      "back": "w południe"
+    },
+    {
+      "id": 6,
+      "front": "at midnight",
+      "back": "o północy"
+    },
+    {
+      "id": 7,
+      "front": "in the evening",
+      "back": "wieczorem"
+    },
+    {
+      "id": 8,
+      "front": "half past...",
+      "back": "za pół..."
+    },
+    {
+      "id": 9,
+      "front": "quarter past...",
+      "back": "za kwadrans..."
+    },
+    {
+      "id": 10,
+      "front": "quarter to...",
+      "back": "za kwadrans do..."
+    }
+  ]
+}

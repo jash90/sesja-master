@@ -1,0 +1,57 @@
+{
+  "title": "Polski - Części mowy",
+  "description": "Ćwiczenia z częściami mowy w języku polskim",
+  "category": "Polski",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Podziel czasowniki na grupy",
+      "back": "Rzeczowniki, przymiotniki, przysłówki, czasowniki, liczebniki, zaimeczniki"
+    },
+    {
+      "id": 2,
+      "front": "Co to są cząstki mowy?",
+      "back": "Podstawowe jednostki językowe niepodzielne znaczeniowo (np. 'kot', 'dom')"
+    },
+    {
+      "id": 3,
+      "front": "Przykłady zaimków osobowych",
+      "back": "Ja, Ty, On, Ona, Ono, One, Onei, Wy, My, Oni"
+    },
+    {
+      "id": 4,
+      "front": "Przykłady zaimków wskazujących",
+      "back": "Ten, Ta, To, Tamten, Tamta, Ten, Ta, Te, Tamci, Tamte, Ci, Ci, Tutaj"
+    },
+    {
+      "id": 5,
+      "front": "Co to są imiona własne?",
+      "back": "Imiona przypisane konkretnej osobie (np. 'Anna', 'Piotr')"
+    },
+    {
+      "id": 6,
+      "front": "Co to są nazwy pospolite?",
+      "back": "Formy adresowe złożone z dwóch cząstków mowy (np. 'pan profesor', 'pani dyrektor')"
+    },
+    {
+      "id": 7,
+      "front": "Jak kończy się rodzaj męski rzeczownika?",
+      "back": "Przyrostkiem -a (np. nauczyciel → nauczyciela, doktor → doktora)"
+    },
+    {
+      "id": 8,
+      "front": "Jak kończy się rodzaj żeński rzeczownika?",
+      "back": "Przyrostkiem -a (np. studentka, dziewczynka, kotka)"
+    },
+    {
+      "id": 9,
+      "front": "Co to jest odmiana przez osoby?",
+      "back": "Zmiana formy czasownika w zależności od osoby wykonującej (robię, robisz, robi)"
+    },
+    {
+      "id": 10,
+      "front": "Co to są stopniowe?",
+      "back": "Formy wyrazowe wyrażające stopień lub natężenie cechy (np. ładny, piękny, wspaniały)"
+    }
+  ]
+}

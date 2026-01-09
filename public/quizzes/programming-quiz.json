@@ -1,0 +1,61 @@
+{
+  "title": "Quiz o Programowaniu",
+  "description": "Sprawdź swoją wiedzę na temat programowania i technologii webowych",
+  "questions": [
+    {
+      "question": "Jaki framework JavaScript służy do budowania aplikacji typu Single Page Application?",
+      "options": [
+        "React",
+        "Express.js",
+        "MongoDB",
+        "PostgreSQL"
+      ],
+      "correctAnswer": 0,
+      "explanation": "React to biblioteka JavaScript stworzona przez Facebook do budowania interfejsów użytkownika, szczególnie aplikacji SPA."
+    },
+    {
+      "question": "Co oznacza skrót HTML?",
+      "options": [
+        "High Tech Modern Language",
+        "HyperText Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTML to HyperText Markup Language - język znaczników używany do tworzenia struktur stron internetowych."
+    },
+    {
+      "question": "Który język jest głównie używany do stylowania stron internetowych?",
+      "options": [
+        "JavaScript",
+        "Python",
+        "CSS",
+        "Java"
+      ],
+      "correctAnswer": 2,
+      "explanation": "CSS (Cascading Style Sheets) to język służący do opisu formy prezentacji stron WWW."
+    },
+    {
+      "question": "Jaki jest główny przeznaczenie bazy danych SQL?",
+      "options": [
+        "Przechowywanie plików graficznych",
+        "Przechowywanie danych w relacyjnej strukturze",
+        "Tworzenie interfejsów użytkownika",
+        "Kompilowanie kodu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SQL to język zapytań do baz danych relacyjnych, które przechowują dane w uporządkowanych tabelach."
+    },
+    {
+      "question": "Co to jest API?",
+      "options": [
+        "Application Programming Interface",
+        "Advanced Program Integration",
+        "Automated Protocol Internet",
+        "Application Process Integration"
+      ],
+      "correctAnswer": 0,
+      "explanation": "API (Application Programming Interface) to zestaw reguł i protokołów pozwalających aplikacjom na komunikację ze sobą."
+    }
+  ]
+}
