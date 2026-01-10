@@ -8,7 +8,9 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const audioMaterialsDir = path.join(process.cwd(), 'public', 'test', 'audio-materials');
+    const { searchParams } = new URL(request.url);
+    const subject = searchParams.get('subject') || 'test';
+    const audioMaterialsDir = path.join(process.cwd(), 'public', subject, 'audio-materials');
     const filePath = path.join(audioMaterialsDir, id);
 
     try {

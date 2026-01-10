@@ -8,7 +8,9 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const flashcardsDir = path.join(process.cwd(), 'public', 'test', 'flashcards');
+    const { searchParams } = new URL(request.url);
+    const subject = searchParams.get('subject') || 'test';
+    const flashcardsDir = path.join(process.cwd(), 'public', subject, 'flashcards');
     const filePath = path.join(flashcardsDir, `${id}.json`);
 
     try {
