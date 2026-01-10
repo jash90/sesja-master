@@ -1,0 +1,142 @@
+DROGOWY TRANSPORT MIĘDZYNARODOWY
+
+Drogowy transport międzynarodowy jest jednym z kluczowych elementów współczesnej logistyki, wymagającym znajomości wielu regulacji prawnych, różnorodnego taboru oraz specjalistycznych procedur.
+
+REGULACJE PRAWNE
+
+Najważniejszą regulacją jest Konwencja CMR z 1956 roku, która reguluje kwestie międzynarodowego przewozu towarów. Oprócz niej obowiązuje Konwencja TIR z 1975 roku dotycząca przewozów celnych z wykorzystaniem karnetów TIR, Konwencja o wspólnych procedurach tranzytowych z 1987 roku, Europejska umowa ADR z 1970 roku dotycząca przewozu towarów niebezpiecznych oraz polska Ustawa o transporcie drogowym z 2001 roku.
+
+KONWENCJA CMR
+
+Konwencja CMR dotyczy komercyjnych przewozów drogowych, przy czym zarówno miejsce nadania, jak i miejsce odbioru towaru muszą znajdować się w dwóch różnych krajach, z których przynajmniej jeden jest stroną tej konwencji. Konwencja reguluje przede wszystkim kwestie odpowiedzialności przewoźnika, który ponosi odpowiedzialność za towar od momentu jego przyjęcia aż do chwili wydania osobie uprawnionej. Dodatkowo reguluje zagadnienia związane ze skargami, reklamacjami i roszczeniami wynikającymi z umowy przewozu, a także ujednolica kwestię dokumentacji transportowej.
+
+Odpowiedzialność przewoźnika zgodnie z Konwencją CMR obejmuje cztery główne sytuacje: całkowite zaginięcie towaru, częściowe zaginięcie towaru, uszkodzenie towaru oraz opóźnienie w dostawie. Artykuł 17 ustęp 2 Konwencji CMR przewiduje okoliczności zwalniające przewoźnika z odpowiedzialności. Dzieje się tak, gdy zaginięcie, uszkodzenie lub opóźnienie wynika z winy osoby uprawnionej (nadawcy lub odbiorcy), ze zlecenia osoby uprawnionej niewynikającego z winy przewoźnika, z wady własnej towaru lub z okoliczności, których przewoźnik nie mógł uniknąć i których następstwom nie mógł zapobiec.
+
+W praktyce bardzo istotna jest inspekcja towaru przy jego odbiorze, która powinna odbywać się w obecności kierowcy. Pozwala to na bieżące wyłapywanie wszelkich rozbieżności jakościowych i ilościowych. Wszystkie zastrzeżenia należy wpisać do listu przewozowego, co stanowi podstawę ewentualnych reklamacji.
+
+MIĘDZYNARODOWY LIST PRZEWOZOWY
+
+Międzynarodowy list przewozowy stanowi potwierdzenie zawarcia umowy przewozu między zleceniodawcą a przewoźnikiem. Musi zawierać szereg obowiązkowych elementów: nazwę nadawcy, przewoźnika i odbiorcy, miejsce i datę wystawienia, miejsce i datę przyjęcia towaru do przewozu, określenie rodzaju przewożonego towaru wraz z jego wagą i ilością oraz instrukcje niezbędne do załatwienia formalności celnych.
+
+KONWENCJA TIR
+
+Konwencja TIR umożliwia transport ładunków w pojazdach posiadających certyfikat celny. Po załadowaniu pojazd jest zamykany plombą celną w urzędzie celnym, co pozwala przewozić ładunek bez kontroli pośrednich aż do urzędu celnego odbiorcy. Karnet TIR jest dokumentem najwyższego uprzywilejowania w międzynarodowym transporcie drogowym i wydawany jest przez Zrzeszenie Międzynarodowych Przewoźników Drogowych.
+
+System TIR wymaga od przewoźnika gwarancji w formie polisy na poczet ewentualnych ceł i podatków. Ładunek jest przewożony w pojazdach z plombami zabezpieczającymi przed nieautoryzowanym dostępem, przy czym plomby są sprawdzane na początku i na końcu trasy. Książka TIR pełni funkcję deklaracji celnej i jest akceptowana w każdym kraju, w którym obowiązuje system TIR, co umożliwia przejazd przez wiele granic bez konieczności przedstawiania towaru i dokumentów na każdej z nich. Karnet TIR pozwala na szybką odprawę celną na granicach. System funkcjonuje obecnie w ponad 70 krajach na całym świecie i zarządzany jest przez Międzynarodową Unię Transportu Drogowego (IRU).
+
+PAKIET MOBILNOŚCI
+
+Pakiet Mobilności to Rozporządzenie Parlamentu Europejskiego i Rady Unii Europejskiej 2020/1054 z 15 lipca 2020 roku. Jest to zbiór przepisów prawnych dotyczących transportu drogowego we wszystkich krajach Unii Europejskiej, które regulują czas pracy kierowcy, zezwolenia na wykonywanie zawodu przewoźnika, wynagradzanie kierowców, aspekty ekologiczne oraz zarządzanie flotą.
+
+POJAZDY DO PRZEWOZU ŁADUNKÓW
+
+Pojazdy do przewozu ładunków dzielą się na tabor silnikowy i bezsilnikowy. Do taboru silnikowego zaliczają się samochody dostawcze, samochody ciężarowe oraz ciągniki samochodowe. Tabor bezsilnikowy to naczepy i przyczepy.
+
+SAMOCHODY DOSTAWCZE (DMC DO 3,5 TONY)
+
+Samochody dostawcze o dopuszczalnej masie całkowitej do 3,5 tony nie wymagają specjalnych uprawnień do kierowania - wystarczy prawo jazdy kategorii B. Rejestracja czasu pracy kierowcy nie jest jeszcze dla nich obowiązkowa, nie podlegają też dodatkowym zakazom jazdy. Mają ograniczenia wagowe i objętościowe, ale korzystają z niższych opłat autostradowych. Mogą być wyposażone w różne rodzaje nadwozi, w tym windę, i posiadają dwie osie.
+
+Typowe wymiary mniejszych modeli to od 3,84 do 4,75 metra długości, od 1,58 do 1,6 metra szerokości i 1,8 metra wysokości, co daje kubaturę około 14 metrów sześciennych, ładowność 1,5 tony i możliwość załadunku od 5 do 7 europalet. Większe modele o wymiarach od 4,2 do 4,85 metra długości, od 2,1 do 2,2 metra szerokości i od 2,2 do 2,6 metra wysokości mają ładowność 1,2 tony i pomieszczą od 8 do 10 europalet.
+
+SAMOCHODY CIĘŻAROWE (DMC 12 TON)
+
+Samochody ciężarowe o dopuszczalnej masie całkowitej do 12 ton charakteryzują się szerokim zróżnicowaniem pod względem ładowności i objętości. Można w nich zastosować większość typów nadwozi, często są wyposażone w windę i wózek paletowy, co umożliwia dostawę bezpośrednio do drzwi odbiorcy. Dla tych pojazdów obowiązkowe jest rozliczanie czasu pracy kierowcy, a do ich prowadzenia wymagane jest prawo jazdy kategorii C. Posiadają trzy osie.
+
+Wersja kontenerowa ma wymiary od 6 do 7,2 metra długości, 2,45 metra szerokości i 2,4 metra wysokości, ładowność od 3 do 6 ton i możliwość załadunku tylko od tyłu. Wersja z nadwoziem typu firanka ma wymiary od 7,2 do 8,8 metra długości, 2,45 metra szerokości i 2,5 metra wysokości, ładowność od 3 do 12 ton i możliwość załadunku od tyłu, z boku oraz od góry.
+
+ZESTAWY CIĘŻAROWE (DMC 40 TON)
+
+Największe pojazdy to zestawy o dopuszczalnej masie całkowitej do 40 ton. Oferują szeroki zakres nadwozi i umożliwiają transport do 66 palet jednocześnie. Charakteryzuje je elastyczne połączenie ciągnika siodłowego z naczepą. Do ich prowadzenia wymagane jest prawo jazdy kategorii C+E, a rozliczanie czasu pracy kierowcy jest obowiązkowe.
+
+TYPY NACZEP
+
+Naczepa typu firanka lub plandeka ma standardowe wymiary: 13,6 metra długości, 2,45 metra szerokości, od 2,7 do 2,85 metra wysokości i ładowność 24 tony. Załadunek możliwy jest od tyłu, z boku i od góry.
+
+Naczepa typu mega ma te same wymiary długości i szerokości, ale większą wysokość wynoszącą 3 metry, przy takiej samej ładowności 24 tony.
+
+Naczepa coilmulde, przeznaczona do przewozu zwojów blach i podobnych ładunków, ma długość 13,6 metra, szerokość 2,48 metra, wysokość od 2,8 do 3 metrów i ładowność 24 tony.
+
+Naczepa typu platforma może mieć długość do 15 metrów, szerokość od 2,45 do 2,75 metra, wysokość od 3 do 3,2 metra i ładowność od 24 do 26 ton. Jest to naczepa otwarta.
+
+Naczepy niskopodwoziowe przeznaczone są do ładunków specjalnych i mogą mieć długość do 37 metrów, szerokość od 2,75 do 3 metrów, wysokość około 3 do 3,15 metra i ładowność do 60 ton.
+
+Naczepa typu double decker umożliwia załadunek na dwóch poziomach i ma wymiary 13,6 metra długości, 2,48 metra szerokości, 2,65 metra wysokości oraz ładowność 22,5 tony.
+
+Zestaw tandemowy składa się z dwóch jednostek, każda o długości 7,7 metra, szerokości 2,45 metra i wysokości do 3 metrów, z łączną ładownością 24 tony.
+
+Istnieje także wiele innych typów naczep specjalistycznych: wywrotki, naczepy z ruchomą podłogą, naczepy typu jumbo, chłodnie, izotermy, cysterny, silosy oraz naczepy do transportu zwierząt.
+
+PRZEWOZY PONADGABARYTOWE
+
+Przewozy ponadgabarytowe to przewozy ładunków, które wraz z pojazdem przekraczają masę 42 tony, długość 16,5 metra, szerokość 2,5 metra lub wysokość 4 metry. Takie przewozy wymagają specjalnych pozwoleń określających warunki, jakie musi spełnić przewoźnik podczas realizacji transportu. Wykonywane są specjalnymi środkami transportu i zazwyczaj odbywają się w godzinach nocnych.
+
+Pilotaż przewozów ponadgabarytowych jest obowiązkowy, gdy pojazd przekracza określone wymiary: 23 metry długości, 3,2 metra szerokości, 4,5 metra wysokości lub 60 ton masy całkowitej. Gdy wartości te przekraczają 30 metrów długości, 3,6 metra szerokości, 4,7 metra wysokości lub 80 ton masy całkowitej, konieczne jest zaangażowanie dwóch pilotów. Zadaniem pilotów jest zabezpieczanie infrastruktury drogowej na czas przejazdu oraz minimalizacja utrudnień w ruchu.
+
+TRANSPORT ŁADUNKÓW NIEBEZPIECZNYCH
+
+Ładunki niebezpieczne to ładunki stanowiące zagrożenie dla zdrowia, życia i bezpieczeństwa ludzi, zwierząt, środowiska oraz mienia. Kwestie te zostały uregulowane w Konwencji ADR.
+
+Materiały niebezpieczne dzielą się na klasy:
+- Klasa 1: materiały wybuchowe, w tym stwarzające zagrożenie wybuchem masowym lub rozrzutem
+- Klasa 2: gazy (palne, niepalne nietrujące oraz trujące)
+- Klasa 3: materiały ciekłe zapalne
+- Klasa 4.1: materiały stałe zapalne, samoreaktywne oraz wybuchowe stałe odczulone
+- Klasa 4.2: materiały samozapalne
+- Klasa 4.3: materiały wytwarzające w zetknięciu z wodą gazy zapalne
+- Klasa 5.1: materiały utleniające
+- Klasa 5.2: nadtlenki organiczne
+- Klasa 6.1: materiały trujące
+- Klasa 6.2: materiały zakaźne
+- Klasa 7: materiały promieniotwórcze
+- Klasa 8: materiały żrące
+- Klasa 9: różne inne materiały i przedmioty niebezpieczne
+
+OBOWIĄZKI NADAWCY ŁADUNKÓW NIEBEZPIECZNYCH
+
+Nadawca ładunków niebezpiecznych musi właściwie zdefiniować ładunek niebezpieczny, przedstawić lub opracować instrukcje postępowania na wypadek zagrożenia, przekazać ładunek do przewozu w certyfikowanym opakowaniu oraz wybrać odpowiedni środek transportu.
+
+PRZEWÓZ MATERIAŁÓW NIEBEZPIECZNYCH
+
+Przewóz materiałów niebezpiecznych może odbywać się na trzy sposoby: jako przewóz przesyłek w sztukach, przewóz luzem lub przewóz w cysternach. Towar oznaczany jest nalepką w kształcie obróconego kwadratu zawierającą symbol pozwalający na identyfikację klasy ADR na każdym etapie przewozu. Przewoźnik ma obowiązek oznakowania pojazdu tablicami ADR umieszczanymi z przodu i z tyłu.
+
+OZNACZENIA NA TABLICACH ADR
+
+Pierwsza cyfra numeru rozpoznawczego określa właściwość materiału: 2 oznacza gaz, 3 materiał ciekły zapalny, 4 materiał stały zapalny, 5 materiał utleniający, podtrzymujący palenie lub nadtlenek organiczny, 6 materiał trujący, a 8 materiał żrący.
+
+Druga i trzecia cyfra precyzują rodzaj niebezpieczeństwa, stopień zagrożenia oraz dodatkowe cechy niebezpieczne: 0 oznacza brak dodatkowego zagrożenia, 1 wybuchowość, 2 zdolność wytwarzania gazu, 3 łatwozapalność, 5 właściwości utleniające, 6 toksyczność, 7 promieniotwórczość, 8 działanie żrące, a 9 niebezpieczeństwo gwałtownej reakcji.
+
+METODY ZABEZPIECZANIA ŁADUNKU
+
+Do zabezpieczania ładunku stosuje się różne metody: ciasne ułożenie ładunku, pasy transportowe, belki i drążki rozporowe, siatki, łańcuchy transportowe, maty antypoślizgowe, narożniki ochronne oraz worki.
+
+CZAS PRACY KIEROWCY
+
+Czas pracy kierowcy jest ściśle regulowany przepisami dotyczącymi dobowego czasu jazdy i odpoczynku. Jest to jeden z kluczowych elementów bezpieczeństwa w transporcie drogowym.
+
+DOKUMENTACJA TRANSPORTOWA
+
+W codziennej pracy spedytorzy i przewoźnicy korzystają z różnych dokumentów. Zlecenie spedycyjne stanowi podstawę wykonania usługi. List przewozowy CMR potwierdza zawarcie umowy przewozu. Packing list (lista pakowania) określa zawartość przesyłki, podobnie jak delivery note czy niemiecki Lieferschein.
+
+GIEŁDY TRANSPORTOWE
+
+Giełdy transportowe dzielą się na offline i online, otwarte i dedykowane oraz prywatne. Do najpopularniejszych platform giełdowych należą Trans.eu, Timocom oraz Transporeon. Umożliwiają one kojarzenie zleceń z wolnymi ładowności.
+
+SYSTEMY KOMPUTEROWEGO WSPOMAGANIA TSL
+
+Współczesny transport korzysta z wielu systemów komputerowego wspomagania. Systemy awizacji (Logintegra, Cargoclix) pozwalają rezerwować okna czasowe załadunków i rozładunków. Systemy wspierające planowanie transportu (Goodloading, Easycargo) pomagają optymalnie rozmieszczać ładunki w pojazdach. Systemy wspierające transport (Dynafleet) umożliwiają zarządzanie flotą i śledzenie pojazdów.
+
+TOWARY UNIJNE I NIEUNIJNE
+
+Towary unijne to te całkowicie uzyskane na obszarze celnym Unii, w których skład nie wchodzą towary przywiezione spoza Unii, towary wprowadzone na obszar celny Unii i dopuszczone do obrotu oraz towary uzyskane lub wyprodukowane z obu poprzednich kategorii. Towary nieunijne to wszystkie pozostałe.
+
+PROCEDURY CELNE
+
+Procedury celne określają przeznaczenie towaru po dokonaniu formalności celno-podatkowych. Na podstawie zgłoszenia celnego towar zostaje objęty konkretną procedurą: dopuszczeniem do obrotu, wywozem lub procedurami specjalnymi (tranzyt, składowanie, szczególne przeznaczenie, przetwarzanie).
+
+DOPUSZCZENIE DO OBROTU
+
+Dopuszczenie do obrotu stosuje się przy przywozie towarów na obszar celny Unii Europejskiej w celu nadania towarom nieunijnym statusu towarów unijnych. Nie wymaga pozwolenia, ale wymaga uiszczenia opłat celnych przywozowych i zakwalifikowania towaru do właściwego kodu Wspólnej Taryfy Celnej. Stosowane są komunikaty ZC291 i ZC299.
+
+WYWÓZ
+
+Procedura wywozu obejmuje towary unijne wywożone poza obszar celny Unii Europejskiej. Nie wymaga pozwolenia, nie wiąże się z należnościami celnymi wywozowymi i następuje na podstawie zgłoszenia celnego. Stosowane są komunikaty IE529 i IE599.

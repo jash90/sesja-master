@@ -1,0 +1,227 @@
+{
+  "title": "Zapasy i Magazynowanie",
+  "description": "Fiszki obejmujące zagadnienia z zakresu zarządzania zapasami, metod ich analizy, rodzajów magazynów, stref magazynowych oraz systemów składowania",
+  "category": "Logistyka i Magazynowanie",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym są zapasy?",
+      "back": "Zapasy to określona liczba dóbr materialnych wprowadzonych fizycznie i formalnie do magazynu w celu zaspokojenia potrzeb produkcji lub sprzedaży poprzez fizyczne wydanie towaru w określonym czasie."
+    },
+    {
+      "id": 2,
+      "front": "Jakie są trzy główne grupy zapasów?",
+      "back": "Materiały (surowce i półprodukty obcej produkcji), półprodukty (elementy przetworzone gromadzone w halach produkcyjnych) oraz produkty gotowe (wyroby przeznaczone do sprzedaży, niepodlegające dalszemu przetworzeniu)."
+    },
+    {
+      "id": 3,
+      "front": "Zapasy standardowe",
+      "back": "Zapasy mające za zadanie wyrównać popyt i podaż oraz zmniejszyć niezgodności wynikające z ilościowych i jakościowych błędów w przepływie dóbr."
+    },
+    {
+      "id": 4,
+      "front": "Zapasy zabezpieczające",
+      "back": "Rezerwa, czyli ilość zapasu utrzymywana w magazynie na wypadek sytuacji losowej, np. opóźnień w dostawach lub awarii."
+    },
+    {
+      "id": 5,
+      "front": "Zapasy zapobiegawcze",
+      "back": "Zapasy gromadzone z wyprzedzeniem w celu zabezpieczenia działalności średniookresowej, wynikające np. z sezonowości sprzedaży."
+    },
+    {
+      "id": 6,
+      "front": "Zapasy wymuszone",
+      "back": "Zapasy, których posiadanie spowodowane jest niekorzystnym splotem wydarzeń, np. nagłe zatrzymanie produkcji skutkujące nadmierną ilością zapasów w strefie zaopatrzenia."
+    },
+    {
+      "id": 7,
+      "front": "Czym jest zapas antycypacyjny?",
+      "back": "Zapas gromadzony w bardzo dużych ilościach, tworzony z wyprzedzeniem w związku z przewidywanymi działaniami na większą skalę, np. przed sezonem świątecznym."
+    },
+    {
+      "id": 8,
+      "front": "Czym jest zapas cykliczny?",
+      "back": "Zapas bieżący utrzymywany przez przedsiębiorstwo, wykorzystywany regularnie do produkcji lub sprzedaży."
+    },
+    {
+      "id": 9,
+      "front": "Czym jest zapas nierotujący?",
+      "back": "Zapas nadmierny, którego przedsiębiorstwo nie jest w stanie wykorzystać na własne potrzeby. Generuje koszty składowania bez przynoszenia korzyści."
+    },
+    {
+      "id": 10,
+      "front": "Na czym polega system PULL?",
+      "back": "System ssący polegający na uzupełnianiu wyłącznie tych materiałów, które zostaną faktycznie zużyte. Produkcja rozpoczyna się dopiero gdy pojawi się rzeczywiste zapotrzebowanie klienta."
+    },
+    {
+      "id": 11,
+      "front": "Cechy charakterystyczne systemu PULL",
+      "back": "Niski poziom zapasów, małe partie produkcyjne oraz rzadsze problemy z jakością."
+    },
+    {
+      "id": 12,
+      "front": "Na czym polega system PUSH?",
+      "back": "System pchający, w którym najpierw wytwarza się produkt na podstawie prognoz sprzedaży, a następnie wypycha go na rynek. Gdy prognozy się nie sprawdzają, firma zostaje z nadmiarem zapasów."
+    },
+    {
+      "id": 13,
+      "front": "Cechy charakterystyczne systemu PUSH",
+      "back": "Wysoki poziom zapasów, duże partie produkcyjne oraz duże zapasy produkcji w toku."
+    },
+    {
+      "id": 14,
+      "front": "Na czym polega analiza ABC?",
+      "back": "Metoda podziału zapasów na trzy grupy ze względu na wartość: A (5-20% ilościowo, 75-80% wartości), B (15-20% ilościowo i wartościowo), C (60-80% ilościowo, 5% wartości)."
+    },
+    {
+      "id": 15,
+      "front": "Grupa A w analizie ABC",
+      "back": "Zapasy cenne o niewielkim udziale ilościowym (5-20%), ale o dużym udziale kosztowym (75-80%). Wymagają szczególnej kontroli i uwagi."
+    },
+    {
+      "id": 16,
+      "front": "Grupa C w analizie ABC",
+      "back": "Zasoby masowe charakteryzujące się dużym udziałem ilościowym (60-80%), ale niskim udziałem wartościowym (5%). Można nimi zarządzać w sposób uproszczony."
+    },
+    {
+      "id": 17,
+      "front": "Na czym polega analiza XYZ?",
+      "back": "Metoda klasyfikacji zapasów według regularności zapotrzebowania i dokładności prognozowania: X (duża regularność, wysoka dokładność), Y (sezonowość), Z (duża nieregularność, niska dokładność)."
+    },
+    {
+      "id": 18,
+      "front": "Grupa AX w połączonej analizie ABC/XYZ",
+      "back": "Zasoby generujące dużą wartość obrotu, z przewidywalnym i stałym popytem oraz niewielkimi błędami prognoz. Najłatwiejsze w zarządzaniu mimo wysokiej wartości."
+    },
+    {
+      "id": 19,
+      "front": "Metoda FIFO (First In, First Out)",
+      "back": "Metoda wyceny i wydawania zapasów, w której rozchód księgowany jest począwszy od jednostek, które trafiły na magazyn jako pierwsze. Pierwsze przyszło, pierwsze wyszło."
+    },
+    {
+      "id": 20,
+      "front": "Metoda LIFO (Last In, First Out)",
+      "back": "Metoda wyceny i wydawania zapasów, w której rozchód księgowany jest począwszy od jednostek, które trafiły na magazyn jako ostatnie. Ostatnie przyszło, pierwsze wyszło."
+    },
+    {
+      "id": 21,
+      "front": "Metoda FEFO (First Expired, First Out)",
+      "back": "Metoda stosowana dla produktów o ograniczonym terminie ważności. Towar wydawany jest według kolejności dat przydatności – najpierw ten z najkrótszym terminem ważności."
+    },
+    {
+      "id": 22,
+      "front": "Czym jest magazyn?",
+      "back": "Wyodrębniona przestrzeń przeznaczona do magazynowania zapasów, obiekt przystosowany do składowania i przemieszczania zapasów. Składa się z zapasów, infrastruktury, personelu, organizacji i kosztów."
+    },
+    {
+      "id": 23,
+      "front": "Magazyn otwarty",
+      "back": "Najtańszy rodzaj magazynu (place, składowiska) służący do składowania zapasów odpornych na warunki atmosferyczne, np. materiałów mineralnych, wyrobów stalowych i żeliwnych."
+    },
+    {
+      "id": 24,
+      "front": "Magazyn półotwarty",
+      "back": "Magazyn częściowo osłonięty (wiaty, szopy, zasieki) z dachem wspartym na podporach. Przeznaczony dla zapasów odpornych na zmiany temperatury, ale wrażliwych na opady, np. cement, ceramika."
+    },
+    {
+      "id": 25,
+      "front": "Magazyn zamknięty",
+      "back": "Magazyn z podłogą, ścianami i dachem (chłodnie, piwnice). Przeznaczony dla zapasów wrażliwych na warunki atmosferyczne lub delikatnych, np. meble, sprzęt RTV/AGD, nawozy."
+    },
+    {
+      "id": 26,
+      "front": "Trzy główne funkcje magazynów",
+      "back": "Składowanie (przechowywanie zapasów), działania manipulacyjne (przyjmowanie, wydawanie, przemieszczanie) oraz działania pomocnicze (ewidencja, administracja, znakowanie, bezpieczeństwo)."
+    },
+    {
+      "id": 27,
+      "front": "Co odbywa się w strefie przyjęć?",
+      "back": "Rozładunek środków transportu, kontrola ilościowa i jakościowa przyjętych zapasów, wstępne segregowanie, sortowanie, przepakowywanie i oznakowanie dostawy."
+    },
+    {
+      "id": 28,
+      "front": "Co odbywa się w strefie składowania?",
+      "back": "Składowanie i przechowywanie zapasów, ochrona zapasów oraz inwentaryzacja. Składowanie może odbywać się na regałach, stojakach lub blokowo na posadzce."
+    },
+    {
+      "id": 29,
+      "front": "Metoda wolnych miejsc składowania",
+      "back": "Umieszczanie zapasów w dowolnych wolnych gniazdach regałowych. Wymaga systemu WMS, ale pozwala na efektywne wykorzystanie przestrzeni magazynowej."
+    },
+    {
+      "id": 30,
+      "front": "Metoda stałych miejsc składowania",
+      "back": "Każdy rodzaj zapasu ma stałe, przyporządkowane miejsce. Ułatwia odnalezienie towaru, ale prowadzi do nieefektywnego wykorzystania przestrzeni. Sprawdza się przy wąskim asortymencie."
+    },
+    {
+      "id": 31,
+      "front": "Metoda składowania według rotacji",
+      "back": "Składowanie pozwalające skrócić drogę do strefy wydań. Zapasy dzieli się na grupy: A (największa rotacja, najbliżej wydań), B (średnia rotacja), C (słabo rotujące, najdalej)."
+    },
+    {
+      "id": 32,
+      "front": "Co odbywa się w strefie kompletacji?",
+      "back": "Formowanie paletowych jednostek ładunkowych, kompletacja towaru pod konkretne zamówienie oraz kontrola ilościowa i jakościowa przed wydaniem."
+    },
+    {
+      "id": 33,
+      "front": "Różnica między kompletacją 'operator do produktu' a 'produkt do operatora'",
+      "back": "Operator do produktu: pracownicy poruszają się po magazynie pobierając towary. Produkt do operatora: stosowane w magazynach automatycznych, towar jest automatycznie dostarczany do stanowiska."
+    },
+    {
+      "id": 34,
+      "front": "Czym jest cross docking?",
+      "back": "Rozwiązanie logistyczne, w którym przyjęty towar zostaje od razu wydany bez konieczności magazynowania lub z magazynowaniem przez bardzo krótki czas."
+    },
+    {
+      "id": 35,
+      "front": "Układ przelotowy magazynu",
+      "back": "Strefy przyjęć i wydań znajdują się na przeciwległych końcach, oddzielone strefą składowania. Minimalizuje ryzyko pomyłek i zapewnia przejrzystość ruchu pojazdów."
+    },
+    {
+      "id": 36,
+      "front": "Układ kątowy magazynu",
+      "back": "Strefy przyjęć i wydań są oddzielone strefą składowania znajdującą się w rogu budynku. Stosowany przy barierach konstrukcyjnych, uniemożliwia krzyżowanie dróg towaru."
+    },
+    {
+      "id": 37,
+      "front": "Układ workowy magazynu",
+      "back": "Strefy przyjęć i wydań umieszczone obok siebie lub jako wspólna przestrzeń. Efektywniejsze wykorzystanie zasobów, ale ryzyko krzyżowania dróg i popełniania błędów."
+    },
+    {
+      "id": 38,
+      "front": "Regały przesuwne",
+      "back": "Regały rzędowe umieszczone na wózkach jezdnych, przemieszczające się po prowadnicach. Pozwalają na optymalne wykorzystanie przestrzeni poprzez eliminację zbędnych korytarzy."
+    },
+    {
+      "id": 39,
+      "front": "Regały dynamiczne vs regały push-back",
+      "back": "Regały dynamiczne: towar wkładany z jednej strony, pobierany z drugiej (FIFO). Push-back: towar wkładany i pobierany z tej samej strony, przesuwany do wewnątrz (LIFO)."
+    },
+    {
+      "id": 40,
+      "front": "Regały wjezdne",
+      "back": "Umożliwiają wyłącznie blokowe składowanie według zasady LIFO. Korzystne przy dużych ilościach tego samego asortymentu, ale bez bezpośredniego dostępu do każdej palety."
+    },
+    {
+      "id": 41,
+      "front": "Regały windowe",
+      "back": "Kompaktowa konstrukcja o dużej pojemności, gdzie towary umieszczone na półkach są wywoływane przez operatora poprzez wskazanie numeru. Umożliwiają częsty dostęp do towaru."
+    },
+    {
+      "id": 42,
+      "front": "Czym jest system WMS?",
+      "back": "Warehouse Management System – oprogramowanie wspierające wszystkie procesy magazynowe: przyjmowanie, wyznaczanie miejsc składowania, lokalizowanie towarów, przydzielanie zadań, kontrolę stanów, kompletację i wydawanie."
+    },
+    {
+      "id": 43,
+      "front": "Główne funkcje systemu WMS",
+      "back": "Wspieranie przyjmowania towaru, wyznaczanie miejsc składowania, lokalizowanie towarów, przydzielanie zadań pracownikom, kontrola stanów, automatyzacja kompletacji, generowanie etykiet, wspieranie wydawania."
+    },
+    {
+      "id": 44,
+      "front": "Trzy kryteria wyboru rodzaju regału",
+      "back": "Rodzaj asortymentu (rozmiary, waga, specyfika), powierzchnia do dyspozycji (podłoga i wysokość) oraz sposób działania magazynu (manualny, półautomatyczny, automatyczny)."
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Czwarta Rewolucja Przemysłowa - Przemysł 4.0",
+  "description": "Test wiedzy obejmujący historię rewolucji przemysłowych, istotę Przemysłu 4.0, kluczowe technologie, typy inteligentnych fabryk oraz aspekty społeczne transformacji cyfrowej.",
+  "questions": [
+    {
+      "question": "W którym kraju rozpoczęła się pierwsza rewolucja przemysłowa?",
+      "options": [
+        "Wielka Brytania",
+        "Stany Zjednoczone",
+        "Niemcy",
+        "Francja"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pierwsza rewolucja przemysłowa rozpoczęła się w XVIII wieku w Wielkiej Brytanii, gdzie nastąpiło zastąpienie pracy ręcznej przez maszyny oraz rozwój produkcji masowej."
+    },
+    {
+      "question": "Co było symbolem drugiej rewolucji przemysłowej?",
+      "options": [
+        "Maszyna parowa",
+        "Internet",
+        "Elektryczność",
+        "Sztuczna inteligencja"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Symbolem drugiej rewolucji przemysłowej (przełom XIX i XX wieku) stała się elektryczność, która zrewolucjonizowała wszystkie dziedziny życia. Maszyna parowa to symbol pierwszej rewolucji."
+    },
+    {
+      "question": "Które zjawisko NIE jest charakterystyczne dla trzeciej rewolucji przemysłowej?",
+      "options": [
+        "E-learning",
+        "Globalizacja",
+        "Masowa personalizacja produkcji",
+        "Rozwój Internetu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Masowa personalizacja produkcji to główny cel Przemysłu 4.0 (czwartej rewolucji). Trzecia rewolucja przemysłowa charakteryzowała się rozwojem Internetu, e-learningu, outsourcingu i globalizacji."
+    },
+    {
+      "question": "Jaki jest główny cel Przemysłu 4.0?",
+      "options": [
+        "Całkowita eliminacja pracy ludzkiej",
+        "Masowa personalizacja produkcji towarów i usług",
+        "Zastąpienie elektryczności nowymi źródłami energii",
+        "Likwidacja globalnych łańcuchów dostaw"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Głównym celem Przemysłu 4.0 jest masowa personalizacja produkcji towarów i usług w odpowiedzi na zindywidualizowane wymagania klientów, przy zachowaniu efektywności produkcji masowej."
+    },
+    {
+      "question": "Która cecha NIE charakteryzuje inteligentnego produktu?",
+      "options": [
+        "Może odtwarzać swoją historię",
+        "Jest jednoznacznie identyfikowalny",
+        "Wymaga stałego połączenia z operatorem",
+        "Może określać swoje położenie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Inteligentny produkt może działać autonomicznie - odtwarza historię, jest identyfikowalny, określa położenie i status. Nie wymaga stałego połączenia z operatorem, choć użytkownik może reagować na jego informacje w czasie rzeczywistym."
+    },
+    {
+      "question": "Co oznacza skrót IoT?",
+      "options": [
+        "International Organization of Technology",
+        "Internet of Things",
+        "Integration of Tools",
+        "Intelligent Operating Technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IoT to Internet of Things (Internet rzeczy) - połączenie obiektów fizycznych z ich wirtualną reprezentacją w globalnej sieci komputerowej, wykorzystujące sensory do zbierania i analizy danych."
+    },
+    {
+      "question": "Czym jest Big Data?",
+      "options": [
+        "Największe centrum danych na świecie",
+        "Oprogramowanie do tworzenia baz danych",
+        "Duże, dynamicznie zmieniające się zbiory danych trudne w przetwarzaniu",
+        "System zabezpieczania danych w chmurze"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Big Data to duże, dynamicznie zmieniające się i nieuporządkowane zbiory danych, które są trudne w przetwarzaniu tradycyjnymi metodami. Ujawniają nowe związki między danymi i pomagają prognozować potrzeby klientów."
+    },
+    {
+      "question": "Kto wprowadził pojęcie sztucznej inteligencji?",
+      "options": [
+        "James Watt",
+        "John McCarthy",
+        "Alan Turing",
+        "Bill Gates"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pojęcie sztucznej inteligencji wprowadził John McCarthy w latach 50. XX wieku, definiując ją jako naukę obejmującą inżynierię tworzenia inteligentnych maszyn i programów komputerowych."
+    },
+    {
+      "question": "Co oznacza trend Smart Manufacturing w ramach IoT?",
+      "options": [
+        "Inteligentne zarządzanie ruchem drogowym",
+        "Automatyzacja domu i urządzeń AGD",
+        "Uczenie maszynowe i diagnostyka prewencyjna maszyn",
+        "Zindywidualizowana opieka zdrowotna"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Smart Manufacturing (inteligentna produkcja) obejmuje uczenie maszynowe, diagnostykę prewencyjną i konserwację maszyn. Smart Mobility dotyczy ruchu drogowego, Smart Infrastructure - automatyzacji domu, a Smart Life - opieki zdrowotnej."
+    },
+    {
+      "question": "Ile kategorii obejmuje wskaźnik DESI?",
+      "options": [
+        "3 kategorie",
+        "4 kategorie",
+        "5 kategorii",
+        "7 kategorii"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Wskaźnik DESI (Digital Economy and Society Index) obejmuje 5 kategorii: łączność, kapitał ludzki, korzystanie z Internetu, integracja technologii cyfrowej oraz cyfrowe usługi publiczne."
+    },
+    {
+      "question": "Które miejsce zajęła Polska w rankingu DESI w 2022 roku wśród państw UE?",
+      "options": [
+        "15. miejsce",
+        "20. miejsce",
+        "25. miejsce",
+        "28. miejsce"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W 2022 roku Polska zajęła 25. miejsce na 28 państw UE ze wskaźnikiem 40,5 (przy średniej europejskiej 52), wyprzedzając jedynie Grecję, Bułgarię i Rumunię."
+    },
+    {
+      "question": "Który typ inteligentnej fabryki charakteryzuje się możliwością szybkiego przenoszenia z miejsca na miejsce?",
+      "options": [
+        "Zautomatyzowane i zrobotyzowane fabryki",
+        "Cyfrowe masowo zindywidualizowane fabryki",
+        "Mobilne fabryki modułowe",
+        "Fabryki z produkcją ręczną"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mobilne fabryki modułowe mogą być relatywnie szybko przenoszone z miejsca na miejsce, mają niską kapitalizację instalacji i są często lokalizowane blisko miejsc występowania popytu."
+    },
+    {
+      "question": "Czym jest technofobia?",
+      "options": [
+        "Uzależnienie od technologii",
+        "Ekstremalne i irracjonalne obawy wobec technologii",
+        "Brak dostępu do nowoczesnych technologii",
+        "Nadmierne zaufanie do systemów informatycznych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Technofobia to stan przejawiający się ekstremalnymi i irracjonalnymi obawami wobec technologii traktowanej jako zagrożenie. Może objawiać się niepokojem przy korzystaniu z nowych technologii z powodu braku umiejętności."
+    },
+    {
+      "question": "Na jakich filarach opiera się koncepcja Przemysłu 5.0?",
+      "options": [
+        "Automatyzacja, robotyzacja, digitalizacja",
+        "Ekologia, człowiek, odporność na kryzysy",
+        "Big Data, IoT, sztuczna inteligencja",
+        "Globalizacja, outsourcing, e-learning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Przemysł 5.0 opiera się na trzech filarach: ekologii (zrównoważony rozwój), człowieku (stawianie ludzi w centrum uwagi) oraz odporności na kryzysy (budowanie systemów zdolnych do funkcjonowania w trudnych warunkach)."
+    },
+    {
+      "question": "Który typ lidera w Przemyśle 4.0 koncentruje się na przygotowaniu organizacji do cyfrowej transformacji poprzez rozwój kompetencji pracowników?",
+      "options": [
+        "Lider wpływu społecznego",
+        "Rzecznik wykorzystania danych",
+        "Promotor przełomowych zmian",
+        "Ambasador talentów"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Ambasador talentów jest zorientowany na potrzeby kompetencyjne organizacji, podejmuje wysiłki aby przygotować ją do cyfrowej transformacji, często bierze odpowiedzialność za szkolenie pracowników i docenia wagę ich przygotowania do wymogów przyszłości."
+    }
+  ]
+}

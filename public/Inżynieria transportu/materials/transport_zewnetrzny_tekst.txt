@@ -1,0 +1,166 @@
+TRANSPORT ZEWNĘTRZNY
+
+Transport zewnętrzny to transport odbywający się poza terytorium konkretnego zakładu czy fabryki. Jego głównym celem jest dostarczenie ładunku od nadawcy do odbiorcy przy wykorzystaniu określonych środków transportu.
+
+Transport zewnętrzny dzieli się na trzy główne kategorie. Pierwsza to transport lądowy, obejmujący transport samochodowy, przesyłowy oraz kolejowy. Druga kategoria to transport wodny, w ramach którego wyróżnia się transport morski oraz żeglugę śródlądową. Trzecia kategoria to transport powietrzny, czyli lotniczy i kosmiczny.
+
+
+TRANSPORT LOTNICZY
+
+Transport lotniczy to gałąź transportu stosowana przede wszystkim na dużych dystansach, gdzie kluczowy jest relatywnie krótki czas dostawy. Odbywa się z wykorzystaniem samolotów konwencjonalnych oraz szerokokadłubowych.
+
+Zalety transportu lotniczego to wysoki poziom bezpieczeństwa przewożonego towaru, możliwość przewożenia zarówno ładunków drobnicowych jak i masowych, płynnych czy ponadgabarytowych, duża częstotliwość połączeń oraz przejrzystość dróg transportowych oznaczająca brak korków czy blokad znanych z transportu drogowego.
+
+Wady transportu lotniczego to przede wszystkim wysokie koszty przewozu, uzależnienie od warunków pogodowych, ograniczona ładowność wynikająca z długości lotu oraz oddalenie lotnisk od centrów miast.
+
+
+SAMOLOTY TRANSPORTOWE (CARGO)
+
+Samolot transportowy charakteryzuje się dużą przestrzenią wewnątrz luku bagażowego, co umożliwia załadunek towarów trudnych do przewozu w samolotach konwencjonalnych. Takie maszyny mogą pomieścić całe samochody ciężarowe lub elementy konstrukcyjne o znacznych wymiarach. Wyposażone są w silniki o dużej mocy, pozwalające na start przy pełnym załadunku i pełnym baku paliwa.
+
+Podział samolotów cargo według zasięgu:
+
+Małe samoloty (np. Cessna) - przeznaczone do przewozu niewielkich ładunków na krótkich trasach, z możliwością obsługi na prawie wszystkich lotniskach.
+
+Samoloty średniego zasięgu (np. Boeing 737, Airbus A330) - zdolne do obsługi od 23 do 80 ton ładunku na dystansach do 10 tysięcy kilometrów.
+
+Samoloty dalekiego zasięgu (np. Boeing 747, Airbus A380, Antonov An-124) - oferują ogromne możliwości transportowe, zasięg międzykontynentalny, dużą przestrzeń ładunkową oraz możliwość przewozu niekonwencjonalnych ładunków na bardzo duże odległości.
+
+Przykłady samolotów transportowych:
+- Airbus Beluga: ładowność 51 ton, zasięg 4600 km
+- C17 Globemaster III: ładowność 70 ton, zasięg 8700 km
+- Antonov An-225 Mrija: ładowność 250 ton, zasięg 15400 km (zniszczony w 2022 roku)
+
+
+OPAKOWANIA W TRANSPORCIE LOTNICZYM
+
+Opakowania lotnicze oznaczane są skrótem ULD (Unit Load Devices). Są to jednostki ładunkowe zaprojektowane specjalnie do kadłuba każdego typu samolotu.
+
+Palety lotnicze - wykonane z aluminium o odpowiedniej grubości, towar mocowany za pomocą siatek oraz folii.
+
+Kontenery lotnicze - wykonane z aluminium lub poliwęglanu, mogą być wyposażone w funkcję chłodzenia lub wentylacji, składają się z podstawy, ramy z panelami bocznymi i górnymi oraz drzwi.
+
+
+PODZIAŁ PRZESYŁEK LOTNICZYCH
+
+Przesyłki zwykłe - przewożone od nadawcy do odbiorcy na podstawie pojedynczego listu przewozowego AWB.
+
+Przesyłki skonsolidowane - połączenie różnych przesyłek od różnych nadawców w celu obniżenia kosztów transportu, realizowane na podstawie zbiorczego listu przewozowego MAWB.
+
+Przesyłki czarterowe - przewożenie ładunków w dedykowanych samolotach.
+
+
+TERMINAL CARGO
+
+Terminal cargo to wydzielona część portu lotniczego świadcząca usługi załadunku, wyładunku i magazynowania towarów. W jego skład wchodzą: magazyn celny, chłodnia, regały wysokiego składowania, rampy oraz pomieszczenia do składowania materiałów specjalnych, w tym odpadów radioaktywnych.
+
+
+LOTNISKA CARGO
+
+Główne lotniska cargo w Polsce:
+- Lotnisko Chopina w Warszawie (ponad 100 mln kg cargo rocznie)
+- Rzeszów-Jasionka
+- Katowice-Pyrzowice
+- Gdańsk im. Lecha Wałęsy
+- Wrocław-Strachowice
+
+Główne lotniska cargo w Europie:
+- Stambuł IGA
+- Frankfurt
+- Paryż Charles de Gaulle
+- Londyn Heathrow
+- Amsterdam Schiphol
+- Liège (Belgia)
+
+
+TRANSPORT MORSKI
+
+Rodzaje żeglugi:
+
+Żegluga liniowa - odbywa się na stałych trasach według rozkładu rejsów, z reguły na długich dystansach.
+
+Żegluga trampowa - żegluga nieregularna obejmująca przewóz ładunków na nieokreślonych trasach, w zależności od potrzeb przewozowych.
+
+Kabotaż - żegluga na krótkich trasach w obrębie różnych portów tego samego państwa.
+
+
+Zalety transportu morskiego:
+- możliwość przewozu ładunków o najszerszym wachlarzu podatności transportowej
+- światowy zasięg obsługiwanych szlaków
+- korzystna cena za transport
+- wysoka wydajność
+
+Wady transportu morskiego:
+- niewielka prędkość eksploatacyjna statków
+- niska częstotliwość połączeń
+- niższe bezpieczeństwo ładunków w porównaniu z innymi gałęziami transportu
+- ograniczona możliwość śledzenia towarów w czasie rzeczywistym
+
+
+RODZAJE STATKÓW
+
+Drobnicowce - przystosowane do transportu drobnicy konwencjonalnej oraz ładunków masowych w niewielkich ilościach. Często posiadają chłodzoną ładownię do transportu żywności oraz własną infrastrukturę załadunkowo-wyładunkową. Przeznaczone do przewozu towarów nienadających się do transportu w kontenerach.
+
+Semikontenerowce - statki drobnicowe przystosowane zarówno do transportu ładunków w formie konwencjonalnej, jak i w kontenerach.
+
+Statki drobnicowe wielozadaniowe - przeznaczone do przewozu szerokiego wachlarza ładunków. Posiadają własną infrastrukturę w postaci wysokich dźwigów oraz furt burtowych i wind. Składają się z kilku pokładów przystosowanych jednocześnie do transportu kontenerów oraz drobnicy na paletach czy w skrzyniach.
+
+Kontenerowce - statki przeznaczone wyłącznie do przewozu kontenerów, głównie na pokładzie. Mają otwartą budowę pokładu i są wyposażone w prowadnice umożliwiające precyzyjny załadunek kontenerów.
+
+
+OZNAKOWANIE STATKÓW
+
+MS - statek motorowy
+NS - statek o napędzie atomowym
+HMS - statek Jego/Jej Królewskiej Mości
+RMS - statek Królewskiej Poczty
+SS - służba specjalna USA
+MSC - Mediterranean Shipping Company
+
+
+ARMATOR
+
+Armator to osoba prawna lub fizyczna eksploatująca własny lub wynajęty statek. Zatrudnia kapitana oraz załogę i odpowiada cywilnie za zobowiązania wynikające z eksploatowania statku. Zajmuje się usługową działalnością gospodarczą polegającą na przewozie morskim pasażerów oraz towarów. Odpowiada za rejestrację statku, przestrzeganie zasad bezpiecznej żeglugi oraz bierze udział w postępowaniach dotyczących wypadków morskich.
+
+
+KONTENERY MORSKIE
+
+Najpopularniejsze kontenery to 20-stopowe i 40-stopowe.
+
+Kontener 40 FT Pallet Wide - parametry:
+- Wymiary wewnętrzne: długość 12098 mm, szerokość 2426 mm, wysokość 2379 mm
+- Wymiary w drzwiach: wysokość 2282 mm, szerokość 2358 mm
+- Pojemność: 76,3 m³
+- Tara (waga własna): 4100 kg
+- Maksymalna ładowność: 29900 kg
+
+
+TRANSPORT KOLEJOWY
+
+Cechy transportu kolejowego:
+- masowość przewozów
+- relatywnie niskie stawki przewozowe
+- niska wypadkowość
+- możliwość precyzyjnego określenia czasu dostawy
+- niższe bezpieczeństwo towarów nieodpornych na wstrząsy
+
+Kolejowe korytarze towarowe RFC w Polsce:
+- Korytarz Morze Bałtyckie - Morze Adriatyckie (łączący porty północne z południowymi)
+- Korytarz Morze Północne - Morze Bałtyckie
+- Bursztynowy Korytarz Towarowy
+
+Podział przesyłek kolejowych:
+- wagonowe i wielowagonowe
+- zwyczajne i z ustalonym terminem przewozu
+- krajowe i międzynarodowe
+
+Parametry nowoczesnego wagonu towarowego:
+- Nośność: 68 ton
+- Ciężar własny: 25,8 tony
+- Pojemność nadwozia: 138 m³
+- Pojemność: 38 europalet
+
+
+PODSUMOWANIE
+
+Transport zewnętrzny to złożony system obejmujący transport lotniczy, morski i kolejowy. Każda gałąź ma swoje zalety i ograniczenia. Transport lotniczy oferuje szybkość, ale wiąże się z wysokimi kosztami. Transport morski zapewnia niskie ceny przy dużych wolumenach, ale jest wolny. Transport kolejowy stanowi kompromis między kosztem a czasem, szczególnie efektywny na średnich dystansach wewnątrz kontynentów.

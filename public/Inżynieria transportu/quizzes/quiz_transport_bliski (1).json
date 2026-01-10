@@ -1,0 +1,171 @@
+{
+  "title": "Transport bliski - quiz",
+  "description": "Quiz sprawdzający wiedzę z zakresu transportu wewnętrznego w przedsiębiorstwie, środków transportu bliskiego oraz organizacji dróg transportowych.",
+  "questions": [
+    {
+      "question": "Czym jest transport wewnętrzny?",
+      "options": [
+        "Transport między różnymi przedsiębiorstwami",
+        "Operacje przemieszczania dóbr i osób na terenie przedsiębiorstwa",
+        "Transport międzynarodowy towarów",
+        "Przewóz pracowników do pracy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Transport wewnętrzny to operacje związane z przemieszczaniem dóbr i osób na terenie przedsiębiorstw produkcyjnych oraz usługowych, realizowane w obrębie jednej lub kilku hal produkcyjnych."
+    },
+    {
+      "question": "Które z poniższych NIE jest wymaganiem transportu bliskiego?",
+      "options": [
+        "Maksymalna szybkość transportowania",
+        "Krótkie czasy załadunku i rozładunku",
+        "Maksymalna liczba przeładunków",
+        "Krótkie drogi transportowe"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Transport bliski wymaga możliwie NAJMNIEJSZEJ liczby przeładunków, nie maksymalnej. Każdy dodatkowy przeładunek zwiększa koszty i ryzyko uszkodzenia towaru."
+    },
+    {
+      "question": "Jak dzielimy środki transportu wewnętrznego ze względu na cechy konstrukcyjne?",
+      "options": [
+        "Lekkie, średnie i ciężkie",
+        "Dźwignice, przenośniki, wózki i inne urządzenia kołowe",
+        "Elektryczne, spalinowe i ręczne",
+        "Stacjonarne i mobilne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ze względu na cechy konstrukcyjne środki transportu wewnętrznego dzielimy na: dźwignice, przenośniki oraz wózki i inne urządzenia kołowe."
+    },
+    {
+      "question": "Czym charakteryzują się dźwignice?",
+      "options": [
+        "Pracą ciągłą bez przerw",
+        "Pracą przerywaną z przerwami na czynności manipulacyjne",
+        "Transportem wyłącznie poziomym",
+        "Brakiem możliwości podnoszenia ładunków"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dźwignice to urządzenia przeznaczone do pracy przerywanej. Przenoszenie kolejnych ładunków odbywa się z przerwami niezbędnymi do wykonania czynności manipulacyjnych (zaczepienie i odczepienie ładunku)."
+    },
+    {
+      "question": "Do jakiej grupy urządzeń należą suwnice, żurawie i dźwigi?",
+      "options": [
+        "Przenośników",
+        "Wózków transportowych",
+        "Dźwignic",
+        "Urządzeń magazynowych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Suwnice, żurawie, dźwigi oraz cięgniki należą do grupy dźwignic - urządzeń umożliwiających podnoszenie i opuszczanie ładunku oraz transport w ograniczonym zakresie."
+    },
+    {
+      "question": "Jaki maksymalny kąt wzniesienia mogą mieć przenośniki taśmowe?",
+      "options": [
+        "15 stopni",
+        "30 stopni",
+        "45 stopni",
+        "60 stopni"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Przenośniki taśmowe mogą transportować materiały w systemie poziomym oraz pod górę, jednak kąt wzniesienia nie może przekraczać 30 stopni."
+    },
+    {
+      "question": "Jaka jest maksymalna masa ładunku dla przenośników łańcuchowych?",
+      "options": [
+        "500 kg",
+        "1000 kg",
+        "1500 kg",
+        "2000 kg"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Przenośniki łańcuchowe przeznaczone są do poziomego transportu ciężkich ładunków o masie nieprzekraczającej 1500 kg, głównie do transportu palet."
+    },
+    {
+      "question": "Jak nazywa się materiał przenoszony przez przenośniki?",
+      "options": [
+        "Ładunek",
+        "Nosiwo",
+        "Fracht",
+        "Towar"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Przenoszony przez przenośniki materiał nazywany jest nosiwem. Jest to termin techniczny stosowany w logistyce transportu wewnętrznego."
+    },
+    {
+      "question": "Czym różnią się wózki unoszące od wózków podnośnikowych?",
+      "options": [
+        "Wózki unoszące nie mają systemu hydraulicznego",
+        "Wózki unoszące podnoszą tylko na wysokość umożliwiającą przewóz, podnośnikowe także składowanie",
+        "Wózki podnośnikowe są zawsze elektryczne",
+        "Nie ma między nimi różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wózki unoszące podnoszą ładunek na wysokość umożliwiającą jego przewóz, natomiast wózki podnośnikowe podnoszą na wysokość umożliwiającą zarówno przewóz, jak i składowanie."
+    },
+    {
+      "question": "Jakie rodzaje napędu mogą mieć wózki widłowe?",
+      "options": [
+        "Tylko elektryczny",
+        "Tylko spalinowy",
+        "Spalinowy, gazowy lub akumulatorowy",
+        "Tylko ręczny"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Wózki widłowe mogą posiadać napęd spalinowy, gazowy lub akumulatorowy (elektryczny). Wybór zależy od miejsca pracy - np. w halach preferuje się napęd elektryczny ze względu na brak spalin."
+    },
+    {
+      "question": "Transport międzystanowiskowy odbywa się:",
+      "options": [
+        "Między różnymi zakładami produkcyjnymi",
+        "Między wydziałami i halami produkcyjnymi",
+        "Między stanowiskami w ramach jednego wydziału",
+        "Wyłącznie w magazynie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Transport międzystanowiskowy to przemieszczanie materiałów między poszczególnymi stanowiskami produkcyjnymi w ramach jednego wydziału, z pominięciem operacji magazynowych."
+    },
+    {
+      "question": "Jaka jest minimalna szerokość drogi transportowej dla ruchu jednokierunkowego pieszego z ładunkiem?",
+      "options": [
+        "80 cm",
+        "100 cm",
+        "120 cm",
+        "150 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Minimalna szerokość drogi transportowej dla ruchu jednokierunkowego pieszego z ładunkiem wynosi 120 cm (b = a + 30, ale minimum 120 cm)."
+    },
+    {
+      "question": "Jakimi kolorami maluje się oznaczenia dróg transportowych?",
+      "options": [
+        "Czerwoną lub niebieską farbą",
+        "Białą lub żółtą farbą",
+        "Zieloną lub pomarańczową farbą",
+        "Czarną lub szarą farbą"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Drogi transportowe malowane są białą lub żółtą farbą, z uwzględnieniem zwężeń i przejść dla pieszych."
+    },
+    {
+      "question": "Który model transportu wewnętrznego zakłada ruch po zamkniętej pętli?",
+      "options": [
+        "System wahadłowy",
+        "System obwodowy",
+        "System promieniowy",
+        "System nieregularny"
+      ],
+      "correctAnswer": 1,
+      "explanation": "System obwodowy zakłada ruch środków transportu po zamkniętej pętli, gdzie kolejne punkty są obsługiwane po drodze."
+    },
+    {
+      "question": "Na jaką maksymalną wysokość mogą podnosić ładunki elektryczne wózki paletowe?",
+      "options": [
+        "2,5 m",
+        "3,5 m",
+        "5,6 m",
+        "8,0 m"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Elektryczne wózki paletowe są dostosowane do podnoszenia ładunków na wysokość do 5,6 m. Są proste w obsłudze, ekologiczne i ciche."
+    }
+  ]
+}

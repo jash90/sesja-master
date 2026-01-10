@@ -1,0 +1,171 @@
+{
+  "title": "Drogowy Transport Międzynarodowy",
+  "description": "Quiz sprawdzający wiedzę z zakresu regulacji prawnych, taboru transportowego, przewozów ponadgabarytowych, transportu materiałów niebezpiecznych oraz procedur celnych w międzynarodowym transporcie drogowym.",
+  "questions": [
+    {
+      "question": "Jakie prawo jazdy jest wymagane do kierowania samochodem dostawczym o DMC do 3,5 tony?",
+      "options": [
+        "Kategoria B",
+        "Kategoria C",
+        "Kategoria C+E",
+        "Kategoria D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Do kierowania samochodami dostawczymi o dopuszczalnej masie całkowitej do 3,5 tony wystarczy prawo jazdy kategorii B, bez dodatkowych uprawnień."
+    },
+    {
+      "question": "Która organizacja wydaje karnety TIR?",
+      "options": [
+        "Urząd Celny",
+        "Zrzeszenie Międzynarodowych Przewoźników Drogowych",
+        "Ministerstwo Transportu",
+        "Międzynarodowa Organizacja Handlu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Karnet TIR wydawany jest przez Zrzeszenie Międzynarodowych Przewoźników Drogowych. Jest to dokument najwyższego uprzywilejowania w międzynarodowym transporcie drogowym."
+    },
+    {
+      "question": "Ile europalet można załadować do standardowej naczepy typu firanka o długości 13,6 m?",
+      "options": [
+        "Do 24 palet",
+        "Do 33 palet",
+        "Do 66 palet",
+        "Do 48 palet"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Standardowa naczepa typu firanka o długości 13,6 m może pomieścić do 33 europalet na jednym poziomie. Zestawy o DMC 40 ton mogą przewozić do 66 palet."
+    },
+    {
+      "question": "Z którego roku pochodzi Konwencja CMR regulująca międzynarodowy przewóz towarów?",
+      "options": [
+        "1948",
+        "1956",
+        "1970",
+        "1975"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Konwencja CMR dotycząca międzynarodowego przewozu towarów została podpisana w 1956 roku i jest podstawowym aktem prawnym regulującym transport drogowy."
+    },
+    {
+      "question": "Jaka jest standardowa ładowność naczepy typu firanka/plandeka?",
+      "options": [
+        "18 ton",
+        "20 ton",
+        "24 tony",
+        "28 ton"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Standardowa naczepa typu firanka/plandeka ma ładowność 24 tony przy wymiarach 13,6 m długości, 2,45 m szerokości i 2,7-2,85 m wysokości."
+    },
+    {
+      "question": "Która klasa ADR obejmuje materiały promieniotwórcze?",
+      "options": [
+        "Klasa 5",
+        "Klasa 6",
+        "Klasa 7",
+        "Klasa 8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Klasa 7 ADR obejmuje materiały promieniotwórcze. Klasa 5 to materiały utleniające, klasa 6 to materiały trujące i zakaźne, a klasa 8 to materiały żrące."
+    },
+    {
+      "question": "Od jakiej długości pojazdu wymagany jest pilotaż przewozów ponadgabarytowych?",
+      "options": [
+        "16,5 metra",
+        "20 metrów",
+        "23 metry",
+        "30 metrów"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pilotaż przewozów ponadgabarytowych jest obowiązkowy, gdy pojazd przekracza 23 metry długości, 3,2 metra szerokości, 4,5 metra wysokości lub 60 ton masy całkowitej."
+    },
+    {
+      "question": "Co oznacza pierwsza cyfra '3' w numerze rozpoznawczym na tablicy ADR?",
+      "options": [
+        "Gaz",
+        "Materiał ciekły zapalny",
+        "Materiał stały zapalny",
+        "Materiał trujący"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cyfra 3 jako pierwsza cyfra numeru rozpoznawczego ADR oznacza materiał ciekły zapalny. Cyfra 2 oznacza gaz, 4 - materiał stały zapalny, a 6 - materiał trujący."
+    },
+    {
+      "question": "Która z wymienionych platform jest giełdą transportową?",
+      "options": [
+        "Dynafleet",
+        "Trans.eu",
+        "Goodloading",
+        "Logintegra"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trans.eu jest jedną z najpopularniejszych giełd transportowych. Dynafleet to system zarządzania flotą, Goodloading służy do planowania załadunku, a Logintegra to system awizacji."
+    },
+    {
+      "question": "Jakie prawo jazdy jest wymagane do prowadzenia zestawu ciągnik siodłowy + naczepa o DMC 40 ton?",
+      "options": [
+        "Kategoria B",
+        "Kategoria C",
+        "Kategoria C+E",
+        "Kategoria D+E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Do prowadzenia zestawów składających się z ciągnika siodłowego i naczepy o DMC do 40 ton wymagane jest prawo jazdy kategorii C+E."
+    },
+    {
+      "question": "W ilu krajach obecnie funkcjonuje system TIR?",
+      "options": [
+        "W 27 krajach UE",
+        "W około 50 krajach",
+        "W ponad 70 krajach",
+        "W ponad 100 krajach"
+      ],
+      "correctAnswer": 2,
+      "explanation": "System TIR funkcjonuje obecnie w ponad 70 krajach na całym świecie i zarządzany jest przez Międzynarodową Unię Transportu Drogowego (IRU)."
+    },
+    {
+      "question": "Która naczepa ma największą dopuszczalną ładowność?",
+      "options": [
+        "Naczepa typu mega",
+        "Naczepa typu double decker",
+        "Naczepa niskopodwoziowa",
+        "Naczepa typu platforma"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Naczepa niskopodwoziowa może mieć ładowność do 60 ton i długość do 37 metrów. Pozostałe typy naczep mają ładowność w granicach 22,5-26 ton."
+    },
+    {
+      "question": "Zgodnie z Konwencją CMR, za co NIE odpowiada przewoźnik?",
+      "options": [
+        "Za całkowite zaginięcie towaru",
+        "Za uszkodzenie towaru",
+        "Za wadę własną towaru",
+        "Za opóźnienie w dostawie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Zgodnie z art. 17 ust. 2 Konwencji CMR przewoźnik jest zwolniony z odpowiedzialności, jeżeli szkoda wynika z wady własnej towaru. Jest to jedna z okoliczności zwalniających."
+    },
+    {
+      "question": "Które komunikaty celne stosowane są przy procedurze dopuszczenia do obrotu?",
+      "options": [
+        "IE529 i IE599",
+        "ZC291 i ZC299",
+        "CMR i TIR",
+        "ADR i ATP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Przy procedurze dopuszczenia do obrotu stosowane są komunikaty ZC291 i ZC299. Komunikaty IE529 i IE599 stosowane są przy procedurze wywozu."
+    },
+    {
+      "question": "Kiedy wymagane jest zaangażowanie dwóch pilotów przy przewozie ponadgabarytowym?",
+      "options": [
+        "Gdy długość przekracza 23 m lub masa 60 ton",
+        "Gdy szerokość przekracza 3,2 m lub wysokość 4,5 m",
+        "Gdy długość przekracza 30 m lub masa 80 ton",
+        "Zawsze przy przewozach ponadgabarytowych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dwóch pilotów jest wymaganych, gdy pojazd przekracza 30 metrów długości, 3,6 metra szerokości, 4,7 metra wysokości lub 80 ton masy całkowitej."
+    }
+  ]
+}

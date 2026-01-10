@@ -1,0 +1,147 @@
+{
+  "title": "Drogowy Transport Międzynarodowy",
+  "description": "Fiszki obejmujące regulacje prawne (CMR, TIR, ADR), rodzaje taboru transportowego, przewozy ponadgabarytowe, transport materiałów niebezpiecznych, dokumentację oraz procedury celne.",
+  "category": "Logistyka i Transport",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Konwencja CMR",
+      "back": "Konwencja z 1956 roku regulująca międzynarodowy przewóz towarów. Dotyczy przewozów, gdy nadanie i odbiór są w różnych krajach, z których co najmniej jeden jest stroną konwencji. Reguluje odpowiedzialność przewoźnika i ujednolica dokumentację."
+    },
+    {
+      "id": 2,
+      "front": "Za co odpowiada przewoźnik zgodnie z Konwencją CMR?",
+      "back": "Przewoźnik odpowiada za: całkowite zaginięcie towaru, częściowe zaginięcie towaru, uszkodzenie towaru oraz opóźnienie w dostawie — od momentu przyjęcia towaru do jego wydania."
+    },
+    {
+      "id": 3,
+      "front": "Okoliczności zwalniające przewoźnika z odpowiedzialności (CMR)",
+      "back": "Wina osoby uprawnionej (nadawcy/odbiorcy), zlecenie osoby uprawnionej niewynikające z winy przewoźnika, wada własna towaru oraz okoliczności, których przewoźnik nie mógł uniknąć i których następstwom nie mógł zapobiec."
+    },
+    {
+      "id": 4,
+      "front": "Konwencja TIR",
+      "back": "Konwencja z 1975 roku umożliwiająca transport w pojazdach z certyfikatem celnym. Pojazd zamykany jest plombą celną i przewożony bez kontroli pośrednich. System działa w ponad 70 krajach i zarządzany jest przez IRU."
+    },
+    {
+      "id": 5,
+      "front": "Karnet TIR",
+      "back": "Dokument najwyższego uprzywilejowania w międzynarodowym transporcie drogowym, wydawany przez Zrzeszenie Międzynarodowych Przewoźników Drogowych. Pełni funkcję deklaracji celnej i umożliwia szybką odprawę na granicach."
+    },
+    {
+      "id": 6,
+      "front": "Konwencja ADR",
+      "back": "Europejska umowa z 1970 roku dotycząca międzynarodowego przewozu drogowego towarów niebezpiecznych. Określa klasyfikację materiałów niebezpiecznych, wymagania dotyczące opakowań, oznakowania i dokumentacji."
+    },
+    {
+      "id": 7,
+      "front": "Pakiet Mobilności (2020/1054)",
+      "back": "Rozporządzenie UE z 15 lipca 2020 roku regulujące: czas pracy kierowcy, zezwolenia na wykonywanie zawodu przewoźnika, wynagradzanie kierowców, aspekty ekologiczne oraz zarządzanie flotą."
+    },
+    {
+      "id": 8,
+      "front": "Międzynarodowy list przewozowy CMR — wymagane elementy",
+      "back": "Nazwa nadawcy, przewoźnika i odbiorcy, miejsce i data wystawienia, miejsce i data przyjęcia towaru, rodzaj towaru z wagą i ilością oraz instrukcje do formalności celnych."
+    },
+    {
+      "id": 9,
+      "front": "Tabor silnikowy vs bezsilnikowy",
+      "back": "Tabor silnikowy: samochody dostawcze, ciężarowe, ciągniki samochodowe. Tabor bezsilnikowy: naczepy i przyczepy."
+    },
+    {
+      "id": 10,
+      "front": "Samochód dostawczy DMC do 3,5 t — wymagania",
+      "back": "Prawo jazdy kat. B, brak obowiązkowej rejestracji czasu pracy, brak dodatkowych zakazów jazdy, niższe opłaty autostradowe, dwie osie, ładowność ok. 1,2-1,5 t, 5-10 europalet."
+    },
+    {
+      "id": 11,
+      "front": "Samochód ciężarowy DMC 12 t — wymagania",
+      "back": "Prawo jazdy kat. C, obowiązkowe rozliczanie czasu pracy kierowcy, trzy osie, często wyposażony w windę i wózek paletowy. Ładowność 3-12 t w zależności od nadwozia."
+    },
+    {
+      "id": 12,
+      "front": "Zestaw ciągnik + naczepa DMC 40 t — wymagania",
+      "back": "Prawo jazdy kat. C+E, obowiązkowe rozliczanie czasu pracy, możliwość transportu do 66 palet, ładowność standardowej naczepy 24 t."
+    },
+    {
+      "id": 13,
+      "front": "Naczepa typu firanka/plandeka — wymiary",
+      "back": "Długość 13,6 m, szerokość 2,45 m, wysokość 2,7-2,85 m, ładowność 24 t. Załadunek możliwy od tyłu, z boku i od góry."
+    },
+    {
+      "id": 14,
+      "front": "Naczepa typu MEGA",
+      "back": "Naczepa o zwiększonej wysokości (3 m) przy standardowej długości 13,6 m i szerokości 2,45 m. Ładowność 24 t, załadunek z boku, tyłu i góry."
+    },
+    {
+      "id": 15,
+      "front": "Naczepa niskopodwoziowa",
+      "back": "Naczepa do ładunków specjalnych: długość do 37 m, szerokość 2,75-3 m, wysokość ok. 3-3,15 m, ładowność do 60 t. Naczepa otwarta."
+    },
+    {
+      "id": 16,
+      "front": "Definicja przewozu ponadgabarytowego",
+      "back": "Przewóz ładunków przekraczających wraz z pojazdem: 42 t masy, 16,5 m długości, 2,5 m szerokości lub 4 m wysokości. Wymaga specjalnych pozwoleń, zwykle odbywa się nocą."
+    },
+    {
+      "id": 17,
+      "front": "Kiedy wymagany jest pilotaż przewozów ponadgabarytowych?",
+      "back": "Jeden pilot: powyżej 23 m długości, 3,2 m szerokości, 4,5 m wysokości lub 60 t masy. Dwóch pilotów: powyżej 30 m długości, 3,6 m szerokości, 4,7 m wysokości lub 80 t masy."
+    },
+    {
+      "id": 18,
+      "front": "Klasy ADR 1-3",
+      "back": "Klasa 1: materiały wybuchowe. Klasa 2: gazy (palne, niepalne nietrujące, trujące). Klasa 3: materiały ciekłe zapalne."
+    },
+    {
+      "id": 19,
+      "front": "Klasy ADR 4.1, 4.2, 4.3",
+      "back": "Klasa 4.1: materiały stałe zapalne, samoreaktywne, wybuchowe odczulone. Klasa 4.2: materiały samozapalne. Klasa 4.3: materiały wytwarzające z wodą gazy zapalne."
+    },
+    {
+      "id": 20,
+      "front": "Klasy ADR 5-9",
+      "back": "Klasa 5.1: utleniające, 5.2: nadtlenki organiczne. Klasa 6.1: trujące, 6.2: zakaźne. Klasa 7: promieniotwórcze. Klasa 8: żrące. Klasa 9: różne inne niebezpieczne."
+    },
+    {
+      "id": 21,
+      "front": "Pierwsza cyfra numeru ADR — znaczenie",
+      "back": "2 = gaz, 3 = materiał ciekły zapalny, 4 = materiał stały zapalny, 5 = utleniający/nadtlenek, 6 = trujący, 8 = żrący."
+    },
+    {
+      "id": 22,
+      "front": "Druga/trzecia cyfra numeru ADR — znaczenie",
+      "back": "0 = brak dodatkowego zagrożenia, 1 = wybuchowość, 2 = wytwarzanie gazu, 3 = łatwozapalność, 5 = utlenianie, 6 = toksyczność, 7 = promieniotwórczość, 8 = żrącość, 9 = gwałtowna reakcja."
+    },
+    {
+      "id": 23,
+      "front": "Metody zabezpieczania ładunku",
+      "back": "Ciasne ułożenie, pasy transportowe, belki i drążki rozporowe, siatki, łańcuchy transportowe, maty antypoślizgowe, narożniki ochronne, worki."
+    },
+    {
+      "id": 24,
+      "front": "Giełdy transportowe — przykłady",
+      "back": "Trans.eu, Timocom, Transporeon. Dzielą się na: offline/online, otwarte/dedykowane, prywatne. Służą do kojarzenia zleceń z wolnymi ładownościami."
+    },
+    {
+      "id": 25,
+      "front": "Systemy komputerowego wspomagania TSL",
+      "back": "Awizacja: Logintegra, Cargoclix. Planowanie załadunku: Goodloading, Easycargo. Zarządzanie flotą: Dynafleet."
+    },
+    {
+      "id": 26,
+      "front": "Towary unijne — definicja",
+      "back": "Towary całkowicie uzyskane w UE bez składników spoza Unii, towary wprowadzone do UE i dopuszczone do obrotu oraz towary wyprodukowane z obu powyższych kategorii."
+    },
+    {
+      "id": 27,
+      "front": "Procedura dopuszczenia do obrotu",
+      "back": "Stosowana przy przywozie towarów do UE w celu nadania towarom nieunijnym statusu unijnych. Wymaga opłat celnych i kodu Wspólnej Taryfy Celnej. Komunikaty: ZC291, ZC299."
+    },
+    {
+      "id": 28,
+      "front": "Procedura wywozu",
+      "back": "Obejmuje towary unijne wywożone poza UE. Nie wymaga pozwolenia ani należności celnych wywozowych. Komunikaty: IE529, IE599."
+    }
+  ]
+}

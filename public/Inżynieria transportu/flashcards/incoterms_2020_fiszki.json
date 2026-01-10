@@ -1,0 +1,147 @@
+{
+  "title": "Fiszki: INCOTERMS 2020",
+  "description": "Zestaw fiszek do nauki międzynarodowych warunków handlowych INCOTERMS 2020, obejmujący definicje, podział na grupy, obowiązki stron oraz rozkład kosztów i ryzyka.",
+  "category": "Logistyka i handel międzynarodowy",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co oznacza skrót INCOTERMS?",
+      "back": "International Commercial Terms – międzynarodowe warunki sprzedaży mające na celu ułatwienie handlu pomiędzy podmiotami z różnych krajów."
+    },
+    {
+      "id": 2,
+      "front": "Ile reguł zawiera INCOTERMS 2020 i jak się dzielą?",
+      "back": "11 reguł: 7 powszechnych (EXW, FCA, CPT, CIP, DAP, DPU, DDP) oraz 4 dla transportu morskiego i śródlądowego (FAS, FOB, CFR, CIF)."
+    },
+    {
+      "id": 3,
+      "front": "Czego NIE regulują reguły INCOTERMS?",
+      "back": "Nie regulują: czasu i miejsca płatności, rozwiązywania sporów, specyfikacji produktów, konsekwencji opóźnień, sankcji, taryf celnych, zakazów importu/eksportu, praw własności intelektualnej."
+    },
+    {
+      "id": 4,
+      "front": "Grupa E (Departure) – charakterystyka",
+      "back": "Obejmuje tylko regułę EXW. Minimalne zaangażowanie sprzedającego – udostępnia towar do dyspozycji kupującego. Nie przeprowadza odprawy celnej ani nie ponosi kosztów załadunku."
+    },
+    {
+      "id": 5,
+      "front": "Grupa F (Main Carriage Unpaid) – charakterystyka",
+      "back": "Obejmuje FCA, FAS, FOB. Sprzedający dokonuje odprawy eksportowej, ale nie opłaca kosztów transportu ani ubezpieczenia."
+    },
+    {
+      "id": 6,
+      "front": "Grupa C (Main Carriage Paid) – charakterystyka",
+      "back": "Obejmuje CFR, CIF, CPT, CIP. Sprzedający zawiera umowę przewozu i ponosi koszty transportu, ale ryzyko przechodzi na kupującego już w momencie nadania towaru."
+    },
+    {
+      "id": 7,
+      "front": "Grupa D (Arrival) – charakterystyka",
+      "back": "Obejmuje DAP, DPU, DDP. Sprzedający zobowiązuje się dostarczyć towar do określonego miejsca lub portu przeznaczenia."
+    },
+    {
+      "id": 8,
+      "front": "EXW (Ex Works) – definicja i moment przeniesienia ryzyka",
+      "back": "Dostawa uznana za dokonaną w momencie pozostawienia towaru do dyspozycji kupującego w oznaczonym miejscu. Sprzedający nie ładuje towaru ani nie przeprowadza odprawy eksportowej."
+    },
+    {
+      "id": 9,
+      "front": "Kto przeprowadza odprawę eksportową w regule EXW?",
+      "back": "Kupujący – to jedyna reguła INCOTERMS, w której odprawa eksportowa leży po stronie kupującego."
+    },
+    {
+      "id": 10,
+      "front": "FCA (Free Carrier) – definicja i moment przeniesienia ryzyka",
+      "back": "Sprzedający ponosi koszty do momentu przekazania towaru pierwszemu przewoźnikowi wskazanemu przez kupującego. Ryzyko przechodzi w momencie załadunku."
+    },
+    {
+      "id": 11,
+      "front": "FAS (Free Alongside Ship) – definicja",
+      "back": "Reguła tylko dla transportu morskiego/śródlądowego. Sprzedający dostarcza towar wzdłuż burty statku w uzgodnionym porcie. Od tego momentu ryzyko i koszty ponosi kupujący."
+    },
+    {
+      "id": 12,
+      "front": "FOB (Free On Board) – moment przeniesienia ryzyka",
+      "back": "Ryzyko i koszty przechodzą na kupującego w momencie przekroczenia przez towar burty statku. Sprzedający ponosi koszty załadunku."
+    },
+    {
+      "id": 13,
+      "front": "Różnica między FAS a FOB",
+      "back": "FAS – towar dostarczony wzdłuż burty statku (przed załadunkiem). FOB – towar dostarczony na pokład statku. W FOB sprzedający dodatkowo ponosi koszty załadunku."
+    },
+    {
+      "id": 14,
+      "front": "CFR (Cost and Freight) – definicja",
+      "back": "Reguła morska. Sprzedający dostarcza towar na pokład statku i opłaca fracht. Ryzyko przechodzi na kupującego gdy towar znajdzie się na pokładzie, niezależnie od dotarcia do celu."
+    },
+    {
+      "id": 15,
+      "front": "CIF (Cost Insurance and Freight) – definicja",
+      "back": "Reguła morska. Jak CFR, ale sprzedający dodatkowo zawiera umowę ubezpieczenia i dostarcza ją kupującemu."
+    },
+    {
+      "id": 16,
+      "front": "Różnica między CFR a CIF",
+      "back": "W CIF sprzedający ma obowiązek ubezpieczenia towaru, w CFR nie ma takiego obowiązku – kupujący sam decyduje o ubezpieczeniu."
+    },
+    {
+      "id": 17,
+      "front": "CPT (Carriage Paid To) – definicja",
+      "back": "Reguła uniwersalna. Sprzedający opłaca fracht do uzgodnionego miejsca. Ryzyko przechodzi na kupującego w momencie przekazania towaru przewoźnikowi."
+    },
+    {
+      "id": 18,
+      "front": "CIP (Carriage and Insurance Paid To) – definicja",
+      "back": "Reguła uniwersalna. Jak CPT, ale sprzedający dodatkowo ubezpiecza towar. Przy kilku przewoźnikach odpowiada tylko do przekazania pierwszemu z nich."
+    },
+    {
+      "id": 19,
+      "front": "Różnica między CPT/CIP a CFR/CIF",
+      "back": "CPT i CIP to reguły uniwersalne (wszystkie rodzaje transportu). CFR i CIF dotyczą tylko transportu morskiego i śródlądowego."
+    },
+    {
+      "id": 20,
+      "front": "DAP (Delivered At Place) – definicja",
+      "back": "Reguła uniwersalna. Sprzedający dostarcza towar gotowy do rozładunku w określonym miejscu. Odpowiada za transport i ryzyko do momentu dostarczenia. Rozładunek po stronie kupującego."
+    },
+    {
+      "id": 21,
+      "front": "DPU (Delivered at Place Unloaded) – definicja",
+      "back": "Reguła uniwersalna. Sprzedający dostarcza i rozładowuje towar w oznaczonym miejscu. Ryzyko przechodzi na kupującego dopiero po rozładunku."
+    },
+    {
+      "id": 22,
+      "front": "Różnica między DAP a DPU",
+      "back": "W DPU sprzedający odpowiada za rozładunek towaru. W DAP towar jest dostarczany gotowy do rozładunku, ale sam rozładunek wykonuje kupujący."
+    },
+    {
+      "id": 23,
+      "front": "DDP (Delivered Duty Paid) – definicja",
+      "back": "Maksymalne zaangażowanie sprzedającego. Odpowiada za transport, odprawę eksportową I importową oraz opłacenie cła i podatków. Kupujący tylko odbiera towar i płaci za rozładunek."
+    },
+    {
+      "id": 24,
+      "front": "Która reguła oznacza maksymalne zaangażowanie sprzedającego?",
+      "back": "DDP (Delivered Duty Paid) – sprzedający odpowiada za wszystko: transport, obie odprawy celne, cła i podatki. To przeciwieństwo reguły EXW."
+    },
+    {
+      "id": 25,
+      "front": "Porównanie EXW i DDP",
+      "back": "EXW – minimum obowiązków sprzedającego (tylko udostępnienie towaru). DDP – maksimum obowiązków sprzedającego (transport + obie odprawy celne + cła). To dwa skrajne bieguny INCOTERMS."
+    },
+    {
+      "id": 26,
+      "front": "W których regułach sprzedający ubezpiecza towar?",
+      "back": "CIF (transport morski) i CIP (wszystkie rodzaje transportu). W pozostałych regułach ubezpieczenie leży po stronie kupującego lub jest opcjonalne."
+    },
+    {
+      "id": 27,
+      "front": "Czy postanowienia umowy mogą być inne niż reguły INCOTERMS?",
+      "back": "Tak. Postanowienia umowne mają pierwszeństwo przed regułami INCOTERMS. Strony mogą modyfikować lub uzupełniać reguły zgodnie z potrzebami transakcji."
+    },
+    {
+      "id": 28,
+      "front": "Która reguła jest najwygodniejsza dla kupującego?",
+      "back": "DDP – kupujący otrzymuje towar na miejsce z opłaconymi cłami i podatkami. Minusem jest brak kontroli nad towarem podczas transportu."
+    }
+  ]
+}

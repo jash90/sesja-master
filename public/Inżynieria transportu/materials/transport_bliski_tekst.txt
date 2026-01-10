@@ -1,0 +1,91 @@
+TRANSPORT BLISKI
+
+Transport wewnętrzny to wszystkie operacje związane z przemieszczaniem dóbr i osób na terenie przedsiębiorstw. Transport ten realizowany jest w obrębie jednej lub kilku hal produkcyjnych przy użyciu specjalistycznych maszyn i środków transportu. System transportu wewnętrznego obejmuje całościowe działania związane z przemieszczaniem ładunku na terenie zakładu, począwszy od momentu przyjęcia surowców, przez cały proces produkcyjny, aż do chwili przekazania gotowego wyrobu do transportu zewnętrznego.
+
+Transport bliski ma swoje specyficzne wymagania. Powinien charakteryzować się maksymalną szybkością transportowania oraz krótkimi czasami załadunku i rozładunku. Bardzo ważne są krótkie drogi transportowe, które reguluje polska norma oznaczona symbolem PN-M-78010 z 1968 roku dotycząca dróg i otworów drzwiowych w transporcie wewnętrznym. Istotne jest również stosowanie odpowiednich środków transportu oraz dążenie do możliwie najmniejszej liczby przeładunków, ponieważ każdy dodatkowy przeładunek zwiększa koszty i ryzyko uszkodzenia towaru.
+
+
+PODZIAŁ ŚRODKÓW TRANSPORTU WEWNĘTRZNEGO
+
+Środki transportu wewnętrznego można klasyfikować według kilku kryteriów.
+
+Ze względu na zasięg działania wyróżnia się środki transportu o zasięgu nieograniczonym, które mogą przemieszczać się swobodnie po całym terenie zakładu, oraz środki o zasięgu ograniczonym, których pole działania jest z góry określone, na przykład przez tory lub prowadnice.
+
+Ze względu na rodzaj napędu wyróżnia się środki transportu o napędzie ręcznym, gdzie siła przemieszczania pochodzi od pracownika, oraz środki o napędzie zmechanizowanym, wykorzystujące silniki elektryczne, spalinowe czy hydrauliczne.
+
+Ze względu na charakter ruchu wyróżnia się środki transportu o ruchu przerywanym, działające cyklicznie z przerwami między kolejnymi operacjami, oraz środki o ruchu ciągłym, przemieszczające ładunki nieprzerwanie.
+
+Ze względu na cechy konstrukcyjne wyróżnia się trzy główne grupy: dźwignice, przenośniki oraz wózki i inne urządzenia kołowe.
+
+
+MODELE ORGANIZACJI TRANSPORTU WEWNĘTRZNEGO
+
+System wahadłowy polega na przemieszczaniu ładunków między dwoma punktami tam i z powrotem.
+
+System obwodowy zakłada ruch środków transportu po zamkniętej pętli, gdzie kolejne punkty są obsługiwane po drodze.
+
+System promieniowy charakteryzuje się jednym centralnym punktem, z którego rozchodzą się trasy do różnych miejsc docelowych.
+
+System nieregularny nie ma ustalonego schematu i środki transportu poruszają się w zależności od bieżących potrzeb.
+
+
+POZIOMY TRANSPORTU WEWNĘTRZNEGO
+
+Transport międzywydziałowy obejmuje przemieszczanie ładunków między różnymi wydziałami i halami produkcyjnymi oraz transport do i z magazynu.
+
+Transport wewnątrzwydziałowy obejmuje operacje wewnątrz jednej hali produkcyjnej i obsługę procesu technologicznego.
+
+Transport międzystanowiskowy to przemieszczanie materiałów i półfabrykatów pomiędzy poszczególnymi stanowiskami produkcyjnymi oraz gniazdami w liniach obróbkowych. Odbywa się on z pominięciem operacji magazynowych i dotyczy też transportu od i do punktów zdawczo-odbiorczych. Realizowany jest w ramach jednego wydziału i może mieć charakter przelotowy lub boczny. Do tego typu transportu wykorzystuje się głównie przenośniki i wózki jezdniowe.
+
+Transport stanowiskowy obejmuje czynności manipulacyjne wykonywane bezpośrednio przed i po zakończeniu obróbki elementu na danym stanowisku. Obejmuje przenoszenie przedmiotów, wkładanie ich do zasobników, oddzielanie, pakowanie, wydawanie elementów oraz załadowywanie i rozładowywanie urządzeń transportowych. Na tym poziomie stosuje się przenośniki wałkowe i wałkowo-okrężne, żurawie słupowe, manipulatory podciśnieniowe oraz wózki manipulacyjne.
+
+
+DŹWIGNICE
+
+Dźwignice to urządzenia przeznaczone do pracy przerywanej, umożliwiające podnoszenie i opuszczanie ładunku oraz transport w ograniczonym zakresie. Przenoszenie kolejnych ładunków odbywa się z przerwami niezbędnymi do wykonania czynności manipulacyjnych, takich jak zaczepienie i odczepienie ładunku. Do dźwignic zalicza się cięgniki, suwnice, żurawie i dźwigi.
+
+Cięgniki to najprostsze urządzenia dźwignicowe. Służą do przemieszczania ładunków za pośrednictwem cięgna, czyli liny lub łańcucha, zakończonego hakiem lub urządzeniem chwytakowym. Mogą być napędzane siłą mięśni człowieka lub przez silnik.
+
+Suwnice to urządzenia dźwigowo-transportowe składające się z elementu nośnego przemieszczającego się po torach lub nawierzchni placu oraz jeżdżącego po nim wciągnika lub wciągarki. Służą do przemieszczania materiałów zarówno w pionie, jak i w poziomie. Wyróżnia się suwnice pomostowe, półbramowe oraz bramowe.
+
+Żurawie składają się z obrotowej kolumny i wychylnego wysięgnika, na którego końcu zainstalowany jest cięgnik. Służą do przemieszczania ładunków w ruchu pionowym i poziomym. Mogą być stacjonarne lub szynowe, dolnoobrotowe lub górnoobrotowe.
+
+Dźwigi to urządzenia przeznaczone do pionowego transportu ładunków lub osób. Podnoszą towary na określone wysokości i składają się ze sztywnych prowadnic, między którymi porusza się kabina.
+
+
+PRZENOŚNIKI
+
+Przenośniki to środki transportu bliskiego o ruchu ciągłym, służące do przenoszenia materiałów po odpowiednio ukształtowanej trasie. Można dzięki nim transportować pojedyncze przedmioty, jednostki ładunkowe oraz materiały sypkie. Przenoszony materiał nazywany jest nosiwem.
+
+Przenośniki taśmowe przeznaczone są do transportu materiałów sypkich oraz drobnicowych. Elementem nośnym jest taśma wykonana z gumy o różnej grubości i strukturze. Transport możliwy jest w systemie poziomym oraz pod pewnym kątem w górę, jednak kąt wzniesienia nie może przekraczać trzydziestu stopni.
+
+Przenośniki łańcuchowe służą do poziomego transportu ciężkich ładunków o masie nieprzekraczającej tysiąca pięciuset kilogramów. Wykorzystuje się je głównie do transportu palet ustawionych prostopadle do kierunku ruchu. Transport odbywa się na cięgnach łańcuchowych, a przenośniki te składają się z modułów o maksymalnej długości około sześciu metrów.
+
+Przenośniki podwieszane przeznaczone są do transportu ładunków w halach, gdzie elementy konstrukcyjne przenoszone są ponad ciągami komunikacyjnymi. Można podwieszać na nich elementy o ciężarze nieprzekraczającym dwóch tysięcy kilogramów. Składają się z toru jezdnego, po którym mogą poruszać się wózki z zawieszkami, lub z łańcucha z zamocowanymi zawieszkami.
+
+
+WÓZKI TRANSPORTOWE
+
+Wózki transportowe dzielą się na ręczne i zmechanizowane.
+
+Wózki ręczne to urządzenia pracujące w ruchu przerywanym, służące do przewożenia towarów na bliskie odległości wewnątrz zakładu. Wózki załadowcze przenoszą towar ładowany ręcznie lub za pomocą oddzielnego urządzenia. Wózki unoszące podnoszą ładunek na wysokość umożliwiającą jego przewóz i posiadają system hydrauliczny. Ich konstrukcja pozwala na manewrowanie w ciasnych pomieszczeniach. Wózki podnośnikowe przenoszą ładunek na wysokość umożliwiającą nie tylko przewóz, ale też składowanie.
+
+Wózki zmechanizowane obejmują między innymi elektryczne wózki paletowe wyposażone w napęd elektryczny. Są proste w obsłudze, ekologiczne i ciche. Dostosowane są do podnoszenia ładunków na wysokość do pięciu i pół metra. Mogą występować jako urządzenia prowadzone, wózki z podestem dla operatora lub paleciaki z masztem.
+
+Wózki widłowe to urządzenia posiadające napęd spalinowy, gazowy lub akumulatorowy. Obsługuje je operator znajdujący się za masztem, który ma możliwość regulacji wysokości podnoszenia, rozstawu wideł oraz nachylenia ładunku względem środka transportu.
+
+
+DROGI TRANSPORTOWE
+
+Prawidłowe zaprojektowanie dróg transportowych jest kluczowe dla bezpieczeństwa i efektywności transportu wewnętrznego.
+
+Przy ruchu jednokierunkowym szerokość drogi oblicza się według określonych wzorów. Dla ruchu pieszego z ładunkiem szerokość drogi powinna wynosić szerokość człowieka z ładunkiem plus trzydzieści centymetrów, ale nie mniej niż sto dwadzieścia centymetrów. Dla ruchu środków transportowych szerokość to szerokość pojazdu plus sześćdziesiąt centymetrów, minimum również sto dwadzieścia centymetrów. Gdy na drodze porusza się zarówno transport, jak i piesi, przy transporcie bezsilnikowym dodaje się dziewięćdziesiąt centymetrów, a przy silnikowym sto centymetrów.
+
+Przy ruchu dwukierunkowym wymiary są odpowiednio większe. Dla pieszego z ładunkiem to podwójna szerokość człowieka z ładunkiem plus sześćdziesiąt centymetrów. Dla środków transportowych podwójna szerokość pojazdu plus dziewięćdziesiąt centymetrów. Przy ruchu mieszanym z transportem bezsilnikowym dodaje się sto osiemdziesiąt centymetrów, a z silnikowym dwieście centymetrów.
+
+Drogi transportowe muszą być odpowiednio oznaczone. Maluje się je białą lub żółtą farbą, uwzględniając zwężenia i przejścia dla pieszych. Muszą być oświetlone w przypadku ograniczonego dostępu do światła słonecznego i nie mogą być zastawione jakimkolwiek sprzętem, materiałami ani narzędziami.
+
+
+PODSUMOWANIE
+
+Transport bliski to złożony system obejmujący różnorodne środki transportu, od prostych wózków ręcznych po zaawansowane suwnice i przenośniki. Kluczem do efektywnego transportu wewnętrznego jest odpowiedni dobór środków transportu do specyfiki przedsiębiorstwa, właściwe zaprojektowanie dróg transportowych oraz przestrzeganie zasad bezpieczeństwa. Dobrze zorganizowany transport wewnętrzny przekłada się bezpośrednio na wydajność całego procesu produkcyjnego.

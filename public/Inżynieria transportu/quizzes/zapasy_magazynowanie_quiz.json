@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Zapasy i Magazynowanie",
+  "description": "Quiz sprawdzający wiedzę z zakresu zarządzania zapasami, metod analizy zapasów, rodzajów magazynów, stref magazynowych, układów technologicznych oraz systemów składowania",
+  "questions": [
+    {
+      "question": "Jak nazywa się metoda wydawania zapasów, w której najpierw wydaje się towary przyjęte jako pierwsze?",
+      "options": [
+        "FIFO (First In, First Out)",
+        "LIFO (Last In, First Out)",
+        "FEFO (First Expired, First Out)",
+        "ABC (Activity Based Costing)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "FIFO (First In, First Out) oznacza 'pierwsze przyszło, pierwsze wyszło'. W tej metodzie rozchód księgowany jest począwszy od jednostek, które trafiły na magazyn jako pierwsze."
+    },
+    {
+      "question": "Który system charakteryzuje się niskim poziomem zapasów i małymi partiami produkcyjnymi?",
+      "options": [
+        "System PUSH",
+        "System PULL",
+        "System ABC",
+        "System WMS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "System PULL (ssący) charakteryzuje się niskim poziomem zapasów, małymi partiami produkcyjnymi oraz rzadszymi problemami z jakością. Produkcja rozpoczyna się dopiero gdy pojawi się rzeczywiste zapotrzebowanie."
+    },
+    {
+      "question": "Które zapasy stanowią rezerwę utrzymywaną na wypadek sytuacji losowej?",
+      "options": [
+        "Zapasy standardowe",
+        "Zapasy zapobiegawcze",
+        "Zapasy zabezpieczające",
+        "Zapasy wymuszone"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Zapasy zabezpieczające to rezerwa utrzymywana w magazynie na wypadek sytuacji losowej, np. opóźnień w dostawach, awarii maszyn czy nagłego wzrostu popytu."
+    },
+    {
+      "question": "W analizie ABC, która grupa zapasów charakteryzuje się największym udziałem ilościowym (60-80%), ale najmniejszym udziałem wartościowym (5%)?",
+      "options": [
+        "Grupa A",
+        "Grupa B",
+        "Grupa C",
+        "Grupa X"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Grupa C to zasoby masowe o dużym udziale ilościowym (60-80%), ale niskim udziale wartościowym (około 5%). Można nimi zarządzać w sposób uproszczony."
+    },
+    {
+      "question": "Jaki typ magazynu jest przeznaczony do składowania zapasów odpornych na warunki atmosferyczne, takich jak wyroby stalowe?",
+      "options": [
+        "Magazyn zamknięty",
+        "Magazyn półotwarty",
+        "Magazyn otwarty",
+        "Magazyn chłodniczy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Magazyn otwarty to najtańszy rodzaj magazynu (place, składowiska) służący do składowania zapasów odpornych na warunki atmosferyczne, np. materiałów mineralnych, wyrobów stalowych i żeliwnych."
+    },
+    {
+      "question": "Która metoda wydawania zapasów jest stosowana dla produktów o ograniczonym terminie ważności?",
+      "options": [
+        "FIFO",
+        "LIFO",
+        "FEFO",
+        "HIFO"
+      ],
+      "correctAnswer": 2,
+      "explanation": "FEFO (First Expired, First Out) oznacza 'pierwsza data ważności, pierwsze wyszło'. Towar wydawany jest według kolejności dat przydatności – najpierw ten z najkrótszym terminem ważności."
+    },
+    {
+      "question": "W której strefie magazynu odbywa się formowanie paletowych jednostek ładunkowych i kompletacja towaru pod zamówienie?",
+      "options": [
+        "Strefa przyjęć",
+        "Strefa składowania",
+        "Strefa kompletacji",
+        "Strefa wydań"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Strefa kompletacji to miejsce, gdzie formuje się paletowe jednostki ładunkowe, kompletuje towar pod konkretne zamówienie oraz przeprowadza kontrolę ilościową i jakościową przed wydaniem."
+    },
+    {
+      "question": "Czym jest cross docking?",
+      "options": [
+        "Metoda składowania zapasów według rotacji",
+        "Wydawanie towaru bez magazynowania lub z bardzo krótkim magazynowaniem",
+        "System automatycznego transportu wewnętrznego",
+        "Technika kompletacji 'produkt do operatora'"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cross docking to rozwiązanie logistyczne, w którym przyjęty towar zostaje od razu wydany bez konieczności magazynowania lub z magazynowaniem przez bardzo krótki czas, co minimalizuje koszty składowania."
+    },
+    {
+      "question": "Który układ technologiczny magazynu charakteryzuje się umieszczeniem stref przyjęć i wydań obok siebie lub jako wspólnej przestrzeni?",
+      "options": [
+        "Układ przelotowy",
+        "Układ kątowy",
+        "Układ workowy",
+        "Układ liniowy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Układ workowy charakteryzuje się tym, że strefy przyjęć i wydań są umieszczone obok siebie lub stanowią wspólną przestrzeń. Pozwala na efektywniejsze wykorzystanie zasobów, ale niesie ryzyko krzyżowania dróg i błędów."
+    },
+    {
+      "question": "Analiza XYZ klasyfikuje zapasy według:",
+      "options": [
+        "Wartości zapasów",
+        "Wielkości opakowań",
+        "Regularności zapotrzebowania i dokładności prognozowania",
+        "Odległości od strefy wydań"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Analiza XYZ klasyfikuje zapasy według regularności zapotrzebowania i dokładności prognozowania: X (duża regularność), Y (sezonowość), Z (duża nieregularność). Najlepsze efekty daje w połączeniu z metodą ABC."
+    },
+    {
+      "question": "Które regały umożliwiają wyłącznie blokowe składowanie towaru według zasady LIFO?",
+      "options": [
+        "Regały tradycyjne",
+        "Regały przesuwne",
+        "Regały dynamiczne",
+        "Regały wjezdne"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Regały wjezdne (drive-in) umożliwiają wyłącznie blokowe składowanie według zasady LIFO. Są korzystne przy dużych ilościach tego samego asortymentu, ale bez bezpośredniego dostępu do każdej palety."
+    },
+    {
+      "question": "Co oznacza skrót WMS w kontekście magazynowania?",
+      "options": [
+        "Warehouse Material Storage",
+        "Wholesale Management Software",
+        "Warehouse Management System",
+        "Work Method Standardization"
+      ],
+      "correctAnswer": 2,
+      "explanation": "WMS (Warehouse Management System) to system zarządzania magazynem – oprogramowanie wspierające wszystkie procesy magazynowe: przyjmowanie, składowanie, lokalizowanie, kompletację i wydawanie towarów."
+    },
+    {
+      "question": "W systemie PUSH produkcja opiera się na:",
+      "options": [
+        "Rzeczywistym zapotrzebowaniu klienta",
+        "Prognozach sprzedaży",
+        "Bieżących stanach magazynowych",
+        "Zamówieniach z poprzedniego okresu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W systemie PUSH (pchającym) produkcja opiera się na prognozach sprzedaży, a nie na rzeczywistym zapotrzebowaniu. Gdy prognozy się nie sprawdzają, przedsiębiorstwo zostaje z nadmiarem niesprzedanych zapasów."
+    },
+    {
+      "question": "Która grupa w połączonej analizie ABC/XYZ charakteryzuje się dużą wartością obrotu, przewidywalnym popytem i niewielkimi błędami prognoz?",
+      "options": [
+        "Grupa CZ",
+        "Grupa AX",
+        "Grupa BY",
+        "Grupa AZ"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Grupa AX to zasoby generujące dużą wartość obrotu (A), z przewidywalnym i stałym popytem oraz niewielkimi błędami prognoz (X). Jest to grupa najłatwiejsza w zarządzaniu mimo wysokiej wartości."
+    },
+    {
+      "question": "Metoda składowania według poziomów polega na rozmieszczeniu zapasów według kryterium:",
+      "options": [
+        "Częstotliwości rotacji",
+        "Daty przyjęcia do magazynu",
+        "Wagi towaru",
+        "Wartości jednostkowej"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Metoda według poziomów składowania dzieli zapasy według wagi. Na najniższym poziomie składowane są wyroby najcięższe (np. powyżej 600 kg), na średnim o masie 400-600 kg, a na najwyższym poniżej 400 kg."
+    }
+  ]
+}

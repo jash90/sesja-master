@@ -1,0 +1,167 @@
+{
+  "title": "Transport bliski - fiszki do nauki",
+  "description": "Zestaw fiszek obejmujący podstawowe pojęcia z zakresu transportu wewnętrznego, środków transportu bliskiego, dźwignic, przenośników, wózków oraz organizacji dróg transportowych.",
+  "category": "Logistyka i transport wewnętrzny",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Transport wewnętrzny - definicja",
+      "back": "Operacje związane z przemieszczaniem dóbr i osób na terenie przedsiębiorstw produkcyjnych oraz usługowych, realizowane w obrębie jednej lub kilku hal produkcyjnych przy użyciu specjalistycznych maszyn i środków transportu."
+    },
+    {
+      "id": 2,
+      "front": "System transportu wewnętrznego - definicja",
+      "back": "Działania związane z przemieszczaniem ładunku na terenie zakładu od chwili przyjęcia surowców, poprzez proces produkcyjny, do chwili przekazania wyrobu gotowego do transportu zewnętrznego."
+    },
+    {
+      "id": 3,
+      "front": "Jakie są wymagania transportu bliskiego?",
+      "back": "Maksymalna szybkość transportowania, krótkie czasy załadunku i rozładunku, krótkie drogi transportowe, stosowanie odpowiednich środków transportu oraz możliwie najmniejsza liczba przeładunków."
+    },
+    {
+      "id": 4,
+      "front": "Podział środków transportu ze względu na zasięg",
+      "back": "Środki transportu o zasięgu nieograniczonym (swobodne przemieszczanie po terenie zakładu) oraz środki o zasięgu ograniczonym (pole działania określone przez tory lub prowadnice)."
+    },
+    {
+      "id": 5,
+      "front": "Podział środków transportu ze względu na rodzaj napędu",
+      "back": "Środki transportu o napędzie ręcznym (siła od pracownika) oraz środki o napędzie zmechanizowanym (silniki elektryczne, spalinowe, hydrauliczne)."
+    },
+    {
+      "id": 6,
+      "front": "Podział środków transportu ze względu na charakter ruchu",
+      "back": "Środki transportu o ruchu przerywanym (działające cyklicznie, z przerwami) oraz środki o ruchu ciągłym (przemieszczające ładunki nieprzerwanie)."
+    },
+    {
+      "id": 7,
+      "front": "Podział środków transportu ze względu na cechy konstrukcyjne",
+      "back": "Trzy główne grupy: dźwignice, przenośniki oraz wózki i inne urządzenia kołowe."
+    },
+    {
+      "id": 8,
+      "front": "System wahadłowy transportu wewnętrznego",
+      "back": "Model organizacji polegający na przemieszczaniu ładunków między dwoma punktami tam i z powrotem."
+    },
+    {
+      "id": 9,
+      "front": "System obwodowy transportu wewnętrznego",
+      "back": "Model organizacji zakładający ruch środków transportu po zamkniętej pętli, gdzie kolejne punkty są obsługiwane po drodze."
+    },
+    {
+      "id": 10,
+      "front": "System promieniowy transportu wewnętrznego",
+      "back": "Model organizacji z jednym centralnym punktem, z którego rozchodzą się trasy do różnych miejsc docelowych."
+    },
+    {
+      "id": 11,
+      "front": "Transport międzywydziałowy - zakres",
+      "back": "Przemieszczanie ładunków między różnymi wydziałami i halami produkcyjnymi oraz transport do i z magazynu."
+    },
+    {
+      "id": 12,
+      "front": "Transport międzystanowiskowy - zakres",
+      "back": "Przemieszczanie materiałów i półfabrykatów między stanowiskami produkcyjnymi w ramach jednego wydziału, z pominięciem operacji magazynowych. Może mieć charakter przelotowy lub boczny."
+    },
+    {
+      "id": 13,
+      "front": "Transport stanowiskowy - zakres",
+      "back": "Czynności manipulacyjne wykonywane przed i po obróbce elementu: przenoszenie przedmiotów, wkładanie do zasobników, pakowanie, załadunek i rozładunek urządzeń transportowych."
+    },
+    {
+      "id": 14,
+      "front": "Dźwignice - definicja i przykłady",
+      "back": "Urządzenia do pracy przerywanej umożliwiające podnoszenie, opuszczanie i transport ładunku w ograniczonym zakresie. Przykłady: cięgniki, suwnice, żurawie, dźwigi."
+    },
+    {
+      "id": 15,
+      "front": "Cięgniki - budowa i zastosowanie",
+      "back": "Najprostsze urządzenia dźwignicowe służące do przemieszczania ładunków za pomocą cięgna (liny lub łańcucha) zakończonego hakiem lub chwytakiem. Napęd ręczny lub silnikowy."
+    },
+    {
+      "id": 16,
+      "front": "Suwnice - budowa i rodzaje",
+      "back": "Urządzenia dźwigowo-transportowe złożone z elementu nośnego na torach oraz wciągnika lub wciągarki. Służą do transportu w pionie i poziomie. Rodzaje: pomostowe, półbramowe, bramowe."
+    },
+    {
+      "id": 17,
+      "front": "Żurawie - budowa i rodzaje",
+      "back": "Urządzenia z obrotową kolumną i wychylnym wysięgnikiem z cięgnikiem na końcu. Transport pionowy i poziomy. Rodzaje: stacjonarne, szynowe, dolnoobrotowe, górnoobrotowe."
+    },
+    {
+      "id": 18,
+      "front": "Dźwigi - definicja",
+      "back": "Urządzenia do pionowego transportu ładunków lub osób, podnoszące towary na określone wysokości, złożone ze sztywnych prowadnic i poruszającej się między nimi kabiny."
+    },
+    {
+      "id": 19,
+      "front": "Przenośniki - definicja",
+      "back": "Środki transportu bliskiego o ruchu ciągłym służące do przenoszenia materiałów po ukształtowanej trasie. Transportują pojedyncze przedmioty, jednostki ładunkowe i materiały sypkie."
+    },
+    {
+      "id": 20,
+      "front": "Nosiwo - definicja",
+      "back": "Termin techniczny oznaczający materiał przenoszony przez przenośniki."
+    },
+    {
+      "id": 21,
+      "front": "Przenośniki taśmowe - charakterystyka",
+      "back": "Przeznaczone do transportu materiałów sypkich i drobnicowych. Element nośny to gumowa taśma. Maksymalny kąt wzniesienia: 30 stopni."
+    },
+    {
+      "id": 22,
+      "front": "Przenośniki łańcuchowe - charakterystyka",
+      "back": "Do poziomego transportu ciężkich ładunków do 1500 kg, głównie palet prostopadłych do kierunku ruchu. Składają się z modułów o długości do 6 m."
+    },
+    {
+      "id": 23,
+      "front": "Przenośniki podwieszane - charakterystyka",
+      "back": "Transport ładunków ponad ciągami komunikacyjnymi w halach. Maksymalny ciężar: 2000 kg. Składają się z toru jezdnego z wózkami lub łańcucha z zawieszkami."
+    },
+    {
+      "id": 24,
+      "front": "Wózki załadowcze - funkcja",
+      "back": "Wózki ręczne przenoszące towar ładowany ręcznie lub za pomocą oddzielnego urządzenia."
+    },
+    {
+      "id": 25,
+      "front": "Wózki unoszące - funkcja i cechy",
+      "back": "Podnoszą ładunek na wysokość umożliwiającą przewóz. Posiadają system hydrauliczny. Konstrukcja pozwala na manewrowanie w ciasnych pomieszczeniach."
+    },
+    {
+      "id": 26,
+      "front": "Różnica między wózkami unoszącymi a podnośnikowymi",
+      "back": "Wózki unoszące podnoszą tylko na wysokość przewozu, natomiast podnośnikowe na wysokość umożliwiającą zarówno przewóz, jak i składowanie."
+    },
+    {
+      "id": 27,
+      "front": "Elektryczne wózki paletowe - charakterystyka",
+      "back": "Wózki zmechanizowane z napędem elektrycznym. Proste w obsłudze, ekologiczne, ciche. Podnoszenie do 5,6 m. Typy: prowadzone, z podestem, paleciaki z masztem."
+    },
+    {
+      "id": 28,
+      "front": "Wózki widłowe - napęd i obsługa",
+      "back": "Napęd spalinowy, gazowy lub akumulatorowy. Operator za masztem reguluje wysokość podnoszenia, rozstaw wideł i nachylenie ładunku."
+    },
+    {
+      "id": 29,
+      "front": "Szerokość drogi - ruch jednokierunkowy pieszego z ładunkiem",
+      "back": "Wzór: b = a + 30 cm, minimum 120 cm. Gdzie a = szerokość człowieka z ładunkiem, b = szerokość drogi."
+    },
+    {
+      "id": 30,
+      "front": "Szerokość drogi - ruch jednokierunkowy środków transportu",
+      "back": "Wzór: b = a + 60 cm, minimum 120 cm. Gdzie a = szerokość środka transportu, b = szerokość drogi."
+    },
+    {
+      "id": 31,
+      "front": "Szerokość drogi - ruch dwukierunkowy środków transportu",
+      "back": "Wzór: b = 2a + 90 cm. Gdzie a = szerokość środka transportu, b = szerokość drogi."
+    },
+    {
+      "id": 32,
+      "front": "Oznaczenia dróg transportowych - wymagania",
+      "back": "Malowane białą lub żółtą farbą, uwzględniające zwężenia i przejścia dla pieszych, oświetlone przy ograniczonym dostępie światła, niezastawione sprzętem ani materiałami."
+    }
+  ]
+}
