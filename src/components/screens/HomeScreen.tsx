@@ -1,26 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Play, BookOpen, Loader2, FileText, Headphones, RefreshCw, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import type { AppView, QuizMetadata, Material, AudioMaterial, Flashcard } from '@/types';
+import type { QuizMetadata, Material, AudioMaterial, Flashcard } from '@/types';
 
 export function HomeScreen({
-  setView,
-  onLoadQuiz,
-  onLoadMaterial,
-  onLoadAudio,
-  onLoadFlashcardSet,
   selectedSubject,
   onSelectSubject,
 }: {
-  setView: (view: AppView) => void;
-  onLoadQuiz: (id: string) => void;
-  onLoadMaterial: (id: string) => void;
-  onLoadAudio: (id: string) => void;
-  onLoadFlashcardSet: (id: string) => void;
   selectedSubject: string;
   onSelectSubject: (subject: string) => void;
 }) {
@@ -196,39 +187,37 @@ export function HomeScreen({
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {quizzes.map((quizMeta) => (
-                    <Card
-                      key={quizMeta.id}
-                      className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group"
-                      onClick={() => onLoadQuiz(quizMeta.id)}
-                    >
-                      <CardHeader>
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
-                              {quizMeta.title}
-                            </CardTitle>
-                            {quizMeta.description && (
-                              <CardDescription className="line-clamp-2">
-                                {quizMeta.description}
-                              </CardDescription>
-                            )}
+                    <Link key={quizMeta.id} href={`/quiz/${quizMeta.id}?subject=${encodeURIComponent(selectedSubject)}`}>
+                      <Card className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group h-full">
+                        <CardHeader>
+                          <div className="flex items-start justify-between">
+                            <div className="flex-1">
+                              <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
+                                {quizMeta.title}
+                              </CardTitle>
+                              {quizMeta.description && (
+                                <CardDescription className="line-clamp-2">
+                                  {quizMeta.description}
+                                </CardDescription>
+                              )}
+                            </div>
+                            <BookOpen className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
                           </div>
-                          <BookOpen className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <span className="font-semibold text-primary">{quizMeta.questionCount}</span>
-                            <span>pytań</span>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                              <span className="font-semibold text-primary">{quizMeta.questionCount}</span>
+                              <span>pytań</span>
+                            </div>
+                            <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                              <Play className="w-4 h-4 mr-1" />
+                              Rozpocznij
+                            </Button>
                           </div>
-                          <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                            <Play className="w-4 h-4 mr-1" />
-                            Rozpocznij
-                          </Button>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -251,31 +240,29 @@ export function HomeScreen({
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {materials.map((material) => (
-                    <Card
-                      key={material.id}
-                      className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group"
-                      onClick={() => onLoadMaterial(material.id)}
-                    >
-                      <CardHeader>
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
-                              {material.title}
-                            </CardTitle>
-                            <CardDescription className="text-sm">
-                              {formatFileSize(material.size)}
-                            </CardDescription>
+                    <Link key={material.id} href={`/materials/${material.id}?subject=${encodeURIComponent(selectedSubject)}`}>
+                      <Card className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group h-full">
+                        <CardHeader>
+                          <div className="flex items-start justify-between">
+                            <div className="flex-1">
+                              <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
+                                {material.title}
+                              </CardTitle>
+                              <CardDescription className="text-sm">
+                                {formatFileSize(material.size)}
+                              </CardDescription>
+                            </div>
+                            <FileText className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
                           </div>
-                          <FileText className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                          <FileText className="w-4 h-4 mr-1" />
-                          Czytaj
-                        </Button>
-                      </CardContent>
-                    </Card>
+                        </CardHeader>
+                        <CardContent>
+                          <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                            <FileText className="w-4 h-4 mr-1" />
+                            Czytaj
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -298,31 +285,29 @@ export function HomeScreen({
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {audioMaterials.map((audioMaterial) => (
-                    <Card
-                      key={audioMaterial.id}
-                      className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group"
-                      onClick={() => onLoadAudio(audioMaterial.id)}
-                    >
-                      <CardHeader>
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
-                              {audioMaterial.title}
-                            </CardTitle>
-                            <CardDescription className="text-sm">
-                              {audioMaterial.format.toUpperCase()} • {formatFileSize(audioMaterial.size)}
-                            </CardDescription>
+                    <Link key={audioMaterial.id} href={`/audio/${audioMaterial.id}?subject=${encodeURIComponent(selectedSubject)}`}>
+                      <Card className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group h-full">
+                        <CardHeader>
+                          <div className="flex items-start justify-between">
+                            <div className="flex-1">
+                              <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
+                                {audioMaterial.title}
+                              </CardTitle>
+                              <CardDescription className="text-sm">
+                                {audioMaterial.format.toUpperCase()} • {formatFileSize(audioMaterial.size)}
+                              </CardDescription>
+                            </div>
+                            <Headphones className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
                           </div>
-                          <Headphones className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                          <Play className="w-4 h-4 mr-1" />
-                          Odtwórz
-                        </Button>
-                      </CardContent>
-                    </Card>
+                        </CardHeader>
+                        <CardContent>
+                          <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                            <Play className="w-4 h-4 mr-1" />
+                            Odtwórz
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -345,41 +330,39 @@ export function HomeScreen({
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {flashcards.map((flashcard) => (
-                    <Card
-                      key={flashcard.id}
-                      className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group"
-                      onClick={() => onLoadFlashcardSet(flashcard.id)}
-                    >
-                      <CardHeader>
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
-                              {flashcard.title}
-                            </CardTitle>
-                            {flashcard.description && (
-                              <CardDescription className="line-clamp-2">
-                                {flashcard.description}
-                              </CardDescription>
-                            )}
-                            <div className="flex items-center gap-2 mt-2">
-                              <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
-                                {flashcard.category}
-                              </span>
-                              <span className="text-sm text-muted-foreground">
-                                {flashcard.cardCount} kart
-                              </span>
+                    <Link key={flashcard.id} href={`/flashcards/${flashcard.id}?subject=${encodeURIComponent(selectedSubject)}`}>
+                      <Card className="hover:shadow-lg transition-all cursor-pointer hover:border-primary/50 group h-full">
+                        <CardHeader>
+                          <div className="flex items-start justify-between">
+                            <div className="flex-1">
+                              <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
+                                {flashcard.title}
+                              </CardTitle>
+                              {flashcard.description && (
+                                <CardDescription className="line-clamp-2">
+                                  {flashcard.description}
+                                </CardDescription>
+                              )}
+                              <div className="flex items-center gap-2 mt-2">
+                                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
+                                  {flashcard.category}
+                                </span>
+                                <span className="text-sm text-muted-foreground">
+                                  {flashcard.cardCount} kart
+                                </span>
+                              </div>
                             </div>
+                            <RefreshCw className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
                           </div>
-                          <RefreshCw className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                          <RefreshCw className="w-4 h-4 mr-1" />
-                          Ćwicz
-                        </Button>
-                      </CardContent>
-                    </Card>
+                        </CardHeader>
+                        <CardContent>
+                          <Button size="sm" variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                            <RefreshCw className="w-4 h-4 mr-1" />
+                            Ćwicz
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </div>
               )}
