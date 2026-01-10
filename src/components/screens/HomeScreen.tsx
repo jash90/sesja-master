@@ -40,7 +40,12 @@ export function HomeScreen({
     fetch('/api/subjects')
       .then((res) => res.json())
       .then((data) => {
-        setSubjects(data.subjects || []);
+        const loadedSubjects = data.subjects || [];
+        setSubjects(loadedSubjects);
+        // Auto-select first subject if current doesn't exist
+        if (loadedSubjects.length > 0 && !loadedSubjects.includes(selectedSubject)) {
+          onSelectSubject(loadedSubjects[0]);
+        }
         setLoadingSubjects(false);
       })
       .catch((error) => {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { AppView, Quiz, QuizState, FlashcardSet, AudioMaterial, MaterialContent, FlashcardCard } from '@/types';
 
 import { HomeScreen } from '@/components/screens/HomeScreen';
@@ -25,6 +25,21 @@ export default function QuizApp() {
 
   // Subject selection state
   const [selectedSubject, setSelectedSubject] = useState<string>('test');
+
+  // Timer for quiz - increments every second when quiz is active
+  useEffect(() => {
+    let interval: NodeJS.Timeout | null = null;
+
+    if (view === 'quiz-question' && quizState && !quizState.isFinished) {
+      interval = setInterval(() => {
+        setTimeElapsed(prev => prev + 1);
+      }, 1000);
+    }
+
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [view, quizState?.isFinished]);
 
   // Load quiz by ID
   const loadQuiz = async (quizId: string) => {
@@ -141,6 +156,7 @@ export default function QuizApp() {
         ...quizState,
         isFinished: true,
       });
+      setView('quiz-results');
     }
   };
 
