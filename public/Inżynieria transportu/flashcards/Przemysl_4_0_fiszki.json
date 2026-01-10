@@ -1,0 +1,197 @@
+{
+  "title": "Czwarta Rewolucja Przemysłowa - Przemysł 4.0",
+  "description": "Zestaw fiszek obejmujący historię rewolucji przemysłowych, istotę i komponenty Przemysłu 4.0, kluczowe technologie, typy inteligentnych fabryk oraz aspekty społeczne transformacji cyfrowej.",
+  "category": "Logistyka i Przemysł",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Kiedy i gdzie rozpoczęła się pierwsza rewolucja przemysłowa?",
+      "back": "Pierwsza rewolucja przemysłowa rozpoczęła się w XVIII wieku w Wielkiej Brytanii. Charakteryzowała się zastąpieniem pracy ręcznej przez maszyny oraz rozwojem produkcji masowej."
+    },
+    {
+      "id": 2,
+      "front": "Jakie było kluczowe wynalazek pierwszej rewolucji przemysłowej?",
+      "back": "Udoskonalenie maszyny parowej przez Jamesa Watta. Przyczyniło się to do rozwoju hutnictwa, górnictwa i przemysłu włókienniczego."
+    },
+    {
+      "id": 3,
+      "front": "Co charakteryzowało drugą rewolucję przemysłową?",
+      "back": "Wdrożenie linii do produkcji seryjnej, rozpowszechnienie taniej stali, rozwój przemysłu chemicznego i spożywczego oraz upowszechnienie elektryczności. Miała miejsce na przełomie XIX i XX wieku."
+    },
+    {
+      "id": 4,
+      "front": "Jakie zjawiska pojawiły się podczas trzeciej rewolucji przemysłowej?",
+      "back": "Pierwsze systemy komputerowe, Internet, początek robotyzacji, rozwój telekomunikacji, e-learning, outsourcing i globalizacja. Rozpoczęła się w USA w latach 60. XX wieku."
+    },
+    {
+      "id": 5,
+      "front": "Czym jest Przemysł 4.0?",
+      "back": "Przemysł 4.0 to połączenie świata rzeczywistego z technologią informacyjną, Internetem i sztuczną inteligencją. Oznacza transformację technologiczną, procesową i organizacyjną przedsiębiorstw."
+    },
+    {
+      "id": 6,
+      "front": "Jaki jest główny cel Czwartej Rewolucji Przemysłowej?",
+      "back": "Masowa personalizacja produkcji towarów i usług w odpowiedzi na zindywidualizowane wymagania klientów, przy zachowaniu efektywności produkcji masowej."
+    },
+    {
+      "id": 7,
+      "front": "Jakie są główne zadania Przemysłu 4.0?",
+      "back": "Dostarczanie wyrobów wysokiej jakości w krótkim czasie, poprawa wydajności produkcji, redukcja kosztów, wytwarzanie produktów o przedłużonej trwałości oraz tworzenie inteligentnych produktów."
+    },
+    {
+      "id": 8,
+      "front": "Czym charakteryzuje się inteligentny produkt?",
+      "back": "Inteligentny produkt może odtwarzać swoją historię, jest jednoznacznie identyfikowalny, określa swoje położenie i status, a użytkownik może reagować na jego informacje w czasie rzeczywistym."
+    },
+    {
+      "id": 9,
+      "front": "Wymień komponenty Przemysłu 4.0.",
+      "back": "Komunikacja w czasie rzeczywistym, cyberbezpieczeństwo, bezpieczeństwo energetyczne, automatyka i robotyka, sztuczna inteligencja, Internet rzeczy, sensory, digitalizacja i wiedza."
+    },
+    {
+      "id": 10,
+      "front": "Czym są rozwiązania chmurowe (cloud computing)?",
+      "back": "Zdalne udostępnianie konfigurowalnych zasobów sprzętowych i programowych do przechowywania i przetwarzania danych. Zapewniają dostępność danych o każdej porze i z każdego miejsca."
+    },
+    {
+      "id": 11,
+      "front": "Jakie są zalety rozwiązań chmurowych?",
+      "back": "Dostępność danych 24/7, obniżenie kosztów infrastruktury, brak konieczności zarządzania oprogramowaniem, brak przestojów przy awarii sprzętu, dostęp do aktualnych wersji programów."
+    },
+    {
+      "id": 12,
+      "front": "Jakie są wyzwania związane z rozwiązaniami chmurowymi?",
+      "back": "Obawy o bezpieczeństwo danych, ryzyko uzależnienia od jednego dostawcy, ryzyko kradzieży lub utraty danych, bariery finansowe i technologiczne, opór pracowników, brak jednolitych regulacji prawnych."
+    },
+    {
+      "id": 13,
+      "front": "Czym jest Big Data?",
+      "back": "Duże, dynamicznie zmieniające się i nieuporządkowane zbiory danych trudne w przetwarzaniu tradycyjnymi metodami. Ujawniają nowe związki między danymi i pomagają prognozować potrzeby klientów."
+    },
+    {
+      "id": 14,
+      "front": "Czym jest Internet rzeczy (IoT)?",
+      "back": "Połączenie obiektów fizycznych z ich wirtualną reprezentacją w globalnej sieci komputerowej. Polega na podłączeniu wielu urządzeń do sieci z wykorzystaniem sensorów do zbierania i analizy danych."
+    },
+    {
+      "id": 15,
+      "front": "Co oznacza trend Smart Manufacturing w IoT?",
+      "back": "Inteligentna produkcja obejmująca uczenie maszynowe, diagnostykę prewencyjną i konserwację maszyn. Pozwala na przewidywanie awarii i optymalizację procesów produkcyjnych."
+    },
+    {
+      "id": 16,
+      "front": "Co oznacza trend Smart Mobility w IoT?",
+      "back": "Inteligentna mobilność obejmująca zarządzanie trasami w czasie rzeczywistym, autonomiczne kierowanie pojazdem, inteligentne zarządzanie ruchem i zarządzanie flotą pojazdów."
+    },
+    {
+      "id": 17,
+      "front": "Czym jest wytwarzanie addytywne?",
+      "back": "Technologia (druk 3D) polegająca na łączeniu materiału poprzez wytwarzanie cienkich warstw jedna po drugiej. Oszczędza materiały, obniża koszty i skraca czas wdrożenia produktu."
+    },
+    {
+      "id": 18,
+      "front": "Kto i kiedy wprowadził pojęcie sztucznej inteligencji?",
+      "back": "John McCarthy w latach 50. XX wieku. Zdefiniował ją jako naukę obejmującą inżynierię tworzenia inteligentnych maszyn i programów komputerowych."
+    },
+    {
+      "id": 19,
+      "front": "Na czym bazuje współczesna sztuczna inteligencja?",
+      "back": "Na technikach uczenia maszynowego i głębokiego (deep learning), umożliwiających automatyczną modyfikację zachowania systemu gdy w danych pojawiają się nowe wzorce."
+    },
+    {
+      "id": 20,
+      "front": "Czym jest cyberbezpieczeństwo?",
+      "back": "Odporność sieci i systemów informatycznych na działania naruszające dostępność, autentyczność, integralność i poufność przechowywanych, przekazywanych i przetwarzanych danych."
+    },
+    {
+      "id": 21,
+      "front": "Czym jest inteligentna fabryka?",
+      "back": "Przedsiębiorstwo łączące aspekty fizyczne i wirtualne, zarządzane przez inteligentny system informatyczny sterujący procesami produkcyjnymi z wymianą danych między produktami, urządzeniami i maszynami."
+    },
+    {
+      "id": 22,
+      "front": "Jakie są cztery typy inteligentnych fabryk?",
+      "back": "1) Zautomatyzowane i zrobotyzowane, 2) Cyfrowe masowo zindywidualizowane, 3) Mobilne modułowe, 4) Produkcja ręczna z wykorzystaniem cyfryzacji."
+    },
+    {
+      "id": 23,
+      "front": "Czym charakteryzują się cyfrowe masowo zindywidualizowane fabryki?",
+      "back": "Produkcja dużych lub średnich wolumenów z pełną personalizacją produktów, krótkie serie, częste przezbrojenia, maszyny adaptujące się do zmian i komunikujące przez Internet."
+    },
+    {
+      "id": 24,
+      "front": "Czym charakteryzują się mobilne fabryki modułowe?",
+      "back": "Mogą być szybko przenoszone z miejsca na miejsce, mają niską kapitalizację instalacji, szybko dostosowują się do trendów, produkcja zlokalizowana blisko popytu."
+    },
+    {
+      "id": 25,
+      "front": "Czym jest wskaźnik DESI?",
+      "back": "Digital Economy and Society Index - określa stan cyfrowej Europy i monitoruje konkurencyjność cyfrową państw UE. Bazuje na ponad 30 współczynnikach w 5 kategoriach."
+    },
+    {
+      "id": 26,
+      "front": "Jakie są kategorie wskaźnika DESI?",
+      "back": "1) Łączność (infrastruktura), 2) Kapitał ludzki (umiejętności), 3) Korzystanie z Internetu, 4) Integracja technologii cyfrowej, 5) Cyfrowe usługi publiczne."
+    },
+    {
+      "id": 27,
+      "front": "Jaka była pozycja Polski w rankingu DESI w 2022 roku?",
+      "back": "Polska zajęła 25. miejsce na 28 państw UE ze wskaźnikiem 40,5 (średnia europejska: 52), wyprzedzając jedynie Grecję, Bułgarię i Rumunię."
+    },
+    {
+      "id": 28,
+      "front": "Jakie są ograniczenia dla Przemysłu 4.0 w Polsce?",
+      "back": "Przestarzałe maszyny, niski poziom szkoleń, brak dostępu do nowoczesnych technologii, długi czas wdrożenia automatyzacji, obawy pracowników o miejsca pracy."
+    },
+    {
+      "id": 29,
+      "front": "Jakie są szanse dla Przemysłu 4.0 w Polsce?",
+      "back": "Brak chętnych do monotonnych prac, rosnąca liczba robotów (52 na 10 tys. pracowników), rosnące koszty pracy, wymagania rynku, doświadczenia z pandemii COVID-19."
+    },
+    {
+      "id": 30,
+      "front": "Czym jest bezrobocie technologiczne?",
+      "back": "Bezrobocie wywołane wprowadzeniem innowacji technologicznych oszczędzających pracę. Jest zjawiskiem krótkotrwałym, wymuszającym rozwój umiejętności cyfrowych i analitycznych."
+    },
+    {
+      "id": 31,
+      "front": "Czym jest technofobia?",
+      "back": "Stan przejawiający się ekstremalnymi i irracjonalnymi obawami wobec technologii, odczuwaniem niepokoju przy korzystaniu z nowych technologii z powodu braku umiejętności."
+    },
+    {
+      "id": 32,
+      "front": "Jakie nowe typy przywództwa pojawiają się w Przemyśle 4.0?",
+      "back": "Lider wpływu społecznego, Rzecznik wykorzystania danych, Promotor przełomowych zmian, Ambasador talentów."
+    },
+    {
+      "id": 33,
+      "front": "Kim jest Lider wpływu społecznego?",
+      "back": "Osoba tworząca nowe źródła przychodów, świadoma wpływu działań społecznych, inwestująca w technologie zmieniające rynek, rozwijająca pracowników i działająca etycznie."
+    },
+    {
+      "id": 34,
+      "front": "Kim jest Ambasador talentów?",
+      "back": "Lider zorientowany na potrzeby kompetencyjne organizacji, przygotowujący ją do cyfrowej transformacji, odpowiedzialny za szkolenie pracowników i inwestujący w technologie."
+    },
+    {
+      "id": 35,
+      "front": "Na jakich trzech filarach opiera się koncepcja Przemysłu 5.0?",
+      "back": "1) Ekologia - zrównoważony rozwój, 2) Człowiek - stawianie ludzi w centrum uwagi, 3) Odporność na kryzysy - budowanie systemów zdolnych do funkcjonowania w trudnych warunkach."
+    },
+    {
+      "id": 36,
+      "front": "Co oznacza skrót RFID i gdzie jest stosowany?",
+      "back": "Radio-Frequency Identification (identyfikacja radiowa). Stosowany w logistyce i produkcji do śledzenia produktów, identyfikacji zasobów i automatyzacji procesów."
+    },
+    {
+      "id": 37,
+      "front": "Czym różni się deep learning od machine learning?",
+      "back": "Deep learning (uczenie głębokie) to zaawansowana forma machine learning (uczenia maszynowego), wykorzystująca wielowarstwowe sieci neuronowe do automatycznego wykrywania wzorców w danych."
+    },
+    {
+      "id": 38,
+      "front": "Co oznacza Smart Life w kontekście IoT?",
+      "back": "Inteligentne życie - prostsze i bezpieczniejsze życie konsumenta obejmujące zindywidualizowaną opiekę zdrowotną, nowe modele bankowości i usługi publiczne."
+    }
+  ]
+}

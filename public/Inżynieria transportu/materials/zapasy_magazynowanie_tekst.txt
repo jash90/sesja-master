@@ -1,0 +1,146 @@
+ZAPASY I MAGAZYNOWANIE
+Inżynieria Transportu i Magazynowania
+
+===========================================
+
+Moduł poświęcony zapasom i magazynowaniu stanowi fundamentalną część inżynierii transportu i magazynowania. Obejmuje zagadnienia związane z zarządzaniem zasobami materialnymi w przedsiębiorstwach.
+
+DEFINICJA ZAPASÓW
+
+Zapasy to określona liczba dóbr materialnych, które zostały wprowadzone fizycznie oraz formalnie do magazynu. W tym miejscu odbywa się ich przechowywanie, a celem jest zaspokojenie potrzeb produkcji lub sprzedaży poprzez fizyczne wydanie towaru w określonym czasie. Zapasy mogą być przeznaczone do zużycia na własne potrzeby przedsiębiorstwa, mogą być przetwarzane na wyroby gotowe i następnie sprzedawane, lub mogą być nabywane w celu dalszej odsprzedaży bez przetwarzania.
+
+GRUPY ZAPASÓW
+
+Wyróżnia się trzy podstawowe kategorie zapasów. Pierwsza to materiały, czyli surowce i materiały podstawowe oraz półprodukty obcej produkcji, które podlegają procesom uszlachetnienia i przekształceniu w wyroby gotowe. Druga kategoria to półprodukty, czyli elementy już przetworzone, mogą być proste lub posiadać bardziej złożoną konstrukcję. Gromadzi się je w halach produkcyjnych i w magazynach półproduktów. Trzecia kategoria to produkty gotowe, czyli wyroby wytworzone i przeznaczone do sprzedaży, które nie podlegają już dalszemu przetworzeniu w przedsiębiorstwie, w którym zostały wytworzone.
+
+CELE GROMADZENIA ZAPASÓW
+
+Gromadzenie zapasów ma kilka powodów. Przede wszystkim występują różnice w wielkościach popytu i podaży, więc zapasy pozwalają wyrównać te wahania. Zapasy są niezbędne do utrzymania ciągłości produkcji. Chronią przed sytuacjami losowymi, takimi jak opóźnienia dostaw czy awarie. Pozwalają na optymalizację kosztów produkcji poprzez zamawianie większych partii po niższych cenach. Umożliwiają też maksymalizację poziomu obsługi klienta, bo towar jest dostępny wtedy, gdy klient go potrzebuje.
+
+RODZAJE ZAPASÓW SUROWCOWYCH
+
+Zapasy standardowe mają za zadanie wyrównać popyt i podaż oraz zmniejszają niezgodności wynikające z ilościowych i jakościowych błędów w przepływie dóbr. Zapasy zabezpieczające stanowią rezerwę, czyli ilość zapasu utrzymywaną w magazynie na wypadek sytuacji losowej. Zapasy zapobiegawcze są gromadzone z wyprzedzeniem w celu zabezpieczenia działalności średniookresowej i wynikają na przykład z sezonowości sprzedaży. Zapasy wymuszone to te, których posiadanie spowodowane jest niekorzystnym splotem wydarzeń, na przykład nagłe zatrzymanie produkcji skutkujące nadmierną ilością zapasów w strefie zaopatrzenia.
+
+PODZIAŁ ZAPASÓW ZE WZGLĘDU NA FUNKCJĘ
+
+Zapas antycypacyjny jest gromadzony w bardzo dużych ilościach i tworzony z wyprzedzeniem w związku z przewidywanymi działaniami na większą skalę. Zapas cykliczny to zapas bieżący utrzymywany przez przedsiębiorstwo i wykorzystywany regularnie do produkcji lub sprzedaży. Zapas w transporcie to materiały przemieszczane środkami transportu wewnętrznego między różnymi obszarami zakładu. Zapas nierotujący to zapas nadmierny, którego przedsiębiorstwo nie jest w stanie wykorzystać na własne potrzeby.
+
+SYSTEM PULL
+
+System Pull, czyli system ssący, polega na uzupełnianiu wyłącznie tych materiałów, które zostaną faktycznie zużyte. Głównym założeniem tej metody jest dostarczenie odpowiedniej ilości materiału w odpowiednim czasie i miejscu. Wszystko zaczyna się od rzeczywistego zapotrzebowania, żaden produkt nie jest wytwarzany dopóki klient wewnętrzny lub zewnętrzny tego nie potrzebuje. System Pull charakteryzuje się niskim poziomem zapasów, małymi partiami produkcyjnymi oraz rzadszymi problemami z jakością.
+
+SYSTEM PUSH
+
+System Push, czyli system pchający, działa odwrotnie. W pierwszej kolejności wytwarza się produkt, a następnie później się go sprzedaje, czyli niejako wypycha na rynek. System Push charakteryzuje się dużą ilością zapasów, często zbędnych, co wpływa na ponoszone koszty. Produkcja opiera się na prognozach sprzedaży, a nie na fizycznym zapotrzebowaniu. W momencie gdy prognozy się nie sprawdzają, przedsiębiorstwo zostaje z dużą ilością niesprzedanych zapasów. Cechy charakterystyczne tego systemu to wysoki poziom zapasów, duże partie produkcyjne oraz duże zapasy produkcji w toku.
+
+ANALIZA ABC
+
+W metodzie ABC zapasy dzieli się na trzy grupy rozróżniane ze względu na wartość, od najdroższych do najmniej cennych. Metoda ABC zakłada, że zapasy o najmniejszej wartości stanowią ilościowo aż sześćdziesiąt procent udziału zapasów ogółem. Grupa A to zapasy cenne o niewielkim udziale ilościowym, wahającym się w przedziale od pięciu do dwudziestu procent, ale o dużym udziale kosztowym w granicach siedemdziesięciu pięciu do osiemdziesięciu procent. Grupa B to zasoby średnie, których zarówno udział ilościowy jak i kosztowy wynosi od piętnastu do dwudziestu procent całości zasobów. Grupa C to zasoby masowe charakteryzujące się dużym udziałem ilościowym, bo aż od sześćdziesięciu do osiemdziesięciu procent, za to niskim udziałem wartościowym, bo jedynie pięć procent.
+
+ANALIZA XYZ
+
+Metoda XYZ rozpatruje zapasy z punktu widzenia regularności zapotrzebowania na nie oraz dokładności prognozowania. Grupa X obejmuje materiały o dużej regularności zapotrzebowania i wysokiej dokładności prognozowania. Grupa Y to materiały, których zapotrzebowanie ma charakter sezonowy. Grupa Z obejmuje materiały o dużej nieregularności zapotrzebowania i niewielkiej dokładności prognozowania. Analiza XYZ daje najlepsze efekty przy połączeniu z metodą ABC.
+
+POŁĄCZENIE METOD ABC I XYZ
+
+Po połączeniu obu metod otrzymuje się dziewięć grup. Grupa AX to zasoby generujące dużą wartość obrotu, z przewidywalnym i stałym popytem oraz niewielkimi błędami prognoz. Grupa BX generuje średnią wartość obrotu przy przewidywalnym popycie. Grupa CX generuje małą wartość obrotu, ale popyt pozostaje stały. Grupy AY, BY i CY charakteryzują się odpowiednio dużą, średnią i małą wartością obrotu, ale zużycie jest mniej równomierne niż w grupie X, a błędy prognoz są większe. Grupy AZ, BZ i CZ to zasoby o odpowiednio wysokiej, średniej i niskiej wartości obrotu, ale z niewielkim ilościowym zużyciem, dużymi błędami prognoz i znaczną niepewnością co do wielkości popytu.
+
+METODA FIFO
+
+Metoda FIFO, czyli First In First Out, co oznacza pierwsze przyszło, pierwsze wyszło, zakłada wycenę zapasów i ich rozchodu według ceny najwcześniejszej. Księgując rozchód zapasów, rozpoczyna się od tych jednostek, które na magazyn trafiły jako pierwsze. Jeśli na magazynie znajduje się sto jednostek towaru przyjętych z wyceną trzydzieści złotych za sztukę w ubiegłym roku oraz tysiąc jednostek z wyceną czterdzieści pięć złotych z bieżącego roku, księgując rozchód, rozpoczyna się od tych stu jednostek, które trafiły na magazyn jako pierwsze.
+
+METODA LIFO
+
+Metoda LIFO, czyli Last In First Out, ostatnie przyszło, pierwsze wyszło, stanowi odwrotność metody FIFO. Rozchód księgowany jest począwszy od tych jednostek towaru, które na magazyn trafiły jako ostatnie. W powyższym przykładzie jako pierwsze z magazynu wydane zostaną jednostki towaru z ceną czterdzieści pięć złotych za sztukę, a dopiero po ich wyczerpaniu jednostki wycenione na trzydzieści złotych.
+
+METODA FEFO
+
+Metoda FEFO, czyli First Expired First Out, pierwsza data ważności, pierwsze wyszło, jest stosowana w obiektach przechowujących produkty o ograniczonym terminie ważności, szczególnie gdy ten termin jest krótki. Towar z tej samej grupy asortymentowej jest wydawany wtedy, gdy jego przydatność jest najkrótsza. Przy stosowaniu tej techniki selektywność ładunków jest bardzo ważna ze względu na dostępność do każdej jednostki ładunkowej oraz kontrolę dat ważności.
+
+DEFINICJA MAGAZYNU
+
+Magazyn to wyodrębniona przestrzeń przeznaczona do magazynowania zapasów, obiekt przystosowany do składowania i przemieszczania zapasów na określonej powierzchni. Procesy zachodzące w magazynie nie polegają tylko na składowaniu. Odbywają się tutaj również procesy przyjmowania, wydawania, transportowania, pakowania oraz procesy administracyjne. Magazyn składa się z elementów takich jak zapasy, infrastruktura, personel, organizacja oraz koszty magazynowania.
+
+RODZAJE MAGAZYNÓW ZE WZGLĘDU NA BUDOWLĘ
+
+Magazyn otwarty to najtańszy rodzaj, służący do składowania zapasów odpornych na działanie warunków atmosferycznych. Są to place i składowiska, na których magazynowane są na przykład materiały pochodzenia mineralnego oraz wyroby stalowe i żeliwne. Magazyn półotwarty jest częściowo osłonięty, najczęściej posiada dach wsparty na podporach, częściowo chroniący materiały przed czynnikami atmosferycznymi. Mogą to być wiaty, szopy lub zasieki. Składuje się w nich zapasy odporne na zmiany temperatury, lecz wrażliwe na działanie innych warunków atmosferycznych, na przykład wyroby ceramiczne, cement w workach, słomę czy siano. Magazyn zamknięty posiada podłogę, ściany i dach. Mogą to być chłodnie lub piwnice. Przechowuje się w nim zapasy wrażliwe na warunki atmosferyczne lub delikatne, wymagające specjalnego traktowania, na przykład nawozy sztuczne, meble czy sprzęt elektroniczny.
+
+INNE PODZIAŁY MAGAZYNÓW
+
+Ze względu na stopień zmechanizowania procesów wyróżnia się magazyn niezmechanizowany i zmechanizowany. Ze względu na funkcje i przeznaczenie gospodarcze istnieje magazyn przemysłowy, handlowy, transportowy i usługowy. Ze względu na wysokość składowania mówi się o magazynie niskiego, średniego i wysokiego składowania. Ze względu na czas składowania wyróżnia się magazyn manipulacyjny oraz wielofunkcyjny.
+
+FUNKCJE MAGAZYNÓW
+
+Funkcja składowania obejmuje całokształt działalności związanej z przechowywaniem surowców, półproduktów, produktów finalnych oraz materiałów odpadowych. Działania manipulacyjne są związane z przyjmowaniem i wydawaniem zapasów, występują podczas przemieszczania zapasów w strefie składowania lub kompletacji. Należą do nich także czynności powodujące zmianę postaci ładunku. Działania pomocnicze to prowadzenie ewidencji i administracji, obieg dokumentacji, znakowanie oraz zapewnienie bezpieczeństwa.
+
+W ujęciu spedycyjnym magazyn pełni funkcję przeładunkową i składowania. W ujęciu produkcyjnym główną funkcją jest przechowywanie zapasów wyrobów gotowych oraz surowców. W ujęciu dystrybucyjnym magazyn realizuje funkcję dostawczą i wysyłkową.
+
+STREFA PRZYJĘĆ
+
+Strefa przyjęć to miejsce, gdzie odbywa się rozładunek środków transportu zewnętrznego, czyli samochodowego i kolejowego, oraz wewnętrznego. W tej strefie przeprowadza się kontrolę ilościową i jakościową przyjętych zapasów. Wykonuje się też wstępne segregowanie, sortowanie, przepakowywanie i oznakowanie dostawy zgodnie z zasadami przyjętymi w organizacji. Strefa przyjęć z reguły jest zlokalizowana przy doku rozładunkowym lub w miejscu, gdzie wyroby gotowe spływają do magazynu z produkcji. Przyjęcie do magazynu polega na fizycznym przyjęciu zapasu na podstawie stosownej dokumentacji, zgodnie z procedurami opracowanymi przez właściciela magazynu.
+
+STREFA SKŁADOWANIA
+
+Strefa składowania to serce magazynu, gdzie odbywa się składowanie i przechowywanie zapasów oraz ich ochrona. Tutaj przeprowadza się też inwentaryzację. Składowanie może odbywać się na regałach magazynowych, na stojakach lub w formie składowania blokowego na posadzce.
+
+METODY ORGANIZACJI SKŁADOWANIA
+
+Metoda wolnych miejsc polega na umieszczaniu zapasów dostarczanych do magazynu w wolnych gniazdach regałowych. Wymaga rzetelnego przepływu informacji, a niejednokrotnie stosowania systemu WMS, czyli Warehouse Management System. Pozwala na efektywne wykorzystanie przestrzeni magazynowej.
+
+Metoda stałych miejsc składowania oznacza, że konkretny rodzaj zapasu ma stałe, odgórnie przyporządkowane miejsce. Ułatwia to odnalezienie konkretnego zapasu nawet przez niedoświadczonych pracowników, ale prowadzi do nieefektywnego wykorzystania przestrzeni magazynowej. Sprawdza się przy wąskim asortymencie.
+
+Metoda według rotacji polega na składowaniu zapasów w sposób pozwalający maksymalnie skrócić drogę do strefy wydań. Zapasy są przypisane do grup A, B i C, gdzie A to wyroby o największej rotacji, B to wyroby o średniej rotacji, a C to wyroby słabo rotujące.
+
+Metoda według poziomów składowania oznacza, że składowanie odbywa się z podziałem zapasów według kryterium wagi. Na najniższym poziomie składowane są wyroby najcięższe, na przykład powyżej sześciuset kilogramów. Na średnim poziomie przechowuje się wyroby o masie od czterystu do sześciuset kilogramów, a na najwyższym wyroby o masie poniżej czterystu kilogramów.
+
+STREFA KOMPLETACJI
+
+Strefa kompletacji to miejsce, gdzie formuje się paletowe jednostki ładunkowe i kompletuje towar pod konkretne zamówienie. Przeprowadza się tu kontrolę ilościową oraz jakościową. Wyróżnia się dwa podejścia do kompletacji. Pierwsze to operator do produktu, gdzie operatorzy poruszają się po magazynie pieszo lub przy użyciu urządzeń transportu bliskiego, udając się do odpowiednich lokalizacji w celu pobrania produktów wchodzących w skład poszczególnych zamówień. Drugie to produkt do operatora, stosowane domyślnie w magazynach automatycznych, gdzie operatorzy oczekują przy stanowiskach kompletacji na automatyczne dostarczenie towaru. Cross docking to rozwiązanie, gdzie przyjęty towar zostaje od razu wydany bez konieczności magazynowania lub z magazynowaniem przez bardzo krótki czas.
+
+STREFA WYDAŃ
+
+Strefa wydań to ostatnia strefa, gdzie zabezpiecza się paletowe jednostki ładunkowe, przygotowuje dokumentację i wykonuje załadunek na zewnętrzny środek transportu.
+
+UKŁAD PRZELOTOWY
+
+Układ przelotowy charakteryzuje się tym, że horyzontalnie znajdują się strefy przyjęć i wydań oddzielone strefą składowania. Oddzielenie tych stref minimalizuje ryzyko pomyłek. Umożliwia relatywnie szybkie przemieszczanie ładunków oraz zapewnia przejrzystość w ruchu samochodów dostawczych przy dokach.
+
+UKŁAD KĄTOWY
+
+Układ kątowy to taki, gdzie strefy przyjęć i wydań są oddzielone strefą składowania znajdującą się w rogu budynku. Stosowany jest w przypadku barier konstrukcyjnych magazynu i uniemożliwia krzyżowanie dróg towaru.
+
+UKŁAD WORKOWY
+
+Układ workowy charakteryzuje się tym, że strefy przyjęć i wydań są umieszczone obok siebie lub stanowią wspólną przestrzeń. Pozwala na efektywniejsze wykorzystanie zasobów ludzkich, sprzętu oraz powierzchni, ale niesie ryzyko krzyżowania się dróg transportowych oraz ryzyko popełniania błędów.
+
+REGAŁY TRADYCYJNE
+
+Regały tradycyjne to optymalne rozwiązanie dla składowania na paletach. Jest to uniwersalny system zapewniający dostęp do każdej palety z możliwością przystosowania do składowania palet o różnej masie i wymiarach. Wadą jest niska wydajność przy kompletacji oraz nieoptymalne wykorzystanie powierzchni.
+
+REGAŁY PRZESUWNE
+
+Regały przesuwne składają się z kilku tradycyjnych regałów rzędowych umieszczonych na wózkach jezdnych, które przemieszczają regał po prowadnicach na podłodze. Mogą być łatwo dostosowywane do powierzchni magazynu i pozwalają na bardziej optymalne wykorzystanie przestrzeni. Na jednym regale można umieścić kilka rodzajów towaru.
+
+REGAŁY DYNAMICZNE I PUSH-BACK
+
+Regały dynamiczne i regały push-back mają możliwość odtwarzania zasad FIFO i LIFO oraz wykorzystują przenośniki rolkowe. W regałach dynamicznych z jednej strony towar jest umieszczany, a z drugiej pobierany, co realizuje zasadę FIFO. W regałach push-back towar umieszczany jest na regale i przesuwany do wewnątrz, co odpowiada zasadzie LIFO. Obie konstrukcje cechują się niskim ryzykiem uszkodzenia mechanicznego.
+
+REGAŁY WJEZDNE
+
+Regały wjezdne umożliwiają wyłącznie blokowe składowanie towaru i przechowywanie według zasady LIFO. Są korzystne w przypadku składowania tego samego rodzaju asortymentu, ale nie zapewniają bezpośredniego dostępu do każdej palety.
+
+REGAŁY WINDOWE
+
+Regały windowe umożliwiają częsty dostęp do towaru tam, gdzie to konieczne. Towary umieszczane są na specjalnych półkach wywoływanych przez operatora poprzez wskazanie konkretnego numeru. Charakteryzują się dużą pojemnością w ramach kompaktowej konstrukcji.
+
+WYBÓR RODZAJU REGAŁU
+
+Przy wyborze rodzaju regału należy wziąć pod uwagę kilka czynników. Po pierwsze rodzaj asortymentu, czyli jakie towary będą przepływały przez magazyn. Ich rozmiary, waga oraz ogólna specyfika, na przykład termin przydatności, zadecydują o wyborze regału. Po drugie powierzchnia do dyspozycji, zarówno obszar po podłodze jak i wysokość hali. Po trzecie sposób działania magazynu, czyli czy jest to magazyn manualny, półautomatyczny czy automatyczny, oraz jakie sprzęty są wykorzystywane, takie jak wózki widłowe czy paleciaki.
+
+SYSTEM WMS
+
+System WMS, czyli Warehouse Management System, to system zarządzania magazynem. Jest to oprogramowanie wspierające wszystkie procesy magazynowe. System WMS wspiera proces przyjmowania towaru, wyznacza miejsca do składowania, lokalizuje przyjęte już towary w magazynie i przydziela zadania pracownikom. Kontroluje stany magazynowe, automatyzuje kompletację, generuje etykiety oraz wspiera proces wydawania towaru.
+
+PODSUMOWANIE
+
+Moduł obejmuje definicję zapasów oraz ich grupy: materiały, półprodukty i produkty gotowe. Omówione zostały cele gromadzenia zapasów i ich rodzaje, od standardowych przez zabezpieczające po wymuszone. Przedstawiono systemy Pull i Push oraz metody analizy zapasów ABC i XYZ. Opisano metody wyceny zapasów FIFO, LIFO i FEFO. Następnie przedstawiono rodzaje magazynów, ich funkcje i strefy, od przyjęcia przez składowanie i kompletację po wydanie. Omówiono układy technologiczne magazynów oraz różne typy regałów. Na zakończenie opisano system WMS wspierający wszystkie te procesy.

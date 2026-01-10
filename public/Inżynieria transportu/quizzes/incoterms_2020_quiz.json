@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: INCOTERMS 2020",
+  "description": "Quiz sprawdzający wiedzę z zakresu międzynarodowych warunków handlowych INCOTERMS 2020, obejmujący podział na grupy, obowiązki stron oraz rozkład kosztów i ryzyka.",
+  "questions": [
+    {
+      "question": "Co oznacza skrót INCOTERMS?",
+      "options": [
+        "International Commercial Terms",
+        "International Contract Terms",
+        "Internal Commerce Terms",
+        "International Cargo Terms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "INCOTERMS to skrót od International Commercial Terms, czyli międzynarodowe warunki sprzedaży stosowane w handlu międzynarodowym."
+    },
+    {
+      "question": "Ile podstawowych reguł handlowych zawiera INCOTERMS 2020?",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "correctAnswer": 2,
+      "explanation": "INCOTERMS 2020 zawiera 11 podstawowych reguł handlowych: EXW, FCA, CPT, CIP, DAP, DPU, DDP (reguły powszechne) oraz FAS, FOB, CFR, CIF (reguły morskie)."
+    },
+    {
+      "question": "Które reguły INCOTERMS są przeznaczone wyłącznie dla transportu morskiego i wodnego śródlądowego?",
+      "options": [
+        "EXW, FCA, CPT, CIP",
+        "DAP, DPU, DDP",
+        "FAS, FOB, CFR, CIF",
+        "CPT, CIP, CFR, CIF"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Reguły FAS, FOB, CFR i CIF są przeznaczone wyłącznie dla transportu morskiego i wodnego śródlądowego. Pozostałe reguły są uniwersalne i można je stosować przy każdym rodzaju transportu."
+    },
+    {
+      "question": "Która reguła INCOTERMS zakłada najmniejsze zaangażowanie sprzedającego?",
+      "options": [
+        "FCA",
+        "EXW",
+        "FOB",
+        "FAS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "EXW (Ex Works) zakłada najmniejsze zaangażowanie sprzedającego. Dostawa jest uznana za dokonaną w momencie pozostawienia towaru do dyspozycji kupującego, bez obowiązku załadunku czy odprawy eksportowej."
+    },
+    {
+      "question": "W której grupie INCOTERMS sprzedający zawiera umowę przewozu i ponosi koszty transportu, ale ryzyko przechodzi na kupującego w momencie nadania towaru?",
+      "options": [
+        "Grupa E",
+        "Grupa F",
+        "Grupa C",
+        "Grupa D"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Grupa C (Main Carriage Paid) charakteryzuje się tym, że sprzedający zawiera umowę przewozu i ponosi koszty, ale ryzyko przechodzi na kupującego już w momencie nadania towaru."
+    },
+    {
+      "question": "Czego NIE regulują reguły INCOTERMS?",
+      "options": [
+        "Podziału kosztów między stronami",
+        "Momentu przeniesienia ryzyka",
+        "Czasu i miejsca płatności za towar",
+        "Obowiązków związanych z odprawą celną"
+      ],
+      "correctAnswer": 2,
+      "explanation": "INCOTERMS nie regulują czasu, miejsca i metody płatności za towar. Nie dotyczą też rozwiązywania sporów, specyfikacji produktów, konsekwencji opóźnień czy praw własności intelektualnej."
+    },
+    {
+      "question": "Przy której regule sprzedający dostarcza towar na pokład statku i odpowiada za ubezpieczenie?",
+      "options": [
+        "CFR",
+        "FOB",
+        "CIF",
+        "FAS"
+      ],
+      "correctAnswer": 2,
+      "explanation": "CIF (Cost Insurance and Freight) to reguła morska, w której sprzedający dostarcza towar na pokład statku, zawiera umowę przewozu oraz ubezpieczenia. W CFR sprzedający nie ma obowiązku ubezpieczenia."
+    },
+    {
+      "question": "W regule FOB (Free On Board), w którym momencie ryzyko przechodzi ze sprzedającego na kupującego?",
+      "options": [
+        "W momencie podpisania umowy",
+        "W momencie przekroczenia przez towar burty statku",
+        "W momencie dotarcia towaru do portu przeznaczenia",
+        "W momencie rozładunku towaru"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W regule FOB punktem przeniesienia ryzyka i kosztów jest moment przekroczenia przez towar burty statku. Sprzedający ponosi koszty załadunku, ale od chwili załadowania ryzyko spoczywa na kupującym."
+    },
+    {
+      "question": "Która reguła INCOTERMS nakłada na sprzedającego obowiązek przeprowadzenia zarówno odprawy eksportowej, jak i importowej?",
+      "options": [
+        "DAP",
+        "DPU",
+        "CIP",
+        "DDP"
+      ],
+      "correctAnswer": 3,
+      "explanation": "DDP (Delivered Duty Paid) oznacza 'dostarczone z opłaconym cłem'. Sprzedający odpowiada za organizację transportu, odprawę eksportową i importową oraz opłacenie cła i podatków."
+    },
+    {
+      "question": "Czym różni się reguła DAP od DPU?",
+      "options": [
+        "DAP dotyczy tylko transportu morskiego",
+        "W DPU sprzedający odpowiada za rozładunek towaru",
+        "W DAP sprzedający przeprowadza odprawę importową",
+        "DPU dotyczy tylko transportu lotniczego"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Główna różnica polega na tym, że w DPU (Delivered at Place Unloaded) sprzedający odpowiada za rozładunek towarów, natomiast w DAP (Delivered At Place) towar jest dostarczany gotowy do rozładunku, ale sam rozładunek leży po stronie kupującego."
+    },
+    {
+      "question": "W regule FCA (Free Carrier), kto zawiera umowę przewozu?",
+      "options": [
+        "Zawsze sprzedający",
+        "Zawsze kupujący",
+        "Kupujący, ale sprzedający może to zrobić na jego prośbę i koszt",
+        "Wspólnie obie strony"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W regule FCA to kupujący zawiera umowę przewozu, ale na jego prośbę sprzedający może zawrzeć taką umowę na zwykłych warunkach, jednak na koszt i ryzyko kupującego."
+    },
+    {
+      "question": "Przy której regule INCOTERMS kupujący musi przeprowadzić odprawę celną eksportową?",
+      "options": [
+        "EXW",
+        "FCA",
+        "FOB",
+        "DDP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Tylko przy regule EXW kupujący musi sam pozyskać dokumentację i przeprowadzić odprawę celną eksportową. We wszystkich pozostałych regułach odprawa eksportowa leży po stronie sprzedającego."
+    },
+    {
+      "question": "W regule CIP, do którego momentu sprzedający ponosi odpowiedzialność za towar, jeśli w transporcie uczestniczy kilku przewoźników?",
+      "options": [
+        "Do momentu przekazania towaru ostatniemu przewoźnikowi",
+        "Do momentu przekazania towaru pierwszemu przewoźnikowi",
+        "Do momentu dotarcia towaru do miejsca przeznaczenia",
+        "Do momentu rozładunku towaru"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W regule CIP, jeśli istnieje kilku przewoźników, sprzedawca ponosi odpowiedzialność za towar tylko do momentu przekazania go w ręce pierwszego przewoźnika."
+    },
+    {
+      "question": "Które stwierdzenie dotyczące reguły CFR jest prawdziwe?",
+      "options": [
+        "Sprzedający musi ubezpieczyć towar",
+        "Ryzyko przechodzi na kupującego w porcie przeznaczenia",
+        "Ryzyko przechodzi na kupującego gdy towar znajdzie się na pokładzie statku",
+        "Kupujący ponosi koszty frachtu morskiego"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W regule CFR ryzyko utraty lub uszkodzenia towarów przechodzi na kupującego, kiedy towary znajdują się na pokładzie statku, bez znaczenia czy towar dotarł do miejsca przeznaczenia. Sprzedający nie ma obowiązku ubezpieczenia (w odróżnieniu od CIF)."
+    },
+    {
+      "question": "Jakie jest główne ograniczenie stosowania reguł INCOTERMS?",
+      "options": [
+        "Można je stosować tylko w handlu między krajami UE",
+        "Dotyczą tylko handlu towarami, nie mają zastosowania w obrocie usługowym",
+        "Można je stosować tylko przy transporcie morskim",
+        "Są obowiązkowe tylko przy transakcjach powyżej 10 000 EUR"
+      ],
+      "correctAnswer": 1,
+      "explanation": "INCOTERMS dotyczą wyłącznie handlu towarami i nie mają zastosowania w obrocie usługowym. Można je stosować w handlu międzynarodowym na całym świecie, przy różnych rodzajach transportu i bez względu na wartość transakcji."
+    }
+  ]
+}

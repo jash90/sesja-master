@@ -1,0 +1,232 @@
+{
+  "title": "Transport zewnętrzny - fiszki do nauki",
+  "description": "Zestaw fiszek obejmujący transport lotniczy, morski i kolejowy. Zawiera definicje, rodzaje środków transportu, opakowania, dokumentację oraz infrastrukturę.",
+  "category": "Logistyka i Transport",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest transport zewnętrzny?",
+      "back": "Transport odbywający się poza terytorium konkretnego zakładu lub fabryki, mający na celu dostarczenie ładunku od nadawcy do odbiorcy z zastosowaniem określonych środków transportu."
+    },
+    {
+      "id": 2,
+      "front": "Jakie są trzy główne kategorie transportu zewnętrznego?",
+      "back": "Transport lądowy (samochodowy, przesyłowy, kolejowy), transport wodny (morski, żegluga śródlądowa) oraz transport powietrzny (lotniczy, kosmiczny)."
+    },
+    {
+      "id": 3,
+      "front": "Główne zalety transportu lotniczego",
+      "back": "Wysoki poziom bezpieczeństwa towaru, możliwość przewozu różnych typów ładunków, duża częstotliwość połączeń, przejrzystość dróg transportowych (brak korków)."
+    },
+    {
+      "id": 4,
+      "front": "Główne wady transportu lotniczego",
+      "back": "Wysokie koszty przewozu, uzależnienie od warunków pogodowych, ograniczona ładowność wynikająca z długości lotu, oddalenie lotnisk od centrów miast."
+    },
+    {
+      "id": 5,
+      "front": "Co charakteryzuje samolot transportowy (cargo)?",
+      "back": "Duża przestrzeń w luku bagażowym umożliwiająca załadunek nietypowych towarów, możliwość pomieszczenia całych ciężarówek lub dużych elementów konstrukcyjnych, silniki o dużej mocy."
+    },
+    {
+      "id": 6,
+      "front": "Małe samoloty cargo - przykład i zastosowanie",
+      "back": "Np. Cessna - przeznaczone do przewozu niewielkich ładunków na krótkich trasach. Zaletą jest możliwość obsługi na prawie wszystkich lotniskach."
+    },
+    {
+      "id": 7,
+      "front": "Samoloty cargo średniego zasięgu - przykłady i parametry",
+      "back": "Boeing 737, Airbus A330 - obsługują 23-80 ton ładunku na dystansach do 10 000 km."
+    },
+    {
+      "id": 8,
+      "front": "Samoloty cargo dalekiego zasięgu - przykłady",
+      "back": "Boeing 747, Airbus A380, Antonov An-124 - oferują zasięg międzykontynentalny i możliwość przewozu niekonwencjonalnych ładunków."
+    },
+    {
+      "id": 9,
+      "front": "Airbus Beluga - parametry",
+      "back": "Ładowność 51 ton, zasięg 4600 km. Charakterystyczny kształt kadłuba przypominający wieloryba."
+    },
+    {
+      "id": 10,
+      "front": "C17 Globemaster III - parametry",
+      "back": "Wojskowy samolot transportowy o ładowności 70 ton i zasięgu 8700 km."
+    },
+    {
+      "id": 11,
+      "front": "Antonov An-225 Mrija - parametry i status",
+      "back": "Największy samolot transportowy świata: ładowność 250 ton, zasięg 15400 km. Jedyny egzemplarz został zniszczony w 2022 roku podczas wojny w Ukrainie."
+    },
+    {
+      "id": 12,
+      "front": "Co oznacza skrót ULD?",
+      "back": "Unit Load Devices - jednostki ładunkowe w transporcie lotniczym, zaprojektowane specjalnie do kadłuba każdego typu samolotu."
+    },
+    {
+      "id": 13,
+      "front": "Palety lotnicze - budowa i sposób mocowania towaru",
+      "back": "Wykonane z aluminium o odpowiedniej grubości. Towar mocowany jest za pomocą siatek oraz folii."
+    },
+    {
+      "id": 14,
+      "front": "Kontenery lotnicze - budowa i funkcje",
+      "back": "Wykonane z aluminium lub poliwęglanu, mogą być wyposażone w funkcję chłodzenia lub wentylacji. Składają się z podstawy, ramy z panelami bocznymi i górnymi oraz drzwi."
+    },
+    {
+      "id": 15,
+      "front": "Co to jest AWB?",
+      "back": "Air Waybill - pojedynczy list przewozowy w transporcie lotniczym, na podstawie którego przewożone są przesyłki zwykłe od nadawcy do odbiorcy."
+    },
+    {
+      "id": 16,
+      "front": "Co to jest MAWB?",
+      "back": "Master Air Waybill - zbiorczy list przewozowy stosowany przy przesyłkach skonsolidowanych, łączących ładunki od różnych nadawców w celu obniżenia kosztów."
+    },
+    {
+      "id": 17,
+      "front": "Przesyłki skonsolidowane w transporcie lotniczym",
+      "back": "Połączenie różnych przesyłek od różnych nadawców w celu zmniejszenia kosztów transportu, realizowane na podstawie zbiorczego listu przewozowego MAWB."
+    },
+    {
+      "id": 18,
+      "front": "Przesyłki czarterowe w transporcie lotniczym",
+      "back": "Przewożenie ładunków w dedykowanych samolotach wynajętych specjalnie na potrzeby danego zlecenia."
+    },
+    {
+      "id": 19,
+      "front": "Co to jest terminal cargo?",
+      "back": "Wydzielona część portu lotniczego świadcząca usługi załadunku, wyładunku i magazynowania towarów przesyłanych drogą lotniczą."
+    },
+    {
+      "id": 20,
+      "front": "Infrastruktura terminalu cargo",
+      "back": "Magazyn celny, chłodnia, regały wysokiego składowania, rampy oraz pomieszczenia do składowania materiałów specjalnych (w tym odpadów radioaktywnych)."
+    },
+    {
+      "id": 21,
+      "front": "Największe lotnisko cargo w Polsce",
+      "back": "Lotnisko Chopina w Warszawie - obsługuje ponad 100 milionów kilogramów cargo rocznie."
+    },
+    {
+      "id": 22,
+      "front": "Żegluga liniowa - definicja",
+      "back": "Żegluga odbywająca się na stałych trasach według rozkładu rejsów, z reguły na długich dystansach."
+    },
+    {
+      "id": 23,
+      "front": "Żegluga trampowa - definicja",
+      "back": "Żegluga nieregularna obejmująca przewóz ładunków na nieokreślonych trasach, w zależności od aktualnych potrzeb przewozowych."
+    },
+    {
+      "id": 24,
+      "front": "Kabotaż - definicja",
+      "back": "Żegluga na krótkich trasach w obrębie różnych portów tego samego państwa."
+    },
+    {
+      "id": 25,
+      "front": "Główne zalety transportu morskiego",
+      "back": "Możliwość przewozu ładunków o najszerszym wachlarzu podatności transportowej, światowy zasięg, korzystna cena, wysoka wydajność."
+    },
+    {
+      "id": 26,
+      "front": "Główne wady transportu morskiego",
+      "back": "Niewielka prędkość statków, niska częstotliwość połączeń, niższe bezpieczeństwo ładunków, ograniczona możliwość śledzenia towarów."
+    },
+    {
+      "id": 27,
+      "front": "Drobnicowce - charakterystyka",
+      "back": "Statki przystosowane do transportu drobnicy konwencjonalnej i ładunków masowych w niewielkich ilościach. Często posiadają chłodzoną ładownię i własną infrastrukturę załadunkową."
+    },
+    {
+      "id": 28,
+      "front": "Semikontenerowce - charakterystyka",
+      "back": "Statki drobnicowe przystosowane zarówno do transportu ładunków w formie konwencjonalnej, jak i w kontenerach."
+    },
+    {
+      "id": 29,
+      "front": "Statki drobnicowe wielozadaniowe - charakterystyka",
+      "back": "Statki do przewozu szerokiego wachlarza ładunków, z własną infrastrukturą (dźwigi, furty burtowe, windy), kilka pokładów do transportu kontenerów i drobnicy."
+    },
+    {
+      "id": 30,
+      "front": "Kontenerowce - charakterystyka",
+      "back": "Statki przeznaczone wyłącznie do przewozu kontenerów, głównie na pokładzie. Mają otwartą budowę pokładu i prowadnice do precyzyjnego załadunku."
+    },
+    {
+      "id": 31,
+      "front": "Co oznacza skrót MS przy nazwie statku?",
+      "back": "Motor Ship - statek motorowy."
+    },
+    {
+      "id": 32,
+      "front": "Co oznacza skrót NS przy nazwie statku?",
+      "back": "Nuclear Ship - statek o napędzie atomowym."
+    },
+    {
+      "id": 33,
+      "front": "Co oznacza skrót HMS przy nazwie statku?",
+      "back": "His/Her Majesty's Ship - statek Jego/Jej Królewskiej Mości (flota brytyjska)."
+    },
+    {
+      "id": 34,
+      "front": "Co oznacza skrót RMS przy nazwie statku?",
+      "back": "Royal Mail Ship - statek Królewskiej Poczty."
+    },
+    {
+      "id": 35,
+      "front": "Co oznacza skrót MSC w kontekście żeglugi?",
+      "back": "Mediterranean Shipping Company - jeden z największych armatorów świata."
+    },
+    {
+      "id": 36,
+      "front": "Kim jest armator?",
+      "back": "Osoba prawna lub fizyczna eksploatująca własny lub wynajęty statek, zatrudniająca kapitana i załogę, odpowiadająca cywilnie za zobowiązania z eksploatacji statku."
+    },
+    {
+      "id": 37,
+      "front": "Obowiązki armatora",
+      "back": "Rejestracja statku, przestrzeganie zasad bezpiecznej żeglugi, ochrona statku z wyposażeniem i załogą, udział w postępowaniach ws. wypadków morskich."
+    },
+    {
+      "id": 38,
+      "front": "Kontener 40 FT Pallet Wide - wymiary wewnętrzne",
+      "back": "Długość 12098 mm, szerokość 2426 mm, wysokość 2379 mm."
+    },
+    {
+      "id": 39,
+      "front": "Kontener 40 FT Pallet Wide - pojemność i ładowność",
+      "back": "Pojemność 76,3 m³, tara (waga własna) 4100 kg, maksymalna ładowność 29900 kg."
+    },
+    {
+      "id": 40,
+      "front": "Cechy transportu kolejowego - zalety",
+      "back": "Masowość przewozów, relatywnie niskie stawki przewozowe, niska wypadkowość, możliwość precyzyjnego określenia czasu dostawy."
+    },
+    {
+      "id": 41,
+      "front": "Cechy transportu kolejowego - wady",
+      "back": "Niskie bezpieczeństwo towarów nieodpornych na wstrząsy."
+    },
+    {
+      "id": 42,
+      "front": "Kolejowe korytarze towarowe RFC w Polsce",
+      "back": "Korytarz Morze Bałtyckie - Morze Adriatyckie, Korytarz Morze Północne - Morze Bałtyckie, Bursztynowy Korytarz Towarowy."
+    },
+    {
+      "id": 43,
+      "front": "Podział przesyłek kolejowych",
+      "back": "Wagonowe i wielowagonowe, zwyczajne i z ustalonym terminem przewozu, krajowe i międzynarodowe."
+    },
+    {
+      "id": 44,
+      "front": "Parametry nowoczesnego wagonu towarowego",
+      "back": "Nośność 68 ton, ciężar własny 25,8 tony, pojemność nadwozia 138 m³, mieści 38 europalet."
+    },
+    {
+      "id": 45,
+      "front": "Porównanie: transport lotniczy vs morski vs kolejowy",
+      "back": "Lotniczy: najszybszy, najdroższy. Morski: najtańszy przy dużych wolumenach, najwolniejszy. Kolejowy: kompromis między kosztem a czasem, efektywny na średnich dystansach."
+    }
+  ]
+}

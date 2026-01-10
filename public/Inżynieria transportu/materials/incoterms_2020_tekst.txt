@@ -1,0 +1,116 @@
+INCOTERMS 2020 - MATERIAŁ DO NAUKI
+
+INCOTERMS to skrót od International Commercial Terms, czyli międzynarodowe warunki sprzedaży. Zostały stworzone w celu ułatwienia handlu pomiędzy firmami z różnych krajów. Obecnie obowiązuje jedenaście podstawowych reguł handlowych, które precyzyjnie określają, kto ponosi koszty, kto jest odpowiedzialny za towar, kto organizuje ubezpieczenie oraz kto zajmuje się załadunkiem i rozładunkiem.
+
+Reguły dzielą się na dwie kategorie. Pierwsza grupa to reguły powszechne, które można stosować przy każdym rodzaju transportu: EXW, FCA, CPT, CIP, DAP, DPU oraz DDP. Druga grupa to reguły przeznaczone wyłącznie dla transportu morskiego i wodnego śródlądowego: FAS, FOB, CFR oraz CIF.
+
+ZASADY STOSOWANIA INCOTERMS
+
+INCOTERMS dotyczą wyłącznie handlu towarami, nie mają zastosowania w obrocie usługami. Strony umowy decydują, którą formułę zastosują. Jeśli strony w umowie zapiszą inne warunki niż przewidują reguły, to postanowienia umowne mają pierwszeństwo. Strony mogą też modyfikować reguły lub je uzupełniać, jeśli wymaga tego specyfika branży lub konkretna transakcja.
+
+INCOTERMS nie regulują: rozwiązywania sporów związanych z umową sprzedaży, specyfikacji produktów, czasu ani miejsca płatności, konsekwencji opóźnień, skutków sankcji, kwestii taryf celnych, zakazów importowych i eksportowych ani praw własności intelektualnej.
+
+PODZIAŁ NA GRUPY
+
+Grupa E obejmuje tylko jedną regułę EXW i zakłada minimalne zaangażowanie sprzedającego. Sprzedający jedynie udostępnia towar do dyspozycji kupującego we wskazanym miejscu. Nie musi przeprowadzać odprawy celnej ani nie ponosi ryzyka ani kosztów załadunku.
+
+Grupa F obejmuje reguły FCA, FAS i FOB. Sprzedający musi dokonać odprawy celnej eksportowej, ale nie opłaca kosztów transportu ani ubezpieczenia.
+
+Grupa C zawiera reguły CFR, CIF, CPT i CIP. Sprzedający zawiera umowę przewozu i ponosi koszty transportu. Jest odpowiedzialny za odprawę eksportową, ale ryzyko przechodzi na kupującego już w momencie nadania towaru. Wszystkie zdarzenia i koszty po załadunku obciążają kupującego.
+
+Grupa D obejmuje reguły DAP, DPU i DDP. Sprzedający zobowiązuje się dostarczyć towar do określonego miejsca lub portu przeznaczenia.
+
+REGUŁA EXW (Ex Works)
+
+EXW zakłada najmniejsze zaangażowanie sprzedającego. Dostawa zostaje uznana za dokonaną, gdy towar jest pozostawiony do dyspozycji kupującego w oznaczonym miejscu. Sprzedający nie musi ładować towaru na pojazd ani przeprowadzać odprawy eksportowej. Oznaczone miejsce nie musi być siedzibą sprzedającego. Strony muszą dokładnie wskazać punkt dostawy, bo to tam kończy się odpowiedzialność sprzedającego.
+
+Obowiązki sprzedającego: dostarczenie towaru i faktury handlowej zgodnej z umową, postawienie towaru do dyspozycji kupującego w uzgodnionym punkcie, ponoszenie ryzyka uszkodzenia towaru do momentu dostarczenia, udzielenie pomocy przy formalnościach eksportowych oraz przekazanie informacji niezbędnych do ubezpieczenia. Sprzedający ponosi koszty kontroli jakości, mierzenia i ważenia, ewentualnego przepakowania w razie uszkodzenia oraz opakowania i oznaczenia towaru.
+
+Obowiązki kupującego: pozyskanie dokumentacji eksportowej i importowej, przeprowadzenie odpraw celnych, zorganizowanie transportu, przyjęcie towaru i dostarczenie dowodu odbioru oraz ponoszenie wszelkiego ryzyka od momentu odbioru. Kupujący ponosi koszty obsługi celnej, cła, podatki, koszty transportu oraz ewentualne dodatkowe koszty związane z nieodebraniem towaru.
+
+REGUŁA CFR (Cost and Freight)
+
+CFR dotyczy transportu morskiego i wodnego śródlądowego. Sprzedający dostarcza towar na pokład statku należącego do armatora, którego sam wskazał. Ryzyko utraty lub uszkodzenia przechodzi na kupującego w momencie, gdy towary znajdą się na pokładzie, niezależnie od tego, czy dotrą do celu.
+
+Obowiązki sprzedającego: załadunek towaru, zawarcie umowy przewozu, dokonanie odprawy eksportowej, dostarczenie towaru na statek z fakturą, przeprowadzenie kontroli jakości oraz dostarczenie dokumentu transportowego i informacji do ubezpieczenia. Koszty po stronie sprzedającego: podatki w kraju wytworzenia, opłaty portowe, transport do portu, kontrola jakości i opakowanie.
+
+Obowiązki kupującego: odbiór towaru w określonym miejscu i czasie, informowanie o terminie wysyłki i porcie przeznaczenia oraz uzyskanie licencji importowej. Koszty po stronie kupującego: podatki w kraju docelowym, ubezpieczenie, transport od portu, opłaty celne tranzytowe i rozładunek.
+
+REGUŁA CPT (Carriage Paid To)
+
+Sprzedający opłaca fracht do uzgodnionego miejsca i dostarcza towary z fakturą handlową. Kupujący musi przyjąć dostawę od przewoźnika w uzgodnionym miejscu przeznaczenia. Istotne jest dokładne określenie w umowie miejsca przekazania towaru, bo do tego punktu sprzedawca pokrywa koszty transportu.
+
+Obowiązki sprzedającego: przekazanie towaru przewoźnikowi, dostarczenie wymaganych dokumentów, zawarcie umowy przewozu na swój koszt, przeprowadzenie odprawy eksportowej oraz pakowanie i oznaczenie towaru. Koszty: kontrola, opakowanie, transport i odprawa eksportowa.
+
+Obowiązki kupującego: zapłata za towar, przyjęcie go i akceptacja dokumentu transportowego. Koszty: cła i podatki związane z tranzytem oraz opłaty celne w kraju przeznaczenia.
+
+REGUŁA CIF (Cost Insurance and Freight)
+
+CIF to reguła dla transportu morskiego. Sprzedający dostarcza towar na pokład statku i uważa się, że wywiązał się z obowiązku, gdy towary znajdą się na pokładzie, bez względu na to, w jakim stanie dotrą i czy w ogóle dotrą do celu.
+
+Obowiązki sprzedającego: zawarcie umowy przewozu i ubezpieczenia, załadunek towaru na statek i przeprowadzenie odprawy eksportowej. Koszty: odprawa eksportowa, dostarczenie towaru na statek, licencja eksportowa, umowa przewozu, ubezpieczenie, opakowanie i kontrola jakości.
+
+Obowiązki kupującego: odpowiedzialność za uszkodzenia i kradzież po załadowaniu na statek, informowanie o porcie i terminie dostawy, pozyskanie świadectw pochodzenia i organizacja odprawy importowej. Koszty: licencja importowa, odprawa importowa oraz ewentualne dodatkowe koszty wynikające z braku terminowego powiadomienia sprzedającego.
+
+REGUŁA CIP (Carriage and Insurance Paid To)
+
+CIP to uniwersalna reguła, gdzie za dostarczenie towaru uznaje się moment przekazania go przewoźnikowi. Jeśli jest kilku przewoźników, sprzedawca odpowiada tylko do momentu przekazania pierwszemu z nich. Ryzyko przechodzi ze sprzedającego na kupującego w momencie umieszczenia towaru na środku transportu.
+
+Obowiązki sprzedającego: wywiązanie się z warunków umowy, przekazanie towaru przewoźnikowi, zawarcie umowy przewozu, pakowanie towaru, przeprowadzenie odprawy eksportowej i ubezpieczenie przesyłki. Koszty: eksportowe, kontrolne, ubezpieczenia i transportu do przekazania kupującemu.
+
+Obowiązki kupującego: przyjęcie towaru, pozyskanie dokumentów tranzytowych i importowych, przeprowadzenie odprawy importowej i informowanie o miejscu dostawy. Koszty: formalności importowe, koszty od momentu przekazania towaru oraz rozładunek.
+
+REGUŁA DAP (Delivered At Place)
+
+DAP stosuje się przy wszystkich środkach transportu, zarówno kontenerowych jak i drobnicowych. Jest to reguła wygodna dla kupującego, choć jej minusem jest brak kontroli nad towarem na prawie całej trasie.
+
+Obowiązki sprzedającego: dostarczenie dokumentów sprzedaży, towaru gotowego do rozładunku w określonym miejscu i czasie, odpowiedzialność za utratę lub uszkodzenie do momentu dostarczenia, zawarcie umowy przewozowej, przeprowadzenie odprawy eksportowej i kontrola jakości. Koszty: transport, spedycja, odprawa eksportowa oraz koszty związane z utratą lub uszkodzeniem towaru.
+
+Obowiązki kupującego: opłacenie towaru, odbiór w określonym miejscu i czasie, przeprowadzenie odprawy importowej i informowanie o terminie i miejscu dostawy. Koszty: odprawa importowa, koszty od chwili przejęcia ładunku oraz rozładunek.
+
+REGUŁA DPU (Delivered at Place Unloaded)
+
+DPU to reguła gdzie sprzedający dostarcza towary i ryzyko przechodzi na kupującego dopiero po rozładunku, gdy towary są pozostawione do dyspozycji kupującego w oznaczonym miejscu.
+
+Obowiązki sprzedającego: wywiązanie się z warunków dostawy, rozładunek towarów, zawarcie umowy przewozu, przeprowadzenie odprawy eksportowej i przygotowanie towaru. Koszty: eksport, tranzyt, transport, rozładunek i kontrola jakości.
+
+Obowiązki kupującego: pomoc przy eksporcie i tranzycie oraz przeprowadzenie odprawy importowej. Koszty: odprawa importowa, cła i podatki.
+
+REGUŁA DDP (Delivered Duty Paid)
+
+DDP oznacza dosłownie "dostarczone z opłaconym cłem". Sprzedający odpowiada za organizację transportu oraz opłacenie cła i podatków.
+
+Obowiązki sprzedającego: dostarczenie towaru i dokumentów do określonego miejsca w wyznaczonym terminie, pakowanie i zabezpieczenie towaru, zawarcie umowy przewozowej oraz przeprowadzenie odprawy eksportowej i importowej. Koszty: kontrola, odprawa eksportowa i importowa z cłami i podatkami, opakowanie oraz koszty związane z utratą lub uszkodzeniem towaru.
+
+Obowiązki kupującego: odbiór towaru w uzgodnionym miejscu i terminie oraz pomoc przy uzyskaniu dokumentacji. Koszty: koszt towaru zgodnie z umową oraz rozładunek.
+
+REGUŁA FCA (Free Carrier)
+
+FCA to reguła gdzie sprzedający ponosi koszty załadunku, transportu i ubezpieczenia do momentu przekazania towaru pierwszemu przewoźnikowi wskazanemu przez kupującego. Towar zostaje uznany za dostarczony w momencie załadunku i wtedy ryzyko przechodzi na kupującego.
+
+Obowiązki sprzedającego: przygotowanie towaru do załadunku, na prośbę kupującego zawarcie umowy przewozu, przeprowadzenie odprawy eksportowej i zawiadomienie o przekazaniu towaru przewoźnikowi. Koszty: odprawa eksportowa, dostarczenie towaru przewoźnikowi oraz kontrola i opakowanie.
+
+Obowiązki kupującego: formalności importowe, zawarcie umowy przewozu i ubezpieczenia, ponoszenie ryzyka od przekazania przewoźnikowi i przyjęcie dostawy. Koszty: transport, import, rozładunek i ubezpieczenie.
+
+REGUŁA FAS (Free Alongside Ship)
+
+FAS dotyczy wyłącznie transportu morskiego lub śródlądowego. Sprzedający musi dostarczyć towar do uzgodnionego miejsca załadunku, a następnie wszelkie opłaty i ryzyko ponosi importer.
+
+Obowiązki sprzedającego: wywiązanie się z warunków transakcji, dostarczenie towaru wzdłuż burty statku w określonym terminie i porcie, przygotowanie towaru i przeprowadzenie odprawy eksportowej. Koszty: eksportowe, wysyłka do burty statku oraz kontrola.
+
+Obowiązki kupującego: zawarcie umowy przewozu, pomoc przy formalnościach eksportowych, informowanie o wymogach bezpieczeństwa i podanie nazwy statku oraz punktu załadunku. Koszty: przewóz do miejsca przeznaczenia oraz formalności importowe.
+
+REGUŁA FOB (Free On Board)
+
+FOB to reguła gdzie punktem przeniesienia ryzyka i kosztów jest moment przekroczenia przez towar burty statku. Sprzedający ponosi koszty załadunku.
+
+Obowiązki sprzedającego: dostarczenie towarów na statek w miejscu wyznaczonym przez kupującego, dostarczenie dokumentów sprzedaży, informowanie o realizacji dostawy i przeprowadzenie odprawy eksportowej. Koszty: odprawa eksportowa, załadowanie na statek oraz koszty związane z uszkodzeniem lub utratą przed załadowaniem.
+
+Obowiązki kupującego: odpowiedzialność za uszkodzenie lub utratę po dostarczeniu na statek, zawarcie umowy przewozowej, przeprowadzenie odprawy importowej i informowanie o porcie, statku i terminie dostawy. Koszty: umowa przewozowa, odprawa importowa oraz koszty związane z uszkodzeniem lub utratą po załadowaniu na statek.
+
+PODSUMOWANIE
+
+Reguły INCOTERMS 2020 stanowią fundamentalne narzędzie w handlu międzynarodowym, precyzyjnie określające podział obowiązków, kosztów i ryzyka między sprzedającego a kupującego. Wybór odpowiedniej reguły zależy od rodzaju transportu, możliwości organizacyjnych stron oraz ich preferencji co do zakresu odpowiedzialności.
+
+Reguły powszechne (wszystkie rodzaje transportu): EXW, FCA, CPT, CIP, DAP, DPU, DDP
+Reguły morskie i śródlądowe: FAS, FOB, CFR, CIF

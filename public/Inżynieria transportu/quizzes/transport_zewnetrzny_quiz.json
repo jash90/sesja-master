@@ -1,0 +1,171 @@
+{
+  "title": "Transport zewnętrzny - quiz sprawdzający",
+  "description": "Quiz sprawdzający wiedzę z zakresu transportu lotniczego, morskiego i kolejowego. Obejmuje definicje, rodzaje środków transportu, dokumentację i parametry techniczne.",
+  "questions": [
+    {
+      "question": "Czym jest transport zewnętrzny?",
+      "options": [
+        "Transport odbywający się wewnątrz zakładu produkcyjnego",
+        "Transport odbywający się poza terytorium zakładu, mający na celu dostarczenie ładunku od nadawcy do odbiorcy",
+        "Transport realizowany wyłącznie na terenie jednego miasta",
+        "Transport towarów niebezpiecznych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Transport zewnętrzny to transport odbywający się poza terytorium konkretnego zakładu czy fabryki, którego celem jest dostarczenie ładunku od nadawcy do odbiorcy z wykorzystaniem określonych środków transportu."
+    },
+    {
+      "question": "Która z poniższych NIE jest kategorią transportu zewnętrznego?",
+      "options": [
+        "Transport lądowy",
+        "Transport wodny",
+        "Transport wewnętrzny",
+        "Transport powietrzny"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Transport zewnętrzny dzieli się na trzy kategorie: lądowy (samochodowy, przesyłowy, kolejowy), wodny (morski, śródlądowy) oraz powietrzny (lotniczy, kosmiczny). Transport wewnętrzny to odrębna kategoria dotycząca przemieszczania w obrębie zakładu."
+    },
+    {
+      "question": "Co jest główną wadą transportu lotniczego?",
+      "options": [
+        "Niska częstotliwość połączeń",
+        "Brak możliwości przewozu ładunków płynnych",
+        "Wysokie koszty przewozu",
+        "Długi czas transportu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Główne wady transportu lotniczego to wysokie koszty przewozu, uzależnienie od warunków pogodowych, ograniczona ładowność oraz oddalenie lotnisk od centrów miast. Natomiast czas transportu jest krótki, a częstotliwość połączeń duża."
+    },
+    {
+      "question": "Co oznacza skrót ULD w transporcie lotniczym?",
+      "options": [
+        "Universal Loading Document",
+        "Unit Load Devices",
+        "Unified Logistics Distribution",
+        "Upper Level Delivery"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ULD (Unit Load Devices) to jednostki ładunkowe w transporcie lotniczym - palety i kontenery lotnicze zaprojektowane specjalnie do kadłuba każdego typu samolotu."
+    },
+    {
+      "question": "Jaki jest zasięg samolotu Airbus Beluga?",
+      "options": [
+        "2500 km",
+        "4600 km",
+        "8700 km",
+        "15400 km"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Airbus Beluga ma zasięg 4600 km i ładowność 51 ton. C17 Globemaster III ma zasięg 8700 km, a Antonov An-225 miał zasięg 15400 km."
+    },
+    {
+      "question": "Czym różni się AWB od MAWB?",
+      "options": [
+        "AWB dotyczy transportu morskiego, MAWB lotniczego",
+        "AWB to pojedynczy list przewozowy, MAWB to zbiorczy list dla przesyłek skonsolidowanych",
+        "AWB stosuje się w transporcie krajowym, MAWB w międzynarodowym",
+        "AWB i MAWB to te same dokumenty"
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWB (Air Waybill) to pojedynczy list przewozowy dla przesyłek zwykłych. MAWB (Master Air Waybill) to zbiorczy list przewozowy stosowany przy przesyłkach skonsolidowanych, łączących ładunki od różnych nadawców."
+    },
+    {
+      "question": "Co wchodzi w skład infrastruktury terminalu cargo?",
+      "options": [
+        "Tylko magazyn celny i rampy",
+        "Magazyn celny, chłodnia, regały wysokiego składowania, rampy, pomieszczenia do materiałów specjalnych",
+        "Wyłącznie hangary dla samolotów",
+        "Pasy startowe i wieża kontrolna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Terminal cargo to wydzielona część portu lotniczego, w skład której wchodzą: magazyn celny, chłodnia, regały wysokiego składowania, rampy oraz pomieszczenia do składowania materiałów specjalnych, w tym odpadów radioaktywnych."
+    },
+    {
+      "question": "Czym jest żegluga trampowa?",
+      "options": [
+        "Żegluga na stałych trasach według rozkładu",
+        "Żegluga nieregularna na nieokreślonych trasach, zależna od potrzeb przewozowych",
+        "Żegluga na krótkich trasach w obrębie portów jednego państwa",
+        "Żegluga wyłącznie statkami pasażerskimi"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Żegluga trampowa to żegluga nieregularna obejmująca przewóz ładunków na nieokreślonych trasach, w zależności od aktualnych potrzeb przewozowych. Żegluga liniowa odbywa się na stałych trasach, a kabotaż to żegluga między portami jednego państwa."
+    },
+    {
+      "question": "Co oznacza skrót HMS przy nazwie statku?",
+      "options": [
+        "Heavy Maritime Ship",
+        "His/Her Majesty's Ship",
+        "Harbour Management System",
+        "High-speed Motor Ship"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HMS (His/Her Majesty's Ship) oznacza statek Jego/Jej Królewskiej Mości i jest stosowany dla jednostek brytyjskiej floty królewskiej."
+    },
+    {
+      "question": "Kim jest armator?",
+      "options": [
+        "Kapitan statku",
+        "Właściciel portu morskiego",
+        "Osoba eksploatująca statek, zatrudniająca kapitana i załogę, odpowiadająca za zobowiązania z eksploatacji",
+        "Pracownik terminalu cargo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Armator to osoba prawna lub fizyczna eksploatująca własny lub wynajęty statek, zatrudniająca kapitana oraz załogę i odpowiadająca cywilnie za zobowiązania wynikające z eksploatowania statku."
+    },
+    {
+      "question": "Jaka jest maksymalna ładowność kontenera 40 FT Pallet Wide?",
+      "options": [
+        "15 000 kg",
+        "22 500 kg",
+        "29 900 kg",
+        "35 000 kg"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kontener 40 FT Pallet Wide ma maksymalną ładowność 29 900 kg (Max Payload), tarę (wagę własną) 4100 kg i pojemność 76,3 m³."
+    },
+    {
+      "question": "Który statek jest przeznaczony zarówno do transportu ładunków konwencjonalnych, jak i kontenerów?",
+      "options": [
+        "Kontenerowiec",
+        "Drobnicowiec",
+        "Semikontenerowiec",
+        "Tankowiec"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Semikontenerowce to statki drobnicowe przystosowane zarówno do transportu ładunków w formie konwencjonalnej, jak i w kontenerach. Kontenerowce przewożą wyłącznie kontenery, a drobnicowce - ładunki nienadające się do konteneryzacji."
+    },
+    {
+      "question": "Które lotnisko obsługuje najwięcej cargo w Polsce?",
+      "options": [
+        "Katowice-Pyrzowice",
+        "Lotnisko Chopina w Warszawie",
+        "Gdańsk im. Lecha Wałęsy",
+        "Rzeszów-Jasionka"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lotnisko Chopina w Warszawie jest największym lotniskiem cargo w Polsce, obsługującym ponad 100 milionów kilogramów cargo rocznie."
+    },
+    {
+      "question": "Jaką ładowność miał Antonov An-225 Mrija?",
+      "options": [
+        "70 ton",
+        "124 ton",
+        "250 ton",
+        "380 ton"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Antonov An-225 Mrija był największym samolotem transportowym świata z ładownością 250 ton i zasięgiem 15 400 km. Jedyny egzemplarz został zniszczony w 2022 roku podczas wojny w Ukrainie."
+    },
+    {
+      "question": "Ile europalet mieści nowoczesny wagon towarowy o nośności 68 ton?",
+      "options": [
+        "24 europalety",
+        "32 europalety",
+        "38 europalet",
+        "44 europalety"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Nowoczesny wagon towarowy o nośności 68 ton, ciężarze własnym 25,8 tony i pojemności nadwozia 138 m³ mieści 38 europalet."
+    }
+  ]
+}
