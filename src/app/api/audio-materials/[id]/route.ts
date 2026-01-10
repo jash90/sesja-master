@@ -1,6 +1,21 @@
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+
+interface AudioMaterial {
+  id: string;
+  filename: string;
+  title: string;
+  subject: string;
+  format: string;
+  size: number;
+  createdAt: string;
+  url: string;
+}
+
+interface Manifest {
+  audioMaterials: AudioMaterial[];
+  generatedAt: string;
+  subjects: string[];
+}
 
 export async function GET(
   request: Request,
@@ -10,48 +25,39 @@ export async function GET(
     const { id } = await params;
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject') || 'test';
-    const audioMaterialsDir = path.join(process.cwd(), 'public', subject, 'audio-materials');
-    const filePath = path.join(audioMaterialsDir, id);
 
-    try {
-      const stats = await fs.stat(filePath);
+    // Fetch manifest from static file
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
-      // Check if it's a file
-      if (!stats.isFile()) {
-        return NextResponse.json(
-          { error: 'Audio material not found' },
-          { status: 404 }
-        );
-      }
+    const manifestRes = await fetch(`${baseUrl}/manifest.json`, {
+      next: { revalidate: 60 },
+    });
 
-      // Read file and return as response
-      const fileContent = await fs.readFile(filePath);
+    if (!manifestRes.ok) {
+      return NextResponse.json(
+        { error: 'Manifest not found' },
+        { status: 404 }
+      );
+    }
 
-      // Determine content type based on file extension
-      const ext = id.split('.').pop()?.toLowerCase();
-      const contentTypes: Record<string, string> = {
-        mp3: 'audio/mpeg',
-        wav: 'audio/wav',
-        ogg: 'audio/ogg',
-        m4a: 'audio/mp4',
-        m4b: 'audio/mp4',
-      };
+    const manifest: Manifest = await manifestRes.json();
 
-      const contentType = contentTypes[ext || ''] || 'audio/mpeg';
+    // Find the audio material
+    const audioMaterial = manifest.audioMaterials.find(
+      (audio) => audio.id === id && audio.subject === subject
+    );
 
-      return new NextResponse(fileContent, {
-        headers: {
-          'Content-Type': contentType,
-          'Content-Length': stats.size.toString(),
-          'Cache-Control': 'public, max-age=31536000',
-        },
-      });
-    } catch (error) {
+    if (!audioMaterial) {
       return NextResponse.json(
         { error: 'Audio material not found' },
         { status: 404 }
       );
     }
+
+    // Redirect to the static file URL
+    return NextResponse.redirect(new URL(audioMaterial.url, request.url));
   } catch (error) {
     console.error('Error loading audio material:', error);
     return NextResponse.json(

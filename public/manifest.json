@@ -1,0 +1,236 @@
+{
+  "audioMaterials": [
+    {
+      "id": "przemysł 4.0.mp3",
+      "filename": "przemysł 4.0.mp3",
+      "title": "przemysł 4.0",
+      "subject": "Inżynieria transportu",
+      "format": "mp3",
+      "size": 22318080,
+      "createdAt": "2026-01-10T00:53:19.580Z",
+      "url": "/In%C5%BCynieria%20transportu/audio-materials/przemys%C5%82%204.0.mp3"
+    },
+    {
+      "id": "ZAPASY I MAGAZYNOWANIE.mp3",
+      "filename": "ZAPASY I MAGAZYNOWANIE.mp3",
+      "title": "ZAPASY I MAGAZYNOWANIE",
+      "subject": "Inżynieria transportu",
+      "format": "mp3",
+      "size": 23152800,
+      "createdAt": "2026-01-10T00:53:19.437Z",
+      "url": "/In%C5%BCynieria%20transportu/audio-materials/ZAPASY%20I%20MAGAZYNOWANIE.mp3"
+    },
+    {
+      "id": "TRANSPORT ZEWNĘTRZNY.mp3",
+      "filename": "TRANSPORT ZEWNĘTRZNY.mp3",
+      "title": "TRANSPORT ZEWNĘTRZNY",
+      "subject": "Inżynieria transportu",
+      "format": "mp3",
+      "size": 10869600,
+      "createdAt": "2026-01-10T00:53:19.382Z",
+      "url": "/In%C5%BCynieria%20transportu/audio-materials/TRANSPORT%20ZEWN%C4%98TRZNY.mp3"
+    },
+    {
+      "id": "TRANSPORT BLISKI.mp3",
+      "filename": "TRANSPORT BLISKI.mp3",
+      "title": "TRANSPORT BLISKI",
+      "subject": "Inżynieria transportu",
+      "format": "mp3",
+      "size": 12557280,
+      "createdAt": "2026-01-10T00:53:19.317Z",
+      "url": "/In%C5%BCynieria%20transportu/audio-materials/TRANSPORT%20BLISKI.mp3"
+    },
+    {
+      "id": "INCOTERMS 2020.mp3",
+      "filename": "INCOTERMS 2020.mp3",
+      "title": "INCOTERMS 2020",
+      "subject": "Inżynieria transportu",
+      "format": "mp3",
+      "size": 15427680,
+      "createdAt": "2026-01-10T00:53:19.240Z",
+      "url": "/In%C5%BCynieria%20transportu/audio-materials/INCOTERMS%202020.mp3"
+    },
+    {
+      "id": "DROGOWY TRANSPORT MIĘDZYNARODOWY.mp3",
+      "filename": "DROGOWY TRANSPORT MIĘDZYNARODOWY.mp3",
+      "title": "DROGOWY TRANSPORT MIĘDZYNARODOWY",
+      "subject": "Inżynieria transportu",
+      "format": "mp3",
+      "size": 18877920,
+      "createdAt": "2026-01-10T00:53:19.142Z",
+      "url": "/In%C5%BCynieria%20transportu/audio-materials/DROGOWY%20TRANSPORT%20MI%C4%98DZYNARODOWY.mp3"
+    }
+  ],
+  "materials": [
+    {
+      "id": "zapasy_magazynowanie_tekst",
+      "filename": "zapasy_magazynowanie_tekst.txt",
+      "title": "zapasy magazynowanie tekst",
+      "subject": "Inżynieria transportu",
+      "size": 18414,
+      "createdAt": "2026-01-10T00:53:19.710Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/zapasy_magazynowanie_tekst.txt"
+    },
+    {
+      "id": "transport_bliski_tekst",
+      "filename": "transport_bliski_tekst.txt",
+      "title": "transport bliski tekst",
+      "subject": "Inżynieria transportu",
+      "size": 9980,
+      "createdAt": "2026-01-10T00:53:19.709Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/transport_bliski_tekst.txt"
+    },
+    {
+      "id": "transport_drogowy_miedzynarodowy",
+      "filename": "transport_drogowy_miedzynarodowy.txt",
+      "title": "transport drogowy miedzynarodowy",
+      "subject": "Inżynieria transportu",
+      "size": 14283,
+      "createdAt": "2026-01-10T00:53:19.709Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/transport_drogowy_miedzynarodowy.txt"
+    },
+    {
+      "id": "transport_zewnetrzny_tekst",
+      "filename": "transport_zewnetrzny_tekst.txt",
+      "title": "transport zewnetrzny tekst",
+      "subject": "Inżynieria transportu",
+      "size": 8384,
+      "createdAt": "2026-01-10T00:53:19.709Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/transport_zewnetrzny_tekst.txt"
+    },
+    {
+      "id": "Przemysl_4_0",
+      "filename": "Przemysl_4_0.txt",
+      "title": "Przemysl 4 0",
+      "subject": "Inżynieria transportu",
+      "size": 17614,
+      "createdAt": "2026-01-10T00:53:19.708Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/Przemysl_4_0.txt"
+    },
+    {
+      "id": "incoterms_2020_tekst",
+      "filename": "incoterms_2020_tekst.txt",
+      "title": "incoterms 2020 tekst",
+      "subject": "Inżynieria transportu",
+      "size": 12366,
+      "createdAt": "2026-01-10T00:53:19.708Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/incoterms_2020_tekst.txt"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "incoterms_2020_fiszki",
+      "filename": "incoterms_2020_fiszki.json",
+      "title": "incoterms 2020 fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 7605,
+      "createdAt": "2026-01-10T00:53:19.707Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/incoterms_2020_fiszki.json"
+    },
+    {
+      "id": "transport_bliski_fiszki",
+      "filename": "transport_bliski_fiszki.json",
+      "title": "transport bliski fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 8530,
+      "createdAt": "2026-01-10T00:53:19.707Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/transport_bliski_fiszki.json"
+    },
+    {
+      "id": "transport_drogowy_miedzynarodowy_fiszki",
+      "filename": "transport_drogowy_miedzynarodowy_fiszki.json",
+      "title": "transport drogowy miedzynarodowy fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 7778,
+      "createdAt": "2026-01-10T00:53:19.707Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/transport_drogowy_miedzynarodowy_fiszki.json"
+    },
+    {
+      "id": "transport_zewnetrzny_fiszki",
+      "filename": "transport_zewnetrzny_fiszki.json",
+      "title": "transport zewnetrzny fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 10429,
+      "createdAt": "2026-01-10T00:53:19.707Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/transport_zewnetrzny_fiszki.json"
+    },
+    {
+      "id": "zapasy_magazynowanie_fiszki",
+      "filename": "zapasy_magazynowanie_fiszki.json",
+      "title": "zapasy magazynowanie fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 11891,
+      "createdAt": "2026-01-10T00:53:19.707Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/zapasy_magazynowanie_fiszki.json"
+    },
+    {
+      "id": "Przemysl_4_0_fiszki",
+      "filename": "Przemysl_4_0_fiszki.json",
+      "title": "Przemysl 4 0 fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 11208,
+      "createdAt": "2026-01-10T00:53:19.706Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/Przemysl_4_0_fiszki.json"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz_transport_bliski (1)",
+      "filename": "quiz_transport_bliski (1).json",
+      "title": "quiz transport bliski (1)",
+      "subject": "Inżynieria transportu",
+      "size": 7454,
+      "createdAt": "2026-01-10T00:53:19.711Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/quiz_transport_bliski%20(1).json"
+    },
+    {
+      "id": "transport_drogowy_miedzynarodowy_quiz",
+      "filename": "transport_drogowy_miedzynarodowy_quiz.json",
+      "title": "transport drogowy miedzynarodowy quiz",
+      "subject": "Inżynieria transportu",
+      "size": 7078,
+      "createdAt": "2026-01-10T00:53:19.711Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/transport_drogowy_miedzynarodowy_quiz.json"
+    },
+    {
+      "id": "transport_zewnetrzny_quiz",
+      "filename": "transport_zewnetrzny_quiz.json",
+      "title": "transport zewnetrzny quiz",
+      "subject": "Inżynieria transportu",
+      "size": 8081,
+      "createdAt": "2026-01-10T00:53:19.711Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/transport_zewnetrzny_quiz.json"
+    },
+    {
+      "id": "zapasy_magazynowanie_quiz",
+      "filename": "zapasy_magazynowanie_quiz.json",
+      "title": "zapasy magazynowanie quiz",
+      "subject": "Inżynieria transportu",
+      "size": 8281,
+      "createdAt": "2026-01-10T00:53:19.711Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/zapasy_magazynowanie_quiz.json"
+    },
+    {
+      "id": "Przemysl_4_0_quiz",
+      "filename": "Przemysl_4_0_quiz.json",
+      "title": "Przemysl 4 0 quiz",
+      "subject": "Inżynieria transportu",
+      "size": 8347,
+      "createdAt": "2026-01-10T00:53:19.710Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/Przemysl_4_0_quiz.json"
+    },
+    {
+      "id": "incoterms_2020_quiz",
+      "filename": "incoterms_2020_quiz.json",
+      "title": "incoterms 2020 quiz",
+      "subject": "Inżynieria transportu",
+      "size": 8307,
+      "createdAt": "2026-01-10T00:53:19.710Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/incoterms_2020_quiz.json"
+    }
+  ],
+  "generatedAt": "2026-01-10T10:57:03.896Z",
+  "subjects": [
+    "Inżynieria transportu"
+  ]
+}

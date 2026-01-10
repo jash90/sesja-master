@@ -1,56 +1,48 @@
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+
+interface AudioMaterial {
+  id: string;
+  filename: string;
+  title: string;
+  subject: string;
+  format: string;
+  size: number;
+  createdAt: string;
+  url: string;
+}
+
+interface Manifest {
+  audioMaterials: AudioMaterial[];
+  generatedAt: string;
+  subjects: string[];
+}
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject') || 'test';
-    const audioMaterialsDir = path.join(process.cwd(), 'public', subject, 'audio-materials');
 
-    // Check if directory exists, if not create it
-    try {
-      await fs.access(audioMaterialsDir);
-    } catch {
-      await fs.mkdir(audioMaterialsDir, { recursive: true });
+    // Fetch manifest from static file
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
+    const manifestRes = await fetch(`${baseUrl}/manifest.json`, {
+      next: { revalidate: 60 }, // Cache for 60 seconds
+    });
+
+    if (!manifestRes.ok) {
       return NextResponse.json({ audioMaterials: [] });
     }
 
-    // Read all files from audio-materials directory
-    const files = await fs.readdir(audioMaterialsDir);
-    const audioFiles = files.filter((file) => {
-      const ext = file.toLowerCase();
-      return ext.endsWith('.mp3') || ext.endsWith('.wav') || ext.endsWith('.ogg') || ext.endsWith('.m4a');
-    });
+    const manifest: Manifest = await manifestRes.json();
 
-    // Get file stats for creation date and size
-    const audioMaterials = await Promise.all(
-      audioFiles.map(async (file) => {
-        try {
-          const filePath = path.join(audioMaterialsDir, file);
-          const stats = await fs.stat(filePath);
-
-          return {
-            id: file,
-            filename: file,
-            title: file.replace(/\.[^/.]+$/, '').replace(/-/g, ' ').replace(/_/g, ' '),
-            size: stats.size,
-            format: file.split('.').pop()?.toLowerCase() || 'mp3',
-            createdAt: stats.birthtime,
-          };
-        } catch (error) {
-          console.error(`Error reading ${file}:`, error);
-          return null;
-        }
-      })
+    // Filter by subject
+    const audioMaterials = manifest.audioMaterials.filter(
+      (audio) => audio.subject === subject
     );
 
-    // Filter out null values (failed reads) and sort by creation date
-    const validAudioMaterials = audioMaterials
-      .filter((material): material is NonNullable<typeof material> => material !== null)
-      .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
-
-    return NextResponse.json({ audioMaterials: validAudioMaterials });
+    return NextResponse.json({ audioMaterials });
   } catch (error) {
     console.error('Error listing audio materials:', error);
     return NextResponse.json(
