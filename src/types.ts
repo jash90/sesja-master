@@ -51,6 +51,7 @@ export interface AudioMaterial {
   size: number;
   format: string;
   createdAt: Date;
+  url?: string;
 }
 
 export interface Flashcard {

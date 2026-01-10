@@ -1,6 +1,21 @@
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+
+interface AudioMaterial {
+  id: string;
+  filename: string;
+  title: string;
+  subject: string;
+  format: string;
+  size: number;
+  createdAt: string;
+  url: string;
+}
+
+interface Manifest {
+  audioMaterials: AudioMaterial[];
+  generatedAt: string;
+  subjects: string[];
+}
 
 export async function GET(
   request: Request,
@@ -10,35 +25,47 @@ export async function GET(
     const { id } = await params;
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject') || 'test';
-    const audioMaterialsDir = path.join(process.cwd(), 'public', subject, 'audio-materials');
-    const filePath = path.join(audioMaterialsDir, id);
 
-    try {
-      const stats = await fs.stat(filePath);
+    // Fetch manifest from static file
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
-      // Check if it's a file
-      if (!stats.isFile()) {
-        return NextResponse.json(
-          { error: 'Audio material not found' },
-          { status: 404 }
-        );
-      }
+    const manifestRes = await fetch(`${baseUrl}/manifest.json`, {
+      next: { revalidate: 60 },
+    });
 
-      // Return metadata as JSON
-      return NextResponse.json({
-        id: id,
-        filename: id,
-        title: id.replace(/\.[^/.]+$/, '').replace(/-/g, ' ').replace(/_/g, ' '),
-        size: stats.size,
-        format: id.split('.').pop()?.toLowerCase() || 'mp3',
-        createdAt: stats.birthtime,
-      });
-    } catch (error) {
+    if (!manifestRes.ok) {
+      return NextResponse.json(
+        { error: 'Manifest not found' },
+        { status: 404 }
+      );
+    }
+
+    const manifest: Manifest = await manifestRes.json();
+
+    // Find the audio material
+    const audioMaterial = manifest.audioMaterials.find(
+      (audio) => audio.id === id && audio.subject === subject
+    );
+
+    if (!audioMaterial) {
       return NextResponse.json(
         { error: 'Audio material not found' },
         { status: 404 }
       );
     }
+
+    // Return metadata
+    return NextResponse.json({
+      id: audioMaterial.id,
+      filename: audioMaterial.filename,
+      title: audioMaterial.title,
+      size: audioMaterial.size,
+      format: audioMaterial.format,
+      createdAt: audioMaterial.createdAt,
+      url: audioMaterial.url,
+    });
   } catch (error) {
     console.error('Error loading audio material info:', error);
     return NextResponse.json(

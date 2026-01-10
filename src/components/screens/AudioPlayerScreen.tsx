@@ -54,11 +54,18 @@ export function AudioPlayerScreen({
     }
   };
 
+  // Get audio URL (static or fallback to API)
+  const getAudioUrl = () => {
+    if (!audioMaterial) return '';
+    return audioMaterial.url || `/api/audio-materials/${audioMaterial.id}`;
+  };
+
   // Download audio file
   const downloadAudio = async () => {
     if (!audioMaterial) return;
     try {
-      const res = await fetch(`/api/audio-materials/${audioMaterial.id}`);
+      const audioUrl = getAudioUrl();
+      const res = await fetch(audioUrl);
       if (!res.ok) throw new Error('Failed to download audio');
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
@@ -104,7 +111,7 @@ export function AudioPlayerScreen({
               <div className="w-full max-w-2xl">
                 <audio
                   ref={(ref) => setAudioRef(ref)}
-                  src={`/api/audio-materials/${audioMaterial.id}`}
+                  src={getAudioUrl()}
                   onPlay={() => setIsPlaying(true)}
                   onPause={() => setIsPlaying(false)}
                   onEnded={() => setIsPlaying(false)}
