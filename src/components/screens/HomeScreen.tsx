@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Play, BookOpen, Loader2, FileText, Headphones, RefreshCw } from 'lucide-react';
+import { Play, BookOpen, Loader2, FileText, Headphones, RefreshCw, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -13,13 +13,19 @@ export function HomeScreen({
   onLoadMaterial,
   onLoadAudio,
   onLoadFlashcardSet,
+  selectedSubject,
+  onSelectSubject,
 }: {
   setView: (view: AppView) => void;
   onLoadQuiz: (id: string) => void;
   onLoadMaterial: (id: string) => void;
   onLoadAudio: (id: string) => void;
   onLoadFlashcardSet: (id: string) => void;
+  selectedSubject: string;
+  onSelectSubject: (subject: string) => void;
 }) {
+  const [subjects, setSubjects] = useState<string[]>([]);
+  const [loadingSubjects, setLoadingSubjects] = useState(true);
   const [quizzes, setQuizzes] = useState<QuizMetadata[]>([]);
   const [loadingQuizzes, setLoadingQuizzes] = useState(true);
   const [materials, setMaterials] = useState<Material[]>([]);
@@ -29,9 +35,24 @@ export function HomeScreen({
   const [flashcards, setFlashcards] = useState<Flashcard[]>([]);
   const [loadingFlashcards, setLoadingFlashcards] = useState(true);
 
-  // Load data
+  // Load subjects
   useEffect(() => {
-    fetch('/api/quizzes')
+    fetch('/api/subjects')
+      .then((res) => res.json())
+      .then((data) => {
+        setSubjects(data.subjects || []);
+        setLoadingSubjects(false);
+      })
+      .catch((error) => {
+        console.error('Error loading subjects:', error);
+        setLoadingSubjects(false);
+      });
+  }, []);
+
+  // Load data based on selected subject
+  useEffect(() => {
+    setLoadingQuizzes(true);
+    fetch(`/api/quizzes?subject=${encodeURIComponent(selectedSubject)}`)
       .then((res) => res.json())
       .then((data) => {
         setQuizzes(data.quizzes || []);
@@ -41,10 +62,11 @@ export function HomeScreen({
         console.error('Error loading quizzes:', error);
         setLoadingQuizzes(false);
       });
-  }, []);
+  }, [selectedSubject]);
 
   useEffect(() => {
-    fetch('/api/materials')
+    setLoadingMaterials(true);
+    fetch(`/api/materials?subject=${encodeURIComponent(selectedSubject)}`)
       .then((res) => res.json())
       .then((data) => {
         setMaterials(data.materials || []);
@@ -54,10 +76,11 @@ export function HomeScreen({
         console.error('Error loading materials:', error);
         setLoadingMaterials(false);
       });
-  }, []);
+  }, [selectedSubject]);
 
   useEffect(() => {
-    fetch('/api/audio-materials')
+    setLoadingAudio(true);
+    fetch(`/api/audio-materials?subject=${encodeURIComponent(selectedSubject)}`)
       .then((res) => res.json())
       .then((data) => {
         setAudioMaterials(data.audioMaterials || []);
@@ -67,10 +90,11 @@ export function HomeScreen({
         console.error('Error loading audio materials:', error);
         setLoadingAudio(false);
       });
-  }, []);
+  }, [selectedSubject]);
 
   useEffect(() => {
-    fetch('/api/flashcards')
+    setLoadingFlashcards(true);
+    fetch(`/api/flashcards?subject=${encodeURIComponent(selectedSubject)}`)
       .then((res) => res.json())
       .then((data) => {
         setFlashcards(data.flashcards || []);
@@ -80,7 +104,7 @@ export function HomeScreen({
         console.error('Error loading flashcards:', error);
         setLoadingFlashcards(false);
       });
-  }, []);
+  }, [selectedSubject]);
 
   // Format file size
   const formatFileSize = (bytes: number) => {
@@ -93,8 +117,33 @@ export function HomeScreen({
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background to-secondary/20">
       <header className="p-6 bg-background/80 backdrop-blur-sm border-b">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold">SesjaMaster</h1>
-          <p className="text-muted-foreground mt-1">Quizy i materiały do nauki</p>
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <h1 className="text-3xl font-bold">SesjaMaster</h1>
+              <p className="text-muted-foreground mt-1">Quizy i materiały do nauki</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-muted-foreground">Przedmiot:</span>
+              {loadingSubjects ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : (
+                <div className="relative">
+                  <select
+                    value={selectedSubject}
+                    onChange={(e) => onSelectSubject(e.target.value)}
+                    className="appearance-none bg-background border rounded-md px-4 py-2 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer"
+                  >
+                    {subjects.map((subject) => (
+                      <option key={subject} value={subject}>
+                        {subject}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none text-muted-foreground" />
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </header>
 

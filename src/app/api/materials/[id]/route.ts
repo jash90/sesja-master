@@ -8,7 +8,9 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const materialsDir = path.join(process.cwd(), 'public', 'test', 'materials');
+    const { searchParams } = new URL(request.url);
+    const subject = searchParams.get('subject') || 'test';
+    const materialsDir = path.join(process.cwd(), 'public', subject, 'materials');
     const filePath = path.join(materialsDir, `${id}.txt`);
 
     try {

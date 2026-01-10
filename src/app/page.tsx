@@ -23,10 +23,13 @@ export default function QuizApp() {
 
   const [currentFlashcardSet, setCurrentFlashcardSet] = useState<FlashcardSet | null>(null);
 
+  // Subject selection state
+  const [selectedSubject, setSelectedSubject] = useState<string>('test');
+
   // Load quiz by ID
   const loadQuiz = async (quizId: string) => {
     try {
-      const res = await fetch(`/api/quiz/${quizId}`);
+      const res = await fetch(`/api/quiz/${quizId}?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load quiz');
       const quizData = await res.json();
       setQuiz(quizData);
@@ -41,7 +44,7 @@ export default function QuizApp() {
   // Load material by ID
   const loadMaterial = async (materialId: string) => {
     try {
-      const res = await fetch(`/api/materials/${materialId}`);
+      const res = await fetch(`/api/materials/${materialId}?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load material');
       const materialData = await res.json();
       setCurrentMaterial(materialData);
@@ -55,7 +58,7 @@ export default function QuizApp() {
   // Load flashcard set by ID
   const loadFlashcardSet = async (flashcardId: string) => {
     try {
-      const res = await fetch(`/api/flashcards/${flashcardId}`);
+      const res = await fetch(`/api/flashcards/${flashcardId}?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load flashcard set');
       const flashcardData = await res.json();
       setCurrentFlashcardSet(flashcardData);
@@ -69,7 +72,7 @@ export default function QuizApp() {
   // Load audio material by ID
   const loadAudio = async (audioId: string) => {
     try {
-      const res = await fetch(`/api/audio-materials/${audioId}/info`);
+      const res = await fetch(`/api/audio-materials/${audioId}/info?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load audio info');
       const audioData = await res.json();
       setCurrentAudio(audioData);
@@ -163,6 +166,8 @@ export default function QuizApp() {
           onLoadMaterial={loadMaterial}
           onLoadAudio={loadAudio}
           onLoadFlashcardSet={loadFlashcardSet}
+          selectedSubject={selectedSubject}
+          onSelectSubject={setSelectedSubject}
         />
       );
     case 'quiz-start':
@@ -244,6 +249,6 @@ export default function QuizApp() {
         />
       );
     default:
-      return <HomeScreen setView={setView} onLoadQuiz={loadQuiz} onLoadMaterial={loadMaterial} onLoadAudio={loadAudio} onLoadFlashcardSet={loadFlashcardSet} />;
+      return <HomeScreen setView={setView} onLoadQuiz={loadQuiz} onLoadMaterial={loadMaterial} onLoadAudio={loadAudio} onLoadFlashcardSet={loadFlashcardSet} selectedSubject={selectedSubject} onSelectSubject={setSelectedSubject} />;
   }
 }

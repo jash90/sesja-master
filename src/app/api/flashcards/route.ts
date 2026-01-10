@@ -2,9 +2,11 @@ import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const flashcardsDir = path.join(process.cwd(), 'public', 'test', 'flashcards');
+    const { searchParams } = new URL(request.url);
+    const subject = searchParams.get('subject') || 'test';
+    const flashcardsDir = path.join(process.cwd(), 'public', subject, 'flashcards');
 
     // Check if directory exists, if not create it
     try {
