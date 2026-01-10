@@ -49,3 +49,4 @@ dev.log
 prompt
 
 server.log
+.env*.local
