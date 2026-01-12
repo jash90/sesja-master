@@ -20,7 +20,6 @@ export default function QuizQuestionPage() {
     handleConfirmAnswer,
     handleNextQuestion,
     handlePreviousQuestion,
-    setSelectedAnswer,
     startTimer,
   } = useQuiz();
   const [isLoading, setIsLoading] = useState(false);
@@ -78,7 +77,6 @@ export default function QuizQuestionPage() {
       quiz={quiz}
       quizState={quizState}
       selectedAnswer={selectedAnswer}
-      setSelectedAnswer={setSelectedAnswer}
       handleAnswerSelect={handleAnswerSelect}
       handleConfirmAnswer={handleConfirmAnswer}
       handleNextQuestion={handleNext}

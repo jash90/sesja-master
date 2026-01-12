@@ -10,7 +10,6 @@ export function QuizQuestionScreen({
   quiz,
   quizState,
   selectedAnswer,
-  setSelectedAnswer,
   handleAnswerSelect,
   handleConfirmAnswer,
   handleNextQuestion,
@@ -20,7 +19,6 @@ export function QuizQuestionScreen({
   quiz: Quiz;
   quizState: QuizState;
   selectedAnswer: number | null;
-  setSelectedAnswer: (answer: number) => void;
   handleAnswerSelect: (answer: number) => void;
   handleConfirmAnswer: () => void;
   handleNextQuestion: () => void;
@@ -29,7 +27,6 @@ export function QuizQuestionScreen({
 }) {
   const currentQuestion = quiz.questions[quizState.currentQuestion];
   const progress = ((quizState.currentQuestion + 1) / quiz.questions.length) * 100;
-  const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
   const hasAnswered = quizState.confirmedAnswers.has(quizState.currentQuestion);
 
   // Format time
@@ -61,30 +58,34 @@ export function QuizQuestionScreen({
             <CardTitle className="text-2xl">{currentQuestion.question}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            {currentQuestion.options.map((option, index) => {
+            {quizState.shuffledIndices[quizState.currentQuestion].map((originalIndex, displayIndex) => {
+              const option = currentQuestion.options[originalIndex];
               let variant: 'default' | 'outline' | 'correct' | 'wrong' = 'default';
               let disabled = false;
 
               if (hasAnswered) {
                 disabled = true;
                 const savedAnswer = quizState.answers.get(quizState.currentQuestion);
-                if (index === currentQuestion.correctAnswer) {
+                if (originalIndex === currentQuestion.correctAnswer) {
                   variant = 'correct';
-                } else if (index === savedAnswer && savedAnswer !== currentQuestion.correctAnswer) {
+                } else if (originalIndex === savedAnswer && savedAnswer !== currentQuestion.correctAnswer) {
                   variant = 'wrong';
                 } else {
                   variant = 'outline';
                 }
-              } else if (selectedAnswer === index) {
+              } else if (selectedAnswer === originalIndex) {
                 variant = 'default';
               } else {
                 variant = 'outline';
               }
 
+              const savedOriginalAnswer = quizState.answers.get(quizState.currentQuestion);
+              const isUserWrong = savedOriginalAnswer !== undefined && savedOriginalAnswer !== currentQuestion.correctAnswer && originalIndex === savedOriginalAnswer;
+
               return (
                 <button
-                  key={index}
-                  onClick={() => handleAnswerSelect(index)}
+                  key={displayIndex}
+                  onClick={() => handleAnswerSelect(originalIndex)}
                   disabled={disabled}
                   className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
                     variant === 'correct'
@@ -97,12 +98,12 @@ export function QuizQuestionScreen({
                   } ${disabled ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
                 >
                   <div className="flex items-start gap-3">
-                    <span className="font-semibold min-w-[24px]">{index + 1}.</span>
+                    <span className="font-semibold min-w-[24px]">{displayIndex + 1}.</span>
                     <span>{option}</span>
-                    {hasAnswered && index === currentQuestion.correctAnswer && (
+                    {hasAnswered && originalIndex === currentQuestion.correctAnswer && (
                       <CheckCircle className="w-5 h-5 text-green-500 ml-auto flex-shrink-0 mt-0.5" />
                     )}
-                    {hasAnswered && index === quizState.answers.get(quizState.currentQuestion) && !isCorrect && (
+                    {hasAnswered && isUserWrong && (
                       <XCircle className="w-5 h-5 text-red-500 ml-auto flex-shrink-0 mt-0.5" />
                     )}
                   </div>

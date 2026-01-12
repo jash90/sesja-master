@@ -1,13 +1,43 @@
 {
   "audioMaterials": [
     {
+      "id": "wzorce_czeste_i_reguly_asocjacyjne.mp3",
+      "filename": "wzorce_czeste_i_reguly_asocjacyjne.mp3",
+      "title": "wzorce czeste i reguly asocjacyjne",
+      "subject": "Systemy Wspomagania Decyzji",
+      "format": "mp3",
+      "size": 14703500,
+      "createdAt": "2026-01-12T18:36:47.340Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/audio-materials/wzorce_czeste_i_reguly_asocjacyjne.mp3"
+    },
+    {
+      "id": "opracowanie_sieci_neuronowe.mp3",
+      "filename": "opracowanie_sieci_neuronowe.mp3",
+      "title": "opracowanie sieci neuronowe",
+      "subject": "Systemy Wspomagania Decyzji",
+      "format": "mp3",
+      "size": 28590956,
+      "createdAt": "2026-01-12T18:36:47.161Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/audio-materials/opracowanie_sieci_neuronowe.mp3"
+    },
+    {
+      "id": "eksploracja danych.mp3",
+      "filename": "eksploracja danych.mp3",
+      "title": "eksploracja danych",
+      "subject": "Systemy Wspomagania Decyzji",
+      "format": "mp3",
+      "size": 29876640,
+      "createdAt": "2026-01-12T18:36:47.019Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/audio-materials/eksploracja%20danych.mp3"
+    },
+    {
       "id": "przemysł 4.0.mp3",
       "filename": "przemysł 4.0.mp3",
       "title": "przemysł 4.0",
       "subject": "Inżynieria transportu",
       "format": "mp3",
       "size": 22318080,
-      "createdAt": "2026-01-10T00:53:19.580Z",
+      "createdAt": "2026-01-12T18:36:46.909Z",
       "url": "/In%C5%BCynieria%20transportu/audio-materials/przemys%C5%82%204.0.mp3"
     },
     {
@@ -17,7 +47,7 @@
       "subject": "Inżynieria transportu",
       "format": "mp3",
       "size": 23152800,
-      "createdAt": "2026-01-10T00:53:19.437Z",
+      "createdAt": "2026-01-12T18:36:46.785Z",
       "url": "/In%C5%BCynieria%20transportu/audio-materials/ZAPASY%20I%20MAGAZYNOWANIE.mp3"
     },
     {
@@ -27,7 +57,7 @@
       "subject": "Inżynieria transportu",
       "format": "mp3",
       "size": 10869600,
-      "createdAt": "2026-01-10T00:53:19.382Z",
+      "createdAt": "2026-01-12T18:36:46.735Z",
       "url": "/In%C5%BCynieria%20transportu/audio-materials/TRANSPORT%20ZEWN%C4%98TRZNY.mp3"
     },
     {
@@ -37,7 +67,7 @@
       "subject": "Inżynieria transportu",
       "format": "mp3",
       "size": 12557280,
-      "createdAt": "2026-01-10T00:53:19.317Z",
+      "createdAt": "2026-01-12T18:36:46.679Z",
       "url": "/In%C5%BCynieria%20transportu/audio-materials/TRANSPORT%20BLISKI.mp3"
     },
     {
@@ -47,7 +77,7 @@
       "subject": "Inżynieria transportu",
       "format": "mp3",
       "size": 15427680,
-      "createdAt": "2026-01-10T00:53:19.240Z",
+      "createdAt": "2026-01-12T18:36:46.605Z",
       "url": "/In%C5%BCynieria%20transportu/audio-materials/INCOTERMS%202020.mp3"
     },
     {
@@ -57,28 +87,37 @@
       "subject": "Inżynieria transportu",
       "format": "mp3",
       "size": 18877920,
-      "createdAt": "2026-01-10T00:53:19.142Z",
+      "createdAt": "2026-01-12T18:36:46.508Z",
       "url": "/In%C5%BCynieria%20transportu/audio-materials/DROGOWY%20TRANSPORT%20MI%C4%98DZYNARODOWY.mp3"
     }
   ],
   "materials": [
     {
-      "id": "zapasy_magazynowanie_tekst",
-      "filename": "zapasy_magazynowanie_tekst.txt",
-      "title": "zapasy magazynowanie tekst",
-      "subject": "Inżynieria transportu",
-      "size": 18414,
-      "createdAt": "2026-01-10T00:53:19.710Z",
-      "url": "/In%C5%BCynieria%20transportu/materials/zapasy_magazynowanie_tekst.txt"
+      "id": "opracowanie_sieci_neuronowe_complete",
+      "filename": "opracowanie_sieci_neuronowe_complete.txt",
+      "title": "opracowanie sieci neuronowe complete",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 119720,
+      "createdAt": "2026-01-12T18:36:47.434Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/materials/opracowanie_sieci_neuronowe_complete.txt"
     },
     {
-      "id": "transport_bliski_tekst",
-      "filename": "transport_bliski_tekst.txt",
-      "title": "transport bliski tekst",
-      "subject": "Inżynieria transportu",
-      "size": 9980,
-      "createdAt": "2026-01-10T00:53:19.709Z",
-      "url": "/In%C5%BCynieria%20transportu/materials/transport_bliski_tekst.txt"
+      "id": "eksploracja_danych_tekst",
+      "filename": "eksploracja_danych_tekst.txt",
+      "title": "eksploracja danych tekst",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 23796,
+      "createdAt": "2026-01-12T18:36:47.433Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/materials/eksploracja_danych_tekst.txt"
+    },
+    {
+      "id": "Opracowanie_SWDW3_Wzorce_czeste_i_reguly_asocjacyjne",
+      "filename": "Opracowanie_SWDW3_Wzorce_czeste_i_reguly_asocjacyjne.txt",
+      "title": "Opracowanie SWDW3 Wzorce czeste i reguly asocjacyjne",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 56332,
+      "createdAt": "2026-01-12T18:36:47.431Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/materials/Opracowanie_SWDW3_Wzorce_czeste_i_reguly_asocjacyjne.txt"
     },
     {
       "id": "transport_drogowy_miedzynarodowy",
@@ -86,7 +125,7 @@
       "title": "transport drogowy miedzynarodowy",
       "subject": "Inżynieria transportu",
       "size": 14283,
-      "createdAt": "2026-01-10T00:53:19.709Z",
+      "createdAt": "2026-01-12T18:36:47.017Z",
       "url": "/In%C5%BCynieria%20transportu/materials/transport_drogowy_miedzynarodowy.txt"
     },
     {
@@ -95,17 +134,26 @@
       "title": "transport zewnetrzny tekst",
       "subject": "Inżynieria transportu",
       "size": 8384,
-      "createdAt": "2026-01-10T00:53:19.709Z",
+      "createdAt": "2026-01-12T18:36:47.017Z",
       "url": "/In%C5%BCynieria%20transportu/materials/transport_zewnetrzny_tekst.txt"
     },
     {
-      "id": "Przemysl_4_0",
-      "filename": "Przemysl_4_0.txt",
-      "title": "Przemysl 4 0",
+      "id": "zapasy_magazynowanie_tekst",
+      "filename": "zapasy_magazynowanie_tekst.txt",
+      "title": "zapasy magazynowanie tekst",
       "subject": "Inżynieria transportu",
-      "size": 17614,
-      "createdAt": "2026-01-10T00:53:19.708Z",
-      "url": "/In%C5%BCynieria%20transportu/materials/Przemysl_4_0.txt"
+      "size": 18414,
+      "createdAt": "2026-01-12T18:36:47.017Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/zapasy_magazynowanie_tekst.txt"
+    },
+    {
+      "id": "transport_bliski_tekst",
+      "filename": "transport_bliski_tekst.txt",
+      "title": "transport bliski tekst",
+      "subject": "Inżynieria transportu",
+      "size": 9980,
+      "createdAt": "2026-01-12T18:36:47.016Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/transport_bliski_tekst.txt"
     },
     {
       "id": "incoterms_2020_tekst",
@@ -113,18 +161,63 @@
       "title": "incoterms 2020 tekst",
       "subject": "Inżynieria transportu",
       "size": 12366,
-      "createdAt": "2026-01-10T00:53:19.708Z",
+      "createdAt": "2026-01-12T18:36:47.015Z",
       "url": "/In%C5%BCynieria%20transportu/materials/incoterms_2020_tekst.txt"
+    },
+    {
+      "id": "Przemysl_4_0",
+      "filename": "Przemysl_4_0.txt",
+      "title": "Przemysl 4 0",
+      "subject": "Inżynieria transportu",
+      "size": 17614,
+      "createdAt": "2026-01-12T18:36:47.014Z",
+      "url": "/In%C5%BCynieria%20transportu/materials/Przemysl_4_0.txt"
     }
   ],
   "flashcards": [
+    {
+      "id": "wzorce_czeste_i_reguly_asocjacyjne_fiszki",
+      "filename": "wzorce_czeste_i_reguly_asocjacyjne_fiszki.json",
+      "title": "wzorce czeste i reguly asocjacyjne fiszki",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 27334,
+      "createdAt": "2026-01-12T18:36:47.431Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/flashcards/wzorce_czeste_i_reguly_asocjacyjne_fiszki.json"
+    },
+    {
+      "id": "fiszki_eksploracja_danych",
+      "filename": "fiszki_eksploracja_danych.json",
+      "title": "fiszki eksploracja danych",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 19164,
+      "createdAt": "2026-01-12T18:36:47.430Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/flashcards/fiszki_eksploracja_danych.json"
+    },
+    {
+      "id": "sieci_neuronowe_fiszki",
+      "filename": "sieci_neuronowe_fiszki.json",
+      "title": "sieci neuronowe fiszki",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 27886,
+      "createdAt": "2026-01-12T18:36:47.430Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/flashcards/sieci_neuronowe_fiszki.json"
+    },
+    {
+      "id": "Przemysl_4_0_fiszki",
+      "filename": "Przemysl_4_0_fiszki.json",
+      "title": "Przemysl 4 0 fiszki",
+      "subject": "Inżynieria transportu",
+      "size": 11208,
+      "createdAt": "2026-01-12T18:36:47.013Z",
+      "url": "/In%C5%BCynieria%20transportu/flashcards/Przemysl_4_0_fiszki.json"
+    },
     {
       "id": "incoterms_2020_fiszki",
       "filename": "incoterms_2020_fiszki.json",
       "title": "incoterms 2020 fiszki",
       "subject": "Inżynieria transportu",
       "size": 7605,
-      "createdAt": "2026-01-10T00:53:19.707Z",
+      "createdAt": "2026-01-12T18:36:47.013Z",
       "url": "/In%C5%BCynieria%20transportu/flashcards/incoterms_2020_fiszki.json"
     },
     {
@@ -133,7 +226,7 @@
       "title": "transport bliski fiszki",
       "subject": "Inżynieria transportu",
       "size": 8530,
-      "createdAt": "2026-01-10T00:53:19.707Z",
+      "createdAt": "2026-01-12T18:36:47.013Z",
       "url": "/In%C5%BCynieria%20transportu/flashcards/transport_bliski_fiszki.json"
     },
     {
@@ -142,7 +235,7 @@
       "title": "transport drogowy miedzynarodowy fiszki",
       "subject": "Inżynieria transportu",
       "size": 7778,
-      "createdAt": "2026-01-10T00:53:19.707Z",
+      "createdAt": "2026-01-12T18:36:47.013Z",
       "url": "/In%C5%BCynieria%20transportu/flashcards/transport_drogowy_miedzynarodowy_fiszki.json"
     },
     {
@@ -151,7 +244,7 @@
       "title": "transport zewnetrzny fiszki",
       "subject": "Inżynieria transportu",
       "size": 10429,
-      "createdAt": "2026-01-10T00:53:19.707Z",
+      "createdAt": "2026-01-12T18:36:47.013Z",
       "url": "/In%C5%BCynieria%20transportu/flashcards/transport_zewnetrzny_fiszki.json"
     },
     {
@@ -160,55 +253,37 @@
       "title": "zapasy magazynowanie fiszki",
       "subject": "Inżynieria transportu",
       "size": 11891,
-      "createdAt": "2026-01-10T00:53:19.707Z",
+      "createdAt": "2026-01-12T18:36:47.013Z",
       "url": "/In%C5%BCynieria%20transportu/flashcards/zapasy_magazynowanie_fiszki.json"
-    },
-    {
-      "id": "Przemysl_4_0_fiszki",
-      "filename": "Przemysl_4_0_fiszki.json",
-      "title": "Przemysl 4 0 fiszki",
-      "subject": "Inżynieria transportu",
-      "size": 11208,
-      "createdAt": "2026-01-10T00:53:19.706Z",
-      "url": "/In%C5%BCynieria%20transportu/flashcards/Przemysl_4_0_fiszki.json"
     }
   ],
   "quizzes": [
     {
-      "id": "quiz_transport_bliski (1)",
-      "filename": "quiz_transport_bliski (1).json",
-      "title": "quiz transport bliski (1)",
-      "subject": "Inżynieria transportu",
-      "size": 7454,
-      "createdAt": "2026-01-10T00:53:19.711Z",
-      "url": "/In%C5%BCynieria%20transportu/quizzes/quiz_transport_bliski%20(1).json"
+      "id": "eksploracja_danych_quiz",
+      "filename": "eksploracja_danych_quiz.json",
+      "title": "eksploracja danych quiz",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 45046,
+      "createdAt": "2026-01-12T18:36:47.435Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/quizzes/eksploracja_danych_quiz.json"
     },
     {
-      "id": "transport_drogowy_miedzynarodowy_quiz",
-      "filename": "transport_drogowy_miedzynarodowy_quiz.json",
-      "title": "transport drogowy miedzynarodowy quiz",
-      "subject": "Inżynieria transportu",
-      "size": 7078,
-      "createdAt": "2026-01-10T00:53:19.711Z",
-      "url": "/In%C5%BCynieria%20transportu/quizzes/transport_drogowy_miedzynarodowy_quiz.json"
+      "id": "sieci_neuronowe_quiz",
+      "filename": "sieci_neuronowe_quiz.json",
+      "title": "sieci neuronowe quiz",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 40278,
+      "createdAt": "2026-01-12T18:36:47.435Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/quizzes/sieci_neuronowe_quiz.json"
     },
     {
-      "id": "transport_zewnetrzny_quiz",
-      "filename": "transport_zewnetrzny_quiz.json",
-      "title": "transport zewnetrzny quiz",
-      "subject": "Inżynieria transportu",
-      "size": 8081,
-      "createdAt": "2026-01-10T00:53:19.711Z",
-      "url": "/In%C5%BCynieria%20transportu/quizzes/transport_zewnetrzny_quiz.json"
-    },
-    {
-      "id": "zapasy_magazynowanie_quiz",
-      "filename": "zapasy_magazynowanie_quiz.json",
-      "title": "zapasy magazynowanie quiz",
-      "subject": "Inżynieria transportu",
-      "size": 8281,
-      "createdAt": "2026-01-10T00:53:19.711Z",
-      "url": "/In%C5%BCynieria%20transportu/quizzes/zapasy_magazynowanie_quiz.json"
+      "id": "wzorce_czeste_i_reguly_asocjacyjne_quiz",
+      "filename": "wzorce_czeste_i_reguly_asocjacyjne_quiz.json",
+      "title": "wzorce czeste i reguly asocjacyjne quiz",
+      "subject": "Systemy Wspomagania Decyzji",
+      "size": 44144,
+      "createdAt": "2026-01-12T18:36:47.435Z",
+      "url": "/Systemy%20Wspomagania%20Decyzji/quizzes/wzorce_czeste_i_reguly_asocjacyjne_quiz.json"
     },
     {
       "id": "Przemysl_4_0_quiz",
@@ -216,7 +291,7 @@
       "title": "Przemysl 4 0 quiz",
       "subject": "Inżynieria transportu",
       "size": 8347,
-      "createdAt": "2026-01-10T00:53:19.710Z",
+      "createdAt": "2026-01-12T18:36:47.018Z",
       "url": "/In%C5%BCynieria%20transportu/quizzes/Przemysl_4_0_quiz.json"
     },
     {
@@ -225,12 +300,49 @@
       "title": "incoterms 2020 quiz",
       "subject": "Inżynieria transportu",
       "size": 8307,
-      "createdAt": "2026-01-10T00:53:19.710Z",
+      "createdAt": "2026-01-12T18:36:47.018Z",
       "url": "/In%C5%BCynieria%20transportu/quizzes/incoterms_2020_quiz.json"
+    },
+    {
+      "id": "quiz_transport_bliski (1)",
+      "filename": "quiz_transport_bliski (1).json",
+      "title": "quiz transport bliski (1)",
+      "subject": "Inżynieria transportu",
+      "size": 7454,
+      "createdAt": "2026-01-12T18:36:47.018Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/quiz_transport_bliski%20(1).json"
+    },
+    {
+      "id": "transport_drogowy_miedzynarodowy_quiz",
+      "filename": "transport_drogowy_miedzynarodowy_quiz.json",
+      "title": "transport drogowy miedzynarodowy quiz",
+      "subject": "Inżynieria transportu",
+      "size": 7078,
+      "createdAt": "2026-01-12T18:36:47.018Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/transport_drogowy_miedzynarodowy_quiz.json"
+    },
+    {
+      "id": "transport_zewnetrzny_quiz",
+      "filename": "transport_zewnetrzny_quiz.json",
+      "title": "transport zewnetrzny quiz",
+      "subject": "Inżynieria transportu",
+      "size": 8081,
+      "createdAt": "2026-01-12T18:36:47.018Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/transport_zewnetrzny_quiz.json"
+    },
+    {
+      "id": "zapasy_magazynowanie_quiz",
+      "filename": "zapasy_magazynowanie_quiz.json",
+      "title": "zapasy magazynowanie quiz",
+      "subject": "Inżynieria transportu",
+      "size": 8281,
+      "createdAt": "2026-01-12T18:36:47.018Z",
+      "url": "/In%C5%BCynieria%20transportu/quizzes/zapasy_magazynowanie_quiz.json"
     }
   ],
-  "generatedAt": "2026-01-10T10:57:03.896Z",
+  "generatedAt": "2026-01-12T18:53:27.783Z",
   "subjects": [
+    "Systemy Wspomagania Decyzji",
     "Inżynieria transportu"
   ]
 }

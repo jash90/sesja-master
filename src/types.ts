@@ -25,6 +25,7 @@ export interface QuizState {
   confirmedAnswers: Set<number>;
   isFinished: boolean;
   score: number;
+  shuffledIndices: number[][]; // [questionIndex][displayPosition] = originalOptionIndex
 }
 
 export interface Material {

@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
 import type { Quiz, QuizState, FlashcardSet, AudioMaterial, MaterialContent } from '@/types';
+import { generateShuffledIndices } from '@/lib/utils';
 
 interface QuizContextType {
   // Quiz state
@@ -92,15 +93,17 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     try {
       const res = await fetch(`/api/quiz/${quizId}?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load quiz');
-      const quizData = await res.json();
+      const quizData: Quiz = await res.json();
       setQuiz(quizData);
-      // Initialize quiz state
+      // Initialize quiz state with shuffled answer indices
+      const optionsCount = quizData.questions[0]?.options.length ?? 4;
       setQuizState({
         currentQuestion: 0,
         answers: new Map(),
         confirmedAnswers: new Set(),
         isFinished: false,
         score: 0,
+        shuffledIndices: generateShuffledIndices(quizData.questions.length, optionsCount),
       });
       setSelectedAnswer(null);
       setTimeElapsed(0);
@@ -112,17 +115,20 @@ export function QuizProvider({ children }: { children: ReactNode }) {
 
   // Reset quiz state
   const resetQuiz = useCallback(() => {
+    if (!quiz) return;
+    const optionsCount = quiz.questions[0]?.options.length ?? 4;
     setQuizState({
       currentQuestion: 0,
       answers: new Map(),
       confirmedAnswers: new Set(),
       isFinished: false,
       score: 0,
+      shuffledIndices: generateShuffledIndices(quiz.questions.length, optionsCount),
     });
     setSelectedAnswer(null);
     setTimeElapsed(0);
     setIsTimerRunning(false);
-  }, []);
+  }, [quiz]);
 
   // Clear quiz completely
   const clearQuiz = useCallback(() => {
