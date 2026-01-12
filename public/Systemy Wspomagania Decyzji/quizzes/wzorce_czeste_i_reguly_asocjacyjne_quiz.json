@@ -1,0 +1,1062 @@
+{
+  "title": "Wzorce częste i reguły asocjacyjne - Quiz",
+  "description": "Kompleksowy quiz sprawdzający wiedzę z zakresu eksploracji danych, wzorców częstych, reguł asocjacyjnych oraz algorytmów eksploracji danych",
+  "questions": [
+    {
+      "question": "Co oznacza termin 'data mining'?",
+      "options": [
+        "Eksploracja wiedzy z danych",
+        "Wydobywanie danych z kopalni",
+        "Usuwanie zbędnych danych",
+        "Kompresja danych"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Data mining to skrót myślowy oznaczający eksplorację wiedzy z danych, a ściślej mówiąc wydobywanie informacji z danych, które tą wiedzę mogą ukształtować."
+    },
+    {
+      "question": "Które z poniższych NIE jest formą ukrytych informacji w repozytoriach danych?",
+      "options": [
+        "Regularności",
+        "Korelacje",
+        "Przypadkowość",
+        "Trendy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W repozytoriach danych występują regularności, korelacje, podobieństwa, trendy, osobliwości oraz reguły - nie przypadkowość, która jest przeciwieństwem wzorców."
+    },
+    {
+      "question": "Co to jest knowledge discovery?",
+      "options": [
+        "Odkrywanie wiedzy z danych",
+        "Uczenie maszynowe",
+        "Baza wiedzy",
+        "System ekspercki"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Knowledge discovery (odkrywanie wiedzy) to inaczej nazywana półautomatyczna lub automatyczna eksploracja danych w celu odkrywania związków między elementami."
+    },
+    {
+      "question": "Który z poniższych NIE jest metodą eksploracji danych?",
+      "options": [
+        "Metody statystyczne",
+        "Sieci neuronowe",
+        "Kompilacja kodu",
+        "Systemy rozmyte"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kompilacja kodu nie jest metodą eksploracji danych. Metody eksploracji to m.in. metody statystyczne, sieci neuronowe, systemy rozmyte, drzewa decyzyjne."
+    },
+    {
+      "question": "Jakie postacie mogą tworzyć dane w eksploracji?",
+      "options": [
+        "Tylko zbiory",
+        "Zbiory, sekwencje i struktury złożone",
+        "Tylko sekwencje",
+        "Tylko struktury złożone"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dane mogą tworzyć zbiory (encji, wektorów, macierzy), sekwencje (teksty, ciągi instrukcji) oraz struktury złożone (podgrafy, obrazy, mapy)."
+    },
+    {
+      "question": "Co to jest itemset (zbiór elementów)?",
+      "options": [
+        "Zbiór wszystkich dostępnych elementów",
+        "Pojedyncza transakcja",
+        "Lista klientów",
+        "Baza danych"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Itemset (zbiór elementów I) zawiera elementy od i1 do in, gdzie n≥1. To zbiór wszystkich dostępnych elementów, obiektów czy towarów."
+    },
+    {
+      "question": "Co składa się na transakcję T?",
+      "options": [
+        "Tylko identyfikator",
+        "Tylko podzbiór towarów",
+        "Para: identyfikator i podzbiór towarów",
+        "Lista wszystkich produktów"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Transakcja T jest parą składającą się z identyfikatora transakcji (tid) oraz pewnego podzbioru towarów X, który jest podzbiorem zbioru I."
+    },
+    {
+      "question": "Co to jest baza transakcyjna D?",
+      "options": [
+        "Pojedyncza transakcja",
+        "Zbiór wszystkich transakcji",
+        "Zbiór produktów",
+        "Lista klientów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Baza transakcyjna D to zbiór wszystkich transakcji od T1 do Tm, zawierająca skończoną ilość identyfikatorów transakcji."
+    },
+    {
+      "question": "Co oznacza k-itemset?",
+      "options": [
+        "Zbiór zawierający dokładnie k elementów",
+        "k transakcji",
+        "k baz danych",
+        "k klientów"
+      ],
+      "correctAnswer": 0,
+      "explanation": "K-itemset to k-elementowy zbiór X zawierający elementy od x1 do xk, który jest podzbiorem I. Definiuje pewną transakcję lub wzorzec."
+    },
+    {
+      "question": "Kiedy mówimy, że transakcja pokrywa wzorzec?",
+      "options": [
+        "Gdy wzorzec zawiera się w transakcji",
+        "Gdy transakcja zawiera dokładnie wzorzec",
+        "Gdy wzorzec jest równy transakcji",
+        "Gdy transakcja nie zawiera wzorca"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Transakcja T pokrywa wzorzec W, jeśli W zawiera się w X (W ⊆ X). Jeden wzorzec może być pokryty przez wiele transakcji."
+    },
+    {
+      "question": "Co oznacza cover(W,D)?",
+      "options": [
+        "Zbiór transakcji pokrywających wzorzec W",
+        "Liczba elementów w wzorcu",
+        "Liczba wszystkich transakcji",
+        "Zbiór wszystkich wzorców"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cover(W,D) to pokrycie wzorca W w bazie D - zbiór tych transakcji z bazy D, które pokrywają wzorzec W."
+    },
+    {
+      "question": "Co to jest wsparcie (support)?",
+      "options": [
+        "Liczba transakcji",
+        "Częstotliwość wystąpień wzorca wyrażona w procentach",
+        "Liczba produktów",
+        "Liczba klientów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wsparcie (support) to częstotliwość wystąpień wzorca W w zbiorze transakcji, wyrażona w procentach jako stosunek liczby wystąpień do wszystkich transakcji."
+    },
+    {
+      "question": "Jak oblicza się wsparcie wzorca W?",
+      "options": [
+        "s = |cover(W,D)| / M",
+        "s = M / |cover(W,D)|",
+        "s = |cover(W,D)| * M",
+        "s = M - |cover(W,D)|"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wsparcie s = |cover(W,D)| / M, gdzie M to liczba wszystkich transakcji w bazie D. Wartość wyrażona w procentach."
+    },
+    {
+      "question": "Kiedy wzorzec jest częsty (frequent)?",
+      "options": [
+        "Zawsze",
+        "Gdy wsparcie ≥ minimum support",
+        "Gdy wsparcie < minimum support",
+        "Gdy występuje raz"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wzorzec W jest częsty, jeśli jego wsparcie jest nie mniejsze niż ustalony próg σ (sigma), zwany minimalnym wsparciem (minimum support)."
+    },
+    {
+      "question": "Baza ma 5 transakcji, wzorzec występuje w 3. Jakie jest wsparcie?",
+      "options": [
+        "30%",
+        "50%",
+        "60%",
+        "75%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Wsparcie = 3/5 = 0.6 = 60%. Obliczamy jako stosunek liczby transakcji zawierających wzorzec do wszystkich transakcji."
+    },
+    {
+      "question": "Przy progu 50%, czy element występujący w 40% transakcji jest częsty?",
+      "options": [
+        "Tak",
+        "Nie",
+        "Zależy od kontekstu",
+        "Nie można określić"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nie jest częsty, ponieważ 40% < 50%. Element jest częsty tylko gdy jego wsparcie ≥ próg minimalnego wsparcia."
+    },
+    {
+      "question": "Co to są reguły asocjacyjne?",
+      "options": [
+        "Reguły typu X → Y z parametrami wsparcia i ufności",
+        "Reguły matematyczne",
+        "Reguły biznesowe",
+        "Instrukcje warunkowe"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Reguły asocjacyjne zapisujemy jako X→Y z parametrami s (wsparcie) i c (ufność/confidence), wyrażając zależności 'jeżeli X, to Y'."
+    },
+    {
+      "question": "Co to jest antecedent w regule asocjacyjnej?",
+      "options": [
+        "Następnik",
+        "Poprzednik (część 'jeżeli')",
+        "Wsparcie",
+        "Ufność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Antecedent (poprzednik) to zbiór elementów obecnych na wejściu reguły, część 'jeżeli' w regule. Reprezentuje przyczynę lub warunek wstępny."
+    },
+    {
+      "question": "Co to jest consequent w regule asocjacyjnej?",
+      "options": [
+        "Poprzednik",
+        "Następnik (część 'to')",
+        "Wsparcie",
+        "Lift"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Consequent (następnik) to zbiór elementów będących wynikiem lub konsekwencją poprzednika, część 'to' w regule. Reprezentuje skutek lub przewidywaną konsekwencję."
+    },
+    {
+      "question": "Jak oblicza się wsparcie reguły X→Y?",
+      "options": [
+        "s(X→Y) = s(X∪Y)",
+        "s(X→Y) = s(X) + s(Y)",
+        "s(X→Y) = s(X) * s(Y)",
+        "s(X→Y) = s(X) - s(Y)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wsparcie reguły s(X→Y) to procent transakcji zawierających zarówno X jak i Y, czyli s(X∪Y) - stosunek liczby transakcji zawierających X i Y do wszystkich transakcji."
+    },
+    {
+      "question": "Co to jest confidence (ufność) reguły?",
+      "options": [
+        "Częstość wystąpień",
+        "Prawdopodobieństwo warunkowe Y przy X",
+        "Liczba transakcji",
+        "Korelacja"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Confidence (ufność) to prawdopodobieństwo warunkowe wystąpienia Y przy założeniu, że wystąpiło X. Obliczana jako c(X→Y) = s(X∪Y) / s(X)."
+    },
+    {
+      "question": "Wzorzec występuje w 40 z 100 transakcji (wsparcie X), X i Y razem w 30. Ufność X→Y to:",
+      "options": [
+        "30%",
+        "40%",
+        "75%",
+        "100%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Confidence = s(X∪Y) / s(X) = 30/40 = 0.75 = 75%. Pokazuje, że w 75% przypadków gdy występuje X, występuje także Y."
+    },
+    {
+      "question": "Kiedy reguła asocjacyjna jest silna?",
+      "options": [
+        "Gdy wsparcie ≥ minsup AND ufność ≥ minc",
+        "Gdy tylko wsparcie ≥ minsup",
+        "Gdy tylko ufność ≥ minc",
+        "Gdy wsparcie = ufność"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Reguła jest silna, gdy spełnia oba warunki jednocześnie: wsparcie ≥ próg minsup oraz ufność ≥ próg minc."
+    },
+    {
+      "question": "Co to jest lift (podniesienie) reguły?",
+      "options": [
+        "Miara korelacji między X i Y",
+        "Wsparcie reguły",
+        "Ufność reguły",
+        "Liczba transakcji"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lift to miara korelacji między X i Y, obliczana jako lift(X→Y) = c(X→Y) / s(Y). Pokazuje, ile razy prawdopodobieństwo Y jest większe, gdy występuje X."
+    },
+    {
+      "question": "Co oznacza lift = 1?",
+      "options": [
+        "Silna korelacja dodatnia",
+        "Brak korelacji, X i Y niezależne",
+        "Silna korelacja ujemna",
+        "Błąd w obliczeniach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lift = 1 oznacza brak korelacji między X i Y - są niezależne statystycznie. X nie wpływa na prawdopodobieństwo wystąpienia Y."
+    },
+    {
+      "question": "Co oznacza lift > 1?",
+      "options": [
+        "Brak korelacji",
+        "Korelacja dodatnia",
+        "Korelacja ujemna",
+        "Błąd"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lift > 1 oznacza dodatnią korelację - wystąpienie X zwiększa prawdopodobieństwo wystąpienia Y. Im wyższa wartość, tym silniejsza zależność."
+    },
+    {
+      "question": "Co oznacza lift < 1?",
+      "options": [
+        "Korelacja dodatnia",
+        "Brak korelacji",
+        "Korelacja ujemna",
+        "Pełna zależność"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Lift < 1 oznacza ujemną korelację - wystąpienie X zmniejsza prawdopodobieństwo wystąpienia Y. Elementy występują razem rzadziej niż gdyby były niezależne."
+    },
+    {
+      "question": "Co to jest algorytm Apriori?",
+      "options": [
+        "Algorytm eksploracji wzorców częstych z podejściem poziomowym",
+        "Algorytm sortowania",
+        "Algorytm kompresji",
+        "Algorytm szyfrowania"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Apriori to klasyczny algorytm eksploracji wzorców częstych wykorzystujący podejście poziomowe (breadth-first) i zasadę Apriori do generowania kandydatów."
+    },
+    {
+      "question": "Jaka jest zasada Apriori (Apriori property)?",
+      "options": [
+        "Każdy wzorzec jest częsty",
+        "Jeśli wzorzec jest częsty, jego podzbiory też są częste",
+        "Jeśli wzorzec jest częsty, jego nadzbiory też są częste",
+        "Wszystkie wzorce mają równe wsparcie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zasada Apriori: jeśli wzorzec jest częsty, to wszystkie jego podzbiory też muszą być częste. Odwrotnie - jeśli podzbiór nie jest częsty, nadzbiór też nie będzie."
+    },
+    {
+      "question": "Do czego służy procedura join w Apriori?",
+      "options": [
+        "Do usuwania kandydatów",
+        "Do łączenia k-wzorców w (k+1)-wzorce",
+        "Do obliczania wsparcia",
+        "Do sortowania wzorców"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Procedura join łączy k-wzorce częste, tworząc kandydatów (k+1)-wzorców. Łączy wzorce mające wspólne pierwsze k-1 elementów."
+    },
+    {
+      "question": "Do czego służy procedura prune w Apriori?",
+      "options": [
+        "Do generowania kandydatów",
+        "Do obliczania wsparcia",
+        "Do usuwania kandydatów z nieczęstymi podzbiorami",
+        "Do sortowania wzorców"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Procedura prune oczyszcza zbiór kandydatów, usuwając te, których którykolwiek k-podzbiór nie jest częsty. Wykorzystuje zasadę Apriori."
+    },
+    {
+      "question": "Jaka jest główna wada algorytmu Apriori?",
+      "options": [
+        "Nie znajduje wszystkich wzorców",
+        "Wymaga wielokrotnego skanowania bazy danych",
+        "Działa tylko dla małych zbiorów",
+        "Nie oblicza wsparcia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Główna wada to konieczność wielokrotnego przeglądania bazy danych (jeden przebieg na każdy poziom k) oraz generowanie dużej liczby kandydatów."
+    },
+    {
+      "question": "Co to jest format horyzontalny danych?",
+      "options": [
+        "TID: {lista produktów}",
+        "Produkt: {lista TID}",
+        "Wszystkie transakcje w jednej linii",
+        "Produkty w kolumnach"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Format horyzontalny to reprezentacja, gdzie każda transakcja zawiera listę produktów: TID: {lista produktów}. Typowy format standardowych baz transakcyjnych."
+    },
+    {
+      "question": "Co to jest format wertykalny danych?",
+      "options": [
+        "TID: {lista produktów}",
+        "Produkt: {lista TID}",
+        "Transakcje w kolumnach",
+        "Produkty w wierszach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Format wertykalny to reprezentacja, gdzie dla każdego produktu przechowujemy listę TID transakcji: Produkt: {lista TID}. Używany w algorytmie ECLAT."
+    },
+    {
+      "question": "Co to jest algorytm ECLAT?",
+      "options": [
+        "Algorytm używający formatu wertykalnego i operacji przecięcia",
+        "Algorytm kompresji",
+        "Algorytm sortowania",
+        "Algorytm klasyfikacji"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ECLAT (Equivalence CLAss Transformation) to algorytm eksploracji wzorców częstych wykorzystujący format wertykalny i operacje przecięcia zbiorów TID."
+    },
+    {
+      "question": "Jak ECLAT oblicza wsparcie wzorca XY?",
+      "options": [
+        "Przecina TID(X) i TID(Y), liczy elementy",
+        "Dodaje TID(X) i TID(Y)",
+        "Mnoży TID(X) i TID(Y)",
+        "Skanuje bazę danych"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ECLAT przecina listy TID wzorców X i Y: s(XY) = |TID(X)∩TID(Y)| / M. Wsparcie to liczba elementów w przecięciu podzielona przez liczbę transakcji."
+    },
+    {
+      "question": "Jaki sposób przeszukiwania używa ECLAT?",
+      "options": [
+        "Breadth-first (wszerz)",
+        "Depth-first (w głąb)",
+        "Random search",
+        "Binary search"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ECLAT używa przeszukiwania depth-first (w głąb), podczas gdy Apriori używa breadth-first (wszerz). Pozwala to szybciej znajdować długie wzorce."
+    },
+    {
+      "question": "Co to jest FP-Tree?",
+      "options": [
+        "Frequent Pattern Tree - kompaktowa struktura danych",
+        "File Processing Tree",
+        "Fast Parallel Tree",
+        "Function Pointer Tree"
+      ],
+      "correctAnswer": 0,
+      "explanation": "FP-Tree (Frequent Pattern Tree) to kompaktowa struktura danych przechowująca informacje o częstych wzorcach, używana w algorytmie FP-Growth."
+    },
+    {
+      "question": "Ile przebiegów bazy danych wymaga FP-Growth?",
+      "options": [
+        "Jeden",
+        "Dwa",
+        "Tyle ile poziomów",
+        "Nieskończenie wiele"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FP-Growth wymaga tylko dwóch przebiegów bazy danych: pierwszy do znalezienia częstych elementów, drugi do budowy FP-Tree."
+    },
+    {
+      "question": "Jaka jest główna zaleta FP-Growth nad Apriori?",
+      "options": [
+        "Prostszy kod",
+        "Nie generuje jawnie kandydatów, tylko 2 przebiegi bazy",
+        "Mniejsze wymagania pamięciowe",
+        "Dokładniejsze wyniki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FP-Growth nie generuje jawnie kandydatów i wymaga tylko 2 przebiegów bazy (vs wielokrotne w Apriori). Znacznie szybszy dla dużych zbiorów."
+    },
+    {
+      "question": "Co to jest Header Table w FP-Tree?",
+      "options": [
+        "Tabela z listą elementów częstych i wskaźnikami do węzłów",
+        "Tabela klientów",
+        "Tabela transakcji",
+        "Tabela wsparcia"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Header Table zawiera listę elementów częstych z ich wsparciem i wskaźnikami do węzłów w drzewie. Umożliwia szybki dostęp do wystąpień elementu."
+    },
+    {
+      "question": "Co to jest conditional pattern base?",
+      "options": [
+        "Zbiór ścieżek prefiksowych dla danego elementu",
+        "Baza wszystkich transakcji",
+        "Lista wszystkich wzorców",
+        "Zbiór kandydatów"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Conditional pattern base to zbiór ścieżek prefiksowych dla danego elementu w FP-Tree, reprezentujących konteksty występowania tego elementu."
+    },
+    {
+      "question": "Co to jest algorytm D-CLUB?",
+      "options": [
+        "Differential CLUstered Bitmap algorithm",
+        "Data Clustering By Units",
+        "Database Cleanup",
+        "Dynamic Code Learning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "D-CLUB (Differential CLUstered Bitmap algorithm) wykorzystuje bitmapy i klasteryzację do eksploracji wzorców częstych, efektywny dla bardzo dużych zbiorów."
+    },
+    {
+      "question": "Czym są bitmapy w kontekście D-CLUB?",
+      "options": [
+        "Obrazy graficzne",
+        "Reprezentacja binarna: 1 = element występuje, 0 = nie występuje",
+        "Mapy geograficzne",
+        "Tablice hashujące"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bitmapy to kompaktowa reprezentacja binarna, gdzie każdy bit odpowiada transakcji: 1 = element występuje, 0 = nie. Umożliwia szybkie operacje bitowe."
+    },
+    {
+      "question": "Jaką operację używa D-CLUB do znajdowania przecięć?",
+      "options": [
+        "Operację OR",
+        "Operację AND między bitmapami",
+        "Operację XOR",
+        "Operację NOT"
+      ],
+      "correctAnswer": 1,
+      "explanation": "D-CLUB używa operacji AND między bitmapami elementów do znajdowania przecięć oraz operacji popcount do obliczania wsparcia. Bardzo szybkie na poziomie sprzętowym."
+    },
+    {
+      "question": "Co to są wzorce sekwencyjne?",
+      "options": [
+        "Wzorce nieuwzględniające kolejności",
+        "Wzorce reprezentujące uporządkowane sekwencje elementów",
+        "Wzorce liczbowe",
+        "Wzorce tekstowe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wzorce sekwencyjne reprezentują uporządkowane w czasie sekwencje elementów lub zdarzeń. Uwzględniają kolejność występowania, w przeciwieństwie do wzorców częstych."
+    },
+    {
+      "question": "Jak zapisujemy wzorzec sekwencyjny?",
+      "options": [
+        "W nawiasach kwadratowych [a,b,c]",
+        "W nawiasach kątowych <{a}{b,c}{d}>",
+        "W nawiasach okrągłych (a,b,c)",
+        "Bez nawiasów: a,b,c"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wzorce sekwencyjne zapisujemy w nawiasach kątowych jako <{a}{b,c}{d}>. Kolejność zbiorów ma znaczenie, kolejność elementów wewnątrz zbioru nie."
+    },
+    {
+      "question": "Co to jest podsekwencja?",
+      "options": [
+        "Sekwencja krótsza niż oryginalna",
+        "Sekwencja a, której wszystkie elementy występują w b w tej samej kolejności",
+        "Sekwencja identyczna",
+        "Sekwencja odwrotna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sekwencja a jest podsekwencją b, jeśli wszystkie elementy a występują w b w tej samej kolejności (ale nie muszą być bezpośrednio po sobie)."
+    },
+    {
+      "question": "Co to jest algorytm GSP?",
+      "options": [
+        "Generalized Sequential Pattern algorithm",
+        "Global Search Process",
+        "Graph Similarity Pattern",
+        "Generic System Protocol"
+      ],
+      "correctAnswer": 0,
+      "explanation": "GSP (Generalized Sequential Pattern algorithm) to algorytm eksploracji wzorców sekwencyjnych, rozszerzenie Apriori na sekwencje."
+    },
+    {
+      "question": "Czy w wzorcu sekwencyjnym kolejność elementów ma znaczenie?",
+      "options": [
+        "Nie, nigdy",
+        "Tak, kolejność zbiorów ma znaczenie",
+        "Tylko czasami",
+        "Tylko w specjalnych przypadkach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W wzorcach sekwencyjnych kolejność zbiorów ma znaczenie - to jest kluczowa różnica od wzorców częstych. Kolejność elementów wewnątrz zbioru nie ma znaczenia."
+    },
+    {
+      "question": "Co to są n-gramy?",
+      "options": [
+        "Ciężarówki o wadze n ton",
+        "Ciągłe sekwencje n elementów w tekście",
+        "Liczby n-elementowe",
+        "n transakcji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "N-gramy to ciągłe sekwencje n elementów (słów, znaków) w tekście. 1-gram to pojedynczy element, 2-gram (bigram) para, 3-gram (trigram) trójka."
+    },
+    {
+      "question": "Co to jest bigram?",
+      "options": [
+        "Duży program",
+        "2-gram, para kolejnych elementów",
+        "Graf binarny",
+        "Dwa grafy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bigram to 2-gram, czyli para kolejnych elementów (słów) w tekście. Używany w analizie częstości sekwencji dwu-słownych."
+    },
+    {
+      "question": "Do czego służą n-gramy w eksploracji tekstów?",
+      "options": [
+        "Do kompresji",
+        "Do analizy częstości sekwencji słów i modelowania języka",
+        "Do szyfrowania",
+        "Do formatowania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "N-gramy służą do analizy częstości występowania sekwencji słów, modelowania języka, rozpoznawania wzorców tekstowych i wykrywania kolokacji."
+    },
+    {
+      "question": "Co to jest algorytm KERT?",
+      "options": [
+        "KEyword-based Rule extraction from Text",
+        "Knowledge Entity Recognition Tool",
+        "Key Extraction Retrieval Technique",
+        "Kernel Regression Tree"
+      ],
+      "correctAnswer": 0,
+      "explanation": "KERT (KEyword-based Rule extraction from Text) to algorytm eksploracji tekstów wykorzystujący słowa kluczowe do wydobywania reguł, łączący NLP z regułami asocjacyjnymi."
+    },
+    {
+      "question": "Co to jest algorytm ToPMine?",
+      "options": [
+        "Topic Phrase Mining",
+        "Top Mining Process",
+        "Token Parsing Method",
+        "Tree of Patterns Mining"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ToPMine (Topic Phrase Mining) to algorytm do eksploracji fraz tematycznych w dużych korpusach tekstowych, łączący wykrywanie fraz z modelowaniem tematycznym."
+    },
+    {
+      "question": "Jakie są etapy działania ToPMine?",
+      "options": [
+        "Tylko agregacja n-gramów",
+        "Agregacja n-gramów, filtrowanie, segmentacja, eksploracja tematów",
+        "Tylko filtrowanie",
+        "Tylko segmentacja"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ToPMine działa etapami: agregacja częstych n-gramów, filtrowanie kandydatów, segmentacja dokumentów na frazy, eksploracja tematów na podstawie fraz."
+    },
+    {
+      "question": "Czym różni się eksploracja fraz od eksploracji słów?",
+      "options": [
+        "Niczym",
+        "Frazy zachowują kontekst i są bardziej znaczące",
+        "Frazy są szybsze",
+        "Słowa są dokładniejsze"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Frazy zachowują kontekst semantyczny ('uczenie maszynowe' vs 'uczenie' i 'maszynowe'). Frazy są rzadsze, ale bardziej informacyjne i specyficzne."
+    },
+    {
+      "question": "Co to są metody oparte na wiedzy?",
+      "options": [
+        "Tylko systemy eksperckie",
+        "Metody wykorzystujące wiedzę dziedzinową, systemy neuronowe, rozmyte",
+        "Tylko uczenie maszynowe",
+        "Tylko bazy danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metody oparte na wiedzy wykorzystują istniejącą wiedzę dziedzinową, systemy neuronowe, rozmyte, kognitywistyczne i asocjacyjne do inteligentniejszej eksploracji."
+    },
+    {
+      "question": "Jakie są zalety systemów neuronowych w eksploracji?",
+      "options": [
+        "Tylko szybkość",
+        "Uczenie się wzorców, adaptacja, agregacja, wnioskowanie",
+        "Tylko dokładność",
+        "Tylko prostota"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Systemy neuronowe oferują zdolność uczenia się wzorców, adaptację do nowych danych, agregację podobnych danych oraz wbudowane mechanizmy wnioskowania i generalizacji."
+    },
+    {
+      "question": "Jakie są zalety systemów rozmytych w eksploracji?",
+      "options": [
+        "Tylko szybkość",
+        "Reprezentacja niepewności, praca z danymi nieprecyzyjnymi, interpretacja",
+        "Tylko precyzja",
+        "Tylko efektywność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Systemy rozmyte oferują naturalną reprezentację niepewności, możliwość pracy z danymi nieprecyzyjnymi, łatwą interpretację reguł i modelowanie stopniowalnych zależności."
+    },
+    {
+      "question": "Jak reprezentacja danych wpływa na eksplorację?",
+      "options": [
+        "Nie wpływa wcale",
+        "Wpływa na relacje, szybkość dostępu i możliwości eksploracji",
+        "Wpływa tylko na rozmiar",
+        "Wpływa tylko na czas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reprezentacja danych wpływa na przechowywanie relacji między danymi, szybkość dostępu do danych i ich relacji oraz możliwości eksploracji wiedzy."
+    },
+    {
+      "question": "Czym jest wiedza o danych?",
+      "options": [
+        "Tylko liczba rekordów",
+        "Informacje o związkach, podobieństwie i klasach danych",
+        "Tylko typy danych",
+        "Tylko rozmiar danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wiedza o danych to informacje o związkach i relacjach między danymi, podobieństwie i różnicach między danymi oraz klasach, grupach i grupowaniu danych."
+    },
+    {
+      "question": "Jak struktury neuronowe reprezentują wzorce?",
+      "options": [
+        "W tablicach",
+        "Każdy neuron reprezentuje wzorzec z hierarchiczną strukturą",
+        "W listach",
+        "W plikach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Każdy neuron reprezentuje wzorzec częsty zbudowany z innych wzorców i cech. Tworzy się hierarchia, gdzie wyższe poziomy reprezentują bardziej złożone wzorce."
+    },
+    {
+      "question": "Co to jest market basket analysis?",
+      "options": [
+        "Analiza rynku",
+        "Analiza koszykowa - odkrywanie produktów kupowanych razem",
+        "Analiza cen",
+        "Analiza konkurencji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Market basket analysis (analiza koszykowa) to zastosowanie reguł asocjacyjnych do odkrywania, które produkty klienci kupują razem. Podstawowe zastosowanie biznesowe."
+    },
+    {
+      "question": "Dlaczego algorytm Apriori nazywa się 'apriori'?",
+      "options": [
+        "Od nazwiska autora",
+        "Wykorzystuje wcześniejszą wiedzę o właściwościach zbiorów",
+        "Jest pierwszym algorytmem",
+        "Działa przed innymi algorytmami"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nazwa pochodzi od łacińskiego 'a priori' - wykorzystuje априорną (wcześniejszą) wiedzę, że jeśli zbiór jest częsty, jego podzbiory też są częste."
+    },
+    {
+      "question": "Czym różni się wsparcie od ufności w regułach?",
+      "options": [
+        "Niczym",
+        "Wsparcie mierzy częstość całego wzorca, ufność - prawdopodobieństwo warunkowe",
+        "Wsparcie jest zawsze wyższe",
+        "Ufność jest zawsze niższa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wsparcie mierzy częstość występowania całego wzorca, ufność mierzy prawdopodobieństwo warunkowe następnika przy poprzedniku. Oba są potrzebne do oceny reguły."
+    },
+    {
+      "question": "Dlaczego lift jest lepszą miarą niż samo wsparcie?",
+      "options": [
+        "Jest szybszy do obliczenia",
+        "Uwzględnia naturalną częstość następnika, pokazuje rzeczywistą korelację",
+        "Jest prostszy",
+        "Jest zawsze dodatni"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lift uwzględnia naturalną częstość występowania następnika i pokazuje rzeczywistą korelację. Wysokie wsparcie może być mylące, jeśli następnik występuje bardzo często."
+    },
+    {
+      "question": "Co to jest problem kombinatorycznej eksplozji?",
+      "options": [
+        "Błąd w algorytmie",
+        "Wykładniczy wzrost liczby kandydatów z liczbą elementów",
+        "Zbyt wolne działanie",
+        "Brak pamięci"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Liczba możliwych kandydatów rośnie wykładniczo z liczbą elementów. Dla n elementów może być 2^n możliwych podzbiorów do sprawdzenia."
+    },
+    {
+      "question": "Jak zasada Apriori redukuje przestrzeń przeszukiwania?",
+      "options": [
+        "Sortuje dane",
+        "Eliminuje całe gałęzie - nieczyste podzbiory oznaczają nieczyste nadzbiory",
+        "Kompresuje dane",
+        "Przyspiesza obliczenia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eliminuje całe gałęzie przestrzeni - jeśli k-zbiór nie jest częsty, wszystkie (k+1)-zbiory go zawierające też nie będą częste i nie trzeba ich sprawdzać."
+    },
+    {
+      "question": "Dlaczego ECLAT jest szybszy od Apriori dla długich wzorców?",
+      "options": [
+        "Ma lepszy algorytm",
+        "Używa depth-first i operacji na TID, nie skanuje wielokrotnie bazy",
+        "Używa mniej pamięci",
+        "Jest nowszy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ECLAT używa przeszukiwania depth-first i operacji na zbiorach TID, nie wymaga wielokrotnego skanowania bazy. Może szybko 'zanurzyć się' w długie wzorce."
+    },
+    {
+      "question": "Jaka jest główna zaleta FP-Tree?",
+      "options": [
+        "Prostota",
+        "Kompresja poprzez współdzielenie wspólnych prefiksów",
+        "Szybkość",
+        "Dokładność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FP-Tree kompresuje dane poprzez współdzielenie wspólnych prefiksów transakcji. Wiele transakcji może dzielić te same ścieżki, oszczędzając pamięć."
+    },
+    {
+      "question": "Kiedy warto wybrać algorytm Apriori?",
+      "options": [
+        "Dla bardzo dużych zbiorów",
+        "Dla małych zbiorów, wysokiego wsparcia, krótkich wzorców",
+        "Dla niskiego wsparcia",
+        "Dla długich wzorców"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Apriori jest dobry dla małych zbiorów danych, wysokiego wsparcia i krótkich wzorców. Łatwy do zrozumienia i implementacji, ale wolniejszy dla dużych zbiorów."
+    },
+    {
+      "question": "Kiedy warto wybrać algorytm FP-Growth?",
+      "options": [
+        "Dla małych zbiorów",
+        "Dla dużych zbiorów z niskim wsparciem",
+        "Gdy zależy na prostocie",
+        "Nigdy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FP-Growth jest najlepszy dla dużych zbiorów danych z niskim wsparciem, gdy potrzebujemy wysokiej wydajności i transakcje mają wiele wspólnych elementów."
+    },
+    {
+      "question": "Kiedy warto wybrać algorytm D-CLUB?",
+      "options": [
+        "Dla małych zbiorów",
+        "Dla bardzo dużych zbiorów, gdy można wykorzystać równoległość",
+        "Gdy potrzebna prostota",
+        "Dla tekstów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "D-CLUB jest najlepszy dla bardzo dużych zbiorów danych, gdy możemy wykorzystać równoległość i zależy nam na maksymalnej wydajności kosztem złożoności."
+    },
+    {
+      "question": "Co to jest problem rzadkich elementów?",
+      "options": [
+        "Brak danych",
+        "Cenne wzorce z rzadkimi elementami mogą być pominięte przy wysokim progu",
+        "Błędy w danych",
+        "Duplikaty"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Niektóre cenne wzorce zawierają rzadkie elementy i mogą być pominięte przy wysokim progu wsparcia. Wymaga dostosowania progu lub specjalnych technik."
+    },
+    {
+      "question": "Czym różnią się wzorce częste od sekwencyjnych?",
+      "options": [
+        "Niczym",
+        "Częste nie uwzględniają kolejności (zbiory), sekwencyjne uwzględniają (sekwencje)",
+        "Częste są szybsze",
+        "Sekwencyjne są dokładniejsze"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wzorce częste nie uwzględniają kolejności elementów (są zbiorami), wzorce sekwencyjne uwzględniają uporządkowanie czasowe (są sekwencjami)."
+    },
+    {
+      "question": "Dlaczego eksploracja tekstów wymaga specjalnych metod?",
+      "options": [
+        "Teksty są duże",
+        "Tekst ma strukturę sekwencyjną, wieloznaczność, wymaga NLP",
+        "Teksty są wolne",
+        "Teksty są małe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tekst ma strukturę sekwencyjną, zawiera wieloznaczność, wymaga przetwarzania języka naturalnego, słowa mają kontekst i znaczenie zależne od otoczenia."
+    },
+    {
+      "question": "Co to jest problem skalowania w eksploracji?",
+      "options": [
+        "Problem z rozmiarem ekranu",
+        "Wzrost liczby danych powoduje gwałtowny wzrost czasu i pamięci",
+        "Problem z formatowaniem",
+        "Problem z precyzją"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Gdy liczba transakcji lub elementów rośnie, czas obliczeń i zapotrzebowanie na pamięć rosną bardzo szybko. Wymaga skalowalnych i rozproszonych algorytmów."
+    },
+    {
+      "question": "Dlaczego równoległość jest ważna w eksploracji?",
+      "options": [
+        "Dla dokładności",
+        "Nowoczesne zbiory są ogromne, równoległość przyspiesza przetwarzanie",
+        "Dla prostoty",
+        "Dla oszczędności pamięci"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nowoczesne zbiory danych są ogromne, przetwarzanie sekwencyjne trwa zbyt długo. Równoległość pozwala dzielić zadanie i znacznie przyspieszyć obliczenia."
+    },
+    {
+      "question": "Co to są interestingness measures?",
+      "options": [
+        "Miary rozmiaru",
+        "Miary interesującości reguł - wsparcie, ufność, lift itp.",
+        "Miary szybkości",
+        "Miary dokładności"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Interestingness measures to miary oceniające wartość odkrytych reguł - wsparcie, ufność, lift i inne metryki. Pomagają filtrować trywialne reguły."
+    },
+    {
+      "question": "Dlaczego nie wszystkie reguły o wysokim wsparciu są wartościowe?",
+      "options": [
+        "Wsparcie zawsze oznacza wartość",
+        "Może mieć niski lift (brak korelacji) lub dotyczyć oczywistości",
+        "Wsparcie jest zawsze błędne",
+        "Wysokie wsparcie oznacza błąd"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reguła może mieć wysokie wsparcie, ale niski lift (brak rzeczywistej korelacji) lub dotyczyć oczywistych zależności. Potrzebna wielowymiarowa ocena."
+    },
+    {
+      "question": "Co to jest closed itemset?",
+      "options": [
+        "Wzorzec zamknięty w bazie",
+        "Wzorzec częsty, którego żaden nadzbiór nie ma tego samego wsparcia",
+        "Ostatni wzorzec",
+        "Wzorzec o największym wsparciu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Closed itemset to wzorzec częsty, którego żaden nadzbiór nie ma tego samego wsparcia. Reprezentuje maksymalny wzorzec dla danego poziomu wsparcia."
+    },
+    {
+      "question": "Co to jest maximal itemset?",
+      "options": [
+        "Największy zbiór",
+        "Wzorzec częsty, którego żaden nadzbiór nie jest już częsty",
+        "Wzorzec o największym wsparciu",
+        "Ostatni znaleziony wzorzec"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Maximal itemset to wzorzec częsty, którego żaden nadzbiór nie jest już częsty. Jest to największy możliwy częsty wzorzec dla danej gałęzi."
+    },
+    {
+      "question": "Jaki typ przeszukiwania stosuje Apriori?",
+      "options": [
+        "Depth-first",
+        "Breadth-first (poziomowe)",
+        "Random search",
+        "Greedy search"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Apriori stosuje przeszukiwanie breadth-first (wszerz/poziomowe), generując wszystkie k-wzorce przed przejściem do (k+1)-wzorców."
+    },
+    {
+      "question": "Która operacja bitowa jest kluczowa w D-CLUB?",
+      "options": [
+        "OR",
+        "AND (dla przecięć) i popcount (dla wsparcia)",
+        "XOR",
+        "NOT"
+      ],
+      "correctAnswer": 1,
+      "explanation": "D-CLUB używa operacji AND między bitmapami do znajdowania przecięć oraz operacji popcount (liczenie bitów) do obliczania wsparcia."
+    },
+    {
+      "question": "W jakim formacie FP-Tree przechowuje transakcje?",
+      "options": [
+        "Lista",
+        "Drzewo z wspólnymi prefiksami",
+        "Tablica",
+        "Graf"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FP-Tree przechowuje transakcje jako drzewo, gdzie wspólne prefiksy są dzielone między transakcje, co zapewnia kompresję danych."
+    },
+    {
+      "question": "Jakie są zastosowania wzorców sekwencyjnych w IT?",
+      "options": [
+        "Tylko sortowanie",
+        "Analiza logów, wykrywanie anomalii, przewidywanie awarii",
+        "Tylko kompresja",
+        "Tylko szyfrowanie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W IT wzorce sekwencyjne służą do analizy logów systemowych, wykrywania anomalii w sekwencjach zdarzeń, przewidywania awarii i analizy wywołań funkcji."
+    },
+    {
+      "question": "Jakie są zastosowania wzorców sekwencyjnych w medycynie?",
+      "options": [
+        "Tylko przechowywanie danych",
+        "Analiza DNA, śledzenie progresji chorób, kolejność objawów",
+        "Tylko dokumentacja",
+        "Tylko fakturowanie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W medycynie wzorce sekwencyjne służą do analizy sekwencji genetycznych DNA, śledzenia progresji chorób, analizy kolejności objawów i przewidywania rozwoju schorzeń."
+    },
+    {
+      "question": "Jakie są zastosowania reguł asocjacyjnych w biznesie?",
+      "options": [
+        "Tylko księgowość",
+        "Analiza koszykowa, rozmieszczenie towarów, promocje, rekomendacje",
+        "Tylko kadry",
+        "Tylko logistyka"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W biznesie reguły asocjacyjne służą do analizy koszykowej, strategicznego rozmieszczenia towarów, tworzenia promocji pakietowych i systemów rekomendacji."
+    },
+    {
+      "question": "Jaka jest zaleta operacji na bitmapach?",
+      "options": [
+        "Prostota kodu",
+        "Bardzo szybkie operacje sprzętowe, kompaktowa reprezentacja",
+        "Mniejsze wymagania dyskowe",
+        "Lepsza czytelność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bitmapy oferują bardzo szybkie operacje bitowe na poziomie sprzętowym, kompaktową reprezentację, możliwość równoległego przetwarzania i efektywne wykorzystanie cache."
+    },
+    {
+      "question": "Co to jest differential refinement w D-CLUB?",
+      "options": [
+        "Sortowanie różnicowe",
+        "Stopniowe rafinowanie klastrów przez identyfikację różnic między bitmapami",
+        "Różniczkowanie matematyczne",
+        "Usuwanie duplikatów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Differential refinement to metoda stopniowego rafinowania klastrów, polegająca na identyfikowaniu różnic między bitmapami i wykorzystaniu ich do optymalizacji eksploracji."
+    },
+    {
+      "question": "Czemu służy klasteryzacja w D-CLUB?",
+      "options": [
+        "Wizualizacji",
+        "Grupowaniu podobnych bitmapów dla zwiększenia efektywności",
+        "Kompresji",
+        "Walidacji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Klasteryzacja grupuje podobne bitmapy w klastry, zwiększając efektywność przez zmniejszenie liczby operacji bitowych poprzez przetwarzanie grup podobnych elementów."
+    },
+    {
+      "question": "Jaka jest rola Header Table w eksploracji FP-Tree?",
+      "options": [
+        "Przechowywanie wszystkich danych",
+        "Szybki dostęp do wszystkich wystąpień elementu w drzewie",
+        "Sortowanie wyników",
+        "Walidacja danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Header Table zawiera wskaźniki do wszystkich węzłów danego elementu w FP-Tree, umożliwiając szybki dostęp do wszystkich jego wystąpień bez przeszukiwania całego drzewa."
+    },
+    {
+      "question": "Dlaczego conditional FP-Tree jest budowane rekurencyjnie?",
+      "options": [
+        "Dla prostoty kodu",
+        "Aby eksplorować wzorce metodą divide-and-conquer",
+        "Dla oszczędności pamięci",
+        "Dla szybkości"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Conditional FP-Tree jest budowane rekurencyjnie, aby eksplorować wzorce w sposób divide-and-conquer - dzieląc problem na mniejsze podproblemy dla każdego częstego elementu."
+    },
+    {
+      "question": "Jaka jest główna różnica między ECLAT a Apriori w reprezentacji danych?",
+      "options": [
+        "Brak różnicy",
+        "ECLAT używa formatu wertykalnego, Apriori horyzontalnego",
+        "ECLAT jest szybszy",
+        "Apriori jest dokładniejszy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ECLAT używa formatu wertykalnego (Produkt: {TID}), podczas gdy Apriori używa horyzontalnego (TID: {produkty}). To fundamentalna różnica w podejściu."
+    },
+    {
+      "question": "Dlaczego format wertykalny ułatwia obliczanie wsparcia?",
+      "options": [
+        "Jest krótszy",
+        "Pozwala na proste przecięcia zbiorów TID zamiast skanowania bazy",
+        "Jest szybszy do zapisu",
+        "Zajmuje mniej miejsca"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Format wertykalny pozwala obliczać wsparcie poprzez proste operacje przecięcia zbiorów TID i liczenia elementów, bez konieczności wielokrotnego skanowania bazy."
+    }
+  ]
+}

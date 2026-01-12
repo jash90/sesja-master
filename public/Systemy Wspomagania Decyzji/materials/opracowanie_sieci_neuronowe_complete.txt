@@ -1,0 +1,3109 @@
+Sieci Neuronowe i Systemy Decyzyjne - Opracowanie Kompletne
+
+Spis treści
+
+Część 1: Podstawy
+1. Wprowadzenie
+2. Podstawy biologiczne i modele neuronów
+3. Architektura sieci neuronowych
+4. Uczenie sieci neuronowych
+5. Optymalizacja modeli
+6. Walidacja i generalizacja
+7. Regularyzacja
+8. Metryki i ocena jakości
+9. Techniki zaawansowane
+
+Część 2: CNN i Aplikacje
+10. Strategie walidacji i uczenia głębokiego
+11. Środowiska programistyczne
+12. Budowa sieci neuronowych
+13. Zastosowania sieci neuronowych
+14. Konwolucyjne sieci neuronowe (CNN)
+15. Filtry i sploty
+16. Parametry CNN
+17. Architektury CNN
+18. Transfer Learning
+19. Wizualizacja i analiza CNN
+20. Ograniczenia CNN
+21. Detekcja obiektów
+
+Część 3: YOLO i Zaawansowane Techniki
+22. YOLO - Zaawansowane techniki
+23. YOLO v4
+24. PP-YOLO
+25. YOLO v5
+26. RetinaNet
+27. Metryki detekcji obiektów
+28. Segmentacja semantyczna
+29. R-CNN i jego warianty
+30. Estymacja ludzkiej pozy
+31. Implementacja praktyczna w Roboflow
+32. Podsumowanie kursu
+
+────────────────────────────────────────────────────────────
+
+CZĘŚĆ 1: PODSTAWY SIECI NEURONOWYCH
+
+────────────────────────────────────────────────────────────
+
+Wprowadzenie
+
+Czym są sieci neuronowe?
+
+Definicja: Współczesne systemy decyzyjne oraz systemy wspomagające podejmowanie decyzji oparte są na różne rozwiązania i metody z zakresu inteligencji obliczeniowej, w tym w szczególności sztuczne sieci neuronowe, które modelują sposób działania naszego mózgu oraz procesy decyzyjne w nim zachodzące.
+
+Obszary zastosowań
+Sieci neuronowe są najpopularniejszym i najskuteczniejszym rozwiązaniem dla wielu zagadnień z obszaru:
+• AI (Artificial Intelligence - sztuczna inteligencja)
+• CI (Computational Intelligence - inteligencja obliczeniowa)
+• CO (Cognitive Science - kognitywistyka)
+• ML (Machine Learning - uczenie maszynowe)
+• KE (Knowledge Engineering - inżynieria i modelowanie wiedzy)
+
+Struktura sieci neuronowych
+Sieci neuronowe to grafy połączonych elementów (głównie neuronów, ale mogą też być receptory, efektory i inne elementy), które są często uporządkowane w warstwy (gdyż te można przetwarzać równolegle na procesorach GPU, przyspieszając obliczenia).
+
+Różnice: Komputer vs Mózg
+
+ Komputer Mózg ludzki  ---------- -------------  Systematyczność Czasowa zależność  Determinizm Skojarzeniowość  Sekwencyjność Równoległość  Tabele Grafy 
+────────────────────────────────────────────────────────────
+
+Podstawy biologiczne i modele neuronów
+
+Zasada uczenia Hebba (1949)
+
+Zasada Hebba stwierdza, że: "kiedy akson komórki [neuronowej] A jest wystarczająco blisko, aby wzbudzić [neuronową] komórkę B i wielokrotnie lub stale bierze udział w jej odpalaniu, pewien proces wzrostu lub przemiana w jednej lub obu z nich sprawia, że sprawność A w odpalaniu B jest zwiększona".
+
+Konsekwencje:
+• Połączenie między komórkami neuronalnymi jest ważone
+• Wartość wagi [w] jest funkcją liczby odpaleń presynaptycznego neuronu A
+• Uczenie opiera się na wzmacnianiu połączeń między neuronami
+
+Generacje modeli neuronów
+
+Generacja 1: Model McCullocha-Pittsa
+• Najprostszy model neuronowy
+• Implementuje fundamentalny mechanizm integracji ważonych bodźców wejściowych
+• Funkcja aktywacji progowej (schodkowa)
+• Pomija kwestie czasu, plastyczności i innych czynników
+
+Wzór:
+S = Σ(x_k · w_k) dla k=1 do K
+
+y = f(S) = {
+  0  gdy S < θ
+  1  gdy S ≥ θ
+}
+
+
+Gdzie:
+• S - suma ważona wejść
+• x_k - wartości wejściowe
+• w_k - wagi połączeń
+• θ - próg aktywacji
+• y - wartość wyjściowa
+
+Generacja 2: Neurony z miękkim przełączeniem
+• Wykorzystują nieliniowe funkcje ciągłe
+• Pozwalają budować wielowarstwowe sieci neuronowe (MLP)
+• Funkcje aktywacji: sigmoidalna, tangens hiperboliczny
+• Umożliwiają zastosowanie metod gradientowych do adaptacji
+
+Funkcje aktywacji:
+• Sigmoid: f(x) = 1 / (1 + e^(-x)), zakres (0, 1)
+• Tanh: f(x) = tanh(x), zakres (-1, 1)
+• ReLU: f(x) = max(0, x)
+
+Generacja 3: Modele impulsowe (Spiking Neurons)
+• Wzbogacone o implementację ujęcia czasu
+• Modelowanie kolejnych procesów czasowych
+• Ważne podczas integracji bodźców
+
+Generacja 4: Asocjacyjne modele pulsacyjne neuronów (APN)
+• Wytwarzają serię impulsów w czasie
+• Częstotliwość określa poziom asocjacji
+• Automatyczny mechanizm plastyczności
+• Warunkowe łączenie i konfigurowanie asocjacyjnych struktur neuronowych
+• Reprezentowanie danych, obiektów, ich grup, sekwencji i relacji
+
+────────────────────────────────────────────────────────────
+
+Architektura sieci neuronowych
+
+Perceptron schodkowy
+
+Uczenie Perceptronu - algorytm dla zbioru danych uczących {(X₁, d₁), ..., (Xₙ, dₙ)}:
+
+1. Losowo wybierz małe wagi początkowe z zakresu [-0.1, 0.1]
+2. Stymuluj perceptron kolejnym wektorem uczącym Xₙ
+3. Oblicz sumę ważoną S i wartość wyjściową yₙ = f(S)
+4. Porównaj obliczoną wartość yₙ z pożądaną wartością dₙ
+5. Jeśli yₙ ≠ dₙ, to Δwₖ += (dₙ - yₙ) · xₖ
+6. Zaktualizuj wagi: wₖ += Δwₖ dla wszystkich k
+7. Powtarzaj do momentu osiągnięcia akceptowalnego błędu
+8. Zatrzymaj po określonej maksymalnej liczbie iteracji
+
+Perceptrony wielowarstwowe (MLP)
+
+Struktura MLP:
+• Warstwa wejściowa - przyjmuje dane wejściowe
+• Warstwy ukryte - przetwarzają informacje (mogą być liczne)
+• Warstwa wyjściowa - generuje wynik
+
+Cechy:
+• Grupa perceptronów w jednej warstwie = jednowarstwowa sieć perceptronów
+• MLP składa się z kilku warstw zawierających różną liczbę perceptronów
+• Pozwala na wielokrotną klasyfikację jednocześnie
+
+Budowa sieci neuronowych
+
+Kluczowe zasady:
+• Budowa polega na badaniach empirycznych i doświadczeniach z różnymi strukturami
+• Struktura sieci neuronowej jest bardzo ważna - istotnie wpływa na możliwości adaptacyjne
+• Stosowane są również struktury gotowe, opracowane w ośrodkach badawczych
+• Bez odpowiedniej struktury nie uzyskamy dobrych wyników uczenia ani generalizacji
+• Struktura musi być odpowiednio zaadaptowana do rozwiązywanego problemu reprezentowanego przez zbiór danych uczących
+
+Analogia: Podobnie jak z budową domu - jeśli nie spełnia odpowiednich wymogów, będzie mniej funkcjonalny, mniej oszczędny, trudniejszy w utrzymaniu.
+
+────────────────────────────────────────────────────────────
+
+Uczenie sieci neuronowych
+
+Podstawy uczenia
+
+Definicja: Uczenie sieci neuronowych polega na adaptacji ich parametrów wolnych (tzw. zmiennych modelu), które można dopasować indywidualnie do zbioru danych uczących.
+
+Dane uczące (dla uczenia nadzorowanego) składają się ze zbioru par:
+• Dane wejściowe (pytania, kontekst)
+• Dane wyjściowe (odpowiedzi, predykcje)
+
+S = { (x₁, y₁), (x₂, y₂), (x₃, y₃), ..., (xₙ, yₙ) }
+
+Cel uczenia:
+• Model nauczy się odwzorowania f: xᵢ → yᵢ
+• Model będzie w stanie uogólnić wiedzę ze zbioru S na inne przypadki nie określone w tym zbiorze
+• Uogólnienie to najważniejszy powód wykorzystania algorytmów uczących się z przykładów!
+
+Algorytm Propagacji Wstecznej (Backpropagation - BP)
+
+Dwie główne fazy:
+
+1. Faza propagacji (forward pass):
+   • Propagacja sygnałów wejściowych przez wszystkie warstwy ukryte do neuronów warstwy wyjściowej
+   • Neurony sumują ważone dane wejściowe pobrane z neuronów w poprzedniej warstwie
+
+   S_n = Σ(x_k · w_{x_k,n}) dla k=1 do 3
+   y_n = f(S_n)
+
+
+2. Faza propagacji wstecznej błędów (backward pass):
+   • Propagacja błędów (wartości delta) obliczonych na wyjściach sieci neuronowej
+   • Neurony sumują błędy ważone pobrane z neuronów w następnej warstwie
+
+   δ_n = d_n - y_n
+
+
+Aktualizacja wag:
+
+Δw_{k,n} = -η · δ_n · (1 - y_n) · y_n · y_k
+δ_k = Σ(δ_n · w_{k,n} · (1 - y_n) · y_n)
+
+
+Gdzie:
+• η - współczynnik uczenia (learning rate)
+• δ - błąd/delta
+• y - wartość wyjściowa neuronu
+
+Rodzaje uczenia:
+• Online - aktualizacja wag zaraz po obliczeniu
+• Offline (wsadowe) - średnia korekt po całym cyklu treningowym
+• Mini-batches - metoda pośrednia
+
+Warunek zatrzymania:
+Algorytm wykonywany jest do momentu, gdy średni błąd kwadratowy Q obliczony dla wszystkich próbek uczących jest mniejszy niż żądana wartość lub po określonej maksymalnej liczbie cykli uczących.
+
+Inicjalizacja i Adaptacja Parametrów
+
+Liczba neuronów warstwy ukrytej:
+• Powinna być większa niż mniejsza (lepiej więcej niż za mało)
+• Umożliwia sieci tworzenie reprezentacji różnych cech
+• W przypadku prostych problemów może wystarczyć jedna lub dwie ukryte warstwy
+
+Liczba neuronów w kolejnych warstwach:
+• Zwykle maleje w kolejnych warstwach
+• Można utrwalić eksperymentalnie lub przy użyciu podejść ewolucyjnych/genetycznych
+
+Inicjalizacja wag:
+• Ustawienie każdej wagi na niewielką wartość losową
+• Zależną od liczby neuronów w warstwie
+• Np. inicjalizacja metodą Xaviera
+
+Szybkość uczenia się (η):
+• Należy dostosowywać stopniowo (η < 1)
+• Zwykle zaczynamy od η = 0.1
+• Gdy błąd staje się bardzo mały, zaleca się przywrócenie η do wartości początkowej
+• Istnieje wiele strategii zmiany tego parametru w trakcie treningu
+
+Problem zbieżności BP
+
+Sposoby przezwyciężenia problemów ze zbieżnością:
+
+1. Modyfikacja wielkości kroku (współczynnik uczenia η) podczas procesu adaptacji
+2. Wielokrotne rozpoczynanie procesu treningu z różnymi wagami początkowymi
+3. Różne architektury sieciowe - zmiana liczby warstw lub neuronów
+4. Algorytmy genetyczne lub podejścia ewolucyjne do znalezienia odpowiedniej architektury
+5. Przełączanie strategii między offline i online
+6. Zmniejszenie liczby cech danych wejściowych (przekleństwo wymiarowości)
+7. Rzadkie połączenia zamiast każdy-z-każdym między warstwami
+8. Dropout - losowe pomijanie niektórych neuronów
+9. Zmiana zakresu funkcji sigmoidalnej z [0, 1] na [-1, 1]
+10. Blokowanie wag we wcześniej przeszkolonych warstwach
+11. Walidacja krzyżowa - uniknięcie nadmiernego dopasowania
+12. ReLU (Rectified Linear Units): f(S) = max(0, S)
+13. Regularyzacja i powiewialanie danych
+14. Architektury głębokie
+
+────────────────────────────────────────────────────────────
+
+Optymalizacja modeli
+
+Funkcja straty i funkcja kosztu
+
+Funkcja straty (loss function):
+• Mierzy wydajność modelu dla poszczególnych przykładów uczących
+• Wykorzystuje przewidywania zwracane przez sieć oraz pożądane wartości (ground truth)
+• Można określić indywidualnie dla każdej wartości wyjściowej
+
+Funkcja kosztu (cost function):
+• Pojedyncza wartość skalarna minimalizowana w procesie spadku gradientu
+• Zazwyczaj średnia strat obliczonych dla wszystkich wyników i wszystkich przykładów uczących
+• Zwana również funkcją celu lub funkcją błędu modelu
+
+Najpopularniejsze funkcje kosztu:
+
+1. Entropia krzyżowa (cross-entropy) - klasyfikacja binarna
+2. Kategoryczna entropia krzyżowa (categorical cross-entropy) - klasyfikacja wieloklasowa
+3. Błąd średniokwadratowy (MSE - mean squared error) - problemy z regresją
+4. CTC (Connectionist Temporal Classification) - sekwencyjne problemy uczenia
+
+UWAGA: Funkcje kosztu powinny być tworzone niezależnie podczas pracy nad nowym problemem badawczym.
+
+Parametry i Hiperparametry
+
+Parametry modelu:
+• Wagi (W[l])
+• Progi, biases (b[l])
+• Inne wolne zmienne i parametry modelu
+• SĄ adaptowane i dostrajane w trakcie procesu treningu zgodnie z wybranym algorytmem uczenia
+
+Hiperparametry modelu:
+• Wszystkie zmienne i parametry, które:
+  • Mogą być zmieniane niezależnie od sposobu działania algorytmu trenującego
+  • Mogą wpływać na sposób jego działania
+  • NIE SĄ adaptowane przez algorytm trenujący model
+  • Określane są przez projektanta modelu lub zewnętrzne metody wspierające ich dobór
+
+Przykłady hiperparametrów:
+• Liczba warstw sieci (L)
+• Liczba neuronów w warstwach ukrytych (n[l])
+• Funkcje aktywacji (g[l]) oraz rodzaj warstw
+• Sposób inicjalizacji wag sieci
+• Zastosowany optymalizator (rmprop, adam, ...)
+• Współczynnik uczenia (learning rate α)
+• Wielkość wsadów (mini-batch size)
+• Liczba epok uczących (cykli treningowych)
+• Metody powielania (augmentacji) danych
+• Normalizacja czy standaryzacja danych
+• Metody regularyzacji modelu
+• Dropout
+• Momentum i inne techniki dbające o zbieżność
+
+Optymalizacja hiperparametrów
+
+Metody optymalizacji:
+
+1. Grid Search - systematyczne wybieranie hiperparametrów wg siatki
+   • Zawężanie obszarów perspektywicznych
+   • Próbkowanie gęstszych obszarów
+   • Bardzo kosztowne obliczeniowo (ogromna liczba kombinacji)
+
+2. Random Search - losowy wybór hiperparametrów
+   • Próbkowanie gęściej bardziej perspektywicznych obszarów
+   • Rozwiązanie niepewne, ale może być szybsze
+
+3. Podejścia ewolucyjne i genetyczne
+   • Inteligentny wybór na podstawie poprzednich populacji
+
+4. Rozwiązania asocjacyjne oparte na wiedzy
+   • Przeszukiwanie przestrzeni z uwzględnieniem uzyskanych wyników
+   • Rozbudowywanie wiedzy ukierunkowującej metodę
+
+Skale optymalizacji:
+• Nie zawsze można używać skali liniowej
+• Czasami trzeba użyć skali logarytmicznej lub wykładniczej
+• Przykład dla szybkości uczenia: α = 10^r, gdzie r = -4 * np.random.rand()
+
+Podejścia do szukania hiperparametrów
+
+Strategia Pandy (Panda strategy):
+• Model opieki nad dziećmi
+• Staramy się przyjrzeć osiągom modelu
+• Cierpliwie poprawić hiperparametry na bazie doświadczeń
+
+Strategia Kawioru (Caviar strategy):
+• Wiele modeli trenuje równolegle
+• Sprawdź wiele modeli używając różnych kombinacji hiperparametrów
+• Automatycznie wybierz najlepszy
+• Wymaga wystarczających zasobów obliczeniowych
+
+Struktura modelu - kluczowe hiperparametry
+
+Dlaczego struktura jest tak ważna?
+• Najczęściej odpowiedzialna za niedouczanie się (underfitting) lub przeuczanie się (overfitting) modelu
+• W biologii struktura jest adaptowana automatycznie razem z wagami
+• W AI nie wiemy jak dobrać automatycznie strukturę
+• Bez odpowiedniej struktury nie uzyskamy dobrych wyników uczenia ani generalizacji
+
+Rekomendacje:
+• Rozpocząć proces optymalizacji hiperparametrów od eksperymentów ze strukturą
+• Próbować na małych próbkach danych uczących
+• Używać niewielu epok uczących
+• Określić kierunek poszukiwania optymalnej struktury
+
+────────────────────────────────────────────────────────────
+
+Walidacja i generalizacja
+
+Dzielenie danych
+
+Trzy zbiory danych:
+
+1. Zbiór uczący (train set)
+   • Do adaptacji modelu w trakcie procesu uczenia
+   • By model był w stanie się nauczyć (not underfit)
+   • Obniżanie tzw. bias modelu
+
+2. Zbiór walidacyjny (dev set)
+   • Do walidacji postępów nauki
+   • Kontrola przeuczenia modelu (overfit) w trakcie treningu
+   • Obniżenie tzw. variance modelu
+   • Bez tego model nie będzie poprawnie uogólniał danych
+
+3. Zbiór testowy (test set)
+   • Do sprawdzenia właściwości uogólniających modelu
+   • Sprawdzenie generalizacji nauczonego modelu
+   • Dane, które nie zostały użyte podczas procesu uczenia
+
+Proporcje podziału:
+
+Dla małych zbiorów (< 100 tys. przykładów):
+• 60% : 20% : 20% (train : dev : test)
+• 70% : 15% : 15%
+• 80% : 10% : 10%
+
+Dla dużych zbiorów (> 100 tys. przykładów):
+• 90% : 5% : 5%
+• 98% : 1% : 1%
+• Im więcej mamy danych, tym więcej procentowo możemy przeznaczyć na naukę
+• 1% z 1 000 000 to 10 000 przykładów - często wystarcza do walidacji/testowania
+
+Cel treningu - łańcuch celów
+
+1. Najpierw naucz model dobrze na zbiorze uczącym
+   • Osiągnij wydajność na poziomie człowieka (human-level performance)
+
+2. Następnie obniż wariancję modelu
+   • Dobrze dopasuj model do zbioru walidacyjnego
+   • By mieć szansę osiągnąć dobre właściwości uogólniające
+
+3. Później zbadaj dopasowanie do zbioru testowego
+   • Pewność, że uogólnienie jest wystarczająco dobre
+   • Model przetestowany na danych nieużytych podczas uczenia
+
+4. Następnie sprawdź na danych rzeczywistych
+   • Przed wdrożeniem modelu
+
+Dystrybucje danych
+
+Kluczowa zasada: Zbiory uczący, walidacyjny i testowy powinny być dobrane tak, aby współdzieliły dane ze wszystkich dostępnych dystrybucji w ten sam sposób.
+
+Dlaczego to ważne?
+• By być reprezentatywne dla rozwiązanego problemu
+• By zminimalizować wariancję modelu
+• By uzyskać dobre właściwości uogólniające
+
+Przykłady problemów z dystrybucją:
+• Model trenowany na danych z Europy nie zadziała na danych z Chin/USA
+• Model trenowany na danych osób bogatych nie sprawdzi się dla osób o niskich dochodach
+• Model trenowany dla mężczyzn nie może nie działać dla kobiet
+• Dane z różnych źródeł (jakość obrazów) wymagają odpowiedniego podziału
+
+Łączenie danych z różnych dystrybucji:
+1. Zbierz dane z obu dystrybucji razem
+2. Potasuj je
+3. Następnie podziel na zbiór treningowy, walidacyjny i testowy
+
+Cel: Osiągnąć dobrą generalizację - train, dev i test data muszą być representative dla problemu.
+
+Problem niedopasowania danych (Data Mismatch)
+
+Rozpoznanie problemu:
+Jeśli zbiór walidacyjny składa się z różnych dystrybucji, ale zbiór uczący pochodzi tylko z jednej, błąd dev na podzbiorach będzie inny!
+
+Typowy wzorzec błędów wskazujący na data mismatch:
+human-level error < training error < dev1 error < dev error < dev2 error < testing error
+
+
+Rozwiązanie: Model musi być wytrenowany na wszystkich dystrybucjach danych!
+
+Błędy i wydajność optymalna Bayesa
+
+Optymalna wydajność Bayesa:
+• Definiowana przez niewyraźne i zaszumione przykłady treningowe
+• Których nikt i nic nigdy nie jest w stanie rozpoznać ze względu na niską jakość
+• Nigdy nie można jej przekroczyć (najlepsze z możliwych)
+
+Wzory:
+Bayes optimal error ≤ Human-level, train, dev, or test error
+Bayes optimal performance ≥ Human-level, train, dev, or test performance
+
+
+Właściwości:
+• Optymalna wydajność Bayesa jest zawsze wyższa lub równa wydajności na poziomie ludzkim
+• Błąd optymalny Bayesa jest zawsze mniejszy lub równy błędowi człowieka
+• Zwykle bardzo zbliżony do wydajności na poziomie ludzkim w problemach, w których ludzie są bardzo dobrzy
+• Czasami równy wydajności człowieka, gdy dane są oznaczone przez ludzi
+
+Wydajność na poziomie ludzkim (Human-level performance)
+
+Definicja: Wydajność klasyfikacji/przewidywania osiągnięta przez komitet składający się z wysoce wyspecjalizowanych ludzi (np. chirurgów, psychologów, nauczycieli, inżynierów, ekspertów).
+
+Przykład - klasyfikacja obrazów medycznych:
+ Klasyfikację wykonuje: Błąd  ------------------------ ------  Typowy człowiek 25%  Typowy lekarz (ekspert) 4%  Doświadczony lekarz 1%  Zespół doświadczonych lekarzy 0.4% 
+Błąd na poziomie ludzkim = najmniejszy możliwy błąd zespołu ekspertów (tu: 0.4%)
+
+Właściwości:
+• Traktowany jako górna granica i cel szkolenia modelu
+• Czasami może zostać przekroczony przez maszyny
+• Retrospektywnie sprawdzony przez ludzkich ekspertów
+• Może przenieść go na wyższy poziom poszerzając wiedzę ekspertów
+
+Określanie jakości rozwiązania
+
+Wydajność na poziomie ludzkim wskazuje wymaganą jakość danych:
+
+• Jeśli jakość danych treningowych jest niska lub dane są sprzeczne/błędne, nie możemy osiągnąć lepszej wydajności
+• Można spróbować podnieść jakość danych treningowych
+• Czasami dane są opisywane przez zbyt mały podzbiór atrybutów → niejednoznaczność
+• Powinniśmy dodać nowe atrybuty (cechy), które urozmaiciłyby przykłady treningowe na tyle, aby je rozróżnić podczas treningu
+
+Pokonanie wydajności na poziomie ludzkim
+
+Gdzie możliwe:
+• Rekomendacje produktowe i reklama w Internecie
+• Przewidywanie czasu tranzytu w logistyce
+• Walidacja zgody na udzielenie pożyczki
+• Wiele problemów związanych z dużymi zbiorami danych
+• Nienaturalne zadania percepcji (nie ewoluowały u ludzi przez miliony lat)
+• Zadania zdefiniowane przez różne dane strukturalne
+
+Przekroczenie wydajności na poziomie ludzkim:
+Osiągnięty błąd uczenia (np. 0.3%) jest mniejszy niż błąd na poziomie ludzkim (np. 0.5%).
+
+Trudność:
+Może być trudno ustalić:
+• O ile wydajność mogłaby zostać przekroczona
+• Jaka byłaby ostateczna (maksymalna) wydajność
+• Jaki byłby ostateczny (minimalny) błąd
+
+Uogólnienie modelu (Generalization)
+
+Definicja: Interesuje nas nie tylko zachowanie modelu na danych uczących, ale przede wszystkim na danych testowych - czyli na nowych danych, na których model nie był wcześniej trenowany.
+
+Uogólnienie jest dobre, gdy:
+• Zdobyta wiedza o powiązaniach i przekształceniach danych uczących jest poprawnie reprezentowana przez model
+• Nadaje się do dokonywania podobnych przekształceń na danych testowych
+
+Znaczenie: Określa nabyte przez model umiejętności radzenia sobie z nowymi danymi - ma kluczowe znaczenie w zastosowaniach praktycznych.
+
+Poprawna walidacja modelu
+
+Kluczowa zasada:
+Aby wykonać walidację modelu w sposób godny zaufania, musimy mieć pewność, że dane testowe:
+• Nie powtarzają się w danych uczących ani walidacyjnych
+• Nie są za bardzo podobne do danych uczących
+• To może się zdarzyć i zdarza się w praktyce, gdy wybierzemy je losowo bez sprawdzania
+
+Dlaczego to ważne?
+• W przeciwnym razie wystarczyłoby, aby model pamiętał dane uczące (jak w bazach danych)
+• Taki model byłby bezużyteczny w nowych przypadkach i zastosowaniach praktycznych
+• Wymagamy jak najlepszej generalizacji w praktyce!
+
+Odchylenie (Bias) i Wariancja (Variance)
+
+Możliwe do usunięcia odchylenie (Avoidable Bias):
+avoidable bias = training error - human-level error
+
+
+Odchylenie (Bias):
+bias = training error - Bayes-level error
+
+
+Wariancja (Variance):
+variance = dev error - training error
+
+
+Odchylenie (Bias):
+• Mówi nam o zdolności modelu do przystosowania się do danych treningowych
+• Jeśli jest wysokie → model jest niedopasowany (underfitting problem)
+• Podstawowa ocena jakości skonstruowanego modelu
+• Jeśli odchylenie jest za duże → zrekonstruować model, zmienić typ, architekturę lub hiperparametry
+
+Wariancja (Variance):
+• Określa możliwości uogólnienia modelu
+• Mówi jak dobrze może uogólniać dane treningowe
+• Dotyczy zbiorów walidacyjnego, testowego oraz danych rzeczywistych
+• Jeśli wariancja jest wysoka → model jest bezużyteczny
+• Główny cel uczenia maszynowego = osiągnięcie dobrego uogólnienia
+• Jeśli wysoka → zrekonstruować model, zmienić typ, architekturę lub hiperparametry
+
+Analiza błędów modeli
+
+Metodologia analizy:
+Analiza zebranych wyników i poziomów błędów pozwala nam szukać lepszego rozwiązania poprzez wdrożenie wskazówek i trików poprawiających wydajność modelu.
+
+Przykłady analizy różnych modeli:
+
+ Error Type Model A Model B Model C Model D  ----------- --------- --------- --------- ---------  Bayes error 0.5% 0.5% 0.5% 0.5%  Human-level error 0.7% 0.7% 0.7% 0.7%  Bias / Avoidable Bias 3.0% / 2.8% 3.0% / 2.8% 0.5% / 0.3% 0.3% / 0.1%  Training error 3.5% 3.5% 1.0% 0.8%  Variance 4.3% 0.8% 4.0% 0.2%  Dev error 7.8% 4.0% 5.0% 1.0% 
+Wnioski:
+• Model A: High Bias + High Variance → Najpierw skupić się na Bias
+• Model B: High Bias + Low Variance → Skupić się na Bias
+• Model C: Low Bias + High Variance → Skupić się na Variance
+• Model D: Low Bias & Variance → Dobrze wytrenowany model!
+
+Wskazówki i metodologia:
+• Nie powinniśmy próbować obniżać wariancji, dopóki możliwe do uniknięcia odchylenie jest nadal wysokie
+• Dlatego najpierw zmniejsz odchylenie (bias), a gdy będzie już wystarczająco niskie, wtedy zacznij zmniejszać wariancję (variance)
+
+Minimalizowanie odchyleń i wariancji
+
+Odchylenie:
+• Mówi nam o zdolności modelu do przystosowania się do danych treningowych
+• Jeśli jest wysokie → model jest niedopasowany (underfitting problem)
+• Podstawowa ocena jakości skonstruowanego modelu
+• Jeśli odchylenie jest za duże → zrekonstruować model, zmienić typ, architekturę lub hiperparametry
+
+Wariancja:
+• Określa możliwości uogólnienia modelu
+• Mówi jak dobrze może uogólniać dane treningowe
+• Jeśli wariancja jest wysoka → skonstruowany model jest bezużyteczny
+• Główny cel ML = osiągnięcie dobrego uogólnienia z dużą pewnością poprawnych prognoz
+• Jeśli wysoka → zrekonstruować model, zmienić typ, architekturę lub hiperparametry i zastosować metody zmniejszające wariancję
+
+Metodologia:
+1. Najpierw obniż odchylenie (bias) do akceptowalnego poziomu
+2. Dopiero potem pracuj nad obniżeniem wariancji (variance)
+3. Dostosuj strukturę i hiperparametry zgodnie z zidentyfikowanym problemem
+
+────────────────────────────────────────────────────────────
+
+Regularyzacja
+
+Współczynnik regularyzacji wag (Weight Decay)
+
+Cel: Zapobieganie nadmiernemu dopasowaniu (overfitting) poprzez penalizację zbyt dużych wag.
+
+Wzór funkcji kosztu z regularyzacją:
+J(w,b) = (1/m) · Σ L(a^(i), y^(i)) + (λ/(2·m)) · Σ ||W[l]||²_F
+
+
+Gdzie:
+• λ - współczynnik regularyzacji
+• ||W[l]||²_F - norma Frobeniusa macierzy wag
+
+Aktualizacja wag:
+w[l] := w[l] - α · dJ/dw[l] - (α·λ/m) · w[l]
+     = w[l] · (1 - α·λ/m) - α · ∂J(w[l],b)/∂w[l]
+
+
+Dlaczego działa?:
+• Jeśli wagi będą małe, wartości wyjściowe funkcji aktywacji będą w pobliżu środkowej, prawie liniowej części funkcji
+• Funkcja aktywacji staje się prawie liniowa
+• Zapobiega przeuczeniu się modelu
+
+Regularyzacja L1 i L2
+
+L1 Regularization:
+• Prowadzi do rzadkich wag (sparse weights)
+• Niektóre wagi stają się dokładnie zero
+• Naturalny mechanizm selekcji cech
+
+L2 Regularization (weight decay):
+• Najczęściej stosowana
+• Wszystkie wagi są zmniejszane proporcjonalnie
+• Zapobiega wzrostowi wagi i tworzeniu zbyt skomplikowanych funkcji
+
+Znikające i eksplodujące gradienty
+
+Problem w głębokich sieciach:
+• Obliczone gradienty w poprzednich warstwach stają się:
+  • Coraz mniejsze (znikają) - gdy małe wartości (<1) są mnożone/podnoszone do kwadratu
+  • Coraz większe (eksplodują) - gdy duże wartości (>1) są mnożone/podnoszone do kwadratu
+
+Rozwiązania:
+
+1. Przycinanie gradientów (gradient clipping):
+   • Ustawienie wstępnie zdefiniowanego progu
+   • Nie zmienia kierunku gradientów, tylko ich długość
+
+2. Sieci rezydualne (ResNet):
+   • Wykorzystują połączenia pomijające (skip connections)
+   • Połączenia skrótowe lub połączenia rezydualne
+   • Jeden z najnowszych i najskuteczniejszych sposobów
+
+3. Regularyzacja:
+   • Zapobiega znikaniu i eksplodowaniu gradientów
+
+4. Bloki początkowe i pomijanie połączeń
+
+Regularyzacja metodą Dropout
+
+Zasada działania:
+• Losowo wyłącza niektóre neurony z określonym prawdopodobieństwem
+• Nie używa ich tymczasowo podczas propagacji i wstecznej propagacji
+• Zmusza sieć do uczenia się tego samego przez różne kombinacje neuronów
+
+Zalety:
+• Jedna z najpopularniejszych technik regularyzacji głębokich sieci
+• Zwykle przyspiesza trening
+• Zapobiega nadmiernemu dopasowaniu
+
+Implementacja:
+• Warstwy dropout są umieszczane przed warstwą regularyzowaną
+• Bodźce wejściowe neuronów są osłabiane zgodnie z liczbą wyłączających się neuronów
+• Można używać wybiórczo tylko w wybranym podzbiorze warstw
+• Zwykle używany do warstw z dużą ilością wag i neuronów
+
+Jak prawidłowo wdrożyć Dropout?
+
+Heurystyki do rozważenia:
+
+1. Użyj małej wartości dropout: 0.2 - 0.5 neuronów
+   • 0.2 stanowi dobry punkt wyjścia
+   • Dla małych sieci/warstw: 0.1
+   • Zbyt małe prawdopodobieństwo: minimalny wpływ
+   • Zbyt wysokie: niedopasowanie przez sieć
+
+2. Użyj większej sieci:
+   • Dać modelowi więcej możliwości uczenia się niezależnych reprezentacji
+
+3. Użyj dropout na ukrytych jednostkach:
+   • Zastosowanie w każdej warstwie często przynosi dobre rezultaty
+
+4. Użyj dużej szybkości uczenia z zanikaniem i dużym impetem:
+   • Zwiększ szybkość uczenia o współczynnik 10-100
+   • Użyj wysokiej wartości momentum: 0.9 lub 0.99
+
+5. Ogranicz rozmiar wag sieciowych:
+   • Nałożenie ograniczenia na rozmiar wag (max norm regularization)
+   • Rozmiar 4 lub 5 poprawia wyniki
+
+Wzmacnianie wpływu przykładów uczących
+
+Cel: Zrównoważenie wpływu różnych przykładów treningowych.
+
+Modyfikacja funkcji błędu:
+J(w,b) = 1/Σs^(i) · Σ s^(i) · L(a^(i), y^(i))
+
+
+Gdzie s^(i) = współczynnik wzmacniający dla przykładu i
+
+Zastosowania:
+• Uniknięcie niepożądanych klasyfikacji przykładów mniej licznie reprezentowanych
+• Różny wpływ atrybutów danych (np. płeć nie powinna wpływać tak mocno jak inne atrybuty)
+• Wykluczenie niektórych atrybutów: rasa, płeć, wiek, niepełnosprawność, stan zdrowia, przynależność polityczna lub religijna - by nie dyskryminować
+
+────────────────────────────────────────────────────────────
+
+Metryki i ocena jakości
+
+Ortogonalizacja
+
+Definicja: Proces mówiący o tym, co dostroić i jak osiągnąć zakładany efekt.
+
+Cel: Pozwala odnieść się do poszczególnych hiperparametrów modelu w taki sposób, że możemy naprawić wybrany problem treningowy poprzez dostrojenie ograniczonego podzbioru hiperparametrów.
+
+Analogia:
+• Dlaczego wolimy drony niż helikoptery?
+• Który jest łatwiejszy do kontrolowania?
+• Czy łatwiej sterować jednym pokrętłem (jeden parametr) czy złożonym joystickiem (wiele parametrów)?
+
+Kontrolery samochodowe:
+• Zestaw kontrolerów (pedały, pokrętła, manetki) sterujących poszczególnymi parametrami
+• vs zintegrowany kontroler (joystick) kontrolujący kombinację parametrów
+• Co jest bezpieczniejsze? Co jest mniej zawodne w sytuacji stresu?
+
+Metryka oceny pojedynczej liczby
+
+Precision (Precyzja):
+• Określa odsetek poprawnych klasyfikacji
+• Jeśli precyzja = 98% i sieć mówi "samochód" → na 98% to samochód
+• Wzór: Precision = TP / (TP + FP)
+
+Recall (Przypominanie):
+• Odsetek poprawnie sklasyfikowanych obiektów poszczególnych klas
+• Ile samochodów ze wszystkich samochodów zostało poprawnie sklasyfikowanych?
+• Wzór: Recall = TP / (TP + FN)
+
+Kompromis: Często istnieje kompromis między precision a recall, ale chcemy dbać o jedno i drugie!
+
+F1 Score (Wynik F1):
+• Średnia harmoniczna precision i recall
+• Wzór: F1 = 2 / (Precision⁻¹ + Recall⁻¹)
+
+Ogólny wzór F_β:
+F_β = (1 + β²) · (Precision · Recall) / (β² · Precision + Recall)
+    = (1 + β²) · TP / ((1 + β²) · TP + β² · FN + FP)
+
+
+Gdzie β = ile razy recall jest ważniejszy niż precision
+
+Przykład porównania klasyfikatorów:
+
+ Classifier Precision Recall F1 Score  ----------- ----------- -------- ----------  A 96% 90% 92.90%  B 98% 88% 92.73%  C 94% 93% 93.50% ← najlepszy 
+Macierz konfuzji i popularne metryki
+
+Macierz konfuzji - grupuje wyniki względem poszczególnych klas:
+
+• TP (True Positive) - liczba przykładów poprawnie sklasyfikowanych jako pozytywne
+• TN (True Negative) - liczba przykładów poprawnie sklasyfikowanych jako negatywne
+• FP (False Positive) - liczba przykładów niepoprawnie sklasyfikowanych jako pozytywne
+• FN (False Negative) - liczba przykładów niepoprawnie sklasyfikowanych jako negatywne
+
+Metryki:
+Precision = TP / (TP + FP)
+Recall = TP / (TP + FN)
+Accuracy = (TP + TN) / ALL
+
+
+Definicje:
+• Precision - stosunek liczby przykładów poprawnie sklasyfikowanych jako pozytywne do wszystkich sklasyfikowanych jako pozytywne
+• Recall - stosunek liczby przykładów poprawnie sklasyfikowanych jako pozytywne do wszystkich pozytywnych przykładów w zbiorze
+• Accuracy - stosunek liczby przykładów poprawnie sklasyfikowanych do wszystkich przykładów
+
+Metryki do porównywania klasyfikatorów
+
+Dla wielu klasyfikatorów i wielu klas:
+
+Oblicz średni błąd lub średnią harmoniczną dla wszystkich klas i klasyfikatorów:
+
+Przykład:
+
+ Classifier Class A Class B Class C Class D Average Harmonic Mean  ----------- --------- --------- --------- --------- --------- ---------------  A 95% 90% 94% 99% 94.5% 94.39%  B 96% 93% 97% 94% 95.0% 94.97%  C 92% 93% 95% 97% 94.3% 94.21%  D 94% 95% 99% 94% 95.5% 95.46%  E 97% 98% 95% 97% 96.8% 96.74% ← najlepszy  F 99% 91% 96% 92% 94.5% 94.39% 
+Korzyść: Łatwiej wskazać najlepszy klasyfikator biorąc pod uwagę wyniki zebrane dla wszystkich klas.
+
+Inne kryteria wyboru klasyfikatora
+
+Optymalizacja wielokryterialna:
+
+Czasami aplikacja musi działać w czasie rzeczywistym (real-time processing), więc nie możemy po prostu wybrać klasyfikatora z najlepszą dokładnością, precyzją lub pamięcią, ale musimy wziąć pod uwagę czas klasyfikacji.
+
+Przykład:
+• Dokładność musi być najwyższa, ale dostępna w akceptowalnym czasie, np. < 100 ms
+• Musimy wziąć pod uwagę dodatkowe kryteria
+• Wybieramy ten z największą dokładnością spośród tych, które mają czas klasyfikacji mniejszy niż 100 ms
+• Dokładność jest zoptymalizowana, a czas klasyfikacji musi być poniżej progu
+
+Przykład z uwzględnieniem czasu:
+
+ Classifier Accuracy Classification Time  ----------- ---------- ---------------------  A 94.5% 70 ms ← spełnia wymagania  B 95.0% 95 ms ← spełnia wymagania  C 94.3% 35 ms ← najszybszy  D 95.5% 240 ms ← za wolny!  E 96.8% 980 ms ← za wolny!  F 94.5% 60 ms ← spełnia wymagania 
+Wniosek: Wybieramy klasyfikator B (najwyższa dokładność 95% przy czasie < 100ms) lub C (najszybszy przy akceptowalnej dokładności).
+
+────────────────────────────────────────────────────────────
+
+Techniki zaawansowane
+
+Wczesne zatrzymywanie (Early Stopping)
+
+Definicja: Jedna z najłatwiejszych metod zapobiegania przeuczeniu.
+
+Zasada działania:
+• Proces uczenia jest zatrzymywany, gdy błąd na zbiorze walidacyjnym zaczyna rosnąć
+• Zapisujemy model podczas treningu
+• Używamy ostatniego modelu z najmniejszym błędem walidacji
+
+Charakterystyka:
+• Nie rozwiązuje problemu przeuczenia
+• Jedynie reaguje na jego objawy
+• Zapobiega jego wystąpieniu, gdy już się ujawni
+
+Wykres:
+Błąd treningowy: ────────────── (maleje)
+Błąd walidacyjny: ────╲╱────╲╱╲ (najpierw maleje, potem rośnie)
+                          ↑
+                    stop training (tutaj zatrzymujemy)
+
+
+Augmentacja danych (Data Augmentation)
+
+Cel: Sztucznie rozszerzyć zbiór danych uczących, poprawić generalizację.
+
+Kiedy stosować?
+• Nie mamy wystarczającej ilości danych do wytrenowania modelu
+• Klasy są reprezentowane przez bardzo różną liczbę przykładów uczących
+• Chcemy uniknąć ograniczeń uczenia lub uprzywilejowania najliczniejszych klas
+
+Techniki augmentacji obrazów:
+• Przesuwaj i obracaj
+• Skaluj (powiększ lub pomniejsz)
+• Przycinaj (różne części obrazów)
+• Przerzucaj (w poziomie lub w pionie)
+• Odwracaj lub zmieniaj kolory
+• Zastosuj przypadkowe drgania i perturbacje
+• Rozmywaj, dodaj szum
+
+Dlaczego augmentacja zapobiega przeuczeniu?
+
+Rozszerzanie danych polega na generowaniu większej ilości danych treningowych z istniejących próbek poprzez "modyfikowanie" próbek za pomocą szeregu losowych przekształceń.
+
+Cel: Aby podczas treningu model nigdy nie widział dokładnie tego samego obrazu dwa razy. Pomaga to modelowi:
+• Uzyskać dostęp do większej liczby aspektów danych
+• Zwykle lepiej uogólniać
+• Zapobiegać nadmiernemu dopasowaniu spowodowanemu zbyt małą liczbą próbek
+• Wystarczająco reprezentatywnie pokryć przestrzeń danych wejściowych
+• Wytrenować model zdolny do uogólnienia na nowych danych
+
+ImageDataGenerator w Keras
+
+Najważniejsze parametry:
+
+ Parametr Opis  ---------- ------  rotation_range Wartość w stopniach (0-180), zakres losowych rotacji  width_shift Zakres (jako ułamek szerokości), losowe przesunięcia poziome  height_shift Zakres (jako ułamek wysokości), losowe przesunięcia pionowe  shear_range Losowe stosowanie transformacji obcinania  zoom_range Skalowanie obrazów  horizontal_flip Losowe odwracanie względem osi poziomej  fill_mode Strategia wypełniania nowo utworzonych pikseli 
+Uwaga: horizontal_flip ma znaczenie, gdy nie ma założeń dotyczących asymetrii poziomej (np. rzeczywiste zdjęcia).
+
+Implementacja:
+W Keras można to zrobić konfigurując szereg losowych transformacji, które mają być wykonywane na obrazach odczytywanych przez instancję ImageDataGenerator.
+
+Rozszerzenie danych szumowych:
+Gdy dane walidacyjne/testowe/rzeczywiste różnią się od danych treningowych (są zaszumione):
+• Dodaj typowy szum do danych treningowych
+• Rozmyj dane treningowe
+• Dodaj zniekształcenia
+
+Techniki dla tekstu:
+• Generatory tekstu
+• Transformery (np. SynthText, TextRenderer)
+• Używane np. przez CAPTCHA lub HIP
+
+Korzyść: Pozwala przezwyciężyć problem niezgodności danych (data mismatch problem) między danymi treningowymi a zaszumionymi danymi rzeczywistymi.
+
+CAPTCHA & HIP
+
+CAPTCHA: Completely Automated Public Turing test to tell Computers and Humans Apart
+HIP: Human Interactive Proof
+
+Cel: Ochrona usług internetowych - łatwe dla ludzi, trudne dla komputerów.
+
+Zastosowania:
+• Ograniczenie spamu w e-mail i blogach
+• Zapobieganie atakom siłowym na hasła
+
+Ciekawostka: Rozwój sieci neuronowych sprawił, że wiele tradycyjnych CAPTCHA stało się łatwych do złamania przez AI!
+
+Minima lokalne vs minimum globalne
+
+Problem: Funkcja straty może mieć wiele lokalnych minimów, ale szukamy globalnego minimum.
+
+Jak unikać utknięcia w minimach lokalnych?
+
+1. Użyj lepszych funkcji strat - mniej podatnych na lokalne minima
+2. Normalizacja - przyspiesza uczenie i lepiej omija lokalne minima
+3. Uczenie mini-wsadami (mini-batches)
+4. Techniki ucieczki od lokalnych minimów:
+   • Mniejsze mini-wsady
+   • Stosowanie pędu (momentum)
+   • RMSprop
+   • Optymalizator Adam
+5. Wielokrotne rozpoczynanie treningu od różnych losowych wag
+6. Funkcje aktywacji bez plateau
+
+Uwaga: Pochodna w każdym lokalnym minimum lub punkcie siodłowym jest zawsze równa 0!
+
+Punkty siodłowe i płaskowyże
+
+Punkty siodłowe:
+• Miejsca, gdzie gradient jest bliski lub równy 0
+• Nie są minimami ani maksimami
+• Algorytm może utknąć
+
+Płaskowyże (tereny płaskie):
+• Powierzchnia funkcji strat może być lokalnie płaska
+• Wzniesienia są bardzo małe
+• Chcemy uciec od takich obszarów
+
+Rozwiązania: Podobne jak dla minimów lokalnych (momentum, Adam, mniejsze batche, etc.)
+
+Walidacja krzyżowa (Cross-Validation)
+
+K-krotna walidacja krzyżowa:
+• Pozwala używać wszystkich dostępnych wzorców do uczenia i zarazem do walidacji na przemian
+• Dzielimy wszystkie wzorce na K rozłącznych, mniej więcej równych podzbiorów
+• Trenujemy model na K-1 podzbiorach
+• Testujemy na pozostawionym podzbiorze
+• Powtarzamy K razy naprzemian
+• Podzbiór walidacyjny zmienia się w kolejnych K krokach
+
+Dobór wartości K:
+
+Dla wielu wzorców uczących:
+• K jest zwykle małe (3 ≤ K ≤ 10)
+• Model testowany na większej liczbie wzorców
+• Zmniejsza liczbę kroków treningowych
+
+Dla mniej licznych zestawów:
+• K jest zwykle duże (10 ≤ K ≤ N)
+• Wykorzystanie więcej wzorów do treningu
+• Lepiej dopasowany model
+
+N-krotna walidacja (one-leave-out strategy):
+• Rzadko stosowana (N treningów dla N przykładów)
+• Tylko jeden wzorzec do walidacji w każdym kroku
+• Wynik nie jest reprezentatywny
+• Czasami używane dla niewielkich zbiorów danych
+
+Strategie walidacji krzyżowej:
+Sposób doboru wzorców testowych powinien być proporcjonalny i reprezentatywny z punktu widzenia każdej klasy na każdym etapie uczenia!
+
+────────────────────────────────────────────────────────────
+
+CZĘŚĆ 2: CNN I APLIKACJE PRAKTYCZNE
+
+────────────────────────────────────────────────────────────
+
+Strategie walidacji i uczenia głębokiego
+
+Strategia losowej walidacji krzyżowej
+
+Wybór wzorców testowych:
+• Wzorce testowe można wybrać losowo z powtórzeniami lub bez powtórzeń
+• Wybór zależy od początkowej kolejności lub nieuporządkowania wzorców wszystkich klas
+• Cel: uzyskać reprezentatywny wybór wzorców testowych użytych do walidowanego modelu
+
+Ważna zasada:
+• Wzorce używane do walidacji nie powinny być powtarzane w kolejnych grupach testowych
+• Jest to mniej niezawodne i prostsze podejście niż strategiczne wybieranie wzorców
+
+Strategie uczenia głębokiego
+
+Głębokie uczenie zakłada zdolność do:
+
+1. Aktualizować tylko wybraną część neuronów (dropout)
+   • Tylko te neurony, które najlepiej odpowiadają na podane dane wejściowe
+   • Pozostałe neurony i ich parametry (wagi, progi) nie są aktualizowane
+
+2. Unikać połączeń all-to-all
+   • Nie łączymy wszystkich neuronów między kolejnymi warstwami
+   • Strategia all-to-all znana z MLP
+   • Neurony specjalizują się w rozpoznawaniu subwzorców
+   • Które można wyodrębnić z ograniczonych podzbiorów wejścia
+
+3. Tworzyć połączenia między różnymi warstwami
+   • Nie tylko między kolejnymi warstwami
+   • Połączenia pomijające (skip connections)
+
+4. Używać wielu podsieci
+   • Można łączyć na różne sposoby
+   • Umożliwia neuronom specjalizację w definiowaniu lub rozpoznawaniu ograniczonych podzbiorów funkcji lub subwzorców
+
+5. Specjalizacja neuronów
+   • Neurony specjalizują się i nie nakładają na reprezentowane regiony
+   • Nie reprezentują tych samych cech lub subwzorców
+
+────────────────────────────────────────────────────────────
+
+Środowiska programistyczne
+
+Inteligencja obliczeniowa w praktyce
+
+Narzędzia i biblioteki (frameworky) do implementacji różnych struktur, metod i algorytmów:
+
+Predykcja, aproksymacja, rozpoznawanie, detekcja, klasyfikacja, grupowanie (klasteryzacja):
+
+ Kategoria Narzędzia  ----------- -----------  Środowiska Jupyter Notebook, Google Colab  Frameworki głębokiego uczenia TensorFlow 2.0, Keras, PyTorch, Caffe2  Inne frameworki Theano, Lasagne, DL4J (Deep Learning for Java)  Narzędzia Microsoft CNTK (MS Cognitive Toolkit)  Inne PaddlePaddle  Obliczenia naukowe numpy, pandas  Uczenie maszynowe scikit-learn  Wizualizacja matplotlib  Głębokie uczenie mxnet 
+Anaconda i Jupyter Notebook
+
+Anaconda z Pythonem 3+:
+
+Zawiera:
+• Wiele powszechnie używanych pakietów do obliczeń naukowych
+• Narzędzia do nauki o danych
+• Biblioteki uczenia maszynowego i inteligencji obliczeniowej
+
+Funkcje Anacondy:
+1. Zarządzanie bibliotekami - za pomocą Condy zarządza bibliotekami, zależnościami i środowiskami
+2. Opracowywanie modeli - umożliwia trenowanie różnych modeli za pomocą scikit-learn, TensorFlow, Keras, Theano
+3. Analiza danych - skalowalność i wydajność za pomocą Dask, NumPy, pandas i Numba
+4. Wizualizacja - szybka wizualizacja wyników za pomocą Matplotlib, Bokeh, Datashader i Holoviews
+
+Uruchomienie:
+• Terminal (Mac/Linux)
+• Linia poleceń lub przez menu (Windows)
+
+Jupyter Notebook
+
+Definicja: Aplikacja webowa typu open source, która umożliwia tworzenie i udostępnianie dokumentów zawierających:
+• Kod na żywo
+• Równania
+• Wizualizacje
+• Opisy i grafikę
+
+Możliwości:
+• Czyszczenie i transformacja danych
+• Symulacja numeryczna
+• Modelowanie statystyczne
+• Wizualizacja danych
+• Uczenie maszynowe i wiele innych
+
+Zastosowanie w kursie: Będzie wykorzystywany do zademonstrowania różnych algorytmów podczas zajęć oraz pracy z notebookami.
+
+────────────────────────────────────────────────────────────
+
+Budowa sieci neuronowych
+
+Budowa sieci z warstw
+
+Sieci neuronowe budujemy zwykle z warstw.
+
+Rodzaje warstw
+
+1. Gęste MLP (Dense) - stosujące połączenia każdy-z-każdym
+
+2. Konwolucyjne:
+   • Conv1D - konwolucje jednowymiarowe
+   • Conv2D - konwolucje dwuwymiarowe
+
+3. Rekurencyjne:
+   • SimpleRNN
+   • GRU (Gated Recurrent Unit)
+   • LSTM (Long Short-Term Memory)
+
+4. Wielogłowa uwagi (MultiHeadAttention)
+
+5. Pooling:
+   • MaxPooling - wyznaczające maksima
+   • AvgPooling - wyznaczające średnie
+
+Właściwości warstw
+
+Łączenie warstw:
+• Zwykle łączymy z bezpośrednio poprzedzającą warstwą
+• W bardziej zaawansowanych modelach również z bardziej poprzednimi warstwami (skip connections)
+
+Struktura warstw:
+• Składają się z różnej liczby neuronów
+• Mogą mieć zdefiniowane różne funkcje aktywacji
+• Wewnętrzny sposób organizacji przekazywania sygnałów może się różnić
+
+────────────────────────────────────────────────────────────
+
+Zastosowania sieci neuronowych
+
+Decyzje w oparciu o wyniki różnych grup zadań
+
+Najczęstsze zastosowania sieci neuronowych:
+
+1. Regresja
+   • Określa przewidywaną wartość dla określonych parametrów wejściowych
+   • Przykład: przewidywanie cen nieruchomości
+
+2. Rozpoznawanie
+   • Rozpoznaje określony obiekt uczący
+   • Zwykle na podstawie podobieństwa danych wejściowych
+   • Przykład: rozpoznawanie twarzy
+
+3. Klasyfikacja
+   • Przyporządkowuje dane wejściowe do określonej klasy
+   • Na podstawie podobieństwa do wzorców uczących definiujących tą klasę
+   • Przykład: klasyfikacja obrazów (pies/kot)
+
+4. Klasyfikacja z lokalizacją
+   • Dodatkowo dokonuje lokalizacji obiektu danej klasy na obrazie
+   • Określa ramkę ograniczającą (bounding box)
+
+5. Detekcja
+   • Wykrywanie wielu obiektów w obrazach
+   • Wraz z ich klasyfikacją
+   • Wraz z określeniem lokalizacji każdego obiektu
+
+6. Segmentacja
+   • Wykrywanie obiektów różnych kategorii
+   • Wykrycie ich granic oraz instancji
+   • Podział obrazu na jednorodne obszary
+
+7. Rekomendacja
+   • Wskazanie obiektów najlepiej spełniających kryteria wejściowe
+   • Zdefiniowane przez użytkownika
+   • Przykład: systemy rekomendacji produktów
+
+8. Predykcja
+   • Przewidywanie zdarzeń przyszłych
+   • Na podstawie wiedzy zgromadzonej o zdarzeniach przeszłych
+   • Przykład: prognozowanie giełdowe, pogoda
+
+Detekcja i Segmentacja Obiektów
+
+Popularność: Dziś popularne są różne metody wykrywania (detekcji), klasyfikacji, lokalizacji i segmentacji obiektów na scenie.
+
+Wykorzystywane w:
+• Wielu sektorach gospodarki
+• Różnych branżach przemysłu
+• Bankowości
+
+Typy zadań:
+• Klasyfikacja i lokalizacja obiektu - jeden główny obiekt
+• Detekcja obiektów - wiele obiektów różnych klas
+
+Detekcja obiektów w obrazach
+
+Zastosowania praktyczne:
+• Wykrywanie interakcji obiektów
+• Kojarzenie obiektów
+• Reagowanie systemów informatycznych na potencjalne korzystne lub niekorzystne zdarzenia
+• W sposób automatyczny
+
+Przykłady:
+• Wspomaganie procesów podejmowania decyzji przez kierowców
+• Autonomiczne samochody
+• Systemy bezpieczeństwa
+
+Segmentacja obrazów na scenie
+
+Zastosowania w systemach mobilnych i bezpieczeństwa:
+• Wykorzystywane są coraz bardziej zaawansowane modele
+• Oparte o głębokie sieci neuronowe
+• Służą do detekcji istotnych obiektów na obrazach
+• Pozyskiwanych z kamer (np. systemy bezpieczeństwa pieszych)
+
+Rozpoznawanie Twarzy i Emocji
+
+Popularność:
+• Systemy bezpieczeństwa
+• Systemy marketingowe
+
+Zastosowania:
+• Badanie zadowolenia klientów
+• Rozpoznawanie twarzy
+• Klasyfikacja emocji pojawiających się na skutek prezentacji nowego produktu/usługi
+• Weryfikacja zadowolenia klienta z obsługi
+
+Aplikacje medyczne - pomiary bezkontaktowe
+
+Detekcja cech biomedycznych z twarzy (praca polska grupa naukowców z PG):
+
+1. Pomiar pulsu kamerą
+   • Potrzebna sieć konwolucyjna
+   • Porównuje obszary w sekwencji klatek filmu twarzy
+
+2. Pomiar oddechu
+   • Nawet przez założoną maseczkę
+   • Temperatura maski okresowo zmienia się w czasie
+
+3. Wykrywanie założenia maseczki
+   • Ciemno-czerwony obszar w miejscu gdzie była maseczka
+   • Maseczka powoduje nagrzewanie się skóry pod nią
+   • Niełatwo okłamać system twierdząc, iż właśnie zdjęło się maseczkę
+
+4. Kamery termowizyjne w czasach COVID
+   • Badanie ludzi na odległość
+   • Różne kolory reprezentują różne temperatury
+   • Inteligentna medycyna przyszłości
+
+Wizja: Okno na inteligentną medycynę przyszłości, która nas obserwuje i bada (prof. J. Rumiński z Gdańska).
+
+────────────────────────────────────────────────────────────
+
+Konwolucyjne sieci neuronowe (CNN)
+
+Definicja i cechy CNN
+
+Konwolucyjne sieci neuronowe (CNN) są dziś bardzo popularne dzięki specjalnym operacjom splotowym opartym na filtrowaniu adaptacyjnym, które bardzo dobrze działają, zwłaszcza w przypadku obrazów.
+
+Korzyści z zastosowania CNN
+
+1. Współdzielenie parametrów (wag):
+• Te same cechy mogą być rozpoznane w dowolnej części obrazu!
+• Znacząca oszczędność parametrów
+
+2. Rzadkie połączenia lokalne:
+• Warstwy splotowe nie są połączone w sposób "każdy-z-każdym" (gęste/w pełni połączone)
+• Pozwala zaoszczędzić wiele parametrów
+• Szybciej trenuje się takie sieci
+
+3. Lokalna specjalizacja:
+• Wyjścia zależą bezpośrednio tylko od wybranych obszarów obrazów wejściowych
+• Neurony mogą specjalizować się w ich rozpoznawaniu
+• Pozycja w warstwie splotowej określa lokalizację znalezionych cech
+• Cechy reprezentowane przez określone filtry (adaptacyjne) warstwy splotowej
+
+Kalendarium rozwoju CNN
+
+Historia: Konwolucyjne sieci neuronowe rozwijały się od lat 90., osiągając szczyt popularności po 2012 roku z wprowadzeniem AlexNet.
+
+Wizja komputerowa (Computer Vision - CV)
+
+Definicja: Interdyscyplinarna dziedzina naukowa, która zajmuje się tym, jak komputery mogą wykonywać różne zadania na obiektach na cyfrowych obrazach/filmach i automatyzować zadania, które może wykonywać ludzki układ wzrokowy.
+
+Rola CNN w CV:
+CV może być wspierana przez konwolucyjne sieci neuronowe (CNN) ze względu na ich wyjątkową zdolność rozpoznawania obiektów w dowolnym miejscu na obrazie.
+
+Filtry splotowe:
+• Pozwalają stopniowo wykrywać i odfiltrowywać podstawowe i drugorzędne cechy w kolejnych warstwach sieci
+• Za pomocą filtrowania adaptacyjnego (iloczynów skalarnych)
+• Wagi filtrów adaptacyjnych są dostosowywane podczas procesu uczenia CNN
+
+Mechanizm adaptacji:
+• Sieć dopasowuje filtry tak, aby rozpoznawać określone kształty i kolory, które są częste
+• Definiować wzorce, które można wielokrotnie dopasowywać do różnych obrazów
+
+────────────────────────────────────────────────────────────
+
+Filtry i sploty
+
+Filtry i sploty (konwolucje)
+
+Filtry w grafice komputerowej:
+• Powszechnie używane w grafice komputerowej
+• Pozwalają znaleźć krawędzie i zawiłe kształty
+
+Przykład: Filtr linii pionowej - wynik zastosowania filtra wykrywa linie pionowe na obrazie.
+
+Filtrowanie adaptacyjne
+
+W warstwach splotowych:
+• Stosujemy filtry adaptacyjne
+• Składają się z niestałych wartości nazywanych wagami (wᵢ)
+• Podczas procesu uczenia wagi są dostosowywane do reprezentowania częstych wzorców rozmiaru filtra w obrazach wejściowych
+
+Mechanizm:
+Wartość wyjściowa = iloczyn skalarny obszaru wejściowego i filtra
+
+convolution = (obszar wejściowy) * (filtr adaptacyjny)
+
+
+Kluczowa właściwość:
+• Wagi splotowe są parametrami modelu
+• Dlatego są dostosowywane podczas procesu uczenia
+• Aby odfiltrować najczęściej występujące cechy/wzorce danych (przykłady uczące)
+
+Detekcja twarzy oraz jej cech
+
+Twarz jako źródło informacji:
+Twarz jest bardzo ważnym i charakterystycznym elementem ludzkiego ciała, z której można wyczytać wiele ważnych informacji:
+
+• Emocje
+• Kłamstwo
+• Tętno
+• Oddech
+• Puls
+• Zdenerwowanie
+• Choroby
+• I wiele innych
+
+Technologia:
+• Wykrywamy i śledzimy punkty charakterystyczne twarzy
+• Oraz tekstury
+
+Tekstury na obrazach
+
+Zastosowania dermatologiczne:
+• Branża "beauty"
+• Cele lecznicze, medyczne
+• Można obecnie śledzić zmiany skórne
+• Z wykorzystaniem sieci konwolucyjnych
+
+Wykrywanie chorób uwidocznionych na twarzy
+
+Możliwości diagnostyczne:
+• Pewne choroby i wady rozwojowe są możliwe do automatycznego rozpoznania
+• Dzięki charakterystycznym wzorcom strukturalnym twarzy
+• Przykład: FASD (Fetal Alcohol Spectrum Disorder)
+
+────────────────────────────────────────────────────────────
+
+Parametry CNN
+
+Stride (krok przesuwania)
+
+Definicja: Aby dopasować filtr do całego obrazu, musimy przesunąć filtr po obrazie o zadanym kroku, który określa liczbę pól (pikseli), którymi poruszamy się w kierunku pionowym i poziomym.
+
+Stride jest hiperparametrem modelu!
+
+Stride = 1:
+• Przeskakujemy co jeden piksel
+• Maksymalna szczegółowość
+
+Stride = 2:
+• Przeskakujemy o dwa piksele
+• Mniejsza szczegółowość, szybsze obliczenia
+
+Padding (dopełnienie)
+
+Problem: Przesuwając filtr (f x f) nad obrazem (n x n) danym krokiem, nie możemy poruszać się po krawędziach/ramce obrazu.
+
+Rozwiązania:
+
+1. Valid Convolution (no padding):
+   • Brak dopełnienia
+   • Rozmiar wyjściowy: (n - f + 1) x (n - f + 1)
+   • Obraz wyjściowy jest mniejszy
+
+2. Same Convolution (z padding):
+   • Dodaj obramowanie o wartościach równych zeru (0) poza obrazem
+   • Padding p = (f - 1)/2
+   • Rozmiar wyjściowy jest taki sam ("same") jak w obrazie wejściowym
+
+Padding jest hiperparametrem modelu!
+
+Obliczanie wielkości objętości wyjściowej
+
+Wzór ogólny dla podanych hiperparametrów:
+
+Dla wejścia o wymiarach:
+• n x n - wymiar macierzy wejściowej
+• f x f - wielkość filtra
+• s - stride (krok)
+• p - padding (dopełnienie)
+
+Rozmiar wyjściowy:
+[(n + 2p - f)/s + 1] x [(n + 2p - f)/s + 1]
+
+
+Przykład: n = 7, f = 3, s = 2, p = 1:
+[(7 + 2·1 - 3)/2 + 1] x [(7 + 2·1 - 3)/2 + 1] = 4 x 4
+
+
+Wiele filtrów adaptacyjnych na obrazach RGB
+
+Obrazy kolorowe:
+• Jeśli obraz wejściowy ma 3 kanały kolorów (RGB)
+• To filtry muszą mieć również głębię równą 3
+• Zawsze dokonujemy splotu na całej objętości (wszystkich kanałach jednocześnie)
+
+Rozmiar wyjściowy:
+Liczba kanałów (filtrów lub głębokość warstwy conv.): n_c
+
+Output Volume Size = [(n+2p-f)/s+1] x [(n+2p-f)/s+1] x n_c
+
+
+Gdzie n_c = liczba zastosowanych filtrów
+
+Przykład z 2 filtrami:
+• Wejście: RGB (3 kanały)
+• Filtr 1: wykrywa pionowe krawędzie
+• Filtr 2: wykrywa poziome krawędzie
+• Wyjście: 2 kanały (n_c = 2)
+
+Sploty i warstwa splotowa
+
+Co dzieje się w warstwie splotowej?
+
+Wejście a⁰ jest splecione przez filtry splotowe W¹ i dodany bias b¹, następnie stosując funkcję aktywacji g¹ obliczamy wyjście a¹:
+
+z¹ = W¹ · a⁰ + b¹
+a¹ = g[¹](z¹)
+
+
+Liczba parametrów (przykład dla 2 filtrów 3x3x3):
+Liczba parametrów = (liczba wag + bias) * liczba filtrów
+                  = (3x3x3 + 1) * 2
+                  = 28 * 2
+                  = 56
+
+
+Notacja stosowana dla warstw splotowych
+
+Dla warstwy splotowej l używamy następujących zapisów:
+
+ Symbol Znaczenie  -------- -----------  f[l] Wielkość filtra  p[l] Padding (szerokość ramki)  s[l] Stride (krok przemieszczania się filtra)  n_H[l] Wysokość (wymiar pionowy)  n_W[l] Szerokość (wymiar poziomy)  n_c[l] Liczba kanałów lub filtrów (głębokość warstwy) 
+Dla danego wejścia: nH[l-1] x nW[l-1] x n_c[l-1]
+
+Rozmiar macierzy wag:
+f[l] x f[l] x n_c[l-1] x n_c[l]
+
+
+Wielkość wyjścia:
+n_H[l] x n_W[l] x n_c[l] =
+  [(n_H[l-1] + 2·p[l] - f[l])/s[l] + 1] x
+  [(n_W[l-1] + 2·p[l] - f[l])/s[l] + 1] x
+  n_c[l]
+
+
+Dla całego batcha:
+A[l] = m x n_H[l] x n_W[l] x n_c[l]
+
+
+Gdzie m = rozmiar batcha (liczba przykładów)
+
+Prosta sieć konwolucyjna - przykład obliczeń
+
+Przykład obliczania rozmiarów:
+
+Warstwa 1:
+n_H[1] x n_W[1] x n_c[1] =
+  [(25 + 2·0 - 5)/2 + 1] x [(25 + 2·0 - 5)/2 + 1] x 16
+  = 11 x 11 x 16
+
+
+Warstwa 2:
+n_H[2] x n_W[2] x n_c[2] =
+  [(11 + 2·1 - 3)/2 + 1] x [(11 + 2·1 - 3)/2 + 1] x 32
+  = 6 x 6 x 32
+  = 1152 = n_H[3]
+
+
+Gdzie:
+• n_c[0] = 3 (RGB)
+• n_c[1] = 16 (16 filtrów w warstwie 1)
+• n_c[2] = 32 (32 filtry w warstwie 2)
+
+Splot 1x1 (One-by-One Convolutions)
+
+Źródło: [Paper: Network In Network, Authors: Min Lin, Qiang Chen, Shuicheng Yan. National University of Singapore, arXiv preprint, 2013]
+
+Nazwa alternatywna: Sieć w sieci (Network in Network)
+
+Zastosowanie:
+• Mogą wykorzystywać różne cechy reprezentowane przez różne filtry splotowe o różnej sile
+• Wyrażonej przez filtr splotowy jeden przez jeden wymiarze
+
+Główna korzyść:
+Ten rodzaj splotu można wykorzystać do zmniejszenia objętości (głębokości) filtra - redukcja wymiarowości przy zachowaniu informacji.
+
+Warstwa Pooling
+
+Cel: Próbkowanie obrazu w dół (downsampling).
+
+Rodzaje:
+
+1. Max-pooling:
+   • Wybiera maksymalną wartość z wybranego obszaru
+   • Typowo stride = 2
+   • Najczęściej używany w sieciach konwolucyjnych (CNN)
+   • Uwaga: Zaniedbuje szczegóły - zachowaj ostrożność!
+
+2. Avg-pooling:
+   • Wybiera średnią wartość z wybranego obszaru
+   • Typowo stride = 2
+
+Właściwości warstw pooling:
+• Brak parametrów do adaptacji w trakcie treningu!
+• Zwykle nie używamy dopełnienia (padding = 0)
+• Obliczane osobno dla każdego kanału
+• Często używany do downsamplingu obrazów wielowymiarowych
+• Dlatego używamy stride > 1
+
+Max-Pooling - szczegóły
+
+Przykład: Warstwa max-pooling dla stride = 1 oraz wielkości filtra = 3x3
+
+Charakterystyka:
+• Zauważ, że nie ma parametrów, które można adaptować w trakcie treningu!
+• W przypadku avg-poolingu obliczamy średnie zamiast wybierać wartości maksymalne
+
+Uwaga praktyczna:
+Warstwy pooling są zwykle liczone razem z warstwami splotowymi, jednak czasami są one liczone osobno - nie daj się zwieść!
+
+────────────────────────────────────────────────────────────
+
+Architektury CNN
+
+Struktura CNN
+
+Projektowanie modelu splotowego:
+• Możemy używać różnych liczb i kombinacji warstw
+• Różnej liczby neuronów w warstwach
+• Wielu innych konfiguracji
+
+Inspiracje:
+• Zainspirujmy się popularnymi strukturami CNN opracowanymi do różnych zadań
+• Będziemy mogli wykorzystać je w przyszłości za pomocą uczenia transferowego
+• Były one wykorzystywane i wytrenowane dla wielu problemów w przeszłości
+• Zobaczmy, jak możemy tworzyć nasze struktury na ich podstawie
+
+LeNet-5 (1998)
+
+Źródło: [LeCun et al., 1998. Gradient-based learning applied to document recognition]
+
+Parametry: Ta sieć ma 60 tys. parametrów.
+
+Charakterystyka:
+• Jedna z najprostszych architektur
+• Warstwa avg-pooling nazywała się warstwą podpróbkowania i miała możliwe do trenowania wagi
+• To nie jest obecną praktyką projektowania CNN w dzisiejszych czasach
+• Nowoczesna wersja LeNet-5 wykorzystuje SoftMax w warstwie wyjściowej
+
+Znaczenie historyczne: Podstawa dla rozwoju późniejszych architektur CNN.
+
+AlexNet (2012)
+
+Źródło: [Krizhevsky et al., 2012. ImageNet classification with deep convolutional neural networks]
+
+Parametry: Ta sieć zawiera 60 mln parametrów.
+
+Przełomowa innowacja:
+• Jako pierwsza wdrożyła Rectified Linear Units (ReLU) jako funkcje aktywacji
+• Przełom w uczeniu głębokich sieci
+• Wygrała konkurs ImageNet w 2012 roku
+• Zapoczątkowała erę głębokiego uczenia w wizji komputerowej
+
+VGG-16 i VGG-19 (2014)
+
+Źródło: [Simonyan & Zisserman 2015. Very deep convolutional networks for large-scale image recognition]
+
+Parametry: VGG-16 zawiera 138 mln parametrów.
+
+Charakterystyka:
+• Bardzo głębokie sieci (16 i 19 warstw)
+• Używa małych filtrów 3x3 konsekwentnie
+• Prosta i jednolita architektura
+• Bardzo popularny w transfer learning
+
+ResNets (2015)
+
+Źródło: [He et al., 2015, Deep residual networks for image recognition]
+
+Innowacja: ResNets są zbudowane z ułożonych w stos bloków rezydualnych, które regulują przetwarzanie nieliniowe za pomocą połączeń short-cut (identity, skip connection).
+
+Wzory:
+z[l+1] = W[l+1] · a[l] + b[l+1]
+a[l+1] = ReLU(z[l+1])
+
+z[l+2] = W[l+2] · a[l+1] + b[l+2]
+a[l+2] = ReLU(z[l+2] + a[l])  ← dodajemy a[l] (skip connection)
+
+
+Wymaganie: a[l] i z[l+2] muszą mieć ten sam wymiar, więc w ResNetach stosujemy konwolucje typu same.
+
+Korzyści:
+• ResNets pozwalają budować znacznie głębsze architektury (do 152 warstw)
+• Bloki z przełączeniem pozwalają uniknąć nadmiernego dopasowania (overfitting)
+
+Dla różnych wymiarów:
+Jeśli chcemy użyć różnych wymiarów a[l] i z[l+2], musimy zastosować dodatkową macierz wag W_s do transformacji:
+a[l+2] = ReLU(z[l+2] + W_s[l+2] · a[l])
+
+
+ResNet-50 (2015)
+
+Źródło: [Paper: Deep Residual Learning for Image Recognition, Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. Microsoft, Published in: 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)]
+
+Parametry: Ta sieć zawiera 26 mln parametrów!
+
+Innowacje:
+• Po raz pierwszy użył połączeń pomijanych (skip connections)
+• Zaprojektował znacznie głębsze CNN (do 152 warstw)
+• Bez kompromisu z uogólnieniem
+• Był jednym z pierwszych, który zastosował normalizację wsadową (batch normalization)
+
+Porównanie do VGG-19:
+ResNets są zbudowane z ułożonych w stos bloków rezydualnych z połączeniami skrótowymi (short-cuts).
+
+Moduły Incepcyjne
+
+Źródło: [Szegedy et al. 2014. Going deeper with convolutions]
+
+Innowacja: Moduły incepcji pozwalają na jednoczesne stosowanie różnych zwojów (filtrów).
+
+Optymalizacja obliczeniowa:
+Używając sploty 1x1 możemy zmniejszyć liczbę mnożeń 10 razy:
+
+Bez optymalizacji:
+28x28x32 x 5x5x192 ≈ 120M operacji
+
+
+Z optymalizacją (sploty 1x1):
+(28x28x16 x 1x1x192) + (28x28x16 x 1x1x192) ≈ 12.4M operacji
+
+
+Oszczędność: ~10x redukcja kosztów obliczeniowych!
+
+Sieci Incepcyjne (2014)
+
+Budowanie sieci incepcyjnej z modułów:
+• Wykorzystuje równoległe wieże splotów z różnymi filtrami
+• Moduły incepcyjne łączą różne rozmiary filtrów (1x1, 3x3, 5x5)
+• MaxPooling w równoległych ścieżkach
+
+Inception-v1 (2014)
+
+Źródło: Paper: Going Deeper with Convolutions, Authors: Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich. Google, University of Michigan, University of North Carolina. Published in: 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+Parametry: Ta sieć zawiera 5 mln parametrów.
+
+Cechy:
+• Zawiera równoległe wieże splotów z różnymi filtrami
+• Wykorzystuje sploty 1x1
+• Dodaje nieliniowość
+• Dwa pomocnicze klasyfikatory dla zapewnienia dodatkowej regularyzacji
+
+Inception-v3 (2015)
+
+Źródło: Paper: Rethinking the Inception Architecture for Computer Vision, Authors: Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna. Google, University College London, Published in: 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+Parametry: Ta sieć zawiera 24 mln parametrów.
+
+Innowacje:
+• Faktoryzuje n×n sploty na sploty asymetryczne
+• Sploty 1×n i n×1
+• Splot 5×5 na dwa sploty 3×3
+• Zastępuje 7×7 szeregiem splotów 3×3
+
+Inception-v4 (2016)
+
+Źródło: Paper: Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning, Authors: Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Google. Published in: Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence
+
+Parametry: Ta sieć zawiera 43 mln parametrów.
+
+Zmiany:
+• Zmiany w module Stem
+• Dodano kolejne moduły Incepcji
+• Jednolite wybieranie modułów Inception-v3
+• Użyli tej samej liczby filtrów dla każdego modułu
+
+Xception (2016)
+
+Źródło: Paper: Xception: Deep Learning with Depthwise Separable Convolutions, Authors: François Chollet. Google. Published in: 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+Parametry: Ta sieć ma 23 mln parametrów.
+
+Innowacja:
+• Adaptacja z wersji Inception
+• Moduły incepcji zostały zastąpione rozdzielonymi w głąb splotami (depthwise separable convolutions)
+
+Mechanizm:
+• Korelacje międzykanałowe zostały przechwycone przez sploty 1x1
+• Korelacje przestrzenne w każdym kanale zostały zarejestrowane za pomocą regularnych splotów 3x3 lub 5x5
+
+Inception-ResNet-v2 (2016)
+
+Źródło: Paper: Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning, Authors: Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Google. Published in: Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence
+
+Parametry: Ta sieć ma 56 mln parametrów.
+
+Rozwiązanie:
+• Konwertuje moduły inicjowania na bloki rezydualnego incepcji
+• Dodaje więcej modułów początkowych
+• Dodaje nowy typ modułu Incepcja (Incepcja-A) po module Stem
+
+ResNeXt-50 (2017)
+
+Źródło: Paper: Aggregated Residual Transformations for Deep Neural Networks, Authors: Saining Xie, Ross Girshick, Piotr Dollár, Zhuowen Tu, Kaiming He. University of California San Diego, Facebook Research. Published in: 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+
+Parametry: Ta sieć ma 25 mln parametrów.
+
+Innowacja: Zwiększa liczbę równoległych wież ("kardynalność") w module.
+
+GitHub sources
+
+Nie musisz implementować wszystkich tych sieci od zera!
+
+Kroki korzystania ze źródeł GitHub:
+1. Znajdź źródło na GitHub
+2. Skopiuj źródło w repozytorium GitHub (fork)
+3. Sklonuj go na swoim komputerze: git clone https://github.com/...
+4. Przejdź do repozytorium, np.: cd deep-residual-networks
+5. Przejdź do prototxtu/ i spójrz na strukturę wybranej sieci
+
+Praktyka:
+• Wdrażając wybrane typy sieci, często korzystamy z implementacji open-source dostępnych na GitHubie
+• Dostosowujemy je do naszych zadań
+• W ten sam sposób kopiujemy implementacje z wytrenowanymi parametrami do transfer learning
+
+────────────────────────────────────────────────────────────
+
+Transfer Learning
+
+Uczenie transferowe
+
+Definicja: Uczenie transferowe (transfer learning) jest powszechnym i wysoce skutecznym podejściem stosowanym do uczenia głębokiego, jeśli mamy do dyspozycji tylko małe zestawy danych uczących.
+
+Zasada:
+• Korzystamy z wstępnie wytrenowanej sieci na dużym zestawie podobnego typu danych
+• Zwykle stosowane w zadaniach klasyfikacji obrazów na dużą skalę
+
+Warunek skuteczności:
+Jeśli ten duży zestaw danych jest wystarczająco ogólny (tj. reprezentatywnie pokrywa przestrzeń danych wejściowych), wówczas:
+• Hierarchia cech przestrzennych reprezentowana przez wstępnie wytrenowaną sieć
+• Może skutecznie działać jako ogólny model naszego wizualnego świata
+• Być stosowana w innych podobnych problemach
+
+Możliwość generalizacji:
+• Te ogólne reprezentacje mogą okazać się przydatne w przypadku wielu różnych problemów z widzeniem komputerowego
+• Nawet jeśli problemy te mogą obejmować zupełnie inne klasy niż zadania, do których oryginalna sieć została wytrenowana
+
+Przykład:
+• Można wyszkolić sieć na dużym zbiorze ImageNet
+• A następnie wykorzystać tę sieć do identyfikacji np. mebli lub zwierząt na obrazach
+
+Kluczowa zaleta:
+Możliwość przenoszenia wyuczonych cech i wzorców (poprzez bazę konwolucyjną) w ramach różnych problemów jest kluczową zaletą transferowego uczenia głębokiego w porównaniu z wieloma starszymi metodami uczenia płytkiego i sprawia, że uczenie głębokie jest bardzo skuteczne w przypadku problemów dotyczących nielicznych danych uczących.
+
+Dwa sposoby korzystania z pre-trained network
+
+1. Feature extraction (wyodrębnianie cech)
+   • Użyj zamrożonej bazy splotowej jako ekstraktora cech
+   • Trenuj tylko nowy klasyfikator na górze
+
+2. Fine-tuning (dostrajanie)
+   • Odmroź niektóre górne warstwy bazy splotowej
+   • Trenuj je wspólnie z nowym klasyfikatorem
+
+Przeniesienie bazy splotowej
+
+Schemat przeniesienia:
+
+Model oryginalny:
+[Input Data] → [Trained Convolutional Base] → [Trained Classifier] → [Original Predictions]
+
+
+Model z transfer learning:
+[Input Data] → [Trained Convolutional Base (frozen)] → [New Classifier] → [New Predictions]
+                        Feature Extractor
+
+
+Proces:
+• Wykorzystujemy dobrze wytrenowane bazy splotowe wcześniej wyszkolonych sieci
+• Które wyodrębniły różne cechy hierarchii
+• Dostosowujemy je do nowych zadań (np. klasyfikacji)
+• Tworząc lepsze modele
+
+Zamrażanie i odmrażanie warstw z VGG-16
+
+Przykład z VGG-16:
+
+Możemy wykorzystać wybraną liczbę zamrożonych warstw splotowych i dostroić niezamrożone warstwy:
+
+Block 1 (frozen)  ← warstwy ogólne, niskopoziomowe cechy
+Block 2 (frozen)
+Block 3 (frozen)
+Block 4 (frozen)
+Block 5 (fine-tune)  ← warstwy specyficzne, wysokopoziomowe cechy
+Classifier (fine-tune)  ← nowy klasyfikator
+
+
+Takie podejście pozwala:
+• Klasyfikatorowi zachować warstwy splotowe reprezentujące najbardziej ogólne (niskopoziomowe) cechy
+• Dostosować bardziej specyficzne cechy splotowe wyższego rzędu
+• Reprezentowane przez filtry górne
+• Które będą lepiej odpowiadać na nowozdefiniowane zadanie klasyfikacji
+
+Proces dostrajania:
+1. Najpierw musimy wyszkolić klasyfikator (z zamrożoną bazą splotową)
+2. Gdy jest już dość dobrze wyszkolony
+3. Odmrozić kilka górnych warstw splotowych (np. w bloku 5)
+4. Następnie kontynuować szkolenie z małym tempem uczenia się
+5. Cel: ograniczenie zakresu modyfikacji wprowadzonych w bloku 5
+
+Uczenie transferowe - realizacja
+
+Kroki implementacji:
+
+1. Wczytaj zapisany wcześniej lub zaimportuj z biblioteki bazę splotową
+
+2. Na początku zamroź splotową bazę:
+   • Aby zapobiec jej zmianom
+   • Zanim zaczniemy trenować losowo zainicjowany klasyfikator na górze
+
+3. Dodaj zamrożoną bazę splotową do modelu
+
+Kroki dostrajania modelu
+
+Szczegółowy proces fine-tuning:
+
+1. Dodaj swoje warstwy (np. klasyfikator zbudowany z warstw gęstych) do już przeszkolonej bazy splotowej zaimportowanej sieci (conv_base)
+
+2. Zablokuj/Zamroź bazę splotową:
+   conv_base.trainable = False
+
+
+3. Trenuj dodaną część (np. klasyfikator) na górze sieci aż do uzyskania zbieżności modelu
+
+4. Odblokuj ostatnie warstwy (lub blok warstw) w bazie splotowej sieci
+
+5. Wspólnie trenuj obie odmrożone warstwy i dodaną część klasyfikatora
+
+6. Jeśli wyniki nie są jeszcze zadowalające:
+   • Odblokuj kilka dodatkowych ostatnich warstw (następny blok) w bazie sieci
+   • Wspólnie trenuj obie odmrożone warstwy i dodaną część
+
+Progresywne odmrażanie:
+Etap 1: Wszystkie bloki frozen → trenuj tylko Classifier
+Etap 2: Block 5 fine-tune → trenuj Block 5 + Classifier
+Etap 3: Block 4-5 fine-tune → trenuj Block 4-5 + Classifier
+Etap 4: Block 3-5 fine-tune → trenuj Block 3-5 + Classifier
+
+
+Zamrażanie i odmrażanie warstw - zasady
+
+Co należy wziąć pod uwagę:
+
+1. Wcześniejsze warstwy w splotowej bazie:
+   • Kodują bardziej ogólne cechy wielokrotnego użytku
+   • Np. krawędzie, kolory, proste kształty
+
+2. Wyższe warstwy kodują:
+   • Bardziej specyficzne cechy danych
+   • Na których model bazowy był wytrenowany
+   • Np. specyficzne kształty obiektów, tekstury
+
+3. Bardziej przydatne jest dostrojenie bardziej wyspecjalizowanych cech:
+   • Gdyż to one są odpowiedzialne najbardziej za możliwość adaptacji bazy splotowej do naszego problemu
+
+4. Ryzyko przeuczenia:
+   • Im więcej parametrów ćwiczymy, tym bardziej jesteśmy narażeni na przeuczenie
+   • Splotowa baza ma zwykle ponad miliony parametrów
+   • Próba uczenia jej na małym zbiorze danych byłaby bardzo ryzykowna
+
+Wniosek: Zamrażaj warstwy niższe (ogólne), dostrajaj warstwy wyższe (specyficzne).
+
+────────────────────────────────────────────────────────────
+
+Wizualizacja i analiza CNN
+
+Wzorce splotowe
+
+Wizualizacja: Przykładowe przestrzenne wzorce splotowe wykryte przez adaptacyjne filtry splotowe w obrazie wejściowym (zaznaczone żółtym kolorem).
+
+Reakcja filtrów splotowych ConvNet
+
+Analiza: Możemy obserwować jak różne filtry reagują na różne cechy w obrazie wejściowym.
+
+Wizualizacja filtrów splotowych ConvNet
+
+Cel wizualizacji:
+• Możemy wizualizować filtry convnet, aby zobaczyć, jak są reprezentowane wzorce
+• Sprawdzić różnorodność filtrów splotowych
+• Ich zróżnicowanie i dostosowanie do danych treningowych
+• Można zliczać częstość ich reakcji na dane wejściowe
+
+Interpretacja wyników:
+Jeśli filtry są znacząco różne i nie przedstawiają szumu losowego, oznacza to, iż:
+• Reprezentują wartościowe cechy obrazów uczących
+• Które różnicują obiekty
+
+Pytania kontrolne:
+• Czy znalezione filtry w czasie treningu są wystarczające do dyskryminacji i klasyfikacji obrazów?
+• Czy nie potrzeba ich więcej?
+
+Wizualizacja cech kluczowych
+
+Kontrola kluczowych cech: Cech mających największy wpływ na klasyfikację obrazów.
+
+Analiza obszarów decyzyjnych:
+• Czy obszar decyzyjny obejmuje istotne cechy obiektów, które klasyfikujemy?
+
+Jeśli TAK:
+• Możemy oczekiwać poprawnego działania modelu w sytuacjach rzeczywistych
+
+Jeśli NIE:
+• Model może działać niepoprawnie
+• Nawet jeśli nie wskazuje na to zbiór testowy i uzyskana generalizacja
+• Zbiór testowy mógł zostać zbudowany niepoprawnie
+• Nie ujawnia słabości modelu
+
+────────────────────────────────────────────────────────────
+
+Ograniczenia CNN
+
+Ograniczenia rozwiązań stosujących CNN
+
+Powinniśmy być świadomi różnych ograniczeń współczesnych rozwiązań CNN:
+
+1. Statyczna struktura:
+   • CNN dostosowana eksperymentalnie
+   • Zwykle nie zoptymalizowana do rozwiązywanego problemu
+   • Ma skłonność do niedouczenia się (underfitting) lub przeuczenia się (overfitting)
+
+2. Wymagany ten sam rozmiar wejściowy:
+   • Dla wszystkich obrazów uczących i testowych
+   • Niezależnie od oryginalnego rozmiaru obrazów
+   • Może prowadzić do zniekształceń, deformacji lub eliminacji szczegółów
+
+   Metody dopasowania rozmiaru:
+   • Zmiana rozdzielczości obrazu (redukcja szczegółów lub multiplikacja pikseli)
+   • Skalowanie obrazu (rozciąganie, ściskanie, deformowanie, zmiana proporcji)
+   • Obcinanie obrazu lub wypełnianie (białymi, czarnymi lub skrajnymi kolorami obrazu)
+
+3. Problem tła w klasyfikacji:
+   • Definiujemy cały obraz jako reprezentujący określoną klasę
+   • Nawet jeśli obiekt klasy wypełnia tylko pewną/niewielką część obrazu
+   • Tło (stanowiące czasami większość powierzchni) może wprowadzać model w błąd
+   • Szczególnie jeśli tło powtarza się na obrazach
+
+4. Ślepota na niezdefiniowane obiekty:
+   • Sieci CNN są ślepe na niezdefiniowane obiekty (w zbiorze uczącym) widoczne na obrazach treningowych
+   • Może wprowadzać w błąd lub powodować ograniczoną efektywność modeli
+
+5. Brak automatycznej obsługi transformacji:
+   • Nie radzą sobie automatycznie z obrotami obiektów na obrazach
+   • Ani ich zmienną skalą (większe lub mniejsze obiekty)
+
+6. Problemy z filtrami:
+   • Mocno skorelowane filtry
+   • Zbyt słabe "martwe" filtry, które (prawie) nigdy nie wygrywają w MaxPoolingu
+
+7. Niezrównoważona reprezentacja klas:
+   • Nie zawsze może być skutecznie rozwiązana za pomocą augmentacji danych
+   • Duplikowania czy wzbogacania danych
+   • Wzmacniania lub innych technik
+   • Jeśli podprzestrzeń klas nie jest wystarczająco reprezentatywna dla rozwiązywanego problemu
+
+8. Informacja tylko o istnieniu cech:
+   • Stosowanie tylko informacji o istnieniu cech
+   • A nie stosowanie informacji o ich braku
+   • Skutecznie ogranicza możliwości dyskryminacyjne modeli
+   • Jest niezgodne z tym, co dzieje się w siatkówce oka
+   • Gdzie istnieją komórki zwojowe typu ON i OFF
+   • Reagujące na wzrost i spadek jasności bodźców odpowiednio
+
+Sposób kodowania informacji w oku
+
+Siatkówka i pola recepcyjne układu wzrokowego:
+
+Struktura:
+• Zawierają ok. 120 mln fotoreceptorów
+• Przekazują pobudzenia do ok. 1 mln komórek zwojowych
+• Poprzez neurony dwubiegunowe (słabo poznane)
+• Komórki horyzontalne i amakrynowe odpowiedzialne za wyostrzanie bodźców i krawędzi
+
+Przekazywanie informacji:
+• Komórki zwojowe kodują informacje wizualne za pomocą serii potencjałów czynnościowych
+• Poprzez nerw wzrokowy wysyłają je do mózgu do dalszego przetwarzania w korze wzrokowej
+
+Typy komórek zwojowych (znamy ok. 30 typów):
+
+1. Komórki parasolowate:
+   • Szybkie
+   • Dobrze wykrywające małe zmiany kontrastu
+
+2. Komórki karłowate:
+   • Wolniejsze
+   • Zapewniają widzenie koloru
+
+Typy ON i OFF:
+• Komórki typu ON: reagują na wystąpienie określonego bodźca wzrokowego (wzrost jasności)
+• Komórki typu OFF: reagują na brak wystąpienia określonego bodźca wzrokowego (spadek jasności)
+
+Problem w CNN: W CNN często modelujemy tylko te typu ON!
+
+Brak filtrów reagujących na brak wystąpienia cech
+
+Problem:
+Czasami brak wystąpienia pewnej cechy bardziej jest dyskryminujący niż jej wystąpienie.
+
+Konsekwencje stosowania MaxPooling:
+• Łącznie z konwolucyjnymi warstwami
+• Dane wejściowe kodowane w zakresie [0, 1]
+• Powoduje możliwość zwrócenia uwagi sieci tylko na te cechy, które występują w obrazie
+
+Ślepota sieci:
+• Sieć jest natomiast całkowicie ślepa na cechy, których brakuje
+• A które też niosą istotną wartość dyskryminacyjną
+• Taki sposób reprezentacji danych wejściowych istotnie zubaża możliwość ich reprezentacji
+• Ogranicza możliwość wykrywania części istotnych wzorców
+
+Inspiracja biologiczna:
+Nie bez kozery w siatkówce oka mamy zarówno receptory ON jak i OFF.
+
+Rozwiązanie:
+Chcąc uwzględnić również brak występowania cech:
+• Musimy kodować dane wejściowe inaczej
+• Stosować odpowiednie funkcje aktywacji
+
+Stosowanie klasycznej funkcji ReLU
+
+Problem z ReLU:
+Wykorzystanie klasycznej funkcji ReLU może spowodować:
+• Uniemożliwienie uczenia się słabszych kombinacji cech
+• Jeśli wpadnie w zakres dający 0 na wyjściu
+• Pewne filtry wyłączać z działania ("martwe" filtry)
+• Ze względu na zbyt słabe pobudzenia tych filtrów
+
+Rekomendacja:
+Lepiej zastosować:
+• LeakyReLU
+• PReLU (Parametric ReLU)
+• ELU (Exponential Linear Unit)
+
+Zamiast klasycznego ReLU.
+
+Weryfikacja:
+Warto sprawdzić, jak często poszczególne filtry generują wyniki dla całego zbioru danych uczących:
+• Czarne kwadraty reprezentujące brak reakcji filtra
+• Pytanie: czy to powtarza się również dla innych obrazów uczących czy nie?
+
+Zubożenie reprezentacji i dyskryminacji
+
+Problem zbyt podobnych filtrów:
+Jeśli w wyniku uczenia powstanie kilka filtrów zbyt podobnych do siebie, wtedy:
+• Dochodzi do zubożonej reprezentacji obiektów uczących
+• Oraz ograniczonej ich dyskryminacji
+
+Rozwiązanie:
+• Warto obejrzeć, czego nasza sieć się nauczyła
+• Lub policzyć korelacje poszczególnych par filtrów
+• By móc wzbogacić reprezentację wzorców
+
+Wskaźniki problemów:
+• Reprezentacja szumu losowego wskazuje na brak adaptacji filtra ("martwy" filtr)
+• CNN muszą też marnować filtry do reprezentacji obróconych wzorców
+
+Przykłady trudnych zbiorów uczących
+
+Kiedy CNNy mogą mieć trudności w dyskryminacji klas?
+
+1. Występuje to samo lub podobne tło
+   • Tło dominuje nad obiektami
+   • Tło może być bardziej wyróżniające niż sam obiekt
+
+2. Klasyfikowane obiekty wypełniają niewielki lub różny procent powierzchni obrazu
+   • Różne proporcje obiekt/tło
+
+3. Różnice występują w detalach złożonych kształtów
+   • Subtelne różnice morfologiczne
+
+4. Obiekty różnią się względną wielkością
+   • Która jest nierozróżnialna po skalowaniu obiektów do tej samej wielkości na wejście sieci CNN
+
+Przykłady:
+• Klasyfikacja liści winorośli (to samo tło, subtelne różnice w kształtach)
+• Klasyfikacja tych samych roślin w różnej fazie rozwoju fotografowanych na podobnym tle (kolorowe kamyczki)
+
+Pytanie: Jak sieć widzi te przykłady i jakich wzorców się uczy, a na czym się skupia (obiekt czy tło)?
+
+Przykłady łatwiejszych zbiorów uczących
+
+Kiedy jest łatwiej:
+• Gdy zmiany (kolorystyczne i kształtów) dotyczą całych obiektów
+• I różnią tłem
+• CNN znacznie łatwiej radzą sobie, gdy różnice dotyczą kształtów i koloru całych obiektów
+
+Przykład: Zbiór różnych gatunków ryżu
+• Wyraźne różnice w kolorze i kształcie
+• Jednolite tło
+• Łatwa klasyfikacja
+
+────────────────────────────────────────────────────────────
+
+Detekcja obiektów
+
+Definicje zadań na obrazach
+
+Klasyfikacja:
+• Polega na określeniu, do której klasy należy główny obiekt (lub czasami wszystkie obiekty) na obrazie
+• Jedna etykieta na obraz
+
+Klasyfikacja z lokalizacją:
+• Nie tylko klasyfikuje główny obiekt na obrazie
+• Ale także lokalizuje go na obrazie
+• Określając jego ramkę ograniczającą (położenie i rozmiar lub kotwice lokalizacji)
+
+Wykrywanie (detekcja):
+• Polega na znalezieniu na obrazie wszystkich obiektów wcześniej wytrenowanych (znanych) klas
+• I ich lokalizacji (wykryciu ich położenia i rozmiaru)
+• Wiele obiektów na jednym obrazie
+
+Segmentacja semantyczna:
+• Polega na oznaczeniu określonych obszarów obrazu zgodnie z poziomem pikseli
+• Aby zrozumieć relacje między obiektami
+• Lub rozpoznać ważne obiekty w kontekście (lokalizacji) innych obiektów lub ich stanów, działań i zależności
+• Każdy piksel przypisany do klasy
+
+Segmentacja instancji:
+• Proces dzielenia obrazu na części zwane obszarami
+• Które są jednorodne pod względem wybranych cech
+• Nie tylko oznaczamy te obszary etykietami klas
+• Ale oddzielamy poszczególne instancje tej samej klasy
+• Każdy obiekt ma osobną maskę
+
+Cechy wybierane jako kryteria jednorodności obszarów:
+• Poziom szarości
+• Kolor
+• Faktura (tekstura)
+
+Popularne zadania wykonywane na obrazach
+
+1. Klasyfikacja obiektów - która klasa?
+2. Klasyfikacja obiektów z lokalizacją - która klasa + gdzie?
+3. Wykrywanie obiektów - wiele obiektów, ich klasy i lokalizacje
+4. Wykrywanie punktów kluczowych obiektów lub punktów orientacyjnych
+5. Segmentacja instancji obiektu - każdy obiekt osobno
+6. Segmentacja semantyczna obiektów - każdy piksel ma klasę
+7. Analiza i zrozumienie sceny - kompleksowa analiza
+
+Wykrywanie punktów orientacyjnych i kluczowych
+
+Zastosowania:
+• Modelowanie i rozpoznawanie gestów twarzy
+• Ekspresja emocji
+• Pozycji ciała
+• Itp.
+
+Znaczenie semantyczne:
+Wykrywanie punktów kluczowych jest kluczowe z semantycznego punktu widzenia do interpretacji stanów i działań widocznych na obrazach lub filmach.
+
+Klasyfikacja z określaniem lokalizacji
+
+Cel: Określenie klasy głównego obiektu (czyli zwykle w centrum obrazu).
+
+Ograniczenie klas:
+• Liczba klas jest ograniczona
+• Reszta obrazu jest klasyfikowana jako tło (background)
+
+Wyjście sieci:
+Podczas lokalizowania obiektu, wyjście sieci zawiera dodatkowe wyjścia definiujące ramkę ograniczającą (bounding box) obiektu:
+
+• b_x - współrzędna osi x środka obiektu
+• b_y - współrzędna osi y środka obiektu
+• b_h - wysokość ramki ograniczającej obiektu
+• b_w - szerokość ramki ograniczającej obiektu
+
+Klasy:
+• car, pedestrian, ..., background
+
+Definiowanie etykiet celów dla treningu
+
+Wektor wyjściowy:
+y = [p_c, b_x, b_y, b_h, b_w, c_1, c_2, ..., c_K]ᵀ
+
+
+Gdzie:
+• p_c - prawdopodobieństwo wykrycia na obrazie obiektu określonej klasy (1 gdy obiekt obecny, 0 gdy nie ma)
+• b_x - współrzędna środka ramki obiektu na osi x
+• b_y - współrzędna środka ramki obiektu na osi y
+• b_h - wysokość ramki obiektu
+• b_w - szerokość ramki obiektu
+• c1, c2, ..., c_K - możliwe wytrenowane klasy obrazu wejściowego
+• Tylko jedna c_k jest równa 1, a pozostałe są równe 0
+• ? - nie są uwzględniane w funkcji straty, ponieważ nie dbamy o te wartości, gdy nie został wykryty żaden obiekt
+
+Przykład 1: Jeśli istnieje obiekt klasy c₂ w obrazie:
+y = [1, b_x, b_y, b_h, b_w, 0, 1, 0, 0]ᵀ
+
+
+Przykład 2: Jeżeli nie ma obiektu żadnej ze zdefiniowanych klas:
+y = [0, ?, ?, ?, ?, ?, ?, ?, ?]ᵀ
+
+
+Jak działają detektory?
+
+Detektory obiektów składają się z kilku części (wyspecjalizowanych podsieci):
+
+1. Input:
+• Image
+• Patches (fragmenty)
+• Image Pyramid (piramida obrazów)
+
+2. Backbone (rdzeń sieci):
+• VGG16
+• ResNet-50
+• SpineNet
+• EfficientNet-B0/B7
+• CSPResNeXt50
+• CSPDarknet53
+
+3. Neck (szyja - dodatkowe bloki):
+• Additional blocks: SPP, ASPP, RFB, SAM
+• Path-aggregation blocks: FPN, PAN, NAS-FPN, Fully-connected FPN, BiFPN, ASFF, SFAM
+
+4. Heads (głowy - predykcja):
+
+Dense Prediction (one-stage) - gęsta predykcja jednokrokowa:
+• Anchor-based: RPN, SSD, YOLO, RetinaNet
+• Anchor-free: CornerNet, CenterNet, MatrixNet, FCOS
+
+Sparse Prediction (two-stage) - rzadka predykcja dwukrokowa:
+• Anchor-based: Faster R-CNN, R-FCN, Mask RCNN
+• Anchor-free: RepPoints
+
+Wykrywanie i wycinanie obiektów
+
+Metody wykrywania obiektów:
+
+1. Stosowanie okna przesuwnego (sliding window):
+   • O tym samym lub różnym rozmiarze
+   • Różnych krokach przesuwania
+   • Wysoki koszt obliczeniowy ze względu na wiele kroków
+
+2. Siatka stałych okien (np. YOLO - patrzysz tylko raz):
+   • Umieszczenie przyciętego obrazu przez takie okno na wejściu ConvNet (CNN)
+   • Bardziej efektywne obliczeniowo
+
+Splotowa implementacja przesuwnych okien
+
+Optymalizacja obliczeń:
+• Wiele obliczeń dla przesuwanych okien powtarza się
+• Przykład: niebieskie przesuwane okno i czerwone (obszar wspólny) po dwupikselowym kroku
+
+Rozwiązanie:
+We implement sliding windows parallelly and share these computations that are the same for different sliding windows to proceed computations faster.
+
+Wada:
+• Położenie ramki wyznaczonej przez okno przesuwne może nie być bardzo dokładne
+• Jeśli chcemy lepiej dopasować każdy obiekt, musimy użyć wielu równoległych sieci dla różnych rozmiarów okien
+• Mimo to możemy nie osiągnąć odpowiednio dopasowanych rozmiarów takich okien
+• Słabe ramki ograniczające dla sklasyfikowanych obiektów
+
+YOLO - You Only Look Once
+
+Zasada działania:
+Stosując YOLO, na obrazku umieszczamy siatkę o ustalonych rozmiarach (oryginalne: 19 x 19):
+
+Reguły przypisania:
+• Każdy obiekt jest klasyfikowany tylko w pojedynczej komórce siatki
+• Gdzie znajduje się punkt środkowy tego obiektu
+• Biorąc pod uwagę jego podstawową ramę (ground truth) zdefiniowaną w uczącym zbiorze danych
+
+Ignorowanie w innych komórkach:
+• We wszystkich innych komórkach ten obiekt nie jest reprezentowany
+• Nawet jeśli one zawierają fragmenty tego obiektu lub jego ramkę
+
+Wektor dla każdej komórki:
+Dla każdej komórki siatki tworzymy (K+5)-wymiarowy wektor przechowujący ramkę i parametry klasy:
+
+y = [p_c, b_x, b_y, b_h, b_w, c_1, c_2, ..., c_K]ᵀ
+
+
+Docelowe dane wyjściowe:
+• Macierze 3D o wymiarach S x S x (K+5)
+• Gdzie S jest liczbą komórek siatki w każdym wierszu i kolumnie
+
+Warunek działania:
+To podejście działa, o ile w każdej komórce siatki znajduje się tylko jeden środek obiektu.
+
+W praktyce:
+• Siatka jest zwykle większa niż w przykładzie, np. 19x19
+• Istnieje mniejsze prawdopodobieństwo, że w każdej komórce znajdzie się więcej niż jeden punkt środkowy obiektu
+
+Ramki ograniczające YOLO
+
+Wzory obliczania ramek:
+b_x = σ(t_x) + c_x
+b_y = σ(t_y) + c_y
+b_w = p_w · e^(t_w)
+b_h = p_h · e^(t_h)
+
+
+Gdzie:
+• tx, ty, tw, th - to wyjścia sieci YOLO
+• cx i cy - to współrzędne lewego górnego rogu komórki siatki
+• pw i ph - to wymiary kotwic dla komórki siatki (ramki)
+• σ - funkcja sigmoid
+
+Określanie ramek ograniczających w YOLO
+
+System współrzędnych:
+• Każdy lewy górny róg każdej komórki siatki ma współrzędne (0, 0)
+• Każdy prawy dolny róg każdej komórki siatki ma współrzędne (1, 1)
+
+Wyznaczanie środka obiektu:
+• Wyznaczamy środek obiektu dla tych współrzędnych
+• Tutaj przykład: (0.4, 0.3)
+
+Wymiary ramki:
+• Szerokość (wysokość) obiektu jest mierzona jako ułamek całkowitej szerokości (wysokości) tego pola komórek siatki (ramki)
+
+Przykład wektora:
+y = [1, 0.4, 0.3, 0.8, 0.9, 1, 0, ..., 0]ᵀ
+
+
+UWAGI:
+• Punkty środkowe zawsze mieszczą się w przedziale od 0 do 1
+• Natomiast szerokości i wysokości mogą być większe niż 1
+• Jeśli chcemy użyć funkcji sigmoid (nie ReLU) w warstwie wyjściowej, wtedy musimy mieć wszystkie szerokości i wysokości określone w zakresie od 0 do 1
+• By to osiągnąć, możemy podzielić szerokości przez liczbę komórek siatki w rzędzie (b_w / S)
+• I podzielić wysokości przez liczbę komórek siatki w kolumnie (b_h / S)
+
+Wspólna część nad złączeniem (IoU - Intersection over Union)
+
+Definicja IoU: Miara określająca jak dobrze dopasowana jest predykowana ramka ograniczająca do rzeczywistej ramki obiektu.
+
+────────────────────────────────────────────────────────────
+
+CZĘŚĆ 3: YOLO I ZAAWANSOWANE TECHNIKI DETEKCJI
+
+────────────────────────────────────────────────────────────
+
+YOLO - Zaawansowane techniki
+
+Non-Max Suppression (NMS) w YOLO
+
+Problem: Podczas stosowania większych siatek wiele komórek może myśleć, że reprezentuje punkt środkowy wykrytego obiektu. W rezultacie każda taka komórka utworzy ramkę graniczną, więc otrzymamy wiele ramek ograniczających dla tego samego obiektu.
+
+Rozwiązanie: Metoda odrzucania ramek o niemaksymalnych IOU (Non-Max Suppression) umożliwia YOLO odrzucenie części ramek, pozostawiając tylko jedną z najwyższym IOU.
+
+Zasada działania:
+• YOLO wybiera ramkę z największym prawdopodobieństwem p_c obliczonym dla każdej komórki siatki
+• Pozostałe ramki dla tego samego obiektu są usuwane
+
+Algorytm Non-Max Suppression
+
+Kroki algorytmu:
+
+1. Odrzuć ramki o niskim prawdopodobieństwie:
+   • Odrzuć wszystkie ramki ograniczające oszacowane przez sieć splotową
+   • Których prawdopodobieństwo wynosi p_c ≤ 0.6
+
+2. Dopóki pozostały jeszcze ramki:
+
+   Krok wyboru:
+   • Wybierz tę z największym p_c
+   • Wypisz ją jako przewidywanie wykrytego obiektu
+   • Podaj ją na wyjście jako predykcję dla wykrytego obiektu
+
+   Krok czyszczenia/tłumienia:
+   • Odrzuć wszelkie pozostałe ramki ograniczające z IoU ≥ 0.5 z wyjściem ramki w poprzednim kroku
+
+3. Dla wielu klas:
+   • W przypadku wykrywania wielu obiektów z różnych klas
+   • Powtarzamy ten proces dla każdej z tych klas niezależnie
+
+Kotwice ramek do wykrywania wielu obiektów
+
+Problem: Gdy dwa lub więcej obiektów znajduje się prawie w tym samym miejscu na obrazie, a ich punkty środkowe ramek ograniczających prawdy podstawowej (ground truth) znajdują się w tej samej komórce siatki.
+
+Rozwiązanie: Zdefiniować kilka ramek zakotwiczenia z predefiniowanymi kształtami (anchor box) powiązanymi z różnymi klasami obiektów, które mogą występować w tej samej komórce siatki.
+
+Przykład:
+• 1 ramka kotwicząca (A1 - anchor box): Dla obiektów pionowych (np. pieszych)
+• 2 ramka kotwicząca (A2 - anchor box): Dla obiektów poziomych (np. samochodów)
+
+Przypisanie:
+Algorytm YOLO z ramkami zakotwiczenia przypisuje każdy obiekt na obrazie szkoleniowym do:
+1. Komórki siatki zawierającej punkt środkowy obiektu
+2. Odpowiedniej ramki zakotwiczenia dla komórki siatki z najwyższym IOU
+
+Ramki zakotwiczenia i konfiguracja celu
+
+W przypadku dwóch ramek zakotwiczenia w komórce siatki rozważamy cztery przypadki:
+
+Wektor wyjściowy:
+y = [p_c^A1, b_x^A1, b_y^A1, b_h^A1, b_w^A1, c_1^A1, c_2^A1, ..., c_K^A1,
+     p_c^A2, b_x^A2, b_y^A2, b_h^A2, b_w^A2, c_1^A2, c_2^A2, ..., c_K^A2]ᵀ
+
+
+Przypadek 1: W komórce nie ma punktów środkowych obiektów
+y = [0, ?, ?, ?, ?, ?, ?, ..., ?,
+     0, ?, ?, ?, ?, ?, ?, ..., ?]ᵀ
+
+
+Przypadek 2: W komórce znajduje się jeden punkt środkowy obiektu kotwicy 1 i klasy c1
+y = [1, b_x^A1, b_y^A1, b_h^A1, b_w^A1, 1, 0, ..., 0,
+     0, ?, ?, ?, ?, ?, ?, ..., ?]ᵀ
+
+
+Przypadek 3: W komórce znajduje się jeden punkt środkowy obiektu kotwicy 2 i klasy c2
+y = [0, ?, ?, ?, ?, ?, ?, ..., ?,
+     1, b_x^A2, b_y^A2, b_h^A2, b_w^A2, 0, 1, ..., 0]ᵀ
+
+
+Przypadek 4: W komórce znajdują się dwa punkty środkowe dwóch obiektów kotwicy 1 i 2 oraz obu klas c1 i c2
+y = [1, b_x^A1, b_y^A1, b_h^A1, b_w^A1, 1, 0, ..., 0,
+     1, b_x^A2, b_y^A2, b_h^A2, b_w^A2, 0, 1, ..., 0]ᵀ
+
+
+Model wykrywania YOLO
+
+Jak działa? - Pełny proces od wejścia do wyjścia z wykorzystaniem wszystkich opisanych mechanizmów.
+
+Klasyczna architektura sieci YOLO
+
+Struktura:
+Architektura sieci YOLO jest konwolucyjna z wyjściem zdefiniowanym jako macierz 3D o rozmiarach S x S x (A x 8):
+
+Gdzie:
+• S - to liczba komórek w każdym wierszu i kolumnie
+• A - to liczba kotwic (anchor boxes)
+
+Elastyczność: Możemy jednak zmodyfikować oryginalny model YOLO w taki sposób, aby liczby komórek w wierszach i kolumnach się różniły.
+
+Architektura sieci YOLO v3
+
+Główna cecha: Wykrywa lepiej obiekty o różnej wielkości.
+
+Mechanizm: Wykorzystuje wieloskalową detekcję z różnymi rozmiarami siatek dla małych, średnich i dużych obiektów.
+
+────────────────────────────────────────────────────────────
+
+YOLO v4
+
+Bag of Freebies i Bag of Specials
+
+Kontekst: Zwykle konwencjonalny detektor obiektów jest trenowany w trybie offline. Dlatego naukowcy zawsze lubią wykorzystać tę zaletę i opracować lepsze metody szkolenia.
+
+Bag of Freebies (BoF) - "worek gratisów":
+• Metody, które tylko zmieniają strategię treningową
+• Lub tylko zwiększają koszt treningu
+• Poprawiają dokładność detektora, bez zwiększania kosztów obliczeniowych w trakcie wnioskowania
+
+Przykład BoF:
+• Augmentacja danych
+• Cel: zwiększenie zmienności obrazów wejściowych
+• Model ma większą odporność na obrazy uzyskiwane w różnych środowiskach
+
+Bag of Specials (BoS) - "worek specjałów":
+• Moduły i metody przetwarzania końcowego
+• Tylko nieznacznie zwiększają koszt wnioskowania
+• Ale mogą znacznie poprawić dokładność wykrywania obiektów
+
+Przykłady BoS:
+• Moduły wtyczek ulepszające atrybuty modelu:
+  • Powiększanie pola receptywnego
+  • Wprowadzanie mechanizmu uwagi (attention)
+  • Wzmacnianie możliwości integracji funkcji
+• Przetwarzanie końcowe (post-processing)
+
+Typowe moduły BoS: SPP, ASPP, RFB
+
+Doskonalenie szkolenia w zakresie wykrywania obiektów
+
+CNN zwykle stosuje:
+
+1. Activations (funkcje aktywacji):
+• ReLU
+• Leaky-ReLU
+• Parametric-ReLU
+• ReLU6
+• SELU
+• Swish
+• Mish
+
+2. Bounding box regression loss (funkcje straty dla ramek):
+• MSE (Mean Squared Error)
+• IoU
+• GIoU (Generalized IoU)
+• CIoU (Complete IoU)
+• DIoU (Distance IoU)
+
+3. Data augmentation (augmentacja danych):
+• CutOut
+• MixUp
+• CutMix
+
+4. Regularization method (metody regularyzacji):
+• DropOut
+• DropPath
+• Spatial DropOut
+• DropBlock
+
+5. Normalization (normalizacja aktywacji sieci przez średnią i wariancję):
+• Batch Normalization (BN)
+• Cross-GPU Batch Normalization (CGBN lub SyncBN)
+• Filter Response Normalization (FRN)
+• Cross-Iteration Batch Normalization (CBN)
+
+6. Skip-connections (połączenia pomijające):
+• Residual Connections
+• Weighted Residual Connections
+• Multi-input Weighted Residual Connections
+• Cross Stage Partial Connections (CSP)
+
+Architektura sieci YOLO v4
+
+Źródło: https://arxiv.org/pdf/2004.10934.pdf
+
+Wykorzystanie BoF i BoS:
+• BoF: Poprawia dokładność detektora, bez zwiększania czasu wnioskowania, zwiększając jedynie koszt treningu
+• BoS: Zwiększa koszt wnioskowania o niewielką wartość; jednak znacznie poprawia dokładność wykrywania obiektów
+
+Komponenty YOLOv4:
+• Backbone: CSPDarknet53
+• Neck: SPP, PAN
+• Head: YOLOv3
+
+Bag of Freebies (BoF) dla szkieletu:
+• CutMix and Mosaic data augmentation
+• DropBlock regularization
+• Class label smoothing
+
+Bag of Specials (BoS) dla szkieletu:
+• Mish activation
+• Cross-stage partial connections (CSP)
+• Multi-input weighted residual connections (MiWRC)
+
+Bag of Freebies (BoF) dla detektora:
+• CIoU-loss
+• CmBN
+• DropBlock regularization
+• Mosaic data augmentation
+• Self-Adversarial Training
+• Eliminate grid sensitivity
+• Using multiple anchors for a single ground truth
+• Cosine annealing scheduler
+• Optimal hyperparameters
+• Random training shapes
+
+Bag of Specials (BoS) dla detektora:
+• Mish activation
+• SPP-block
+• SAM-block
+• PAN path-aggregation block
+• DIoU-NMS
+
+Wydajność:
+• Również opiera się na Darknet
+• Uzyskał wartość AP 43.5% na danych COCO
+• Wraz z prędkością 65 FPS w czasie rzeczywistym na Tesla V100
+• Pokonując najszybsze i najdokładniejsze detektory zarówno pod względem szybkości, jak i dokładności
+
+Porównania YOLO v4 dla różnych kart graficznych
+
+Testowane GPU: Maxwell, Pascal and Volta
+
+Wydajność różni się w zależności od generacji GPU, ale YOLO v4 optymalizuje wykorzystanie wszystkich architektur.
+
+────────────────────────────────────────────────────────────
+
+PP-YOLO
+
+Źródło: https://arxiv.org/abs/2007.12099 (Original paper: PP-YOLO: An Effective and Efficient Implementation of Object Detector, by Xiang Long et al)
+
+Data wprowadzenia: Lipiec 2020
+
+Podstawa: Oparty na PaddlePaddle i YOLO v3.
+
+Charakterystyka:
+• Detektor obiektów o stosunkowo zrównoważonej skuteczności i wydajności
+• Można bezpośrednio zastosować w rzeczywistych scenariuszach aplikacji
+
+Godne uwagi zmiany:
+1. Zastąpienie szkieletu Darknet53 YOLO v3 szkieletem ResNet
+2. Zwiększenie wielkości partii treningowej:
+   • Z 64 do 192 (całkowita wielkość batcha)
+   • Mini-batch: 24 na 8 GPU
+
+Cel: Bardziej efektywna i skuteczna implementacja detektora obiektów.
+
+────────────────────────────────────────────────────────────
+
+YOLO v5
+
+Główne różnice od poprzednich wersji
+
+YOLO v5 różni się od wszystkich innych wcześniejszych wersji:
+• Opracowany przez zespół Roboflow
+• Implementacja w PyTorch (nie w Darknet!)
+• To ważna zmiana - inne podejście do implementacji
+
+Architektura:
+• Tak samo jak YOLO v4, YOLO v5 ma:
+  • Szkielet (backbone): CSP
+  • Szyję (neck): PA-NET
+
+Główne ulepszenia:
+1. Rozszerzenie danych mozaikowych (Mosaic data augmentation)
+2. Automatyczne uczenie się zakotwiczeń ramek (auto-learning anchors)
+
+Cel projektowy YOLO v5
+
+YOLO v5 nie ma na celu osiągnięcia najlepszej mAP, ale zamiast tego ma być:
+
+1. Łatwy w użyciu
+2. Łatwy w eksportowaniu
+3. Niskie wymagania dotyczące pamięci
+4. Wysoka prędkość działania
+5. Wysoka mAP (ale nie najwyższa)
+6. Niewielki rozmiar sieci
+7. Nowy framework w PyTorch
+
+Filozofia: Praktyczność i użyteczność ponad maksymalizację pojedynczej metryki.
+
+Zabawa z YOLO v5 w Roboflow
+
+Aplikacja Roboflow - fajna aplikacja z wbudowanymi modułami, zestawami danych i modelami:
+
+Linki:
+1. http://app.roboflow.ai - aplikacja główna
+2. http://public.roboflow.ai - publiczne datasety
+3. http://models.roboflow.ai - modele
+
+Tutoriale wideo - tworzenie i trenowanie modeli YOLO v5:
+• https://www.youtube.com/watch?v=MdF6x6ZmLAY
+• https://www.youtube.com/watch?v=R1Bf067Z5uM
+
+Zachęta: Obejrzyj film i skonstruuj swój model, jeśli chcesz?
+
+────────────────────────────────────────────────────────────
+
+RetinaNet
+
+Charakterystyka RetinaNet
+
+Podstawowe cechy:
+• Może mieć ~100k ramek
+• Rozwiązuje problem nierównowagi klas przy użyciu straty ogniskowej (focal loss)
+
+Kontekst problemu:
+• Wiele detektorów jednostopniowych nie osiąga wystarczająco dobrych wyników
+• Dlatego buduje się nowe detektory dwustopniowe
+
+RetinaNet - mechanizm focal loss
+
+W RetinaNet (jednostopniowy detektor):
+
+Focal Loss:
+• Dzięki wykorzystaniu strat ogniskowych
+• Do mniejszych strat przyczyniają się "łatwe" próbki ujemne
+• Dzięki czemu strata skupia się na próbkach "twardych"
+• Co poprawia dokładność przewidywania
+
+Architektura:
+• ResNet + FPN jako szkielet do wyodrębniania funkcji
+• Dwie podsieci specyficzne dla zadań:
+  1. Klasyfikacja
+  2. Regresja ramek ograniczających
+• Tworzące RetinaNet
+
+Wydajność:
+• Osiąga najnowocześniejszą wydajność
+• Przewyższa Faster R-CNN (dobrze znany dwustopniowy detektor)
+
+Nagrody:
+• ICCV Best Student Paper Award 2017
+• Ponad 500 cytowań
+• Pierwszy autor: Tsung-Yi Lin (naukowiec w Google Brain)
+
+Tutorial: https://www.youtube.com/watch?v=44tlnmmt3h0
+
+────────────────────────────────────────────────────────────
+
+Metryki detekcji obiektów
+
+Precision and Recall
+
+Macierz konfuzji (Confusion Matrix):
+Określa, ile przykładów zostało:
+• Prawidłowo sklasyfikowanych jako pozytywne (TP - True Positive)
+• Prawidłowo sklasyfikowanych jako negatywne (TN - True Negative)
+• Błędnie sklasyfikowano jako pozytywne (FP - False Positive)
+• Błędnie sklasyfikowano jako negatywne (FN - False Negative)
+
+Dokładność (Precision):
+• Mierzy dokładność Twoich prognoz
+• Tj. procent Twoich prognoz jest poprawnych
+
+Precision = TP / (TP + FP)
+
+
+Przypomnienie (Recall):
+• Mierzy, jak dobrze zostały sklasyfikowane wszystkie pozytywne przypadki
+• Na przykład możemy znaleźć 80% możliwych pozytywnych przypadków w naszych najlepszych prognozach K
+
+Recall = TP / (TP + FN)
+
+
+Średnia precyzja (Average Precision - AP)
+
+Definicja: Średnia precyzja (Average Precision - AP) jest popularną miarą pomiaru dokładności wykrywaczy obiektów, takich jak Faster R-CNN, SSD, YOLO itp.
+
+Wzór:
+AP = ∫₀¹ p(r) dr
+
+
+Gdzie p(r) jest krzywą precyzji-przypominania (precision-recall curve).
+
+Interpretacja: Średnia precyzja oblicza średnią wartość precyzji dla wartości przywołania (recall) powyżej 0 do 1.
+
+Mean Average Precision (mAP)
+
+Definicja: Średnia średnia precyzja (Mean Average Precision - mAP).
+
+Zastosowanie: To średnia precyzja (average precision) oblicza średnią wartość precyzji dla wartości przywołania od 0 do 1.
+
+Użycie: Główna metryka używana do porównywania różnych detektorów obiektów na benchmarkach takich jak COCO, Pascal VOC.
+
+────────────────────────────────────────────────────────────
+
+Segmentacja semantyczna
+
+Definicja i znaczenie
+
+Segmentacja semantyczna (semantic segmentation) to jeden z kluczowych problemów w dziedzinie widzenia komputerowego. Toruje drogę do pełnego zrozumienia sceny.
+
+Zastosowania:
+Coraz większa liczba aplikacji czerpie wiedzę z wyobrażeń:
+• Pojazdy autonomiczne
+• Interakcja człowiek-komputer
+• Wirtualna rzeczywistość
+• I wiele innych
+
+Podejście głębokiego uczenia:
+Wraz z popularnością głębokiego uczenia się w ostatnich latach, wiele problemów z segmentacją semantyczną jest rozwiązywanych przy użyciu głębokich architektur, tj. CNN, które przewyższają inne podejścia pod względem dokładności i wydajności.
+
+Naturalny krok na drodze od zgrubnego do dokładnego wnioskowania
+
+Segmentacja semantyczna to naturalny krok w ewolucji zadań:
+
+1. Klasyfikacja obiektów:
+   • Polega na predykcji dla całego wejścia
+   • "Co to jest?" → "To jest pies"
+
+2. Lokalizacja/Detekcja obiektów:
+   • Dostarcza nie tylko klas
+   • Ale również dodatkowe informacje dotyczące położenia przestrzennego obiektów tych klas
+   • "Gdzie to jest?" → Ramka ograniczająca
+
+3. Segmentacja semantyczna obiektów:
+   • Pozwala uzyskać szczegółowe wnioskowanie
+   • Dzięki gęstym prognozom wnioskowania etykiet dla każdego piksela
+   • Dzięki czemu każdy piksel jest oznaczony klasą otaczającego go obiektu lub regionu
+   • "Dokładnie gdzie są granice?" → Maska pikseli
+
+Wizualizacja progresji: dog → dog(cat) → dog dog cat
+
+Współczynniki stosowane przy segmentacji: IoU i Dice
+
+Intersection-Over-Union (IoU, Jaccard Index):
+
+Definicja: Jedna z najczęściej używanych metryk w segmentacji semantycznej.
+
+Wzór:
+IoU = (Obszar nakładania się) / (Obszar związku)
+    = (Przewidywana ∩ Ground Truth) / (Przewidywana ∪ Ground Truth)
+
+
+Współczynnik Dice:
+
+Wzór:
+Dice = (2 * Obszar nakładania się) / (Całkowita liczba pikseli na obu obszarach)
+
+
+Podobieństwo do IoU:
+• Współczynnik Dice jest bardzo podobny do IoU
+• Są one skorelowane dodatnio
+• Co oznacza: jeśli jeden powie, że model A jest lepszy niż model B w segmentacji obrazu, to drugi powie to samo
+
+Zakres wartości (obie metryki wahają się od 0 do 1):
+• 0 - oznacza brak nakładania się
+• 1 - oznacza perfekcyjne nałożenie się obszaru segmentacji z określonym w zbiorze uczącym (prawdzie podstawowej / ground truth)
+
+Segmentacja i lokalizacja
+
+Możliwości: Potrafimy lokalizować, segmentować i opisywać obiekty.
+
+Typy wizualizacji:
+• (a) Image classification - klasyfikacja całego obrazu
+• (b) Object localization - lokalizacja z ramką
+• (c) Semantic segmentation - każdy piksel ma klasę
+• (d) Segmentation in context - segmentacja w kontekście sceny
+
+Parsowanie scen, segmentacja i wykrywanie granic
+
+Cel: Aby zrozumieć scenę, musimy:
+• Wykrywać obiekty
+• Ich granice
+• Kluczowe punkty
+• Segmentować je
+• Maskować
+• Przetwarzać w kontekście pozostałych
+
+Źródło: Kaiming He, Georgia Gkioxari, Piotr Dollar, and Ross Girshick. "Mask R-CNN." ICCV, 2017
+
+────────────────────────────────────────────────────────────
+
+R-CNN i jego warianty
+
+R-CNN
+
+Nazwa: R-CNN stands for Regions with ConvNet detection
+
+Charakterystyka:
+• To algorytm segmentacji dwustopniowy (two-step)
+• Algorytm jest uruchamiany na dużej liczbie bloków w celu ich sklasyfikowania
+• R-CNN proponuje regiony na raz
+• Wyjście: etykieta + ramka ograniczająca
+
+Fast R-CNN
+
+Ulepszenie:
+• Konwolucyjna implementacja sliding windows
+• Do klasyfikacji wszystkich proponowanych regionów
+• Szybsza niż oryginalna R-CNN
+
+Faster R-CNN
+
+Kolejne ulepszenie:
+• Używa sieci konwolucyjnej do proponowania regionów
+• Nie wymaga zewnętrznego algorytmu selective search
+• Cały proces jest end-to-end trenowalny
+
+Schemat ewolucji:
+R-CNN → Fast R-CNN → Faster R-CNN
+
+
+Przewidywanie maski za pomocą Faster R-CNN
+
+Rozszerzenie: Faster R-CNN można rozszerzyć do przewidywania nie tylko ramek ograniczających, ale również masek segmentacji dla każdego obiektu.
+
+Segmentacja semantyczna i instancji
+
+Metody segmentacji instancji można podzielić na:
+• Metody oparte na wykrywaniu (detection-based)
+• Metody oparte na segmentacji (segmentation-based)
+
+Przykłady masek po segmentacji
+
+Wizualizacje: Pokazują wyniki segmentacji instancji z różnymi kolorami dla różnych obiektów tej samej klasy.
+
+────────────────────────────────────────────────────────────
+
+Estymacja ludzkiej pozy
+
+Szacowanie ludzkiej pozycji
+
+Cel: Wykrywanie i śledzenie działań wykonywanych przez ludzi.
+
+Zastosowania:
+1. Kontrolowanie motoryki:
+   • Śledzenie ruchów ciała w czasie rzeczywistym
+
+2. Reagowanie na działania:
+   • Rozpoznawanie co robią ludzie
+   • Interpretacja gestów i pozycji
+
+3. Poprawa ruchu w sporcie:
+   • Analiza techniki sportowej
+   • Korekta postury i ruchów
+
+4. Wykrywanie niepożądanego zachowania:
+   • Systemy bezpieczeństwa
+   • Monitorowanie sytuacji
+
+5. Zbieranie danych treningowych dla robotów:
+   • Uczenie robotów przez naśladowanie
+   • Human motion capture dla AI
+
+Technologia: Wykorzystuje wykrywanie punktów kluczowych ciała (keypoints) i ich połączeń (skeleton).
+
+────────────────────────────────────────────────────────────
+
+Implementacja praktyczna w Roboflow
+
+Frameworki do detekcji
+
+Dostępność: Możesz znaleźć wiele zaimplementowanych frameworków do wykrywania, lokalizacji, wykrywania i segmentacji obiektów online (na githubie) i korzystać z nich za darmo.
+
+Alternatywa: Możesz także korzystać z aplikacji takich jak Roboflow.
+
+Linki:
+1. http://app.roboflow.ai
+2. http://public.roboflow.ai
+3. http://models.roboflow.ai
+
+Tutoriale wideo - tworzenie i trenowanie modeli YOLO v5 w Roboflow:
+• https://www.youtube.com/watch?v=MdF6x6ZmLAY
+• https://www.youtube.com/watch?v=R1Bf067Z5uM
+
+Tutorial krok po kroku - Implementacja detekcji w Roboflow
+
+Krok 1: Utwórz darmowe konto
+• https://app.roboflow.com/
+
+Krok 2: Wykorzystaj przykładowy zbiór danych
+• Np. BCCD (Blood Cell Count and Detection)
+
+Krok 3: Dokonaj wstępnego przetwarzania danych treningowych
+Opcje preprocessingu:
+• Stretching (rozciąganie)
+• Filling (wypełnianie)
+• Fitting (wpasowanie)
+• Etc.
+
+Krok 4: Wykorzystaj augmentację
+• W celu wzbogacenia danych treningowych
+• By osiągnąć lepszą wydajność modelu
+
+Krok 5: Krok generacji
+• Tworzy gotowy do użycia zestaw danych treningowych
+• Za pomocą augmentacji danych
+
+Krok 6: Gotowość do treningu
+• Po tych pięciu krokach jesteśmy gotowi do rozpoczęcia treningu sieci YOLO v5
+
+Krok 7: Eksportuj dane
+• Aby użyć utworzonego modelu w Google Colab
+• Lub na własnym sprzęcie obliczeniowym
+
+Krok 8: Otwórz YOLOv5 Colab Notebook
+
+Krok 9: Użyj swojego tajnego kodu w swoim zbiorze danych
+
+Krok 10: Rozpocznij trening
+
+Krok 11: Po zakończeniu treningu
+• Możemy zobaczyć wynik za pomocą tablicy Tensorboard
+
+Krok 12: Widok metryk uczących i poprawności modelu
+• Monitorowanie procesu treningu
+• Analiza krzywych uczenia
+
+Krok 13: Spójrz na dane treningowe BCCD
+• Oraz klasy i ramki wyznaczone w tym zbiorze
+• Weryfikacja jakości danych
+
+Krok 14: Obejrzyj rozszerzone (augmented) dane treningowe BCCD
+• Sprawdź efekty augmentacji
+
+Krok 15: Uruchom wnioskowanie
+• Spójrz na obrazy testowe BCCD z wykrytymi obiektami i ramkami
+• Wynik: Wiele komórek zostało wykrytych i sklasyfikowanych poprawnie, ale niektórych brakuje!
+• Wniosek: Model można dalej ulepszać
+
+────────────────────────────────────────────────────────────
+
+Podsumowanie kursu
+
+Co opisaliśmy
+
+Opisaliśmy podstawy działania sztucznych sieci neuronowych.
+
+Przedstawiliśmy:
+• Środowiska
+• Biblioteki
+• Frameworki w Pythonie służące do implementacji takich rozwiązań
+
+Pokazaliśmy:
+• Przykłady budowy
+• Działania
+• Oceny takich modeli
+
+Kolejne kroki
+
+Na kolejnych wykładach zajmiemy się:
+• Szczegółami
+• Optymalizacją hiperparametrów
+• W celu dążenia do uzyskiwania coraz lepszych wyników
+• I konstruowania coraz lepszych modeli
+
+Dla różnych zagadnień:
+1. Klasyfikacji
+2. Regresji
+3. Problemów decyzyjnych (bazujących na klasyfikacji lub regresji)
+4. Klasteryzacji
+
+────────────────────────────────────────────────────────────
+
+Podsumowanie kluczowych pojęć
+
+Podstawowe definicje
+• Sieć neuronowa - graf połączonych neuronów uporządkowanych w warstwy
+• Uczenie - adaptacja parametrów wolnych (wag) do danych uczących
+• Uogólnienie - zdolność modelu do radzenia sobie z nowymi danymi
+• Regularyzacja - techniki zapobiegające nadmiernemu dopasowaniu
+
+Kluczowe problemy
+• Underfitting (niedopasowanie) - wysoki bias, model zbyt prosty
+• Overfitting (nadmierne dopasowanie) - wysoka wariancja, model zbyt złożony
+• Znikające/eksplodujące gradienty - problem głębokich sieci
+• Data mismatch - niezgodność dystrybucji danych
+
+Najważniejsze techniki
+• Backpropagation - algorytm uczenia
+• Dropout - losowe wyłączanie neuronów
+• Batch Normalization - normalizacja między warstwami
+• Transfer Learning - wykorzystanie wytrenowanych modeli
+• Data Augmentation - sztuczne rozszerzanie danych
+
+Metryki sukcesu
+• Accuracy - ogólna dokładność
+• Precision - precyzja klasyfikacji
+• Recall - pełność klasyfikacji
+• F1 Score - średnia harmoniczna precision i recall
+• mAP - średnia precyzja dla detekcji obiektów
+• IoU - intersection over union dla segmentacji
+
+Kluczowe technologie
+• CNN (Konwolucyjne Sieci Neuronowe) - specjalizacja w przetwarzaniu obrazów
+• Transfer Learning - wykorzystanie wytrenowanych modeli
+• YOLO - szybka detekcja obiektów w czasie rzeczywistym
+• R-CNN - detekcja obiektów oparta na regionach
+• RetinaNet - focal loss dla nierównowagi klas
+
+Najważniejsze architektury
+• LeNet-5 (1998) - pierwsza skuteczna CNN (60K parametrów)
+• AlexNet (2012) - przełom z ReLU (60M parametrów)
+• VGG-16/19 (2014) - głębokie jednolite architektury (138M parametrów)
+• ResNet (2015) - połączenia pomijające/skip connections (26M parametrów)
+• Inception (2014-2016) - moduły wielościeżkowe (5-56M parametrów)
+• Xception (2016) - separowalne sploty (23M parametrów)
+• YOLO v3/v4/v5 - ewolucja szybkiej detekcji w czasie rzeczywistym
+
+Zastosowania praktyczne
+• Detekcja i segmentacja obiektów
+• Rozpoznawanie twarzy i emocji
+• Medycyna bezkontaktowa (puls, oddech, temperatura)
+• Autonomiczne samochody
+• Systemy bezpieczeństwa
+• Estymacja ludzkiej pozy
+• Analiza scen i rozumienie kontekstu
+
+────────────────────────────────────────────────────────────
+
+Weryfikacja pokrycia materiału
+
+Podsumowanie całościowe
+
+✅ Wszystkie 255 stron zostały uwzględnione w opracowaniu!
+
+Podział na części:
+• Część 1: 99 stron (Podstawy sieci neuronowych) - 100% pokrycie
+• Część 2: 107 stron (CNN i aplikacje praktyczne) - 100% pokrycie
+• Część 3: 49 stron (YOLO i zaawansowane techniki) - 100% pokrycie
+
+Łączna dokumentacja: 255 stron materiału o sieciach neuronowych w pełni opracowanych i połączonych w jeden spójny dokument!
+
+Główne kategorie tematyczne
+
+Część 1: Podstawy (99 stron)
+1. Wprowadzenie do sieci neuronowych
+2. Zasada uczenia Hebba
+3. Generacje modeli neuronów (1-4)
+4. Perceptrony i MLP
+5. Algorytm Propagacji Wstecznej
+6. Optymalizacja modeli i funkcje kosztu
+7. Parametry i hiperparametry
+8. Walidacja i generalizacja
+9. Bias i variance
+10. Regularyzacja (L1, L2, dropout)
+11. Metryki jakości (precision, recall, F1)
+12. Techniki zaawansowane
+
+Część 2: CNN i aplikacje (107 stron)
+13. Strategie walidacji krzyżowej
+14. Środowiska programistyczne (TensorFlow, Keras, PyTorch)
+15. Rodzaje warstw (Dense, Conv, RNN, Pooling, Attention)
+16. Zastosowania sieci (8 typów zadań)
+17. CNN - definicja i korzyści
+18. Filtry i sploty adaptacyjne
+19. Parametry CNN (stride, padding)
+20. Architektury (LeNet, AlexNet, VGG, ResNet, Inception, Xception)
+21. Transfer Learning (feature extraction, fine-tuning)
+22. Wizualizacja i analiza filtrów
+23. Ograniczenia CNN (8 głównych)
+24. Detekcja obiektów (sliding window, YOLO basics)
+
+Część 3: YOLO i zaawansowane (49 stron)
+25. YOLO - Non-Max Suppression
+26. Anchor boxes i konfiguracja
+27. YOLO v3 - wieloskalowa detekcja
+28. YOLO v4 - Bag of Freebies i Specials
+29. PP-YOLO - implementacja PaddlePaddle
+30. YOLO v5 - PyTorch, praktyczność
+31. RetinaNet - focal loss
+32. Metryki detekcji (AP, mAP)
+33. Segmentacja semantyczna
+34. R-CNN, Fast R-CNN, Faster R-CNN
+35. Estymacja ludzkiej pozy
+36. Roboflow - implementacja praktyczna
+
+Każdy temat z prezentacji został szczegółowo opisany w odpowiedniej sekcji tego kompletnego opracowania.

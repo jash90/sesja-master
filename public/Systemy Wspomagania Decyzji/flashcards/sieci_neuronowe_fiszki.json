@@ -1,0 +1,507 @@
+{
+  "title": "Sieci Neuronowe i Systemy Decyzyjne - Kompletny zestaw 100 fiszek",
+  "description": "Obszerny zestaw fiszek obejmujący podstawy sieci neuronowych, CNN, architektury głębokiego uczenia, YOLO, detekcję obiektów i segmentację",
+  "category": "Sztuczna Inteligencja / Deep Learning",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym są sztuczne sieci neuronowe?",
+      "back": "Grafy połączonych elementów (głównie neuronów), które modelują sposób działania ludzkiego mózgu. Są często uporządkowane w warstwy, co umożliwia równoległe przetwarzanie na GPU."
+    },
+    {
+      "id": 2,
+      "front": "Jakie są główne różnice między komputerem a ludzkim mózgiem w kontekście przetwarzania informacji?",
+      "back": "Komputer: systematyczność, determinizm, sekwencyjność, tabele. Mózg: czasowa zależność, skojarzeniowość, równoległość, grafy."
+    },
+    {
+      "id": 3,
+      "front": "Co głosi zasada uczenia Hebba (1949)?",
+      "back": "Gdy neuron A wielokrotnie uczestniczy w odpalaniu neuronu B, połączenie między nimi zostaje wzmocnione. To podstawa uczenia - wzmacnianie połączeń między neuronami poprzez ważenie."
+    },
+    {
+      "id": 4,
+      "front": "Czym charakteryzuje się model McCullocha-Pittsa (Generacja 1)?",
+      "back": "Najprostszy model neuronowy implementujący mechanizm sumowania ważonych wejść z funkcją aktywacji progową (schodkową). Wzór: S = Σ(x_k · w_k), y = 0 gdy S < θ, y = 1 gdy S ≥ θ."
+    },
+    {
+      "id": 5,
+      "front": "Czym różnią się neurony Generacji 2 od Generacji 1?",
+      "back": "Generacja 2 wykorzystuje nieliniowe funkcje ciągłe (sigmoid, tanh, ReLU) zamiast funkcji schodkowej, co pozwala budować wielowarstwowe sieci (MLP) i stosować metody gradientowe."
+    },
+    {
+      "id": 6,
+      "front": "Co to są neurony impulsowe (Spiking Neurons) - Generacja 3?",
+      "back": "Modele wzbogacone o implementację ujęcia czasu, modelujące kolejne procesy czasowe. Są ważne podczas integracji bodźców w czasie."
+    },
+    {
+      "id": 7,
+      "front": "Czym charakteryzują się Asocjacyjne Modele Pulsacyjne Neuronów (APN) - Generacja 4?",
+      "back": "Wytwarzają serie impulsów w czasie, gdzie częstotliwość określa poziom asocjacji. Posiadają automatyczny mechanizm plastyczności i umożliwiają warunkowe łączenie struktur neuronowych."
+    },
+    {
+      "id": 8,
+      "front": "Jakie są trzy główne funkcje aktywacji neuronów Generacji 2?",
+      "back": "Sigmoid: f(x) = 1/(1+e^(-x)), zakres (0,1). Tanh: f(x) = tanh(x), zakres (-1,1). ReLU: f(x) = max(0,x), zakres [0,∞)."
+    },
+    {
+      "id": 9,
+      "front": "Z jakich warstw składa się perceptron wielowarstwowy (MLP)?",
+      "back": "Warstwa wejściowa (przyjmuje dane), warstwy ukryte (przetwarzają informacje - może być ich wiele), warstwa wyjściowa (generuje wynik)."
+    },
+    {
+      "id": 10,
+      "front": "Na czym polega uczenie sieci neuronowych?",
+      "back": "Na adaptacji parametrów wolnych (wag i progów) do zbioru danych uczących, aby model nauczył się odwzorowania f: x → y i potrafił uogólnić wiedzę na nowe przypadki."
+    },
+    {
+      "id": 11,
+      "front": "Jakie są dwie główne fazy algorytmu Backpropagation?",
+      "back": "1) Faza propagacji (forward pass) - propagacja sygnałów przez warstwy do wyjścia. 2) Faza propagacji wstecznej (backward pass) - propagacja błędów od wyjścia przez sieć do aktualizacji wag."
+    },
+    {
+      "id": 12,
+      "front": "Jakie są trzy rodzaje uczenia ze względu na moment aktualizacji wag?",
+      "back": "Online - aktualizacja zaraz po każdym przykładzie. Offline (wsadowe) - średnia korekt po całym cyklu. Mini-batches - metoda pośrednia z małymi partiami danych."
+    },
+    {
+      "id": 13,
+      "front": "Czym różni się funkcja straty (loss) od funkcji kosztu (cost)?",
+      "back": "Funkcja straty mierzy wydajność dla pojedynczego przykładu. Funkcja kosztu to pojedyncza wartość skalarna (zazwyczaj średnia strat) minimalizowana w procesie spadku gradientu."
+    },
+    {
+      "id": 14,
+      "front": "Jakie są najpopularniejsze funkcje kosztu?",
+      "back": "Cross-entropy (klasyfikacja binarna), Categorical cross-entropy (klasyfikacja wieloklasowa), MSE - Mean Squared Error (regresja), CTC (sekwencyjne problemy)."
+    },
+    {
+      "id": 15,
+      "front": "Czym są parametry modelu, a czym hiperparametry?",
+      "back": "Parametry (wagi, biasy) są adaptowane przez algorytm uczący. Hiperparametry (liczba warstw, learning rate, batch size) są ustalane przez projektanta i NIE są adaptowane przez algorytm."
+    },
+    {
+      "id": 16,
+      "front": "Wymień przykłady hiperparametrów sieci neuronowej.",
+      "back": "Liczba warstw (L), liczba neuronów w warstwach (n[l]), funkcje aktywacji, optymalizator, learning rate (α), batch size, liczba epok, metody augmentacji, dropout, momentum."
+    },
+    {
+      "id": 17,
+      "front": "Jakie są główne metody optymalizacji hiperparametrów?",
+      "back": "Grid Search (systematyczne przeszukiwanie siatki), Random Search (losowy wybór), podejścia ewolucyjne/genetyczne, rozwiązania oparte na wiedzy."
+    },
+    {
+      "id": 18,
+      "front": "Czym różni się strategia Pandy od strategii Kawioru w optymalizacji?",
+      "back": "Panda: cierpliwe poprawianie jednego modelu na bazie doświadczeń. Kawior: równoległe trenowanie wielu modeli z różnymi hiperparametrami i automatyczny wybór najlepszego."
+    },
+    {
+      "id": 19,
+      "front": "Do czego służą trzy zbiory danych: uczący, walidacyjny i testowy?",
+      "back": "Uczący: adaptacja modelu (obniżanie bias). Walidacyjny: kontrola przeuczenia w trakcie treningu (obniżanie variance). Testowy: sprawdzenie generalizacji na nieużytych danych."
+    },
+    {
+      "id": 20,
+      "front": "Jakie proporcje podziału danych są typowe dla małych i dużych zbiorów?",
+      "back": "Małe zbiory (<100k): 60:20:20 lub 70:15:15 lub 80:10:10. Duże zbiory (>100k): 90:5:5 lub 98:1:1 (bo 1% z miliona to 10000 przykładów)."
+    },
+    {
+      "id": 21,
+      "front": "Co to jest wydajność na poziomie ludzkim (Human-level performance)?",
+      "back": "Wydajność klasyfikacji osiągnięta przez zespół wysoce wyspecjalizowanych ekspertów. Traktowana jako górna granica i cel szkolenia modelu."
+    },
+    {
+      "id": 22,
+      "front": "Co to jest optymalna wydajność Bayesa?",
+      "back": "Najlepsza możliwa wydajność definiowana przez niewyraźne i zaszumione przykłady, których nikt nie jest w stanie rozpoznać. Nigdy nie można jej przekroczyć."
+    },
+    {
+      "id": 23,
+      "front": "Jak oblicza się Avoidable Bias i Variance?",
+      "back": "Avoidable Bias = training error - human-level error. Variance = dev error - training error."
+    },
+    {
+      "id": 24,
+      "front": "Co oznacza wysoki Bias w kontekście modelu?",
+      "back": "Model jest niedopasowany (underfitting) - ma słabą zdolność przystosowania się do danych treningowych. Należy zrekonstruować model, zmienić architekturę lub hiperparametry."
+    },
+    {
+      "id": 25,
+      "front": "Co oznacza wysoka Variance w kontekście modelu?",
+      "back": "Model ma słabe możliwości uogólnienia (overfitting) - jest bezużyteczny w praktyce. Należy zastosować regularyzację lub zmienić architekturę."
+    },
+    {
+      "id": 26,
+      "front": "Jaka jest właściwa kolejność minimalizacji Bias i Variance?",
+      "back": "Najpierw obniż Bias do akceptowalnego poziomu, dopiero potem pracuj nad obniżeniem Variance. Nie próbuj obniżać Variance, gdy Avoidable Bias jest nadal wysoki."
+    },
+    {
+      "id": 27,
+      "front": "Co to jest uogólnienie (generalizacja) modelu?",
+      "back": "Zdolność modelu do radzenia sobie z nowymi danymi, na których nie był trenowany. Ma kluczowe znaczenie w zastosowaniach praktycznych."
+    },
+    {
+      "id": 28,
+      "front": "Na czym polega regularyzacja L2 (weight decay)?",
+      "back": "Penalizacja zbyt dużych wag przez dodanie do funkcji kosztu składnika (λ/2m)·||W||². Zapobiega przeuczeniu poprzez utrzymywanie małych wag."
+    },
+    {
+      "id": 29,
+      "front": "Czym różni się regularyzacja L1 od L2?",
+      "back": "L1 prowadzi do rzadkich wag (niektóre stają się dokładnie zero) - naturalny mechanizm selekcji cech. L2 zmniejsza wszystkie wagi proporcjonalnie."
+    },
+    {
+      "id": 30,
+      "front": "Na czym polega problem znikających i eksplodujących gradientów?",
+      "back": "W głębokich sieciach gradienty stają się coraz mniejsze (znikają) lub większe (eksplodują) w poprzednich warstwach, gdy wartości są wielokrotnie mnożone/podnoszone do kwadratu."
+    },
+    {
+      "id": 31,
+      "front": "Jakie są rozwiązania problemu znikających/eksplodujących gradientów?",
+      "back": "Gradient clipping (przycinanie), sieci rezydualne (ResNet) z skip connections, odpowiednia regularyzacja, bloki początkowe i pomijanie połączeń."
+    },
+    {
+      "id": 32,
+      "front": "Na czym polega metoda Dropout?",
+      "back": "Losowe wyłączanie neuronów z określonym prawdopodobieństwem podczas treningu. Zmusza sieć do uczenia się przez różne kombinacje neuronów, zapobiegając overfitting."
+    },
+    {
+      "id": 33,
+      "front": "Jakie są heurystyki prawidłowego wdrożenia Dropout?",
+      "back": "Użyj 0.2-0.5 (0.2 jako punkt wyjścia), używaj większej sieci, stosuj na warstwach ukrytych, zwiększ learning rate 10-100x, użyj momentum 0.9-0.99, ogranicz rozmiar wag."
+    },
+    {
+      "id": 34,
+      "front": "Co to jest Precision (precyzja)?",
+      "back": "Odsetek poprawnych klasyfikacji pozytywnych spośród wszystkich sklasyfikowanych jako pozytywne. Precision = TP / (TP + FP)."
+    },
+    {
+      "id": 35,
+      "front": "Co to jest Recall (przypominanie)?",
+      "back": "Odsetek poprawnie sklasyfikowanych pozytywnych spośród wszystkich faktycznie pozytywnych. Recall = TP / (TP + FN)."
+    },
+    {
+      "id": 36,
+      "front": "Co to jest F1 Score i jak się go oblicza?",
+      "back": "Średnia harmoniczna Precision i Recall. F1 = 2 / (Precision⁻¹ + Recall⁻¹) = 2·(Precision·Recall)/(Precision+Recall)."
+    },
+    {
+      "id": 37,
+      "front": "Co oznaczają skróty TP, TN, FP, FN w macierzy konfuzji?",
+      "back": "TP (True Positive) - poprawnie pozytywne. TN (True Negative) - poprawnie negatywne. FP (False Positive) - fałszywie pozytywne. FN (False Negative) - fałszywie negatywne."
+    },
+    {
+      "id": 38,
+      "front": "Jak oblicza się Accuracy (dokładność)?",
+      "back": "Accuracy = (TP + TN) / ALL - stosunek wszystkich poprawnych klasyfikacji do wszystkich przykładów."
+    },
+    {
+      "id": 39,
+      "front": "Na czym polega wczesne zatrzymywanie (Early Stopping)?",
+      "back": "Zatrzymanie treningu gdy błąd na zbiorze walidacyjnym zaczyna rosnąć. Zapisuje się model z najmniejszym błędem walidacji. Reaguje na objawy przeuczenia."
+    },
+    {
+      "id": 40,
+      "front": "Kiedy stosuje się augmentację danych?",
+      "back": "Gdy brakuje danych do wytrenowania modelu, klasy są nierównomiernie reprezentowane, lub chcemy poprawić generalizację i uniknąć overfitting."
+    },
+    {
+      "id": 41,
+      "front": "Jakie są techniki augmentacji obrazów?",
+      "back": "Przesuwanie, obracanie, skalowanie, przycinanie, przerzucanie, zmiana kolorów, drgania/perturbacje, rozmywanie, dodawanie szumu."
+    },
+    {
+      "id": 42,
+      "front": "Na czym polega K-krotna walidacja krzyżowa?",
+      "back": "Podział danych na K rozłącznych podzbiorów, trenowanie na K-1 i testowanie na pozostawionym, powtarzanie K razy naprzemian z różnymi podzbiorami testowymi."
+    },
+    {
+      "id": 43,
+      "front": "Jak dobierać wartość K w walidacji krzyżowej?",
+      "back": "Dla wielu wzorców: K małe (3-10) - więcej danych do testowania. Dla mniejszych zbiorów: K duże (10-N) - więcej danych do treningu."
+    },
+    {
+      "id": 44,
+      "front": "Czym są konwolucyjne sieci neuronowe (CNN)?",
+      "back": "Sieci wykorzystujące specjalne operacje splotowe z filtrami adaptacyjnymi, szczególnie skuteczne dla obrazów. Pozwalają wykrywać cechy w dowolnej części obrazu."
+    },
+    {
+      "id": 45,
+      "front": "Jakie są trzy główne korzyści z zastosowania CNN?",
+      "back": "1) Współdzielenie parametrów - te same cechy rozpoznawane w całym obrazie. 2) Rzadkie połączenia lokalne - oszczędność parametrów. 3) Lokalna specjalizacja neuronów."
+    },
+    {
+      "id": 46,
+      "front": "Co to jest filtr adaptacyjny w CNN?",
+      "back": "Filtr składający się z wag dostosowywanych podczas uczenia do reprezentowania częstych wzorców w obrazach. Wartość wyjściowa to iloczyn skalarny obszaru wejściowego i filtra."
+    },
+    {
+      "id": 47,
+      "front": "Co to jest Stride (krok przesuwania) w CNN?",
+      "back": "Hiperparametr określający liczbę pikseli, o które przesuwamy filtr po obrazie. Stride=1 daje maksymalną szczegółowość, większe wartości zmniejszają rozmiar wyjścia."
+    },
+    {
+      "id": 48,
+      "front": "Co to jest Padding (dopełnienie) w CNN?",
+      "back": "Dodanie obramowania (zwykle zerami) poza obrazem. Valid convolution (no padding) zmniejsza obraz. Same convolution zachowuje rozmiar (p=(f-1)/2)."
+    },
+    {
+      "id": 49,
+      "front": "Jaki jest wzór na rozmiar wyjściowy warstwy konwolucyjnej?",
+      "back": "[(n + 2p - f)/s + 1] × [(n + 2p - f)/s + 1], gdzie n=rozmiar wejścia, p=padding, f=rozmiar filtra, s=stride."
+    },
+    {
+      "id": 50,
+      "front": "Jak działają filtry na obrazach RGB (3-kanałowych)?",
+      "back": "Filtry muszą mieć głębię równą 3 (tyle co kanały). Splot wykonuje się na całej objętości jednocześnie. Liczba kanałów wyjściowych = liczba zastosowanych filtrów."
+    },
+    {
+      "id": 51,
+      "front": "Do czego służy splot 1×1 (One-by-One Convolution)?",
+      "back": "Służy do redukcji wymiarowości (głębokości) przy zachowaniu informacji. Pozwala wykorzystać różne cechy z różną siłą. Nazywany też 'Network in Network'."
+    },
+    {
+      "id": 52,
+      "front": "Jakie są dwa główne rodzaje warstw Pooling?",
+      "back": "Max-pooling - wybiera maksimum z obszaru (najczęściej używany). Avg-pooling - wybiera średnią z obszaru. Obie służą do downsamplingu obrazu."
+    },
+    {
+      "id": 53,
+      "front": "Jakie są cechy charakterystyczne warstw Pooling?",
+      "back": "Brak parametrów do adaptacji. Zwykle stride > 1 i padding = 0. Obliczane osobno dla każdego kanału. Służą do zmniejszania rozmiaru danych."
+    },
+    {
+      "id": 54,
+      "front": "Czym charakteryzuje się architektura LeNet-5 (1998)?",
+      "back": "Jedna z najprostszych architektur CNN, 60 tysięcy parametrów. Podstawa dla późniejszych sieci. Nowoczesna wersja używa SoftMax na wyjściu."
+    },
+    {
+      "id": 55,
+      "front": "Jakie przełomowe innowacje wprowadził AlexNet (2012)?",
+      "back": "Jako pierwszy zastosował ReLU jako funkcję aktywacji. 60 milionów parametrów. Wygrał ImageNet 2012 i zapoczątkował erę głębokiego uczenia w wizji komputerowej."
+    },
+    {
+      "id": 56,
+      "front": "Czym charakteryzuje się architektura VGG-16/19 (2014)?",
+      "back": "Bardzo głębokie sieci (16/19 warstw), 138 mln parametrów. Używa konsekwentnie małych filtrów 3×3. Prosta, jednolita architektura, popularna w transfer learning."
+    },
+    {
+      "id": 57,
+      "front": "Co to są połączenia rezydualne (skip connections) w ResNet?",
+      "back": "Połączenia pomijające warstwy, gdzie wyjście bloku to a[l+2] = ReLU(z[l+2] + a[l]). Pozwalają budować sieci do 152 warstw i rozwiązują problem znikających gradientów."
+    },
+    {
+      "id": 58,
+      "front": "Na czym polegają moduły incepcyjne?",
+      "back": "Pozwalają na jednoczesne stosowanie różnych rozmiarów filtrów (1×1, 3×3, 5×5) w równoległych ścieżkach. Wykorzystują sploty 1×1 do redukcji kosztów obliczeniowych ~10×."
+    },
+    {
+      "id": 59,
+      "front": "Co wprowadził Xception (2016)?",
+      "back": "Adaptacja Inception z modułami zastąpionymi przez rozdzielone w głąb sploty (depthwise separable convolutions). 23 mln parametrów."
+    },
+    {
+      "id": 60,
+      "front": "Co to jest Transfer Learning?",
+      "back": "Wykorzystanie wstępnie wytrenowanej sieci (na dużym zbiorze danych) do nowego zadania. Skuteczne przy małych zbiorach danych dzięki przenoszeniu wyuczonych cech."
+    },
+    {
+      "id": 61,
+      "front": "Jakie są dwa główne sposoby korzystania z pretrained network?",
+      "back": "1) Feature extraction - zamrożona baza splotowa jako ekstraktor cech, trenujemy tylko nowy klasyfikator. 2) Fine-tuning - odmrażamy górne warstwy i trenujemy je wraz z klasyfikatorem."
+    },
+    {
+      "id": 62,
+      "front": "Jaka jest zasada zamrażania/odmrażania warstw w transfer learning?",
+      "back": "Wcześniejsze warstwy kodują ogólne cechy (krawędzie, kolory) - zamrażamy je. Wyższe warstwy kodują specyficzne cechy - odmrażamy i dostrajamy do nowego zadania."
+    },
+    {
+      "id": 63,
+      "front": "Wymień 8 głównych ograniczeń CNN.",
+      "back": "1) Statyczna struktura. 2) Wymagany ten sam rozmiar wejścia. 3) Problem tła. 4) Ślepota na niezdefiniowane obiekty. 5) Brak obsługi transformacji. 6) Skorelowane filtry. 7) Niezrównoważone klasy. 8) Tylko informacja o istnieniu cech."
+    },
+    {
+      "id": 64,
+      "front": "Dlaczego CNN mogą mieć problemy z klasyczną funkcją ReLU?",
+      "back": "Może uniemożliwić uczenie słabszych kombinacji cech ('martwe' filtry) gdy wejście wpada w zakres dający 0. Lepiej użyć LeakyReLU, PReLU lub ELU."
+    },
+    {
+      "id": 65,
+      "front": "Czym różni się klasyfikacja od klasyfikacji z lokalizacją?",
+      "back": "Klasyfikacja określa tylko klasę obiektu. Klasyfikacja z lokalizacją dodatkowo określa położenie obiektu poprzez ramkę ograniczającą (bounding box)."
+    },
+    {
+      "id": 66,
+      "front": "Czym różni się detekcja od segmentacji semantycznej?",
+      "back": "Detekcja wykrywa wiele obiektów z ich klasami i lokalizacjami (ramkami). Segmentacja oznacza każdy piksel etykietą klasy, dając dokładne granice obiektów."
+    },
+    {
+      "id": 67,
+      "front": "Czym różni się segmentacja semantyczna od segmentacji instancji?",
+      "back": "Semantyczna przypisuje każdemu pikselowi klasę (wszystkie psy = jeden kolor). Instancji dodatkowo oddziela poszczególne obiekty tej samej klasy (każdy pies inny kolor)."
+    },
+    {
+      "id": 68,
+      "front": "Co oznacza skrót YOLO i jaka jest główna idea tego algorytmu?",
+      "back": "You Only Look Once - patrzysz tylko raz. Obraz dzielony jest na siatkę (np. 19×19), każda komórka odpowiada za wykrycie obiektu, którego środek w niej leży."
+    },
+    {
+      "id": 69,
+      "front": "Jaki wektor wyjściowy tworzy YOLO dla każdej komórki siatki?",
+      "back": "y = [p_c, b_x, b_y, b_h, b_w, c_1, c_2, ..., c_K], gdzie p_c = prawdopodobieństwo obiektu, b = parametry ramki, c = klasy."
+    },
+    {
+      "id": 70,
+      "front": "Co to jest IoU (Intersection over Union)?",
+      "back": "Miara określająca dopasowanie predykowanej ramki do rzeczywistej. IoU = (Obszar przecięcia) / (Obszar sumy). Zakres 0-1, gdzie 1 = perfekcyjne dopasowanie."
+    },
+    {
+      "id": 71,
+      "front": "Na czym polega Non-Max Suppression (NMS) w YOLO?",
+      "back": "Metoda usuwania nadmiarowych ramek dla tego samego obiektu. Wybiera ramkę z największym p_c, usuwa ramki z IoU ≥ 0.5 względem wybranej, powtarza dla pozostałych."
+    },
+    {
+      "id": 72,
+      "front": "Do czego służą anchor boxes w YOLO?",
+      "back": "Rozwiązują problem wielu obiektów w tej samej komórce. Definiuje się kilka ramek zakotwiczenia o różnych kształtach, każda dla innego typu obiektu (np. pionowa dla pieszych, pozioma dla aut)."
+    },
+    {
+      "id": 73,
+      "front": "Z jakich głównych części składa się detektor obiektów?",
+      "back": "Backbone (rdzeń - ekstrakcja cech), Neck (dodatkowe bloki - FPN, PAN), Head (głowa - predykcja - może być one-stage lub two-stage)."
+    },
+    {
+      "id": 74,
+      "front": "Czym różnią się detektory one-stage od two-stage?",
+      "back": "One-stage (YOLO, SSD, RetinaNet) - bezpośrednia predykcja w jednym kroku, szybsze. Two-stage (R-CNN, Faster R-CNN) - najpierw propozycje regionów, potem klasyfikacja, dokładniejsze."
+    },
+    {
+      "id": 75,
+      "front": "Co to jest Bag of Freebies (BoF)?",
+      "back": "Metody poprawiające dokładność detektora bez zwiększania kosztów wnioskowania - tylko zwiększają koszt treningu. Przykład: augmentacja danych, label smoothing."
+    },
+    {
+      "id": 76,
+      "front": "Co to jest Bag of Specials (BoS)?",
+      "back": "Moduły i metody nieznacznie zwiększające koszt wnioskowania, ale znacznie poprawiające dokładność. Przykład: SPP, attention mechanisms, post-processing."
+    },
+    {
+      "id": 77,
+      "front": "Jakie komponenty wykorzystuje YOLO v4?",
+      "back": "Backbone: CSPDarknet53. Neck: SPP + PAN. Head: YOLOv3. Plus liczne techniki BoF i BoS jak CIoU-loss, Mish activation, Mosaic augmentation."
+    },
+    {
+      "id": 78,
+      "front": "Czym wyróżnia się YOLO v5?",
+      "back": "Implementacja w PyTorch (nie Darknet), fokus na praktyczność: łatwy w użyciu, eksportowaniu, niskie wymagania pamięci, wysoka prędkość. Backbone: CSP, Neck: PA-NET."
+    },
+    {
+      "id": 79,
+      "front": "Co to jest Focal Loss w RetinaNet?",
+      "back": "Funkcja straty rozwiązująca problem nierównowagi klas. 'Łatwe' próbki ujemne przyczyniają się do mniejszych strat, pozwalając skupić się na 'trudnych' próbkach."
+    },
+    {
+      "id": 80,
+      "front": "Co to jest Average Precision (AP)?",
+      "back": "Popularna miara dokładności detektorów. AP = ∫p(r)dr - średnia wartość precyzji dla wszystkich wartości recall od 0 do 1."
+    },
+    {
+      "id": 81,
+      "front": "Co to jest mAP (Mean Average Precision)?",
+      "back": "Średnia Average Precision dla wszystkich klas. Główna metryka porównywania detektorów na benchmarkach jak COCO i Pascal VOC."
+    },
+    {
+      "id": 82,
+      "front": "Co to jest współczynnik Dice w segmentacji?",
+      "back": "Dice = (2 × Obszar nakładania) / (Całkowita liczba pikseli w obu obszarach). Podobny do IoU, zakres 0-1, gdzie 1 = perfekcyjne nałożenie."
+    },
+    {
+      "id": 83,
+      "front": "Czym różnią się R-CNN, Fast R-CNN i Faster R-CNN?",
+      "back": "R-CNN: osobne przetwarzanie regionów. Fast R-CNN: współdzielona mapa cech. Faster R-CNN: sieć konwolucyjna do propozycji regionów (end-to-end)."
+    },
+    {
+      "id": 84,
+      "front": "Co to jest estymacja ludzkiej pozy (pose estimation)?",
+      "back": "Wykrywanie i śledzenie kluczowych punktów ciała człowieka i ich połączeń (skeleton). Zastosowania: sport, bezpieczeństwo, interakcja człowiek-komputer, trening robotów."
+    },
+    {
+      "id": 85,
+      "front": "Jakie są rodzaje warstw w sieciach neuronowych?",
+      "back": "Dense (gęste MLP), Conv1D/Conv2D (konwolucyjne), SimpleRNN/GRU/LSTM (rekurencyjne), MultiHeadAttention (uwagi), MaxPooling/AvgPooling."
+    },
+    {
+      "id": 86,
+      "front": "Co to jest Batch Normalization?",
+      "back": "Normalizacja aktywacji sieci przez średnią i wariancję w ramach mini-batcha. Przyspiesza uczenie i stabilizuje gradient."
+    },
+    {
+      "id": 87,
+      "front": "Co to jest Data Mismatch problem?",
+      "back": "Problem gdy zbiór walidacyjny/testowy pochodzi z innej dystrybucji niż uczący. Rozwiązanie: model musi być trenowany na wszystkich dystrybucjach danych."
+    },
+    {
+      "id": 88,
+      "front": "Jakie frameworki służą do implementacji sieci neuronowych?",
+      "back": "TensorFlow 2.0, Keras, PyTorch, Caffe2, Theano, PaddlePaddle, CNTK (Microsoft), DL4J (Java). Środowiska: Jupyter Notebook, Google Colab."
+    },
+    {
+      "id": 89,
+      "front": "Co zawiera pakiet Anaconda?",
+      "back": "Biblioteki do obliczeń naukowych, nauki o danych i ML. Zarządzanie bibliotekami (Conda), modelowanie (scikit-learn, TensorFlow, Keras), analiza (NumPy, pandas), wizualizacja (Matplotlib)."
+    },
+    {
+      "id": 90,
+      "front": "Co to jest ortogonalizacja w kontekście uczenia maszynowego?",
+      "back": "Proces określający co dostroić i jak osiągnąć efekt. Pozwala naprawić konkretny problem przez dostrojenie ograniczonego podzbioru hiperparametrów."
+    },
+    {
+      "id": 91,
+      "front": "Co decyduje o tym czy CNN łatwo czy trudno rozróżni klasy?",
+      "back": "Łatwo: różnice w kolorze i kształcie całych obiektów, różne tło. Trudno: to samo tło, obiekty wypełniają mały % obrazu, różnice tylko w detalach, podobna wielkość po skalowaniu."
+    },
+    {
+      "id": 92,
+      "front": "Jakie informacje można odczytać z twarzy przy pomocy sieci neuronowych?",
+      "back": "Emocje, kłamstwo, tętno, oddech, puls, zdenerwowanie, choroby (np. FASD), zmiany skórne. Wykorzystywane w medycynie, bezpieczeństwie i marketingu."
+    },
+    {
+      "id": 93,
+      "front": "Dlaczego siatkówka oka ma komórki typu ON i OFF, a CNN często tylko ON?",
+      "back": "ON reagują na wzrost jasności, OFF na spadek. Brak cech (informacja negatywna) też jest dyskryminujący. CNN z MaxPooling są ślepe na brak cech - to zubaża reprezentację."
+    },
+    {
+      "id": 94,
+      "front": "Co to jest ResNeXt-50?",
+      "back": "Wariant ResNet zwiększający liczbę równoległych ścieżek ('kardynalność') w module. 25 mln parametrów. Łączy ideę ResNet ze strukturami typu Inception."
+    },
+    {
+      "id": 95,
+      "front": "Co to jest Inception-ResNet-v2?",
+      "back": "Architektura łącząca moduły incepcyjne z połączeniami rezydualnymi. 56 mln parametrów. Konwertuje moduły Inception na bloki rezydualnego Inception."
+    },
+    {
+      "id": 96,
+      "front": "Jakie są główne etapy fine-tuning w transfer learning?",
+      "back": "1) Zamroź bazę splotową. 2) Trenuj klasyfikator do zbieżności. 3) Odmroź ostatnie warstwy bazy. 4) Trenuj wspólnie z małym learning rate. 5) Stopniowo odmrażaj więcej warstw."
+    },
+    {
+      "id": 97,
+      "front": "Czym jest PP-YOLO?",
+      "back": "Implementacja oparta na PaddlePaddle i YOLO v3 z lipca 2020. Zbalansowana skuteczność i wydajność. Zmieniony backbone na ResNet, zwiększony batch size."
+    },
+    {
+      "id": 98,
+      "front": "Jakie metryki służą do porównywania klasyfikatorów przy wielu klasach?",
+      "back": "Średni błąd lub średnia harmoniczna wyników dla wszystkich klas i klasyfikatorów. Pozwala łatwiej wskazać najlepszy klasyfikator uwzględniając wyniki dla wszystkich klas."
+    },
+    {
+      "id": 99,
+      "front": "Jak radzić sobie gdy aplikacja wymaga działania w czasie rzeczywistym?",
+      "back": "Optymalizacja wielokryterialna: dokładność jako główna metryka, ale z ograniczeniem czasu klasyfikacji (np. <100ms). Wybieramy najdokładniejszy spośród wystarczająco szybkich."
+    },
+    {
+      "id": 100,
+      "front": "Jakie są praktyczne zastosowania detekcji i segmentacji obiektów?",
+      "back": "Autonomiczne samochody, systemy bezpieczeństwa, wykrywanie interakcji obiektów, rozpoznawanie twarzy/emocji, medycyna (termowizja, pomiary bezkontaktowe), marketing, sport."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+Eksploracja danych, wzorce częste i reguły asocjacyjne
+
+Wprowadzenie do problemu analizy danych
+
+Większość współczesnych repozytoriów danych zawiera ukryte informacje, które mogą wzbogacić wiedzę użytkowników. Informacje te występują w postaci regularności, korelacji, podobieństw, trendów, osobliwości oraz reguł. Jednak struktura i rozmiary tych zbiorów danych uniemożliwiają ich ręczną analizę przez człowieka. W ostatnich latach powstało wiele ciekawych i efektywnych algorytmów, struktur oraz metod półautomatycznej lub automatycznej eksploracji danych, określanej również terminem data mining. Procesy te nazywane są także odkrywaniem wiedzy, czyli knowledge discovery.
+
+Eksploracja danych stanowi w istocie skrót myślowy oznaczający eksplorację wiedzy z danych, a mówiąc ściślej, wydobywanie informacji z danych, które tę wiedzę mogą ukształtować. Algorytmy eksploracyjne służą również do odkrywania związków i relacji pomiędzy elementami lub grupami obiektów. Związki te zapisywane są w postaci tak zwanych reguł asocjacyjnych. Eksploracja danych to zatem proces analizy dużych zbiorów danych w celu odkrywania ukrytych wzorców, zależności i reguł. Istnieje wiele metod eksploracji danych używanych do odnajdywania wzorców i tworzenia reguł asocjacyjnych.
+
+Eksploracja wiedzy z danych
+
+Eksploracja danych może być przeprowadzana różnymi metodami w zależności od rodzaju danych oraz sposobu ich przechowywania. Do najważniejszych metod należą metody statystyczne, reguły, drzewa lub diagramy decyzyjne, badanie zawierania, podzbiorów, bliskości lub podobieństw, wyszukiwanie wzorców częstych lub rzadkich, systemy rozmyte, sieci neuronowe oraz metody skojarzeniowe.
+
+Dane mogą tworzyć charakterystyczne wzorce w różnych postaciach. Pierwszą z nich są zbiory, czyli na przykład encje, wektory lub macierze. Drugą formą są sekwencje, takie jak teksty, ciągi instrukcji czy sekwencje czasowe. Trzecią kategorię stanowią struktury złożone, do których zalicza się podgrafy, obrazy, mapy oraz tekstury.
+
+Zbiory elementów i pojęcie wsparcia
+
+Zbiór elementów, określany terminem itemset, oznaczany symbolem I, to zbiór wszystkich dostępnych elementów, obiektów lub towarów. Transakcja, czyli transaction, jest parą składającą się z identyfikatora transakcji oraz pewnego podzbioru towarów będącego częścią zbioru wszystkich elementów. Z punktu widzenia eksploracji danych istotna jest częstość wzorców, czyli powtarzalność różnych k-elementowych podzbiorów w zbiorze transakcji nazywanym bazą transakcyjną.
+
+K-zbiór, czyli k-itemset, to k-elementowy zbiór, który zwykle definiuje pewną transakcję lub wzorzec. Na przykład zbiór zawierający kawę i cukier może być podzbiorem większego zbioru zawierającego kawę, cukier i jajka, który z kolei stanowi podzbiór całego zbioru dostępnych produktów. Mówimy, że transakcja pokrywa wzorzec, jeśli wzorzec jest podzbiorem elementów transakcji. Wzorzec może być pokryty przez wiele transakcji. Zbiór transakcji pokrywających wzorzec nazywany jest pokryciem tego wzorca.
+
+Wzorzec jest częsty, jeśli jego pokrycie przez transakcje z rozważanej bazy transakcji jest nie mniejsze niż ustalony próg. Wydobywanie częstych wzorców stanowi jedno z podstawowych zadań eksploracji danych i niezbędny krok w wydobywaniu reguł asocjacyjnych oraz analizie korelacji danych.
+
+Wsparcie, określane terminem support, to częstotliwość wystąpień wzorca w analizowanym zbiorze encji lub transakcji wyrażona w procentach. Wsparcie liczone jest jako stosunek liczby wystąpień wzorca w rozważanym zbiorze transakcji do liczby wszystkich rozważanych transakcji. Korzystając z definicji wsparcia, można stwierdzić, że wzorzec jest częsty, jeśli jego wsparcie jest nie mniejsze niż ustalony próg minimalnego wsparcia.
+
+Reguły asocjacyjne
+
+Reguły asocjacyjne elementów transakcji lub wzorców zapisuje się w postaci implikacji z przypisanymi wartościami wsparcia i ufności. Reguły asocjacyjne są jednym z wyników analizy asocjacyjnej, która ma na celu odkrywanie zależności między elementami w zbiorze danych. Reguły te wyrażone są w postaci warunkowej, gdzie określone elementy implikują inne elementy. Na przykład reguła może głosić, że jeżeli osoba kupuje chleb i mleko, to najprawdopodobniej kupi również masło.
+
+W regule asocjacyjnej występują dwa podstawowe pojęcia. Pierwszym jest poprzednik, nazywany także przyczyną lub antecedentem, który stanowi zbiór elementów obecnych na wejściu reguły. Drugim pojęciem jest następnik, określany także jako skutek, konsekwencja lub consequent, będący zbiorem elementów stanowiących wynik lub konsekwencję antecedenta.
+
+Wsparcie w regułach asocjacyjnych definiowane jest przez prawdopodobieństwo, że określona transakcja zawiera zarówno antecedent jak również consequent. Prawdopodobieństwo to jest liczone względem wszystkich możliwych transakcji, wyrażając prawdopodobieństwo zaistnienia takiej asocjacji. Wsparcie wyrażane jest jako stosunek liczby transakcji zawierających zarówno antecedent jak i consequent do ogólnej liczby transakcji. Wyższe wsparcie wskazuje na silniejszą zależność między elementami.
+
+Ufność, nazywana również pewnością lub wiarygodnością i oznaczana terminem confidence, to prawdopodobieństwo warunkowe, że transakcja zawierająca antecedent zawiera również consequent. Jest to prawdopodobieństwo, że consequent wystąpi pod warunkiem, że antecedent jest obecny. Ufność mierzy, jak często dany consequent pojawia się, gdy antecedent jest spełniony. Wyrażana jest jako stosunek liczby transakcji zawierających zarówno antecedent jak i consequent do liczby transakcji zawierających antecedent. Wyższa ufność wskazuje na silniejszą zależność między antecedentem a consequentem.
+
+Eksploracja reguł asocjacyjnych polega na odnalezieniu wszystkich reguł o określonym minimalnym wsparciu oraz o określonej minimalnej pewności. Regułę asocjacyjną spełniającą oba te warunki nazywa się silną. Wielowymiarowe reguły asocjacyjne zawierają rozbudowane warunki obejmujące wiele atrybutów, na przykład wiek, zawód i kupowane produkty.
+
+Reguły asocjacyjne stosowane są do organizowania promocji i sprzedaży wiązanej, czyli up-sellingu i cross-sellingu, konstruowania katalogów wysyłkowych, ustalania sposobu rozmieszczenia towarów na półkach w marketach oraz określania najlepiej rotujących towarów.
+
+Do mierzenia obiektywizmu reguł asocjacyjnych wykorzystuje się dwa wskaźniki. Wsparcie określa, ile procent spośród zbadanych transakcji występuje razem. Pewność określa, ile procent transakcji zawiera wniosek przy założeniu, że spełniona jest lewa strona implikacji. Odpowiednie poziomy wymaganego wsparcia i wiarygodności określa użytkownik na podstawie potrzeb wynikających z danej dziedziny, wiedzy eksperta oraz zadania.
+
+Reguły asocjacyjne przypominają reguły decyzyjne, lecz decyzja, czyli prawa strona implikacji, nie jest z góry określona. Reguły asocjacyjne działają podobnie jak uczenie nienadzorowane, czyli bez nauczyciela, dla problemów algorytmów grupowania i klasteryzacji. Taki algorytm nie ma z góry określonej prawidłowej odpowiedzi. Zamiast tego ma opisywać wewnętrzne zależności między atrybutami.
+
+Analiza koszykowa
+
+Reguły asocjacyjne wywodzą się z badań nad zagadnieniami analizy koszykowej, określanej angielskim terminem Market Basket Analysis. Analiza koszykowa polega na odkrywaniu wzorców zachowania się klientów, czyli znajdowaniu grup produktów kupowanych razem oraz określaniu ich częstości. Typowym przykładem jest analiza zawartości koszyków zakupowych w supermarketach w celu identyfikacji produktów często kupowanych wspólnie. Wyniki takiej analizy wykorzystywane są do optymalizacji rozmieszczenia produktów na półkach, planowania promocji oraz personalizacji ofert dla klientów.
+
+Tworzenie reguł asocjacyjnych
+
+Tworzenie reguł asocjacyjnych poprzedzone jest zwykle procesem wyznaczania częstych wzorców, dla których te reguły tworzymy. Zwykle istotne jest to, co często się powtarza, na przykład często kupowane produkty występujące razem w różnych transakcjach. Pozwala to na lepsze zlokalizowanie tych produktów na półkach sklepowych w celu zwiększenia ich sprzedaży. Poszukiwane są zatem silne reguły asocjacyjne o odpowiednio zdefiniowanym minimalnym wsparciu oraz minimalnej ufności.
+
+Czasami interesujące mogą być wzorce, które wystąpiły po raz pierwszy lub występują rzadko. Dotyczy to takich dziedzin jak astronomia, fizyka cząstek elementarnych, genetyka czy kognitywistyka. W takich przypadkach poszukiwane mogą być tylko wzorce o niewielkim wsparciu lub wzorce unikalne. Do wyznaczania reguł asocjacyjnych oraz poszukiwania wzorców częstych wykorzystywany jest bardzo popularny algorytm Apriori, który posiada również liczne rozszerzenia mające na celu przyspieszenie jego działania.
+
+Wzorce składowe, zamknięte i maksymalne
+
+Duże i długie wzorce zawierają znaczną liczbę wzorców składowych, nazywanych subwzorcami. Subwzorce mogą przyjmować postać podzbiorów elementów, subsekwencji elementów, podgrafów elementów lub wycinków i obszarów elementów w przypadku obrazów i map. Subwzorce umożliwiają znajdowanie podobieństw i różnic oraz tworzenie asocjacyjnych związków pomiędzy wzorcami. Ze względu na dużą złożoność kombinatoryczną niezbędnych porównań, opłaca się najpierw analizować i porównywać subwzorce o mniejszej liczbie obiektów składowych, a dopiero potem na ich podstawie określać częstość, rzadkość, wsparcie czy pewność dla wzorców o większej liczności obiektów.
+
+Zamknięte wzorce to takie wzorce, które są częste i nie istnieje żaden nadwzorzec, który miałby takie same wsparcie jak rozważany wzorzec. Zamknięty wzorzec jest więc kompresją stratną wszystkich zawartych w nim częstych wzorców, gdyż tracona jest informacja o ich wsparciu.
+
+Maksymalne wzorce to takie wzorce, które są częste i nie istnieje żaden częsty nadwzorzec. Maksymalne wzorce reprezentują wszystkie częste wzorce, których wszystkie elementy zawierają. Maksymalny wzorzec jest więc kompresją stratną wszystkich częstych wzorców składających się z jego elementów. Wzorce zamknięte od maksymalnych różnią się tym, że wzorce zamknięte mogą posiadać częste nadwzorce o mniejszym wsparciu, zaś wzorce maksymalne takich nadwzorców nie posiadają.
+
+Algorytmy eksploracji danych
+
+Do najpopularniejszych algorytmów wyszukiwania zbiorów wzorców częstych należą Apriori autorstwa Rakesha Agrawala i Johna Shafera, Eclat opracowany przez Mohammeda Zakiego i współpracowników, FP-growth stworzony przez Jiawei Hana, Jian Pei i Yiwen Yin oraz D-Club opracowany przez Jianwei Li, Aloka Choudharyego i innych. Istnieją również algorytmy do eksploracji zamkniętych wzorców częstych oraz maksymalnych wzorców. Wszystkie te algorytmy posiadają wersje sekwencyjne i równoległe.
+
+Algorytm Apriori
+
+Algorytm Apriori iteracyjny stopniowo generuje i testuje częstość kandydatów, dzieląc ich na zbiory częste o długości od jeden do k, aż do momentu gdy znalezione zostaną wszystkie wzorce częste. Równoległe wersje algorytmu Apriori dzielą się na kilka grup. Algorytmy typu Count Distribution bazują na dekompozycji danych, gdzie baza dzielona jest na statyczne partycje, w których równolegle zliczane jest wsparcie dla kandydatów na zbiory częste. Algorytmy typu Data Distribution dążą do efektywniejszego wykorzystania pamięci poprzez podzielenie bazy na partycje i rozdzielenie listy wyszukiwanych kandydatów pomiędzy procesory. Algorytmy typu Candidate Distribution rozdzielają listę wyszukiwanych kandydatów i replikują transakcje z bazy danych w celu równoległego ich przetwarzania.
+
+Reguła oczyszczania Apriori mówi, że każdy podzbiór zbioru częstego jest częsty. Z tej reguły wynikają ważne wnioski. Każdy podzbiór zbioru częstego nie może być rzadki, ale musi być częsty, przy czym może być częstszy, czyli jego wsparcie może być większe. Jeśli jakikolwiek podzbiór zbioru jest rzadki, wtedy cały zbiór jest również rzadki. Powyższy wniosek umożliwia odfiltrowanie wszystkich nadwzorców zawierających rzadkie podzbiory w celu podniesienia efektywności przeszukiwania wzorców w trakcie ich eksploracji.
+
+Algorytm Apriori składa się z dwóch głównych kroków. Krok oczyszczania polega na przeszukaniu wszystkich wzorców w celu ustalenia liczby każdego kandydata w k-elementowym podzbiorze. Liczby te są porównywane z ustalonym minimalnym wsparciem w celu ustalenia, czy dany kandydat może zostać umieszczony w zbiorze częstych wzorców. Krok łączenia polega na naturalnym łączeniu wzorców ze sobą w celu wygenerowania następnych kandydatów o długości k plus jeden.
+
+Algorytm ECLAT
+
+Ekwiwalentna Transformacja Klas, znana pod skrótem ECLAT od angielskiej nazwy Equivalence Class Transformation, to algorytm przeszukiwania w głąb wykorzystujący przecięcie zbiorów. Służy do eksploracji częstych wzorców poprzez badanie ich wertykalnego, czyli kolumnowego formatu. Algorytm ten przyspiesza działanie Apriori, gdyż nie musi przeszukiwać bazy danych w celu określenia wsparcia dla elementów k plus jeden elementowych.
+
+Klasyczne generowanie reguł asocjacyjnych obejmuje dwa kroki. Pierwszy krok to kosztowne obliczeniowo generowanie zbiorów elementów częstych, czyli takich dla których wsparcie przekracza przyjęty próg. Drugi krok to generowanie reguł asocjacyjnych. Wykorzystanie algorytmu ECLAT polega na efektywnym generowaniu zbiorów elementów częstych dzięki zmianie formatu reprezentacji z horyzontalnego na wertykalny, a następnie na generowaniu reguł asocjacyjnych na podstawie tak przekształconych danych.
+
+Algorytm FP-Growth
+
+Algorytm FP-Growth, czyli Frequent Pattern Growth, dokonuje najpierw stratnej kompresji reprezentacji wzorców w postaci drzewa, które następnie jest wykorzystywane do eksploracji. Proces transformacji rozpoczyna się od znalezienia wszystkich jednoelementowych zbiorów częstych w bazie transakcji. Następnie każda transakcja transformowana jest do skompresowanej postaci polegającej na usunięciu wszystkich elementów, które nie są częste. Elementy skompresowanych transakcji sortowane są według malejących wartości ich wsparcia, tworząc listę elementów. Posortowane transakcje transformowane są do struktury FP-drzewa.
+
+Budowa FP-drzewa przebiega w określony sposób. Korzeń grafu posiada etykietę null, a pozostałe wierzchołki grafu reprezentują jednoelementowe zbiory częste wraz z informacją o ich liczności w zbiorze transakcji. Kolejne skompresowane transakcje z posortowanymi elementami dodawane są po kolei do FP-drzewa poprzez poruszanie się od korzenia przez istniejące węzły. Jeśli dany element jest już reprezentowany, zwiększany jest jego licznik. Jeśli nie był jeszcze reprezentowany dla danego poprzednika, dodawany jest nowy element z licznikiem równym jeden. W ten sposób tworzone jest drzewo prefiksowe na bazie agregacji wspólnych prefiksów dla elementów transakcji.
+
+Informację o wsparciu wzorca reprezentowanego przez prefiks określa się na podstawie liczności ostatniego elementu prefiksu. W przypadku elementów występujących wielokrotnie w drzewie przydatna jest tablica nagłówkowa przechowująca listy wskaźników do poszczególnych wystąpień danego elementu w drzewie, co przyspiesza przeszukiwanie.
+
+Proces eksploracji FP-drzewa bazuje na obserwacji, że dla każdego jednoelementowego zbioru częstego wszystkie częste nadzbiory tego zbioru są reprezentowane w FP-drzewie poprzez ścieżki zawierające odpowiedni wierzchołek. Dla każdego jednoelementowego zbioru częstego znajduje się w FP-drzewie wszystkie ścieżki, których końcowym wierzchołkiem jest wierzchołek reprezentujący ten zbiór. Takie ścieżki nazywane są ścieżkami prefiksowymi wzorca. Zbiór wszystkich ścieżek prefiksowych wzorca tworzy warunkową bazę wzorca. Warunkowa baza wzorca służy do konstrukcji warunkowego FP-drzewa, które jest rekurencyjnie eksplorowane w celu znalezienia wszystkich zbiorów częstych zawierających dany zbiór.
+
+Algorytm D-Club
+
+Algorytm D-Club służy do szybkiego wyszukiwania wzorców częstych. Stopniowo grupuje bazę danych do postaci skondensowanej asocjacyjnej bitmapy stosując technikę różnicowania w celu usunięcia gęstych wzorców, a następnie wyodrębnia pozostałe małe bitmapy przez szybkie operacje bitowe na agregatach. Algorytm stosuje mapy bitowe zorganizowane w prostokątne dwuwymiarowe macierze, które są poprawiane w regionach wymagających dalszych obliczeń. Algorytm D-Club jest znacznie szybszy od Apriori oraz szybszy od wielu innych metod wyszukiwania wzorców częstych, takich jak Eclat czy FP-tree.
+
+Eksploracja wzorców sekwencyjnych
+
+Wzorce sekwencyjne składają się z sekwencji zbiorów elementów, zwanych też zdarzeniami. Elementy zbiorów tworzących sekwencje nie są porządkowane, co oznacza, że ich kolejność wewnątrz zbioru nie ma znaczenia. Wzorce sekwencyjne mają liczne zastosowania w inżynierii oprogramowania, analizie i porównywaniu łańcuchów DNA i protein, analizie sekwencji czasowych i zmian w czasie na przykład na giełdzie, w procedurach leczniczych w medycynie, analizie i przewidywaniu pogody oraz w analizie i optymalizacji akcji promocyjnych i reklamowych.
+
+Eksploracja Apriori wzorców sekwencyjnych polega na określeniu częstotliwości wystąpień sekwencji jedno-, dwu-, trzy- i więcej elementowych dla których minimalna częstotliwość jest powyżej pewnego ustalonego progu. Stopniowo generuje się kandydatów o długości k plus jeden na podstawie wcześniej wygenerowanych kandydatów o długości k, przy czym zawsze bierze się pod uwagę tylko tych kandydatów, których wsparcie jest powyżej pewnego ustalonego progu. Postępowanie kontynuowane jest dopóki istnieją dłużsi kandydaci spełniający to kryterium. Eksploracja wzorców wygenerowanych i oczyszczonych na podstawie reguły Apriori nazywana jest algorytmem uogólnionych wzorców sekwencyjnych GSP.
+
+Eksploracja tekstów i fraz
+
+Eksplorację tekstów przeprowadza się poprzez wyszukiwanie n-gramów, czyli n-elementowych fraz słownych, gdzie elementami są słowa. Można rozważać również eksplorację fraz, wewnątrz których występują inne słowa, czyli sekwencje słów z odstępami. N-gramy konstruuje się często w oparciu o krótsze n-gramy, rozpoczynając od bi-gramów. Eksploracja tekstów przez konstruowanie fraz z często powtarzających się bliskich słów poprzez ich łączenie, scalanie i porządkowanie wykorzystywana jest w silnikach indeksujących i wyszukiwawczych.
+
+Frazy tekstowe dla eksplorowanego tematu oceniane są i porządkowane według kilku kryteriów. Popularność określa częstość występowania frazy w stosunku do innych fraz. Dyskryminatywność oznacza, że fraza jest częsta w danym dokumencie w stosunku do innych dokumentów, w których jest rzadka. Zgodność dotyczy fraz składających się ze słów często występujących razem w stosunku do innych, które tylko okazjonalnie występują razem. Kompletność odnosi się do sytuacji, gdy dłuższa fraza występuje częściej niż jej krótsza część w innym kontekście. Kryteria te pozwalają porównywać frazy o różnej długości i są wykorzystywane między innymi w algorytmie KERT.
+
+Algorytm KERT, którego nazwa pochodzi od angielskiego Keyphrase Extraction and Ranking by Topics, został opracowany przez Marinę Danilevsky, Chi Wanga i współpracowników. Algorytm ten najpierw modeluje temat dokumentu, a następnie eksploruje frazy w tekście. Podejście to pozwala na kontekstowe wyodrębnianie fraz kluczowych związanych z określoną tematyką.
+
+Algorytm ToPMine stosuje odwrotne podejście niż KERT. Najpierw konstruuje frazy, a następnie eksploruje temat tekstu. Wyszukuje częste wzorce sekwencyjne składające się z sąsiadujących elementów i liczy ilości ich wystąpień. Łączy częste jednoelementowe sąsiadujące słowa we frazy wyznaczając ich częstotliwość występowania w tekście. Frazy tworzą elementy często występujące razem. Wyszukuje frazy kandydujące na podstawie częstości występowania składających się na nie słów w tekście w stosunku do częstości występowania całej frazy kandydującej.
+
+Metody eksploracji danych oparte na wiedzy
+
+Istnieje wiele innych metod eksploracji danych opartych na wiedzy. Oznacza to, że dane nie są przeszukiwane w sposób bezpośredni, lecz tworzony jest pewien model ich reprezentacji. Modele takie wykorzystywane są w systemach neuronowych, systemach rozmytych, systemach kognitywistycznych oraz systemach asocjacyjnych. Systemy te pozwalają na wyciąganie wniosków na podstawie pewnej formy zagregowanych i reprezentowanych wewnętrznie danych. Uzyskane w taki sposób wnioski mogą być nie tylko odtworzeniem zebranych faktów i reguł, lecz również ich uogólnieniem lub podsumowaniem.
+
+Istotne znaczenie dla uzyskania takiej funkcjonalności systemu wnioskującego odgrywa sposób reprezentacji danych w wybranym systemie, możliwość agregacji i wspólnej reprezentacji takich samych i podobnych danych oraz wbudowane mechanizmy wnioskowania i generalizacji. Sposób reprezentacji danych w istotny sposób wpływa na przechowywanie relacji pomiędzy danymi, szybkość dostępu do danych i ich relacji oraz możliwości eksploracji wiedzy na podstawie tych danych.
+
+W trakcie eksploracji najczęściej poszukiwane są częste grupy danych, czyli wzorce określone na podstawie ich podobieństwa. Zależy nam na szybkości dostępu do danych i ich relacji oraz na możliwości szybkiej eksploracji wiedzy na podstawie tych danych. Wiedza o danych to przede wszystkim informacje o ich związkach i relacjach, podobieństwie i różnicach oraz klasach, grupach i grupowaniu.
+
+Zaawansowane struktury skojarzonych wzorców
+
+Możliwe jest również budowanie zaawansowanych struktur reprezentujących skojarzone wzorce z wykorzystaniem neuronów. W takim podejściu każdy neuron reprezentuje wzorzec częsty, który jest zbudowany z innych wzorców częstych oraz cech podstawowych. Struktury neuronowe umożliwiają hierarchiczną reprezentację wzorców, gdzie bardziej złożone wzorce składają się z prostszych komponentów. Takie podejście łączy zalety eksploracji wzorców częstych z możliwościami przetwarzania oferowanymi przez sieci neuronowe, pozwalając na tworzenie systemów zdolnych do odkrywania i reprezentowania złożonych zależności w danych.
+
+Podsumowanie
+
+Eksploracja danych stanowi fundamentalny obszar analizy dużych zbiorów danych, umożliwiający odkrywanie ukrytych wzorców i zależności. Reguły asocjacyjne, oparte na pojęciach wsparcia i ufności, pozwalają na identyfikowanie związków między elementami w transakcjach. Algorytmy takie jak Apriori, ECLAT, FP-Growth i D-Club dostarczają różnych podejść do efektywnego wyszukiwania wzorców częstych, każdy z własnymi zaletami i optymalizacjami. Eksploracja wzorców sekwencyjnych oraz tekstów rozszerza możliwości analizy na dane o charakterze uporządkowanym czasowo lub lingwistycznym. Współczesne metody eksploracji danych coraz częściej opierają się na reprezentacjach opartych na wiedzy, wykorzystujących systemy neuronowe, rozmyte i asocjacyjne do wyciągania uogólnionych wniosków z danych.
