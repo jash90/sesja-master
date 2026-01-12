@@ -1,58 +1,55 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 📚 SesjaMaster
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+**Multi-format Educational Learning Platform for Polish University Students**
 
-## ✨ Technology Stack
+SesjaMaster ("Exam Session Master") is a comprehensive web-based learning platform designed to help students prepare for exams through multiple learning modalities: interactive quizzes, flashcards, study materials, and audio lectures.
 
-This scaffold provides a robust foundation built with:
+## ✨ Features
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 📝 Interactive Quizzes
+- Multiple-choice questions with detailed explanations
+- Real-time scoring and progress tracking
+- Question-by-question navigation with answer confirmation
+- Comprehensive results screen with performance analytics
+- Timer functionality to simulate exam conditions
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### 🎴 Flashcard Learning
+- Spaced repetition learning with 3D card flip animations
+- Shuffle functionality for randomized learning
+- Progress tracking (cards viewed / total cards)
+- Next/previous navigation through card sets
+- Visual indicators for learning progress
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+### 📚 Study Materials
+- Text-based learning materials viewer
+- Clean, distraction-free reading interface
+- Organized by subject and topic
+- Easy navigation between materials
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
+### 🎵 Audio Lectures
+- Full-featured MP3 player with play/pause controls
+- Progress bar with seek functionality
+- Download capability for offline study
+- Audio file metadata display
+- Responsive audio controls
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+### 📂 Subject Organization
+- Content organized by university courses
+- Automatic subject discovery
+- Subject-specific content filtering
+- Easy-to-navigate subject selection interface
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
-
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
-
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+### 🌐 Multi-subject Support
+Currently includes materials for:
+- **Systemy Wspomagania Decyzji** (Decision Support Systems)
+  - Data Mining & Exploration
+  - Neural Networks
+  - Frequent Patterns & Association Rules
+- **Inżynieria transportu** (Transport Engineering)
+  - Industry 4.0
+  - Local & External Transport
+  - Inventory & Warehousing
+  - INCOTERMS 2020
 
 ## 🚀 Quick Start
 
@@ -60,82 +57,193 @@ This scaffold provides a robust foundation built with:
 # Install dependencies
 bun install
 
-# Start development server
+# Start development server (http://localhost:3000)
 bun run dev
 
-# Build for production
+# Build for production (generates content manifest)
 bun run build
 
 # Start production server
 bun start
+
+# Lint code
+bun run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+## 🛠️ Technology Stack
 
-## 🤖 Powered by Z.ai
+### Core Framework
+- **Next.js 15.3.8** - React framework with App Router
+- **React 19** - Latest React with Server Components
+- **TypeScript 5** - Type-safe development
+- **Bun** - Fast JavaScript runtime and package manager
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+### UI & Styling
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **shadcn/ui** - High-quality React components built on Radix UI
+- **Framer Motion** - Smooth animations and transitions
+- **Lucide React** - Beautiful icon library
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+### State Management
+- **React Context** - Global state with QuizContext provider
+- **Zustand** - Available for additional state needs
+- **TanStack Query** - Server state and caching capabilities
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+### Forms & Validation
+- **React Hook Form** - Performant form management
+- **Zod** - TypeScript-first schema validation
+
+### Content Management
+- **File-based system** - JSON files for quizzes and flashcards
+- **Text files** - Plain text study materials
+- **Audio files** - MP3 format for lectures
+- **Manifest generation** - Automatic content indexing on build
+
+### Optional Features
+- **Prisma** - TypeScript ORM (configured but not required)
+- **next-intl** - Internationalization support
+- **NextAuth.js** - Authentication (available if needed)
 
 ## 📁 Project Structure
 
 ```
 src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+├── app/                          # Next.js App Router
+│   ├── api/                      # API routes
+│   │   ├── subjects/            # Subject listing
+│   │   ├── quizzes/             # Quiz endpoints
+│   │   ├── flashcards/          # Flashcard endpoints
+│   │   ├── materials/           # Study materials endpoints
+│   │   └── audio-materials/     # Audio file endpoints
+│   ├── quiz/[id]/               # Quiz pages
+│   ├── flashcards/[id]/         # Flashcard pages
+│   ├── materials/[id]/          # Material pages
+│   └── audio/[id]/              # Audio player pages
+│
+├── components/
+│   ├── screens/                 # Screen-level components
+│   │   ├── HomeScreen.tsx       # Main subject selection
+│   │   ├── QuizStartScreen.tsx  # Quiz initialization
+│   │   ├── QuizQuestionScreen.tsx
+│   │   ├── ResultsScreen.tsx
+│   │   ├── FlashcardLearnerScreen.tsx
+│   │   ├── MaterialReaderScreen.tsx
+│   │   └── AudioPlayerScreen.tsx
+│   └── ui/                      # shadcn/ui components
+│
+├── context/
+│   └── QuizContext.tsx          # Global state management
+│
+├── hooks/                       # Custom React hooks
+├── lib/                         # Utility functions
+└── types.ts                     # TypeScript definitions
+
+public/
+├── {Subject Name}/              # Subject folder (e.g., "Systemy Wspomagania Decyzji")
+│   ├── quizzes/                # JSON quiz files
+│   │   └── topic_quiz.json
+│   ├── flashcards/             # JSON flashcard sets
+│   │   └── topic_fiszki.json
+│   ├── materials/              # Text study materials
+│   │   └── topic_tekst.txt
+│   └── audio-materials/        # MP3 audio files
+│       └── topic.mp3
+└── manifest.json               # Auto-generated content index
 ```
 
-## 🎨 Available Features & Components
+## 📝 Adding New Educational Content
 
-This scaffold includes a comprehensive set of modern web development tools:
+### 1. Create Subject Folder
+Create a folder in `public/` with your subject name (in Polish):
+```
+public/Nazwa Przedmiotu/
+```
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+### 2. Add Quizzes
+Create JSON files in `quizzes/` subdirectory:
+```json
+{
+  "title": "Quiz Title",
+  "description": "Optional description",
+  "questions": [
+    {
+      "question": "Question text?",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correctAnswer": 0,
+      "explanation": "Why this answer is correct"
+    }
+  ]
+}
+```
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+### 3. Add Flashcards
+Create JSON files in `flashcards/` subdirectory:
+```json
+{
+  "title": "Flashcard Set Title",
+  "description": "Optional description",
+  "category": "Category name",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Question or term",
+      "back": "Answer or definition"
+    }
+  ]
+}
+```
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+### 4. Add Study Materials
+Add plain text files (`.txt`) in `materials/` subdirectory with your study content.
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+### 5. Add Audio Lectures
+Add MP3 files in `audio-materials/` subdirectory.
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+### 6. Regenerate Manifest
+Run the build command to update the content index:
+```bash
+bun run build
+```
 
-## 🤝 Get Started with Z.ai
+The pre-build script (`scripts/generate-manifest.js`) will automatically scan all subject folders and create an updated `manifest.json` file.
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+## 🏗️ Architecture Overview
+
+### State Management
+- **QuizContext** - Centralized state provider managing:
+  - Quiz state (questions, answers, scoring, timer)
+  - Content loading (materials, flashcards, audio)
+  - Subject selection
+  - Navigation state
+
+### Content Loading
+- Subject-based API routes with query parameters
+- Dynamic content discovery via manifest
+- File-system-based content storage
+- Automatic content type detection
+
+### Screen-Based Navigation
+- Dedicated screen components for each view
+- Context-based state sharing between screens
+- Type-safe navigation with Next.js App Router
+
+### Pre-Build Process
+- Automatic manifest generation
+- Content validation and indexing
+- Metadata extraction from files
+
+## 🌍 Language Support
+
+The platform is designed for Polish university students:
+- All UI text in Polish
+- Educational content in Polish
+- Subject names use Polish terminology
+- Support for Polish characters in filenames and content
+
+## 📄 License
+
+This project is educational software. Please check with the maintainer for usage rights.
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+Built for Polish students preparing for university exams 🎓
