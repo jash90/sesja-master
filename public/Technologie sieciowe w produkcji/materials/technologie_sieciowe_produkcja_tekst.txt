@@ -1,0 +1,199 @@
+Technologie sieciowe w produkcji - tekst dla lektora
+
+Wprowadzenie
+
+Współczesne środowiska produkcyjne opierają się na zaawansowanych technologiach sieciowych, które umożliwiają monitorowanie, zarządzanie i optymalizację procesów przemysłowych. Niniejszy materiał przedstawia kluczowe zagadnienia związane z telemetrią, systemami monitoringu oraz protokołami komunikacyjnymi stosowanymi zarówno w infrastrukturze informatycznej, jak i w automatyce przemysłowej.
+
+Telemetria w kontekście sieci i produkcji
+
+Telemetria to proces automatycznego zbierania, przesyłania i analizy danych pomiarowych z urządzeń zdalnych do centralnego systemu monitoringu. W kontekście sieci i produkcji telemetria oznacza zdalne monitorowanie stanu maszyn, procesów i infrastruktury informatyczno-operacyjnej w czasie rzeczywistym.
+
+W środowisku przemysłowym dane telemetryczne obejmują szeroki zakres parametrów. Do najczęściej monitorowanych należą temperatura i ciśnienie w zbiornikach, kotłach oraz rurociągach. Istotne są również prędkość obrotowa silników i wrzecion oraz zużycie energii elektrycznej przez poszczególne maszyny. Poziom wibracji urządzeń stanowi podstawę diagnostyki predykcyjnej, pozwalając wykrywać problemy zanim doprowadzą do awarii. Monitorowany jest także przepływ mediów takich jak woda, gaz czy olej, a także stan czujników i aktuatorów, które mogą być otwarte lub zamknięte, włączone lub wyłączone.
+
+Trzy filary obserwowalności - metryki, logi i traces
+
+W systemach monitoringu wyróżnia się trzy podstawowe typy danych telemetrycznych, które wzajemnie się uzupełniają i tworzą pełny obraz stanu systemu.
+
+Metryki to wartości liczbowe agregowane w czasie. Mierzą takie parametry jak wykorzystanie procesora, zajętość pamięci czy liczba żądań. Służą do monitorowania trendów, tworzenia alertów, budowania pulpitów nawigacyjnych oraz analizy wydajności. Przykładem metryki może być wykorzystanie procesora na poziomie osiemdziesięciu pięciu procent, całkowita liczba żądań HTTP wynosząca piętnaście tysięcy czy temperatura równa siedemdziesięciu dwóm stopniom Celsjusza.
+
+Logi to zdarzenia tekstowe opatrzone znacznikiem czasowym. Zawierają informacje o błędach, ostrzeżeniach i innych istotnych zdarzeniach. Wykorzystuje się je do debugowania, audytu, analizy incydentów oraz zapewnienia zgodności z wymaganiami regulacyjnymi. Przykładowe wpisy w logach to komunikat o błędzie informujący o przekroczeniu czasu połączenia, informacja o zalogowaniu użytkownika czy ostrzeżenie o niskim poziomie wolnego miejsca na dysku.
+
+Traces, czyli ślady, dokumentują ścieżkę pojedynczego żądania przez system rozproszony. Umożliwiają diagnostykę opóźnień oraz analizę zależności między poszczególnymi serwisami. Przykładowy ślad pokazuje, że żądanie o określonym identyfikatorze przeszło przez bramę interfejsu programistycznego w czasie pięciu milisekund, następnie przez serwis uwierzytelniania w czasie dwunastu milisekund, a na końcu przez bazę danych w czasie czterdziestu pięciu milisekund.
+
+Cechy dobrej metryki
+
+Aby metryka spełniała swoją rolę w systemie monitoringu, powinna charakteryzować się czterema kluczowymi cechami.
+
+Po pierwsze, metryka musi być jednoznaczna. Oznacza to, że ma jasną definicję i każdy rozumie ją w ten sam sposób. Nie pozostawia miejsca na interpretację. Lepiej nazwać metrykę "cpu_usage_percent" niż ogólnikowo "obciążenie systemu".
+
+Po drugie, metryka powinna być stabilna. Metodologia pomiaru nie zmienia się w czasie, co pozwala na porównywanie danych historycznych. Jeśli zmienia się sposób liczenia, wymaga to wersjonowania metryki.
+
+Po trzecie, metryka musi być trendowalna. Można obserwować jej zmiany w czasie i wyciągać wnioski. Metryka powinna mieć sens w ujęciu czasowym, gdzie wzrost lub spadek wskazuje na coś konkretnego.
+
+Po czwarte, metryka powinna być weryfikowalna. Można sprawdzić poprawność pomiaru niezależną metodą. Jeśli metryka pokazuje dziewięćdziesiąt procent wykorzystania procesora, powinno to być możliwe do potwierdzenia innymi narzędziami.
+
+Przykłady metryk dla różnych komponentów
+
+Różne elementy infrastruktury wymagają monitorowania odmiennych parametrów.
+
+Dla serwera kluczowe metryki to procentowe wykorzystanie procesora oraz ilość zajętej pamięci operacyjnej wyrażona w bajtach.
+
+W przypadku przełącznika lub routera istotne są ruch sieciowy na interfejsie mierzony w bajtach przychodzących i wychodzących oraz całkowita liczba błędów na porcie.
+
+Aplikacje monitoruje się poprzez całkowitą liczbę żądań HTTP oraz czas odpowiedzi wyrażony w sekundach.
+
+Dla urządzeń Internetu Rzeczy i sensorów typowe metryki to odczyt temperatury w stopniach Celsjusza oraz poziom naładowania baterii wyrażony w procentach.
+
+System Prometheus
+
+Prometheus to system monitoringu i alertingu o otwartym kodzie źródłowym, stworzony pierwotnie przez firmę SoundCloud, a obecnie rozwijany przez Cloud Native Computing Foundation. Jest standardem de facto w monitorowaniu środowisk kontenerowych i aplikacji natywnych dla chmury.
+
+W zastosowaniach informatycznych i operacyjnych Prometheus służy do monitorowania infrastruktury IT obejmującej serwery, kontenery i klastry Kubernetes. Umożliwia zbieranie metryk z urządzeń sieciowych poprzez eksporter protokołu SNMP. Pozwala na monitorowanie aplikacji poprzez instrumentację kodu i śledzenie metryk biznesowych. System obsługuje alerting na podstawie przekroczonych progów oraz integruje się z systemami operacyjnymi poprzez eksportery dla protokołów Modbus czy OPC UA.
+
+Model pobierania danych w Prometheusie
+
+Prometheus wykorzystuje model pull, określany również jako scraping. W tym modelu Prometheus aktywnie odpytuje zdefiniowane punkty końcowe HTTP, zazwyczaj dostępne pod ścieżką "/metrics", w regularnych interwałach wynoszących na przykład piętnaście sekund. Monitorowane cele wystawiają metryki w formacie tekstowym, a Prometheus je pobiera i zapisuje w swojej bazie szeregów czasowych.
+
+Model pull oferuje szereg zalet w środowisku produkcyjnym. Pod względem bezpieczeństwa cele nie muszą mieć dostępu do Prometheusa i nie otwierają połączeń wychodzących, co oznacza jednokierunkowy ruch sieciowy. Zapewnia również przewidywalne punkty wejścia, ponieważ administrator definiuje listę celów i łatwo kontroluje, co jest monitorowane. Centralizacja konfiguracji scrapingu w jednym miejscu ułatwia zarządzanie. Dodatkowo model ten umożliwia szybkie wykrywanie problemów, gdyż brak odpowiedzi od celu natychmiast sygnalizuje problem poprzez metrykę oznaczającą dostępność.
+
+Architektura systemu monitoringu
+
+Przepływ danych w architekturze monitoringu opartego na Prometheusie przebiega następująco. Cel to monitorowany obiekt, którym może być serwer, przełącznik, aplikacja lub sensor. Stanowi on źródło danych surowych.
+
+Eksporter to adapter translujący metryki z formatu natywnego na format rozumiany przez Prometheusa. Przykładami eksporterów są node_exporter dla systemów Linux, snmp_exporter dla urządzeń sieciowych czy mysqld_exporter dla baz danych MySQL.
+
+Punkt końcowy "/metrics" to interfejs HTTP wystawiający metryki w formacie tekstowym, gdzie każda metryka ma postać klucza i wartości ze znacznikiem czasowym.
+
+Prometheus pełni rolę silnika zbierającego, przetwarzającego i przechowującego metryki. Wykonuje również zapytania w języku PromQL.
+
+Baza danych szeregów czasowych, określana skrótem TSDB, to wbudowana baza danych Prometheusa zoptymalizowana pod kątem przechowywania danych szeregów czasowych.
+
+Grafana i system alertingu stanowią warstwę wizualizacji w postaci pulpitów nawigacyjnych oraz alertingu w postaci powiadomień generowanych na podstawie zdefiniowanych reguł.
+
+Typy metryk w Prometheusie
+
+Prometheus definiuje cztery podstawowe typy metryk, z których każdy ma określone zastosowanie.
+
+Counter to licznik monotoniczny, który tylko rośnie lub resetuje się do zera. Używany jest do zliczania zdarzeń. Przykładem może być całkowita liczba wysłanych pakietów sieciowych lub całkowita liczba żądań HTTP.
+
+Gauge to wartość chwilowa, która może zarówno rosnąć, jak i maleć. Stanowi migawkę aktualnego stanu. Przykładami są aktualna temperatura, wykorzystanie pamięci w bajtach czy liczba aktywnych połączeń.
+
+Histogram przedstawia rozkład wartości w predefiniowanych przedziałach zwanych kubełkami. Oblicza percentyle po stronie serwera. Przykładem jest czas trwania żądań HTTP pogrupowany w przedziały: poniżej stu milisekund, poniżej pięciuset milisekund, poniżej jednej sekundy i poniżej pięciu sekund.
+
+Summary jest podobne do histogramu, ale percentyle obliczane są po stronie klienta. Jest mniej elastyczne, ale dokładniejsze dla konkretnych kwantyli. Przykładem jest opóźnienie żądania dla dziewięćdziesiątego piątego percentyla.
+
+Protokół SNMP
+
+Simple Network Management Protocol, w skrócie SNMP, to protokół warstwy aplikacji wykorzystujący porty UDP 161 i 162, służący do zarządzania i monitorowania urządzeń sieciowych. Jest standardem przemysłowym stosowanym od ponad trzydziestu lat.
+
+W monitoringu infrastruktury SNMP pełni kluczową rolę. Umożliwia zbieranie metryk z routerów, przełączników, zapór sieciowych i drukarek. Pozwala monitorować urządzenia przemysłowe takie jak sterowniki PLC, zasilacze awaryjne czy systemy klimatyzacji. Protokół umożliwia również zdalne zarządzanie konfiguracją urządzeń oraz odbieranie alertów o awariach i zdarzeniach krytycznych poprzez mechanizm pułapek.
+
+Elementy architektury SNMP
+
+Architektura SNMP składa się z czterech podstawowych elementów.
+
+Manager, nazywany również stacją zarządzania siecią, to centralna aplikacja monitorująca. Wysyła zapytania typu GET i SET do agentów oraz odbiera pułapki. Przykładami takich aplikacji są Zabbix, PRTG czy LibreNMS.
+
+Agent to oprogramowanie działające na monitorowanym urządzeniu. Odpowiada na zapytania managera i wysyła pułapki przy wystąpieniu zdarzeń. Agent jest wbudowany w routery, przełączniki i serwery.
+
+Baza informacji zarządzania, w skrócie MIB, to baza danych opisująca strukturę informacji dostępnych przez SNMP. Definiuje nazwy, typy danych i znaczenie obiektów. Przechowywana jest jako plik tekstowy w formacie SMI.
+
+Identyfikator obiektu, w skrócie OID, to unikalny identyfikator numeryczny obiektu w bazie MIB. Na przykład sekwencja 1.3.6.1.2.1.1.1.0 odpowiada opisowi systemu. Identyfikatory mają hierarchiczną strukturę drzewiastą.
+
+Współpraca między elementami przebiega następująco: manager używa identyfikatorów OID do odpytywania agenta, baza MIB pozwala tłumaczyć numeryczne identyfikatory na czytelne nazwy, a agent zwraca wartości dla żądanych identyfikatorów.
+
+Powiązanie MIB i OID oraz korzyści ze standaryzacji
+
+Baza MIB stanowi formalną definicję, czyli schemat obiektów zarządzalnych, podczas gdy identyfikator OID to konkretny adres lub ścieżka do obiektu w tej strukturze. Baza MIB zawiera definicje identyfikatorów wraz z ich typami danych, zakresami wartości i opisami.
+
+Przykładowo identyfikator 1.3.6.1.2.1.2.2.1.10 jest zdefiniowany w bazie MIB-II jako ifInOctets, co oznacza bajty wejściowe na interfejsie. Baza MIB tłumaczy numeryczny identyfikator na nazwę i określa, że wartość jest typu Counter32.
+
+Standaryzacja baz MIB przynosi szereg korzyści. Zapewnia interoperacyjność, ponieważ urządzenia różnych producentów używają tych samych identyfikatorów dla standardowych metryk. Umożliwia przenośność konfiguracji, dzięki czemu monitoring działa bez zmian po wymianie sprzętu. Ułatwia automatyzację, gdyż narzędzia mogą automatycznie odkrywać i interpretować metryki. Stanowi również dokumentację dostępnych parametrów urządzenia.
+
+Operacje w protokole SNMP
+
+Protokół SNMP definiuje kilka podstawowych operacji.
+
+Operacja GET pobiera wartość konkretnego identyfikatora OID i jest używana do odczytu pojedynczej metryki, na przykład temperatury procesora.
+
+Operacja GETNEXT pobiera następny identyfikator w drzewie MIB i jest używana do iteracji po nieznanej strukturze lub tabelach.
+
+Operacja GETBULK, dostępna od wersji drugiej protokołu, pobiera wiele identyfikatorów jednocześnie. Stanowi optymalizację dla dużych tabel, na przykład zawierających informacje o wszystkich interfejsach sieciowych.
+
+Operacja SET modyfikuje wartość identyfikatora na urządzeniu i jest używana do zdalnej konfiguracji, na przykład zmiany nazwy interfejsu lub wyłączenia portu.
+
+Pułapka TRAP to asynchroniczne powiadomienie wysyłane przez agenta do managera. Sygnalizuje zdarzenie takie jak awaria czy przekroczenie progu. Nie wymaga potwierdzenia.
+
+Operacja INFORM, dostępna od wersji drugiej, działa podobnie do pułapki, ale wymaga potwierdzenia od managera. Gwarantuje dostarczenie powiadomienia.
+
+Wersje protokołu SNMP
+
+Protokół SNMP występuje w trzech głównych wersjach, które różnią się poziomem bezpieczeństwa i funkcjonalnością.
+
+Wersja pierwsza stanowi podstawową implementację protokołu. Uwierzytelnianie odbywa się przez łańcuch społeczności przesyłany jako tekst jawny. Nie ma szyfrowania. Obsługuje proste operacje GET, SET i TRAP. Wadą jest to, że łańcuch społeczności jest widoczny w sieci.
+
+Wersja druga c wprowadza rozszerzenia obejmujące operację GETBULK, operację INFORM, lepszą obsługę błędów oraz sześćdziesięcioczterobitowe liczniki. Nadal używa łańcucha społeczności przesyłanego jako tekst jawny. Litera "c" oznacza bezpieczeństwo oparte na społeczności. Jest to najpopularniejsza wersja w praktyce.
+
+Wersja trzecia oferuje pełne bezpieczeństwo obejmujące uwierzytelnianie algorytmami MD5 lub SHA, szyfrowanie algorytmami DES lub AES oraz kontrolę dostępu poprzez mechanizm VACM. Definiuje trzy poziomy bezpieczeństwa: bez uwierzytelniania i bez prywatności, z uwierzytelnianiem bez prywatności oraz z uwierzytelnianiem i prywatnością. Konfiguracja jest złożona, ale wersja ta jest wymagana w środowiskach produkcyjnych.
+
+Łańcuch społeczności ma istotne wady. Jest przesyłany bez szyfrowania, co czyni go łatwym do przechwycenia. Często używane są wartości domyślne "public" lub "private", które są łatwe do odgadnięcia. Brakuje również granularnej kontroli dostępu, ponieważ jedna wartość jest używana dla wszystkich operacji.
+
+Typowe klasy metryk SNMP w sieci produkcyjnej
+
+W sieciach produkcyjnych poprzez SNMP zbierane są dwie główne klasy metryk.
+
+Metryki interfejsów sieciowych obejmują bajty przychodzące i wychodzące, błędy na interfejsie, stan operacyjny określający czy interfejs jest włączony czy wyłączony oraz przepustowość interfejsu.
+
+Metryki systemowe obejmują czas działania urządzenia, obciążenie procesora, wykorzystanie pamięci i dysków oraz wartości odczytywane z sensorów takich jak temperatura czy prędkość wentylatorów.
+
+Język zapytań PromQL
+
+PromQL, czyli Prometheus Query Language, to język zapytań dla Prometheusa służący do selekcji i agregacji danych szeregów czasowych. Pozwala na tworzenie złożonych zapytań, obliczanie pochodnych metryk i definiowanie reguł alertingu.
+
+Język ten umożliwia selekcję metryk z filtrami, na przykład wybranie wszystkich żądań HTTP metodą POST zakończonych kodem błędu 500. Oferuje funkcje agregujące takie jak suma, średnia, maksimum, minimum i licznik. Pozwala obliczać tempo zmian dla liczników, na przykład liczbę żądań na sekundę w ostatnich pięciu minutach. Umożliwia również wyznaczanie percentyli z histogramów oraz definiowanie warunków alertów, na przykład gdy średnie wykorzystanie procesora przekracza osiemdziesiąt procent.
+
+Histogramy i percentyle
+
+Dziewięćdziesiąty piąty percentyl oznacza wartość, poniżej której znajduje się dziewięćdziesiąt pięć procent wszystkich pomiarów. Innymi słowy, tylko pięć procent pomiarów przekracza tę wartość.
+
+Przykładowo, jeśli dziewięćdziesiąty piąty percentyl czasu odpowiedzi wynosi dwieście milisekund, oznacza to, że dziewięćdziesiąt pięć procent żądań było obsłużonych w czasie równym lub krótszym niż dwieście milisekund, a tylko pięć procent trwało dłużej.
+
+W kontekście umów o poziomie usług i celów poziomu usług percentyle mają kluczowe znaczenie. Umowa może określać, że dziewięćdziesiąt dziewięć procent żądań będzie obsłużonych w czasie krótszym niż pięćset milisekund, co weryfikuje się poprzez dziewięćdziesiąty dziewiąty percentyl. Percentyle eliminują wpływ pojedynczych anomalii i lepiej oddają doświadczenie użytkownika niż średnia. Pozwalają również wykryć problemy dotykające tak zwanego długiego ogona dystrybucji.
+
+Platforma Grafana
+
+Grafana to platforma o otwartym kodzie źródłowym służąca do wizualizacji i analizy danych z wielu źródeł, takich jak Prometheus, InfluxDB, Elasticsearch czy bazy SQL. Umożliwia tworzenie interaktywnych pulpitów nawigacyjnych.
+
+Grafana oferuje różnorodne typy wizualizacji. Wykres czasowy przedstawia linie lub słupki pokazujące zmiany wartości w czasie. Wskaźnik typu gauge w postaci tarczy lub termometru pokazuje aktualną wartość w odniesieniu do progów. Mapa ciepła pokazuje rozkład wartości, na przykład kubełki opóźnień w czasie. Statystyka wyświetla pojedynczą dużą liczbę, na przykład aktualny czas działania. Tabela prezentuje dane tabelaryczne z możliwością sortowania i filtrowania. Wykres słupkowy służy do porównywania kategorii.
+
+Integracja z Prometheusem polega na tym, że Grafana łączy się z Prometheusem jako źródłem danych. Panele używają zapytań w języku PromQL do pobierania i wyświetlania metryk.
+
+Dobór wizualizacji do typu metryki
+
+Wybór odpowiedniej wizualizacji zależy od charakteru metryki i celu analizy.
+
+Wykres czasowy sprawdza się dla metryk zmieniających się w czasie, gdzie ważny jest trend. Jest idealny dla wykorzystania procesora, ruchu sieciowego, częstotliwości żądań czy temperatury w czasie. Pozwala wykryć anomalie, wzorce i korelacje.
+
+Wskaźnik typu gauge sprawdza się dla pojedynczej wartości chwilowej z określonymi progami oznaczającymi stan normalny, ostrzeżenie lub krytyczny. Jest idealny dla wykorzystania dysku w procentach, aktualnej temperatury czy poziomu baterii. Umożliwia szybką ocenę stanu na pierwszy rzut oka.
+
+Mapa ciepła sprawdza się dla rozkładów wartości i histogramów w czasie. Jest idealna dla dystrybucji opóźnień, gdzie poszczególne percentyle są widoczne wizualnie, dla wzorców dostępu w czasie pokazujących godziny szczytu oraz dla analizy kubełków histogramu.
+
+Ogólna zasada mówi, że dla trendów należy używać wykresu czasowego, dla stanu aktualnego wskaźnika lub statystyki, dla rozkładów mapy ciepła lub histogramu, a dla porównania kategorii wykresu słupkowego.
+
+Porównanie protokołów przemysłowych i informatycznych
+
+W środowiskach produkcyjnych stosuje się różne protokoły w zależności od zastosowania.
+
+Modbus to protokół komunikacji ze sterownikami PLC, sterownikami i czujnikami. Charakteryzuje się prostotą, szeroką kompatybilnością i niskimi wymaganiami sprzętowymi. Stosowany jest w automatyce przemysłowej. Nazwa pochodzi od "Modicon Bus", gdyż protokół został stworzony przez firmę Modicon w 1979 roku. Występuje w wariantach Modbus RTU dla komunikacji szeregowej oraz Modbus TCP dla sieci Ethernet.
+
+OPC UA, czyli Open Platform Communications Unified Architecture, służy do integracji systemów przemysłowych zgodnie z koncepcją Przemysłu 4.0. Oferuje bezpieczeństwo, semantykę i niezależność od platformy. Jest następcą klasycznego OPC i stosowany jest w integracji systemów informatycznych i operacyjnych oraz w systemach SCADA.
+
+MQTT, czyli Message Queuing Telemetry Transport, to lekki protokół komunikacji typu publikuj-subskrybuj zaprojektowany dla urządzeń Internetu Rzeczy o ograniczonych zasobach i niestabilnych połączeniach. Charakteryzuje się niskim zużyciem zasobów i działa na portach TCP 1883 oraz 8883 dla połączeń szyfrowanych. Stosowany jest w przetwarzaniu brzegowym i inteligentnych urządzeniach.
+
+SNMP służy do monitorowania urządzeń sieciowych takich jak routery, przełączniki i zapory sieciowe. Oferuje uniwersalność, standaryzację poprzez bazy MIB oraz mechanizm pułapek.
+
+Prometheus służy do monitorowania aplikacji i kontenerów w środowiskach natywnych dla chmury i klastrach Kubernetes. Charakteryzuje się modelem pobierania danych, językiem zapytań PromQL oraz rozbudowanym ekosystemem eksporterów.
+
+Podsumowanie
+
+Technologie sieciowe stanowią fundament nowoczesnych środowisk produkcyjnych, łącząc świat informatyki i automatyki przemysłowej. Telemetria umożliwia zbieranie danych z rozproszonych urządzeń, podczas gdy systemy monitoringu oparte na metrykach, logach i śladach zapewniają pełny wgląd w stan infrastruktury. Prometheus wraz z Grafaną tworzą potężne narzędzie do monitorowania i wizualizacji, szczególnie w środowiskach kontenerowych. Protokół SNMP pozostaje standardem w monitorowaniu urządzeń sieciowych, oferując standaryzowany dostęp do metryk poprzez hierarchię baz MIB i identyfikatorów OID. Zrozumienie różnic między protokołami takimi jak Modbus, OPC UA, MQTT, SNMP i Prometheus pozwala na świadomy wybór rozwiązań odpowiednich do konkretnych zastosowań w infrastrukturze informatycznej i operacyjnej.

@@ -1,0 +1,1106 @@
+{
+  "title": "Technologie sieciowe w produkcji - Quiz",
+  "description": "Kompleksowy quiz sprawdzający wiedzę z zakresu telemetrii, systemów monitoringu (Prometheus, SNMP), protokołów przemysłowych i wizualizacji danych. 100 pytań od podstawowych po zaawansowane.",
+  "questions": [
+    {
+      "question": "Czym jest telemetria w kontekście sieci i produkcji?",
+      "options": [
+        "Ręczne zbieranie danych z urządzeń lokalnych",
+        "Automatyczne zbieranie, przesyłanie i analiza danych pomiarowych z urządzeń zdalnych",
+        "System kontroli dostępu do sieci",
+        "Protokół komunikacji między serwerami"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Telemetria to proces automatycznego zbierania, przesyłania i analizy danych pomiarowych z urządzeń zdalnych do centralnego systemu monitoringu."
+    },
+    {
+      "question": "Który z poniższych NIE jest typowym przykładem danych telemetrycznych w środowisku przemysłowym?",
+      "options": [
+        "Temperatura w zbiornikach",
+        "Prędkość obrotowa silników",
+        "Adres e-mail operatora",
+        "Poziom wibracji urządzeń"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dane telemetryczne to parametry fizyczne i operacyjne urządzeń, takie jak temperatura, prędkość, wibracje, przepływ mediów. Adres e-mail operatora nie jest daną telemetryczną."
+    },
+    {
+      "question": "Do czego służy diagnostyka predykcyjna oparta na pomiarze wibracji?",
+      "options": [
+        "Do zwiększenia prędkości maszyn",
+        "Do wykrywania problemów zanim doprowadzą do awarii",
+        "Do kalibracji sensorów temperatury",
+        "Do optymalizacji zużycia energii"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Poziom wibracji urządzeń stanowi podstawę diagnostyki predykcyjnej, pozwalając wykrywać problemy zanim doprowadzą do awarii."
+    },
+    {
+      "question": "Metryki to:",
+      "options": [
+        "Zdarzenia tekstowe z timestampem",
+        "Ścieżki żądań przez system rozproszony",
+        "Wartości liczbowe agregowane w czasie",
+        "Pliki konfiguracyjne systemu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Metryki to wartości liczbowe agregowane w czasie, takie jak wykorzystanie procesora, zajętość pamięci czy liczba żądań."
+    },
+    {
+      "question": "Które z poniższych jest przykładem logu?",
+      "options": [
+        "cpu_usage=85%",
+        "ERROR: Connection timeout",
+        "TraceID: abc123 → API Gateway (5ms)",
+        "temperature=72°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Logi to zdarzenia tekstowe z timestampem, zawierające informacje o błędach, ostrzeżeniach i zdarzeniach. 'ERROR: Connection timeout' to typowy wpis w logu."
+    },
+    {
+      "question": "Do czego służą traces (ślady)?",
+      "options": [
+        "Do monitorowania trendów wydajności",
+        "Do audytu i compliance",
+        "Do dokumentowania ścieżki żądania przez system rozproszony",
+        "Do tworzenia kopii zapasowych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Traces dokumentują ścieżkę pojedynczego żądania przez system rozproszony, umożliwiając diagnostykę opóźnień i analizę zależności między serwisami."
+    },
+    {
+      "question": "Który typ danych telemetrycznych najlepiej nadaje się do analizy incydentów?",
+      "options": [
+        "Metryki",
+        "Logi",
+        "Traces",
+        "Dashboardy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Logi zawierają szczegółowe informacje o zdarzeniach tekstowych z timestampem i służą m.in. do debugowania i analizy incydentów."
+    },
+    {
+      "question": "Pierwszą cechą dobrej metryki jest to, że powinna być:",
+      "options": [
+        "Kolorowa",
+        "Jednoznaczna",
+        "Złożona",
+        "Tajna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metryka musi być jednoznaczna - ma jasną definicję i każdy rozumie ją w ten sam sposób, nie pozostawiając miejsca na interpretację."
+    },
+    {
+      "question": "Co oznacza, że metryka jest 'stabilna'?",
+      "options": [
+        "Jej wartość nigdy się nie zmienia",
+        "Metodologia pomiaru nie zmienia się w czasie",
+        "Jest przechowywana na stabilnym serwerze",
+        "Ma stałą wartość 100%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stabilność metryki oznacza, że metodologia pomiaru nie zmienia się w czasie, co pozwala na porównywanie danych historycznych."
+    },
+    {
+      "question": "Dlaczego metryka powinna być 'trendowalna'?",
+      "options": [
+        "Aby była modna",
+        "Aby można było obserwować zmiany w czasie i wyciągać wnioski",
+        "Aby można było ją eksportować",
+        "Aby działała tylko w określonych godzinach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trendowalność oznacza, że można obserwować zmiany metryki w czasie i wyciągać wnioski - wzrost lub spadek wskazuje na coś konkretnego."
+    },
+    {
+      "question": "Co oznacza weryfikowalność metryki?",
+      "options": [
+        "Metryka wymaga hasła do odczytu",
+        "Można sprawdzić poprawność pomiaru niezależną metodą",
+        "Metryka jest podpisana cyfrowo",
+        "Tylko administrator może ją modyfikować"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Weryfikowalność oznacza, że można sprawdzić poprawność pomiaru niezależną metodą - jeśli metryka pokazuje 90% CPU, powinno to być możliwe do potwierdzenia innymi narzędziami."
+    },
+    {
+      "question": "Która nazwa metryki jest lepsza zgodnie z zasadą jednoznaczności?",
+      "options": [
+        "obciążenie systemu",
+        "cpu_usage_percent",
+        "load",
+        "system_status"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nazwa 'cpu_usage_percent' jest jednoznaczna - jasno określa co mierzy (CPU) i w jakich jednostkach (procent). 'Obciążenie systemu' jest zbyt ogólne."
+    },
+    {
+      "question": "Typową metryką dla serwera jest:",
+      "options": [
+        "interface_bytes_in",
+        "sensor_temperature_celsius",
+        "memory_used_bytes",
+        "http_requests_total"
+      ],
+      "correctAnswer": 2,
+      "explanation": "memory_used_bytes (ilość zajętej pamięci RAM) to typowa metryka serwerowa. interface_bytes_in dotyczy urządzeń sieciowych, sensor_temperature_celsius - IoT, a http_requests_total - aplikacji."
+    },
+    {
+      "question": "Która metryka jest typowa dla switcha/routera?",
+      "options": [
+        "cpu_usage_percent",
+        "interface_errors_total",
+        "request_latency_seconds",
+        "sensor_battery_level_percent"
+      ],
+      "correctAnswer": 1,
+      "explanation": "interface_errors_total (liczba błędów na porcie) to typowa metryka dla urządzeń sieciowych jak switch czy router."
+    },
+    {
+      "question": "Metryka 'http_requests_total' jest typowa dla:",
+      "options": [
+        "Serwera",
+        "Switcha",
+        "Aplikacji",
+        "Sensora IoT"
+      ],
+      "correctAnswer": 2,
+      "explanation": "http_requests_total (całkowita liczba żądań HTTP) to metryka aplikacyjna, mierząca ruch do aplikacji webowej."
+    },
+    {
+      "question": "Prometheus został stworzony przez:",
+      "options": [
+        "Google",
+        "Microsoft",
+        "SoundCloud",
+        "Amazon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Prometheus to system monitoringu stworzony pierwotnie przez firmę SoundCloud, obecnie rozwijany przez Cloud Native Computing Foundation (CNCF)."
+    },
+    {
+      "question": "Prometheus jest obecnie rozwijany przez:",
+      "options": [
+        "Apache Foundation",
+        "Cloud Native Computing Foundation (CNCF)",
+        "Linux Foundation",
+        "Mozilla Foundation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prometheus jest obecnie rozwijany przez Cloud Native Computing Foundation (CNCF) i jest standardem de facto w monitorowaniu środowisk kontenerowych."
+    },
+    {
+      "question": "W jakim środowisku Prometheus jest standardem de facto?",
+      "options": [
+        "Mainframe",
+        "Środowiska kontenerowe i cloud-native",
+        "Systemy embedded",
+        "Sieci telefoniczne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prometheus jest standardem de facto w monitorowaniu środowisk kontenerowych i aplikacji natywnych dla chmury (cloud-native)."
+    },
+    {
+      "question": "Model PULL (scraping) w Prometheusie oznacza, że:",
+      "options": [
+        "Targety wysyłają metryki do Prometheusa",
+        "Prometheus aktywnie odpytuje endpointy targetów",
+        "Metryki są przechowywane w chmurze",
+        "Dane są kompresowane przed wysłaniem"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W modelu PULL Prometheus aktywnie odpytuje (scrapuje) zdefiniowane endpointy HTTP (zazwyczaj /metrics) w regularnych interwałach."
+    },
+    {
+      "question": "Pod jaką ścieżką HTTP targety zazwyczaj wystawiają metryki dla Prometheusa?",
+      "options": [
+        "/api/v1/data",
+        "/metrics",
+        "/prometheus",
+        "/monitoring"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Standardowym endpointem dla metryk Prometheusa jest ścieżka /metrics."
+    },
+    {
+      "question": "Jak często Prometheus typowo odpytuje targety?",
+      "options": [
+        "Co 1 sekundę",
+        "Co 15 sekund",
+        "Co 5 minut",
+        "Co godzinę"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prometheus typowo odpytuje zdefiniowane endpointy w regularnych interwałach, np. co 15 sekund."
+    },
+    {
+      "question": "Która z zalet modelu PULL dotyczy bezpieczeństwa?",
+      "options": [
+        "Targety muszą znać adres Prometheusa",
+        "Ruch jest dwukierunkowy",
+        "Targety nie muszą mieć dostępu do Prometheusa, ruch jest jednokierunkowy",
+        "Metryki są szyfrowane automatycznie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W modelu PULL targety nie muszą mieć dostępu do Prometheusa i nie otwierają połączeń wychodzących - ruch jest jednokierunkowy, co zwiększa bezpieczeństwo."
+    },
+    {
+      "question": "Metryka 'up' w Prometheusie sygnalizuje:",
+      "options": [
+        "Wykorzystanie CPU",
+        "Czy target odpowiada na zapytania",
+        "Czas działania systemu",
+        "Liczbę aktywnych użytkowników"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Brak odpowiedzi od targetu natychmiast sygnalizuje problem poprzez metrykę 'up', która wskazuje czy target jest dostępny."
+    },
+    {
+      "question": "Czym jest Exporter w architekturze Prometheusa?",
+      "options": [
+        "Baza danych metryk",
+        "Adapter translujący metryki z formatu natywnego na format Prometheus",
+        "Interfejs użytkownika",
+        "System alertingu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Exporter to adapter translujący metryki z formatu natywnego urządzenia lub aplikacji na format rozumiany przez Prometheusa."
+    },
+    {
+      "question": "Który exporter służy do monitorowania systemów Linux?",
+      "options": [
+        "snmp_exporter",
+        "mysqld_exporter",
+        "node_exporter",
+        "windows_exporter"
+      ],
+      "correctAnswer": 2,
+      "explanation": "node_exporter to exporter dla systemów Linux, zbierający metryki systemowe takie jak CPU, pamięć, dyski."
+    },
+    {
+      "question": "TSDB w kontekście Prometheusa oznacza:",
+      "options": [
+        "Total System Database",
+        "Time Series Database",
+        "Temporary Storage Database",
+        "Telemetry System Database"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TSDB to Time Series Database - wbudowana baza danych Prometheusa zoptymalizowana pod kątem przechowywania danych szeregów czasowych."
+    },
+    {
+      "question": "Counter w Prometheusie to metryka, która:",
+      "options": [
+        "Może rosnąć i maleć",
+        "Tylko rośnie lub resetuje się do 0",
+        "Przechowuje rozkład wartości",
+        "Oblicza percentyle"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Counter to licznik monotoniczny, który tylko rośnie lub resetuje się do zera. Używany jest do zliczania zdarzeń."
+    },
+    {
+      "question": "Który typ metryki najlepiej nadaje się do pomiaru aktualnej temperatury?",
+      "options": [
+        "Counter",
+        "Gauge",
+        "Histogram",
+        "Summary"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Gauge to wartość chwilowa, która może zarówno rosnąć, jak i maleć - idealna dla pomiarów temperatury, która zmienia się w obu kierunkach."
+    },
+    {
+      "question": "Przykładem metryki typu Counter jest:",
+      "options": [
+        "temperature_celsius",
+        "memory_usage_bytes",
+        "http_requests_total",
+        "active_connections"
+      ],
+      "correctAnswer": 2,
+      "explanation": "http_requests_total to Counter - zlicza całkowitą liczbę żądań HTTP, wartość tylko rośnie (lub resetuje się przy restarcie)."
+    },
+    {
+      "question": "Histogram w Prometheusie służy do:",
+      "options": [
+        "Zliczania zdarzeń",
+        "Pomiaru wartości chwilowych",
+        "Przedstawiania rozkładu wartości w przedziałach (buckets)",
+        "Szyfrowania danych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Histogram przedstawia rozkład wartości w predefiniowanych przedziałach zwanych buckets, pozwalając obliczać percentyle po stronie serwera."
+    },
+    {
+      "question": "Czym różni się Summary od Histogramu?",
+      "options": [
+        "Summary nie przechowuje danych",
+        "Percentyle w Summary są obliczane po stronie klienta, nie serwera",
+        "Summary może tylko rosnąć",
+        "Summary nie wymaga konfiguracji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W Summary percentyle są obliczane po stronie klienta, podczas gdy w Histogramie - po stronie serwera. Summary jest mniej elastyczne, ale dokładniejsze dla konkretnych kwantyli."
+    },
+    {
+      "question": "SNMP to skrót od:",
+      "options": [
+        "Simple Network Monitoring Protocol",
+        "Simple Network Management Protocol",
+        "Standard Network Management Protocol",
+        "Secure Network Management Protocol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SNMP to Simple Network Management Protocol - protokół warstwy aplikacji do zarządzania i monitorowania urządzeń sieciowych."
+    },
+    {
+      "question": "SNMP wykorzystuje protokół transportowy:",
+      "options": [
+        "TCP",
+        "UDP",
+        "ICMP",
+        "SCTP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SNMP wykorzystuje protokół UDP - port 161 dla zapytań i 162 dla TRAP."
+    },
+    {
+      "question": "Na jakim porcie UDP działa SNMP dla zapytań?",
+      "options": [
+        "22",
+        "80",
+        "161",
+        "443"
+      ],
+      "correctAnswer": 2,
+      "explanation": "SNMP używa portu UDP 161 dla zapytań (GET, SET) i portu 162 dla TRAP."
+    },
+    {
+      "question": "Manager (NMS) w architekturze SNMP to:",
+      "options": [
+        "Oprogramowanie na monitorowanym urządzeniu",
+        "Centralna aplikacja monitorująca",
+        "Baza danych obiektów",
+        "Identyfikator obiektu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Manager (Network Management Station) to centralna aplikacja monitorująca, która wysyła zapytania GET/SET do agentów i odbiera TRAP-y."
+    },
+    {
+      "question": "Agent SNMP to:",
+      "options": [
+        "Centralna aplikacja zarządzająca",
+        "Oprogramowanie działające na monitorowanym urządzeniu",
+        "Format pliku konfiguracyjnego",
+        "Typ metryki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Agent to oprogramowanie działające na monitorowanym urządzeniu, które odpowiada na zapytania managera i wysyła TRAP-y przy wystąpieniu zdarzeń."
+    },
+    {
+      "question": "MIB to skrót od:",
+      "options": [
+        "Management Information Base",
+        "Monitoring Interface Board",
+        "Main Integration Bus",
+        "Metric Identification Block"
+      ],
+      "correctAnswer": 0,
+      "explanation": "MIB to Management Information Base - baza danych opisująca strukturę informacji dostępnych przez SNMP."
+    },
+    {
+      "question": "OID to skrót od:",
+      "options": [
+        "Open Interface Database",
+        "Object Identifier",
+        "Operational Information Data",
+        "Output Interface Driver"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OID to Object Identifier - unikalny identyfikator numeryczny obiektu w bazie MIB, np. 1.3.6.1.2.1.1.1.0"
+    },
+    {
+      "question": "Struktura OID jest:",
+      "options": [
+        "Liniowa",
+        "Cykliczna",
+        "Hierarchiczna (drzewiasta)",
+        "Płaska"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Identyfikatory OID mają hierarchiczną strukturę drzewiastą, gdzie każdy poziom jest oddzielony kropką."
+    },
+    {
+      "question": "OID 1.3.6.1.2.1.1.1.0 odpowiada:",
+      "options": [
+        "Temperaturze CPU",
+        "Opisowi systemu (sysDescr)",
+        "Liczbie interfejsów",
+        "Czasowi działania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OID 1.3.6.1.2.1.1.1.0 to sysDescr - opis systemu w standardowej bazie MIB."
+    },
+    {
+      "question": "Operacja GET w SNMP służy do:",
+      "options": [
+        "Modyfikacji wartości na urządzeniu",
+        "Pobierania wartości konkretnego OID-a",
+        "Wysyłania alertów",
+        "Iteracji po drzewie MIB"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operacja GET pobiera wartość konkretnego OID-a i jest używana do odczytu pojedynczej metryki."
+    },
+    {
+      "question": "Do czego służy operacja GETNEXT?",
+      "options": [
+        "Do pobierania następnego OID w drzewie MIB",
+        "Do modyfikacji wartości",
+        "Do wysyłania potwierdzeń",
+        "Do restartowania agenta"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Operacja GETNEXT pobiera następny OID w drzewie MIB i jest używana do iteracji po nieznanej strukturze lub tabelach."
+    },
+    {
+      "question": "Operacja GETBULK jest dostępna od wersji:",
+      "options": [
+        "SNMPv1",
+        "SNMPv2c",
+        "SNMPv3",
+        "SNMPv4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operacja GETBULK została wprowadzona w SNMPv2 i służy do pobierania wielu OID-ów jednocześnie."
+    },
+    {
+      "question": "Operacja SET w SNMP służy do:",
+      "options": [
+        "Odczytu wartości",
+        "Modyfikacji wartości OID-a na urządzeniu",
+        "Wysyłania alertów",
+        "Kasowania logów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operacja SET modyfikuje wartość OID-a na urządzeniu i jest używana do zdalnej konfiguracji."
+    },
+    {
+      "question": "TRAP w SNMP to:",
+      "options": [
+        "Zapytanie o wartość OID",
+        "Asynchroniczne powiadomienie wysyłane przez agenta do managera",
+        "Potwierdzenie otrzymania danych",
+        "Operacja konfiguracyjna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TRAP to asynchroniczne powiadomienie wysyłane przez agenta do managera, sygnalizujące zdarzenie takie jak awaria czy przekroczenie progu."
+    },
+    {
+      "question": "Czym INFORM różni się od TRAP?",
+      "options": [
+        "INFORM jest szybszy",
+        "INFORM wymaga potwierdzenia od managera",
+        "INFORM nie przesyła danych",
+        "INFORM działa tylko w SNMPv1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "INFORM, w przeciwieństwie do TRAP, wymaga potwierdzenia (ACK) od managera, co gwarantuje dostarczenie powiadomienia."
+    },
+    {
+      "question": "Główną wadą SNMPv1 i SNMPv2c jest:",
+      "options": [
+        "Brak obsługi operacji GET",
+        "Community string przesyłany jako plaintext",
+        "Brak obsługi TRAP",
+        "Ograniczenie do 10 urządzeń"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W SNMPv1 i v2c community string jest przesyłany bez szyfrowania jako tekst jawny, co stanowi poważne ryzyko bezpieczeństwa."
+    },
+    {
+      "question": "Litera 'c' w SNMPv2c oznacza:",
+      "options": [
+        "Compressed",
+        "Community-based security",
+        "Certified",
+        "Complete"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Litera 'c' w SNMPv2c oznacza community-based security - bezpieczeństwo oparte na community string."
+    },
+    {
+      "question": "Która wersja SNMP oferuje szyfrowanie?",
+      "options": [
+        "SNMPv1",
+        "SNMPv2c",
+        "SNMPv3",
+        "Żadna"
+      ],
+      "correctAnswer": 2,
+      "explanation": "SNMPv3 oferuje pełne bezpieczeństwo, w tym szyfrowanie algorytmami DES lub AES."
+    },
+    {
+      "question": "Które algorytmy uwierzytelniania obsługuje SNMPv3?",
+      "options": [
+        "RSA i DSA",
+        "MD5 i SHA",
+        "AES i DES",
+        "HMAC i CMAC"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SNMPv3 obsługuje uwierzytelnianie algorytmami MD5 i SHA."
+    },
+    {
+      "question": "Poziom 'authPriv' w SNMPv3 oznacza:",
+      "options": [
+        "Bez uwierzytelniania i bez szyfrowania",
+        "Z uwierzytelnianiem, bez szyfrowania",
+        "Z uwierzytelnianiem i szyfrowaniem",
+        "Tylko do odczytu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Poziom authPriv w SNMPv3 oznacza połączenie uwierzytelniania i prywatności (szyfrowania) - najwyższy poziom bezpieczeństwa."
+    },
+    {
+      "question": "Która wersja SNMP jest najpopularniejsza w praktyce?",
+      "options": [
+        "SNMPv1",
+        "SNMPv2c",
+        "SNMPv3",
+        "SNMPv4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SNMPv2c jest najpopularniejszą wersją w praktyce, mimo że v3 oferuje lepsze bezpieczeństwo."
+    },
+    {
+      "question": "Domyślna wartość community string do odczytu to często:",
+      "options": [
+        "admin",
+        "public",
+        "read",
+        "default"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Często używane są domyślne wartości community string: 'public' do odczytu i 'private' do zapisu, co stanowi ryzyko bezpieczeństwa."
+    },
+    {
+      "question": "OID ifInOctets mierzy:",
+      "options": [
+        "Liczbę błędów na interfejsie",
+        "Bajty przychodzące na interfejsie",
+        "Stan operacyjny interfejsu",
+        "Przepustowość interfejsu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ifInOctets mierzy bajty przychodzące na interfejsie sieciowym."
+    },
+    {
+      "question": "Metryka ifOperStatus określa:",
+      "options": [
+        "Liczbę pakietów",
+        "Prędkość interfejsu",
+        "Stan operacyjny interfejsu (up/down)",
+        "Adres MAC"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ifOperStatus określa stan operacyjny interfejsu - czy jest włączony (up) czy wyłączony (down)."
+    },
+    {
+      "question": "Metryka sysUpTime mierzy:",
+      "options": [
+        "Obciążenie procesora",
+        "Czas działania urządzenia",
+        "Wykorzystanie pamięci",
+        "Temperaturę"
+      ],
+      "correctAnswer": 1,
+      "explanation": "sysUpTime mierzy czas działania urządzenia od ostatniego restartu."
+    },
+    {
+      "question": "PromQL to skrót od:",
+      "options": [
+        "Prometheus Quick Language",
+        "Prometheus Query Language",
+        "Process Query Language",
+        "Production Query Language"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PromQL to Prometheus Query Language - język zapytań dla Prometheusa służący do selekcji i agregacji danych szeregów czasowych."
+    },
+    {
+      "question": "Funkcja rate() w PromQL służy do:",
+      "options": [
+        "Sortowania wyników",
+        "Obliczania tempa zmian dla counterów",
+        "Filtrowania danych",
+        "Formatowania wyjścia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Funkcja rate() oblicza tempo zmian (np. żądania na sekundę) dla metryk typu Counter w określonym oknie czasowym."
+    },
+    {
+      "question": "Które funkcje agregujące są dostępne w PromQL?",
+      "options": [
+        "Tylko sum()",
+        "sum(), avg(), max(), min(), count()",
+        "Tylko avg() i sum()",
+        "PromQL nie obsługuje agregacji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PromQL oferuje wiele funkcji agregujących: sum() (suma), avg() (średnia), max() (maksimum), min() (minimum), count() (licznik) i inne."
+    },
+    {
+      "question": "Zapis http_requests_total{method=\"POST\"} w PromQL oznacza:",
+      "options": [
+        "Wszystkie żądania HTTP",
+        "Tylko żądania HTTP metodą POST",
+        "Żądania bez metody",
+        "Błędne zapytanie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zapis z nawiasami klamrowymi to filtr - wybiera tylko żądania HTTP, które mają label method równy POST."
+    },
+    {
+      "question": "Co oznacza 95 percentyl (p95)?",
+      "options": [
+        "95% żądań się nie powiodło",
+        "Wartość, poniżej której znajduje się 95% wszystkich pomiarów",
+        "Średnia z 95 pomiarów",
+        "95 milisekund"
+      ],
+      "correctAnswer": 1,
+      "explanation": "95 percentyl oznacza wartość, poniżej której znajduje się 95% wszystkich pomiarów - tylko 5% pomiarów przekracza tę wartość."
+    },
+    {
+      "question": "Jeśli p95 czasu odpowiedzi = 200ms, oznacza to, że:",
+      "options": [
+        "Wszystkie żądania trwają 200ms",
+        "95% żądań było obsłużonych w czasie ≤200ms",
+        "Średni czas odpowiedzi to 200ms",
+        "5% żądań było szybszych niż 200ms"
+      ],
+      "correctAnswer": 1,
+      "explanation": "P95 = 200ms oznacza, że 95% żądań było obsłużonych w czasie równym lub krótszym niż 200ms, a tylko 5% trwało dłużej."
+    },
+    {
+      "question": "Dlaczego percentyle są lepsze od średniej w kontekście SLA?",
+      "options": [
+        "Są łatwiejsze do obliczenia",
+        "Eliminują wpływ pojedynczych anomalii (outliers)",
+        "Zawsze dają wyższą wartość",
+        "Są wymagane prawnie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Percentyle eliminują wpływ pojedynczych anomalii i lepiej oddają doświadczenie użytkownika niż średnia, która może być zniekształcona przez outliers."
+    },
+    {
+      "question": "Termin 'długi ogon dystrybucji' odnosi się do:",
+      "options": [
+        "Najczęstszych wartości",
+        "Rzadkich, ale ekstremalnych wartości",
+        "Wartości średnich",
+        "Danych historycznych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Długi ogon dystrybucji to rzadkie, ale ekstremalne wartości (np. bardzo wolne żądania), które percentyle pomagają wykryć."
+    },
+    {
+      "question": "Grafana to:",
+      "options": [
+        "Baza danych szeregów czasowych",
+        "Platforma do wizualizacji i analizy danych",
+        "Protokół sieciowy",
+        "System operacyjny"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Grafana to platforma o otwartym kodzie źródłowym do wizualizacji i analizy danych z wielu źródeł."
+    },
+    {
+      "question": "Z jakimi źródłami danych może współpracować Grafana?",
+      "options": [
+        "Tylko z Prometheusem",
+        "Tylko z bazami SQL",
+        "Prometheus, InfluxDB, Elasticsearch, SQL i wiele innych",
+        "Tylko z plikami CSV"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Grafana może pobierać dane z wielu źródeł, w tym Prometheus, InfluxDB, Elasticsearch, bazy SQL i wiele innych."
+    },
+    {
+      "question": "Wykres typu Time Series w Grafanie najlepiej nadaje się do:",
+      "options": [
+        "Pokazania aktualnej wartości",
+        "Pokazania zmian wartości w czasie",
+        "Porównania kategorii",
+        "Wyświetlenia tabeli"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Time Series (wykres czasowy) pokazuje linie lub słupki przedstawiające zmiany wartości w czasie - idealny dla trendów."
+    },
+    {
+      "question": "Wizualizacja typu Gauge w Grafanie służy do:",
+      "options": [
+        "Pokazania trendu w czasie",
+        "Pokazania aktualnej wartości względem progów",
+        "Wyświetlenia rozkładu wartości",
+        "Porównania wielu metryk"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Gauge (wskaźnik) w postaci tarczy lub termometru pokazuje aktualną wartość w odniesieniu do progów (normalny/ostrzeżenie/krytyczny)."
+    },
+    {
+      "question": "Heatmap (mapa ciepła) w Grafanie najlepiej nadaje się do:",
+      "options": [
+        "Pokazania pojedynczej wartości",
+        "Wyświetlenia rozkładu wartości, np. dystrybucji opóźnień",
+        "Tworzenia tabel",
+        "Eksportu danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Heatmap pokazuje rozkład wartości - idealna dla dystrybucji latency, wzorców dostępu w czasie, analizy bucketów histogramu."
+    },
+    {
+      "question": "Do monitorowania aktualnego wykorzystania dysku (%) najlepsza wizualizacja to:",
+      "options": [
+        "Time Series",
+        "Heatmap",
+        "Gauge",
+        "Bar Chart"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Gauge jest idealny dla pojedynczej wartości chwilowej z progami, jak wykorzystanie dysku w procentach - umożliwia szybką ocenę stanu."
+    },
+    {
+      "question": "Do analizy rozkładu czasów odpowiedzi API najlepsza wizualizacja to:",
+      "options": [
+        "Gauge",
+        "Stat",
+        "Heatmap",
+        "Table"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Heatmap najlepiej pokazuje rozkład wartości w czasie - pozwala wizualnie zobaczyć dystrybucję latency i percentyle."
+    },
+    {
+      "question": "Modbus został stworzony przez firmę:",
+      "options": [
+        "Siemens",
+        "Modicon",
+        "Allen-Bradley",
+        "ABB"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Modbus został stworzony przez firmę Modicon w 1979 roku dla komunikacji ze sterownikami PLC. Nazwa pochodzi od 'Modicon Bus'."
+    },
+    {
+      "question": "Modbus RTU wykorzystuje komunikację:",
+      "options": [
+        "Ethernet",
+        "Szeregową",
+        "Bezprzewodową",
+        "Optyczną"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Modbus RTU to wariant protokołu wykorzystujący komunikację szeregową (RS-232, RS-485)."
+    },
+    {
+      "question": "Modbus TCP wykorzystuje:",
+      "options": [
+        "Komunikację szeregową RS-232",
+        "Sieć Ethernet",
+        "Protokół SNMP",
+        "Komunikację radiową"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Modbus TCP to wariant protokołu działający przez sieć Ethernet."
+    },
+    {
+      "question": "MQTT to skrót od:",
+      "options": [
+        "Message Queue Transfer Technology",
+        "Message Queuing Telemetry Transport",
+        "Multi-Queue Transmission Technology",
+        "Managed Queue Transfer Tool"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MQTT to Message Queuing Telemetry Transport - lekki protokół komunikacji typu publish-subscribe dla IoT."
+    },
+    {
+      "question": "MQTT działa na portach TCP:",
+      "options": [
+        "80 i 443",
+        "161 i 162",
+        "1883 i 8883",
+        "22 i 23"
+      ],
+      "correctAnswer": 2,
+      "explanation": "MQTT działa na porcie TCP 1883 (nieszyfrowane) i 8883 (szyfrowane TLS)."
+    },
+    {
+      "question": "Model komunikacji w MQTT to:",
+      "options": [
+        "Request-response",
+        "Publish-subscribe",
+        "Peer-to-peer",
+        "Master-slave"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MQTT wykorzystuje model publish-subscribe, gdzie urządzenia publikują wiadomości do tematów (topics), a inne subskrybują te tematy."
+    },
+    {
+      "question": "OPC UA to skrót od:",
+      "options": [
+        "Open Protocol Communication Universal Access",
+        "Open Platform Communications Unified Architecture",
+        "Operational Process Control Unified Application",
+        "Open Process Control Universal Architecture"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OPC UA to Open Platform Communications Unified Architecture - standard komunikacji przemysłowej dla Industry 4.0."
+    },
+    {
+      "question": "OPC UA jest następcą:",
+      "options": [
+        "Modbus",
+        "SNMP",
+        "Klasycznego OPC (OLE for Process Control)",
+        "MQTT"
+      ],
+      "correctAnswer": 2,
+      "explanation": "OPC UA jest następcą klasycznego OPC (OLE for Process Control), oferując lepszą interoperacyjność i bezpieczeństwo."
+    },
+    {
+      "question": "Który protokół jest najlepszy dla środowisk cloud-native i Kubernetes?",
+      "options": [
+        "Modbus",
+        "SNMP",
+        "Prometheus",
+        "OPC UA"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Prometheus jest standardem de facto w monitorowaniu środowisk kontenerowych i cloud-native, w tym Kubernetes."
+    },
+    {
+      "question": "Który protokół najlepiej nadaje się do komunikacji z urządzeniami IoT o ograniczonych zasobach?",
+      "options": [
+        "SNMP",
+        "OPC UA",
+        "MQTT",
+        "Prometheus"
+      ],
+      "correctAnswer": 2,
+      "explanation": "MQTT został zaprojektowany dla urządzeń IoT o ograniczonych zasobach i niestabilnych połączeniach - jest lekki i wydajny."
+    },
+    {
+      "question": "Który protokół jest standardem w monitorowaniu routerów i switchy?",
+      "options": [
+        "Modbus",
+        "MQTT",
+        "SNMP",
+        "Prometheus"
+      ],
+      "correctAnswer": 2,
+      "explanation": "SNMP jest standardem przemysłowym od ponad 30 lat w monitorowaniu urządzeń sieciowych jak routery, switche i firewalle."
+    },
+    {
+      "question": "Który protokół oferuje semantyczne modelowanie danych?",
+      "options": [
+        "Modbus",
+        "SNMP",
+        "MQTT",
+        "OPC UA"
+      ],
+      "correctAnswer": 3,
+      "explanation": "OPC UA oferuje semantyczne modelowanie danych, co pozwala na precyzyjne opisanie znaczenia i relacji między danymi."
+    },
+    {
+      "question": "Główną zaletą Modbusa jest:",
+      "options": [
+        "Zaawansowane bezpieczeństwo",
+        "Prostota i szeroka kompatybilność",
+        "Semantyczne modelowanie danych",
+        "Obsługa chmury"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Modbus charakteryzuje się prostotą, szeroką kompatybilnością i niskimi wymaganiami sprzętowymi."
+    },
+    {
+      "question": "Który protokół wykorzystuje mechanizm MIB do standaryzacji?",
+      "options": [
+        "MQTT",
+        "SNMP",
+        "Modbus",
+        "OPC UA"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SNMP wykorzystuje bazy MIB (Management Information Base) do standaryzacji struktury informacji zarządzalnych."
+    },
+    {
+      "question": "W jakim środowisku stosuje się Modbus?",
+      "options": [
+        "Cloud computing",
+        "Automatyka przemysłowa (OT)",
+        "Monitoring sieci IT",
+        "Aplikacje webowe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Modbus jest stosowany w automatyce przemysłowej (OT) do komunikacji ze sterownikami PLC, czujnikami i aktuatorami."
+    },
+    {
+      "question": "Eksporter snmp_exporter służy do:",
+      "options": [
+        "Eksportowania logów do plików",
+        "Tłumaczenia metryk SNMP na format Prometheus",
+        "Wysyłania e-maili z alertami",
+        "Tworzenia kopii zapasowych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "snmp_exporter to adapter Prometheusa, który zbiera metryki z urządzeń sieciowych przez SNMP i udostępnia je w formacie Prometheus."
+    },
+    {
+      "question": "Integracja Prometheusa z systemami OT odbywa się przez:",
+      "options": [
+        "Bezpośrednie połączenie TCP",
+        "Eksportery (np. dla Modbus, OPC UA)",
+        "Protokół HTTP",
+        "Pliki CSV"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prometheus integruje się z systemami OT poprzez eksportery dla protokołów przemysłowych jak Modbus czy OPC UA."
+    },
+    {
+      "question": "Funkcja histogram_quantile() w PromQL służy do:",
+      "options": [
+        "Tworzenia histogramów",
+        "Obliczania percentyli z histogramów",
+        "Sortowania danych",
+        "Filtrowania wartości"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Funkcja histogram_quantile() oblicza percentyle (np. p95) z danych histogramowych w Prometheusie."
+    },
+    {
+      "question": "VACM w SNMPv3 oznacza:",
+      "options": [
+        "Very Advanced Configuration Mode",
+        "View-based Access Control Model",
+        "Virtual Access Control Mechanism",
+        "Validated Authentication Control Module"
+      ],
+      "correctAnswer": 1,
+      "explanation": "VACM (View-based Access Control Model) to mechanizm kontroli dostępu w SNMPv3, pozwalający na granularne zarządzanie uprawnieniami."
+    },
+    {
+      "question": "Poziom 'noAuthNoPriv' w SNMPv3 oznacza:",
+      "options": [
+        "Pełne bezpieczeństwo",
+        "Bez uwierzytelniania i bez szyfrowania",
+        "Z uwierzytelnianiem, bez szyfrowania",
+        "Tylko do odczytu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Poziom noAuthNoPriv w SNMPv3 oznacza brak uwierzytelniania i brak prywatności (szyfrowania) - najniższy poziom bezpieczeństwa."
+    },
+    {
+      "question": "Który element architektury Prometheusa wykonuje zapytania PromQL?",
+      "options": [
+        "Exporter",
+        "Target",
+        "Prometheus Server",
+        "Grafana"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Prometheus Server to silnik, który zbiera, przetwarza, przechowuje metryki i wykonuje zapytania w języku PromQL."
+    },
+    {
+      "question": "Metryka entSensorValue w SNMP mierzy:",
+      "options": [
+        "Liczbę interfejsów",
+        "Wartości z sensorów fizycznych (temperatura, wentylatory)",
+        "Czas działania",
+        "Adres IP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "entSensorValue zawiera wartości odczytywane z sensorów fizycznych, takich jak temperatura czy prędkość wentylatorów."
+    },
+    {
+      "question": "Zapis [5m] w PromQL oznacza:",
+      "options": [
+        "5 megabajtów danych",
+        "Okno czasowe 5 minut",
+        "5 metryk",
+        "Piątą wersję"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zapis [5m] definiuje okno czasowe 5 minut, np. rate(metric[5m]) oblicza tempo zmian w ostatnich 5 minutach."
+    },
+    {
+      "question": "Która metryka wskazuje na problemy z połączeniem sieciowym?",
+      "options": [
+        "ifSpeed",
+        "ifInErrors",
+        "sysUpTime",
+        "ifDescr"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ifInErrors i ifOutErrors mierzą liczbę błędów na interfejsie sieciowym, wskazując na problemy z połączeniem."
+    },
+    {
+      "question": "Format danych wystawianych przez endpoint /metrics to:",
+      "options": [
+        "JSON",
+        "XML",
+        "Tekst (key-value)",
+        "Binary"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Endpoint /metrics wystawia metryki w formacie tekstowym, gdzie każda metryka ma postać klucza i wartości ze znacznikiem czasowym."
+    },
+    {
+      "question": "Wizualizacja typu Stat w Grafanie służy do:",
+      "options": [
+        "Wyświetlenia pojedynczej dużej liczby",
+        "Tworzenia wykresów czasowych",
+        "Porównania wielu kategorii",
+        "Eksportu danych"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Stat wyświetla pojedynczą dużą liczbę, np. aktualny uptime lub liczbę aktywnych sesji."
+    },
+    {
+      "question": "Co oznacza akronim IT/OT w kontekście monitoringu?",
+      "options": [
+        "Internet Technology / Online Technology",
+        "Information Technology / Operational Technology",
+        "Internal Testing / Output Testing",
+        "Integrated Tools / Open Tools"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IT/OT to Information Technology (technologie informatyczne) / Operational Technology (technologie operacyjne/przemysłowe)."
+    },
+    {
+      "question": "Która cecha NIE jest wymagana dla dobrej metryki?",
+      "options": [
+        "Jednoznaczność",
+        "Stabilność",
+        "Atrakcyjność wizualna",
+        "Weryfikowalność"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dobra metryka powinna być jednoznaczna, stabilna, trendowalna i weryfikowalna. Atrakcyjność wizualna nie jest cechą metryki."
+    },
+    {
+      "question": "Jaki jest główny cel integracji systemów IT i OT w kontekście Industry 4.0?",
+      "options": [
+        "Zmniejszenie kosztów licencji oprogramowania",
+        "Umożliwienie przepływu danych między warstwą biznesową a produkcyjną",
+        "Zastąpienie wszystkich protokołów przemysłowych przez HTTP",
+        "Eliminacja potrzeby monitoringu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Integracja IT/OT w Industry 4.0 ma na celu umożliwienie przepływu danych między warstwą biznesową (IT) a produkcyjną (OT), co pozwala na lepszą optymalizację i podejmowanie decyzji."
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+Nowoczesne techniki programowania - tekst dla lektora
+
+Wprowadzenie
+
+Programowanie wieloplatformowe stanowi jedno z kluczowych zagadnień współczesnej informatyki. Polega ono na tworzeniu aplikacji zdolnych do działania na różnorodnych urządzeniach i systemach operacyjnych. W typowym środowisku programistycznym wyróżnia się komputer hosta, na którym znajdują się narzędzia takie jak kompilator, edytor kodu oraz debugger, oraz urządzenie docelowe, gdzie uruchamiany jest system operacyjny wraz z aplikacją. Komunikacja między tymi elementami odbywa się za pośrednictwem różnych interfejsów, w tym Ethernetu, portu szeregowego RS-232 czy interfejsu JTAG służącego do diagnostyki sprzętowej.
+
+Główne wyzwania związane z programowaniem wieloplatformowym dotyczą różnorodności procesorów, różnic w architekturze sprzętowej obejmującej systemy 32-bitowe i 64-bitowe, a także odmienności systemów operacyjnych.
+
+Architektury procesorów
+
+Współczesne procesory można podzielić na dwie główne kategorie architektoniczne. Architektura x86 opiera się na koncepcji CISC, czyli złożonego zestawu instrukcji. Procesory tej architektury znajdują zastosowanie głównie w komputerach osobistych, serwerach oraz konsolach do gier.
+
+Architektura ARM wykorzystuje natomiast koncepcję RISC, czyli zredukowanego zestawu instrukcji. Procesory ARM dominują w urządzeniach mobilnych, systemach wbudowanych oraz w rozwiązaniach Internetu Rzeczy. Poza wymienionymi architekturami istnieją również inne rozwiązania, takie jak AVR, RISC-V, Xtensa czy MIPS.
+
+Historia procesora Intel 8086 i komputera IBM PC
+
+Mikroprocesor Intel 8086, wprowadzony na rynek w 1978 roku, stanowił przełomowy krok w ewolucji komputerów osobistych. Był to procesor 16-bitowy, który położył fundamenty architektury x86, pozostającej do dziś podstawą większości systemów desktopowych i serwerowych.
+
+W 1981 roku firma IBM wprowadziła komputer osobisty IBM PC, zbudowany w oparciu o procesor Intel 8088, stanowiący zoptymalizowaną kosztowo wersję układu 8086 z 8-bitową zewnętrzną magistralą danych. Komputer IBM PC stał się wzorcem dla całej branży, a jego otwarta architektura zachęciła do rozwoju kompatybilnego sprzętu i oprogramowania, definiując współczesny ekosystem komputerów osobistych.
+
+W kolejnych dekadach firma Intel rozwijała rodzinę procesorów x86 poprzez generacje 80286, 80386, Pentium oraz Core. Każda generacja przynosiła wzrost wydajności, nowe tryby adresowania i rozszerzenia zestawu instrukcji, przy jednoczesnym zachowaniu wstecznej kompatybilności, co umożliwiło ciągłą ewolucję oprogramowania przez cztery dekady historii informatyki.
+
+Historia architektury ARM
+
+Architektura ARM została opracowana w latach 80. XX wieku przez brytyjską firmę Acorn Computers. Pierwszy procesor ARM1 znalazł zastosowanie w komputerze BBC Micro w 1985 roku. Nazwa ARM stanowi skrót od Advanced RISC Machine i od początku architektura ta była projektowana z myślą o efektywności energetycznej oraz prostocie konstrukcji.
+
+Z biegiem czasu architektura ARM stała się dominującym rozwiązaniem dla systemów mobilnych i wbudowanych. Współczesne wersje ARMv8 i ARMv9 oferują obsługę 64-bitową, wysoką wydajność oraz zaawansowane mechanizmy bezpieczeństwa. Obecnie rdzenie ARM zasilają miliardy urządzeń, w tym smartfony, tablety, czujniki Internetu Rzeczy, a nawet procesory serii M firmy Apple.
+
+Procesor jako centralna jednostka systemu komputerowego
+
+Podstawowym zadaniem procesora, określanego również skrótem CPU od angielskiego Central Processing Unit, jest wykonywanie programów. Obsługa urządzeń peryferyjnych wejścia i wyjścia realizowana jest przez oprogramowanie przy wsparciu sprzętowym. Sam system operacyjny stanowi program wykonywany przez procesor. Uzupełnieniem jednostki centralnej może być koprocesor, wykonujący operacje w wyspecjalizowanych dziedzinach, takich jak zaawansowane obliczenia matematyczne czy przetwarzanie grafiki.
+
+Dostęp do pamięci głównej i cykl rozkazowy
+
+Dostęp do poszczególnych elementów pamięci głównej odbywa się za pomocą unikalnych indeksów i może występować w formie operacji odczytu lub zapisu do pamięci, jak również automatycznego pobierania instrukcji i operandów podczas wykonywania programu.
+
+Cykl rozkazowy składa się z pięciu faz: pobrania instrukcji, dekodowania instrukcji, pobrania operandów, wykonania instrukcji oraz zapisu wyniku do pamięci. W trakcie wykonywania programu wykorzystywane są rejestry, stanowiące szybką pamięć podręczną procesora. Wyróżnia się rejestry wyspecjalizowane, przeznaczone do określonych zadań, oraz rejestry ogólnego przeznaczenia o wszechstronnym zastosowaniu.
+
+Charakterystyki procesora istotne dla programistów
+
+Długość słowa maszynowego, wyrażana w bitach jako 32 lub 64, określa natywny rozmiar danych i wpływa na limity adresowania oraz wybór typów danych pod kątem przenośności kodu. Zestaw instrukcji, znany również pod skrótem ISA od Instruction Set Architecture, definiuje dostępne operacje dla danej architektury i stanowi podstawę optymalizacji kodu, włącznie z wykorzystaniem rozszerzeń takich jak SIMD służących do przetwarzania wektorowego.
+
+Liczba i typ rejestrów, przykładowo 16 rejestrów ogólnego przeznaczenia, ma bezpośredni wpływ na efektywność programu, gdyż wykorzystanie rejestrów redukuje konieczność dostępu do pamięci. Tryby adresowania określają sposoby dostępu do danych i umożliwiają efektywną pracę ze wskaźnikami i tablicami bez dodatkowego kodu.
+
+Częstotliwość taktowania określa liczbę instrukcji wykonywanych w jednostce czasu i stanowi punkt odniesienia dla skalowalności jednowątkowej. Hierarchia pamięci podręcznej, obejmująca poziomy L1, L2 i L3, wymaga optymalizacji lokalności danych w celu redukcji opóźnień. Potokowość, polegająca na nakładaniu się faz pobierania, dekodowania i wykonywania instrukcji, może być wykorzystana poprzez rozwijanie pętli w celu uniknięcia przestojów procesora.
+
+Podstawy języka maszynowego
+
+Procesor jest w stanie wykonywać wyłącznie instrukcje należące do jego zestawu instrukcji. Instrukcje te przechowywane są w pamięci w postaci kodu binarnego, złożonego z zer i jedynek, tworząc sekwencyjny program. Taka sekwencja stanowi program w języku maszynowym, wykonywalny bezpośrednio przez sprzęt bez potrzeby interpretacji. Kod wysokiego poziomu, napisany przykładowo w języku C++, musi zostać skompilowany do kodu maszynowego przed wykonaniem, a niezgodności w tym zakresie prowadzą do błędów.
+
+Od asemblera do wykonania programu
+
+Proces tworzenia programu rozpoczyna się od napisania kodu mnemonicznego w języku asemblera, który stanowi czytelną dla człowieka formę instrukcji. Przykładowe instrukcje to MOV AX, 5 przenosząca wartość do rejestru lub ADD R1, R2 dodająca zawartość dwóch rejestrów.
+
+Następnie asembler tłumaczy kod mnemoniczny na binarny kod maszynowy, składający się z kodu operacji i operandów, generując plik wykonywalny. Program binarny jest ładowany do pamięci głównej RAM pod określony adres, tworząc sekwencyjny ciąg instrukcji maszynowych gotowych do wykonania przez procesor. W fazie wykonania procesor pobiera, dekoduje i uruchamia instrukcje zgodnie z cyklem rozkazowym, kierując wyniki do rejestrów, pamięci lub urządzeń wejścia-wyjścia.
+
+Porównanie architektur CISC i RISC
+
+Architektura CISC, czyli złożonego zestawu instrukcji, kładzie nacisk na bogate, wieloetapowe instrukcje zdolne do wykonywania skomplikowanych operacji w ramach pojedynczego polecenia. Podejście to wymaga zwykle mniejszej liczby linii kodu na program, ale więcej cykli zegara na instrukcję. Architektura CISC koncentruje się na złożoności sprzętowej i sterowaniu mikrokodowym.
+
+Architektura RISC, czyli zredukowanego zestawu instrukcji, wykorzystuje proste, jednolite instrukcje wykonywane w jednym cyklu zegara. Priorytetem jest szybkość i efektywność osiągana dzięki dużej liczbie rejestrów i projektowi przyjaznym dla potokowości. Architektura ta w większym stopniu polega na optymalizacji kompilatora niż na sterowaniu sprzętowym.
+
+Jako przykład różnic między architekturami można rozważyć operację dodawania dwóch liczb z lokalizacji X i Y oraz zapisania wyniku do lokalizacji Z. W architekturze CISC realizowanej przez procesor x86 operacja ta wymaga trzech instrukcji: przeniesienia wartości z X do rejestru AX, dodania do niego wartości z Y oraz zapisania zawartości rejestru AX do lokalizacji Z. W architekturze RISC reprezentowanej przez procesor ARM ta sama operacja wymaga sześciu instrukcji: załadowania adresów X i Y do rejestrów, pobrania wartości spod tych adresów, wykonania dodawania i zapisania wyniku.
+
+Zalety i wady programowania w asemblerze
+
+Programowanie w asemblerze oferuje wysoką wydajność dzięki bezpośredniemu dostępowi do sprzętu, co pozwala na optymalizację szybkości i efektywności szczególnie istotną w systemach wbudowanych. Generowany kod charakteryzuje się małym rozmiarem, co redukuje zapotrzebowanie na pamięć i jest idealne dla urządzeń o ograniczonych zasobach. Asembler zapewnia precyzyjną kontrolę nad zasobami, w tym rejestrami i przerwaniami, co jest kluczowe dla aplikacji czasu rzeczywistego. Ponadto nauka asemblera dostarcza głębokiego zrozumienia sprzętu, wspierając programowanie systemowe.
+
+Z drugiej strony programowanie w asemblerze jest podatne na błędy, gdyż szczegóły niskopoziomowe prowadzą do pomyłek takich jak przepełnienia pamięci, a brak zabezpieczeń wysokiego poziomu utrudnia wykrywanie problemów. Kod asemblerowy nie jest przenośny, będąc związanym z konkretną architekturą procesora, co wymaga przepisywania programów przy zmianie platformy. Proces tworzenia oprogramowania jest czasochłonny ze względu na stromą krzywą uczenia się i powolny rozwój. Utrzymanie kodu jest trudne z powodu jego niskiej czytelności, a debugowanie wymaga specjalistycznych narzędzi.
+
+Klasyczny model programowania wieloplatformowego
+
+W klasycznym modelu tworzenia oprogramowania wieloplatformowego w języku C kod źródłowy kompilowany jest przez różne kompilatory do postaci kodu maszynowego specyficznego dla poszczególnych procesorów i systemów operacyjnych. Oznacza to konieczność posiadania oddzielnych kompilatorów dla każdej docelowej platformy.
+
+Biblioteki języka C wspierające przenośność kodu
+
+Standardowa biblioteka języka C zgodna z normą ISO/IEC 9899 jest dostępna we wszystkich zgodnych kompilatorach i obejmuje pliki nagłówkowe odpowiedzialne za operacje wejścia-wyjścia, zarządzanie pamięcią, operacje na łańcuchach znakowych, klasyfikację znaków, funkcje matematyczne oraz obsługę czasu.
+
+Rozszerzenia wprowadzone w standardach C99 i C11 dodają między innymi obsługę typu logicznego, typy całkowite o określonej szerokości, liczby zespolone, ogólne funkcje matematyczne, wątki oraz obsługę znaków Unicode.
+
+Standard POSIX definiuje przenośny interfejs systemowy zapewniający kompatybilność na poziomie kodu źródłowego między systemami operacyjnymi. Istnieją również biblioteki o ograniczonej przenośności, takie jak GNU C Library stosowana w systemach Linux czy Microsoft C Runtime używana w systemach Windows.
+
+Standard POSIX i programowanie przenośne
+
+POSIX, czyli Portable Operating System Interface, stanowi znormalizowany interfejs zdefiniowany przez organizację IEEE w celu zapewnienia kompatybilności na poziomie kodu źródłowego między systemami operacyjnymi. Standard ten określa sposób interakcji programów z jądrem systemu, systemem plików, procesami i urządzeniami. POSIX jest szeroko wspierany w systemach Unix, Linux, macOS oraz Windows poprzez podsystem WSL.
+
+Do kluczowych funkcji programistycznych POSIX należą standardowe wywołania systemowe obejmujące kontrolę procesów, sygnały, wątki i gniazda sieciowe, a także zdefiniowane biblioteki C i pliki nagłówkowe. Standard umożliwia kompilację i wykonanie tego samego kodu źródłowego na różnych systemach zgodnych z POSIX.
+
+Wśród systemów certyfikowanych jako zgodne z POSIX znajdują się macOS od wersji 10.5, AIX firmy IBM, HP-UX, Solaris oraz system czasu rzeczywistego QNX Neutrino. Systemy zgodne z POSIX, choć formalnie niecertyfikowane, obejmują dystrybucje Linuksa, rodzinę BSD, Illumos, Android oraz Windows Subsystem for Linux. Implementacje POSIX dla systemów wbudowanych i czasu rzeczywistego obejmują między innymi QNX, VxWorks, Integrity RTOS oraz RTEMS.
+
+Programowanie wieloplatformowe w języku Java
+
+Język Java realizuje programowanie wieloplatformowe poprzez koncepcję maszyny wirtualnej. Kod źródłowy Java jest kompilowany do kodu bajtowego przeznaczonego dla wirtualnego procesora, a następnie wykonywany przez maszynę wirtualną Java dostępną dla różnych platform sprzętowych i systemów operacyjnych.
+
+Łańcuch narzędzi Java obejmuje warstwę kodu źródłowego z plikami o rozszerzeniu java, których składnia i semantyka są zdefiniowane przez specyfikację języka Java. Warstwa kompilacji wykorzystuje kompilator javac do tłumaczenia kodu na niezależny od platformy kod bajtowy, z dostępem do standardowej biblioteki klas Java obejmującej funkcje wejścia-wyjścia, sieciowe oraz kolekcje.
+
+Warstwa pakowania umożliwia agregację plików klas do archiwów jar wraz z manifestem, zależnościami i metadanymi. Warstwa wykonawcza opiera się na maszynie wirtualnej Java realizującej ładowanie klas, weryfikację kodu bajtowego, interpretację oraz odśmiecanie pamięci. Środowisko uruchomieniowe Java integruje maszynę wirtualną, bibliotekę klas i narzędzia systemowe, zapewniając jednolite wykonanie na różnych systemach operacyjnych i architekturach procesorów.
+
+Programowanie wieloplatformowe na platformie .NET
+
+Platforma .NET umożliwia programowanie w wielu językach, w tym C#, Visual Basic i F#, które są kompilowane do wspólnego języka pośredniego. Kod pośredni jest następnie wykonywany przez środowisko uruchomieniowe CLR dostępne dla różnych platform.
+
+Łańcuch narzędzi .NET rozpoczyna się od warstwy kodu źródłowego z plikami w językach C#, F# lub Visual Basic. Warstwa kompilacji wykorzystuje kompilatory specyficzne dla języka do tłumaczenia kodu na wspólny język pośredni CIL przechowywany w zestawach o rozszerzeniach dll lub exe, z dostępem do standardowych bibliotek .NET.
+
+Warstwa pakowania obejmuje konfigurację projektu poprzez pliki csproj oraz definicję docelowych platform. Warstwa wykonawcza opiera się na środowisku uruchomieniowym CLR lub CoreCLR, realizującym odśmiecanie pamięci, obsługę wyjątków i zarządzanie wątkami. Środowisko uruchomieniowe .NET integruje CLR, bibliotekę klas bazowych i narzędzia systemowe, zapewniając jednolite wykonanie na systemach Windows, Linux i macOS poprzez .NET Core i nowsze wersje platformy.
+
+Programowanie wieloplatformowe w językach Python i PHP
+
+Języki Python i PHP należą do kategorii języków interpretowanych. Warstwa kodu źródłowego obejmuje czytelne dla człowieka definicje programów z dynamicznym typowaniem i abstrakcjami wysokiego poziomu.
+
+Warstwa interpretacji wykorzystuje interpreter Pythona do tłumaczenia kodu źródłowego na kod bajtowy oraz silnik PHP do analizy leksykalnej i tłumaczenia na kod operacyjny, przetwarzając niezależne od platformy reprezentacje pośrednie.
+
+Warstwa wykonawcza opiera się na maszynie wirtualnej Pythona realizującej sekwencyjną interpretację kodu bajtowego oraz środowisku uruchomieniowym PHP wykorzystującym silnik Zend do wykonywania kodu operacyjnego ze zintegrowanym zarządzaniem pamięcią. Oba środowiska zapewniają wykonanie wieloplatformowe na systemach Linux, macOS i Windows.
+
+Łańcuch narzędzi JavaScript
+
+JavaScript wykorzystuje pliki źródłowe tekstowe, których składnia i semantyka są zdefiniowane przez specyfikację ECMAScript. Kod może być tworzony w środowisku przeglądarki lub środowisku serwerowym Node.js.
+
+Warstwa parsowania i kompilacji wykorzystuje silnik JavaScript do analizy leksykalnej i parsowania kodu do drzewa składniowego AST, generacji kodu bajtowego lub reprezentacji pośredniej oraz integracji kompilatora JIT do optymalizacji często wykonywanych ścieżek.
+
+Warstwa wykonawcza realizuje wykonanie kodu bajtowego przez maszynę wirtualną JavaScript, dynamiczną kompilację do kodu natywnego, odśmiecanie pamięci, rozwiązywanie zakresów i zarządzanie pętlą zdarzeń. Środowisko uruchomieniowe obejmuje środowisko przeglądarki z modelem obiektowym dokumentu DOM i interfejsami Web API oraz środowisko serwerowe Node.js.
+
+Podejścia kompilowane i interpretowane
+
+Języki kompilowane charakteryzują się tłumaczeniem całego kodu źródłowego na kod maszynowy przed wykonaniem. Kompilator produkuje samodzielny plik binarny gotowy do uruchomienia na platformie docelowej. Wykonanie jest szybsze dzięki wstępnie skompilowanym instrukcjom, ale istnieje zależność od docelowego procesora i systemu operacyjnego. Przykłady języków kompilowanych obejmują C, C++, Rust i Go.
+
+Języki interpretowane charakteryzują się wykonaniem linia po linii lub instrukcja po instrukcji przez interpreter. Tłumaczenie na operacje pośrednie lub natywne odbywa się w czasie wykonania. Podejście to oferuje większą przenośność i elastyczność kosztem wydajności, bez oddzielnego etapu kompilacji. Przykłady obejmują Python, JavaScript, PHP i Ruby.
+
+Modele mieszane wykorzystują kod bajtowy lub maszyny wirtualne do połączenia interpretacji i kompilacji, jak w przypadku Javy z maszyną wirtualną JVM czy C# z środowiskiem uruchomieniowym CLR.
+
+Zalety i wady kompilacji
+
+Kompilacja oferuje wysoką szybkość wykonania dzięki bezpośredniemu wykonaniu kodu maszynowego, brak narzutu tłumaczenia w czasie wykonania, silną optymalizację podczas kompilacji obejmującą wstawianie funkcji i alokację rejestrów, lepszą efektywność wykorzystania zasobów dla dużych lub krytycznych pod względem wydajności aplikacji oraz łatwiejszą ochronę kodu źródłowego poprzez dystrybucję binarną.
+
+Ograniczenia kompilacji obejmują zależność od platformy ze względu na binaria specyficzne dla architektury, dłuższy cykl rozwojowy spowodowany sekwencją kompilacji, linkowania i testowania, bardziej złożoną kompilację krzyżową dla wdrożeń wieloplatformowych oraz trudną dynamiczną modyfikację lub ewaluację kodu w czasie wykonania.
+
+Zalety i wady interpretacji
+
+Interpretacja oferuje niezależność od platformy dzięki interpretacji lub maszynie wirtualnej w czasie wykonania, szybki rozwój i testowanie bez etapów kompilacji, łatwiejsze debugowanie i inspekcję w czasie wykonania, elastyczne zachowanie uruchomieniowe obejmujące dynamiczne typowanie, refleksję i integrację skryptów oraz idealność dla prototypowania, automatyzacji i środowisk interaktywnych.
+
+Ograniczenia interpretacji obejmują wolniejsze wykonanie z powodu tłumaczenia w locie, wyższy narzut pamięci i procesora w długo działających aplikacjach, zależność od dostępności interpretera lub środowiska uruchomieniowego oraz ograniczone wykrywanie błędów statycznych i optymalizację w czasie kompilacji.
+
+Optymalizacja wydajności we współczesnych środowiskach uruchomieniowych
+
+Kompilacja Just-In-Time, znana również jako kompilacja w locie, polega na kompilacji często wykonywanych segmentów kodu bajtowego do natywnego kodu maszynowego w czasie wykonania. Dynamiczna optymalizacja opiera się na profilowaniu uruchomieniowym, obejmującym wykrywanie gorących ścieżek, wstawianie funkcji i przewidywanie rozgałęzień. Wygenerowany kod jest przechowywany w pamięci do ponownego użycia w ramach tej samej sesji. Kompilacja JIT jest powszechna w maszynach wirtualnych Java HotSpot, środowisku .NET CLR oraz silnikach JavaScript, choć wiąże się z początkowym opóźnieniem podczas rozgrzewania kodu.
+
+Kompilacja Ahead-Of-Time, czyli kompilacja z wyprzedzeniem, polega na konwersji kodu bajtowego lub reprezentacji pośredniej na kod natywny przed wykonaniem. Eliminuje to narzut kompilacji JIT w czasie wykonania i jest odpowiednie dla środowisk o ograniczonych zasobach lub wymaganiach czasu rzeczywistego. Kompilacja AOT jest stosowana w .NET Native, Java GraalVM Native Image, Android ART oraz statycznym modelu języka Rust, choć wiąże się z dłuższym procesem budowania.
+
+WebAssembly - koncepcja i zastosowania
+
+WebAssembly zostało zaprojektowane przez konsorcjum W3C dla wysokowydajnych aplikacji internetowych. Model wykonania opiera się na kompilacji kodu źródłowego do modułów WebAssembly, integracji z interfejsami JavaScript dla dostępu do modelu obiektowego dokumentu i obsługi zdarzeń oraz stosowej maszynie wirtualnej wykonującej instrukcje zakodowane binarnie w środowisku piaskownicy zapewniającym bezpieczeństwo i izolację.
+
+WebAssembly oferuje wydajność zbliżoną do natywnej dzięki efektywnemu wykonaniu binarnemu, deterministyczny model pamięci i bezpieczeństwo typów oraz neutralność platformową między przeglądarkami i systemami operacyjnymi. Zastosowania obejmują przenoszenie istniejących bibliotek C, C++ i Rust do przeglądarek, wysokowydajne aplikacje internetowe w dziedzinie grafiki, edycji wideo i gier oraz środowiska obliczeń brzegowych dla przenośnej dystrybucji kodu.
+
+Blazor - .NET i WebAssembly
+
+Blazor WebAssembly to rozwiązanie po stronie klienta, w którym środowisko uruchomieniowe .NET jest kompilowane do WebAssembly i wykonywane wewnątrz przeglądarki. Zestawy aplikacji są pobierane i uruchamiane w środowisku piaskownicy, a model oparty na komponentach służy do tworzenia interaktywnych jednostronicowych aplikacji internetowych.
+
+Blazor Server to rozwiązanie po stronie serwera, w którym logika aplikacji jest wykonywana na serwerze, a aktualizacje interfejsu użytkownika są przesyłane przez połączenie SignalR w czasie rzeczywistym. Podejście to minimalizuje wykorzystanie zasobów klienta, ale wymaga stabilnego połączenia sieciowego.
+
+Funkcje Blazor obejmują wsparcie dla języków .NET w środowisku internetowym, współdzieloną bazę kodu między klientem, serwerem i usługami backendowymi, dostęp do interoperacyjności JavaScript dla modelu DOM i interfejsów przeglądarki, wdrożenie wieloplatformowe na systemach Windows, Linux i macOS oraz możliwość mieszanego rozwoju w .NET i C++.
+
+Systemy czasu rzeczywistego
+
+System czasu rzeczywistego jest zdolny do spełnienia określonych ograniczeń czasowych zwanych terminami. W systemie czasu rzeczywistego istotna jest nie tylko poprawność wyniku, ale również czas, w którym wynik jest produkowany.
+
+Wymagania czasowe dzielą się na trzy kategorie. W systemach twardego czasu rzeczywistego terminy muszą być zawsze dotrzymane, jak w przypadku awioniki czy urządzeń medycznych. W systemach silnego czasu rzeczywistego sporadyczne przekroczenia terminów są tolerowane, ale obniżają jakość systemu. W systemach miękkiego czasu rzeczywistego terminy są elastyczne, a ich przekroczenie wpływa na wydajność, ale nie na poprawność.
+
+Tryb przetwarzania w czasie rzeczywistym oznacza obsługę danych napływających ze środowiska zewnętrznego natychmiast, z procedurami przetwarzania zawsze gotowymi i wynikami dostępnymi nie później niż w określonym terminie. Dane mogą napływać asynchronicznie, w losowych lub nieregularnych odstępach, lub synchronicznie, w ściśle zdefiniowanych, przewidywalnych interwałach.
+
+Typowe domeny zastosowań systemów czasu rzeczywistego
+
+W przemyśle systemy czasu rzeczywistego znajdują zastosowanie w sterowaniu procesami, liniach automatyzacji, robotyce oraz systemach SCADA służących do nadzoru i akwizycji danych. W transporcie i komunikacji wykorzystywane są w sygnalizacji kolejowej, jednostkach sterujących pojazdami, awionice i nawigacji morskiej.
+
+W medycynie systemy te służą do monitorowania pacjentów, sterowania pompami infuzyjnymi i obsługi sprzętu diagnostycznego. W telekomunikacji zastosowania obejmują stacje bazowe, przełączniki sieciowe i wbudowane platformy routingu. W obronie systemy czasu rzeczywistego są wykorzystywane w radarach, jednostkach sterowania uzbrojeniem i modułach bezpiecznej komunikacji. W zastosowaniach komercyjnych znajdują się terminale płatnicze, automatyka budynkowa i inteligentne urządzenia.
+
+Systemy wbudowane
+
+Systemy wbudowane to dedykowane jednostki obliczeniowe zintegrowane z większymi urządzeniami. Charakteryzują się ograniczonymi zasobami w zakresie pamięci, mocy i możliwości obliczeniowych oraz ciągłym lub sterowanym zdarzeniami działaniem, ściśle powiązanym z czujnikami i elementami wykonawczymi.
+
+Wiele systemów wbudowanych musi spełniać ograniczenia czasowe w celu zapewnienia prawidłowego sterowania procesami zewnętrznymi, tworząc systemy wbudowane czasu rzeczywistego. Wykorzystywane są w nich systemy operacyjne czasu rzeczywistego RTOS lub statyczne harmonogramowanie. Przykłady obejmują jednostki sterujące w motoryzacji, sterowniki przemysłowe, instrumenty medyczne, roboty, awionikę i elektronikę użytkową.
+
+Podejścia kompilowane i interpretowane w systemach wbudowanych i czasu rzeczywistego
+
+Systemy wbudowane i czasu rzeczywistego działają pod ścisłymi ograniczeniami czasowymi, pamięciowymi i energetycznymi. Podejście kompilowane zapewnia wykonanie natywnego kodu maszynowego na mikrokontrolerze lub procesorze z deterministycznym czasem wykonania i minimalnym narzutem uruchomieniowym oraz bezpośrednim dostępem do rejestrów sprzętowych, przerwań i peryferiów. Typowymi językami są C, C++, Ada i Rust. Zalety obejmują przewidywalne opóźnienia i wysoką wydajność, pełne wykorzystanie ograniczonych zasobów oraz certyfikowane łańcuchy narzędzi odpowiednie dla zadań twardego czasu rzeczywistego. Ograniczenia obejmują długi cykl budowania i wdrażania oraz zmniejszoną elastyczność konfiguracji.
+
+Podejście interpretowane wykorzystuje wbudowany interpreter lub maszynę wirtualną, taką jak Lua, MicroPython czy Forth, głównie dla logiki sterowania, skryptów i niekrytycznych warstw systemu. Zalety obejmują wysoką elastyczność i szybszą iterację oprogramowania, programowalność uruchomieniową i dynamiczną konfigurację oraz łatwiejszą konserwację i aktualizacje w terenie. Ograniczenia obejmują wyższe opóźnienia i niedeterministyczny czas wykonania, większy ślad pamięciowy dla interpretera i środowiska uruchomieniowego oraz nieodpowiedniość dla ścisłych sekcji kodu twardego czasu rzeczywistego.
+
+Języki programowania w systemach wbudowanych i czasu rzeczywistego
+
+Na poziomie sterowania sprzętem typowymi językami są C, C++, Ada, Rust i Forth, służące do tworzenia oprogramowania układowego czasu rzeczywistego i deterministycznego wykonania. Dla logiki dziedzinowej w zastosowaniach przemysłowych wykorzystywane są standardy IEC 61131-3 i IEC 61499 do sterowania procesami, automatyzacji i logiki sterowników PLC.
+
+Na poziomie oprogramowania pośredniczącego stosowane są języki C, C++, Go i C# do komunikacji i wymiany danych. Skrypty sterujące wykorzystują języki Lua, MicroPython i Tcl dla elastyczności uruchomieniowej i konfiguracji. Interfejsy i narzędzia opierają się na językach JavaScript, Python i PHP do monitorowania, wizualizacji i testowania.
+
+Standard IEC 61131-3
+
+Standard IEC 61131-3 jest międzynarodowym standardem definiującym architekturę oprogramowania i języki programowania dla programowalnych sterowników logicznych PLC. Ustanawia jednolity model struktury programu, typów danych i semantyki wykonania niezależny od producentów i platform.
+
+Główne koncepcje obejmują jednostki organizacji programu POU w formie programów, funkcji i bloków funkcyjnych jako komponentów wielokrotnego użytku, zadania i kontrolę wykonania z cyklicznym lub sterowanym zdarzeniami wykonaniem pod nadzorem planisty czasu rzeczywistego, znormalizowane typy danych prymitywne i strukturalne zapewniające przenośność oraz model konfiguracji i zasobów z hierarchiczną reprezentacją sterowników, modułów wejścia-wyjścia i sieci.
+
+Języki standardu IEC 61131-3
+
+Standard IEC 61131-3 definiuje pięć języków programowania. Diagram drabinkowy LD to język graficzny o logice stylu przekaźnikowego, stosowany w sterowaniu elektrycznym i logice styków. Diagram bloków funkcyjnych FBD to język graficzny z połączeniami przepływu danych, stosowany w przetwarzaniu sygnałów i pętlach sterowania.
+
+Tekst strukturalny ST to język tekstowy o składni wysokiego poziomu podobnej do Pascala, stosowany dla złożonych algorytmów i obliczeń. Lista instrukcji IL to język tekstowy o sekwencji podobnej do asemblera, obecnie przestarzały, stosowany w systemach dziedziczonych. Sekwencyjny diagram funkcyjny SFC to język graficzny z logiką kroków i przejść, stosowany do sekwencjonowania procesów.
+
+Zastosowania standardu IEC 61131-3 obejmują automatyzację przemysłową i sterowanie produkcją, robotykę i systemy koordynacji ruchu, sterowanie energią i procesami w przemyśle naftowym, gazowym i użyteczności publicznej oraz automatykę budynkową i zarządzanie infrastrukturą. Standard zapewnia neutralne wobec producenta środowisko programowania, wysoką niezawodność i determinizm poprzez cykliczne wykonanie zadań, kompatybilność z rozproszonymi architekturami automatyzacji oraz wielokrotne użycie, przenośność i interoperacyjność między sterownikami przemysłowymi.
+
+Środowisko CPDev
+
+CPDev stanowi uniwersalne środowisko programowania i uruchomieniowe oparte na standardzie IEC 61131-3, przeznaczone dla małych i średnich urządzeń sterujących. System oparty jest na maszynie wirtualnej i jest skierowany na heterogeniczne systemy z wieloma urządzeniami sterującymi o zróżnicowanych architekturach sprzętowo-programowych, obejmujących różne procesory, peryferia, środowiska uruchomieniowe i systemy operacyjne.
+
+Przykładowe zastosowania obejmują rozproszone systemy sterowania DCS oraz rozwiązania Internetu Rzeczy. Środowisko CPDev umożliwia programowanie urządzeń ze stacji roboczej programisty, a jego przenośność obejmuje platformy x86/x64, ARM, MIPS, AVR, Xtensa i RISC-V oraz systemy operacyjne Windows, Windows Embedded, Windows IoT, FreeRTOS, Linux i QNX. Platformy prototypowe obejmują Arduino, Nucleo, ESP32, Raspberry Pi, Beaglebone i STM32.
+
+Przenośność operacyjna
+
+Koncepcja przenośności operacyjnej odnosi się do zdolności wdrażania i uruchamiania aplikacji bez zmian w różnych środowiskach. Nacisk położony jest na przenośność wdrożenia i operacji, a nie na poziomie procesora czy systemu operacyjnego.
+
+Podstawowe mechanizmy obejmują kontenery zapewniające jednolite środowisko uruchomieniowe, platformy orkiestracji takie jak Kubernetes zapewniające spójny model wdrożenia, konfigurację niezależną od środowiska i zarządzanie sekretami oraz znormalizowaną obserwowalność poprzez OpenTelemetry.
+
+Korzyści obejmują identyczne zachowanie w środowiskach rozwojowych, testowych, chmurowych, lokalnych i brzegowych, łatwiejszą migrację między architekturami i platformami hostingowymi oraz redukcję błędów operacyjnych i dryfu środowiskowego.
+
+Platforma .NET Aspire
+
+Platforma .NET Aspire dostarcza orkiestrację, abstrakcję konfiguracji i znormalizowaną telemetrię, poprawiając przenośność operacyjną aplikacji rozproszonych. Typy aplikacji objęte przez .NET Aspire obejmują usługi natywne dla chmury w formie interfejsów API, mikroserwisów i zadań w tle, aplikacje rozproszone z komponentami sterowanymi komunikatami i usługami przetwarzania danych, skonteneryzowane systemy backendowe w formie usług internetowych, bram i warstw integracji oraz obciążenia hybrydowe i brzegowe z usługami Internetu Rzeczy lub przetwarzania lokalnego wdrażanymi obok komponentów chmurowych.
+
+Podsumowanie
+
+Programowanie wieloplatformowe stanowi fundamentalne zagadnienie współczesnej informatyki, umożliwiające tworzenie aplikacji działających na różnorodnych urządzeniach i systemach. Od klasycznych podejść opartych na kompilacji do kodu maszynowego, przez rozwiązania wykorzystujące maszyny wirtualne i kod bajtowy, po nowoczesne technologie takie jak WebAssembly i kontenery, dziedzina ta ciągle ewoluuje w kierunku większej przenośności i efektywności.
+
+Systemy czasu rzeczywistego i wbudowane stanowią szczególny obszar programowania, wymagający ścisłego przestrzegania ograniczeń czasowych i efektywnego wykorzystania ograniczonych zasobów. Standardy takie jak IEC 61131-3 oraz środowiska jak CPDev wspierają tworzenie przenośnych i niezawodnych rozwiązań dla zastosowań przemysłowych i automatyzacji.
+
+Współczesne podejścia do przenośności operacyjnej, wykorzystujące kontenery i platformy orkiestracji, uzupełniają tradycyjną przenośność kodu, umożliwiając jednolite wdrażanie i zarządzanie aplikacjami w zróżnicowanych środowiskach od lokalnych serwerów po infrastrukturę chmurową i brzegową.
