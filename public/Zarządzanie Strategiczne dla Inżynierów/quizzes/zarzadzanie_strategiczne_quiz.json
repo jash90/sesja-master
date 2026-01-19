@@ -1,0 +1,1106 @@
+{
+  "title": "Zarządzanie Strategiczne - Quiz Rozszerzony",
+  "description": "Kompleksowy quiz sprawdzający wiedzę z zakresu zarządzania strategicznego dla inżynierów. Obejmuje 100 pytań z tematyki: przedsiębiorstwo i otoczenie, szkoły zarządzania strategicznego, analizy strategiczne (PEST, SWOT, 5 sił Portera), metody portfelowe, formułowanie i wdrażanie strategii.",
+  "questions": [
+    {
+      "question": "Jak nazywa się cecha przedsiębiorstwa polegająca na posiadaniu odrębnego majątku i funkcjonowaniu w warunkach ryzyka rynkowego?",
+      "options": [
+        "Odrębność techniczno-organizacyjna",
+        "Odrębność ekonomiczna",
+        "Odrębność prawna",
+        "Odrębność strukturalna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Odrębność ekonomiczna oznacza posiadanie odrębnego majątku powiększanego wskutek gospodarowania dochodami oraz funkcjonowanie w warunkach ryzyka rynkowego, które może prowadzić do zysku lub straty."
+    },
+    {
+      "question": "Ile pracowników zatrudnia mikroprzedsiębiorstwo według standardów Unii Europejskiej?",
+      "options": [
+        "Mniej niż 5",
+        "Mniej niż 10",
+        "Mniej niż 20",
+        "Mniej niż 50"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zgodnie ze standardami UE mikroprzedsiębiorstwo zatrudnia mniej niż 10 pracowników, a jego przychód roczny netto oraz całkowity bilans roczny nie przekraczają 2 mln euro."
+    },
+    {
+      "question": "Co oznacza skrót PEST w analizie strategicznej?",
+      "options": [
+        "Plan, Efektywność, Strategia, Taktyka",
+        "Political, Economic, Social, Technological",
+        "Produkcja, Ekonomia, Sprzedaż, Transport",
+        "Planowanie, Egzekucja, Struktura, Tempo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PEST to akronim od angielskich słów: Political (polityczne), Economic (ekonomiczne), Social (społeczno-kulturowe), Technological (technologiczne) - cztery główne obszary analizy makrootoczenia."
+    },
+    {
+      "question": "Która szkoła zarządzania strategicznego zakłada, że strategia jest procesem zmian tworzącym wzór działania firmy powielany w czasie?",
+      "options": [
+        "Szkoła planistyczna",
+        "Szkoła pozycyjna",
+        "Szkoła ewolucyjna",
+        "Szkoła zasobowa"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Szkoła ewolucyjna (Mintzberg) neguje racjonalność podejścia tradycyjnego i zakłada, że strategia jest procesem zmian, na kanwie których tworzy się wzór działania firmy powielany w czasie."
+    },
+    {
+      "question": "Kto jest uznawany za ojca współczesnego zarządzania strategicznego?",
+      "options": [
+        "Igor Ansoff",
+        "Henry Mintzberg",
+        "Michael E. Porter",
+        "Gary Hamel"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Michael E. Porter jest uznawany za ojca współczesnego zarządzania strategicznego. Jest twórcą szkoły pozycyjnej, modelu pięciu sił oraz koncepcji łańcucha wartości."
+    },
+    {
+      "question": "Co oznacza litera 'S' w akronimie SWOT?",
+      "options": [
+        "Strategy (strategia)",
+        "Strengths (mocne strony)",
+        "Sales (sprzedaż)",
+        "Structure (struktura)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W analizie SWOT litera S oznacza Strengths, czyli mocne strony organizacji - czynniki wewnętrzne mające pozytywny wpływ na funkcjonowanie firmy."
+    },
+    {
+      "question": "Jaki jest główny cel analizy makrootoczenia?",
+      "options": [
+        "Określenie struktury organizacyjnej firmy",
+        "Zidentyfikowanie szans i zagrożeń płynących z otoczenia zewnętrznego",
+        "Analiza konkurencji w sektorze",
+        "Ocena zasobów finansowych przedsiębiorstwa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podstawowym celem analizy makrootoczenia jest zidentyfikowanie istniejących szans i zagrożeń płynących ze środowiska zewnętrznego oraz ocena stopnia konkurencyjności przedsiębiorstwa."
+    },
+    {
+      "question": "Ile sił wyróżnia model Portera służący do analizy otoczenia konkurencyjnego?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Model Portera wyróżnia 5 sił: rywalizację w sektorze, siłę przetargową dostawców, siłę przetargową nabywców, zagrożenie ze strony nowych wejść oraz zagrożenie ze strony substytutów."
+    },
+    {
+      "question": "Czym jest segment rynku?",
+      "options": [
+        "Całkowita wielkość rynku w danym kraju",
+        "Grupa konsumentów o wspólnych cechach wyznaczająca obszar działania firmy",
+        "Część rynku zajmowana przez lidera",
+        "Suma wszystkich konkurentów w branży"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Segment rynku to grupa konsumentów o wspólnych cechach, który dla firmy wyznacza obszar działania i koncentracji na potrzebach tej grupy."
+    },
+    {
+      "question": "W którym okresie rozwijało się planowanie strategiczne jako etap zarządzania strategicznego?",
+      "options": [
+        "1950-1965",
+        "1965-1970",
+        "1970-1980",
+        "1980-1990"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Planowanie strategiczne rozwijało się w latach 1965-1970, obejmując szersze analizy otoczenia rynkowego i konkurencyjnego oraz wypracowanie wielu metod analitycznych."
+    },
+    {
+      "question": "Która metoda prognozowania opiera się na jakościowej ocenie faktów przez ekspertów?",
+      "options": [
+        "Ekstrapolacja trendów",
+        "Metoda delficka",
+        "Analiza PEST",
+        "Metoda BCG"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metoda delficka opiera się na jakościowej ocenie faktów przez ekspertów (50-100 osób z danej dziedziny), których oceny są wykorzystywane do prognozowania przyszłości."
+    },
+    {
+      "question": "Co określa misja przedsiębiorstwa?",
+      "options": [
+        "Szczegółowe cele finansowe na najbliższy rok",
+        "Sens istnienia organizacji i jej podstawowe wartości",
+        "Listę produktów oferowanych przez firmę",
+        "Strukturę organizacyjną przedsiębiorstwa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Misja przedsiębiorstwa to ogólny cel organizacji wyrażony w formie deklaracji odpowiadającej na pytanie 'czym jest organizacja, czym chce być, jakich wartości przestrzega' - określa sens istnienia organizacji."
+    },
+    {
+      "question": "Jaką przychód roczny netto może maksymalnie osiągać małe przedsiębiorstwo według standardów UE?",
+      "options": [
+        "2 mln euro",
+        "5 mln euro",
+        "10 mln euro",
+        "50 mln euro"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Małe przedsiębiorstwo według standardów UE może osiągać przychód roczny netto do 10 mln euro, zatrudniając mniej niż 50 pracowników."
+    },
+    {
+      "question": "Która z poniższych NIE jest siłą w modelu pięciu sił Portera?",
+      "options": [
+        "Siła przetargowa dostawców",
+        "Zagrożenie ze strony substytutów",
+        "Siła marki przedsiębiorstwa",
+        "Rywalizacja w ramach sektora"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Model pięciu sił Portera obejmuje: rywalizację w sektorze, siłę przetargową dostawców, siłę przetargową nabywców, zagrożenie nowych wejść i zagrożenie substytutów. Siła marki nie jest elementem tego modelu."
+    },
+    {
+      "question": "Co oznacza litera 'M' w regule SMART dotyczącej wyznaczania celów?",
+      "options": [
+        "Meaningful (znaczący)",
+        "Measurable (mierzalny)",
+        "Manageable (zarządzalny)",
+        "Motivating (motywujący)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W regule SMART litera M oznacza Measurable (mierzalny) - cel powinien być tak sformułowany, by można było liczbowo wyrazić stopień jego realizacji."
+    },
+    {
+      "question": "Prekursorem której szkoły zarządzania strategicznego był Igor Ansoff?",
+      "options": [
+        "Szkoły ewolucyjnej",
+        "Szkoły planistycznej",
+        "Szkoły pozycyjnej",
+        "Szkoły zasobowej"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Igor Ansoff był prekursorem szkoły planistycznej, która powstała w latach 60. XX wieku i opierała się na założeniu, że dzięki dobrej analizie można racjonalnie przewidzieć funkcjonowanie firmy."
+    },
+    {
+      "question": "Co to jest benchmarking?",
+      "options": [
+        "Analiza finansowa przedsiębiorstwa",
+        "Porównywanie się z najlepszymi i dostosowywanie ich dobrych pomysłów",
+        "Metoda prognozowania przyszłości",
+        "Technika motywowania pracowników"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Benchmarking to porównywanie się organizacji z innymi podmiotami mającymi najlepsze wyniki lub wyznaczającymi kierunki rozwoju oraz dostosowywanie ich dobrych pomysłów w celu doskonalenia."
+    },
+    {
+      "question": "Która strategia Portera polega na obniżeniu ceny produktu przy zachowaniu podobnej jakości?",
+      "options": [
+        "Strategia zróżnicowania",
+        "Strategia koncentracji",
+        "Strategia przywództwa kosztowego",
+        "Strategia dywersyfikacji"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Strategia przywództwa kosztowego opiera się na obniżeniu ceny produktu przy jednoczesnym pozostawieniu jego jakości na podobnym poziomie, głównie poprzez zmniejszenie kosztów produkcji."
+    },
+    {
+      "question": "Czym charakteryzuje się otoczenie burzliwe przedsiębiorstwa?",
+      "options": [
+        "Stabilnością i przewidywalnością",
+        "Innowacjami technologicznymi, zmianami w stylu życia, niestabilnością polityczną",
+        "Brakiem konkurencji",
+        "Wysoką rentownością sektora"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Otoczenie burzliwe wynika z innowacji technologicznych i produktowych, zmian w wyrobach i usługach, zmian w stylu życia oraz niestabilności politycznej i gospodarczej."
+    },
+    {
+      "question": "Co zawiera macierz BCG?",
+      "options": [
+        "Analizę czynników politycznych i ekonomicznych",
+        "Analizę portfela strategicznych jednostek biznesu",
+        "Listę mocnych i słabych stron firmy",
+        "Plan wdrażania strategii"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Macierz BCG (Boston Consulting Group) służy do analizy portfela strategicznych jednostek biznesu (SBU) i koncentruje się na względnym udziale w rynku oraz stopie wzrostu rynku."
+    },
+    {
+      "question": "Ile pracowników zatrudnia średnie przedsiębiorstwo według standardów UE?",
+      "options": [
+        "10-49",
+        "50-249",
+        "250-499",
+        "500-999"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Średnie przedsiębiorstwo według standardów UE zatrudnia od 50 do 249 pracowników, z przychodem rocznym netto do 50 mln euro."
+    },
+    {
+      "question": "Która szkoła zarządzania strategicznego koncentruje się na wewnętrznych zasobach firmy i kluczowych kompetencjach?",
+      "options": [
+        "Szkoła planistyczna",
+        "Szkoła ewolucyjna",
+        "Szkoła pozycyjna",
+        "Szkoła zasobów i kompetencji"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Szkoła zasobów i kompetencji (Hamel, Prahalad) koncentruje się na wewnętrznych zasobach firmy, zakładając że potencjał firmy opiera się na jej kluczowych kompetencjach."
+    },
+    {
+      "question": "Co oznacza wizja przedsiębiorstwa?",
+      "options": [
+        "Bieżący stan finansowy firmy",
+        "Ogólne i dalekosiężne sformułowanie tego, czym organizacja chce być w przyszłości",
+        "Lista produktów i usług firmy",
+        "Szczegółowy plan działania na najbliższy kwartał"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wizja stanowi ogólne i dalekosiężne sformułowanie tego, czym organizacja chce być w przyszłości, i jest wyrazem idei, pomysłów i ambicji przywództwa."
+    },
+    {
+      "question": "Która metoda służy do badania relacji między wielkością produkcji a kosztem jednostkowym?",
+      "options": [
+        "Analiza SWOT",
+        "Krzywa doświadczeń",
+        "Macierz BCG",
+        "Analiza PEST"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Krzywa doświadczeń pomaga w ocenie relacji pomiędzy wielkością produkcji a kosztem jednostkowym produktu - wraz ze wzrostem skali produkcji koszt jednostkowy maleje."
+    },
+    {
+      "question": "Co to jest grupa strategiczna?",
+      "options": [
+        "Zespół menedżerów odpowiedzialnych za strategię",
+        "Zbiór przedsiębiorstw danego sektora realizujących podobną strategię konkurencyjną",
+        "Grupa dostawców firmy",
+        "Dział planowania strategicznego"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Grupa strategiczna to zbiór przedsiębiorstw danego sektora, które realizują podobną strategię konkurencyjną. Konkurencja toczy się głównie między firmami wewnątrz danej grupy."
+    },
+    {
+      "question": "Według reguły Pareto-Lorenza, jaki procent przyczyn decyduje o 80% efektów?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "50%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reguła Pareto-Lorenza (metoda 80/20) mówi, że o 80% efektów każdego procesu decyduje zaledwie 20% przyczyn. Na tej regule opiera się analiza kluczowych czynników sukcesu."
+    },
+    {
+      "question": "Co obejmuje działalność podstawowa w łańcuchu wartości Portera?",
+      "options": [
+        "Zarządzanie zasobami ludzkimi i rozwój technologii",
+        "Logistykę, wytwarzanie, marketing i usługi",
+        "Planowanie strategiczne i kontrolę finansową",
+        "Badania i rozwój oraz rachunkowość"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Działalność podstawowa w łańcuchu wartości obejmuje fizyczne wytwarzanie, sprzedaż i obsługę produktu: logistykę wewnętrzną i zewnętrzną, wytwarzanie, marketing i zbyt oraz usługi."
+    },
+    {
+      "question": "Jakie są trzy bazowe strategie konkurowania według Portera?",
+      "options": [
+        "Wzrost, stabilizacja, redukcja",
+        "Przywództwo kosztowe, zróżnicowanie, koncentracja",
+        "Integracja, dywersyfikacja, specjalizacja",
+        "Ofensywa, defensywa, neutralność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Porter wyróżnił trzy bazowe strategie konkurowania: przywództwo kosztowe (niskie koszty), zróżnicowanie (unikatowość produktu) oraz koncentrację (nisza rynkowa)."
+    },
+    {
+      "question": "Co oznacza odrębność prawna przedsiębiorstwa?",
+      "options": [
+        "Posiadanie własnego budżetu",
+        "Posiadanie osobowości prawnej i zdolności do czynności prawnych",
+        "Funkcjonowanie zgodnie z prawem pracy",
+        "Posiadanie licencji na prowadzenie działalności"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Odrębność prawna oznacza posiadanie osobowości prawnej, czyli zdolności do czynności prawnych takich jak zawieranie umów, zaciąganie kredytów czy dochodzenie praw przed sądem."
+    },
+    {
+      "question": "Która strategia SWOT jest wybierana gdy dominują mocne strony i szanse?",
+      "options": [
+        "Strategia defensywna",
+        "Strategia konkurencyjna",
+        "Strategia konserwatywna",
+        "Strategia agresywna"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Strategia agresywna (ofensywna, maxi-maxi) ma zastosowanie gdy jednocześnie dominują silne strony organizacji oraz szanse w jej otoczeniu."
+    },
+    {
+      "question": "Co to jest BSC (Balanced Scorecard)?",
+      "options": [
+        "Metoda analizy konkurencji",
+        "Strategiczna karta wyników do monitorowania strategii",
+        "System oceny pracowników",
+        "Narzędzie budżetowania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BSC (Balanced Scorecard) to Strategiczna Karta Wyników - koncepcja monitorowania strategii wykorzystująca spójny system finansowych i pozafinansowych wskaźników."
+    },
+    {
+      "question": "Ile perspektyw obejmuje Strategiczna Karta Wyników (BSC)?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Strategiczna Karta Wyników opiera się na czterech perspektywach: finansowej, procesów wewnętrznych, klienta oraz rozwoju (uczenia się i wzrostu)."
+    },
+    {
+      "question": "Co jest celem metody mapy grup strategicznych?",
+      "options": [
+        "Określenie lokalizacji geograficznej konkurentów",
+        "Rozpoznanie wewnętrznej struktury rywalizacji w sektorze",
+        "Analiza struktury kosztów firmy",
+        "Planowanie ekspansji na nowe rynki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Celem metody mapy grup strategicznych jest rozpoznanie wewnętrznej struktury rywalizacji w sektorze poprzez grupowanie firm realizujących podobne strategie."
+    },
+    {
+      "question": "Który czynnik NIE należy do analizy PEST?",
+      "options": [
+        "Polityczny",
+        "Ekonomiczny",
+        "Konkurencyjny",
+        "Technologiczny"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Analiza PEST obejmuje czynniki: Polityczne, Ekonomiczne, Społeczno-kulturowe i Technologiczne. Czynniki konkurencyjne analizuje się w ramach analizy mikrootoczenia."
+    },
+    {
+      "question": "Co oznacza litera 'T' w regule SMART?",
+      "options": [
+        "Tactical (taktyczny)",
+        "Transparent (przejrzysty)",
+        "Time-bound (określony w czasie)",
+        "Testable (testowalny)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W regule SMART litera T oznacza Time-bound (określony w czasie) - cel powinien mieć dokładnie określony horyzont czasowy, w jakim zamierza się go osiągnąć."
+    },
+    {
+      "question": "Jaki jest główny cel wdrażania strategii?",
+      "options": [
+        "Opracowanie nowych produktów",
+        "Zjednoczenie organizacji wokół strategii i jej realizacja",
+        "Zwiększenie zatrudnienia",
+        "Redukcja kosztów operacyjnych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kluczem do sukcesu podczas wdrażania strategii jest zjednoczenie organizacji wokół opracowanej strategii oraz spowodowanie, aby każde istotne działanie było wykonywane zgodnie z tą strategią."
+    },
+    {
+      "question": "Która macierz wykorzystuje kryteria atrakcyjności sektora i pozycji konkurencyjnej?",
+      "options": [
+        "Macierz BCG",
+        "Macierz McKinseya",
+        "Macierz SWOT",
+        "Macierz Ansoffa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Macierz McKinseya (GE) jest oparta na dwóch kryteriach: atrakcyjności sektora oraz pozycji konkurencyjnej danego przedsiębiorstwa, tworząc dziewięciopolową macierz."
+    },
+    {
+      "question": "Co charakteryzuje strategię niszy rynkowej?",
+      "options": [
+        "Działanie na wielu segmentach jednocześnie",
+        "Skupienie się na działalności w jednym wąskim segmencie rynku",
+        "Konkurowanie wyłącznie ceną",
+        "Kopiowanie strategii lidera rynku"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia niszy rynkowej (koncentracji) opiera się na skupieniu działalności w jednym wąskim segmencie rynku, co pozwala na wysoką specjalizację i przewagę nad rozproszoną konkurencją."
+    },
+    {
+      "question": "Od czego zależy siła przetargowa dostawców według modelu Portera?",
+      "options": [
+        "Tylko od wielkości przedsiębiorstwa",
+        "Od stopnia koncentracji sektora, niepowtarzalności wyrobu i kosztu zmiany dostawcy",
+        "Wyłącznie od ceny produktu",
+        "Od lokalizacji geograficznej"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Siła przetargowa dostawców zależy m.in. od stopnia koncentracji sektora, uzależnienia jakości produktu finalnego od jakości wyrobu dostawcy, niepowtarzalności wyrobu oraz łatwości i kosztu zmiany dostawcy."
+    },
+    {
+      "question": "Co to jest mikrorestrukturyzacja?",
+      "options": [
+        "Restrukturyzacja całej gospodarki kraju",
+        "Dostosowanie przedsiębiorstwa do zmian otoczenia i sytuacji makroekonomicznej",
+        "Zmiana w strukturze sektora",
+        "Redukcja zatrudnienia w firmie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mikrorestrukturyzacja to dostosowanie przedsiębiorstwa do zmian otoczenia i sytuacji makroekonomicznej - jest to proces diagnostyczno-projektowo-wdrożeniowy."
+    },
+    {
+      "question": "Jaki kluczowy czynnik sukcesu dominuje w fazie dojrzałości sektora?",
+      "options": [
+        "Technologia",
+        "Zakorzenienie na rynku",
+        "Produktywność",
+        "Koszty"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W fazie dojrzałości sektora kluczowym czynnikiem sukcesu jest produktywność. W fazie narodzin dominuje technologia, w fazie wzrostu - zakorzenienie na rynku, a w fazie schyłku - koszty."
+    },
+    {
+      "question": "Co oznacza skrót SBU w zarządzaniu strategicznym?",
+      "options": [
+        "Strategic Business Unit (Strategiczna Jednostka Biznesu)",
+        "Standard Business Utility",
+        "System of Business Understanding",
+        "Strategic Budget Unit"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SBU to Strategic Business Unit - Strategiczna Jednostka Biznesu, czyli wyodrębniona część organizacji mająca własne analizy strategiczne, plany i konkurentów."
+    },
+    {
+      "question": "Która strategia SWOT jest wybierana przy przewadze słabych stron i zagrożeń?",
+      "options": [
+        "Strategia agresywna",
+        "Strategia konserwatywna",
+        "Strategia konkurencyjna",
+        "Strategia defensywna"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Strategia defensywna (mini-mini) jest wybierana w sytuacji przewagi słabych stron organizacji i zagrożeń w jej otoczeniu."
+    },
+    {
+      "question": "Co to jest luka strategiczna?",
+      "options": [
+        "Brak strategii w przedsiębiorstwie",
+        "Różnica między działalnością operacyjną a zapotrzebowaniem w otoczeniu",
+        "Przerwa w realizacji strategii",
+        "Konflikt między menedżerami"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Luka strategiczna to różnica między kształtowaniem się funkcji działalności operacyjnej a charakterystyką zapotrzebowania występującego w otoczeniu, wynikająca z niedostosowania się firmy do trendów."
+    },
+    {
+      "question": "Jakie są główne etapy procesu zarządzania strategicznego?",
+      "options": [
+        "Planowanie, organizowanie, motywowanie, kontrolowanie",
+        "Analiza strategiczna, formułowanie strategii, wdrażanie strategii",
+        "Produkcja, sprzedaż, marketing, finanse",
+        "Rekrutacja, szkolenie, ocena, rozwój"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Proces zarządzania strategicznego obejmuje: analizę strategiczną, ocenę pozycji strategicznej z definiowaniem misji i celów, formułowanie i wybór strategii oraz wdrażanie strategii."
+    },
+    {
+      "question": "Co obejmuje działalność pomocnicza w łańcuchu wartości?",
+      "options": [
+        "Produkcję i sprzedaż",
+        "Infrastrukturę firmy, zarządzanie zasobami ludzkimi, rozwój technologii, zaopatrzenie",
+        "Tylko marketing i reklamę",
+        "Transport i magazynowanie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Działalność pomocnicza w łańcuchu wartości obejmuje: infrastrukturę firmy (zarządzanie, planowanie), zarządzanie zasobami ludzkimi, rozwój technologii oraz zaopatrzenie."
+    },
+    {
+      "question": "Czym charakteryzuje się szkoła pozycyjna zarządzania strategicznego?",
+      "options": [
+        "Naciskiem na procesy wewnętrzne firmy",
+        "Koncentracją na pozycji wobec otoczenia rynkowego i konkurencji",
+        "Podejściem ewolucyjnym do strategii",
+        "Brakiem formalizacji planów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Szkoła pozycyjna (Porter) zakłada, że priorytetem firmy jest osiągnięcie sukcesu dzięki pozycji wobec otoczenia rynkowego - klientów i konkurencji. Istotą strategii jest osiąganie przewagi konkurencyjnej."
+    },
+    {
+      "question": "Co jest źródłem sukcesu według szkoły zasobów i kompetencji?",
+      "options": [
+        "Pozycja rynkowa firmy",
+        "Zasoby i umiejętności, szczególnie wiedza i kapitał ludzki",
+        "Szczegółowe planowanie",
+        "Reakcja na zmiany otoczenia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Według szkoły zasobów i kompetencji źródłem sukcesu są zasoby i umiejętności przedsiębiorstwa, z naciskiem na wiedzę i kapitał ludzki jako pierwotne źródła przewagi konkurencyjnej."
+    },
+    {
+      "question": "Jaka jest różnica między wizją a misją?",
+      "options": [
+        "Wizja dotyczy przeszłości, misja przyszłości",
+        "Wizja odpowiada na pytanie 'jak ma wyglądać organizacja w przyszłości', misja 'czemu ma służyć'",
+        "Wizja jest szczegółowa, misja ogólna",
+        "Nie ma różnicy, to synonimy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wizja odpowiada na pytanie 'Jak ma wyglądać organizacja za 10-20 lat?', natomiast misja odpowiada na pytanie 'Czemu/komu organizacja ma służyć?' i określa sens jej istnienia."
+    },
+    {
+      "question": "Co oznacza litera 'A' w regule SMART?",
+      "options": [
+        "Ambitious (ambitny)",
+        "Achievable (osiągalny)",
+        "Accurate (dokładny)",
+        "Active (aktywny)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W regule SMART litera A oznacza Achievable (osiągalny) - cel nie powinien być zbyt ambitny, gdyż podkopuje to wiarę w jego osiągnięcie i motywację do realizacji."
+    },
+    {
+      "question": "Ile pól zawiera macierz Hofera?",
+      "options": [
+        "4",
+        "9",
+        "15",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Macierz Hofera jest piętnastopolowa i stanowi rozwinięcie macierzy ADL i McKinseya. Wykonuje się ją w oparciu o dojrzałość sektora (5 faz) i pozycję konkurencyjną (3 poziomy)."
+    },
+    {
+      "question": "Co charakteryzuje organizację wirtualną?",
+      "options": [
+        "Brak fizycznej siedziby",
+        "Czasowa sieć niezależnych przedsiębiorstw połączonych technologią informacyjną",
+        "Działanie wyłącznie w internecie",
+        "Brak pracowników etatowych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Organizacja wirtualna to czasowa sieć niezależnych przedsiębiorstw (dostawców, klientów, konkurentów) połączonych technologią informacyjną w celu dzielenia umiejętności i kosztów dostępu do nowych rynków."
+    },
+    {
+      "question": "Która metoda analizy strategicznej obejmuje zarówno czynniki wewnętrzne jak i zewnętrzne?",
+      "options": [
+        "Analiza PEST",
+        "Model 5 sił Portera",
+        "Analiza SWOT",
+        "Krzywa doświadczeń"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Analiza SWOT jest zintegrowaną metodą obejmującą zarówno czynniki wewnętrzne (mocne i słabe strony) jak i zewnętrzne (szanse i zagrożenia w otoczeniu)."
+    },
+    {
+      "question": "Co to jest sektor w kontekście analizy strategicznej?",
+      "options": [
+        "Dział w strukturze organizacyjnej firmy",
+        "Część przemysłu grupująca firmy produkujące podobne wyroby na tym samym rynku",
+        "Segment klientów",
+        "Obszar geograficzny działania firmy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sektor to część przemysłu grupująca przedsiębiorstwa produkujące wyroby lub usługi o podobnym przeznaczeniu i sprzedające je na tym samym geograficznie rynku."
+    },
+    {
+      "question": "Jaki jest cel monitoringu strategii?",
+      "options": [
+        "Kontrola pracowników",
+        "Dostarczanie impulsów dla procedur rozwijania i korygowania strategii",
+        "Raportowanie wyników finansowych",
+        "Ocena satysfakcji klientów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Monitoring strategii ma charakter ostrzegający i ma na celu dostarczanie impulsów dla wszelkich procedur rozwijania oraz korygowania strategii poprzez stałą obserwację i nadzór."
+    },
+    {
+      "question": "Kto formułuje strategię na poziomie przedsiębiorstwa?",
+      "options": [
+        "Pracownicy liniowi",
+        "Kierownicy średniego szczebla",
+        "Naczelne kierownictwo",
+        "Zewnętrzni konsultanci"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Strategia na poziomie przedsiębiorstwa jest kształtowana przez naczelne kierownictwo, które nadzoruje działania organizacji i określa rolę poszczególnych jednostek biznesowych."
+    },
+    {
+      "question": "Co to jest strategia dyferencjacji?",
+      "options": [
+        "Strategia obniżania kosztów",
+        "Strategia wyróżnienia produktu pod względem jakości lub unikatowości",
+        "Strategia wchodzenia na nowe rynki",
+        "Strategia redukcji zatrudnienia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia dyferencjacji (zróżnicowania) polega na wyróżnieniu produktu pośród innych na rynku pod względem jakości lub unikatowości, co zwiększa popyt i pozwala podnieść cenę."
+    },
+    {
+      "question": "Które kryterium NIE jest używane do oceny atrakcyjności sektora w macierzy McKinseya?",
+      "options": [
+        "Tempo wzrostu",
+        "Rentowność",
+        "Liczba pracowników",
+        "Intensywność konkurencji"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Czynniki determinujące atrakcyjność sektora w macierzy McKinseya to m.in.: skala rynku, tempo wzrostu, rentowność, intensywność konkurencji, wymagania kapitałowe - ale nie liczba pracowników."
+    },
+    {
+      "question": "Co charakteryzuje podejście 'zarządzanie według prostych reguł'?",
+      "options": [
+        "Szczegółowe długoterminowe planowanie",
+        "Założenie że długoterminowe planowanie nie ma sensu, istotą jest korzystanie z przelotnych szans",
+        "Koncentracja na analizie konkurencji",
+        "Formalizacja wszystkich procesów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zarządzanie według prostych reguł zakłada, że długoterminowe planowanie nie ma sensu, ponieważ reguły gospodarki ciągle się zmieniają. Istotą jest umiejętność korzystania z przelotnych szans."
+    },
+    {
+      "question": "Jakie pytanie pomaga określić przedmiot benchmarkingu według Kotlera?",
+      "options": [
+        "Kto jest naszym głównym konkurentem?",
+        "Co chcemy porównywać i doskonalić?",
+        "Ile wynosi nasz budżet?",
+        "Kiedy zakończymy projekt?"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pierwszym etapem benchmarkingu według Kotlera jest określenie przedmiotu benchmarkingu - czyli tego, co chcemy porównywać z najlepszymi w celu doskonalenia."
+    },
+    {
+      "question": "Co to jest segment strategiczny?",
+      "options": [
+        "Część rynku zajmowana przez firmę",
+        "Wyodrębnienie jednorodnych produktów i rynków o podobnych czynnikach sukcesu",
+        "Grupa pracowników strategicznych",
+        "Dział planowania w firmie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Segment strategiczny to wyodrębnienie z działalności przedsiębiorstwa jednorodnych produktów i rynków charakteryzujących się tą samą kombinacją kluczowych czynników sukcesu."
+    },
+    {
+      "question": "Co obejmują strategiczne programy funkcjonalne?",
+      "options": [
+        "Tylko program finansowy",
+        "Program marketingowy, produkcyjny, zasobów ludzkich i finansowy",
+        "Wyłącznie program sprzedaży",
+        "Program motywacyjny dla pracowników"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategiczne programy funkcjonalne to klasyczne narzędzie wdrażania strategii obejmujące podstawowe programy: marketingowy, produkcyjny, zasobów ludzkich oraz finansowy."
+    },
+    {
+      "question": "Jaka jest główna zaleta strategii koncentracji?",
+      "options": [
+        "Niskie koszty produkcji",
+        "Wysoka specjalizacja i możliwość stworzenia 'małego monopolu'",
+        "Szeroki asortyment produktów",
+        "Duży udział w rynku"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia koncentracji pozwala na wysoką specjalizację i możliwość stworzenia swoistego 'małego monopolu' w wąskim segmencie, zapewniając przewagę nad rozproszoną konkurencją."
+    },
+    {
+      "question": "Co określają bariery mobilności wewnątrz-sektorowej?",
+      "options": [
+        "Trudności w przemieszczaniu się pracowników",
+        "Przeszkody w przemieszczaniu się firm między grupami strategicznymi",
+        "Ograniczenia transportowe",
+        "Bariery wejścia do sektora"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bariery mobilności wewnątrz-sektorowej określają trudności w przemieszczaniu się firm między grupami strategicznymi. Mogą być symetryczne lub asymetryczne."
+    },
+    {
+      "question": "Co oznacza litera 'R' w regule SMART?",
+      "options": [
+        "Realistic (realistyczny)",
+        "Relevant (istotny)",
+        "Responsible (odpowiedzialny)",
+        "Rapid (szybki)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W regule SMART litera R oznacza Relevant (istotny) - cel powinien być ważnym krokiem naprzód i stanowić określoną wartość dla tego, kto będzie go realizował."
+    },
+    {
+      "question": "Co to jest strategia błękitnego oceanu?",
+      "options": [
+        "Strategia ekspansji na rynki morskie",
+        "Strategia polegająca na pominięciu obszaru bezwzględnej konkurencji i wyznaczeniu nowego rynku",
+        "Strategia ekologiczna",
+        "Strategia działania w sektorze turystycznym"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia błękitnego oceanu bazuje na koncepcji, że obszar bezwzględnej konkurencji ('czerwony ocean') może zostać pominięty, a firma może wyznaczyć 'błękitny ocean' - nowy, niezagospodarowany rynek."
+    },
+    {
+      "question": "Jakie są wymiary społecznej odpowiedzialności firmy?",
+      "options": [
+        "Tylko wymiar finansowy",
+        "Wymiar wewnętrzny (pracownicy) i zewnętrzny (interesariusze, środowisko)",
+        "Tylko wymiar prawny",
+        "Wymiar marketingowy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Społeczna odpowiedzialność firmy obejmuje wymiar wewnętrzny (inwestowanie w ludzi, zdrowie i bezpieczeństwo, brak dyskryminacji) oraz zewnętrzny (interesariusze i środowisko)."
+    },
+    {
+      "question": "Kto był prekursorem szkoły ewolucyjnej zarządzania strategicznego?",
+      "options": [
+        "Igor Ansoff",
+        "Michael Porter",
+        "Henry Mintzberg",
+        "Gary Hamel"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Henry Mintzberg był głównym prekursorem szkoły ewolucyjnej, która neguje racjonalność podejścia planistycznego i zakłada, że strategia jest procesem zmian."
+    },
+    {
+      "question": "Co to jest dyfuzja innowacji?",
+      "options": [
+        "Utrata innowacyjności firmy",
+        "Rozprzestrzenianie się innowacji i kopiowanie rozwiązań",
+        "Blokowanie innowacji przez konkurencję",
+        "Finansowanie badań i rozwoju"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dyfuzja innowacji oznacza rozprzestrzenianie się innowacji i szybkie kopiowanie rozwiązań przez konkurentów, co skraca czas przewagi konkurencyjnej wynikającej z innowacji."
+    },
+    {
+      "question": "Co oznacza pojęcie 'pięć P' w koncepcji strategii Mintzberga?",
+      "options": [
+        "Pięć podstawowych produktów firmy",
+        "Plan, Pattern, Ploy, Position, Perspective",
+        "Pięć poziomów zarządzania",
+        "Pięć priorytetów strategicznych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Koncepcja pięciu P Mintzberga obejmuje: Plan (zamierzone działanie), Pattern (wzór), Ploy (taktyka), Position (pozycja) i Perspective (perspektywa postrzegania przyszłości)."
+    },
+    {
+      "question": "Jakie jest główne ograniczenie szkoły planistycznej?",
+      "options": [
+        "Brak narzędzi analitycznych",
+        "Opór wobec zmian i ograniczenia we wdrażaniu innowacji",
+        "Zbyt krótki horyzont planowania",
+        "Brak uwzględnienia finansów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Głównym ograniczeniem szkoły planistycznej jest opór wobec zmian i ograniczenia we wdrażaniu innowacji wynikające ze sztywnego, analitycznego podejścia bez miejsca na szybkie reagowanie."
+    },
+    {
+      "question": "Co określa pozycja konkurencyjna przedsiębiorstwa?",
+      "options": [
+        "Lokalizację geograficzną firmy",
+        "Jakościową i ilościową ocenę przedsiębiorstwa na tle konkurentów",
+        "Wielkość zatrudnienia",
+        "Wiek przedsiębiorstwa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pozycja konkurencyjna jest jakościową i ilościową oceną przedsiębiorstwa na tle jego konkurentów rozpatrywaną w danej dziedzinie działalności."
+    },
+    {
+      "question": "Co to jest outsourcing?",
+      "options": [
+        "Zwiększanie zatrudnienia",
+        "Wydzielanie funkcji i zlecanie ich podmiotom zewnętrznym",
+        "Centralizacja zarządzania",
+        "Rozwój wewnętrzny firmy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Outsourcing to jedno z typowych działań restrukturyzacyjnych polegające na wydzielaniu określonych funkcji przedsiębiorstwa i zlecaniu ich realizacji podmiotom zewnętrznym."
+    },
+    {
+      "question": "Jakie kryteria stosuje się w punktowej ocenie atrakcyjności sektora?",
+      "options": [
+        "Tylko kryteria finansowe",
+        "Kryteria rynkowe, finansowe, techniczne i organizacyjne",
+        "Tylko kryteria technologiczne",
+        "Kryteria geograficzne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrakcyjność sektora najczęściej określana jest za pomocą oceny kryteriów: rynkowych, finansowych, technicznych i organizacyjnych."
+    },
+    {
+      "question": "Co charakteryzuje szkolę realnych opcji?",
+      "options": [
+        "Unikanie ryzyka za wszelką cenę",
+        "Podejmowanie ryzyka jako droga do sukcesu poprzez zawłaszczanie niezagospodarowanej części rynku",
+        "Koncentracja na planowaniu długoterminowym",
+        "Ignorowanie zmian w otoczeniu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Szkoła realnych opcji wskazuje, że podejmowanie ryzyka jest drogą do sukcesu, ponieważ pozwala zawłaszczyć niezagospodarowaną część rynku w warunkach niepewności."
+    },
+    {
+      "question": "Co oznacza strategia konserwatywna w analizie SWOT?",
+      "options": [
+        "Brak jakichkolwiek zmian",
+        "Wykorzystanie mocnych stron do obrony przed zagrożeniami",
+        "Agresywna ekspansja rynkowa",
+        "Likwidacja przedsiębiorstwa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia konserwatywna (maxi-mini) jest wybierana gdy firma ma przeważającą liczbę silnych stron przy istotnych zagrożeniach - wykorzystuje mocne strony do ochrony przed zagrożeniami."
+    },
+    {
+      "question": "Kto jest głównym użytkownikiem analizy strategicznej w organizacji?",
+      "options": [
+        "Pracownicy produkcyjni",
+        "Kierownictwo organizacji wykorzystujące informacje w procesie formułowania strategii",
+        "Klienci firmy",
+        "Media"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Głównym użytkownikiem analizy strategicznej jest kierownictwo organizacji, które wykorzystuje informacje pochodzące z analizy w procesie formułowania i realizacji strategii."
+    },
+    {
+      "question": "Co oznacza litera 'S' w regule SMART?",
+      "options": [
+        "Strategic (strategiczny)",
+        "Specific (skonkretyzowany)",
+        "Simple (prosty)",
+        "Stable (stabilny)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W regule SMART litera S oznacza Specific (skonkretyzowany) - cel powinien być jednoznaczny i zrozumiały, niepozostawiający miejsca na luźną interpretację."
+    },
+    {
+      "question": "Jakie są etapy cyklu życia sektora wykorzystywane w macierzy ADL?",
+      "options": [
+        "Tylko wzrost i spadek",
+        "Narodziny, wzrost, dojrzałość, nasycenie, schyłek",
+        "Początek i koniec",
+        "Wprowadzenie i wycofanie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Macierz ADL wykorzystuje fazy cyklu życia sektora obejmujące: narodziny (wprowadzenie), wzrost (rozwój), dojrzałość, nasycenie (stagnację) i schyłek (spadek)."
+    },
+    {
+      "question": "Co to jest insourcing?",
+      "options": [
+        "Zlecanie funkcji na zewnątrz",
+        "Przejmowanie funkcji wcześniej realizowanych na zewnątrz do wnętrza firmy",
+        "Redukcja zatrudnienia",
+        "Ekspansja zagraniczna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Insourcing to odwrotność outsourcingu - polega na przejmowaniu funkcji wcześniej realizowanych przez podmioty zewnętrzne do wnętrza przedsiębiorstwa."
+    },
+    {
+      "question": "Co jest istotą metody QUEST?",
+      "options": [
+        "Analiza finansowa",
+        "Adaptacja metody delfickiej do badania organizacji w burzliwym otoczeniu",
+        "Badanie satysfakcji klientów",
+        "Ocena jakości produktów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metoda QUEST stanowi adaptację metody delfickiej na potrzeby badania uwarunkowań organizacji działających w burzliwym otoczeniu poprzez wnioskowanie na podstawie trendów i opinii ekspertów."
+    },
+    {
+      "question": "Co to jest holding jako forma struktury organizacyjnej?",
+      "options": [
+        "Mała firma rodzinna",
+        "Struktura grupująca spółki zależne pod kontrolą spółki matki",
+        "Jednoosobowa działalność gospodarcza",
+        "Spółdzielnia pracownicza"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Holding to forma struktury organizacyjnej grupująca spółki zależne pod kontrolą spółki matki (holdingowej), często powstająca w wyniku restrukturyzacji organizacyjnej."
+    },
+    {
+      "question": "Ile pól zawiera macierz McKinseya?",
+      "options": [
+        "4",
+        "6",
+        "9",
+        "12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Macierz McKinseya jest dziewięciopolowa, powstająca z nałożenia dwóch wymiarów (atrakcyjność sektora i pozycja konkurencyjna) po trzy poziomy każdy (3x3=9)."
+    },
+    {
+      "question": "Co charakteryzuje strategię konkurencyjną w analizie SWOT?",
+      "options": [
+        "Dominacja mocnych stron i szans",
+        "Dominacja słabości przy większej liczbie szans w otoczeniu",
+        "Przewaga zagrożeń i mocnych stron",
+        "Równowaga wszystkich czynników"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia konkurencyjna (mini-maxi) jest stosowana gdy dominują słabości przedsiębiorstwa, ale w otoczeniu jest więcej szans - firma próbuje wykorzystać szanse mimo słabości."
+    },
+    {
+      "question": "Co jest celem analizy łańcucha wartości?",
+      "options": [
+        "Ocena wartości rynkowej firmy",
+        "Badanie przewag konkurencyjnych w poszczególnych funkcjach firmy",
+        "Wycena aktywów przedsiębiorstwa",
+        "Analiza wartości akcji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Analiza łańcucha wartości służy do badania przewag konkurencyjnych firmy w poszczególnych jej funkcjach podstawowych i pomocniczych oraz określenia mocnych i słabych stron."
+    },
+    {
+      "question": "Co oznacza termin 'core competencies'?",
+      "options": [
+        "Podstawowe kompetencje pracowników",
+        "Kluczowe kompetencje przedsiębiorstwa stanowiące źródło przewagi konkurencyjnej",
+        "Standardowe umiejętności menedżerskie",
+        "Kompetencje wymagane prawem"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Core competencies (kluczowe kompetencje) to koncepcja Hamela i Prahalada oznaczająca unikalne zasoby i umiejętności przedsiębiorstwa stanowiące źródło jego przewagi konkurencyjnej."
+    },
+    {
+      "question": "Jakie działanie NIE należy do typowych działań restrukturyzacyjnych?",
+      "options": [
+        "Zmiana formy organizacyjno-prawnej",
+        "Racjonalizacja zatrudnienia",
+        "Zwiększenie zatrudnienia o 50%",
+        "Outsourcing"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Typowe działania restrukturyzacyjne obejmują m.in. zmianę formy organizacyjno-prawnej, racjonalizację (nie zwiększanie) zatrudnienia, outsourcing/insourcing i zmiany struktury organizacyjnej."
+    },
+    {
+      "question": "Co jest głównym założeniem ekstrapolacji trendów?",
+      "options": [
+        "Przyszłość będzie zupełnie inna niż przeszłość",
+        "Dane zjawisko będzie zmieniać się w przyszłości podobnie jak dotychczas",
+        "Trendy są nieprzewidywalne",
+        "Należy ignorować dane historyczne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ekstrapolacja trendów opiera się na założeniu, że dane zjawisko będzie w przyszłości zmieniało się podobnie jak dotychczas - prognozowanie na podstawie zaobserwowanego trendu."
+    },
+    {
+      "question": "Co charakteryzuje fazę narodzin sektora pod względem kluczowych czynników sukcesu?",
+      "options": [
+        "Dominuje czynnik kosztowy",
+        "Dominuje czynnik technologiczny",
+        "Dominuje zakorzenienie na rynku",
+        "Dominuje produktywność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W fazie narodzin sektora kluczowym czynnikiem sukcesu jest technologia - firmy konkurują innowacyjnością technologiczną i produktową."
+    },
+    {
+      "question": "Jaka metoda jest stosowana do celów podobnych jak macierz BCG?",
+      "options": [
+        "Analiza PEST",
+        "Macierz ADL",
+        "Burza mózgów",
+        "Metoda delficka"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Macierz ADL (A.D. Little) służy do celów podobnych jak macierz BCG czy macierz McKinseya - do analizy portfela produktów/jednostek biznesowych i określania strategii."
+    },
+    {
+      "question": "Co oznacza 'rynek docelowy' dla przedsiębiorstwa?",
+      "options": [
+        "Każdy możliwy rynek",
+        "Najważniejszy dla funkcjonowania firmy segment, na którym koncentruje działania",
+        "Rynek, z którego firma się wycofuje",
+        "Rynek konkurencji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rynek docelowy jest najważniejszy dla funkcjonowania firmy - to segment, na którym firma koncentruje działania, dążąc do uzyskania przewagi konkurencyjnej."
+    },
+    {
+      "question": "Co to jest TQM w kontekście restrukturyzacji?",
+      "options": [
+        "System księgowy",
+        "Total Quality Management - kompleksowe zarządzanie jakością",
+        "Technika motywacyjna",
+        "Metoda rekrutacji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TQM (Total Quality Management) to kompleksowe zarządzanie jakością - jedna z metod usprawniania zasad i funkcjonowania przedsiębiorstwa w ramach restrukturyzacji."
+    },
+    {
+      "question": "Co charakteryzuje strategię innowacji otwartej?",
+      "options": [
+        "Zamknięty proces innowacyjny wewnątrz firmy",
+        "Wyszukiwanie i wykorzystywanie idei innowacji z otoczenia zewnętrznego",
+        "Kopiowanie innowacji konkurentów",
+        "Brak innowacji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia innowacji otwartej bazuje na wyszukiwaniu oraz wykorzystywaniu idei innowacji tworzących się w otoczeniu zewnętrznym, które nie jest formalnie związane z firmą."
+    },
+    {
+      "question": "Jakie są główne etapy benchmarkingu według Kotlera?",
+      "options": [
+        "Tylko porównanie i wdrożenie",
+        "Określenie przedmiotu, zmiennych, najlepszych organizacji, ocena, wdrażanie",
+        "Analiza i raportowanie",
+        "Planowanie i kontrola"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Etapy benchmarkingu wg Kotlera obejmują: określenie przedmiotu i zmiennych, określenie najlepszych organizacji, ocenę ich sprawności, własną ocenę, zdefiniowanie luki, wdrażanie i monitoring."
+    },
+    {
+      "question": "Co to jest klaster innowacyjny?",
+      "options": [
+        "Pojedyncza innowacyjna firma",
+        "Współpraca zakładów i instytucji wspierających, wyspecjalizowanych w określonej dziedzinie, w bliskim otoczeniu",
+        "Dział badań i rozwoju",
+        "Grupa konkurentów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strategia klastra innowacyjnego oparta jest na współpracy zakładów oraz instytucji wspierających, wyspecjalizowanych w określonej dziedzinie, znajdujących się w najbliższym otoczeniu."
+    },
+    {
+      "question": "Co oznacza termin 'lean management' w kontekście restrukturyzacji?",
+      "options": [
+        "Zwiększanie zatrudnienia",
+        "Szczupłe zarządzanie eliminujące marnotrawstwo",
+        "Zarządzanie finansami",
+        "Marketing bezpośredni"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lean management (szczupłe zarządzanie) to metoda usprawniania funkcjonowania przedsiębiorstwa polegająca na eliminacji marnotrawstwa i optymalizacji procesów."
+    },
+    {
+      "question": "Jakie cechy powinna mieć misja przedsiębiorstwa?",
+      "options": [
+        "Tylko szczegółowość i długość",
+        "Zrozumiałość, społeczność, praktyczność, realność i lapidarność",
+        "Tajność i złożoność",
+        "Zmienność i elastyczność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Misja powinna być: zrozumiała i jednoznaczna, społeczna (odnosząca się do wartości ogólnie cenionych), praktyczna, realna (ambitna ale możliwa do realizacji) oraz lapidarna (zwięzła)."
+    },
+    {
+      "question": "Co to jest Kaizen w kontekście zarządzania?",
+      "options": [
+        "Radykalna zmiana organizacji",
+        "Filozofia ciągłego doskonalenia poprzez małe usprawnienia",
+        "System motywacyjny",
+        "Metoda rekrutacji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kaizen to japońska filozofia ciągłego doskonalenia poprzez małe, stopniowe usprawnienia - jedna z metod usprawniania zasad i funkcjonowania przedsiębiorstwa."
+    },
+    {
+      "question": "Co określa analiza bilansu strategicznego?",
+      "options": [
+        "Tylko sytuację finansową firmy",
+        "Mocne i słabe strony organizacji poprzez zbadanie wszystkich jej podsystemów i funkcji",
+        "Pozycję na giełdzie",
+        "Wartość akcji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metoda bilansu strategicznego przedsiębiorstwa ma na celu zidentyfikowanie mocnych i słabych stron organizacji dzięki zbadaniu wszystkich jej podsystemów i funkcji."
+    },
+    {
+      "question": "Co to jest reengineering w kontekście restrukturyzacji?",
+      "options": [
+        "Naprawa maszyn",
+        "Fundamentalne przeprojektowanie procesów biznesowych dla radykalnej poprawy wyników",
+        "Szkolenie inżynierów",
+        "Budowa nowej fabryki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reengineering to fundamentalne przeprojektowanie procesów biznesowych w celu osiągnięcia radykalnej poprawy wyników - jedna z metod usprawniania funkcjonowania przedsiębiorstwa."
+    }
+  ]
+}
