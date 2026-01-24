@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Play, BookOpen, Loader2, FileText, Headphones, RefreshCw, ChevronDown } from 'lucide-react';
+import { Play, BookOpen, Loader2, FileText, Headphones, RefreshCw, ChevronDown, FileDown, Download, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import type { QuizMetadata, Material, AudioMaterial, Flashcard } from '@/types';
+import type { QuizMetadata, Material, AudioMaterial, Flashcard, PdfDocument } from '@/types';
 
 export function HomeScreen({
   selectedSubject,
@@ -25,6 +25,8 @@ export function HomeScreen({
   const [loadingAudio, setLoadingAudio] = useState(true);
   const [flashcards, setFlashcards] = useState<Flashcard[]>([]);
   const [loadingFlashcards, setLoadingFlashcards] = useState(true);
+  const [pdfs, setPdfs] = useState<PdfDocument[]>([]);
+  const [loadingPdfs, setLoadingPdfs] = useState(true);
 
   // Load subjects
   useEffect(() => {
@@ -102,11 +104,48 @@ export function HomeScreen({
       });
   }, [selectedSubject]);
 
+  useEffect(() => {
+    setLoadingPdfs(true);
+    fetch(`/api/pdfs?subject=${encodeURIComponent(selectedSubject)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setPdfs(data.pdfs || []);
+        setLoadingPdfs(false);
+      })
+      .catch((error) => {
+        console.error('Error loading PDFs:', error);
+        setLoadingPdfs(false);
+      });
+  }, [selectedSubject]);
+
   // Format file size
   const formatFileSize = (bytes: number) => {
     if (bytes < 1024) return `${bytes} B`;
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
     return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  };
+
+  // Handle PDF download
+  const handlePdfDownload = async (pdf: PdfDocument) => {
+    try {
+      const response = await fetch(pdf.url);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = pdf.filename;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    }
+  };
+
+  // Open PDF in new tab
+  const handlePdfOpen = (pdf: PdfDocument) => {
+    window.open(pdf.url, '_blank');
   };
 
   return (
@@ -146,11 +185,12 @@ export function HomeScreen({
       <main className="flex-1 p-6">
         <div className="max-w-7xl mx-auto">
           <Tabs defaultValue="quizzes" className="w-full">
-            <TabsList className="grid w-full max-w-2xl grid-cols-4">
+            <TabsList className="grid w-full max-w-3xl grid-cols-5">
               <TabsTrigger value="quizzes">Quizy</TabsTrigger>
               <TabsTrigger value="materials">Teksty</TabsTrigger>
               <TabsTrigger value="audio">Audio</TabsTrigger>
               <TabsTrigger value="flashcards">Fiszki</TabsTrigger>
+              <TabsTrigger value="pdfs">PDFs</TabsTrigger>
             </TabsList>
 
             {/* Quizzes Tab */}
@@ -363,6 +403,64 @@ export function HomeScreen({
                         </CardContent>
                       </Card>
                     </Link>
+                  ))}
+                </div>
+              )}
+            </TabsContent>
+
+            {/* PDFs Tab */}
+            <TabsContent value="pdfs" className="mt-6">
+              {loadingPdfs ? (
+                <div className="flex items-center justify-center h-64">
+                  <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                </div>
+              ) : pdfs.length === 0 ? (
+                <Card className="p-12 text-center">
+                  <FileDown className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
+                  <h3 className="text-xl font-semibold mb-2">Brak dostępnych plików PDF</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Dodaj pliki PDF do folderu <code className="bg-muted px-2 py-1 rounded">/public/{selectedSubject}/pdfs</code>
+                  </p>
+                </Card>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {pdfs.map((pdf) => (
+                    <Card key={pdf.id} className="hover:shadow-lg transition-all hover:border-primary/50 group h-full">
+                      <CardHeader>
+                        <div className="flex items-start justify-between">
+                          <div className="flex-1">
+                            <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
+                              {pdf.title}
+                            </CardTitle>
+                            <CardDescription className="text-sm">
+                              PDF • {formatFileSize(pdf.size)}
+                            </CardDescription>
+                          </div>
+                          <FileDown className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 ml-2" />
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="flex items-center gap-2">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="group-hover:bg-primary group-hover:text-primary-foreground transition-all"
+                            onClick={() => handlePdfDownload(pdf)}
+                          >
+                            <Download className="w-4 h-4 mr-1" />
+                            Pobierz
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            onClick={() => handlePdfOpen(pdf)}
+                          >
+                            <ExternalLink className="w-4 h-4 mr-1" />
+                            Otwórz
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
                   ))}
                 </div>
               )}

@@ -1,97 +1,120 @@
 {
   "audioMaterials": [
     {
-      "id": "wzorce_czeste_i_reguly_asocjacyjne.mp3",
-      "filename": "wzorce_czeste_i_reguly_asocjacyjne.mp3",
-      "title": "wzorce czeste i reguly asocjacyjne",
-      "subject": "Systemy Wspomagania Decyzji",
+      "id": "wprowadzenie_do_html_tekst_audio.mp3",
+      "filename": "wprowadzenie_do_html_tekst_audio.mp3",
+      "title": "wprowadzenie do html tekst audio",
+      "subject": "Technologie Frontendowe",
       "format": "mp3",
-      "size": 14703500,
-      "createdAt": "2026-01-12T18:36:47.340Z",
-      "url": "/Systemy%20Wspomagania%20Decyzji/audio-materials/wzorce_czeste_i_reguly_asocjacyjne.mp3"
+      "size": 21256800,
+      "createdAt": "2026-01-24T00:50:12.910Z",
+      "url": "/Technologie%20Frontendowe/audio-materials/wprowadzenie_do_html_tekst_audio.mp3"
     },
     {
-      "id": "opracowanie_sieci_neuronowe.mp3",
-      "filename": "opracowanie_sieci_neuronowe.mp3",
-      "title": "opracowanie sieci neuronowe",
-      "subject": "Systemy Wspomagania Decyzji",
+      "id": "css_kompletny_kurs_tekst_audio.mp3",
+      "filename": "css_kompletny_kurs_tekst_audio.mp3",
+      "title": "css kompletny kurs tekst audio",
+      "subject": "Technologie Frontendowe",
       "format": "mp3",
-      "size": 28590956,
-      "createdAt": "2026-01-12T18:36:47.161Z",
-      "url": "/Systemy%20Wspomagania%20Decyzji/audio-materials/opracowanie_sieci_neuronowe.mp3"
+      "size": 36655200,
+      "createdAt": "2026-01-24T00:44:27.867Z",
+      "url": "/Technologie%20Frontendowe/audio-materials/css_kompletny_kurs_tekst_audio.mp3"
     },
     {
-      "id": "eksploracja danych.mp3",
-      "filename": "eksploracja danych.mp3",
-      "title": "eksploracja danych",
-      "subject": "Systemy Wspomagania Decyzji",
+      "id": "react_kompleksowy_przewodnik_tekst_audio.mp3",
+      "filename": "react_kompleksowy_przewodnik_tekst_audio.mp3",
+      "title": "react kompleksowy przewodnik tekst audio",
+      "subject": "Technologie Frontendowe",
       "format": "mp3",
-      "size": 29876640,
-      "createdAt": "2026-01-12T18:36:47.019Z",
-      "url": "/Systemy%20Wspomagania%20Decyzji/audio-materials/eksploracja%20danych.mp3"
+      "size": 30063360,
+      "createdAt": "2026-01-24T00:44:27.137Z",
+      "url": "/Technologie%20Frontendowe/audio-materials/react_kompleksowy_przewodnik_tekst_audio.mp3"
     },
     {
-      "id": "przemysł 4.0.mp3",
-      "filename": "przemysł 4.0.mp3",
-      "title": "przemysł 4.0",
-      "subject": "Inżynieria transportu",
+      "id": "javascript_kompletny_przewodnik_tekst_audio.mp3",
+      "filename": "javascript_kompletny_przewodnik_tekst_audio.mp3",
+      "title": "javascript kompletny przewodnik tekst audio",
+      "subject": "Technologie Frontendowe",
       "format": "mp3",
-      "size": 22318080,
-      "createdAt": "2026-01-12T18:36:46.909Z",
-      "url": "/In%C5%BCynieria%20transportu/audio-materials/przemys%C5%82%204.0.mp3"
+      "size": 47045760,
+      "createdAt": "2026-01-24T00:36:12.406Z",
+      "url": "/Technologie%20Frontendowe/audio-materials/javascript_kompletny_przewodnik_tekst_audio.mp3"
     },
     {
-      "id": "ZAPASY I MAGAZYNOWANIE.mp3",
-      "filename": "ZAPASY I MAGAZYNOWANIE.mp3",
-      "title": "ZAPASY I MAGAZYNOWANIE",
-      "subject": "Inżynieria transportu",
+      "id": "zarzadzanie_strategiczne_tekst_audio.mp3",
+      "filename": "zarzadzanie_strategiczne_tekst_audio.mp3",
+      "title": "zarzadzanie strategiczne tekst audio",
+      "subject": "Zarządzanie Strategiczne dla Inżynierów",
       "format": "mp3",
-      "size": 23152800,
-      "createdAt": "2026-01-12T18:36:46.785Z",
-      "url": "/In%C5%BCynieria%20transportu/audio-materials/ZAPASY%20I%20MAGAZYNOWANIE.mp3"
-    },
-    {
-      "id": "TRANSPORT ZEWNĘTRZNY.mp3",
-      "filename": "TRANSPORT ZEWNĘTRZNY.mp3",
-      "title": "TRANSPORT ZEWNĘTRZNY",
-      "subject": "Inżynieria transportu",
-      "format": "mp3",
-      "size": 10869600,
-      "createdAt": "2026-01-12T18:36:46.735Z",
-      "url": "/In%C5%BCynieria%20transportu/audio-materials/TRANSPORT%20ZEWN%C4%98TRZNY.mp3"
-    },
-    {
-      "id": "TRANSPORT BLISKI.mp3",
-      "filename": "TRANSPORT BLISKI.mp3",
-      "title": "TRANSPORT BLISKI",
-      "subject": "Inżynieria transportu",
-      "format": "mp3",
-      "size": 12557280,
-      "createdAt": "2026-01-12T18:36:46.679Z",
-      "url": "/In%C5%BCynieria%20transportu/audio-materials/TRANSPORT%20BLISKI.mp3"
-    },
-    {
-      "id": "INCOTERMS 2020.mp3",
-      "filename": "INCOTERMS 2020.mp3",
-      "title": "INCOTERMS 2020",
-      "subject": "Inżynieria transportu",
-      "format": "mp3",
-      "size": 15427680,
-      "createdAt": "2026-01-12T18:36:46.605Z",
-      "url": "/In%C5%BCynieria%20transportu/audio-materials/INCOTERMS%202020.mp3"
-    },
-    {
-      "id": "DROGOWY TRANSPORT MIĘDZYNARODOWY.mp3",
-      "filename": "DROGOWY TRANSPORT MIĘDZYNARODOWY.mp3",
-      "title": "DROGOWY TRANSPORT MIĘDZYNARODOWY",
-      "subject": "Inżynieria transportu",
-      "format": "mp3",
-      "size": 18877920,
-      "createdAt": "2026-01-12T18:36:46.508Z",
-      "url": "/In%C5%BCynieria%20transportu/audio-materials/DROGOWY%20TRANSPORT%20MI%C4%98DZYNARODOWY.mp3"
+      "size": 50387520,
+      "createdAt": "2026-01-19T11:30:22.205Z",
+      "url": "/Zarz%C4%85dzanie%20Strategiczne%20dla%20In%C5%BCynier%C3%B3w/audio-materials/zarzadzanie_strategiczne_tekst_audio.mp3"
     }
   ],
   "materials": [
+    {
+      "id": "javascript_kompletny_przewodnik_tekst",
+      "filename": "javascript_kompletny_przewodnik_tekst.txt",
+      "title": "javascript kompletny przewodnik tekst",
+      "subject": "Technologie Frontendowe",
+      "size": 37229,
+      "createdAt": "2026-01-24T00:27:16.159Z",
+      "url": "/Technologie%20Frontendowe/materials/javascript_kompletny_przewodnik_tekst.txt"
+    },
+    {
+      "id": "react_kompleksowy_przewodnik_tekst",
+      "filename": "react_kompleksowy_przewodnik_tekst.txt",
+      "title": "react kompleksowy przewodnik tekst",
+      "subject": "Technologie Frontendowe",
+      "size": 23913,
+      "createdAt": "2026-01-24T00:22:52.559Z",
+      "url": "/Technologie%20Frontendowe/materials/react_kompleksowy_przewodnik_tekst.txt"
+    },
+    {
+      "id": "css_kompletny_kurs_tekst",
+      "filename": "css_kompletny_kurs_tekst.txt",
+      "title": "css kompletny kurs tekst",
+      "subject": "Technologie Frontendowe",
+      "size": 29205,
+      "createdAt": "2026-01-24T00:07:01.637Z",
+      "url": "/Technologie%20Frontendowe/materials/css_kompletny_kurs_tekst.txt"
+    },
+    {
+      "id": "wprowadzenie_do_html_tekst",
+      "filename": "wprowadzenie_do_html_tekst.txt",
+      "title": "wprowadzenie do html tekst",
+      "subject": "Technologie Frontendowe",
+      "size": 16851,
+      "createdAt": "2026-01-24T00:01:05.051Z",
+      "url": "/Technologie%20Frontendowe/materials/wprowadzenie_do_html_tekst.txt"
+    },
+    {
+      "id": "zarzadzanie_strategiczne_tekst",
+      "filename": "zarzadzanie_strategiczne_tekst.txt",
+      "title": "zarzadzanie strategiczne tekst",
+      "subject": "Zarządzanie Strategiczne dla Inżynierów",
+      "size": 39889,
+      "createdAt": "2026-01-19T11:22:30.964Z",
+      "url": "/Zarz%C4%85dzanie%20Strategiczne%20dla%20In%C5%BCynier%C3%B3w/materials/zarzadzanie_strategiczne_tekst.txt"
+    },
+    {
+      "id": "technologie_sieciowe_produkcja_tekst",
+      "filename": "technologie_sieciowe_produkcja_tekst.txt",
+      "title": "technologie sieciowe produkcja tekst",
+      "subject": "Technologie sieciowe w produkcji",
+      "size": 21803,
+      "createdAt": "2026-01-16T22:58:38.232Z",
+      "url": "/Technologie%20sieciowe%20w%20produkcji/materials/technologie_sieciowe_produkcja_tekst.txt"
+    },
+    {
+      "id": "nowoczesne_techniki_programowania_tekst",
+      "filename": "nowoczesne_techniki_programowania_tekst.txt",
+      "title": "nowoczesne techniki programowania tekst",
+      "subject": "Nowoczesne techniki programowania",
+      "size": 33438,
+      "createdAt": "2026-01-16T22:15:46.644Z",
+      "url": "/Nowoczesne%20techniki%20programowania/materials/nowoczesne_techniki_programowania_tekst.txt"
+    },
     {
       "id": "opracowanie_sieci_neuronowe_complete",
       "filename": "opracowanie_sieci_neuronowe_complete.txt",
@@ -176,6 +199,42 @@
   ],
   "flashcards": [
     {
+      "id": "wprowadzenie_do_html_fiszki",
+      "filename": "wprowadzenie_do_html_fiszki.json",
+      "title": "wprowadzenie do html fiszki",
+      "subject": "Technologie Frontendowe",
+      "size": 5325,
+      "createdAt": "2026-01-24T00:28:12.276Z",
+      "url": "/Technologie%20Frontendowe/flashcards/wprowadzenie_do_html_fiszki.json"
+    },
+    {
+      "id": "javascript_kompletny_przewodnik_fiszki",
+      "filename": "javascript_kompletny_przewodnik_fiszki.json",
+      "title": "javascript kompletny przewodnik fiszki",
+      "subject": "Technologie Frontendowe",
+      "size": 10425,
+      "createdAt": "2026-01-24T00:27:20.890Z",
+      "url": "/Technologie%20Frontendowe/flashcards/javascript_kompletny_przewodnik_fiszki.json"
+    },
+    {
+      "id": "react_kompleksowy_przewodnik_fiszki",
+      "filename": "react_kompleksowy_przewodnik_fiszki.json",
+      "title": "react kompleksowy przewodnik fiszki",
+      "subject": "Technologie Frontendowe",
+      "size": 6907,
+      "createdAt": "2026-01-24T00:25:26.959Z",
+      "url": "/Technologie%20Frontendowe/flashcards/react_kompleksowy_przewodnik_fiszki.json"
+    },
+    {
+      "id": "css_kompletny_kurs_fiszki",
+      "filename": "css_kompletny_kurs_fiszki.json",
+      "title": "css kompletny kurs fiszki",
+      "subject": "Technologie Frontendowe",
+      "size": 8293,
+      "createdAt": "2026-01-24T00:09:51.102Z",
+      "url": "/Technologie%20Frontendowe/flashcards/css_kompletny_kurs_fiszki.json"
+    },
+    {
       "id": "wzorce_czeste_i_reguly_asocjacyjne_fiszki",
       "filename": "wzorce_czeste_i_reguly_asocjacyjne_fiszki.json",
       "title": "wzorce czeste i reguly asocjacyjne fiszki",
@@ -259,6 +318,69 @@
   ],
   "quizzes": [
     {
+      "id": "javascript_kompletny_przewodnik_quiz",
+      "filename": "javascript_kompletny_przewodnik_quiz.json",
+      "title": "javascript kompletny przewodnik quiz",
+      "subject": "Technologie Frontendowe",
+      "size": 8260,
+      "createdAt": "2026-01-24T00:27:17.914Z",
+      "url": "/Technologie%20Frontendowe/quizzes/javascript_kompletny_przewodnik_quiz.json"
+    },
+    {
+      "id": "react_kompleksowy_przewodnik_quiz",
+      "filename": "react_kompleksowy_przewodnik_quiz.json",
+      "title": "react kompleksowy przewodnik quiz",
+      "subject": "Technologie Frontendowe",
+      "size": 8960,
+      "createdAt": "2026-01-24T00:26:29.056Z",
+      "url": "/Technologie%20Frontendowe/quizzes/react_kompleksowy_przewodnik_quiz.json"
+    },
+    {
+      "id": "css_kompletny_kurs_quiz",
+      "filename": "css_kompletny_kurs_quiz.json",
+      "title": "css kompletny kurs quiz",
+      "subject": "Technologie Frontendowe",
+      "size": 9033,
+      "createdAt": "2026-01-24T00:09:48.586Z",
+      "url": "/Technologie%20Frontendowe/quizzes/css_kompletny_kurs_quiz.json"
+    },
+    {
+      "id": "wprowadzenie_do_html_quiz",
+      "filename": "wprowadzenie_do_html_quiz.json",
+      "title": "wprowadzenie do html quiz",
+      "subject": "Technologie Frontendowe",
+      "size": 7702,
+      "createdAt": "2026-01-24T00:01:01.661Z",
+      "url": "/Technologie%20Frontendowe/quizzes/wprowadzenie_do_html_quiz.json"
+    },
+    {
+      "id": "zarzadzanie_strategiczne_quiz",
+      "filename": "zarzadzanie_strategiczne_quiz.json",
+      "title": "zarzadzanie strategiczne quiz",
+      "subject": "Zarządzanie Strategiczne dla Inżynierów",
+      "size": 52472,
+      "createdAt": "2026-01-19T12:56:03.236Z",
+      "url": "/Zarz%C4%85dzanie%20Strategiczne%20dla%20In%C5%BCynier%C3%B3w/quizzes/zarzadzanie_strategiczne_quiz.json"
+    },
+    {
+      "id": "technologie_sieciowe_produkcja_quiz",
+      "filename": "technologie_sieciowe_produkcja_quiz.json",
+      "title": "technologie sieciowe produkcja quiz",
+      "subject": "Technologie sieciowe w produkcji",
+      "size": 41806,
+      "createdAt": "2026-01-16T23:03:30.826Z",
+      "url": "/Technologie%20sieciowe%20w%20produkcji/quizzes/technologie_sieciowe_produkcja_quiz.json"
+    },
+    {
+      "id": "nowoczesne_techniki_programowania_quiz (1)",
+      "filename": "nowoczesne_techniki_programowania_quiz (1).json",
+      "title": "nowoczesne techniki programowania quiz (1)",
+      "subject": "Nowoczesne techniki programowania",
+      "size": 44332,
+      "createdAt": "2026-01-16T22:48:32.987Z",
+      "url": "/Nowoczesne%20techniki%20programowania/quizzes/nowoczesne_techniki_programowania_quiz%20(1).json"
+    },
+    {
       "id": "eksploracja_danych_quiz",
       "filename": "eksploracja_danych_quiz.json",
       "title": "eksploracja danych quiz",
@@ -340,8 +462,13 @@
       "url": "/In%C5%BCynieria%20transportu/quizzes/zapasy_magazynowanie_quiz.json"
     }
   ],
-  "generatedAt": "2026-01-12T18:53:27.783Z",
+  "pdfs": [],
+  "generatedAt": "2026-01-24T00:50:58.507Z",
   "subjects": [
+    "Technologie Frontendowe",
+    "Zarządzanie Strategiczne dla Inżynierów",
+    "Technologie sieciowe w produkcji",
+    "Nowoczesne techniki programowania",
     "Systemy Wspomagania Decyzji",
     "Inżynieria transportu"
   ]

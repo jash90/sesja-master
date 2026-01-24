@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
-import type { Quiz, QuizState, FlashcardSet, AudioMaterial, MaterialContent } from '@/types';
+import type { Quiz, QuizState, FlashcardSet, AudioMaterial, MaterialContent, PdfDocument } from '@/types';
 import { generateShuffledIndices } from '@/lib/utils';
 
 interface QuizContextType {
@@ -15,6 +15,7 @@ interface QuizContextType {
   currentMaterial: MaterialContent | null;
   currentAudio: AudioMaterial | null;
   currentFlashcardSet: FlashcardSet | null;
+  currentPdf: PdfDocument | null;
 
   // Subject
   selectedSubject: string;
@@ -34,9 +35,11 @@ interface QuizContextType {
   loadMaterial: (materialId: string) => Promise<void>;
   loadAudio: (audioId: string) => Promise<void>;
   loadFlashcardSet: (flashcardId: string) => Promise<void>;
+  loadPdf: (pdfId: string) => Promise<void>;
   clearMaterial: () => void;
   clearAudio: () => void;
   clearFlashcardSet: () => void;
+  clearPdf: () => void;
 
   // Timer control
   startTimer: () => void;
@@ -58,6 +61,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
   const [currentMaterial, setCurrentMaterial] = useState<MaterialContent | null>(null);
   const [currentAudio, setCurrentAudio] = useState<AudioMaterial | null>(null);
   const [currentFlashcardSet, setCurrentFlashcardSet] = useState<FlashcardSet | null>(null);
+  const [currentPdf, setCurrentPdf] = useState<PdfDocument | null>(null);
 
   // Subject
   const [selectedSubject, setSelectedSubject] = useState<string>('test');
@@ -241,10 +245,24 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     }
   }, [selectedSubject]);
 
+  // Load PDF by ID
+  const loadPdf = useCallback(async (pdfId: string) => {
+    try {
+      const res = await fetch(`/api/pdfs/${pdfId}?subject=${encodeURIComponent(selectedSubject)}`);
+      if (!res.ok) throw new Error('Failed to load PDF');
+      const pdfData = await res.json();
+      setCurrentPdf(pdfData);
+    } catch (error) {
+      console.error('Error loading PDF:', error);
+      throw error;
+    }
+  }, [selectedSubject]);
+
   // Clear content
   const clearMaterial = useCallback(() => setCurrentMaterial(null), []);
   const clearAudio = useCallback(() => setCurrentAudio(null), []);
   const clearFlashcardSet = useCallback(() => setCurrentFlashcardSet(null), []);
+  const clearPdf = useCallback(() => setCurrentPdf(null), []);
 
   const value: QuizContextType = {
     quiz,
@@ -254,6 +272,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     currentMaterial,
     currentAudio,
     currentFlashcardSet,
+    currentPdf,
     selectedSubject,
     setSelectedSubject,
     loadQuiz,
@@ -267,9 +286,11 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     loadMaterial,
     loadAudio,
     loadFlashcardSet,
+    loadPdf,
     clearMaterial,
     clearAudio,
     clearFlashcardSet,
+    clearPdf,
     startTimer,
     stopTimer,
     isTimerRunning,

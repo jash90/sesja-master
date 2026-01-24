@@ -22,6 +22,7 @@ function scanDirectory(dirPath, baseDir = '') {
     materials: [],
     flashcards: [],
     quizzes: [],
+    pdfs: [],
   };
 
   if (!fs.existsSync(dirPath)) {
@@ -125,6 +126,28 @@ function scanDirectory(dirPath, baseDir = '') {
           }
         }
       }
+
+      // Scan PDFs
+      const pdfsDir = path.join(fullPath, 'pdfs');
+      if (fs.existsSync(pdfsDir)) {
+        const pdfFiles = fs.readdirSync(pdfsDir);
+        for (const file of pdfFiles) {
+          if (file.toLowerCase().endsWith('.pdf')) {
+            const filePath = path.join(pdfsDir, file);
+            const stats = getFileStats(filePath);
+            const id = file.replace(/\.pdf$/i, '');
+            results.pdfs.push({
+              id,
+              filename: file,
+              title: id.replace(/-/g, ' ').replace(/_/g, ' '),
+              subject: entry.name,
+              size: stats.size,
+              createdAt: stats.createdAt,
+              url: `/${encodeURIComponent(entry.name)}/pdfs/${encodeURIComponent(file)}`,
+            });
+          }
+        }
+      }
     }
   }
 
@@ -141,6 +164,7 @@ function generateManifest() {
   manifest.materials.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
   manifest.flashcards.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
   manifest.quizzes.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+  manifest.pdfs.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
   // Add metadata
   manifest.generatedAt = new Date().toISOString();
@@ -149,6 +173,7 @@ function generateManifest() {
     ...manifest.materials.map(m => m.subject),
     ...manifest.flashcards.map(f => f.subject),
     ...manifest.quizzes.map(q => q.subject),
+    ...manifest.pdfs.map(p => p.subject),
   ])];
 
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
@@ -158,6 +183,7 @@ function generateManifest() {
   console.log(`  - Materials: ${manifest.materials.length}`);
   console.log(`  - Flashcards: ${manifest.flashcards.length}`);
   console.log(`  - Quizzes: ${manifest.quizzes.length}`);
+  console.log(`  - PDFs: ${manifest.pdfs.length}`);
   console.log(`  - Subjects: ${manifest.subjects.join(', ')}`);
 }
 

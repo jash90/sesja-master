@@ -77,6 +77,15 @@ export interface FlashcardSet {
   cards: FlashcardCard[];
 }
 
+export interface PdfDocument {
+  id: string;
+  filename: string;
+  title: string;
+  size: number;
+  createdAt: Date;
+  url: string;
+}
+
 export type AppView =
   | 'home'
   | 'quiz-start'
@@ -84,4 +93,5 @@ export type AppView =
   | 'quiz-results'
   | 'material-reader'
   | 'audio-player'
-  | 'flashcard-learn';
+  | 'flashcard-learn'
+  | 'pdf-viewer';
