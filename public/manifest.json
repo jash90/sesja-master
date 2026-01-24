@@ -199,6 +199,42 @@
   ],
   "flashcards": [
     {
+      "id": "react_kompleksowy_przewodnik_fiszki_100",
+      "filename": "react_kompleksowy_przewodnik_fiszki_100.json",
+      "title": "react kompleksowy przewodnik fiszki 100",
+      "subject": "Technologie Frontendowe",
+      "size": 25581,
+      "createdAt": "2026-01-24T08:06:56.888Z",
+      "url": "/Technologie%20Frontendowe/flashcards/react_kompleksowy_przewodnik_fiszki_100.json"
+    },
+    {
+      "id": "css_kompletny_kurs_fiszki_100",
+      "filename": "css_kompletny_kurs_fiszki_100.json",
+      "title": "css kompletny kurs fiszki 100",
+      "subject": "Technologie Frontendowe",
+      "size": 31141,
+      "createdAt": "2026-01-24T08:03:51.388Z",
+      "url": "/Technologie%20Frontendowe/flashcards/css_kompletny_kurs_fiszki_100.json"
+    },
+    {
+      "id": "javascript_kompletny_przewodnik_fiszki_100",
+      "filename": "javascript_kompletny_przewodnik_fiszki_100.json",
+      "title": "javascript kompletny przewodnik fiszki 100",
+      "subject": "Technologie Frontendowe",
+      "size": 34434,
+      "createdAt": "2026-01-24T07:59:05.894Z",
+      "url": "/Technologie%20Frontendowe/flashcards/javascript_kompletny_przewodnik_fiszki_100.json"
+    },
+    {
+      "id": "wprowadzenie_do_html_fiszki_100",
+      "filename": "wprowadzenie_do_html_fiszki_100.json",
+      "title": "wprowadzenie do html fiszki 100",
+      "subject": "Technologie Frontendowe",
+      "size": 24496,
+      "createdAt": "2026-01-24T07:58:11.952Z",
+      "url": "/Technologie%20Frontendowe/flashcards/wprowadzenie_do_html_fiszki_100.json"
+    },
+    {
       "id": "wprowadzenie_do_html_fiszki",
       "filename": "wprowadzenie_do_html_fiszki.json",
       "title": "wprowadzenie do html fiszki",
@@ -317,6 +353,42 @@
     }
   ],
   "quizzes": [
+    {
+      "id": "wprowadzenie_do_html_quiz_100",
+      "filename": "wprowadzenie_do_html_quiz_100.json",
+      "title": "wprowadzenie do html quiz 100",
+      "subject": "Technologie Frontendowe",
+      "size": 49436,
+      "createdAt": "2026-01-24T07:46:29.589Z",
+      "url": "/Technologie%20Frontendowe/quizzes/wprowadzenie_do_html_quiz_100.json"
+    },
+    {
+      "id": "css_kompletny_kurs_quiz_100",
+      "filename": "css_kompletny_kurs_quiz_100.json",
+      "title": "css kompletny kurs quiz 100",
+      "subject": "Technologie Frontendowe",
+      "size": 55042,
+      "createdAt": "2026-01-24T07:41:07.741Z",
+      "url": "/Technologie%20Frontendowe/quizzes/css_kompletny_kurs_quiz_100.json"
+    },
+    {
+      "id": "javascript_kompletny_przewodnik_quiz_100",
+      "filename": "javascript_kompletny_przewodnik_quiz_100.json",
+      "title": "javascript kompletny przewodnik quiz 100",
+      "subject": "Technologie Frontendowe",
+      "size": 49791,
+      "createdAt": "2026-01-24T07:35:26.425Z",
+      "url": "/Technologie%20Frontendowe/quizzes/javascript_kompletny_przewodnik_quiz_100.json"
+    },
+    {
+      "id": "react_kompleksowy_przewodnik_quiz_100",
+      "filename": "react_kompleksowy_przewodnik_quiz_100.json",
+      "title": "react kompleksowy przewodnik quiz 100",
+      "subject": "Technologie Frontendowe",
+      "size": 49386,
+      "createdAt": "2026-01-24T07:29:08.498Z",
+      "url": "/Technologie%20Frontendowe/quizzes/react_kompleksowy_przewodnik_quiz_100.json"
+    },
     {
       "id": "javascript_kompletny_przewodnik_quiz",
       "filename": "javascript_kompletny_przewodnik_quiz.json",
@@ -500,7 +572,7 @@
       "url": "/Technologie%20Frontendowe/pdfs/Kompletny%20Kurs%20CSS.pdf"
     }
   ],
-  "generatedAt": "2026-01-24T07:43:41.402Z",
+  "generatedAt": "2026-01-24T08:12:48.432Z",
   "subjects": [
     "Technologie Frontendowe",
     "Zarządzanie Strategiczne dla Inżynierów",

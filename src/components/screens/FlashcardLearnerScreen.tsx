@@ -5,14 +5,16 @@ import { ArrowLeft, ChevronLeft, RotateCcw, ChevronRight, Home } from 'lucide-re
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import type { FlashcardSet, FlashcardCard } from '@/types';
+import type { FlashcardSet } from '@/types';
 
 export function FlashcardLearnerScreen({
   flashcardSet,
   onGoHome,
+  onShuffle,
 }: {
   flashcardSet: FlashcardSet;
   onGoHome: () => void;
+  onShuffle?: () => void;
 }) {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -49,9 +51,11 @@ export function FlashcardLearnerScreen({
 
   // Shuffle cards
   const handleShuffle = () => {
-    const shuffled = [...flashcardSet.cards].sort(() => Math.random() - 0.5);
-    onGoHome(); // Will trigger reload with new order
-    window.location.reload();
+    if (onShuffle) {
+      onShuffle();
+      setCurrentCardIndex(0);
+      setIsFlipped(false);
+    }
   };
 
   return (
@@ -126,7 +130,6 @@ export function FlashcardLearnerScreen({
           <div className="flex items-center justify-center gap-4 mt-6">
             <Button
               onClick={handlePreviousCard}
-              disabled={currentCardIndex === 0}
               variant="outline"
               size="lg"
               className="w-20 h-20 rounded-full"
@@ -134,15 +137,17 @@ export function FlashcardLearnerScreen({
               <ChevronLeft className="w-8 h-8" />
             </Button>
 
-            <Button
-              onClick={handleShuffle}
-              variant="outline"
-              size="lg"
-              className="w-20 h-20 rounded-full"
-              title="Pomieszaj karty"
-            >
-              <RotateCcw className="w-8 h-8" />
-            </Button>
+            {onShuffle && (
+              <Button
+                onClick={handleShuffle}
+                variant="outline"
+                size="lg"
+                className="w-20 h-20 rounded-full"
+                title="Pomieszaj karty"
+              >
+                <RotateCcw className="w-8 h-8" />
+              </Button>
+            )}
 
             <Button
               onClick={handleNextCard}

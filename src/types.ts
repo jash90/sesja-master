@@ -93,5 +93,6 @@ export type AppView =
   | 'quiz-results'
   | 'material-reader'
   | 'audio-player'
+  | 'flashcard-start'
   | 'flashcard-learn'
   | 'pdf-viewer';

@@ -20,7 +20,13 @@ interface QuizContextType {
   currentMaterial: MaterialContent | null;
   currentAudio: AudioMaterial | null;
   currentFlashcardSet: FlashcardSet | null;
+  activeFlashcardSet: FlashcardSet | null; // Flashcard set with selected/shuffled cards
   currentPdf: PdfDocument | null;
+
+  // Flashcard limit state
+  flashcardLimit: number | null;
+  setFlashcardLimit: (limit: number | null) => void;
+  flashcardStarted: boolean;
 
   // Subject
   selectedSubject: string;
@@ -47,6 +53,10 @@ interface QuizContextType {
   clearFlashcardSet: () => void;
   clearPdf: () => void;
 
+  // Flashcard actions
+  startFlashcards: () => void;
+  resetFlashcards: () => void;
+
   // Timer control
   startTimer: () => void;
   stopTimer: () => void;
@@ -64,6 +74,16 @@ function selectRandomQuestions(questions: Quiz['questions'], limit: number): Qui
   return shuffled.slice(0, limit);
 }
 
+// Helper function to select random flashcards
+function selectRandomFlashcards(cards: FlashcardSet['cards'], limit: number): FlashcardSet['cards'] {
+  if (limit >= cards.length) {
+    // Shuffle all cards
+    return [...cards].sort(() => Math.random() - 0.5);
+  }
+  const shuffled = [...cards].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, limit);
+}
+
 export function QuizProvider({ children }: { children: ReactNode }) {
   // Quiz state
   const [quiz, setQuiz] = useState<Quiz | null>(null);
@@ -78,7 +98,10 @@ export function QuizProvider({ children }: { children: ReactNode }) {
   const [currentMaterial, setCurrentMaterial] = useState<MaterialContent | null>(null);
   const [currentAudio, setCurrentAudio] = useState<AudioMaterial | null>(null);
   const [currentFlashcardSet, setCurrentFlashcardSet] = useState<FlashcardSet | null>(null);
+  const [activeFlashcardSet, setActiveFlashcardSet] = useState<FlashcardSet | null>(null);
   const [currentPdf, setCurrentPdf] = useState<PdfDocument | null>(null);
+  const [flashcardLimit, setFlashcardLimit] = useState<number | null>(null);
+  const [flashcardStarted, setFlashcardStarted] = useState(false);
 
   // Subject
   const [selectedSubject, setSelectedSubject] = useState<string>('test');
@@ -276,13 +299,47 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     try {
       const res = await fetch(`/api/flashcards/${flashcardId}?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load flashcard set');
-      const flashcardData = await res.json();
+      const flashcardData: FlashcardSet = await res.json();
       setCurrentFlashcardSet(flashcardData);
+      setActiveFlashcardSet(null);
+      setFlashcardLimit(flashcardData.cards.length);
+      setFlashcardStarted(false);
     } catch (error) {
       console.error('Error loading flashcard set:', error);
       throw error;
     }
   }, [selectedSubject]);
+
+  // Start flashcards with selected number of cards
+  const startFlashcards = useCallback(() => {
+    if (!currentFlashcardSet) return;
+
+    const limit = flashcardLimit ?? currentFlashcardSet.cards.length;
+    const selectedCards = selectRandomFlashcards(currentFlashcardSet.cards, limit);
+
+    const flashcardSetWithSelectedCards: FlashcardSet = {
+      ...currentFlashcardSet,
+      cards: selectedCards,
+    };
+
+    setActiveFlashcardSet(flashcardSetWithSelectedCards);
+    setFlashcardStarted(true);
+  }, [currentFlashcardSet, flashcardLimit]);
+
+  // Reset flashcards (re-shuffles cards based on current limit)
+  const resetFlashcards = useCallback(() => {
+    if (!currentFlashcardSet) return;
+
+    const limit = flashcardLimit ?? currentFlashcardSet.cards.length;
+    const selectedCards = selectRandomFlashcards(currentFlashcardSet.cards, limit);
+
+    const flashcardSetWithSelectedCards: FlashcardSet = {
+      ...currentFlashcardSet,
+      cards: selectedCards,
+    };
+
+    setActiveFlashcardSet(flashcardSetWithSelectedCards);
+  }, [currentFlashcardSet, flashcardLimit]);
 
   // Load audio material by ID
   const loadAudio = useCallback(async (audioId: string) => {
@@ -313,7 +370,12 @@ export function QuizProvider({ children }: { children: ReactNode }) {
   // Clear content
   const clearMaterial = useCallback(() => setCurrentMaterial(null), []);
   const clearAudio = useCallback(() => setCurrentAudio(null), []);
-  const clearFlashcardSet = useCallback(() => setCurrentFlashcardSet(null), []);
+  const clearFlashcardSet = useCallback(() => {
+    setCurrentFlashcardSet(null);
+    setActiveFlashcardSet(null);
+    setFlashcardLimit(null);
+    setFlashcardStarted(false);
+  }, []);
   const clearPdf = useCallback(() => setCurrentPdf(null), []);
 
   const value: QuizContextType = {
@@ -327,7 +389,11 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     currentMaterial,
     currentAudio,
     currentFlashcardSet,
+    activeFlashcardSet,
     currentPdf,
+    flashcardLimit,
+    setFlashcardLimit,
+    flashcardStarted,
     selectedSubject,
     setSelectedSubject,
     loadQuiz,
@@ -347,6 +413,8 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     clearAudio,
     clearFlashcardSet,
     clearPdf,
+    startFlashcards,
+    resetFlashcards,
     startTimer,
     stopTimer,
     isTimerRunning,

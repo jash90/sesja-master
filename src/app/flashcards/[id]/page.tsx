@@ -3,13 +3,25 @@
 import { useEffect, useState } from 'react';
 import { useParams, useSearchParams, useRouter } from 'next/navigation';
 import { useQuiz } from '@/context/QuizContext';
+import { FlashcardStartScreen } from '@/components/screens/FlashcardStartScreen';
 import { FlashcardLearnerScreen } from '@/components/screens/FlashcardLearnerScreen';
 
 export default function FlashcardsPage() {
   const params = useParams();
   const searchParams = useSearchParams();
   const router = useRouter();
-  const { currentFlashcardSet, loadFlashcardSet, clearFlashcardSet, setSelectedSubject } = useQuiz();
+  const {
+    currentFlashcardSet,
+    activeFlashcardSet,
+    flashcardLimit,
+    flashcardStarted,
+    loadFlashcardSet,
+    clearFlashcardSet,
+    setFlashcardLimit,
+    startFlashcards,
+    resetFlashcards,
+    setSelectedSubject,
+  } = useQuiz();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -66,10 +78,25 @@ export default function FlashcardsPage() {
     );
   }
 
+  // Show start screen if not started yet
+  if (!flashcardStarted || !activeFlashcardSet) {
+    return (
+      <FlashcardStartScreen
+        flashcardSet={currentFlashcardSet}
+        cardLimit={flashcardLimit}
+        onCardLimitChange={setFlashcardLimit}
+        onStartFlashcards={startFlashcards}
+        onGoHome={handleGoHome}
+      />
+    );
+  }
+
+  // Show learner screen with active (shuffled/limited) flashcard set
   return (
     <FlashcardLearnerScreen
-      flashcardSet={currentFlashcardSet}
+      flashcardSet={activeFlashcardSet}
       onGoHome={handleGoHome}
+      onShuffle={resetFlashcards}
     />
   );
 }
