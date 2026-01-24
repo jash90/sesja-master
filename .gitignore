@@ -48,5 +48,9 @@ dev.log
 /test
 prompt
 
+# exports (keep .gitkeep)
+/exports/*
+!/exports/.gitkeep
+
 server.log
 .env*.local
