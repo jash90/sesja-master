@@ -1,0 +1,265 @@
+KOMPLETNY KURS CSS - TEKST DLA LEKTORA
+
+WPROWADZENIE
+
+Kaskadowe arkusze stylów, znane powszechnie pod angielskim akronimem CSS (Cascading Style Sheets), stanowią fundament współczesnego projektowania stron internetowych. Technologia ta, wprowadzona po raz pierwszy w 1996 roku, przeszła ogromną ewolucję i obecnie oferuje niezwykle rozbudowane możliwości kontrolowania wyglądu oraz układu elementów na stronach internetowych. Niniejszy materiał prezentuje kompleksowe omówienie CSS, począwszy od podstawowych koncepcji, aż po zaawansowane techniki układu responsywnego.
+
+
+CZYM JEST CSS I JAKĄ PEŁNI FUNKCJĘ
+
+CSS to język stylowania, którego głównym zadaniem jest definiowanie sposobu prezentacji dokumentów napisanych w językach znacznikowych, takich jak HTML czy XML. W przeciwieństwie do HTML, który odpowiada za strukturę i treść strony, CSS koncentruje się wyłącznie na aspektach wizualnych.
+
+Podstawowe funkcje CSS obejmują trzy główne obszary. Pierwszy z nich to formatowanie elementów, czyli kontrola kolorów, czcionek, rozmiarów oraz odstępów między elementami. Drugi obszar dotyczy układu elementów na stronie, co obejmuje pozycjonowanie, sposoby wyświetlania oraz zaawansowane systemy układu takie jak Flexbox i Grid. Trzeci obszar to efekty wizualne, w tym animacje, tła, cienie oraz gradienty.
+
+Fundamentalną zasadą tworzenia nowoczesnych stron internetowych jest separacja obowiązków pomiędzy trzema technologiami. HTML odpowiada za strukturę i treść dokumentu, CSS zajmuje się prezentacją i stylem, natomiast JavaScript umożliwia interakcję i dynamiczne zachowanie strony. Taki podział pozwala na łatwiejsze zarządzanie kodem, wielokrotne wykorzystywanie stylów oraz efektywniejszą pracę zespołową.
+
+
+SPOSOBY DOŁĄCZANIA CSS DO DOKUMENTU HTML
+
+Istnieją trzy metody włączania stylów CSS do dokumentu HTML, z których każda ma swoje zastosowania oraz ograniczenia.
+
+Pierwsza metoda to style wewnątrzliniowe, określane angielskim terminem inline CSS. Polega ona na umieszczaniu deklaracji stylu bezpośrednio w atrybucie style konkretnego elementu HTML. Metoda ta pozwala na szybkie prototypowanie i testowanie stylów, jednak posiada istotną wadę w postaci najwyższej specyficzności, co utrudnia późniejsze nadpisywanie stylów. Z tego powodu style wewnątrzliniowe nie są zalecane w środowiskach produkcyjnych.
+
+Druga metoda to style wewnętrzne, nazywane internal CSS. Polegają one na umieszczeniu deklaracji stylów wewnątrz znacznika style w sekcji head dokumentu HTML. Rozwiązanie to sprawdza się w przypadku pojedynczych stron, gdzie style mają charakter lokalny i nie wymagają współdzielenia z innymi dokumentami. Wadą tej metody jest brak możliwości wielokrotnego wykorzystania stylów między stronami.
+
+Trzecia i najbardziej zalecana metoda to zewnętrzne arkusze stylów, określane jako external CSS. Polega ona na utworzeniu osobnego pliku z rozszerzeniem .css i dołączeniu go do dokumentu HTML za pomocą znacznika link w sekcji head. Metoda ta oferuje szereg korzyści, takich jak możliwość wielokrotnego wykorzystania tych samych stylów na wielu stronach, zapisywanie pliku CSS w pamięci podręcznej przeglądarki co przyspiesza ładowanie kolejnych stron, oraz czytelniejsza organizacja kodu. Zewnętrzne arkusze stylów stanowią najlepszą praktykę w profesjonalnym tworzeniu stron internetowych.
+
+
+SKŁADNIA CSS
+
+Każda reguła CSS składa się z trzech podstawowych elementów. Pierwszym z nich jest selektor, który określa, które elementy HTML mają zostać ostylowane. Drugim elementem jest właściwość, czyli atrybut, który ma zostać zmodyfikowany. Trzecim elementem jest wartość przypisana do danej właściwości.
+
+Struktura reguły CSS prezentuje się następująco: selektor otwiera nawias klamrowy, wewnątrz którego znajdują się deklaracje w postaci par właściwość-wartość oddzielonych dwukropkiem, a każda deklaracja kończy się średnikiem. Nawias klamrowy zamyka całą regułę.
+
+Przykładowo, aby ostylować przycisk, można zdefiniować selektor klasy o nazwie button, a następnie określić kolor tła, kolor tekstu, wewnętrzne odstępy, brak obramowania oraz zaokrąglenie rogów. Każda para właściwość-wartość stanowi pojedynczą deklarację, a zbiór wszystkich deklaracji tworzy blok deklaracji.
+
+
+SELEKTORY PODSTAWOWE
+
+Selektory stanowią mechanizm wskazywania elementów HTML, do których mają zostać zastosowane określone style. CSS oferuje różnorodne typy selektorów o zróżnicowanej specyficzności i zastosowaniach.
+
+Selektor elementu, nazywany również selektorem typu, wskazuje wszystkie elementy określonego znacznika HTML. Przykładowo selektor h1 zastosuje style do wszystkich nagłówków pierwszego poziomu na stronie.
+
+Selektor klasy pozwala na wielokrotne stosowanie tych samych stylów do różnych elementów. Klasa jest oznaczana kropką przed nazwą i może być przypisana do dowolnej liczby elementów na stronie. Jest to jeden z najczęściej stosowanych typów selektorów ze względu na swoją elastyczność.
+
+Selektor identyfikatora służy do wskazywania unikalnych elementów na stronie. Identyfikator oznaczany jest symbolem kratki przed nazwą i powinien występować tylko raz w danym dokumencie. Ze względu na wysoką specyficzność, stosowanie selektorów identyfikatorów w CSS jest często odradzane na rzecz selektorów klas.
+
+Selektor uniwersalny, oznaczany symbolem gwiazdki, wskazuje wszystkie elementy na stronie. Jest przydatny przy resetowaniu domyślnych stylów przeglądarki lub stosowaniu globalnych ustawień.
+
+Grupowanie selektorów pozwala na zastosowanie tych samych stylów do wielu selektorów jednocześnie poprzez oddzielenie ich przecinkami. Dzięki temu można uniknąć powtarzania kodu.
+
+
+SELEKTORY ZŁOŻONE I RELACYJNE
+
+CSS umożliwia również tworzenie selektorów opartych na relacjach między elementami w strukturze dokumentu HTML.
+
+Selektor potomka wskazuje wszystkie elementy określonego typu znajdujące się wewnątrz innego elementu, niezależnie od poziomu zagnieżdżenia. Elementy te są oddzielone spacją. Przykładowo konstrukcja div p wskaże wszystkie akapity znajdujące się gdziekolwiek wewnątrz elementów div.
+
+Selektor dziecka, oznaczany symbolem większości, wskazuje tylko bezpośrednie dzieci elementu nadrzędnego. W odróżnieniu od selektora potomka, nie uwzględnia elementów zagnieżdżonych głębiej niż jeden poziom.
+
+Selektor sąsiada bezpośredniego, oznaczany symbolem plus, wskazuje element, który bezpośrednio następuje po innym elemencie na tym samym poziomie zagnieżdżenia. Oba elementy muszą mieć wspólnego rodzica.
+
+Selektor sąsiada ogólnego, oznaczany tyldą, wskazuje wszystkie elementy określonego typu, które występują po wskazanym elemencie na tym samym poziomie zagnieżdżenia.
+
+Selektory atrybutów pozwalają na wskazywanie elementów na podstawie ich atrybutów lub wartości tych atrybutów. Można sprawdzać dokładną wartość atrybutu, początek wartości oznaczany symbolem strzałki równości, zawartość części wartości oznaczaną gwiazdką z równością, oraz wiele innych wariantów.
+
+
+KASKADOWOŚĆ I SPECYFICZNOŚĆ
+
+Nazwa CSS, czyli kaskadowe arkusze stylów, pochodzi od mechanizmu kaskadowości, który określa, które style zostaną ostatecznie zastosowane w przypadku konfliktu. Mechanizm ten opiera się na trzech głównych czynnikach.
+
+Pierwszym czynnikiem jest ważność. Deklaracje oznaczone słowem kluczowym !important mają pierwszeństwo przed wszystkimi innymi deklaracjami. Należy jednak unikać nadużywania tego mechanizmu w kodzie produkcyjnym, ponieważ utrudnia on utrzymanie i debugowanie stylów.
+
+Drugim czynnikiem jest specyficzność, czyli waga selektora. Im bardziej specyficzny selektor, tym wyższy jego priorytet. Specyficzność oblicza się według systemu punktowego. Style wewnątrzliniowe mają wartość tysiąc punktów. Selektor identyfikatora ma wartość sto punktów. Selektor klasy, pseudoklasy lub atrybutu ma wartość dziesięciu punktów. Selektor elementu lub pseudoelementu ma wartość jednego punktu.
+
+Trzecim czynnikiem jest kolejność definicji. Gdy dwa selektory mają taką samą specyficzność, zastosowana zostanie deklaracja zdefiniowana później w arkuszu stylów.
+
+Praktyczne zrozumienie specyficzności jest kluczowe dla efektywnego pisania CSS. Na przykład gdy selektor klasy button ma wartość dziesięć punktów, a selektor identyfikatora submit ma wartość sto punktów, w przypadku konfliktu styl z selektora identyfikatora zostanie zastosowany.
+
+
+KOLORY W CSS
+
+CSS oferuje kilka różnych formatów definiowania kolorów, z których każdy ma swoje zastosowania i zalety.
+
+Format heksadecymalny, oznaczany symbolem kratki, jest najpopularniejszym sposobem zapisywania kolorów w CSS. Składa się z sześciu cyfr szesnastkowych reprezentujących intensywność czerwieni, zieleni i niebieskiego, przy czym każdy kolor opisany jest dwiema cyframi w zakresie od 00 do FF. Istnieje również skrócona notacja z trzema cyframi, gdzie każda cyfra jest podwajana.
+
+Format RGB pozwala na definiowanie kolorów poprzez podanie wartości trzech składowych: czerwonej, zielonej i niebieskiej, każda w zakresie od zera do dwustu pięćdziesięciu pięciu. Rozszerzeniem tego formatu jest RGBA, który dodaje czwarty parametr określający przezroczystość, czyli kanał alfa, w zakresie od zera (całkowita przezroczystość) do jednego (całkowita nieprzezroczystość).
+
+Format HSL reprezentuje kolory poprzez barwę (odcień wyrażony w stopniach od zera do trzystu sześćdziesięciu), nasycenie (procent od zera do stu) oraz jasność (również procent od zera do stu). Format ten jest często uznawany za bardziej intuicyjny dla projektantów, ponieważ łatwiej przewidzieć wynikowy kolor. Podobnie jak RGB, HSL posiada wariant HSLA z kanałem przezroczystości.
+
+CSS definiuje również sto czterdzieści siedem nazwanych kolorów, takich jak red, blue, green, yellow czy purple, które można stosować bezpośrednio w deklaracjach. Nazwy te są jednak ograniczone i rzadko odpowiadają dokładnie pożądanym odcieniom.
+
+
+TYPOGRAFIA W CSS
+
+Kontrola typografii stanowi istotny element projektowania stron internetowych. CSS oferuje rozbudowane możliwości w zakresie formatowania tekstu.
+
+Właściwość font-family określa rodzinę czcionek używanych do wyświetlania tekstu. Zaleca się podawanie kilku czcionek w kolejności preferencji, od najbardziej pożądanej do generycznej rodziny jako awaryjnej. Wyróżnia się czcionki systemowe dostępne domyślnie na większości komputerów, takie jak Arial czy Times New Roman, oraz czcionki internetowe ładowane z zewnętrznych źródeł, na przykład z usługi Google Fonts.
+
+Właściwość font-size kontroluje rozmiar tekstu. Można stosować jednostki bezwzględne, takie jak piksele, lub jednostki względne, takie jak em (relatywne do rozmiaru czcionki elementu nadrzędnego) i rem (relatywne do rozmiaru czcionki elementu głównego html).
+
+Właściwość font-weight określa grubość czcionki. Można stosować wartości liczbowe od stu do dziewięciuset, gdzie wartości poniżej czterystu oznaczają czcionkę cienką, czterysta to grubość normalna, a siedemset i więcej to czcionka pogrubiona.
+
+Integracja czcionek z usługi Google Fonts polega na dołączeniu odpowiedniego odnośnika do dokumentu HTML, a następnie użyciu nazwy czcionki we właściwości font-family. Popularne czcionki to między innymi Roboto, Open Sans czy Montserrat.
+
+
+STYLIZACJA TEKSTU
+
+Oprócz wyboru czcionki, CSS oferuje szereg właściwości do formatowania wyglądu tekstu.
+
+Właściwość text-align określa wyrównanie tekstu wewnątrz elementu. Dostępne wartości to wyrównanie do lewej, do prawej, wyśrodkowanie oraz justowanie (wyrównanie do obu krawędzi).
+
+Właściwość text-decoration kontroluje ozdoby tekstu, takie jak podkreślenie, przekreślenie czy nadkreślenie. Wartość none usuwa wszelkie ozdoby, co jest często stosowane do usuwania domyślnego podkreślenia linków.
+
+Właściwość text-transform pozwala na automatyczną zmianę wielkości liter. Wartość uppercase zamienia wszystkie litery na wielkie, lowercase na małe, a capitalize sprawia, że pierwsza litera każdego słowa jest wielka.
+
+Właściwości letter-spacing i word-spacing kontrolują odstępy odpowiednio między znakami i między słowami. Pozwalają na precyzyjne dostosowanie czytelności i estetyki tekstu.
+
+Właściwość text-shadow umożliwia dodanie cienia do tekstu. Przyjmuje cztery parametry: przesunięcie poziome, przesunięcie pionowe, promień rozmycia oraz kolor cienia. Efekt ten może zwiększyć czytelność tekstu na niejednorodnym tle lub dodać dekoracyjny akcent.
+
+
+MODEL PUDEŁKOWY
+
+Model pudełkowy (z angielskiego box model) stanowi fundament układu elementów w CSS. Zgodnie z tym modelem każdy element HTML jest reprezentowany jako prostokątne pudełko składające się z czterech warstw.
+
+Warstwa wewnętrzna to zawartość (content), czyli właściwa treść elementu, taka jak tekst czy obrazy. Rozmiar zawartości kontrolowany jest właściwościami width i height.
+
+Następna warstwa to dopełnienie (padding), czyli przestrzeń między zawartością a obramowaniem. Dopełnienie jest przezroczyste i przyjmuje kolor tła elementu. Można je ustawiać osobno dla każdej strony lub skrótowo dla wszystkich stron jednocześnie.
+
+Trzecia warstwa to obramowanie (border), czyli linia otaczająca element. Obramowanie można konfigurować pod względem grubości, stylu (ciągłe, przerywane, kropkowane) oraz koloru.
+
+Zewnętrzna warstwa to margines (margin), czyli przestrzeń między obramowaniem elementu a sąsiednimi elementami. Marginesy są zawsze przezroczyste i mogą przyjmować wartości ujemne, co pozwala na nakładanie się elementów.
+
+Domyślnie właściwości width i height odnoszą się tylko do zawartości, co oznacza, że całkowity rozmiar elementu jest sumą zawartości, dopełnienia i obramowania. Właściwość box-sizing z wartością border-box zmienia to zachowanie tak, że width i height obejmują również dopełnienie i obramowanie.
+
+
+JEDNOSTKI W CSS
+
+CSS oferuje różnorodne jednostki do wyrażania rozmiarów, odległości i innych wartości liczbowych. Można je podzielić na jednostki bezwzględne i względne.
+
+Piksel (px) jest podstawową jednostką bezwzględną. Reprezentuje pojedynczy punkt na ekranie i zapewnia precyzyjną kontrolę nad rozmiarem niezależnie od kontekstu. Piksele są intuicyjne w użyciu, ale nie skalują się automatycznie.
+
+Jednostka em jest jednostką względną odnoszącą się do rozmiaru czcionki elementu nadrzędnego. Jeśli rodzic ma rozmiar czcionki szesnaście pikseli, to jeden em również równa się szesnastu pikselom. Jednostka ta jest przydatna przy tworzeniu komponentów, które mają się skalować proporcjonalnie do tekstu.
+
+Jednostka rem (root em) jest podobna do em, ale odnosi się do rozmiaru czcionki elementu głównego html, a nie bezpośredniego rodzica. Dzięki temu jest bardziej przewidywalna i łatwiejsza w obliczeniach.
+
+Procent (%) jest jednostką względną odnoszącą się do wartości rodzica dla danej właściwości. Na przykład width: 50% oznacza połowę szerokości elementu nadrzędnego.
+
+Jednostki vw i vh reprezentują odpowiednio jedną setną szerokości i wysokości okna przeglądarki (viewport). Są szczególnie przydatne przy tworzeniu elementów, które mają zajmować określoną część ekranu niezależnie od jego rozmiaru.
+
+
+WŁAŚCIWOŚĆ DISPLAY
+
+Właściwość display kontroluje sposób wyświetlania elementu i jego zachowanie w przepływie dokumentu.
+
+Wartość block sprawia, że element zajmuje całą dostępną szerokość i rozpoczyna się od nowej linii. Elementy blokowe mogą mieć określoną szerokość, wysokość, marginesy i dopełnienia ze wszystkich stron. Przykłady elementów domyślnie blokowych to div, p czy nagłówki h1-h6.
+
+Wartość inline sprawia, że element zajmuje tylko tyle miejsca, ile wymaga jego zawartość, i nie rozpoczyna nowej linii. Elementy liniowe nie reagują na ustawienia szerokości i wysokości, a marginesy i dopełnienia działają tylko w poziomie. Przykłady to span, a czy em.
+
+Wartość inline-block łączy cechy obu poprzednich wartości. Element zachowuje się jak element liniowy (nie wymusza nowej linii), ale jednocześnie można mu nadać szerokość, wysokość oraz pełne marginesy i dopełnienia jak elementowi blokowemu.
+
+Wartość none całkowicie usuwa element z przepływu dokumentu. Element nie jest renderowany i nie zajmuje żadnego miejsca. Różni się to od visibility: hidden, które ukrywa element wizualnie, ale zachowuje jego miejsce w układzie.
+
+
+POZYCJONOWANIE ELEMENTÓW
+
+Właściwość position kontroluje sposób, w jaki element jest umieszczany w dokumencie. CSS oferuje pięć głównych wartości pozycjonowania.
+
+Wartość static jest domyślna dla wszystkich elementów. Element jest umieszczany zgodnie z normalnym przepływem dokumentu, a właściwości top, right, bottom i left nie mają żadnego efektu.
+
+Wartość relative pozwala na przesunięcie elementu względem jego normalnej pozycji w przepływie dokumentu. Element nadal zajmuje swoje oryginalne miejsce w układzie, ale jest wizualnie przesunięty o określone wartości top, right, bottom lub left.
+
+Wartość absolute wyjmuje element z normalnego przepływu dokumentu. Element jest pozycjonowany względem najbliższego przodka, który ma ustawioną pozycję inną niż static. Jeśli takiego przodka nie ma, element jest pozycjonowany względem początkowego bloku zawierającego, którym zwykle jest element html.
+
+Wartość fixed również wyjmuje element z przepływu, ale pozycjonuje go względem okna przeglądarki. Element pozostaje w tym samym miejscu nawet podczas przewijania strony. Jest to często stosowane dla stałych nagłówków lub przycisków akcji.
+
+Wartość sticky jest hybrydą pozycji relative i fixed. Element zachowuje się jak relative do momentu, gdy osiągnie określony próg podczas przewijania, po czym zaczyna zachowywać się jak fixed. Często stosowana jest dla nagłówków tabeli lub menu nawigacyjnego, które ma pozostać widoczne podczas przewijania.
+
+
+KONTEKST NAKŁADANIA I Z-INDEX
+
+Gdy elementy na stronie nakładają się na siebie, ich kolejność wyświetlania jest kontrolowana przez właściwość z-index oraz mechanizm kontekstu nakładania.
+
+Właściwość z-index przyjmuje wartości całkowite (dodatnie, ujemne lub zero) i określa położenie elementu na osi Z, czyli w kierunku prostopadłym do ekranu. Wyższa wartość oznacza, że element znajduje się bliżej użytkownika i przykrywa elementy z niższymi wartościami. Właściwość ta działa tylko na elementach z pozycjonowaniem innym niż static.
+
+Kontekst nakładania to trójwymiarowa koncepcja określająca hierarchię warstw na stronie. Nowy kontekst nakładania tworzony jest automatycznie w kilku sytuacjach: gdy element ma pozycjonowanie relative, absolute lub fixed z określonym z-index; gdy element ma właściwość transform lub opacity mniejszą niż jeden; gdy zastosowano właściwości filter lub backdrop-filter; lub gdy ustawiono isolation: isolate.
+
+Istotną zasadą jest to, że z-index działa tylko w obrębie tego samego kontekstu nakładania. Element z z-index wynoszącym tysiąc, ale znajdujący się w kontekście o niskim priorytecie, może być przykryty przez element z z-index równym jeden, ale w kontekście o wyższym priorytecie.
+
+
+PSEUDOKLASY I PSEUDOELEMENTY
+
+CSS oferuje mechanizmy pozwalające na stylizację elementów w określonych stanach lub tworzenie wirtualnych elementów bez modyfikacji HTML.
+
+Pseudoklasy wskazują elementy w określonym stanie i są oznaczane pojedynczym dwukropkiem. Pseudoklasa hover aktywuje się, gdy kursor znajduje się nad elementem. Pseudoklasa active jest aktywna podczas kliknięcia na element. Pseudoklasa focus wskazuje element, który ma aktualnie fokus, na przykład pole formularza po kliknięciu w nie. Pseudoklasa visited stylizuje odwiedzone wcześniej linki. Pseudoklasa nth-child pozwala na wybieranie elementów na podstawie ich pozycji wśród rodzeństwa, przyjmując jako argument numer, słowo kluczowe odd lub even, lub formułę matematyczną.
+
+Pseudoelementy tworzą wirtualne elementy, które nie istnieją w strukturze HTML, i są oznaczane podwójnym dwukropkiem (choć dla kompatybilności wstecznej akceptowany jest również pojedynczy dwukropek). Pseudoelement before tworzy wirtualny element przed zawartością elementu docelowego. Pseudoelement after tworzy wirtualny element po zawartości. Pseudoelement first-line stylizuje pierwszą linię tekstu w elemencie blokowym. Pseudoelement first-letter stylizuje pierwszą literę tekstu.
+
+Pseudoelementy before i after wymagają właściwości content, która może zawierać tekst, być pusta lub zawierać specjalne wartości. Są szeroko stosowane do dodawania dekoracyjnych elementów bez zaśmiecania HTML.
+
+
+TŁA I GRADIENTY
+
+CSS oferuje rozbudowane możliwości kontrolowania tła elementów.
+
+Właściwość background-color określa jednolity kolor tła. Właściwość background-image pozwala na użycie obrazu jako tła, przy czym można również stosować gradienty. Właściwość background-size kontroluje rozmiar obrazu tła, a popularne wartości to cover (wypełnienie całego elementu z zachowaniem proporcji) i contain (dopasowanie całego obrazu wewnątrz elementu). Właściwość background-position określa położenie obrazu, na przykład center, top left czy wartości procentowe. Właściwość background-repeat kontroluje powtarzanie obrazu, z opcjami repeat, no-repeat, repeat-x i repeat-y. Właściwość background-attachment określa, czy tło przewija się wraz z zawartością (scroll) czy pozostaje nieruchome (fixed).
+
+Właściwość opacity kontroluje przezroczystość całego elementu wraz z jego zawartością, przyjmując wartości od zera (całkowita przezroczystość) do jednego (całkowita nieprzezroczystość).
+
+Gradienty to płynne przejścia między kolorami, tworzone bezpośrednio w CSS bez potrzeby używania obrazów. Gradient liniowy (linear-gradient) tworzy przejście wzdłuż prostej linii, której kierunek można określić w stopniach lub słowami kluczowymi. Gradient promienisty (radial-gradient) tworzy przejście rozchodzące się od punktu centralnego na zewnątrz. W obu przypadkach można definiować dowolną liczbę kolorów i ich pozycje w gradiencie. Gradienty z przezroczystością tworzy się przy użyciu formatów rgba lub hsla.
+
+
+FLEXBOX - ELASTYCZNY UKŁAD JEDNOWYMIAROWY
+
+Flexbox, czyli elastyczne pudełko, to nowoczesny system układu CSS zaprojektowany do efektywnego rozmieszczania elementów w jednym wymiarze, czyli w wierszu lub kolumnie.
+
+Aby utworzyć kontener flex, należy zastosować właściwość display z wartością flex. Wszystkie bezpośrednie dzieci tego kontenera automatycznie stają się elementami flex i podlegają regułom elastycznego układu.
+
+Flexbox operuje na koncepcji dwóch osi. Oś główna (main axis) to kierunek, w którym elementy są układane, domyślnie poziomo od lewej do prawej. Oś poprzeczna (cross axis) jest prostopadła do osi głównej. Kierunek osi głównej można zmienić właściwością flex-direction na wartości row (wiersz), row-reverse (wiersz odwrócony), column (kolumna) lub column-reverse (kolumna odwrócona).
+
+Właściwość justify-content kontroluje rozmieszczenie elementów wzdłuż osi głównej. Wartość flex-start grupuje elementy na początku, flex-end na końcu, center centruje, space-between rozdziela elementy równomiernie z pierwszym i ostatnim przy krawędziach, a space-around dodaje równe odstępy wokół każdego elementu.
+
+Właściwość align-items kontroluje wyrównanie elementów wzdłuż osi poprzecznej. Wartość stretch rozciąga elementy na całą wysokość kontenera, flex-start wyrównuje do góry, flex-end do dołu, a center centruje w pionie.
+
+Flexbox jest idealny do tworzenia pasków nawigacji, układów kart, centrowania elementów oraz wszelkich sytuacji, gdy elementy mają być rozmieszczone w jednym kierunku.
+
+
+CSS GRID - DWUWYMIAROWY SYSTEM SIATKI
+
+CSS Grid to potężny system układu pozwalający na tworzenie złożonych dwuwymiarowych struktur z precyzyjną kontrolą nad wierszami i kolumnami.
+
+Kontener siatki tworzy się, stosując właściwość display z wartością grid. Bezpośrednie dzieci kontenera automatycznie stają się elementami siatki.
+
+Podstawowe pojęcia związane z siatką obejmują linie siatki, które są granicami między wierszami i kolumnami (numerowane od jedynki), kolumny stanowiące pionowe podziały siatki, wiersze stanowiące poziome podziały oraz komórki będące pojedynczymi polami na przecięciu wiersza i kolumny.
+
+Właściwość grid-template-columns definiuje liczbę i szerokość kolumn. Można używać jednostek stałych, procentów, jednostki fr (frakcja dostępnej przestrzeni) lub funkcji repeat do powtórzenia wzorca. Właściwość grid-template-rows analogicznie definiuje wiersze.
+
+Właściwość gap (wcześniej grid-gap) określa odstępy między wierszami i kolumnami. Można podać jedną wartość dla obu kierunków lub dwie wartości osobno dla wierszy i kolumn.
+
+Elementy siatki można umieszczać w konkretnych komórkach za pomocą właściwości grid-column i grid-row, określając linie początkową i końcową. Pozwala to na tworzenie elementów rozciągających się przez wiele komórek.
+
+CSS Grid jest idealny do tworzenia złożonych układów stron, takich jak siatki kart, układy z nagłówkiem, stopką i panelami bocznymi, galerie zdjęć czy dowolne inne struktury wymagające precyzyjnej kontroli w obu wymiarach.
+
+
+PROJEKTOWANIE RESPONSYWNE
+
+Responsywność to zdolność strony internetowej do dostosowywania swojego układu i wyglądu do różnych rozmiarów ekranów, od telefonów komórkowych przez tablety po monitory komputerowe.
+
+Zapytania mediów (media queries) są podstawowym narzędziem do tworzenia responsywnych stylów. Pozwalają na warunkowe stosowanie CSS w zależności od cech urządzenia lub okna przeglądarki. Najczęściej stosowane są zapytania oparte na szerokości okna. Zapytanie z warunkiem max-width stosuje style dla ekranów nie szerszych niż podana wartość, natomiast min-width dla ekranów co najmniej tak szerokich. Można również sprawdzać orientację urządzenia (portrait lub landscape) oraz inne cechy.
+
+Popularne punkty przełamania (breakpoints) to 768 pikseli jako granica między urządzeniami mobilnymi a tabletami oraz 1024 piksele jako granica między tabletami a komputerami stacjonarnymi, choć konkretne wartości powinny być dostosowane do zawartości strony.
+
+Podejście mobile-first polega na projektowaniu najpierw dla urządzeń mobilnych, a następnie dodawaniu stylów dla większych ekranów za pomocą min-width. Jest to uznawane za najlepszą praktykę, ponieważ wymusza priorytetyzację treści i zapewnia lepszą wydajność na urządzeniach mobilnych.
+
+Zapytania kontenera (container queries) to nowoczesna funkcja CSS pozwalająca na stosowanie stylów w zależności od rozmiaru elementu nadrzędnego, a nie całego okna przeglądarki. Jest to szczególnie przydatne przy tworzeniu komponentów wielokrotnego użytku, które mają się adaptować do swojego kontekstu niezależnie od rozmiaru ekranu.
+
+
+PODSUMOWANIE
+
+CSS stanowi niezbędne narzędzie w arsenale każdego twórcy stron internetowych. Technologia ta, począwszy od podstawowych koncepcji takich jak selektory i model pudełkowy, poprzez zaawansowane systemy układu jak Flexbox i Grid, aż po responsywność i nowoczesne funkcje jak zapytania kontenera, oferuje kompletny zestaw narzędzi do tworzenia atrakcyjnych i funkcjonalnych interfejsów użytkownika.
+
+Kluczem do biegłości w CSS jest zrozumienie fundamentalnych mechanizmów, takich jak kaskadowość i specyficzność, które pozwalają na przewidywalne i kontrolowane stosowanie stylów. Równie istotne jest poznanie różnorodnych selektorów i ich zastosowań, modelu pudełkowego jako podstawy układu elementów, oraz nowoczesnych systemów Flexbox i Grid, które zastąpiły przestarzałe techniki oparte na floatach i pozycjonowaniu.
+
+Projektowanie responsywne przestało być opcją i stało się standardem, a umiejętność tworzenia stron dostosowujących się do różnych urządzeń jest niezbędna dla każdego projektanta i programisty front-end. Podejście mobile-first, w połączeniu z umiejętnym wykorzystaniem zapytań mediów, pozwala na tworzenie stron, które wyglądają i działają znakomicie na każdym urządzeniu.
+
+CSS nieustannie się rozwija, wprowadzając nowe funkcje i możliwości. Zapytania kontenera, zmienne CSS, warstwy kaskadowe i wiele innych nowości pokazują, że technologia ta wciąż ewoluuje, odpowiadając na rosnące wymagania współczesnego tworzenia stron internetowych.

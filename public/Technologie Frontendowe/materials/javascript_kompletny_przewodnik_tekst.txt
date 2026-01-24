@@ -1,0 +1,274 @@
+JAVASCRIPT - KOMPLETNY PRZEWODNIK
+
+WPROWADZENIE
+
+JavaScript jest językiem programowania, który napędza interaktywność stron internetowych na całym świecie. Powstał w 1995 roku i od tego czasu stał się jednym z najpopularniejszych języków programowania, wykorzystywanym zarówno po stronie przeglądarki, jak i serwera. JavaScript jest językiem skryptowym, co oznacza, że kod jest interpretowany w czasie wykonywania, a nie kompilowany wcześniej do postaci binarnej. Jedną z kluczowych cech tego języka jest jego jednowątkowość, czyli zdolność do wykonywania tylko jednej operacji w danym momencie, przy jednoczesnym zachowaniu możliwości obsługi operacji asynchronicznych dzięki mechanizmowi pętli zdarzeń. Język ten znajduje zastosowanie w tworzeniu aplikacji webowych, mobilnych, desktopowych, a także w programowaniu po stronie serwera za pomocą środowiska Node.js.
+
+
+DODAWANIE KODU JAVASCRIPT DO DOKUMENTÓW HTML
+
+Istnieją trzy podstawowe sposoby dołączania kodu JavaScript do dokumentów HTML. Pierwszym z nich jest metoda inline, polegająca na umieszczeniu kodu bezpośrednio w atrybutach elementów HTML, na przykład w atrybucie onclick przycisku. Metoda ta jest odpowiednia jedynie dla prostych, jednorazowych rozwiązań i nie jest zalecana w profesjonalnych projektach ze względu na brak separacji logiki od struktury dokumentu oraz trudności w utrzymaniu kodu.
+
+Drugim sposobem jest osadzenie kodu wewnętrznego, gdzie skrypt JavaScript umieszcza się między znacznikami script bezpośrednio w dokumencie HTML. Rozwiązanie to sprawdza się przy prototypowaniu i małych projektach, jednak przy większych aplikacjach prowadzi do problemów ze skalowalnością i organizacją kodu.
+
+Trzecim i zalecanym podejściem jest wykorzystanie zewnętrznych plików JavaScript z rozszerzeniem js, które dołącza się do dokumentu HTML za pomocą znacznika script z atrybutem src wskazującym ścieżkę do pliku. Metoda ta zapewnia separację logiki od struktury, umożliwia wielokrotne wykorzystanie kodu w różnych dokumentach oraz ułatwia konserwację projektu. Zaleca się umieszczanie znaczników script na końcu sekcji body dokumentu lub stosowanie atrybutów defer albo async w sekcji head, co pozwala na asynchroniczne ładowanie skryptów bez blokowania renderowania strony.
+
+
+ZMIENNE I DEKLARACJE
+
+JavaScript oferuje trzy słowa kluczowe do deklarowania zmiennych: let, const oraz var. Słowo kluczowe let wprowadzone w standardzie ECMAScript 2015 służy do deklarowania zmiennych o zasięgu blokowym, których wartość można zmieniać po inicjalizacji. Zmienne zadeklarowane za pomocą let podlegają czasowej strefie martwej, co oznacza, że próba odwołania się do nich przed miejscem deklaracji skutkuje błędem ReferenceError.
+
+Słowo kluczowe const również posiada zasięg blokowy, jednak służy do deklarowania stałych, czyli zmiennych, których wartość nie może zostać zmieniona po przypisaniu. Należy pamiętać, że w przypadku obiektów i tablic const chroni jedynie referencję, nie zaś zawartość struktury danych.
+
+Słowo kluczowe var jest najstarszym sposobem deklarowania zmiennych i charakteryzuje się zasięgiem funkcyjnym zamiast blokowego. Zmienne var podlegają mechanizmowi hoistingu, czyli przenoszeniu deklaracji na początek zakresu, przy czym wartość pozostaje niezdefiniowana do momentu przypisania. Ze względu na potencjalne błędy wynikające z tego zachowania, stosowanie var w nowoczesnym kodzie jest odradzane.
+
+Zasady nazewnictwa zmiennych w JavaScript wymagają stosowania notacji camelCase, gdzie pierwsza litera jest mała, a każde kolejne słowo rozpoczyna się wielką literą. Nazwy zmiennych mogą zaczynać się od litery, podkreślnika lub znaku dolara, nie mogą jednak być słowami kluczowymi języka. Dobra praktyka nakazuje używanie opisowych nazw odzwierciedlających przeznaczenie zmiennej.
+
+
+TYPY DANYCH PRYMITYWNE
+
+JavaScript rozróżnia siedem typów danych prymitywnych. Typ String reprezentuje ciągi tekstowe i może być zapisywany w pojedynczych cudzysłowach, podwójnych cudzysłowach lub za pomocą szablonów literałów z użyciem znaku akcentu greckiego. Typ Number obejmuje zarówno liczby całkowite, jak i zmiennoprzecinkowe, a także wartości specjalne takie jak Infinity, ujemna nieskończoność oraz NaN oznaczające wynik nieprawidłowy numerycznie.
+
+Typ Boolean przyjmuje jedną z dwóch wartości logicznych: true oznaczającą prawdę lub false oznaczającą fałsz. Typ Null reprezentuje celowy brak wartości i jest przypisywany świadomie przez programistę. Typ Undefined oznacza zmienną, która została zadeklarowana, ale nie otrzymała jeszcze wartości.
+
+Typ Symbol wprowadzony w ECMAScript 2015 służy do tworzenia unikalnych identyfikatorów, które mogą być używane jako klucze właściwości obiektów. Typ BigInt umożliwia reprezentowanie liczb całkowitych większych niż maksymalna bezpieczna wartość typu Number, która wynosi 2 do potęgi 53 minus 1.
+
+Wszystkie typy prymitywne są niemutowalne, co oznacza, że ich wartości nie mogą być zmieniane po utworzeniu. Operacje na typach prymitywnych zawsze tworzą nowe wartości. Do sprawdzania typu danych służy operator typeof, który zwraca nazwę typu w postaci ciągu tekstowego. Warto jednak pamiętać o historycznym błędzie języka, gdzie typeof null zwraca wartość object zamiast null.
+
+
+TYPY DANYCH OBIEKTOWE
+
+Oprócz typów prymitywnych JavaScript oferuje typy obiektowe, które są mutowalne i przekazywane przez referencję. Obiekt stanowi kolekcję par klucz-wartość, gdzie kluczami są ciągi tekstowe lub symbole, a wartościami mogą być dane dowolnego typu, włącznie z innymi obiektami lub funkcjami. Obiekty tworzy się za pomocą literału obiektowego, czyli nawiasów klamrowych zawierających pary właściwość-wartość oddzielone przecinkami.
+
+Tablica jest specjalnym typem obiektu służącym do przechowywania uporządkowanych kolekcji elementów. Elementy tablicy są indeksowane liczbami całkowitymi począwszy od zera. Tablice w JavaScript są dynamiczne, co oznacza, że ich rozmiar może się zmieniać podczas wykonywania programu, a poszczególne elementy mogą być różnych typów.
+
+Dostęp do właściwości obiektów można uzyskać za pomocą notacji kropkowej lub notacji nawiasowej. Notacja kropkowa jest bardziej zwięzła i czytelna, podczas gdy notacja nawiasowa pozwala na dynamiczne odwoływanie się do właściwości za pomocą zmiennych. Metody obiektów takie jak Object.keys, Object.values i Object.entries umożliwiają pobieranie odpowiednio kluczy, wartości lub par klucz-wartość w postaci tablic.
+
+Ponieważ obiekty są przekazywane przez referencję, przypisanie obiektu do nowej zmiennej nie tworzy kopii, lecz drugą referencję do tego samego obiektu. Do tworzenia płytkich kopii obiektów służy operator rozproszenia lub metoda Object.assign. Głębokie kopiowanie zagnieżdżonych struktur wymaga dodatkowych technik lub bibliotek.
+
+
+OPERATORY
+
+JavaScript udostępnia bogaty zestaw operatorów służących do wykonywania operacji na danych. Operatory arytmetyczne obejmują dodawanie, odejmowanie, mnożenie, dzielenie, resztę z dzielenia modulo oraz potęgowanie. Operatory inkrementacji i dekrementacji zwiększają lub zmniejszają wartość o jeden, przy czym mogą występować w formie przedrostkowej, gdzie zmiana następuje przed zwróceniem wartości, lub przyrostkowej, gdzie wartość jest zwracana przed zmianą.
+
+Operatory porównania służą do sprawdzania relacji między wartościami. Operator podwójnego równa się wykonuje porównanie z konwersją typów, co może prowadzić do nieoczekiwanych wyników. Operator potrójnego równa się wykonuje porównanie ścisłe bez konwersji typów i jest zalecany w profesjonalnym kodzie. Operatory nierówności, większości i mniejszości działają analogicznie, z wersjami ścisłymi i luźnymi.
+
+Operatory logiczne obejmują koniunkcję oznaczaną podwójnym znakiem ampersand, alternatywę oznaczaną podwójnym znakiem pionowej kreski oraz negację oznaczaną wykrzyknikiem. Operatory logiczne w JavaScript stosują ocenę leniwą, co oznacza, że drugi operand jest obliczany tylko gdy jest to konieczne do ustalenia wyniku. Mechanizm ten umożliwia stosowanie operatorów logicznych do warunkowego przypisywania wartości.
+
+Operatory przypisania służą do nadawania wartości zmiennym. Oprócz podstawowego operatora przypisania istnieją operatory złożone łączące przypisanie z operacją arytmetyczną, takie jak dodaj i przypisz, odejmij i przypisz oraz ich odpowiedniki dla pozostałych działań.
+
+
+KOERCJA TYPÓW I PORÓWNANIA
+
+Koercja typów jest mechanizmem automatycznej konwersji wartości z jednego typu na inny podczas operacji porównania lub arytmetycznych. Operator podwójnego równa się wykonuje porównanie z koercją, co może prowadzić do nieintuicyjnych wyników. Na przykład porównanie liczby pięć z ciągiem tekstowym pięć zwraca prawdę, ponieważ ciąg jest konwertowany na liczbę przed porównaniem. Podobnie wartość null jest uznawana za równą undefined przy użyciu tego operatora.
+
+Operator potrójnego równa się wykonuje porównanie ścisłe, sprawdzając zarówno wartość, jak i typ bez żadnej konwersji. To samo porównanie liczby pięć z ciągiem pięć zwraca fałsz, ponieważ typy są różne. Stosowanie operatora ścisłego jest zalecane jako domyślna praktyka, ponieważ eliminuje nieoczekiwane zachowania wynikające z niejawnej konwersji typów.
+
+W kontekście warunków logicznych wartości są automatycznie konwertowane na typ Boolean. Wartości falsy, czyli traktowane jako fałsz, obejmują: zero, pusty ciąg tekstowy, null, undefined, NaN oraz false. Wszystkie pozostałe wartości są truthy, czyli traktowane jako prawda, włącznie z pustą tablicą i pustym obiektem, co może być źródłem błędów dla początkujących programistów.
+
+
+INSTRUKCJE WARUNKOWE
+
+Instrukcja if else stanowi podstawowy mechanizm kontroli przepływu programu w zależności od spełnienia warunku. Składa się z słowa kluczowego if, warunku w nawiasach oraz bloku kodu wykonywanego gdy warunek jest prawdziwy. Opcjonalnie można dodać klauzulę else if dla dodatkowych warunków oraz else dla kodu wykonywanego gdy żaden warunek nie jest spełniony.
+
+Instrukcja switch umożliwia porównanie wartości z wieloma przypadkami i wykonanie odpowiedniego bloku kodu. Każdy przypadek jest definiowany słowem kluczowym case, po którym następuje wartość do porównania i dwukropek. Blok kodu przypadku musi kończyć się słowem kluczowym break, aby zapobiec wykonaniu kolejnych przypadków. Przypadek default jest wykonywany gdy żaden inny przypadek nie pasuje.
+
+Operator trójargumentowy stanowi zwięzłą formę instrukcji warunkowej i składa się z warunku, znaku zapytania, wartości zwracanej gdy warunek jest prawdziwy, dwukropka oraz wartości zwracanej gdy warunek jest fałszywy. Operator ten jest szczególnie przydatny przy warunkowym przypisywaniu wartości do zmiennych lub w wyrażeniach zwracanych przez funkcje.
+
+
+PĘTLE
+
+Pętla for jest klasyczną konstrukcją iteracyjną składającą się z trzech części oddzielonych średnikami: inicjalizacji zmiennej sterującej, warunku kontynuacji oraz wyrażenia wykonywanego po każdej iteracji. Pętla ta jest szczególnie przydatna gdy liczba iteracji jest znana z góry lub gdy potrzebna jest precyzyjna kontrola nad licznikiem.
+
+Pętla while wykonuje blok kodu dopóki warunek pozostaje prawdziwy. Warunek jest sprawdzany przed każdą iteracją, co oznacza, że jeśli jest fałszywy od początku, blok kodu nie zostanie wykonany ani razu. Pętla do while różni się tym, że warunek jest sprawdzany po wykonaniu bloku, gwarantując przynajmniej jedno wykonanie kodu.
+
+Pętla for of wprowadzona w ECMAScript 2015 służy do iterowania po elementach obiektów iterowalnych, takich jak tablice, ciągi tekstowe czy kolekcje Map i Set. Zmienna iteracyjna przyjmuje w każdej iteracji wartość kolejnego elementu. Pętla for in służy do iterowania po kluczach obiektów, gdzie zmienna iteracyjna przyjmuje nazwy właściwości. Należy zachować ostrożność przy stosowaniu for in na tablicach, ponieważ iteruje ona po indeksach, nie wartościach.
+
+Instrukcja break powoduje natychmiastowe zakończenie pętli, podczas gdy continue przeskakuje do następnej iteracji z pominięciem pozostałego kodu w bieżącej iteracji.
+
+
+FUNKCJE - PODSTAWY
+
+Funkcja w JavaScript może być zdefiniowana na kilka sposobów. Deklaracja funkcji wykorzystuje słowo kluczowe function, po którym następuje nazwa funkcji, lista parametrów w nawiasach oraz blok kodu w nawiasach klamrowych. Deklaracje funkcji podlegają hoistingowi, co oznacza, że można je wywoływać przed miejscem deklaracji w kodzie.
+
+Wyrażenie funkcyjne polega na przypisaniu anonimowej funkcji do zmiennej. W przeciwieństwie do deklaracji, wyrażenia funkcyjne nie podlegają hoistingowi, więc funkcja może być wywołana dopiero po miejscu jej definicji. Wyrażenia funkcyjne są przydatne gdy funkcja ma być przekazana jako argument lub przypisana jako właściwość obiektu.
+
+Funkcje strzałkowe wprowadzone w ECMAScript 2015 oferują bardziej zwięzłą składnię. W przypadku jednego parametru można pominąć nawiasy, a w przypadku pojedynczego wyrażenia zwracanego można pominąć słowo kluczowe return oraz nawiasy klamrowe. Funkcje strzałkowe nie posiadają własnego kontekstu this, co czyni je nieodpowiednimi do definiowania metod obiektów, ale idealnymi do funkcji zwrotnych.
+
+Parametry funkcji mogą mieć wartości domyślne przypisywane za pomocą operatora przypisania w liście parametrów. Operator rest reprezentowany przez trzy kropki przed nazwą parametru pozwala na zebranie dowolnej liczby argumentów w tablicę. Funkcja bez instrukcji return lub z pustym return zwraca wartość undefined.
+
+
+FUNKCJE - ZAGADNIENIA ZAAWANSOWANE
+
+Domknięcie, określane angielskim terminem closure, jest mechanizmem pozwalającym funkcji na zachowanie dostępu do zmiennych z zakresu, w którym została utworzona, nawet po zakończeniu wykonywania tego zakresu. Funkcja wewnętrzna może odwoływać się do zmiennych funkcji zewnętrznej, a te zmienne pozostają dostępne tak długo, jak istnieje referencja do funkcji wewnętrznej. Domknięcia są wykorzystywane do tworzenia prywatnych zmiennych i fabryki funkcji.
+
+Funkcje zwrotne, określane angielskim terminem callback, to funkcje przekazywane jako argumenty do innych funkcji i wywoływane w określonym momencie, często po zakończeniu operacji asynchronicznej. Wzorzec ten stanowi fundament programowania asynchronicznego w JavaScript i jest szeroko stosowany w obsłudze zdarzeń oraz operacjach wejścia-wyjścia.
+
+Natychmiast wywoływane wyrażenia funkcyjne, znane pod skrótem IIFE, to funkcje definiowane i wywoływane w jednym wyrażeniu poprzez otoczenie definicji nawiasami i dodanie nawiasów wywołania. Wzorzec ten tworzy prywatny zakres, zapobiegając zanieczyszczeniu przestrzeni nazw globalnej.
+
+Zakres zmiennych w JavaScript dzieli się na globalny, funkcyjny i blokowy. Zakres globalny obejmuje zmienne dostępne w całym programie. Zakres funkcyjny obejmuje zmienne zadeklarowane wewnątrz funkcji, dostępne tylko w tej funkcji i funkcjach zagnieżdżonych. Zakres blokowy dotyczy zmiennych let i const zadeklarowanych wewnątrz bloków ograniczonych nawiasami klamrowymi.
+
+
+TABLICE I METODY TABLICOWE
+
+Tablice w JavaScript oferują bogaty zestaw metod do manipulowania danymi. Metody mutujące modyfikują oryginalną tablicę, podczas gdy metody niemutujące zwracają nową tablicę pozostawiając oryginalną bez zmian. Metoda push dodaje element na końcu tablicy, a pop usuwa i zwraca ostatni element. Analogicznie unshift dodaje element na początku, a shift usuwa i zwraca pierwszy element.
+
+Metoda map tworzy nową tablicę zawierającą wyniki wywołania podanej funkcji dla każdego elementu tablicy źródłowej. Jest to podstawowe narzędzie do transformacji danych bez modyfikowania oryginału. Metoda filter tworzy nową tablicę zawierającą tylko te elementy, dla których podana funkcja zwróciła wartość prawdziwą. Obie metody są niemutujące i mogą być łączone w łańcuchy operacji.
+
+Metoda reduce agreguje elementy tablicy do pojedynczej wartości poprzez sekwencyjne wywołanie funkcji reduktora z akumulatorem i kolejnymi elementami. Akumulator przechowuje wynik pośredni i jest przekazywany między wywołaniami. Metoda forEach wykonuje podaną funkcję dla każdego elementu tablicy, ale w przeciwieństwie do map nie zwraca nowej tablicy.
+
+Metody find i findIndex służą do wyszukiwania elementów spełniających określony warunek. Pierwsza zwraca znaleziony element lub undefined, druga zwraca indeks elementu lub minus jeden. Metoda includes sprawdza czy tablica zawiera określoną wartość, zwracając wartość logiczną.
+
+
+OBIEKTY I FORMAT JSON
+
+Obiekty w JavaScript tworzy się za pomocą literału obiektowego, zawierającego pary właściwość-wartość oddzielone przecinkami. Właściwości mogą być metodami, czyli funkcjami przypisanymi jako wartości. W skróconej składni metod można pominąć słowo kluczowe function i dwukropek.
+
+Dostęp do właściwości obiektów uzyskuje się za pomocą notacji kropkowej, podając nazwę obiektu, kropkę i nazwę właściwości, lub notacji nawiasowej z nazwą właściwości jako ciągiem tekstowym w nawiasach kwadratowych. Notacja nawiasowa umożliwia dynamiczny dostęp za pomocą zmiennych oraz dostęp do właściwości z nazwami zawierającymi znaki specjalne.
+
+Modyfikacja obiektów obejmuje zmianę wartości istniejących właściwości, dodawanie nowych właściwości oraz usuwanie właściwości za pomocą operatora delete. Metoda Object.freeze zamraża obiekt, uniemożliwiając jakiekolwiek modyfikacje. Metoda hasOwnProperty sprawdza czy obiekt posiada określoną właściwość jako własną, nie odziedziczoną.
+
+Format JSON, czyli JavaScript Object Notation, jest tekstowym formatem wymiany danych opartym na składni obiektów JavaScript. Metoda JSON.stringify konwertuje obiekt JavaScript na ciąg tekstowy w formacie JSON. Metoda JSON.parse wykonuje operację odwrotną, parsując ciąg JSON na obiekt JavaScript. Format JSON jest szeroko stosowany w komunikacji między serwerem a przeglądarką oraz do przechowywania danych.
+
+
+MANIPULACJA MODELEM OBIEKTOWYM DOKUMENTU
+
+Model obiektowy dokumentu, znany pod skrótem DOM, reprezentuje strukturę dokumentu HTML jako drzewo obiektów, które mogą być manipulowane za pomocą JavaScript. Metoda querySelector zwraca pierwszy element pasujący do podanego selektora CSS. Metoda querySelectorAll zwraca kolekcję wszystkich pasujących elementów. Starsze metody getElementById i getElementsByClassName są nadal dostępne, ale nowoczesne selektory oferują większą elastyczność.
+
+Właściwość textContent służy do odczytywania lub ustawiania tekstowej zawartości elementu, bez interpretacji znaczników HTML. Właściwość innerHTML umożliwia manipulację zawartością HTML, jednak jej użycie z danymi pochodzącymi od użytkownika stwarza ryzyko ataków typu cross-site scripting i wymaga odpowiedniego zabezpieczenia.
+
+Stylowanie elementów można wykonywać za pomocą właściwości style, która udostępnia obiekt z właściwościami CSS w notacji camelCase. Alternatywnie właściwość classList oferuje metody add, remove i toggle do zarządzania klasami CSS elementu, co jest preferowanym podejściem przy stosowaniu arkuszy stylów.
+
+Tworzenie nowych elementów odbywa się za pomocą metody createElement, która tworzy element określonego typu. Utworzony element można następnie skonfigurować i dołączyć do dokumentu metodą appendChild lub insertBefore. Usuwanie elementów realizuje metoda remove wywoływana na elemencie lub removeChild wywoływana na rodzicu.
+
+
+OBSŁUGA ZDARZEŃ W MODELU DOM
+
+System zdarzeń umożliwia reagowanie na interakcje użytkownika i inne wydarzenia w przeglądarce. Metoda addEventListener służy do rejestrowania funkcji obsługi zdarzenia na wybranym elemencie. Przyjmuje ona nazwę typu zdarzenia, funkcję obsługi oraz opcjonalnie obiekt konfiguracyjny lub wartość logiczną określającą fazę przechwytywania.
+
+Typowe zdarzenia obejmują click dla kliknięć myszą, input dla zmian w polach formularza, submit dla wysyłania formularzy oraz load dla zakończenia ładowania zasobów. Obiekt zdarzenia przekazywany do funkcji obsługi zawiera informacje o zdarzeniu, takie jak element docelowy w właściwości target, współrzędne kursora oraz metody do kontrolowania zachowania zdarzenia.
+
+Propagacja zdarzeń przebiega w dwóch fazach. Faza przechwytywania rozpoczyna się od korzenia dokumentu i schodzi w dół do elementu docelowego. Faza bąbelkowania następuje po dotarciu do celu i polega na propagacji zdarzenia w górę drzewa DOM. Metoda stopPropagation zatrzymuje dalszą propagację, a preventDefault zapobiega domyślnemu zachowaniu przeglądarki.
+
+Delegacja zdarzeń jest wzorcem polegającym na przypisaniu jednego nasłuchu do elementu nadrzędnego zamiast wielu nasłuchów do elementów potomnych. Wykorzystując właściwość target obiektu zdarzenia, można określić który potomek był rzeczywistym celem i odpowiednio zareagować. Wzorzec ten jest wydajniejszy i automatycznie obsługuje dynamicznie dodawane elementy.
+
+
+ASYNCHRONICZNOŚĆ - PODSTAWY
+
+JavaScript jest językiem jednowątkowym, co oznacza, że w danym momencie może wykonywać tylko jedną operację. Mimo to możliwe jest wykonywanie operacji asynchronicznych dzięki mechanizmowi pętli zdarzeń. Operacje asynchroniczne, takie jak żądania sieciowe czy opóźnienia czasowe, są delegowane do środowiska wykonawczego i nie blokują głównego wątku.
+
+Funkcja setTimeout planuje wykonanie podanej funkcji zwrotnej po upływie określonej liczby milisekund. Zwraca identyfikator timera, który można wykorzystać do anulowania zaplanowanego wywołania za pomocą funkcji clearTimeout. Funkcja setInterval planuje cykliczne wykonywanie funkcji w określonych odstępach czasu, a clearInterval służy do zatrzymania cyklu.
+
+Wzorzec funkcji zwrotnych był pierwotnym sposobem obsługi asynchroniczności w JavaScript. Funkcja inicjująca operację asynchroniczną przyjmuje jako argument funkcję zwrotną, która zostanie wywołana po zakończeniu operacji. Zagnieżdżanie wielu operacji asynchronicznych prowadzi do trudnego w utrzymaniu kodu określanego terminem callback hell, czyli piekło funkcji zwrotnych.
+
+Kod synchroniczny ma zawsze pierwszeństwo przed asynchronicznym. Dopiero po opróżnieniu stosu wywołań pętla zdarzeń sprawdza kolejki zadań asynchronicznych i przenosi gotowe do wykonania funkcje zwrotne na stos.
+
+
+OBIEKTY PROMISE I SKŁADNIA ASYNC AWAIT
+
+Obiekt Promise reprezentuje przyszły wynik operacji asynchronicznej. Promise znajduje się w jednym z trzech stanów: pending oznaczającym oczekiwanie na wynik, fulfilled oznaczającym pomyślne zakończenie lub rejected oznaczającym błąd. Tworzenie obiektu Promise wymaga przekazania funkcji wykonawczej przyjmującej dwa argumenty: funkcję resolve do oznaczenia sukcesu i reject do oznaczenia błędu.
+
+Metoda then rejestruje funkcje zwrotne wywoływane odpowiednio przy pomyślnym zakończeniu lub błędzie. Metoda catch rejestruje funkcję obsługi błędów i jest równoważna wywołaniu then z pierwszym argumentem null. Metoda finally rejestruje funkcję wykonywaną niezależnie od wyniku, przydatną do operacji porządkujących.
+
+Metody statyczne klasy Promise umożliwiają koordynację wielu operacji asynchronicznych. Promise.all czeka na zakończenie wszystkich przekazanych obietnic i zwraca tablicę wyników lub odrzuca przy pierwszym błędzie. Promise.race zwraca wynik pierwszej zakończonej obietnicy. Promise.any zwraca wynik pierwszej pomyślnie zakończonej obietnicy, ignorując odrzucenia.
+
+Składnia async await wprowadzona w ECMAScript 2017 umożliwia pisanie kodu asynchronicznego w stylu synchronicznym. Słowo kluczowe async przed definicją funkcji oznacza, że funkcja zwraca Promise. Słowo kluczowe await wstrzymuje wykonanie funkcji do momentu rozwiązania obiektu Promise i zwraca jego wartość. Obsługa błędów odbywa się za pomocą bloków try catch, co jest bardziej czytelne niż łańcuchy metod then i catch.
+
+
+SŁOWO KLUCZOWE THIS
+
+Słowo kluczowe this w JavaScript odnosi się do kontekstu wykonania i jego wartość zależy od sposobu wywołania funkcji. W globalnym zakresie this odnosi się do obiektu globalnego, którym w przeglądarce jest window, a w środowisku Node.js obiekt global. W trybie ścisłym this w zakresie globalnym przyjmuje wartość undefined.
+
+W metodach obiektów this odnosi się do obiektu, na którym metoda została wywołana. Pozwala to metodom na dostęp do innych właściwości tego samego obiektu. Jednak gdy metoda jest przypisana do zmiennej i wywołana bez kontekstu obiektu, this traci powiązanie z oryginalnym obiektem.
+
+Metody call, apply i bind umożliwiają jawne określenie wartości this. Metoda call wywołuje funkcję z podanym kontekstem this i argumentami przekazanymi pojedynczo. Metoda apply działa podobnie, ale argumenty przekazuje się w tablicy. Metoda bind tworzy nową funkcję z trwale związanym kontekstem this, która może być wywołana później.
+
+Funkcje strzałkowe nie posiadają własnego kontekstu this i dziedziczą go z otaczającego zakresu leksykalnego. Cecha ta sprawia, że funkcje strzałkowe są nieodpowiednie do definiowania metod obiektów, ale idealne do funkcji zwrotnych, gdzie zachowanie zewnętrznego kontekstu jest pożądane.
+
+
+KLASY I PROGRAMOWANIE OBIEKTOWE
+
+Klasy w JavaScript wprowadzone w ECMAScript 2015 stanowią składnię syntaktyczną opartą na mechanizmie prototypów. Definicja klasy zawiera konstruktor, czyli specjalną metodę wywoływaną przy tworzeniu instancji za pomocą operatora new. Konstruktor służy do inicjalizacji właściwości instancji za pomocą słowa kluczowego this.
+
+Metody definiowane wewnątrz klasy są automatycznie dodawane do prototypu i współdzielone między wszystkimi instancjami. Metody statyczne definiowane za pomocą słowa kluczowego static należą do samej klasy, nie do instancji, i są wywoływane bezpośrednio na klasie.
+
+Dziedziczenie realizuje się za pomocą słowa kluczowego extends, które tworzy klasę potomną dziedziczącą właściwości i metody klasy nadrzędnej. W konstruktorze klasy potomnej należy wywołać funkcję super z argumentami dla konstruktora rodzica przed użyciem słowa kluczowego this. Metody klasy nadrzędnej można nadpisywać w klasie potomnej.
+
+Pola prywatne oznaczane znakiem hash przed nazwą są dostępne wyłącznie wewnątrz klasy i zapewniają enkapsulację danych. Próba dostępu do pola prywatnego spoza klasy skutkuje błędem składni. Mechanizm ten pozwala na ukrycie szczegółów implementacji i ochronę integralności danych.
+
+
+MODUŁY
+
+System modułów ECMAScript, określany skrótem ESM, umożliwia organizację kodu w oddzielnych plikach z kontrolowanym eksportem i importem funkcjonalności. Eksport nazwany za pomocą słowa kluczowego export pozwala na udostępnienie wielu wartości z modułu. Import nazwany wymaga podania nazw importowanych elementów w nawiasach klamrowych.
+
+Eksport domyślny za pomocą export default umożliwia eksport pojedynczej głównej wartości z modułu. Import domyślny nie wymaga nawiasów klamrowych i pozwala na nadanie dowolnej nazwy importowanej wartości. Każdy moduł może mieć tylko jeden eksport domyślny.
+
+Import wszystkiego za pomocą gwiazdki i słowa kluczowego as tworzy obiekt przestrzeni nazw zawierający wszystkie eksporty modułu. Dynamiczny import za pomocą funkcji import zwraca Promise rozwiązywany do obiektu modułu i umożliwia warunkowe lub opóźnione ładowanie kodu.
+
+System CommonJS stosowany w środowisku Node.js używa funkcji require do importowania i obiektu module.exports do eksportowania. Nowoczesne wersje Node.js obsługują również składnię ESM. Moduły zapewniają własny zakres, eliminując ryzyko konfliktów nazw, oraz umożliwiają leniwsze ładowanie kodu na żądanie.
+
+
+WBUDOWANE OBIEKTY MAP I SET
+
+Obiekt Map stanowi kolekcję par klucz-wartość, gdzie kluczami mogą być wartości dowolnego typu, włącznie z obiektami. W przeciwieństwie do zwykłych obiektów, Map zachowuje kolejność wstawiania elementów i oferuje bezpośredni dostęp do rozmiaru kolekcji poprzez właściwość size. Metoda set dodaje parę klucz-wartość, get pobiera wartość dla klucza, has sprawdza obecność klucza, a delete usuwa parę.
+
+Obiekt Set stanowi kolekcję unikalnych wartości, gdzie każda wartość może wystąpić tylko raz. Set automatycznie eliminuje duplikaty przy dodawaniu elementów. Metoda add dodaje wartość, has sprawdza obecność, a delete usuwa wartość. Set jest często wykorzystywany do usuwania duplikatów z tablic poprzez konwersję tablicy na Set i z powrotem.
+
+Obiekty WeakMap i WeakSet są wariantami z słabymi referencjami, gdzie kluczami mogą być wyłącznie obiekty. Słabe referencje nie zapobiegają usunięciu obiektów przez mechanizm odśmiecania pamięci, co pozwala na lepsze zarządzanie zasobami. Ograniczeniem jest brak możliwości iteracji po zawartości tych kolekcji.
+
+Obiekt Date reprezentuje moment w czasie i udostępnia metody do pobierania i ustawiania składowych daty i czasu, takich jak rok, miesiąc, dzień, godzina, minuta i sekunda. Metoda toISOString zwraca datę w standardowym formacie tekstowym odpowiednim do przechowywania i wymiany.
+
+
+OBSŁUGA BŁĘDÓW
+
+Konstrukcja try catch finally stanowi podstawowy mechanizm obsługi błędów w JavaScript. Blok try zawiera kod, który może wygenerować błąd. Jeśli błąd wystąpi, wykonanie jest natychmiast przerywane i sterowanie przechodzi do bloku catch, który otrzymuje obiekt błędu jako argument. Blok finally jest wykonywany zawsze, niezależnie od tego czy błąd wystąpił.
+
+Instrukcja throw służy do generowania własnych błędów. Najczęściej rzuca się instancje klasy Error lub jej pochodnych, przekazując komunikat błędu do konstruktora. Obiekt błędu zawiera właściwości message z komunikatem oraz stack ze śladem stosu wywołań.
+
+JavaScript definiuje kilka wbudowanych typów błędów. Error jest ogólną klasą bazową. TypeError oznacza operację na wartości nieodpowiedniego typu. ReferenceError oznacza odwołanie do nieistniejącej zmiennej. SyntaxError oznacza błąd składni w kodzie. RangeError oznacza wartość poza dozwolonym zakresem.
+
+Własne typy błędów można tworzyć poprzez rozszerzenie klasy Error, co umożliwia dodanie własnych właściwości i zachowań. W kodzie asynchronicznym błędy w funkcjach async są obsługiwane przez bloki try catch wewnątrz funkcji, podczas gdy błędy w łańcuchach Promise są obsługiwane przez metodę catch. Globalna obsługa nieobsłużonych błędów jest możliwa poprzez nasłuchiwanie zdarzeń error i unhandledrejection na obiekcie window.
+
+
+NARZĘDZIA DEWELOPERSKIE I DEBUGOWANIE
+
+Obiekt console udostępnia metody do wypisywania informacji w konsoli narzędzi deweloperskich przeglądarki. Metoda log służy do ogólnych komunikatów, warn do ostrzeżeń, error do błędów, a table do wyświetlania danych tabelarycznych w czytelnej formie. Metody time i timeEnd umożliwiają pomiar czasu wykonania fragmentu kodu. Metoda group tworzy zagnieżdżone grupy komunikatów.
+
+Narzędzia deweloperskie przeglądarki, dostępne zazwyczaj pod klawiszem F12, oferują wiele zakładek do analizy aplikacji. Zakładka Elements umożliwia inspekcję i modyfikację struktury DOM oraz stylów CSS. Zakładka Sources pozwala przeglądać kod źródłowy i ustawiać punkty przerwania dla debugowania.
+
+Debugowanie krokowe umożliwia wykonywanie kodu linia po linii z możliwością inspekcji wartości zmiennych. Punkt przerwania można ustawić klikając numer linii w zakładce Sources lub dodając słowo kluczowe debugger w kodzie. Klawisz F10 wykonuje następną linię bez wchodzenia do funkcji, F11 wchodzi do wywołania funkcji, a Shift plus F11 wychodzi z bieżącej funkcji.
+
+Zakładka Network umożliwia analizę żądań sieciowych, ich czasów i odpowiedzi. Zakładka Application daje dostęp do danych przechowywanych lokalnie, takich jak ciasteczka, localStorage i IndexedDB. Zakładka Performance służy do analizy wydajności i wykrywania wycieków pamięci.
+
+
+PĘTLA ZDARZEŃ
+
+Pętla zdarzeń jest mechanizmem umożliwiającym asynchroniczne wykonywanie kodu w jednowątkowym środowisku JavaScript. Stos wywołań przechowuje ramki funkcji aktualnie wykonywanych według zasady ostatni na wejściu, pierwszy na wyjściu. Każde wywołanie funkcji dodaje ramkę na stos, a zakończenie funkcji usuwa ramkę.
+
+Zadania asynchroniczne są umieszczane w kolejkach. Kolejka makrozadań zawiera między innymi wywołania funkcji setTimeout i setInterval, obsługę zdarzeń interfejsu użytkownika oraz operacje wejścia-wyjścia. Kolejka mikrozadań zawiera przede wszystkim rozwiązania obietnic i wywołania funkcji queueMicrotask.
+
+Cykl pętli zdarzeń przebiega następująco: najpierw wykonywane są wszystkie mikrozadania z kolejki, następnie jedno makrozadanie jest przenoszone na stos i wykonywane, po czym cykl się powtarza. Mikrozadania mają wyższy priorytet, co oznacza, że funkcja zwrotna przekazana do metody then obiektu Promise zostanie wykonana przed funkcją przekazaną do setTimeout, nawet jeśli opóźnienie wynosi zero.
+
+Zrozumienie pętli zdarzeń jest kluczowe dla pisania wydajnego kodu asynchronicznego. Długie operacje synchroniczne blokują pętlę zdarzeń i powodują niereagowanie interfejsu użytkownika. Zaleca się dzielenie ciężkich obliczeń na mniejsze części wykonywane w kolejnych cyklach pętli.
+
+
+INTERFEJS FETCH DO KOMUNIKACJI SIECIOWEJ
+
+Funkcja fetch stanowi nowoczesny interfejs do wykonywania żądań HTTP i jest następcą obiektu XMLHttpRequest. Wywołanie fetch z adresem URL jako argumentem zwraca Promise rozwiązywany do obiektu Response po otrzymaniu odpowiedzi od serwera. Podstawowe żądanie GET wymaga jedynie podania adresu URL.
+
+Obiekt Response udostępnia właściwości takie jak ok informującą o powodzeniu żądania, status zawierającą kod odpowiedzi HTTP oraz statusText z opisem tekstowym. Metody json, text, blob i arrayBuffer służą do parsowania treści odpowiedzi do odpowiedniego formatu, przy czym same zwracają Promise.
+
+Żądania inne niż GET wymagają przekazania obiektu konfiguracyjnego jako drugiego argumentu funkcji fetch. Właściwość method określa metodę HTTP, headers zawiera nagłówki żądania w postaci obiektu, a body zawiera treść żądania, najczęściej dane JSON przekonwertowane za pomocą JSON.stringify.
+
+Obsługa błędów wymaga sprawdzenia właściwości ok obiektu Response, ponieważ fetch odrzuca Promise tylko przy błędach sieciowych, nie przy kodach błędów HTTP. Obiekt AbortController umożliwia anulowanie żądania poprzez przekazanie jego sygnału w konfiguracji i wywołanie metody abort. Stosowanie składni async await z blokami try catch zapewnia czytelną obsługę zarówno błędów sieciowych, jak i błędów HTTP.
+
+
+PODSUMOWANIE I DOBRE PRAKTYKI
+
+JavaScript jest językiem jednowątkowym z asynchronicznym modelem wykonania opartym na pętli zdarzeń. Kluczowe koncepcje obejmują domknięcia umożliwiające zachowanie dostępu do zmiennych z zewnętrznego zakresu, obiekty Promise i składnię async await do obsługi asynchroniczności, klasy do strukturyzacji kodu obiektowego oraz moduły do organizacji i ponownego wykorzystania kodu.
+
+Dobre praktyki programowania w JavaScript obejmują stosowanie słów kluczowych const i let zamiast var, używanie operatora ścisłego porównania zamiast luźnego, preferowanie funkcji strzałkowych dla zwięzłości i przewidywalnego kontekstu this, konsekwentną obsługę błędów za pomocą bloków try catch oraz organizację kodu w moduły.
+
+Narzędzia wspierające rozwój obejmują edytor Visual Studio Code z bogatym ekosystemem rozszerzeń, narzędzia deweloperskie przeglądarki Chrome do debugowania i profilowania, narzędzie ESLint do statycznej analizy kodu i wykrywania potencjalnych błędów, narzędzie Prettier do automatycznego formatowania kodu oraz framework Jest do pisania i wykonywania testów jednostkowych.
+
+Dalszy rozwój umiejętności może obejmować naukę TypeScript dodającego statyczne typowanie do JavaScript, poznanie frameworków takich jak React, Vue lub Angular do tworzenia interfejsów użytkownika, opanowanie środowiska Node.js do programowania po stronie serwera oraz zgłębianie technik testowania i narzędzi do budowania aplikacji. Regularna praktyka, budowanie projektów i aktywny udział w społeczności programistycznej są kluczowe dla ciągłego rozwoju kompetencji.

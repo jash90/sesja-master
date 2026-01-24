@@ -1,0 +1,171 @@
+{
+  "title": "React - Kompleksowy przewodnik",
+  "description": "Quiz sprawdzający wiedzę z podstaw i średniozaawansowanych zagadnień React: komponenty, JSX, hooks, props, state, formularze i pobieranie danych z API.",
+  "questions": [
+    {
+      "question": "Czym jest React?",
+      "options": [
+        "Biblioteką JavaScript do tworzenia interfejsów użytkownika",
+        "Frameworkiem backendowym do obsługi baz danych",
+        "Językiem programowania stworzonym przez Google",
+        "Systemem zarządzania treścią (CMS)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "React to biblioteka JavaScript stworzona przez Facebook (Meta) służąca do budowania interfejsów użytkownika, szczególnie aplikacji typu Single Page Application (SPA)."
+    },
+    {
+      "question": "Jak zapisuje się atrybut 'class' w składni JSX?",
+      "options": [
+        "class",
+        "className",
+        "cssClass",
+        "htmlClass"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W JSX atrybut 'class' zapisuje się jako 'className', ponieważ 'class' jest słowem zarezerwowanym w JavaScript."
+    },
+    {
+      "question": "Jakie narzędzie jest obecnie zalecane do tworzenia nowych projektów React?",
+      "options": [
+        "Create React App",
+        "Webpack",
+        "Vite",
+        "Parcel"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Vite jest obecnie zalecanym narzędziem do tworzenia projektów React ze względu na szybki start serwera deweloperskiego, Hot Module Replacement i zoptymalizowaną kompilację produkcyjną."
+    },
+    {
+      "question": "Co zwraca wywołanie hooka useState?",
+      "options": [
+        "Pojedynczą wartość stanu",
+        "Obiekt z metodami get i set",
+        "Tablicę dwuelementową: wartość stanu i funkcję setter",
+        "Funkcję aktualizującą stan"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Hook useState zwraca tablicę dwuelementową, gdzie pierwszy element to aktualna wartość stanu, a drugi to funkcja setter służąca do aktualizacji tego stanu."
+    },
+    {
+      "question": "Która cecha charakteryzuje props w React?",
+      "options": [
+        "Mogą być modyfikowane przez komponent dziecka",
+        "Są tylko do odczytu (read-only)",
+        "Są dwukierunkowe - mogą przepływać w obie strony",
+        "Są dostępne tylko w komponentach klasowych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Props są niezmienne (read-only) i przekazywane jednokierunkowo z komponentu rodzica do dziecka. Komponent dziecka nie może modyfikować otrzymanych props."
+    },
+    {
+      "question": "Co oznacza pusta tablica zależności [] w hooku useEffect?",
+      "options": [
+        "Efekt wykona się przy każdym renderowaniu",
+        "Efekt nigdy się nie wykona",
+        "Efekt wykona się tylko raz, przy montowaniu komponentu",
+        "Efekt wykona się tylko przy odmontowywaniu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pusta tablica zależności [] oznacza, że efekt wykona się tylko raz - przy pierwszym zamontowaniu komponentu. Jest to odpowiednik componentDidMount w komponentach klasowych."
+    },
+    {
+      "question": "Jak prawidłowo dodać nowy element do tablicy w stanie React?",
+      "options": [
+        "items.push(newItem); setItems(items);",
+        "setItems([...items, newItem]);",
+        "setItems(items.add(newItem));",
+        "items[items.length] = newItem; setItems(items);"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Należy użyć operatora spread do utworzenia nowej tablicy: setItems([...items, newItem]). Bezpośrednia mutacja tablicy (push, przypisanie indeksu) nie powoduje ponownego renderowania, ponieważ referencja tablicy pozostaje ta sama."
+    },
+    {
+      "question": "Co to jest 'kontrolowany komponent' (controlled component) w kontekście formularzy React?",
+      "options": [
+        "Komponent, który nie przyjmuje żadnych props",
+        "Komponent, którego wartość jest kontrolowana przez stan React",
+        "Komponent zabezpieczony przed edycją przez użytkownika",
+        "Komponent renderowany warunkowo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kontrolowany komponent to element formularza, którego wartość jest całkowicie kontrolowana przez stan React. Atrybut value jest powiązany ze stanem, a onChange aktualizuje ten stan przy każdej zmianie."
+    },
+    {
+      "question": "Czym jest Virtual DOM w React?",
+      "options": [
+        "Nowym standardem W3C dla manipulacji DOM",
+        "Lekką reprezentacją rzeczywistego DOM przechowywaną w pamięci",
+        "Specjalnym trybem renderowania dla urządzeń mobilnych",
+        "Alternatywą dla HTML w aplikacjach React"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Virtual DOM to lekka reprezentacja rzeczywistego DOM przechowywana w pamięci. React porównuje Virtual DOM z poprzednią wersją (reconciliation) i wprowadza tylko minimalne niezbędne zmiany do rzeczywistego DOM, co zwiększa wydajność."
+    },
+    {
+      "question": "Co oznacza technika 'lifting state up'?",
+      "options": [
+        "Przenoszenie stanu do zewnętrznej bazy danych",
+        "Usuwanie niepotrzebnego stanu z komponentów",
+        "Przenoszenie stanu do wspólnego przodka komponentów, które go potrzebują",
+        "Automatyczne zapisywanie stanu do localStorage"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Lifting state up to technika przenoszenia stanu do najbliższego wspólnego przodka komponentów, które potrzebują dostępu do tych samych danych. Rodzic przechowuje stan i przekazuje go potomkom przez props."
+    },
+    {
+      "question": "Dlaczego zaleca się używanie lazy initialization w useState przy odczycie z localStorage?",
+      "options": [
+        "Zwiększa bezpieczeństwo danych",
+        "Pozwala uniknąć problemów z SSR i optymalizuje wydajność",
+        "Jest wymagane przez specyfikację React",
+        "Umożliwia synchroniczne zapisywanie danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lazy initialization (przekazanie funkcji do useState) zapobiega problemom z Server Side Rendering (gdzie window nie jest dostępne), unika błędów hydration i optymalizuje wydajność, bo funkcja wykonuje się tylko raz przy pierwszym renderowaniu."
+    },
+    {
+      "question": "Co to jest 'prop drilling' i jak można go rozwiązać?",
+      "options": [
+        "Technika optymalizacji props; rozwiązanie to useMemo",
+        "Przekazywanie props przez wiele poziomów; rozwiązanie to Context API",
+        "Błąd walidacji props; rozwiązanie to PropTypes",
+        "Duplikowanie props w komponentach; rozwiązanie to HOC"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prop drilling to problem przekazywania props przez wiele poziomów komponentów, mimo że pośrednie komponenty nie korzystają z tych danych. Rozwiązaniem jest Context API lub biblioteki zarządzania stanem jak Redux."
+    },
+    {
+      "question": "Jak prawidłowo zaktualizować zagnieżdżoną właściwość obiektu w stanie React?",
+      "options": [
+        "user.address.city = 'Warszawa'; setUser(user);",
+        "setUser({ ...user, address: { ...user.address, city: 'Warszawa' } });",
+        "setUser(user.address.city = 'Warszawa');",
+        "setUser({ city: 'Warszawa' });"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Należy użyć operatora spread na każdym poziomie zagnieżdżenia, tworząc nowe obiekty. Bezpośrednia mutacja obiektu nie powoduje ponownego renderowania, ponieważ React porównuje referencje obiektów."
+    },
+    {
+      "question": "Do czego służy AbortController przy pobieraniu danych w useEffect?",
+      "options": [
+        "Do automatycznego ponawiania nieudanych zapytań",
+        "Do cachowania odpowiedzi z API",
+        "Do anulowania zapytania gdy komponent zostaje odmontowany",
+        "Do kompresji danych przesyłanych z serwera"
+      ],
+      "correctAnswer": 2,
+      "explanation": "AbortController pozwala anulować zapytanie sieciowe gdy komponent zostaje odmontowany przed zakończeniem pobierania. Zapobiega to próbie aktualizacji stanu odmontowanego komponentu i potencjalnym wyciekom pamięci."
+    },
+    {
+      "question": "Która z poniższych praktyk jest NIEZALECANA przy pracy ze stanem w React?",
+      "options": [
+        "Używanie funkcji aktualizującej: setCount(prev => prev + 1)",
+        "Tworzenie nowych obiektów za pomocą operatora spread",
+        "Bezpośrednia mutacja obiektu: user.name = 'Nowy'; setUser(user);",
+        "Używanie lazy initialization dla kosztownych obliczeń"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Bezpośrednia mutacja obiektu jest niezalecana, ponieważ React nie wykrywa zmian gdy referencja obiektu pozostaje ta sama. Zawsze należy tworzyć nowe obiekty lub tablice przy aktualizacji stanu."
+    }
+  ]
+}

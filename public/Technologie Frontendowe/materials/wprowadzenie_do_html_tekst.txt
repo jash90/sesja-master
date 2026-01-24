@@ -1,0 +1,157 @@
+WPROWADZENIE DO HTML - PODSTAWY TWORZENIA STRON INTERNETOWYCH
+
+HTML, czyli HyperText Markup Language (Hipertekstowy Język Znaczników), stanowi fundament tworzenia stron internetowych. Jest to język znaczników służący do definiowania struktury i treści dokumentów wyświetlanych w przeglądarkach internetowych. Twórcą HTML jest Tim Berners-Lee, który opracował ten standard w 1991 roku. Od tego czasu HTML przeszedł wiele ewolucji, a jego aktualna wersja, HTML5, jest wykorzystywana przez ponad 94 procent wszystkich witryn w internecie.
+
+
+DZIAŁANIE STRON INTERNETOWYCH
+
+Proces wyświetlania strony internetowej rozpoczyna się od przeglądarki, która pobiera kod HTML z serwera. Następnie przeglądarka interpretuje zawarte w kodzie znaczniki i na ich podstawie renderuje stronę, prezentując ją użytkownikowi w czytelnej formie graficznej.
+
+Współczesne strony internetowe opierają się na trzech kluczowych technologiach, które współpracują ze sobą. HTML odpowiada za strukturę dokumentu, tworząc swoisty szkielet strony. CSS, czyli Cascading Style Sheets (Kaskadowe Arkusze Stylów), definiuje wygląd strony, kontrolując kolory, czcionki, marginesy i rozmieszczenie elementów. JavaScript wprowadza interaktywność i dynamiczne zachowania, umożliwiając reakcję strony na działania użytkownika. Dopiero połączenie tych trzech technologii tworzy kompletną, funkcjonalną stronę internetową.
+
+
+TWORZENIE PIERWSZEGO PLIKU HTML
+
+Proces tworzenia strony HTML składa się z trzech podstawowych kroków. Pierwszym jest utworzenie pliku tekstowego z rozszerzeniem .html. Następnie w tym pliku zapisuje się kod HTML, używając dowolnego edytora tekstu. Ostatnim krokiem jest otwarcie pliku w przeglądarce internetowej, aby zobaczyć efekt końcowy.
+
+Podstawowy dokument HTML zawiera deklarację typu dokumentu DOCTYPE, element główny html, w którym znajdują się dwie główne sekcje: head zawierająca metadane oraz body zawierająca właściwą treść strony. Przykładowy minimalny dokument HTML rozpoczyna się od deklaracji DOCTYPE html, po której następuje otwarcie elementu html. Wewnątrz sekcji head umieszcza się element title definiujący tytuł strony wyświetlany na karcie przeglądarki. W sekcji body znajduje się treść widoczna dla użytkownika, na przykład nagłówek pierwszego poziomu z tekstem powitalnym. Plik taki zapisuje się zazwyczaj pod nazwą index.html.
+
+
+STRUKTURA DOKUMENTU HTML
+
+Dokument HTML posiada ściśle określoną hierarchię elementów. Na samym początku znajduje się deklaracja DOCTYPE, która informuje przeglądarkę o wersji języka HTML. Następnie występuje element html, będący głównym kontenerem dla całego dokumentu. Wewnątrz elementu html znajdują się dwa główne elementy potomne: head oraz body.
+
+Element head zawiera metadane dokumentu, które nie są bezpośrednio widoczne dla użytkownika, ale mają kluczowe znaczenie dla prawidłowego działania strony. W tej sekcji umieszcza się między innymi tytuł strony, odnośniki do arkuszy stylów, skrypty oraz znaczniki meta. Element body z kolei zawiera całą treść widoczną na stronie, czyli tekst, obrazy, formularze i wszystkie inne elementy interfejsu.
+
+
+DEKLARACJA DOCTYPE
+
+Deklaracja DOCTYPE stanowi pierwszą linię każdego dokumentu HTML i musi znajdować się przed wszystkimi innymi znacznikami. W przypadku HTML5 przyjmuje ona postać DOCTYPE html. Ta deklaracja spełnia kilka istotnych funkcji.
+
+Przede wszystkim informuje przeglądarkę o wersji HTML, według której ma interpretować dokument. Włącza również tryb standardowy renderowania, zapewniający prawidłowe wyświetlanie strony zgodnie ze specyfikacją. Bez prawidłowej deklaracji DOCTYPE przeglądarka może przejść w tak zwany tryb quirks, który emuluje zachowanie starszych przeglądarek i może prowadzić do nieoczekiwanych różnic w wyświetlaniu strony w różnych przeglądarkach. Z tego powodu pomijanie deklaracji DOCTYPE może skutkować niespójnym wyglądem witryny.
+
+
+GŁÓWNE ELEMENTY STRUKTURALNE
+
+Element html stanowi korzeń drzewa dokumentu i zawiera w sobie wszystkie pozostałe elementy strony. Element head pełni funkcję kontenera dla metadanych, które są niewidoczne dla użytkownika, ale niezbędne dla prawidłowego funkcjonowania strony. Element body zawiera całą treść wyświetlaną w oknie przeglądarki.
+
+Typowa struktura dokumentu HTML zawsze składa się z sekcji head i body umieszczonych wewnątrz elementu html. Ta konwencja jest uniwersalna i obowiązuje w praktycznie wszystkich dokumentach HTML.
+
+
+ZNACZNIKI META
+
+Znaczniki meta to specjalne elementy umieszczane w sekcji head, które dostarczają dodatkowych informacji o dokumencie. Mimo że są niewidoczne dla użytkownika przeglądającego stronę, pełnią istotne funkcje dla przeglądarki i mechanizmów wyszukiwania.
+
+Znacznik meta z atrybutem charset określa kodowanie znaków dokumentu. Wartość UTF-8 jest obecnie standardem i zapewnia prawidłowe wyświetlanie polskich znaków oraz innych znaków diakrytycznych.
+
+Znacznik meta z atrybutem name ustawionym na description zawiera opis strony, który może być wyświetlany w wynikach wyszukiwania. Jest to istotne z punktu widzenia optymalizacji dla wyszukiwarek internetowych.
+
+Znacznik meta viewport kontroluje sposób wyświetlania strony na urządzeniach mobilnych i jest niezbędny do tworzenia stron responsywnych, dostosowujących się do różnych rozmiarów ekranów.
+
+
+NAGŁÓWKI OD H1 DO H6
+
+HTML oferuje sześć poziomów nagłówków, od h1 będącego najważniejszym do h6 będącego najmniej znaczącym. Nagłówki tworzą hierarchiczną strukturę treści dokumentu i mają istotne znaczenie zarówno dla użytkowników, jak i dla mechanizmów wyszukiwania.
+
+Obowiązuje kilka zasad dotyczących prawidłowego stosowania nagłówków. Na każdej stronie powinien znajdować się tylko jeden nagłówek pierwszego poziomu h1, który stanowi główny tytuł dokumentu. Poziomy nagłówków nie powinny być pomijane, co oznacza, że po h1 powinien następować h2, a nie bezpośrednio h3. Logiczna hierarchia nagłówków poprawia strukturyzację treści, ułatwia nawigację użytkownikom korzystającym z czytników ekranowych oraz wpływa pozytywnie na pozycjonowanie strony w wyszukiwarkach.
+
+
+ZNACZNIKI TEKSTOWE
+
+Do formatowania tekstu w HTML służy zestaw dedykowanych znaczników. Element p definiuje akapit tekstu. Element br wymusza przejście do nowej linii wewnątrz bloku tekstu. Element hr tworzy poziomą linię oddzielającą sekcje treści.
+
+Szczególne znaczenie mają semantyczne znaczniki tekstowe. Element strong oznacza tekst o szczególnej ważności i domyślnie jest wyświetlany pogrubionym krojem pisma. Element em wskazuje na tekst wymagający szczególnego nacisku i domyślnie jest renderowany kursywą.
+
+Istotne jest rozróżnienie między znacznikami semantycznymi a czysto prezentacyjnymi. Elementy strong i em niosą ze sobą informację o znaczeniu tekstu, podczas gdy elementy b i i wpływają jedynie na jego wygląd wizualny. Stosowanie znaczników semantycznych poprawia dostępność strony dla osób korzystających z technologii asystujących oraz ma pozytywny wpływ na pozycjonowanie w wyszukiwarkach.
+
+
+DODATKOWE ZNACZNIKI FORMATOWANIA
+
+Oprócz podstawowych znaczników tekstowych HTML oferuje dodatkowe elementy służące do formatowania. Element b powoduje pogrubienie tekstu bez nadawania mu dodatkowego znaczenia semantycznego. Element i wyświetla tekst kursywą. Element u dodaje podkreślenie, choć jego stosowanie jest obecnie rzadkie ze względu na kojarzenie podkreślenia z hiperłączami. Element s przekreśla tekst, co bywa wykorzystywane do oznaczania treści nieaktualnych.
+
+Elementy sub i sup służą do tworzenia odpowiednio indeksu dolnego i górnego. Znajdują zastosowanie przy zapisie wzorów chemicznych, takich jak H2O, oraz wyrażeń matematycznych zawierających potęgi, na przykład 10 do kwadratu.
+
+Zgodnie z dobrymi praktykami do kontrolowania wyglądu tekstu zaleca się stosowanie arkuszy stylów CSS, rezerwując znaczniki HTML do definiowania struktury i znaczenia treści.
+
+
+HIPERŁĄCZA
+
+Hiperłącza stanowią jeden z fundamentalnych elementów internetu, umożliwiając nawigację między stronami i dokumentami. W HTML tworzy się je za pomocą elementu a z atrybutem href określającym adres docelowy.
+
+Podstawowa składnia łącza zawiera znacznik otwierający a z atrybutem href, tekst widoczny dla użytkownika oraz znacznik zamykający. Dodanie atrybutu target z wartością _blank powoduje otwarcie łącza w nowej karcie przeglądarki.
+
+Wyróżnia się dwa główne rodzaje łączy. Łącza zewnętrzne prowadzą do innych witryn internetowych i używają pełnych adresów URL rozpoczynających się od http lub https. Łącza wewnętrzne prowadzą do innych stron w obrębie tej samej witryny i mogą używać ścieżek względnych, na przykład samej nazwy pliku html.
+
+Prawidłowo skonstruowane łącza z opisowym tekstem poprawiają nawigację na stronie i jej dostępność dla wszystkich użytkowników.
+
+
+LISTY
+
+HTML umożliwia tworzenie dwóch podstawowych rodzajów list. Lista nieuporządkowana, definiowana elementem ul, prezentuje elementy w formie wypunktowania. Stosuje się ją, gdy kolejność elementów nie ma znaczenia. Lista uporządkowana, definiowana elementem ol, numeruje kolejne elementy. Jest odpowiednia, gdy kolejność ma istotne znaczenie.
+
+W obu przypadkach poszczególne pozycje listy oznacza się elementem li. HTML pozwala również na zagnieżdżanie list, czyli umieszczanie jednej listy wewnątrz elementu innej listy, co umożliwia tworzenie struktur hierarchicznych.
+
+Listy znajdują szerokie zastosowanie w prezentacji danych uporządkowanych, tworzeniu menu nawigacyjnych oraz organizacji treści o strukturze wielopoziomowej.
+
+
+TABELE
+
+Tabele w HTML służą do prezentacji danych w formie wierszy i kolumn. Głównym kontenerem tabeli jest element table. Wewnątrz niego można wyróżnić sekcję nagłówkową thead oraz sekcję zawierającą właściwe dane tbody.
+
+Element tr definiuje pojedynczy wiersz tabeli. Wewnątrz wierszy umieszcza się komórki. Element th oznacza komórkę nagłówkową, która domyślnie jest wyświetlana pogrubionym tekstem i wycentrowana. Element td oznacza zwykłą komórkę danych.
+
+Prawidłowo skonstruowane tabele z wyodrębnioną sekcją nagłówkową są bardziej dostępne i łatwiejsze do zrozumienia przez technologie asystujące. Tabele są idealnym rozwiązaniem do prezentacji danych tabelarycznych, porównań i zestawień.
+
+
+OBRAZY
+
+Do osadzania obrazów na stronie służy element img, który jest elementem pustym, nieposiadającym znacznika zamykającego. Podstawowymi atrybutami tego elementu są src oraz alt.
+
+Atrybut src określa ścieżkę do pliku obrazu, która może być adresem URL lub ścieżką lokalną względem dokumentu HTML. Atrybut alt zawiera tekst alternatywny, który jest wyświetlany, gdy obraz nie może zostać załadowany, oraz jest odczytywany przez czytniki ekranowe. Stosowanie opisowego tekstu alternatywnego jest niezwykle istotne dla dostępności strony oraz pozytywnie wpływa na pozycjonowanie w wyszukiwarkach.
+
+Opcjonalne atrybuty width i height pozwalają określić wymiary obrazu w pikselach, co pomaga przeglądarce zarezerwować odpowiednią przestrzeń przed załadowaniem grafiki.
+
+
+MULTIMEDIA
+
+HTML5 wprowadził natywną obsługę multimediów, eliminując potrzebę stosowania zewnętrznych wtyczek. Do osadzania materiałów wideo służy element video, a do materiałów dźwiękowych element audio.
+
+Oba elementy przyjmują atrybut src określający ścieżkę do pliku multimedialnego. Dostępne są również liczne atrybuty kontrolujące zachowanie odtwarzacza. Atrybut controls wyświetla interfejs sterowania odtwarzaniem. Atrybut autoplay powoduje automatyczne rozpoczęcie odtwarzania po załadowaniu strony. Atrybut loop włącza odtwarzanie w pętli. Dla elementu video dostępny jest dodatkowo atrybut poster, pozwalający określić obraz wyświetlany przed rozpoczęciem odtwarzania.
+
+Natywna obsługa multimediów w HTML5 zapewnia spójne działanie na różnych urządzeniach i przeglądarkach bez konieczności instalowania dodatkowego oprogramowania.
+
+
+FORMULARZE
+
+Formularze stanowią podstawowy mechanizm interakcji z użytkownikiem i zbierania danych. Głównym kontenerem formularza jest element form, który przyjmuje atrybut action określający adres URL, pod który zostaną wysłane dane, oraz atrybut method definiujący metodę przesyłania, najczęściej GET lub POST.
+
+Element input to najbardziej wszechstronny element formularza. W zależności od wartości atrybutu type może przyjmować różne formy: text dla pola tekstowego, password dla pola hasła z ukrytymi znakami, checkbox dla pola wyboru wielokrotnego, radio dla pola wyboru pojedynczego, submit dla przycisku wysyłającego formularz, a także email dla adresów poczty elektronicznej czy date dla wyboru daty.
+
+Element select w połączeniu z elementami option tworzy listę rozwijaną. Element textarea definiuje wieloliniowe pole tekstowe pozwalające na wprowadzenie dłuższych fragmentów tekstu.
+
+Formularze umożliwiają budowanie interaktywnych stron z możliwością rejestracji użytkowników, wyszukiwania, komentowania i wielu innych funkcji wymagających wprowadzania danych.
+
+
+SEMANTYKA HTML5
+
+HTML5 wprowadził zestaw semantycznych znaczników strukturalnych, które zastępują generyczne elementy div i nadają treści konkretne znaczenie. Element header definiuje nagłówek strony lub sekcji. Element nav oznacza sekcję nawigacyjną zawierającą łącza do innych części witryny. Element main zawiera główną treść dokumentu i powinien występować tylko raz na stronie. Element article oznacza samodzielny fragment treści, taki jak wpis na blogu czy artykuł prasowy. Element section grupuje powiązane tematycznie treści. Element aside definiuje treść poboczną, często prezentowaną jako panel boczny. Element footer oznacza stopkę strony lub sekcji.
+
+Stosowanie znaczników semantycznych przynosi wymierne korzyści. Poprawia dostępność strony, umożliwiając czytnikom ekranowym lepszą interpretację struktury dokumentu. Wpływa pozytywnie na pozycjonowanie, ponieważ roboty wyszukiwarek mogą lepiej zrozumieć organizację treści. Ułatwia również utrzymanie i rozwój kodu przez programistów.
+
+
+INTEGRACJA CSS I JAVASCRIPT
+
+HTML współpracuje z CSS i JavaScript, tworząc kompletne strony internetowe. Istnieją trzy sposoby dołączania arkuszy stylów CSS do dokumentu HTML. Zewnętrzny arkusz stylów łączy się za pomocą elementu link z atrybutami rel ustawionym na stylesheet oraz href wskazującym na plik CSS. Style można również umieścić bezpośrednio w dokumencie wewnątrz elementu style w sekcji head. Trzecią możliwością są style inline, dodawane bezpośrednio do elementów za pomocą atrybutu style, jednak ta metoda jest niezalecana ze względu na trudności w utrzymaniu kodu.
+
+Podobnie JavaScript można dołączyć na kilka sposobów. Zewnętrzny plik skryptu łączy się elementem script z atrybutem src wskazującym na plik JavaScript. Kod można również umieścić bezpośrednio między znacznikami script. Istnieje też możliwość przypisania kodu do zdarzeń bezpośrednio w atrybutach elementów, na przykład onclick, choć ta metoda również nie jest rekomendowana w nowoczesnym programowaniu.
+
+CSS odpowiada za wizualną prezentację strony, kontrolując kolory, typografię, marginesy i rozmieszczenie elementów. JavaScript wprowadza dynamikę i interaktywność, umożliwiając reagowanie na działania użytkownika, animacje i komunikację z serwerami.
+
+
+PODSUMOWANIE
+
+HTML stanowi fundament wszystkich stron internetowych i jest niezbędną technologią dla każdego programisty zajmującego się tworzeniem aplikacji webowych. Znaczniki HTML definiują hierarchię i organizację treści, tworząc strukturę dokumentu zrozumiałą zarówno dla przeglądarek, jak i dla wyszukiwarek internetowych.
+
+Stosowanie znaczników semantycznych wprowadzonych w HTML5 znacząco poprawia dostępność stron dla osób korzystających z technologii asystujących oraz pozytywnie wpływa na pozycjonowanie w wynikach wyszukiwania. Semantyka HTML pomaga czytnikom ekranowym i robotom wyszukiwarek w prawidłowej interpretacji zawartości strony.
+
+HTML stanowi punkt wyjścia do nauki tworzenia stron internetowych. W połączeniu z CSS, odpowiadającym za styl wizualny, oraz JavaScript, wprowadzającym interaktywność, tworzy kompletny zestaw narzędzi do budowania nowoczesnych aplikacji webowych. Znajomość HTML jest fundamentalną umiejętnością każdego programisty front-end.

@@ -1,0 +1,171 @@
+{
+  "title": "JavaScript - Kompletny Przewodnik: Quiz",
+  "description": "Quiz sprawdzający wiedzę z zakresu języka JavaScript, obejmujący zmienne, typy danych, funkcje, asynchroniczność, DOM, klasy i moduły.",
+  "questions": [
+    {
+      "question": "Które słowo kluczowe służy do deklarowania stałej, której wartości nie można zmienić po przypisaniu?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "static"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Słowo kluczowe 'const' służy do deklarowania stałych. Po przypisaniu wartości nie można jej zmienić. 'let' i 'var' pozwalają na zmianę wartości, a 'static' służy do definiowania metod statycznych w klasach."
+    },
+    {
+      "question": "Jaki będzie wynik porównania: 5 == '5'?",
+      "options": [
+        "false",
+        "true",
+        "undefined",
+        "TypeError"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operator == wykonuje porównanie z koercją typów. Ciąg tekstowy '5' jest konwertowany na liczbę 5 przed porównaniem, więc wynik to true. Operator === zwróciłby false, ponieważ porównuje bez konwersji typów."
+    },
+    {
+      "question": "Która wartość NIE jest uznawana za 'falsy' w JavaScript?",
+      "options": [
+        "0",
+        "''  (pusty string)",
+        "[]  (pusta tablica)",
+        "null"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pusta tablica [] jest wartością 'truthy' w JavaScript. Wartości 'falsy' to: 0, '' (pusty string), null, undefined, NaN oraz false. Puste tablice i obiekty są traktowane jako prawdziwe."
+    },
+    {
+      "question": "Jak nazywa się mechanizm, dzięki któremu funkcja wewnętrzna zachowuje dostęp do zmiennych z funkcji zewnętrznej nawet po jej zakończeniu?",
+      "options": [
+        "Hoisting",
+        "Closure (domknięcie)",
+        "Scope chain",
+        "Callback"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Closure (domknięcie) to mechanizm pozwalający funkcji na zachowanie dostępu do zmiennych z zakresu, w którym została utworzona. Hoisting to przenoszenie deklaracji, scope chain to łańcuch zakresów, a callback to funkcja zwrotna."
+    },
+    {
+      "question": "Która metoda tablicowa zwraca nową tablicę z elementami spełniającymi określony warunek?",
+      "options": [
+        "map()",
+        "forEach()",
+        "filter()",
+        "reduce()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Metoda filter() tworzy nową tablicę zawierającą tylko elementy, dla których funkcja testująca zwróciła true. map() transformuje elementy, forEach() iteruje bez zwracania, a reduce() agreguje do pojedynczej wartości."
+    },
+    {
+      "question": "Co zwróci typeof null w JavaScript?",
+      "options": [
+        "\"null\"",
+        "\"undefined\"",
+        "\"object\"",
+        "\"boolean\""
+      ],
+      "correctAnswer": 2,
+      "explanation": "typeof null zwraca \"object\" - jest to historyczny błąd w JavaScript, który pozostał dla zachowania kompatybilności wstecznej. Do sprawdzenia czy wartość to null, należy użyć porównania === null."
+    },
+    {
+      "question": "Jaka jest różnica między metodami call() i apply()?",
+      "options": [
+        "call() działa tylko na obiektach, apply() na funkcjach",
+        "call() przyjmuje argumenty pojedynczo, apply() w tablicy",
+        "apply() tworzy nową funkcję, call() nie",
+        "Nie ma różnicy, to aliasy tej samej metody"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Obie metody wywołują funkcję z określonym kontekstem this, ale różnią się sposobem przekazywania argumentów: call(thisArg, arg1, arg2) przyjmuje argumenty pojedynczo, a apply(thisArg, [arg1, arg2]) w tablicy."
+    },
+    {
+      "question": "W jakim stanie NIE może znajdować się obiekt Promise?",
+      "options": [
+        "pending",
+        "fulfilled",
+        "rejected",
+        "cancelled"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Promise może znajdować się w trzech stanach: pending (oczekujący), fulfilled (spełniony) lub rejected (odrzucony). Nie istnieje stan 'cancelled' - do anulowania operacji służy AbortController."
+    },
+    {
+      "question": "Co oznacza słowo kluczowe 'async' przed definicją funkcji?",
+      "options": [
+        "Funkcja będzie wykonywana w osobnym wątku",
+        "Funkcja automatycznie zwraca Promise",
+        "Funkcja może przyjmować tylko argumenty asynchroniczne",
+        "Funkcja zostanie wykonana natychmiast"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Słowo kluczowe 'async' sprawia, że funkcja automatycznie zwraca Promise. Umożliwia też użycie słowa 'await' wewnątrz funkcji. JavaScript pozostaje jednowątkowy - async nie tworzy nowych wątków."
+    },
+    {
+      "question": "Która metoda służy do konwersji obiektu JavaScript na ciąg tekstowy w formacie JSON?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "Object.toString()",
+        "JSON.convert()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "JSON.stringify() konwertuje obiekt JavaScript na ciąg tekstowy JSON. JSON.parse() wykonuje operację odwrotną - parsuje ciąg JSON na obiekt. Object.toString() zwraca '[object Object]', a JSON.convert() nie istnieje."
+    },
+    {
+      "question": "Jaki będzie wynik wykonania poniższego kodu?\nconsole.log(1);\nPromise.resolve().then(() => console.log(2));\nsetTimeout(() => console.log(3), 0);\nconsole.log(4);",
+      "options": [
+        "1, 2, 3, 4",
+        "1, 4, 3, 2",
+        "1, 4, 2, 3",
+        "1, 2, 4, 3"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kod synchroniczny (1, 4) wykonuje się najpierw. Następnie mikrozadania (Promise.then → 2) mają priorytet nad makrozadaniami (setTimeout → 3). Wynik: 1, 4, 2, 3."
+    },
+    {
+      "question": "Jak oznaczyć pole prywatne w klasie JavaScript?",
+      "options": [
+        "Słowem kluczowym private",
+        "Prefiksem _ (podkreślnik)",
+        "Prefiksem # (hash)",
+        "Metodą Object.definePrivate()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pola prywatne w JavaScript oznacza się prefiksem # (hash), np. #privateField. Prefiks _ jest tylko konwencją nazewniczą bez wymuszenia prywatności. Słowo 'private' nie istnieje w JavaScript (istnieje w TypeScript)."
+    },
+    {
+      "question": "Co zwraca funkcja fetch() po wykonaniu żądania HTTP?",
+      "options": [
+        "Bezpośrednio dane z serwera",
+        "Promise rozwiązywany do obiektu Response",
+        "Obiekt XMLHttpRequest",
+        "Promise rozwiązywany do sparsowanych danych JSON"
+      ],
+      "correctAnswer": 1,
+      "explanation": "fetch() zwraca Promise rozwiązywany do obiektu Response. Aby uzyskać dane, należy wywołać metodę jak .json() lub .text() na obiekcie Response, która również zwraca Promise."
+    },
+    {
+      "question": "Która z poniższych cech NIE dotyczy funkcji strzałkowych (arrow functions)?",
+      "options": [
+        "Posiadają zwięzłą składnię",
+        "Nie mają własnego kontekstu this",
+        "Mogą być używane jako konstruktory z operatorem new",
+        "Dziedziczą this z otaczającego zakresu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Funkcje strzałkowe NIE mogą być używane jako konstruktory - próba użycia new ze strzałką powoduje TypeError. Funkcje strzałkowe nie mają własnego this, arguments ani super, i dziedziczą je z zakresu leksykalnego."
+    },
+    {
+      "question": "Jaka jest główna różnica między Map a zwykłym obiektem {} w JavaScript?",
+      "options": [
+        "Map jest szybszy przy iteracji",
+        "Map może mieć klucze dowolnego typu, obiekt tylko stringi i symbole",
+        "Map automatycznie sortuje elementy",
+        "Obiekt może przechowywać funkcje, Map nie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Główną różnicą jest to, że Map może mieć klucze dowolnego typu (w tym obiekty i funkcje), podczas gdy klucze zwykłego obiektu są konwertowane na stringi (lub mogą być symbolami). Map też zachowuje kolejność wstawiania i ma właściwość size."
+    }
+  ]
+}

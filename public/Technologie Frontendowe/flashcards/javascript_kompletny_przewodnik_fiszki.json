@@ -1,0 +1,157 @@
+{
+  "title": "JavaScript - Kompletny Przewodnik: Fiszki",
+  "description": "Zestaw fiszek do nauki języka JavaScript obejmujący podstawy składni, typy danych, funkcje, asynchroniczność, DOM, klasy i nowoczesne funkcjonalności ES6+.",
+  "category": "Programowanie - JavaScript",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym różni się 'let' od 'var'?",
+      "back": "'let' ma zasięg blokowy i podlega Temporal Dead Zone (błąd przy użyciu przed deklaracją). 'var' ma zasięg funkcyjny i podlega hoistingowi (wartość undefined przed deklaracją). W nowoczesnym kodzie zaleca się używanie 'let' i 'const'."
+    },
+    {
+      "id": 2,
+      "front": "Jakie są wartości 'falsy' w JavaScript?",
+      "back": "Sześć wartości falsy: false, 0, '' (pusty string), null, undefined, NaN. Wszystkie inne wartości są 'truthy', włącznie z pustą tablicą [] i pustym obiektem {}."
+    },
+    {
+      "id": 3,
+      "front": "Czym jest hoisting?",
+      "back": "Hoisting to mechanizm przenoszenia deklaracji zmiennych i funkcji na początek ich zakresu przed wykonaniem kodu. Deklaracje 'var' są hoistowane z wartością undefined, deklaracje funkcji są hoistowane w całości, a 'let' i 'const' podlegają Temporal Dead Zone."
+    },
+    {
+      "id": 4,
+      "front": "Jaka jest różnica między == a ===?",
+      "back": "== (luźne porównanie) wykonuje koercję typów przed porównaniem, np. 5 == '5' zwraca true. === (ścisłe porównanie) sprawdza wartość i typ bez konwersji, np. 5 === '5' zwraca false. Zaleca się używanie === dla uniknięcia nieoczekiwanych wyników."
+    },
+    {
+      "id": 5,
+      "front": "Co to jest closure (domknięcie)?",
+      "back": "Closure to mechanizm, dzięki któremu funkcja wewnętrzna zachowuje dostęp do zmiennych z zakresu funkcji zewnętrznej, nawet po zakończeniu jej wykonania. Wykorzystywane do tworzenia prywatnych zmiennych i fabryk funkcji."
+    },
+    {
+      "id": 6,
+      "front": "Czym różnią się funkcje strzałkowe od zwykłych funkcji?",
+      "back": "Funkcje strzałkowe: nie mają własnego 'this' (dziedziczą z otoczenia), nie mogą być konstruktorami (brak new), nie mają obiektu 'arguments', mają krótszą składnię. Idealne do callbacków, nieodpowiednie jako metody obiektów."
+    },
+    {
+      "id": 7,
+      "front": "Co robi metoda map() na tablicy?",
+      "back": "map() tworzy nową tablicę zawierającą wyniki wywołania podanej funkcji dla każdego elementu tablicy źródłowej. Nie modyfikuje oryginalnej tablicy. Przykład: [1,2,3].map(x => x * 2) zwraca [2,4,6]."
+    },
+    {
+      "id": 8,
+      "front": "Co robi metoda filter() na tablicy?",
+      "back": "filter() tworzy nową tablicę zawierającą tylko te elementy, dla których funkcja testująca zwróciła true. Nie modyfikuje oryginału. Przykład: [1,2,3,4].filter(x => x % 2 === 0) zwraca [2,4]."
+    },
+    {
+      "id": 9,
+      "front": "Co robi metoda reduce() na tablicy?",
+      "back": "reduce() agreguje elementy tablicy do pojedynczej wartości, wykonując funkcję reduktora dla każdego elementu z akumulatorem. Przykład: [1,2,3].reduce((acc, x) => acc + x, 0) zwraca 6 (sumę elementów)."
+    },
+    {
+      "id": 10,
+      "front": "Jakie są trzy stany obiektu Promise?",
+      "back": "Pending (oczekujący) - początkowy stan, operacja w toku. Fulfilled (spełniony) - operacja zakończona sukcesem. Rejected (odrzucony) - operacja zakończona błędem. Po przejściu do fulfilled lub rejected, stan jest niezmienny."
+    },
+    {
+      "id": 11,
+      "front": "Co oznaczają słowa kluczowe async i await?",
+      "back": "'async' przed funkcją sprawia, że automatycznie zwraca Promise i umożliwia użycie 'await' wewnątrz. 'await' wstrzymuje wykonanie funkcji do rozwiązania Promise i zwraca jego wartość. Upraszcza kod asynchroniczny, eliminując łańcuchy .then()."
+    },
+    {
+      "id": 12,
+      "front": "Czym jest Event Loop (pętla zdarzeń)?",
+      "back": "Event Loop to mechanizm zarządzający asynchronicznym wykonaniem kodu w jednowątkowym JavaScript. Monitoruje stos wywołań i kolejki zadań, przenosząc gotowe callbacki na stos gdy jest pusty. Mikrozadania (Promises) mają priorytet nad makrozadaniami (setTimeout)."
+    },
+    {
+      "id": 13,
+      "front": "Jaka jest różnica między mikrozadaniami a makrozadaniami?",
+      "back": "Mikrozadania (Promise.then, queueMicrotask) mają wyższy priorytet - wszystkie są wykonywane przed następnym makrozadaniem. Makrozadania (setTimeout, setInterval, zdarzenia I/O) są wykonywane po jednym na cykl pętli zdarzeń."
+    },
+    {
+      "id": 14,
+      "front": "Co zwraca typeof null i dlaczego?",
+      "back": "typeof null zwraca 'object' - jest to historyczny błąd w JavaScript z pierwszej implementacji, zachowany dla kompatybilności wstecznej. Do sprawdzenia null należy użyć: value === null."
+    },
+    {
+      "id": 15,
+      "front": "Czym różni się querySelector od getElementById?",
+      "back": "querySelector przyjmuje dowolny selektor CSS i zwraca pierwszy pasujący element. getElementById przyjmuje tylko ID (bez #) i jest nieco szybszy. querySelectorAll zwraca wszystkie pasujące elementy jako NodeList."
+    },
+    {
+      "id": 16,
+      "front": "Co to jest propagacja zdarzeń (event propagation)?",
+      "back": "Zdarzenia w DOM propagują w dwóch fazach: capturing (od korzenia w dół do elementu docelowego) i bubbling (od elementu w górę do korzenia). stopPropagation() zatrzymuje propagację, preventDefault() blokuje domyślne zachowanie."
+    },
+    {
+      "id": 17,
+      "front": "Jak działa słowo kluczowe 'this' w JavaScript?",
+      "back": "'this' zależy od sposobu wywołania funkcji: w metodzie obiektu - odnosi się do obiektu; w funkcji zwykłej - window (lub undefined w strict mode); w funkcji strzałkowej - dziedziczone z otoczenia; z call/apply/bind - jawnie określone."
+    },
+    {
+      "id": 18,
+      "front": "Czym różnią się call(), apply() i bind()?",
+      "back": "call(thisArg, arg1, arg2) - wywołuje funkcję z podanym this i argumentami pojedynczo. apply(thisArg, [args]) - jak call, ale argumenty w tablicy. bind(thisArg) - zwraca nową funkcję z trwale związanym this, do późniejszego wywołania."
+    },
+    {
+      "id": 19,
+      "front": "Jak oznaczyć pole prywatne w klasie JavaScript?",
+      "back": "Pola prywatne oznacza się prefiksem # (hash), np. #privateField. Są dostępne tylko wewnątrz klasy - próba dostępu z zewnątrz powoduje błąd składni. Prefiks _ (podkreślnik) to tylko konwencja bez wymuszenia prywatności."
+    },
+    {
+      "id": 20,
+      "front": "Co robi słowo kluczowe 'super' w klasie?",
+      "back": "'super' w konstruktorze klasy potomnej wywołuje konstruktor klasy nadrzędnej - musi być wywołane przed użyciem 'this'. W metodach 'super.metodaNazwa()' wywołuje metodę z klasy nadrzędnej."
+    },
+    {
+      "id": 21,
+      "front": "Jaka jest różnica między eksportem nazwanym a domyślnym?",
+      "back": "Eksport nazwany (export const x) - można eksportować wiele wartości, import wymaga nawiasów klamrowych: import { x }. Eksport domyślny (export default) - jeden na moduł, import bez nawiasów z dowolną nazwą: import x."
+    },
+    {
+      "id": 22,
+      "front": "Czym różni się Map od zwykłego obiektu {}?",
+      "back": "Map: klucze dowolnego typu (w tym obiekty), zachowuje kolejność wstawiania, ma właściwość size, lepsze iterowanie. Obiekt: klucze tylko string/symbol, może mieć odziedziczone właściwości, składnia literałowa. Map lepszy dla dynamicznych kolekcji."
+    },
+    {
+      "id": 23,
+      "front": "Do czego służy Set w JavaScript?",
+      "back": "Set to kolekcja unikalnych wartości - automatycznie eliminuje duplikaty. Metody: add(), has(), delete(), clear(). Często używany do usuwania duplikatów z tablicy: [...new Set(array)]."
+    },
+    {
+      "id": 24,
+      "front": "Co zwraca funkcja fetch() i jak obsłużyć odpowiedź?",
+      "back": "fetch() zwraca Promise rozwiązywany do obiektu Response. Response.ok informuje o powodzeniu, .status zawiera kod HTTP. Dane pobiera się metodami: .json(), .text(), .blob() - każda zwraca Promise. fetch odrzuca Promise tylko przy błędach sieciowych."
+    },
+    {
+      "id": 25,
+      "front": "Jak działa try...catch...finally?",
+      "back": "try - blok kodu który może rzucić błąd. catch(error) - obsługuje błąd, otrzymuje obiekt z message i stack. finally - wykonuje się zawsze (po try lub catch), niezależnie od błędu. Używane do sprzątania zasobów."
+    },
+    {
+      "id": 26,
+      "front": "Co to jest IIFE i do czego służy?",
+      "back": "IIFE (Immediately Invoked Function Expression) to funkcja definiowana i wywoływana natychmiast: (function() { ... })(). Tworzy prywatny zakres, zapobiegając zanieczyszczeniu przestrzeni globalnej. Popularne przed wprowadzeniem modułów ES6."
+    },
+    {
+      "id": 27,
+      "front": "Jakie są wbudowane typy błędów w JavaScript?",
+      "back": "Error - ogólny błąd bazowy. TypeError - operacja na niewłaściwym typie. ReferenceError - odwołanie do nieistniejącej zmiennej. SyntaxError - błąd składni. RangeError - wartość poza zakresem. Można tworzyć własne typy przez extends Error."
+    },
+    {
+      "id": 28,
+      "front": "Czym różni się textContent od innerHTML?",
+      "back": "textContent - pobiera/ustawia czysty tekst, bezpieczny przy danych użytkownika, szybszy. innerHTML - pobiera/ustawia HTML z tagami, może prowadzić do ataków XSS przy niezaufanych danych. Dla bezpieczeństwa preferuj textContent."
+    },
+    {
+      "id": 29,
+      "front": "Co to jest delegacja zdarzeń (event delegation)?",
+      "back": "Wzorzec polegający na przypisaniu jednego nasłuchu do elementu nadrzędnego zamiast wielu do potomków. Wykorzystuje bąbelkowanie zdarzeń i event.target do identyfikacji źródła. Wydajniejszy i automatycznie obsługuje dynamicznie dodawane elementy."
+    },
+    {
+      "id": 30,
+      "front": "Jak skopiować obiekt w JavaScript?",
+      "back": "Płytka kopia: {...obj} (spread) lub Object.assign({}, obj) - kopiuje tylko pierwszy poziom. Głęboka kopia: JSON.parse(JSON.stringify(obj)) - działa dla prostych obiektów, lub structuredClone(obj) (nowoczesna metoda), lub biblioteki jak lodash.cloneDeep."
+    }
+  ]
+}

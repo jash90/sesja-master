@@ -1,0 +1,171 @@
+{
+  "title": "Wprowadzenie do HTML - Quiz",
+  "description": "Quiz sprawdzający podstawową wiedzę z zakresu HTML, struktury dokumentów, znaczników i semantyki HTML5.",
+  "questions": [
+    {
+      "question": "Co oznacza skrót HTML?",
+      "options": [
+        "HyperText Markup Language",
+        "High Technology Modern Language",
+        "HyperText Machine Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HTML to skrót od HyperText Markup Language, czyli Hipertekstowy Język Znaczników. Jest to język służący do tworzenia struktury stron internetowych."
+    },
+    {
+      "question": "Kto jest twórcą języka HTML?",
+      "options": [
+        "Bill Gates",
+        "Tim Berners-Lee",
+        "Steve Jobs",
+        "Linus Torvalds"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tim Berners-Lee stworzył HTML w 1991 roku. Jest również twórcą protokołu HTTP i koncepcji World Wide Web."
+    },
+    {
+      "question": "Który element HTML zawiera treść widoczną dla użytkownika?",
+      "options": [
+        "<head>",
+        "<meta>",
+        "<body>",
+        "<title>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <body> zawiera całą treść widoczną na stronie internetowej. Element <head> zawiera metadane, które nie są bezpośrednio wyświetlane użytkownikowi."
+    },
+    {
+      "question": "Gdzie w dokumencie HTML powinna znajdować się deklaracja DOCTYPE?",
+      "options": [
+        "Wewnątrz elementu <head>",
+        "Wewnątrz elementu <body>",
+        "Na końcu dokumentu",
+        "Na samym początku dokumentu, przed wszystkimi innymi znacznikami"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Deklaracja <!DOCTYPE html> musi być pierwszą linią dokumentu HTML, przed wszystkimi innymi znacznikami. Informuje przeglądarkę o wersji HTML."
+    },
+    {
+      "question": "Jaka jest prawidłowa składnia znacznika meta określającego kodowanie znaków UTF-8?",
+      "options": [
+        "<meta encoding=\"UTF-8\">",
+        "<meta charset=\"UTF-8\">",
+        "<charset>UTF-8</charset>",
+        "<meta type=\"UTF-8\">"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prawidłowa składnia to <meta charset=\"UTF-8\">. Atrybut charset określa kodowanie znaków dokumentu, a UTF-8 zapewnia obsługę polskich i innych znaków diakrytycznych."
+    },
+    {
+      "question": "Ile nagłówków pierwszego poziomu (h1) powinno znajdować się na jednej stronie?",
+      "options": [
+        "Dowolna ilość",
+        "Maksymalnie trzy",
+        "Dokładnie jeden",
+        "Co najmniej dwa"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Na każdej stronie powinien znajdować się dokładnie jeden nagłówek <h1>, który stanowi główny tytuł dokumentu. Jest to ważne zarówno dla SEO, jak i dostępności."
+    },
+    {
+      "question": "Jaka jest różnica między znacznikami <strong> a <b>?",
+      "options": [
+        "Nie ma żadnej różnicy",
+        "<strong> ma znaczenie semantyczne (ważność), <b> wpływa tylko na wygląd",
+        "<b> ma znaczenie semantyczne, <strong> wpływa tylko na wygląd",
+        "<strong> działa tylko w HTML5, <b> w starszych wersjach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <strong> niesie znaczenie semantyczne - oznacza tekst o szczególnej ważności. Element <b> wpływa tylko na wygląd (pogrubienie) bez dodatkowego znaczenia. Dla dostępności i SEO lepiej używać <strong>."
+    },
+    {
+      "question": "Który atrybut elementu <a> powoduje otwarcie linku w nowej karcie przeglądarki?",
+      "options": [
+        "href=\"_blank\"",
+        "target=\"_blank\"",
+        "new=\"true\"",
+        "open=\"new\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut target=\"_blank\" powoduje otwarcie linku w nowej karcie przeglądarki. Atrybut href określa adres docelowy, a nie sposób otwarcia."
+    },
+    {
+      "question": "Który element HTML służy do tworzenia listy numerowanej?",
+      "options": [
+        "<ul>",
+        "<nl>",
+        "<ol>",
+        "<list>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <ol> (ordered list) tworzy listę uporządkowaną (numerowaną). Element <ul> (unordered list) tworzy listę nieuporządkowaną (wypunktowaną). Elementy <nl> i <list> nie istnieją w HTML."
+    },
+    {
+      "question": "Który atrybut elementu <img> jest niezbędny dla dostępności strony?",
+      "options": [
+        "title",
+        "src",
+        "alt",
+        "width"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Atrybut alt (tekst alternatywny) jest kluczowy dla dostępności - jest odczytywany przez czytniki ekranowe i wyświetlany, gdy obraz nie może zostać załadowany. Atrybut src jest wymagany technicznie, ale alt ma znaczenie dla dostępności."
+    },
+    {
+      "question": "Który semantyczny znacznik HTML5 powinien zawierać główną treść dokumentu?",
+      "options": [
+        "<article>",
+        "<section>",
+        "<main>",
+        "<content>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <main> zawiera główną treść dokumentu i powinien występować tylko raz na stronie. Element <article> oznacza samodzielny artykuł, <section> grupuje powiązane treści, a <content> nie istnieje w HTML."
+    },
+    {
+      "question": "Jaki atrybut elementu <form> określa adres URL, pod który zostaną wysłane dane formularza?",
+      "options": [
+        "method",
+        "action",
+        "target",
+        "submit"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut action określa adres URL, pod który zostaną przesłane dane formularza. Atrybut method określa metodę przesyłania (GET lub POST)."
+    },
+    {
+      "question": "Który sposób dołączania stylów CSS jest niezalecany?",
+      "options": [
+        "Zewnętrzny arkusz stylów przez <link>",
+        "Style wewnątrz elementu <style>",
+        "Style inline w atrybucie style elementu",
+        "Wszystkie sposoby są równie zalecane"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Style inline (w atrybucie style) są niezalecane, ponieważ utrudniają utrzymanie kodu, mieszają strukturę z prezentacją i nie pozwalają na ponowne wykorzystanie stylów."
+    },
+    {
+      "question": "Co się stanie, jeśli pominiesz deklarację DOCTYPE w dokumencie HTML?",
+      "options": [
+        "Strona w ogóle się nie wyświetli",
+        "Przeglądarka może przejść w tryb quirks, powodując niespójne renderowanie",
+        "Zostaną usunięte wszystkie style CSS",
+        "JavaScript przestanie działać"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Brak deklaracji DOCTYPE może spowodować przejście przeglądarki w tryb quirks, który emuluje zachowanie starszych przeglądarek i może prowadzić do nieoczekiwanych różnic w wyświetlaniu strony."
+    },
+    {
+      "question": "Która kombinacja znaczników prawidłowo definiuje komórkę nagłówkową w tabeli HTML?",
+      "options": [
+        "<table><tr><td>Nagłówek</td></tr></table>",
+        "<table><thead><th>Nagłówek</th></thead></table>",
+        "<table><thead><tr><th>Nagłówek</th></tr></thead></table>",
+        "<table><header><th>Nagłówek</th></header></table>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Prawidłowa struktura to <table><thead><tr><th>Nagłówek</th></tr></thead></table>. Element <th> musi znajdować się wewnątrz <tr> (wiersza), który może być w <thead>. Element <td> służy do zwykłych komórek danych, a <header> nie jest częścią struktury tabeli."
+    }
+  ]
+}

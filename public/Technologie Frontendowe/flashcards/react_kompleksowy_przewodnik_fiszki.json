@@ -1,0 +1,117 @@
+{
+  "title": "React - Kompleksowy przewodnik",
+  "description": "Zestaw fiszek do nauki podstaw i średniozaawansowanych zagadnień biblioteki React: komponenty, JSX, hooks, props, state, formularze i komunikacja z API.",
+  "category": "Frontend / React",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest React?",
+      "back": "Biblioteka JavaScript do tworzenia interfejsów użytkownika, stworzona przez Facebook (Meta). Wykorzystuje podejście komponentowe i jest przeznaczona głównie do budowania aplikacji Single Page Application (SPA)."
+    },
+    {
+      "id": 2,
+      "front": "Co to jest Virtual DOM?",
+      "back": "Lekka reprezentacja rzeczywistego DOM przechowywana w pamięci. React porównuje Virtual DOM z poprzednią wersją (algorytm reconciliation) i wprowadza tylko minimalne niezbędne zmiany do prawdziwego DOM, co zwiększa wydajność."
+    },
+    {
+      "id": 3,
+      "front": "Co to jest JSX?",
+      "back": "JavaScript XML - rozszerzenie składni JavaScript umożliwiające pisanie kodu przypominającego HTML w plikach JavaScript. JSX jest kompilowany do standardowych wywołań funkcji JavaScript."
+    },
+    {
+      "id": 4,
+      "front": "Jakie są główne różnice między JSX a HTML?",
+      "back": "class → className, onclick → onClick, style jako obiekt JS, samozamykające tagi wymagają ukośnika, każdy komponent musi zwracać pojedynczy element nadrzędny (lub fragment <>)."
+    },
+    {
+      "id": 5,
+      "front": "Dlaczego Vite jest zalecany do tworzenia projektów React?",
+      "back": "Vite oferuje błyskawiczny start serwera deweloperskiego, Hot Module Replacement (HMR) oraz zoptymalizowaną kompilację produkcyjną. Jest znacznie szybszy niż Create React App."
+    },
+    {
+      "id": 6,
+      "front": "Jak definiuje się komponent funkcyjny w React?",
+      "back": "Jako funkcję JavaScript (zwykłą lub strzałkową) z nazwą w PascalCase, która zwraca elementy JSX. Może przyjmować props jako argument. Przykład: function Welcome({ name }) { return <h1>Witaj, {name}!</h1>; }"
+    },
+    {
+      "id": 7,
+      "front": "Co to są props w React?",
+      "back": "Properties - mechanizm przekazywania danych z komponentu rodzica do dziecka. Props są tylko do odczytu (read-only) i realizują jednokierunkowy przepływ danych (unidirectional data flow)."
+    },
+    {
+      "id": 8,
+      "front": "Co to jest destrukturyzacja props?",
+      "back": "Technika wyodrębniania wartości props bezpośrednio w parametrze funkcji za pomocą nawiasów klamrowych. Zwiększa czytelność kodu. Przykład: function User({ name, age }) zamiast function User(props)."
+    },
+    {
+      "id": 9,
+      "front": "Co to jest children prop?",
+      "back": "Specjalny prop zawierający elementy JSX umieszczone między tagiem otwierającym a zamykającym komponentu. Przydatny przy tworzeniu komponentów opakowujących (karty, modale, layouty)."
+    },
+    {
+      "id": 10,
+      "front": "Co to jest prop drilling i jak go rozwiązać?",
+      "back": "Problem przekazywania props przez wiele poziomów komponentów, mimo że pośrednie komponenty ich nie używają. Rozwiązania: Context API lub biblioteki zarządzania stanem (Redux)."
+    },
+    {
+      "id": 11,
+      "front": "Co zwraca hook useState?",
+      "back": "Tablicę dwuelementową: [wartość stanu, funkcja setter]. Konwencja nazewnictwa: const [count, setCount] = useState(0). Setter służy do aktualizacji stanu i wyzwala ponowne renderowanie."
+    },
+    {
+      "id": 12,
+      "front": "Co to jest lazy initialization w useState?",
+      "back": "Przekazanie funkcji zamiast wartości do useState: useState(() => expensiveCalculation()). Funkcja wykonuje się tylko przy pierwszym renderowaniu. Przydatne dla kosztownych obliczeń i odczytu z localStorage."
+    },
+    {
+      "id": 13,
+      "front": "Dlaczego nie należy mutować stanu bezpośrednio w React?",
+      "back": "React porównuje referencje obiektów. Mutacja nie zmienia referencji, więc React nie wykrywa zmiany i nie renderuje ponownie komponentu. Zawsze należy tworzyć nowe obiekty/tablice za pomocą spread operator."
+    },
+    {
+      "id": 14,
+      "front": "Jak prawidłowo dodać element do tablicy w stanie?",
+      "back": "Używając spread operator: setItems([...items, newItem]). NIE używać push() ani przypisania indeksu, bo to mutacja. Do usuwania: filter(), do aktualizacji: map()."
+    },
+    {
+      "id": 15,
+      "front": "Co to są efekty uboczne (side effects)?",
+      "back": "Operacje wykraczające poza renderowanie UI: pobieranie danych z API, zapis do localStorage, subskrypcje, modyfikacja document.title, animacje, manipulacja DOM. Obsługiwane przez hook useEffect."
+    },
+    {
+      "id": 16,
+      "front": "Jak działa tablica zależności w useEffect?",
+      "back": "[] pusta - efekt tylko przy montowaniu. [zmienna] - przy montowaniu i zmianie zmiennej. Brak tablicy - przy każdym renderowaniu (rzadko pożądane)."
+    },
+    {
+      "id": 17,
+      "front": "Do czego służy funkcja czyszcząca w useEffect?",
+      "back": "Funkcja zwracana z useEffect, wykonywana przed następnym uruchomieniem efektu i przy odmontowywaniu. Służy do anulowania subskrypcji, czyszczenia timerów, anulowania zapytań fetch (AbortController)."
+    },
+    {
+      "id": 18,
+      "front": "Co to jest kontrolowany komponent (controlled component)?",
+      "back": "Element formularza, którego wartość jest kontrolowana przez stan React. Atrybut value powiązany ze stanem, onChange aktualizuje stan. Stan React jest jedynym źródłem prawdy (single source of truth)."
+    },
+    {
+      "id": 19,
+      "front": "Co to jest lifting state up?",
+      "back": "Technika przenoszenia stanu do najbliższego wspólnego przodka komponentów, które go potrzebują. Rodzic przechowuje stan i przekazuje go potomkom przez props wraz z funkcją callback do aktualizacji."
+    },
+    {
+      "id": 20,
+      "front": "Do czego służy AbortController przy fetch w useEffect?",
+      "back": "Pozwala anulować zapytanie sieciowe gdy komponent zostaje odmontowany przed zakończeniem pobierania. Zapobiega aktualizacji stanu odmontowanego komponentu i wyciekom pamięci."
+    },
+    {
+      "id": 21,
+      "front": "Jak obsłużyć stany loading i error przy pobieraniu danych?",
+      "back": "Definiując trzy zmienne stanu: data (pobrane dane), loading (flaga boolean), error (komunikat błędu). Przed fetch: setLoading(true). W catch: setError(). W finally: setLoading(false). Renderowanie warunkowe w JSX."
+    },
+    {
+      "id": 22,
+      "front": "Jak zapisać i odczytać dane z localStorage w React?",
+      "back": "Zapis w useEffect: localStorage.setItem('key', JSON.stringify(value)). Odczyt przez lazy init: useState(() => JSON.parse(localStorage.getItem('key')) || defaultValue). Zawsze obsługiwać błędy try/catch."
+    }
+  ]
+}

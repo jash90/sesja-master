@@ -1,0 +1,195 @@
+REACT - KOMPLEKSOWY PRZEWODNIK
+Tekst dla lektora
+
+WPROWADZENIE
+
+React stanowi jedną z najpopularniejszych bibliotek JavaScript służących do tworzenia interfejsów użytkownika. Biblioteka ta została stworzona przez firmę Facebook, obecnie działającą pod nazwą Meta, i udostępniona jako projekt open source. Głównym przeznaczeniem React jest budowanie dynamicznych, interaktywnych aplikacji webowych, ze szczególnym uwzględnieniem aplikacji typu Single Page Application, określanych skrótem SPA.
+
+Podstawową cechą charakterystyczną React jest podejście komponentowe do budowania interfejsów. Zamiast tworzyć monolityczne strony internetowe, programiści dzielą interfejs na mniejsze, niezależne elementy nazywane komponentami. Każdy komponent odpowiada za określony fragment interfejsu i może być wielokrotnie wykorzystywany w różnych miejscach aplikacji.
+
+Kolejnym fundamentalnym elementem React jest koncepcja Virtual DOM, czyli wirtualnego modelu dokumentu. Virtual DOM stanowi lekką reprezentację rzeczywistego DOM przeglądarki przechowywaną w pamięci. Gdy następuje zmiana stanu aplikacji, React najpierw aktualizuje Virtual DOM, a następnie porównuje go z poprzednią wersją za pomocą algorytmu reconciliation. Na podstawie tego porównania React określa minimalny zestaw zmian, które należy wprowadzić do rzeczywistego DOM. Takie podejście znacząco zwiększa wydajność aplikacji, ponieważ operacje na DOM przeglądarki są kosztowne obliczeniowo.
+
+React charakteryzuje się również deklaracyjnym podejściem do programowania. Programista opisuje, jak interfejs powinien wyglądać dla danego stanu aplikacji, a React zajmuje się aktualizacją widoku przy każdej zmianie tego stanu. Jest to przeciwieństwo podejścia imperatywnego, gdzie programista musiałby ręcznie manipulować DOM dla każdej zmiany.
+
+
+TWORZENIE PROJEKTU REACT
+
+Współcześnie zalecanym narzędziem do tworzenia nowych projektów React jest Vite. Vite to nowoczesne narzędzie do budowania aplikacji frontendowych, które oferuje kilka istotnych zalet w porównaniu do starszych rozwiązań takich jak Create React App.
+
+Pierwszą zaletą Vite jest błyskawiczny start serwera deweloperskiego. Vite wykorzystuje natywne moduły ECMAScript przeglądarki, dzięki czemu nie musi budować całego bundla przy starcie. Druga zaleta to Hot Module Replacement, czyli możliwość aktualizacji kodu w przeglądarce bez przeładowywania całej strony. Trzecia zaleta to zoptymalizowana kompilacja produkcyjna wykorzystująca Rollup.
+
+Proces tworzenia nowego projektu React z wykorzystaniem Vite rozpoczyna się od wykonania polecenia npm create vite@latest w terminalu, a następnie podania nazwy projektu. Kreator pyta o wybór frameworka, gdzie należy wybrać React, oraz o wariant języka, gdzie dostępne są opcje JavaScript lub TypeScript. Po utworzeniu projektu należy przejść do jego katalogu, zainstalować zależności poleceniem npm install i uruchomić serwer deweloperski poleceniem npm run dev.
+
+Struktura katalogów projektu Vite z React zawiera folder node_modules przechowujący wszystkie zależności, folder public na zasoby statyczne, plik index.html będący punktem wejścia aplikacji oraz folder src zawierający kod źródłowy. W folderze src znajdują się główne pliki aplikacji, w tym App.jsx jako główny komponent, App.css ze stylami oraz main.jsx odpowiedzialny za renderowanie aplikacji w DOM.
+
+
+SKŁADNIA JSX
+
+JSX, czyli JavaScript XML, stanowi rozszerzenie składni JavaScript umożliwiające pisanie kodu przypominającego HTML bezpośrednio w plikach JavaScript. JSX nie jest osobnym językiem, lecz cukrem składniowym, który podczas kompilacji przekształcany jest na standardowe wywołania funkcji JavaScript.
+
+Główną zaletą JSX jest intuicyjność i czytelność kodu. Zamiast tworzyć elementy interfejsu za pomocą wywołań funkcji, programista może używać składni zbliżonej do HTML, co sprawia, że struktura interfejsu jest natychmiast widoczna.
+
+Istnieje kilka istotnych różnic między JSX a standardowym HTML. Po pierwsze, atrybut class w HTML zapisuje się jako className w JSX, ponieważ class jest słowem zarezerwowanym w JavaScript. Po drugie, atrybuty zdarzeń zapisuje się w notacji camelCase, na przykład onclick staje się onClick, a onsubmit staje się onSubmit. Po trzecie, styl inline przekazuje się jako obiekt JavaScript, a nie jako ciąg znaków. Zapis style równa się cudzysłów color dwukropek red w HTML przekształca się w style równa się podwójne nawiasy klamrowe color dwukropek cudzysłów red w JSX. Po czwarte, wszystkie tagi samozamykające muszą kończyć się ukośnikiem przed nawiasem zamykającym. Po piąte, każdy komponent musi zwracać pojedynczy element nadrzędny, choć może to być pusty fragment oznaczany pustymi nawiasami ostrymi.
+
+JSX umożliwia osadzanie wyrażeń JavaScript wewnątrz struktury za pomocą nawiasów klamrowych. Można w ten sposób wyświetlać wartości zmiennych, wyniki obliczeń czy wartości zwracane przez funkcje. Na przykład zdefiniowanie zmiennej name o wartości Jan i umieszczenie jej w nawiasach klamrowych wewnątrz elementu spowoduje wyświetlenie tej wartości.
+
+
+KOMPONENTY FUNKCYJNE
+
+Komponenty stanowią fundamentalne jednostki budulcowe aplikacji React. Współcześnie preferowanym sposobem definiowania komponentów są komponenty funkcyjne, które są po prostu funkcjami JavaScript zwracającymi elementy JSX.
+
+Nazwa komponentu funkcyjnego powinna być zapisana w notacji PascalCase, czyli z wielką literą na początku każdego słowa. Jest to wymóg React pozwalający odróżnić komponenty od zwykłych elementów HTML.
+
+Definiowanie komponentu funkcyjnego polega na utworzeniu funkcji przyjmującej opcjonalnie props jako argument i zwracającej strukturę JSX. Funkcja może być zdefiniowana za pomocą słowa kluczowego function lub jako funkcja strzałkowa.
+
+Eksport komponentu umożliwia jego wykorzystanie w innych plikach. Eksport domyślny realizowany jest za pomocą słów kluczowych export default przed definicją funkcji lub po niej. Import takiego komponentu polega na użyciu słowa kluczowego import, podaniu dowolnej nazwy dla komponentu i wskazaniu ścieżki do pliku.
+
+Kompozycja komponentów oznacza budowanie złożonych interfejsów z mniejszych elementów. Komponenty mogą być zagnieżdżane wewnątrz innych komponentów, tworząc hierarchiczną strukturę. Taki sposób budowania aplikacji promuje reużywalność kodu i ułatwia jego utrzymanie.
+
+Przy tworzeniu komponentów zaleca się stosowanie zasady Single Responsibility Principle, według której każdy komponent powinien odpowiadać za jedną, jasno określoną funkcjonalność. Komponenty powinny być kompaktowe, łatwe do zrozumienia i testowania.
+
+
+PROPS - PRZEKAZYWANIE DANYCH
+
+Props, będące skrótem od properties, stanowią mechanizm przekazywania danych z komponentu rodzica do komponentu dziecka. Jest to podstawowy sposób komunikacji między komponentami w React i realizuje wzorzec jednokierunkowego przepływu danych, określanego jako unidirectional data flow.
+
+Kluczową cechą props jest ich niezmienność. Komponent dziecka może odczytywać wartości otrzymane przez props, ale nie może ich modyfikować. Jeśli zachodzi potrzeba zmiany danych, musi to nastąpić w komponencie rodzica, który następnie przekaże zaktualizowane wartości.
+
+Przekazywanie props do komponentu odbywa się poprzez dodanie atrybutów przy użyciu komponentu w JSX. Na przykład użycie komponentu UserCard z atrybutami name równa się cudzysłów Anna i age równa się liczba 28 powoduje przekazanie tych wartości do komponentu dziecka.
+
+Wewnątrz komponentu dziecka dostęp do props możliwy jest przez parametr funkcji. Można odwoływać się do poszczególnych wartości za pomocą notacji kropkowej, na przykład props kropka name. Alternatywnie można zastosować destrukturyzację, wyodrębniając potrzebne wartości bezpośrednio w parametrze funkcji za pomocą nawiasów klamrowych.
+
+Destrukturyzacja props zwiększa czytelność kodu i redukuje powtarzalność. Zamiast wielokrotnie pisać props kropka nazwa właściwości, programista może używać bezpośrednio nazw zmiennych. Destrukturyzacja może być również zagnieżdżona, co pozwala wyodrębniać wartości z obiektów przekazanych jako props.
+
+
+PROPS - ZAGADNIENIA ZAAWANSOWANE
+
+Specjalnym rodzajem props jest children, który umożliwia przekazywanie elementów JSX jako zawartości komponentu. Gdy komponent używany jest z tagiem otwierającym i zamykającym, wszystko co znajduje się między nimi zostaje przekazane jako props children.
+
+Children prop jest szczególnie przydatny przy tworzeniu komponentów opakowujących, takich jak karty, modale czy layouty. Komponent może zdefiniować strukturę zewnętrzną i style, pozostawiając zawartość do określenia przez komponent rodzica.
+
+Wartości domyślne dla props można definiować na dwa sposoby. Pierwszy sposób to przypisanie wartości domyślnej bezpośrednio w destrukturyzacji parametrów funkcji. Drugi sposób to użycie właściwości statycznej defaultProps przypisanej do komponentu.
+
+Prop drilling stanowi problem polegający na konieczności przekazywania props przez wiele poziomów komponentów, mimo że pośrednie komponenty nie korzystają z tych danych. Gdy aplikacja rozrasta się, prop drilling prowadzi do trudnego w utrzymaniu kodu i zwiększa coupling między komponentami.
+
+Rozwiązaniem problemu prop drilling jest zastosowanie Context API lub bibliotek zarządzania stanem takich jak Redux. Context API pozwala utworzyć kontekst, który udostępnia dane wszystkim komponentom potomnym bez konieczności jawnego przekazywania przez każdy poziom hierarchii.
+
+
+USESTATE - ZARZĄDZANIE STANEM
+
+Hook useState stanowi podstawowy mechanizm zarządzania stanem w komponentach funkcyjnych React. Stan reprezentuje dane, które mogą zmieniać się w czasie życia komponentu i których zmiana powinna powodować ponowne renderowanie interfejsu.
+
+Wywołanie hooka useState zwraca tablicę dwuelementową. Pierwszy element to aktualna wartość stanu, drugi element to funkcja służąca do aktualizacji stanu, nazywana setterem. Konwencja nazewnictwa zakłada, że dla stanu o nazwie count setter nazywa się setCount.
+
+Hook useState przyjmuje jeden argument określający wartość początkową stanu. Może to być wartość prymitywna taka jak liczba, ciąg znaków czy wartość logiczna, ale również tablica lub obiekt.
+
+Istotną cechą aktualizacji stanu w React jest jej asynchroniczność. Wywołanie funkcji setter nie zmienia wartości stanu natychmiast, lecz planuje aktualizację, która zostanie wykonana przed następnym renderowaniem. Oznacza to, że odczytanie wartości stanu bezpośrednio po wywołaniu settera zwróci jeszcze starą wartość.
+
+Funkcja setter może przyjmować nową wartość bezpośrednio lub funkcję aktualizującą. Gdy nowa wartość zależy od poprzedniej, zaleca się użycie funkcji aktualizującej, która otrzymuje poprzedni stan jako argument. Takie podejście gwarantuje poprawność w przypadku wielokrotnych aktualizacji w jednym cyklu renderowania.
+
+Lazy initialization to technika optymalizacyjna polegająca na przekazaniu funkcji do useState zamiast wartości. Funkcja ta zostanie wywołana tylko przy pierwszym renderowaniu komponentu. Jest to szczególnie przydatne gdy wartość początkowa wymaga kosztownych obliczeń lub odczytu z localStorage.
+
+
+USESTATE - NIEMUTOWALNOŚĆ
+
+Niemutowalność stanowi fundamentalną zasadę przy pracy ze stanem w React. Oznacza ona, że nie należy bezpośrednio modyfikować istniejących obiektów czy tablic przechowywanych w stanie, lecz tworzyć ich nowe kopie ze zmienionymi wartościami.
+
+Mutacja stanu, czyli bezpośrednia modyfikacja obiektu, nie powoduje ponownego renderowania komponentu, ponieważ React porównuje referencje obiektów. Gdy obiekt jest mutowany, jego referencja pozostaje ta sama, więc React nie wykrywa zmiany.
+
+Aktualizacja obiektów w stanie wymaga tworzenia nowych obiektów z wykorzystaniem operatora spread. Operator spread, zapisywany jako trzy kropki przed nazwą obiektu, kopiuje wszystkie właściwości do nowego obiektu. Następnie można nadpisać wybrane właściwości nowymi wartościami.
+
+Dla zagnieżdżonych obiektów konieczne jest stosowanie operatora spread na każdym poziomie zagnieżdżenia, który wymaga aktualizacji. Na przykład aby zmienić wartość właściwości city wewnątrz obiektu address, który jest częścią obiektu user, należy utworzyć nowy obiekt user z nowym obiektem address zawierającym zaktualizowaną wartość city.
+
+Aktualizacja tablic również wymaga tworzenia nowych instancji. Dodawanie elementów realizowane jest poprzez spread istniejącej tablicy i dołączenie nowego elementu. Usuwanie elementów wykorzystuje metodę filter, która zwraca nową tablicę bez elementów spełniających warunek. Aktualizacja elementów wykorzystuje metodę map, która zwraca nową tablicę z przekształconymi elementami.
+
+Zalecane praktyki obejmują zawsze tworzenie nowych obiektów i tablic, używanie operatora spread, korzystanie z metod tablicowych zwracających nowe tablice takich jak map, filter i slice, oraz używanie funkcji aktualizującej w setterze gdy nowa wartość zależy od poprzedniej.
+
+
+USEEFFECT - EFEKTY UBOCZNE
+
+Hook useEffect służy do wykonywania efektów ubocznych w komponentach funkcyjnych. Efekty uboczne to operacje, które wykraczają poza renderowanie interfejsu użytkownika i wchodzą w interakcję z zewnętrznym światem.
+
+Przykłady efektów ubocznych obejmują pobieranie danych z interfejsu programistycznego aplikacji (API), zapisywanie danych do localStorage, ustawianie subskrypcji na zewnętrzne źródła danych, modyfikowanie tytułu dokumentu, uruchamianie animacji oraz ręczną manipulację DOM.
+
+Hook useEffect przyjmuje dwa argumenty. Pierwszy argument to funkcja zawierająca kod efektu do wykonania. Drugi argument to tablica zależności określająca, kiedy efekt powinien być ponownie uruchomiony.
+
+Tablica zależności kontroluje moment wykonania efektu. Pusta tablica oznacza, że efekt wykona się tylko raz, przy pierwszym zamontowaniu komponentu. Tablica zawierająca zmienne oznacza, że efekt wykona się przy montowaniu oraz przy każdej zmianie którejkolwiek z wymienionych zmiennych. Pominięcie tablicy zależności oznacza, że efekt wykona się przy każdym renderowaniu, co rzadko jest pożądanym zachowaniem.
+
+Funkcja przekazana do useEffect może opcjonalnie zwracać funkcję czyszczącą. Funkcja czyszcząca wykonywana jest przed następnym uruchomieniem efektu oraz przy odmontowywaniu komponentu. Jest to miejsce na anulowanie subskrypcji, czyszczenie timerów czy anulowanie zapytań sieciowych.
+
+
+POBIERANIE DANYCH Z API
+
+Pobieranie danych z zewnętrznych serwisów stanowi jedną z najczęstszych operacji w aplikacjach React. Operacja ta realizowana jest zazwyczaj wewnątrz hooka useEffect z wykorzystaniem interfejsu Fetch lub bibliotek takich jak Axios.
+
+Ponieważ funkcja przekazana do useEffect nie może być bezpośrednio asynchroniczna, standardowym wzorcem jest zdefiniowanie wewnętrznej funkcji asynchronicznej i natychmiastowe jej wywołanie. Funkcja ta wykonuje zapytanie sieciowe, przetwarza odpowiedź i aktualizuje stan komponentu.
+
+Zarządzanie stanami ładowania i błędów jest niezbędne dla dobrego doświadczenia użytkownika. Typowo definiuje się trzy zmienne stanu: data dla przechowywania pobranych danych, loading jako flagę wskazującą trwające pobieranie oraz error dla ewentualnych komunikatów o błędach.
+
+Przed rozpoczęciem pobierania ustawia się loading na wartość prawda. W bloku try wykonuje się zapytanie fetch z podanym adresem URL, następnie konwertuje odpowiedź na format JSON i zapisuje dane do stanu. W bloku catch przechwytuje się ewentualne błędy i zapisuje ich komunikat do stanu error. W bloku finally, który wykonuje się zawsze, ustawia się loading na wartość fałsz.
+
+Renderowanie warunkowe pozwala wyświetlać różną zawartość w zależności od stanu. Gdy loading jest prawdą, wyświetla się wskaźnik ładowania. Gdy error zawiera wartość, wyświetla się komunikat błędu. Gdy data zawiera dane, wyświetla się właściwa zawartość.
+
+AbortController pozwala anulować zapytanie sieciowe gdy komponent zostaje odmontowany przed zakończeniem pobierania. Tworzy się instancję AbortController i przekazuje jej signal do opcji fetch. W funkcji czyszczącej efektu wywołuje się metodę abort, co anuluje zapytanie i zapobiega aktualizacji stanu odmontowanego komponentu.
+
+
+FORMULARZE I KONTROLOWANE KOMPONENTY
+
+Formularze w React obsługiwane są najczęściej za pomocą wzorca kontrolowanych komponentów. W tym podejściu stan React jest jedynym źródłem prawdy dla wartości pól formularza.
+
+Kontrolowany komponent to element formularza, którego wartość jest całkowicie kontrolowana przez stan React. Dla pól tekstowych atrybut value przypisany jest do zmiennej stanu, a atrybut onChange zawiera funkcję aktualizującą ten stan przy każdej zmianie.
+
+Dla pól tekstowych typu input tekst oraz textarea obsługa polega na powiązaniu wartości z useState oraz aktualizacji stanu przez funkcję obsługującą zdarzenie onChange. Zdarzenie dostarcza obiekt event, z którego można odczytać nową wartość poprzez event target value.
+
+Dla pól typu checkbox i radio obsługa różni się nieznacznie. Checkbox wykorzystuje atrybut checked zamiast value, a nową wartość odczytuje się z event target checked. Przyciski radio również używają atrybutu checked, porównując wartość pola z aktualnym stanem.
+
+Dla pól wyboru typu select powiązanie realizuje się analogicznie do pól tekstowych, przypisując wartość stanu do atrybutu value elementu select i aktualizując stan w onChange.
+
+Zasada pojedynczego źródła prawdy oznacza, że stan React zawsze odzwierciedla aktualną wartość pola formularza. Nie występuje rozbieżność między tym, co widzi użytkownik, a tym, co przechowuje aplikacja. Ułatwia to walidację, warunkowe wyświetlanie elementów i przetwarzanie danych formularza.
+
+
+LIFTING STATE UP - PODNOSZENIE STANU
+
+Lifting state up, czyli podnoszenie stanu w górę hierarchii komponentów, stanowi technikę współdzielenia stanu między wieloma komponentami. Gdy kilka komponentów potrzebuje dostępu do tych samych danych lub musi reagować na te same zmiany, stan przenosi się do ich wspólnego przodka.
+
+Technika ta realizuje zasadę, że stan powinien znajdować się w najbliższym wspólnym przodku komponentów, które go potrzebują. Komponent rodzica przechowuje stan i przekazuje go potomkom przez props wraz z funkcją umożliwiającą jego aktualizację.
+
+Komunikacja od dziecka do rodzica realizowana jest poprzez przekazanie funkcji callback jako props. Rodzic definiuje funkcję modyfikującą stan i przekazuje ją dziecku. Dziecko wywołuje tę funkcję gdy zachodzi potrzeba zmiany danych, na przykład po kliknięciu przycisku lub wypełnieniu pola formularza.
+
+Typowym przykładem jest formularz i lista. Komponent główny przechowuje listę elementów w stanie. Komponent formularza otrzymuje funkcję dodającą element i wywołuje ją przy wysłaniu formularza. Komponent listy otrzymuje aktualną listę elementów jako props i ją wyświetla. W ten sposób oba komponenty potomne operują na tych samych danych bez bezpośredniej komunikacji między sobą.
+
+Lifting state up promuje czytelną architekturę aplikacji i jednokierunkowy przepływ danych. Ułatwia śledzenie zmian stanu i debugowanie, ponieważ modyfikacje zawsze przechodzą przez zdefiniowane funkcje w komponencie rodzica.
+
+
+LOCALSTORAGE W REACT
+
+LocalStorage stanowi mechanizm przeglądarki umożliwiający trwałe przechowywanie danych w postaci par klucz-wartość. W kontekście React localStorage wykorzystywany jest do persystencji stanu aplikacji między sesjami użytkownika.
+
+Zapisywanie danych do localStorage wymaga konwersji wartości na ciąg znaków za pomocą metody JSON stringify, ponieważ localStorage przechowuje wyłącznie dane tekstowe. Odczytywanie wymaga odwrotnej konwersji za pomocą JSON parse.
+
+Synchronizacja stanu React z localStorage realizowana jest przez useEffect. Przy każdej zmianie stanu efekt zapisuje nową wartość do localStorage. Dzięki temu dane są automatycznie persystowane bez dodatkowej logiki w innych miejscach komponentu.
+
+Odczyt początkowy z localStorage najlepiej realizować za pomocą lazy initialization w useState. Przekazuje się funkcję, która próbuje odczytać wartość z localStorage i sparsować ją. Jeśli wartość nie istnieje lub parsing się nie powiedzie, zwracana jest wartość domyślna.
+
+Obsługa błędów jest istotna przy pracy z localStorage, ponieważ parsing może się nie powieść dla niepoprawnych danych. Blok try-catch zapewnia, że aplikacja nie przestanie działać w przypadku błędnych danych w storage.
+
+Własny hook useLocalStorage enkapsuluje logikę synchronizacji stanu z localStorage. Hook przyjmuje klucz i wartość początkową, zwraca aktualną wartość i setter analogicznie do useState. Wewnętrznie hook obsługuje odczyt początkowy z lazy initialization, zapis przy każdej zmianie poprzez useEffect oraz obsługę błędów.
+
+Lazy initialization zapobiega problemom z Server Side Rendering, gdzie obiekt window nie jest dostępny. Kod odczytujący localStorage wykonuje się tylko w przeglądarce, przy pierwszym renderowaniu komponentu.
+
+
+PODSUMOWANIE I NAJLEPSZE PRAKTYKI
+
+React stanowi potężną bibliotekę do budowania interfejsów użytkownika aplikacji typu Single Page Application. Fundamentalne koncepcje obejmują komponentowe podejście do budowania interfejsu, Virtual DOM zapewniający wydajną aktualizację widoku oraz hooki umożliwiające zarządzanie stanem i efektami ubocznymi w komponentach funkcyjnych.
+
+Współczesne podejście do tworzenia komponentów faworyzuje komponenty funkcyjne z hookami. Komponenty klasowe, choć nadal wspierane, są uznawane za przestarzałe dla nowych projektów. Props służą do przekazywania danych od rodzica do dziecka, a stan zarządzany przez useState przechowuje dane zmieniające się w czasie życia komponentu.
+
+Zalecane praktyki przy używaniu useState obejmują stosowanie funkcji aktualizującej gdy nowa wartość zależy od poprzedniej, lazy initialization dla kosztownych obliczeń początkowych oraz przestrzeganie zasady niemutowalności przy aktualizacji obiektów i tablic.
+
+Zalecane praktyki przy używaniu useEffect obejmują zawsze definiowanie odpowiedniej tablicy zależności, implementację funkcji czyszczącej dla subskrypcji i zapytań sieciowych oraz używanie AbortController do anulowania zapytań fetch przy odmontowywaniu komponentu.
+
+Zarządzanie stanem aplikacji powinno kierować się zasadą lifting state up zamiast prop drilling. Dla bardziej złożonych przypadków warto rozważyć Context API eliminujący konieczność przekazywania props przez wiele poziomów lub hook useReducer dla złożonej logiki aktualizacji stanu.
+
+Dalsze tematy wykraczające poza zakres tego przewodnika obejmują Context API dla globalnego stanu, React Router dla nawigacji między widokami, hooki useReducer, useMemo i useCallback dla optymalizacji wydajności, tworzenie własnych hooków dla reużywalnej logiki oraz integrację z bibliotekami zewnętrznymi.
+
+React promuje deklaratywne podejście do programowania, gdzie programista opisuje pożądany stan interfejsu, a biblioteka zajmuje się aktualizacjami. W połączeniu z ekosystemem narzędzi i bibliotek, React stanowi solidną podstawę do budowania nowoczesnych aplikacji webowych o dowolnej skali złożoności.

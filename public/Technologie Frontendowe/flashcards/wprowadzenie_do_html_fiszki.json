@@ -1,0 +1,107 @@
+{
+  "title": "Wprowadzenie do HTML - Fiszki",
+  "description": "Zestaw fiszek do nauki podstaw HTML, struktury dokumentów, znaczników tekstowych, formularzy i semantyki HTML5.",
+  "category": "Frontend / HTML",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co to jest HTML?",
+      "back": "HyperText Markup Language (Hipertekstowy Język Znaczników) - język służący do tworzenia struktury stron internetowych. Stworzony przez Tima Bernersa-Lee w 1991 roku."
+    },
+    {
+      "id": 2,
+      "front": "Jakie trzy technologie tworzą kompletną stronę WWW?",
+      "back": "HTML (struktura i treść), CSS (wygląd i stylizacja), JavaScript (interaktywność i dynamika)."
+    },
+    {
+      "id": 3,
+      "front": "Do czego służy deklaracja <!DOCTYPE html>?",
+      "back": "Informuje przeglądarkę o wersji HTML (HTML5), włącza tryb standardowy renderowania i zapobiega przejściu w tryb quirks. Musi być pierwszą linią dokumentu."
+    },
+    {
+      "id": 4,
+      "front": "Jaka jest różnica między elementami <head> a <body>?",
+      "back": "<head> zawiera metadane niewidoczne dla użytkownika (tytuł, style, skrypty, meta tagi). <body> zawiera całą treść widoczną na stronie."
+    },
+    {
+      "id": 5,
+      "front": "Do czego służy znacznik <meta charset=\"UTF-8\">?",
+      "back": "Określa kodowanie znaków dokumentu. UTF-8 zapewnia prawidłowe wyświetlanie polskich znaków i innych znaków diakrytycznych."
+    },
+    {
+      "id": 6,
+      "front": "Co to jest meta viewport i do czego służy?",
+      "back": "Znacznik <meta name=\"viewport\" content=\"...\"> kontroluje sposób wyświetlania strony na urządzeniach mobilnych. Jest niezbędny do tworzenia stron responsywnych."
+    },
+    {
+      "id": 7,
+      "front": "Ile nagłówków <h1> powinno być na stronie i dlaczego?",
+      "back": "Dokładnie jeden. H1 to główny tytuł dokumentu - jego unikalność jest ważna dla SEO i dostępności. Hierarchia nagłówków: h1 → h2 → h3 (bez pomijania poziomów)."
+    },
+    {
+      "id": 8,
+      "front": "Jaka jest różnica między <strong> a <b>?",
+      "back": "<strong> ma znaczenie semantyczne - oznacza tekst ważny. <b> wpływa tylko na wygląd (pogrubienie). Dla SEO i dostępności lepiej używać <strong>."
+    },
+    {
+      "id": 9,
+      "front": "Jaka jest różnica między <em> a <i>?",
+      "back": "<em> ma znaczenie semantyczne - oznacza tekst wymagający nacisku/akcentu. <i> wpływa tylko na wygląd (kursywa). Dla dostępności lepiej używać <em>."
+    },
+    {
+      "id": 10,
+      "front": "Jak utworzyć link otwierający się w nowej karcie?",
+      "back": "Dodając atrybut target=\"_blank\" do elementu <a>. Przykład: <a href=\"url\" target=\"_blank\">tekst</a>"
+    },
+    {
+      "id": 11,
+      "front": "Jaka jest różnica między <ul> a <ol>?",
+      "back": "<ul> (unordered list) - lista nieuporządkowana z wypunktowaniem. <ol> (ordered list) - lista uporządkowana z numeracją. Oba używają <li> dla elementów."
+    },
+    {
+      "id": 12,
+      "front": "Jakie są podstawowe elementy struktury tabeli HTML?",
+      "back": "<table> - kontener, <thead> - nagłówek, <tbody> - ciało, <tr> - wiersz, <th> - komórka nagłówkowa, <td> - komórka danych."
+    },
+    {
+      "id": 13,
+      "front": "Dlaczego atrybut alt w <img> jest ważny?",
+      "back": "Tekst alternatywny jest odczytywany przez czytniki ekranowe (dostępność), wyświetlany gdy obraz się nie załaduje, oraz wykorzystywany przez wyszukiwarki (SEO)."
+    },
+    {
+      "id": 14,
+      "front": "Jakie atrybuty kontrolują odtwarzanie multimediów w HTML5?",
+      "back": "controls - interfejs odtwarzacza, autoplay - automatyczne odtwarzanie, loop - odtwarzanie w pętli, poster (tylko video) - obraz przed odtwarzaniem."
+    },
+    {
+      "id": 15,
+      "front": "Jakie są główne atrybuty elementu <form>?",
+      "back": "action - adres URL do wysłania danych, method - metoda przesyłania (GET lub POST)."
+    },
+    {
+      "id": 16,
+      "front": "Wymień 5 typów elementu <input>",
+      "back": "text (pole tekstowe), password (hasło), checkbox (wielokrotny wybór), radio (pojedynczy wybór), submit (przycisk wysyłania), email, date, number."
+    },
+    {
+      "id": 17,
+      "front": "Do czego służą semantyczne znaczniki HTML5: <header>, <nav>, <main>, <footer>?",
+      "back": "<header> - nagłówek strony/sekcji, <nav> - nawigacja, <main> - główna treść (jeden na stronę), <footer> - stopka. Poprawiają dostępność i SEO."
+    },
+    {
+      "id": 18,
+      "front": "Jaka jest różnica między <article> a <section>?",
+      "back": "<article> - samodzielny, kompletny fragment treści (np. wpis blogowy). <section> - tematyczna grupa treści, część większej całości."
+    },
+    {
+      "id": 19,
+      "front": "Jakie są trzy sposoby dołączania CSS do HTML?",
+      "back": "1) Zewnętrzny arkusz: <link rel=\"stylesheet\" href=\"style.css\">, 2) Wewnętrzny: <style>...</style>, 3) Inline: style=\"...\" (niezalecane)."
+    },
+    {
+      "id": 20,
+      "front": "Dlaczego style inline są niezalecane?",
+      "back": "Utrudniają utrzymanie kodu, mieszają strukturę z prezentacją, nie pozwalają na ponowne wykorzystanie stylów i zwiększają rozmiar HTML."
+    }
+  ]
+}

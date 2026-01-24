@@ -1,0 +1,171 @@
+{
+  "title": "Kompletny Kurs CSS - Quiz",
+  "description": "Quiz sprawdzający wiedzę z zakresu kaskadowych arkuszy stylów (CSS) - od podstaw po zaawansowane techniki układu i responsywności.",
+  "questions": [
+    {
+      "question": "Jaki jest zalecany sposób dołączania CSS do strony internetowej w środowisku produkcyjnym?",
+      "options": [
+        "Inline CSS (atrybut style w elemencie)",
+        "Internal CSS (znacznik <style> w <head>)",
+        "External CSS (osobny plik .css dołączony przez <link>)",
+        "Wszystkie sposoby są równie dobre"
+      ],
+      "correctAnswer": 2,
+      "explanation": "External CSS (zewnętrzny arkusz stylów) jest zalecaną metodą, ponieważ umożliwia wielokrotne wykorzystanie stylów na wielu stronach, pozwala przeglądarce na cachowanie pliku CSS oraz zapewnia lepszą organizację kodu."
+    },
+    {
+      "question": "Który selektor CSS wskazuje wszystkie elementy na stronie?",
+      "options": [
+        "#all",
+        ".all",
+        "*",
+        "html"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Selektor uniwersalny oznaczany gwiazdką (*) wskazuje wszystkie elementy na stronie. Jest często używany do resetowania domyślnych stylów przeglądarki."
+    },
+    {
+      "question": "Jaka jest różnica między selektorem 'div p' a 'div > p'?",
+      "options": [
+        "Nie ma żadnej różnicy",
+        "'div p' wybiera tylko bezpośrednie dzieci, 'div > p' wszystkich potomków",
+        "'div p' wybiera wszystkich potomków, 'div > p' tylko bezpośrednie dzieci",
+        "'div > p' jest niepoprawną składnią CSS"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Selektor 'div p' (potomka) wybiera wszystkie elementy <p> znajdujące się gdziekolwiek wewnątrz <div>. Selektor 'div > p' (dziecka) wybiera tylko elementy <p>, które są bezpośrednimi dziećmi <div>."
+    },
+    {
+      "question": "Która wartość specyficzności jest najwyższa?",
+      "options": [
+        "Selektor elementu (np. h1)",
+        "Selektor klasy (np. .button)",
+        "Selektor identyfikatora (np. #header)",
+        "Selektor uniwersalny (*)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Specyficzność selektorów od najwyższej: style inline (1000) > ID (100) > klasa (10) > element (1) > selektor uniwersalny (0). Selektor identyfikatora ma wartość 100 punktów."
+    },
+    {
+      "question": "Jaki format koloru w CSS pozwala na ustawienie przezroczystości?",
+      "options": [
+        "HEX (#FF5733)",
+        "RGB (rgb(255, 87, 51))",
+        "RGBA (rgba(255, 87, 51, 0.5))",
+        "Named colors (red, blue)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Format RGBA rozszerza RGB o czwarty parametr - kanał alfa (przezroczystość) w zakresie od 0 (całkowita przezroczystość) do 1 (całkowita nieprzezroczystość). Podobnie działa format HSLA."
+    },
+    {
+      "question": "Do czego odnosi się jednostka 'rem' w CSS?",
+      "options": [
+        "Do rozmiaru czcionki elementu nadrzędnego",
+        "Do rozmiaru czcionki elementu głównego (html)",
+        "Do szerokości okna przeglądarki",
+        "Do rozmiaru bieżącego elementu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Jednostka 'rem' (root em) odnosi się do rozmiaru czcionki elementu głównego <html>. W przeciwieństwie do 'em', która odnosi się do rodzica, 'rem' jest bardziej przewidywalna i łatwiejsza w obliczeniach."
+    },
+    {
+      "question": "Które warstwy tworzą model pudełkowy (box model) w CSS?",
+      "options": [
+        "Header, content, footer, sidebar",
+        "Content, padding, border, margin",
+        "Top, right, bottom, left",
+        "Block, inline, flex, grid"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Model pudełkowy składa się z czterech warstw: content (zawartość), padding (dopełnienie wewnętrzne), border (obramowanie) i margin (margines zewnętrzny)."
+    },
+    {
+      "question": "Jaka jest różnica między 'display: none' a 'visibility: hidden'?",
+      "options": [
+        "Nie ma żadnej różnicy",
+        "'display: none' ukrywa element zachowując jego miejsce, 'visibility: hidden' usuwa go z układu",
+        "'display: none' usuwa element z układu, 'visibility: hidden' ukrywa go zachowując miejsce",
+        "Obie właściwości działają tylko na elementy blokowe"
+      ],
+      "correctAnswer": 2,
+      "explanation": "'display: none' całkowicie usuwa element z przepływu dokumentu - nie zajmuje miejsca. 'visibility: hidden' ukrywa element wizualnie, ale zachowuje jego miejsce w układzie strony."
+    },
+    {
+      "question": "Względem czego pozycjonowany jest element z 'position: absolute'?",
+      "options": [
+        "Zawsze względem okna przeglądarki",
+        "Względem swojej normalnej pozycji w dokumencie",
+        "Względem najbliższego przodka z pozycją inną niż static",
+        "Względem elementu <body>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element z 'position: absolute' jest pozycjonowany względem najbliższego przodka, który ma ustawioną pozycję inną niż static (np. relative, absolute, fixed). Jeśli takiego przodka nie ma, jest pozycjonowany względem elementu <html>."
+    },
+    {
+      "question": "Co różni pseudoklasy od pseudoelementów?",
+      "options": [
+        "Pseudoklasy używają podwójnego dwukropka, pseudoelementy pojedynczego",
+        "Pseudoklasy stylizują stany elementu, pseudoelementy tworzą wirtualne elementy",
+        "Pseudoklasy działają tylko na linki, pseudoelementy na wszystkie elementy",
+        "Nie ma między nimi różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pseudoklasy (np. :hover, :focus) wskazują elementy w określonym stanie. Pseudoelementy (np. ::before, ::after) tworzą wirtualne elementy, które nie istnieją w HTML. Pseudoklasy używają pojedynczego dwukropka, pseudoelementy podwójnego."
+    },
+    {
+      "question": "Który system układu CSS jest jednowymiarowy (wiersz lub kolumna)?",
+      "options": [
+        "CSS Grid",
+        "Flexbox",
+        "Float",
+        "Position"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Flexbox jest systemem jednowymiarowym - układa elementy w jednym kierunku: wierszu lub kolumnie. CSS Grid jest dwuwymiarowy i kontroluje zarówno wiersze, jak i kolumny jednocześnie."
+    },
+    {
+      "question": "Co oznacza właściwość 'justify-content: space-between' w Flexbox?",
+      "options": [
+        "Wszystkie elementy są wycentrowane",
+        "Elementy są rozłożone równomiernie, pierwszy i ostatni przy krawędziach",
+        "Elementy są zgrupowane na początku kontenera",
+        "Dodaje równe odstępy wokół każdego elementu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "'justify-content: space-between' rozkłada elementy równomiernie wzdłuż osi głównej, przy czym pierwszy element jest przy początkowej krawędzi, a ostatni przy końcowej. Wolna przestrzeń jest dzielona między elementy."
+    },
+    {
+      "question": "Co oznacza podejście 'mobile-first' w projektowaniu responsywnym?",
+      "options": [
+        "Strona działa tylko na urządzeniach mobilnych",
+        "Najpierw projektuje się dla dużych ekranów, potem dostosowuje do mobilnych",
+        "Najpierw projektuje się dla urządzeń mobilnych, potem rozszerza na większe ekrany",
+        "Używa się tylko jednostek procentowych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Podejście mobile-first polega na projektowaniu najpierw dla urządzeń mobilnych z podstawowymi stylami, a następnie dodawaniu stylów dla większych ekranów za pomocą media queries z min-width. Wymusza to priorytetyzację treści."
+    },
+    {
+      "question": "Kiedy właściwość z-index NIE będzie działać?",
+      "options": [
+        "Gdy element ma position: relative",
+        "Gdy element ma position: static",
+        "Gdy element ma position: absolute",
+        "Gdy element ma position: fixed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Właściwość z-index działa tylko na elementach z pozycjonowaniem innym niż static (czyli relative, absolute, fixed lub sticky). Na elementach z domyślnym position: static z-index nie ma efektu."
+    },
+    {
+      "question": "Czym różnią się Media Queries od Container Queries?",
+      "options": [
+        "Media Queries są nowsze i bardziej zaawansowane",
+        "Media Queries reagują na rozmiar okna przeglądarki, Container Queries na rozmiar elementu nadrzędnego",
+        "Container Queries działają tylko w Flexbox",
+        "Nie ma między nimi różnicy funkcjonalnej"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Media Queries stosują style w zależności od cech okna przeglądarki (viewport). Container Queries to nowoczesna funkcja pozwalająca stosować style w zależności od rozmiaru kontenera nadrzędnego, co jest przydatne dla komponentów wielokrotnego użytku."
+    }
+  ]
+}

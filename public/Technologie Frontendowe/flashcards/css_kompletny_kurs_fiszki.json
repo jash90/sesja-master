@@ -1,0 +1,117 @@
+{
+  "title": "Kompletny Kurs CSS - Fiszki",
+  "description": "Zestaw fiszek do nauki kaskadowych arkuszy stylów (CSS) - od podstaw składni po zaawansowane techniki układu Flexbox, Grid i responsywności.",
+  "category": "Frontend / CSS",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest CSS i jaką pełni rolę?",
+      "back": "CSS (Cascading Style Sheets) to język stylowania stron internetowych odpowiedzialny za prezentację i wygląd. Kontroluje formatowanie (kolory, czcionki, rozmiary), układ elementów (pozycjonowanie, Flexbox, Grid) oraz efekty wizualne (animacje, cienie, gradienty)."
+    },
+    {
+      "id": 2,
+      "front": "Jakie są trzy sposoby dołączania CSS do HTML?",
+      "back": "1) Inline CSS - atrybut style w elemencie (najwyższa specyficzność, niezalecane). 2) Internal CSS - znacznik <style> w sekcji <head> (dla pojedynczych stron). 3) External CSS - osobny plik .css dołączony przez <link> (best practice - reusability, cachowanie)."
+    },
+    {
+      "id": 3,
+      "front": "Z jakich trzech elementów składa się reguła CSS?",
+      "back": "1) Selektor - określa które elementy HTML będą stylizowane. 2) Właściwość (property) - atrybut do zmodyfikowania. 3) Wartość (value) - przypisana wartość. Składnia: selektor { właściwość: wartość; }"
+    },
+    {
+      "id": 4,
+      "front": "Czym różni się selektor klasy od selektora ID?",
+      "back": "Selektor klasy (.nazwa) może być używany wielokrotnie na stronie i ma specyficzność 10. Selektor ID (#nazwa) powinien być unikalny na stronie i ma specyficzność 100. W praktyce zaleca się używanie klas zamiast ID dla większej elastyczności."
+    },
+    {
+      "id": 5,
+      "front": "Co oznacza selektor 'div > p' vs 'div p'?",
+      "back": "'div > p' (selektor dziecka) - wybiera tylko elementy <p> będące bezpośrednimi dziećmi <div>. 'div p' (selektor potomka) - wybiera wszystkie elementy <p> znajdujące się gdziekolwiek wewnątrz <div>, niezależnie od poziomu zagnieżdżenia."
+    },
+    {
+      "id": 6,
+      "front": "Jak działa kaskadowość w CSS?",
+      "back": "Kaskadowość określa, które style zostaną zastosowane przy konflikcie. Kolejność priorytetów: 1) !important (najwyższy), 2) Specyficzność selektora (inline: 1000, ID: 100, klasa: 10, element: 1), 3) Kolejność w kodzie (późniejsza definicja wygrywa)."
+    },
+    {
+      "id": 7,
+      "front": "Jakie formaty kolorów są dostępne w CSS?",
+      "back": "HEX (#FF5733 lub skrócone #F53), RGB/RGBA (rgb(255,87,51) / rgba(255,87,51,0.5)), HSL/HSLA (hsl(9,100%,60%) - barwa, nasycenie, jasność), Named colors (red, blue, green). RGBA i HSLA pozwalają na ustawienie przezroczystości."
+    },
+    {
+      "id": 8,
+      "front": "Czym różni się jednostka 'em' od 'rem'?",
+      "back": "'em' jest relatywna do rozmiaru czcionki elementu rodzica - może się kumulować przy zagnieżdżaniu. 'rem' (root em) jest relatywna do rozmiaru czcionki elementu <html> - bardziej przewidywalna i łatwiejsza w obliczeniach."
+    },
+    {
+      "id": 9,
+      "front": "Co oznaczają jednostki 'vw' i 'vh'?",
+      "back": "'vw' (viewport width) = 1/100 szerokości okna przeglądarki. 'vh' (viewport height) = 1/100 wysokości okna przeglądarki. Przydatne do tworzenia elementów zajmujących określoną część ekranu (np. 100vh dla pełnoekranowej sekcji)."
+    },
+    {
+      "id": 10,
+      "front": "Z jakich warstw składa się model pudełkowy (box model)?",
+      "back": "Od wewnątrz: 1) Content - treść elementu (width/height), 2) Padding - odstęp wewnętrzny (przezroczysty, przyjmuje kolor tła), 3) Border - obramowanie, 4) Margin - odstęp zewnętrzny (zawsze przezroczysty). Właściwość box-sizing: border-box włącza padding i border do wymiarów."
+    },
+    {
+      "id": 11,
+      "front": "Jakie są główne wartości właściwości 'display'?",
+      "back": "block - pełna szerokość, nowa linia (div, p). inline - szerokość treści, w linii (span, a). inline-block - jak inline ale z możliwością ustawienia wymiarów. none - usuwa element z układu (nie zajmuje miejsca). flex/grid - kontenery układu."
+    },
+    {
+      "id": 12,
+      "front": "Czym różni się 'display: none' od 'visibility: hidden'?",
+      "back": "'display: none' całkowicie usuwa element z przepływu dokumentu - nie zajmuje miejsca, inne elementy przesuwają się. 'visibility: hidden' ukrywa element wizualnie, ale zachowuje jego miejsce w układzie strony."
+    },
+    {
+      "id": 13,
+      "front": "Jakie są wartości właściwości 'position' i czym się różnią?",
+      "back": "static - domyślna, normalny przepływ. relative - przesunięcie względem normalnej pozycji. absolute - pozycjonowanie względem najbliższego przodka z position != static. fixed - względem viewportu (nie przewija się). sticky - przełącza między relative a fixed przy przewijaniu."
+    },
+    {
+      "id": 14,
+      "front": "Kiedy właściwość z-index nie działa?",
+      "back": "z-index działa tylko na elementach z position: relative, absolute, fixed lub sticky. Na elementach z domyślnym position: static z-index nie ma efektu. Dodatkowo z-index działa tylko w obrębie tego samego kontekstu nakładania."
+    },
+    {
+      "id": 15,
+      "front": "Czym są pseudoklasy? Podaj przykłady.",
+      "back": "Pseudoklasy wskazują elementy w określonym stanie (pojedynczy dwukropek). Przykłady: :hover (kursor nad elementem), :active (podczas kliknięcia), :focus (element z fokusem), :visited (odwiedzony link), :nth-child(n) (element o określonej pozycji)."
+    },
+    {
+      "id": 16,
+      "front": "Czym są pseudoelementy? Podaj przykłady.",
+      "back": "Pseudoelementy tworzą wirtualne elementy nieistniejące w HTML (podwójny dwukropek). ::before i ::after - wstawiają treść przed/po zawartości (wymagają property 'content'). ::first-line i ::first-letter - stylizują pierwszą linię/literę tekstu."
+    },
+    {
+      "id": 17,
+      "front": "Jak utworzyć gradient w CSS?",
+      "back": "linear-gradient(kierunek, kolor1, kolor2) - gradient liniowy, np. linear-gradient(90deg, #3b82f6, #8b5cf6). radial-gradient(kształt, kolor1, kolor2) - gradient promienisty. Można dodać więcej kolorów i określić ich pozycje procentowe."
+    },
+    {
+      "id": 18,
+      "front": "Czym jest Flexbox i do czego służy?",
+      "back": "Flexbox to jednowymiarowy system układu (wiersz LUB kolumna). Włączany przez display: flex. Główne właściwości: flex-direction (kierunek), justify-content (rozmieszczenie wzdłuż osi głównej), align-items (wyrównanie wzdłuż osi poprzecznej). Idealny dla pasków nawigacji, centrowania."
+    },
+    {
+      "id": 19,
+      "front": "Czym jest CSS Grid i czym różni się od Flexbox?",
+      "back": "CSS Grid to dwuwymiarowy system układu (wiersze I kolumny jednocześnie). Włączany przez display: grid. Definiuje się kolumny (grid-template-columns) i wiersze (grid-template-rows). Idealny dla złożonych layoutów stron. Flexbox = 1D (linia), Grid = 2D (siatka)."
+    },
+    {
+      "id": 20,
+      "front": "Co to są Media Queries i jak ich używać?",
+      "back": "Media Queries pozwalają stosować style warunkowo w zależności od cech urządzenia. Składnia: @media (warunek) { style }. Przykłady: @media (max-width: 768px) - do 768px, @media (min-width: 769px) - powyżej 768px, @media (orientation: portrait) - orientacja pionowa."
+    },
+    {
+      "id": 21,
+      "front": "Na czym polega podejście mobile-first?",
+      "back": "Mobile-first oznacza projektowanie najpierw dla urządzeń mobilnych (style bazowe), a następnie dodawanie stylów dla większych ekranów za pomocą @media (min-width: ...). Wymusza priorytetyzację treści, zapewnia lepszą wydajność na urządzeniach mobilnych. Jest uznawane za best practice."
+    },
+    {
+      "id": 22,
+      "front": "Czym są Container Queries?",
+      "back": "Container Queries to nowoczesna funkcja CSS pozwalająca stosować style w zależności od rozmiaru kontenera nadrzędnego (nie okna przeglądarki jak Media Queries). Składnia: @container (max-width: 400px) { }. Przydatne dla komponentów wielokrotnego użytku adaptujących się do kontekstu."
+    }
+  ]
+}
