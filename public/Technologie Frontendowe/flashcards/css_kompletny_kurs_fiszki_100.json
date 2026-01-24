@@ -1,0 +1,657 @@
+{
+  "title": "Kompletny Kurs CSS - Fiszki Rozszerzone",
+  "description": "Kompleksowy zestaw 100 fiszek do nauki kaskadowych arkuszy stylów (CSS) - od podstaw składni po zaawansowane techniki układu, animacje i responsywność.",
+  "category": "Frontend / CSS",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co oznacza skrót CSS?",
+      "back": "Cascading Style Sheets - Kaskadowe Arkusze Stylów. Nazwa odnosi się do mechanizmu kaskadowości, który określa priorytet stosowania stylów przy konflikcie reguł."
+    },
+    {
+      "id": 2,
+      "front": "Jaka jest główna rola CSS w tworzeniu stron?",
+      "back": "CSS odpowiada za prezentację i wygląd strony: kolory, czcionki, układ elementów, animacje, responsywność. HTML definiuje strukturę, JavaScript obsługuje interakcje."
+    },
+    {
+      "id": 3,
+      "front": "Jakie są trzy sposoby dołączania CSS do HTML?",
+      "back": "1) Inline CSS - atrybut style w elemencie (niezalecane). 2) Internal CSS - znacznik <style> w <head>. 3) External CSS - plik .css dołączony przez <link> (best practice)."
+    },
+    {
+      "id": 4,
+      "front": "Dlaczego External CSS jest zalecaną metodą?",
+      "back": "Zewnętrzne arkusze stylów umożliwiają: wielokrotne użycie na wielu stronach, cachowanie przez przeglądarkę (szybsze ładowanie), lepszą organizację kodu i separację HTML od CSS."
+    },
+    {
+      "id": 5,
+      "front": "Jak wygląda podstawowa składnia reguły CSS?",
+      "back": "selektor { właściwość: wartość; } - Selektor wskazuje elementy, właściwość to atrybut do zmiany, wartość to przypisana wartość. Każda deklaracja kończy się średnikiem."
+    },
+    {
+      "id": 6,
+      "front": "Co to jest deklaracja CSS?",
+      "back": "Deklaracja to para właściwość-wartość, np. color: blue. Zbiór deklaracji w nawiasach klamrowych tworzy blok deklaracji przypisany do selektora."
+    },
+    {
+      "id": 7,
+      "front": "Co to jest selektor elementu (typu)?",
+      "back": "Selektor elementu to sama nazwa znacznika HTML bez prefiksów, np. p, h1, div. Wybiera wszystkie elementy danego typu na stronie. Specyficzność: 1."
+    },
+    {
+      "id": 8,
+      "front": "Jak oznaczyć selektor klasy?",
+      "back": "Kropką przed nazwą: .nazwa-klasy. Klasa może być używana wielokrotnie na stronie. W HTML: class=\"nazwa-klasy\". Specyficzność: 10."
+    },
+    {
+      "id": 9,
+      "front": "Jak oznaczyć selektor ID?",
+      "back": "Kratką przed nazwą: #nazwa-id. ID powinno być unikalne na stronie. W HTML: id=\"nazwa-id\". Specyficzność: 100. Zaleca się używać klas zamiast ID."
+    },
+    {
+      "id": 10,
+      "front": "Co robi selektor uniwersalny (*)?",
+      "back": "Gwiazdka (*) wybiera wszystkie elementy na stronie. Często używany do resetowania stylów: * { margin: 0; padding: 0; box-sizing: border-box; }. Specyficzność: 0."
+    },
+    {
+      "id": 11,
+      "front": "Jak grupować selektory?",
+      "back": "Oddzielając przecinkami: h1, h2, h3 { color: blue; }. Pozwala zastosować te same style do wielu selektorów bez powtarzania kodu."
+    },
+    {
+      "id": 12,
+      "front": "Co robi selektor potomka (spacja)?",
+      "back": "div p - wybiera wszystkie elementy p znajdujące się gdziekolwiek wewnątrz div, na dowolnym poziomie zagnieżdżenia."
+    },
+    {
+      "id": 13,
+      "front": "Co robi selektor dziecka (>)?",
+      "back": "div > p - wybiera tylko elementy p będące bezpośrednimi dziećmi div, nie głębiej zagnieżdżone."
+    },
+    {
+      "id": 14,
+      "front": "Co robi selektor sąsiada bezpośredniego (+)?",
+      "back": "h2 + p - wybiera element p występujący bezpośrednio po h2 na tym samym poziomie (mają wspólnego rodzica)."
+    },
+    {
+      "id": 15,
+      "front": "Co robi selektor sąsiada ogólnego (~)?",
+      "back": "h2 ~ p - wybiera wszystkie elementy p występujące po h2 na tym samym poziomie zagnieżdżenia."
+    },
+    {
+      "id": 16,
+      "front": "Co robi selektor atrybutu [attr='value']?",
+      "back": "Wybiera elementy z atrybutem o dokładnej wartości: [type='text'] - inputy tekstowe. Inne operatory: ^= (zaczyna się), $= (kończy się), *= (zawiera)."
+    },
+    {
+      "id": 17,
+      "front": "Co oznacza [href*='.pdf']?",
+      "back": "Operator *= sprawdza, czy wartość atrybutu zawiera podany ciąg gdziekolwiek. Ten selektor znajdzie wszystkie linki z '.pdf' w adresie URL."
+    },
+    {
+      "id": 18,
+      "front": "Co oznacza [class^='btn']?",
+      "back": "Operator ^= sprawdza, czy wartość zaczyna się od podanego ciągu. Znajdzie elementy z klasami: btn, btn-primary, btn-large, itd."
+    },
+    {
+      "id": 19,
+      "front": "Czym jest kaskadowość w CSS?",
+      "back": "Mechanizm określający, które style zostaną zastosowane przy konflikcie. Kolejność: 1) !important, 2) specyficzność selektora, 3) kolejność w kodzie (późniejsza wygrywa)."
+    },
+    {
+      "id": 20,
+      "front": "Czym jest specyficzność selektora?",
+      "back": "Waga selektora decydująca o priorytecie. Obliczanie: inline style (1000) > ID (100) > klasa/pseudoklasa/atrybut (10) > element/pseudoelement (1) > * (0)."
+    },
+    {
+      "id": 21,
+      "front": "Jak obliczyć specyficzność selektora '#nav .item a'?",
+      "back": "#nav = 100 (ID), .item = 10 (klasa), a = 1 (element). Suma: 111. Wyższa specyficzność = wyższy priorytet."
+    },
+    {
+      "id": 22,
+      "front": "Co robi !important?",
+      "back": "Nadaje deklaracji najwyższy priorytet, nadpisując wszystkie inne reguły. Używać oszczędnie - utrudnia utrzymanie kodu. Składnia: color: red !important;"
+    },
+    {
+      "id": 23,
+      "front": "Jakie formaty kolorów obsługuje CSS?",
+      "back": "HEX (#FF5733), RGB/RGBA (rgb(255,87,51)), HSL/HSLA (hsl(9,100%,60%)), named colors (red, blue). RGBA i HSLA obsługują przezroczystość."
+    },
+    {
+      "id": 24,
+      "front": "Jak działa format HEX?",
+      "back": "#RRGGBB - każda para cyfr szesnastkowych (00-FF) reprezentuje intensywność czerwonego, zielonego i niebieskiego. Skrócona wersja: #RGB (np. #F00 = #FF0000)."
+    },
+    {
+      "id": 25,
+      "front": "Jak działa format RGBA?",
+      "back": "rgba(red, green, blue, alpha) - wartości R, G, B od 0 do 255, alpha (przezroczystość) od 0 (przezroczysty) do 1 (nieprzezroczysty). Np. rgba(255, 0, 0, 0.5)."
+    },
+    {
+      "id": 26,
+      "front": "Jak działa format HSL?",
+      "back": "hsl(hue, saturation, lightness) - Hue: barwa 0-360° (0=czerwony, 120=zielony, 240=niebieski), Saturation: nasycenie 0-100%, Lightness: jasność 0-100%."
+    },
+    {
+      "id": 27,
+      "front": "Co oznacza wartość 'transparent'?",
+      "back": "Całkowita przezroczystość - element jest niewidoczny, ale nadal zajmuje miejsce w układzie. Równoważne: rgba(0,0,0,0)."
+    },
+    {
+      "id": 28,
+      "front": "Co robi właściwość font-family?",
+      "back": "Określa rodzinę czcionek. Podaje się listę w kolejności preferencji: font-family: 'Roboto', Arial, sans-serif. Przeglądarka użyje pierwszej dostępnej."
+    },
+    {
+      "id": 29,
+      "front": "Co robi właściwość font-size?",
+      "back": "Kontroluje rozmiar czcionki. Można używać jednostek: px (bezwzględna), em (względem rodzica), rem (względem html), % (procent rodzica)."
+    },
+    {
+      "id": 30,
+      "front": "Co robi właściwość font-weight?",
+      "back": "Określa grubość czcionki. Wartości: 100-900 (co 100), lub słowa: normal (400), bold (700), lighter, bolder."
+    },
+    {
+      "id": 31,
+      "front": "Jak dołączyć Google Fonts?",
+      "back": "1) W HTML: <link href='https://fonts.googleapis.com/css2?family=Roboto' rel='stylesheet'>. 2) W CSS: font-family: 'Roboto', sans-serif;"
+    },
+    {
+      "id": 32,
+      "front": "Co robi właściwość text-align?",
+      "back": "Wyrównanie tekstu w elemencie: left (domyślne), right, center, justify (do obu krawędzi). Działa na treść wewnątrz elementu blokowego."
+    },
+    {
+      "id": 33,
+      "front": "Co robi właściwość text-decoration?",
+      "back": "Ozdoby tekstu: underline (podkreślenie), line-through (przekreślenie), overline (nadkreślenie), none (brak - często używane do usunięcia podkreślenia linków)."
+    },
+    {
+      "id": 34,
+      "front": "Co robi właściwość text-transform?",
+      "back": "Zmiana wielkości liter: uppercase (WIELKIE), lowercase (małe), capitalize (Pierwsza Wielka), none (bez zmian)."
+    },
+    {
+      "id": 35,
+      "front": "Co robi właściwość line-height?",
+      "back": "Wysokość linii (interlinia). Wartość bez jednostki (np. 1.5) to mnożnik font-size. Wpływa na czytelność tekstu."
+    },
+    {
+      "id": 36,
+      "front": "Co robi właściwość letter-spacing?",
+      "back": "Odstęp między znakami (literami). Wartości dodatnie zwiększają odstęp, ujemne zmniejszają. Np. letter-spacing: 2px."
+    },
+    {
+      "id": 37,
+      "front": "Co robi właściwość text-shadow?",
+      "back": "Cień tekstu. Składnia: text-shadow: X Y blur color. Np. text-shadow: 2px 2px 4px rgba(0,0,0,0.5) - przesunięcie 2px w prawo i dół, rozmycie 4px."
+    },
+    {
+      "id": 38,
+      "front": "Z jakich warstw składa się model pudełkowy?",
+      "back": "Od środka: 1) Content - treść elementu, 2) Padding - odstęp wewnętrzny, 3) Border - obramowanie, 4) Margin - odstęp zewnętrzny."
+    },
+    {
+      "id": 39,
+      "front": "Czym różni się padding od margin?",
+      "back": "Padding to odstęp wewnętrzny (między treścią a obramowaniem, przyjmuje kolor tła). Margin to odstęp zewnętrzny (między obramowaniem a innymi elementami, zawsze przezroczysty)."
+    },
+    {
+      "id": 40,
+      "front": "Co oznacza margin: 10px 20px?",
+      "back": "Skrócony zapis: pierwsza wartość = góra/dół (10px), druga = lewo/prawo (20px). Pełny zapis to margin: 10px 20px 10px 20px."
+    },
+    {
+      "id": 41,
+      "front": "Co oznacza padding: 10px 20px 30px 40px?",
+      "back": "Kolejność zgodna z ruchem wskazówek zegara: góra (10px), prawo (20px), dół (30px), lewo (40px). Mnemotechnika: TRouBLe (Top Right Bottom Left)."
+    },
+    {
+      "id": 42,
+      "front": "Co robi box-sizing: border-box?",
+      "back": "Width i height obejmują padding i border (nie tylko content). Ułatwia obliczanie wymiarów. Często stosowane globalnie: * { box-sizing: border-box; }"
+    },
+    {
+      "id": 43,
+      "front": "Co to jest margin collapse?",
+      "back": "Scalanie pionowych marginesów sąsiednich elementów - zamiast sumy, używany jest większy margines. Nie dotyczy marginesów poziomych ani elementów flex/grid."
+    },
+    {
+      "id": 44,
+      "front": "Co robi margin: 0 auto?",
+      "back": "Centruje element blokowy poziomo (przy określonej szerokości). 0 = margines góra/dół, auto = przeglądarka automatycznie oblicza równe marginesy lewo/prawo."
+    },
+    {
+      "id": 45,
+      "front": "Co oznacza jednostka px?",
+      "back": "Piksel - jednostka bezwzględna, niezależna od kontekstu. 16px to zawsze 16px. Precyzyjna, ale nie skaluje się automatycznie."
+    },
+    {
+      "id": 46,
+      "front": "Co oznacza jednostka em?",
+      "back": "Jednostka względna do rozmiaru czcionki elementu rodzica. Przy font-size rodzica 16px, 1.5em = 24px. Może się kumulować przy zagnieżdżaniu."
+    },
+    {
+      "id": 47,
+      "front": "Co oznacza jednostka rem?",
+      "back": "Root em - względna do rozmiaru czcionki elementu <html> (domyślnie 16px). 1rem = 16px. Bardziej przewidywalna niż em."
+    },
+    {
+      "id": 48,
+      "front": "Co oznacza jednostka vw?",
+      "back": "Viewport width - 1vw = 1% szerokości okna przeglądarki. 100vw = pełna szerokość ekranu. Przydatne dla responsywnych rozmiarów."
+    },
+    {
+      "id": 49,
+      "front": "Co oznacza jednostka vh?",
+      "back": "Viewport height - 1vh = 1% wysokości okna przeglądarki. 100vh = pełna wysokość ekranu. Często używane dla sekcji pełnoekranowych."
+    },
+    {
+      "id": 50,
+      "front": "Co robi funkcja calc()?",
+      "back": "Wykonuje obliczenia matematyczne, pozwalając mieszać jednostki: width: calc(100% - 50px). Operatory: +, -, *, /. Spacje wokół + i - są wymagane."
+    },
+    {
+      "id": 51,
+      "front": "Co robi display: block?",
+      "back": "Element zajmuje całą dostępną szerokość, rozpoczyna nową linię. Można ustawić width, height, margin i padding ze wszystkich stron. Np. div, p, h1."
+    },
+    {
+      "id": 52,
+      "front": "Co robi display: inline?",
+      "back": "Element zajmuje tylko tyle miejsca, ile wymaga treść, nie wymusza nowej linii. Width/height nie działają, margin/padding tylko poziomo. Np. span, a, em."
+    },
+    {
+      "id": 53,
+      "front": "Co robi display: inline-block?",
+      "back": "Połączenie: zachowuje się jak inline (w linii z innymi), ale można ustawić width, height i pełne margin/padding jak dla block."
+    },
+    {
+      "id": 54,
+      "front": "Czym różni się display: none od visibility: hidden?",
+      "back": "display: none - element usunięty z układu, nie zajmuje miejsca. visibility: hidden - element niewidoczny, ale zachowuje miejsce w układzie."
+    },
+    {
+      "id": 55,
+      "front": "Co robi overflow: hidden?",
+      "back": "Ukrywa (przycina) zawartość wykraczającą poza granice elementu. Inne wartości: visible (domyślna), scroll (paski zawsze), auto (paski gdy potrzebne)."
+    },
+    {
+      "id": 56,
+      "front": "Jaka jest domyślna wartość position?",
+      "back": "static - element w normalnym przepływie dokumentu. Właściwości top, right, bottom, left nie działają. z-index też nie działa."
+    },
+    {
+      "id": 57,
+      "front": "Co robi position: relative?",
+      "back": "Element pozostaje w przepływie, ale można go przesunąć względem normalnej pozycji za pomocą top/right/bottom/left. Staje się kontekstem dla dzieci absolute."
+    },
+    {
+      "id": 58,
+      "front": "Co robi position: absolute?",
+      "back": "Element wyjęty z przepływu, pozycjonowany względem najbliższego przodka z position != static. Jeśli brak - względem <html>."
+    },
+    {
+      "id": 59,
+      "front": "Co robi position: fixed?",
+      "back": "Element wyjęty z przepływu, pozycjonowany względem okna przeglądarki (viewport). Pozostaje w miejscu podczas przewijania. Np. stałe menu."
+    },
+    {
+      "id": 60,
+      "front": "Co robi position: sticky?",
+      "back": "Hybryda: zachowuje się jak relative do momentu osiągnięcia progu (np. top: 0) podczas przewijania - wtedy działa jak fixed. Np. przyklejony nagłówek."
+    },
+    {
+      "id": 61,
+      "front": "Co robi właściwość z-index?",
+      "back": "Kontroluje kolejność nakładania elementów (oś Z). Wyższa wartość = bliżej użytkownika. Wymaga position != static. Działa w obrębie kontekstu nakładania."
+    },
+    {
+      "id": 62,
+      "front": "Co tworzy nowy kontekst nakładania?",
+      "back": "Element z: position + z-index, transform, opacity < 1, filter, isolation: isolate, i inne. z-index działa tylko w obrębie tego samego kontekstu."
+    },
+    {
+      "id": 63,
+      "front": "Czym są pseudoklasy?",
+      "back": "Selektory wskazujące elementy w określonym stanie. Oznaczane pojedynczym dwukropkiem: :hover, :active, :focus, :visited, :nth-child(). Nie tworzą nowych elementów."
+    },
+    {
+      "id": 64,
+      "front": "Co robi pseudoklasa :hover?",
+      "back": "Aktywuje się gdy kursor znajduje się nad elementem. Często używana do efektów interaktywnych: a:hover { color: red; }"
+    },
+    {
+      "id": 65,
+      "front": "Co robi pseudoklasa :focus?",
+      "back": "Aktywuje się gdy element ma fokus (np. kliknięte pole formularza, element z tabindex). Ważne dla dostępności."
+    },
+    {
+      "id": 66,
+      "front": "Co robi pseudoklasa :nth-child()?",
+      "back": "Wybiera elementy na podstawie pozycji. Argumenty: liczba (3), słowo (odd/even), formuła (2n+1). li:nth-child(odd) - nieparzyste elementy listy."
+    },
+    {
+      "id": 67,
+      "front": "Co robi pseudoklasa :not()?",
+      "back": "Negacja - wybiera elementy NIE pasujące do selektora. p:not(.special) - wszystkie akapity bez klasy 'special'."
+    },
+    {
+      "id": 68,
+      "front": "Czym są pseudoelementy?",
+      "back": "Wirtualne elementy nieistniejące w HTML. Oznaczane podwójnym dwukropkiem: ::before, ::after, ::first-line, ::first-letter. Tworzone przez CSS."
+    },
+    {
+      "id": 69,
+      "front": "Co robią ::before i ::after?",
+      "back": "Tworzą wirtualne elementy przed/po zawartości elementu. Wymagają właściwości content (nawet pustej: content: ''). Używane do dekoracji bez zmiany HTML."
+    },
+    {
+      "id": 70,
+      "front": "Co robi ::first-letter?",
+      "back": "Stylizuje pierwszą literę tekstu w elemencie blokowym. Często używane do efektu inicjału (drop cap): p::first-letter { font-size: 2em; }"
+    },
+    {
+      "id": 71,
+      "front": "Co robi właściwość background-color?",
+      "back": "Ustawia jednolity kolor tła elementu. Akceptuje wszystkie formaty kolorów: background-color: #3b82f6; lub rgba(59, 130, 246, 0.5);"
+    },
+    {
+      "id": 72,
+      "front": "Co robi właściwość background-image?",
+      "back": "Ustawia obraz jako tło: background-image: url('image.jpg'). Można też używać gradientów: background-image: linear-gradient(...)."
+    },
+    {
+      "id": 73,
+      "front": "Co robi background-size: cover?",
+      "back": "Skaluje tło tak, by całkowicie wypełniło element, zachowując proporcje. Może przyciąć część obrazu. Idealne dla tła sekcji."
+    },
+    {
+      "id": 74,
+      "front": "Co robi background-size: contain?",
+      "back": "Skaluje tło tak, by całe było widoczne wewnątrz elementu, zachowując proporcje. Mogą powstać puste przestrzenie."
+    },
+    {
+      "id": 75,
+      "front": "Co robi background-position?",
+      "back": "Określa położenie obrazu tła: center, top left, 50% 50%, 10px 20px. Domyślnie: left top (0% 0%)."
+    },
+    {
+      "id": 76,
+      "front": "Co robi background-attachment: fixed?",
+      "back": "Tło pozostaje nieruchome podczas przewijania strony, tworząc efekt paralaksy. Domyślnie: scroll (przewija się z elementem)."
+    },
+    {
+      "id": 77,
+      "front": "Jak utworzyć gradient liniowy?",
+      "back": "linear-gradient(kierunek, kolor1, kolor2, ...). Kierunek: to right, to bottom, 45deg. Np. linear-gradient(90deg, red, blue)."
+    },
+    {
+      "id": 78,
+      "front": "Jak utworzyć gradient promienisty?",
+      "back": "radial-gradient(kształt, kolor1, kolor2, ...). Kształt: circle, ellipse. Np. radial-gradient(circle, #3b82f6, #1e293b)."
+    },
+    {
+      "id": 79,
+      "front": "Co robi właściwość opacity?",
+      "back": "Przezroczystość całego elementu (wraz z treścią). Wartość 0-1: 0 = całkowicie przezroczysty, 1 = całkowicie nieprzezroczysty, 0.5 = 50%."
+    },
+    {
+      "id": 80,
+      "front": "Co robi display: flex?",
+      "back": "Tworzy kontener Flexbox - jednowymiarowy system układu. Dzieci stają się elementami flex i są układane w wierszu (domyślnie) lub kolumnie."
+    },
+    {
+      "id": 81,
+      "front": "Czym są osie w Flexbox?",
+      "back": "Main axis (główna) - kierunek układania elementów (domyślnie poziomo). Cross axis (poprzeczna) - prostopadła do głównej. justify-content działa wzdłuż głównej, align-items wzdłuż poprzecznej."
+    },
+    {
+      "id": 82,
+      "front": "Co robi flex-direction?",
+      "back": "Określa kierunek osi głównej: row (wiersz, domyślnie), row-reverse (wiersz odwrócony), column (kolumna), column-reverse (kolumna odwrócona)."
+    },
+    {
+      "id": 83,
+      "front": "Co robi justify-content?",
+      "back": "Rozmieszczenie elementów wzdłuż osi głównej: flex-start, flex-end, center, space-between (elementy przy krawędziach), space-around, space-evenly."
+    },
+    {
+      "id": 84,
+      "front": "Co robi align-items?",
+      "back": "Wyrównanie elementów wzdłuż osi poprzecznej: stretch (rozciągnij, domyślnie), flex-start (góra), flex-end (dół), center (środek), baseline (linia bazowa tekstu)."
+    },
+    {
+      "id": 85,
+      "front": "Czym różni się space-between od space-around?",
+      "back": "space-between: elementy przy krawędziach, odstępy tylko między nimi. space-around: równe odstępy wokół każdego elementu (przy krawędziach połowa odstępu)."
+    },
+    {
+      "id": 86,
+      "front": "Co robi flex-wrap?",
+      "back": "Kontroluje zawijanie elementów: nowrap (domyślnie, elementy się kurczą), wrap (przechodzą do nowej linii), wrap-reverse (nowa linia nad poprzednią)."
+    },
+    {
+      "id": 87,
+      "front": "Co robi właściwość flex-grow?",
+      "back": "Określa zdolność elementu do rośnięcia. 0 = nie rośnie, 1+ = rośnie proporcjonalnie do innych. flex-grow: 2 rośnie 2x szybciej niż flex-grow: 1."
+    },
+    {
+      "id": 88,
+      "front": "Co robi właściwość flex-shrink?",
+      "back": "Określa zdolność elementu do kurczenia się gdy brakuje miejsca. 0 = nie kurczy się, 1 (domyślnie) = kurczy się proporcjonalnie."
+    },
+    {
+      "id": 89,
+      "front": "Co oznacza flex: 1?",
+      "back": "Skrót: flex-grow: 1, flex-shrink: 1, flex-basis: 0%. Element może rosnąć i kurczyć się, startując od zerowej bazy. Często używane dla równych kolumn."
+    },
+    {
+      "id": 90,
+      "front": "Co robi align-self?",
+      "back": "Nadpisuje align-items dla pojedynczego elementu flex. Pozwala wyrównać jeden element inaczej niż pozostałe."
+    },
+    {
+      "id": 91,
+      "front": "Co robi display: grid?",
+      "back": "Tworzy kontener CSS Grid - dwuwymiarowy system układu kontrolujący wiersze I kolumny jednocześnie. Dzieci stają się elementami siatki."
+    },
+    {
+      "id": 92,
+      "front": "Co robi grid-template-columns?",
+      "back": "Definiuje kolumny siatki: grid-template-columns: 200px 1fr 1fr. Tworzy 3 kolumny: pierwsza 200px, pozostałe dzielą resztę przestrzeni równo."
+    },
+    {
+      "id": 93,
+      "front": "Co oznacza jednostka fr w Grid?",
+      "back": "Fraction - frakcja dostępnej przestrzeni. 1fr 2fr = podział w stosunku 1:2. Działa po odjęciu jednostek stałych."
+    },
+    {
+      "id": 94,
+      "front": "Co robi repeat() w Grid?",
+      "back": "Powtarza wzorzec: repeat(3, 1fr) = 1fr 1fr 1fr. repeat(auto-fit, minmax(200px, 1fr)) - responsywna siatka bez media queries."
+    },
+    {
+      "id": 95,
+      "front": "Co robi minmax() w Grid?",
+      "back": "Określa zakres rozmiaru: minmax(100px, 1fr) - minimum 100px, maksimum cała dostępna przestrzeń. Przydatne dla responsywnych siatek."
+    },
+    {
+      "id": 96,
+      "front": "Co robi właściwość gap w Grid/Flexbox?",
+      "back": "Odstępy między elementami: gap: 20px (równe), gap: 10px 20px (wiersze kolumny). Wcześniejsza nazwa w Grid: grid-gap."
+    },
+    {
+      "id": 97,
+      "front": "Jak rozciągnąć element na 2 kolumny Grid?",
+      "back": "grid-column: span 2 lub grid-column: 1 / 3 (od linii 1 do linii 3). Analogicznie grid-row dla wierszy."
+    },
+    {
+      "id": 98,
+      "front": "Co oznacza grid-column: 1 / -1?",
+      "back": "Od pierwszej do ostatniej linii kolumn (pełna szerokość). Ujemne indeksy liczą od końca: -1 = ostatnia linia."
+    },
+    {
+      "id": 99,
+      "front": "Czym różni się auto-fit od auto-fill?",
+      "back": "auto-fit: puste ścieżki są zwijane, elementy mogą rosnąć. auto-fill: puste ścieżki zachowane. Różnica widoczna przy małej liczbie elementów."
+    },
+    {
+      "id": 100,
+      "front": "Co robi grid-template-areas?",
+      "back": "Nazwane obszary siatki: 'header header' 'sidebar main' 'footer footer'. Przypisanie: grid-area: header. Kropka (.) = pusta komórka."
+    },
+    {
+      "id": 101,
+      "front": "Co to są Media Queries?",
+      "back": "Reguły @media pozwalające stosować style warunkowo w zależności od cech urządzenia: szerokości, wysokości, orientacji, itp."
+    },
+    {
+      "id": 102,
+      "front": "Co oznacza @media (max-width: 768px)?",
+      "back": "Style stosowane dla ekranów o szerokości do 768px włącznie. Typowy breakpoint dla tabletów/telefonów."
+    },
+    {
+      "id": 103,
+      "front": "Co oznacza @media (min-width: 769px)?",
+      "back": "Style stosowane dla ekranów o szerokości od 769px wzwyż. W podejściu mobile-first używane do rozszerzania stylów bazowych."
+    },
+    {
+      "id": 104,
+      "front": "Na czym polega podejście mobile-first?",
+      "back": "Projektowanie najpierw dla małych ekranów (style bazowe), potem rozszerzanie dla większych za pomocą min-width. Wymusza priorytetyzację treści."
+    },
+    {
+      "id": 105,
+      "front": "Czym są Container Queries?",
+      "back": "Nowoczesna funkcja CSS: style stosowane w zależności od rozmiaru kontenera (nie viewportu). Wymaga container-type na rodzicu. @container (max-width: 400px) { }"
+    },
+    {
+      "id": 106,
+      "front": "Co robi właściwość transition?",
+      "back": "Płynne przejście między stanami. Składnia: transition: właściwość czas funkcja opóźnienie. Np. transition: all 0.3s ease - animuje wszystkie zmiany przez 0.3s."
+    },
+    {
+      "id": 107,
+      "front": "Czym różni się transition od animation?",
+      "back": "transition: proste przejście między dwoma stanami (wymaga triggera jak :hover). animation: złożone animacje wieloetapowe z @keyframes, mogą działać automatycznie i w pętli."
+    },
+    {
+      "id": 108,
+      "front": "Co definiuje @keyframes?",
+      "back": "Etapy animacji od 0% (from) do 100% (to). Określa style w każdym momencie: @keyframes slide { from { left: 0; } to { left: 100px; } }"
+    },
+    {
+      "id": 109,
+      "front": "Co robi animation-fill-mode: forwards?",
+      "back": "Element zachowuje style z ostatniej klatki (100%) po zakończeniu animacji, zamiast wracać do stanu początkowego."
+    },
+    {
+      "id": 110,
+      "front": "Co robi transform: rotate(45deg)?",
+      "back": "Obraca element o 45 stopni zgodnie z ruchem wskazówek zegara. Ujemne wartości obracają przeciwnie. Nie wpływa na układ innych elementów."
+    },
+    {
+      "id": 111,
+      "front": "Co robi transform: translateX(50px)?",
+      "back": "Przesuwa element o 50px w prawo. translateY() - pionowo, translate(X, Y) - oba kierunki. Nie wpływa na układ innych elementów."
+    },
+    {
+      "id": 112,
+      "front": "Co robi transform: scale(1.5)?",
+      "back": "Skaluje element do 150% rozmiaru. scale(0.5) = 50%. scale(2, 0.5) = 200% szerokości, 50% wysokości."
+    },
+    {
+      "id": 113,
+      "front": "Co robi właściwość transform-origin?",
+      "back": "Punkt odniesienia transformacji. Domyślnie: center center (środek). Można zmienić na: top left, 0 0, 50% 100%, itp."
+    },
+    {
+      "id": 114,
+      "front": "Co robi filter: blur(5px)?",
+      "back": "Rozmywa cały element (wraz z zawartością) o 5px. Inne filtry: brightness(), contrast(), grayscale(), sepia(), hue-rotate()."
+    },
+    {
+      "id": 115,
+      "front": "Co robi backdrop-filter: blur(10px)?",
+      "back": "Rozmywa tylko tło za elementem (nie sam element). Tworzy efekt matowego szkła. Element musi mieć przezroczyste/półprzezroczyste tło."
+    },
+    {
+      "id": 116,
+      "front": "Co robi właściwość box-shadow?",
+      "back": "Cień elementu. Składnia: box-shadow: X Y blur spread color. Np. box-shadow: 2px 4px 8px rgba(0,0,0,0.2). Można dodać inset dla cienia wewnętrznego."
+    },
+    {
+      "id": 117,
+      "front": "Co robi właściwość border-radius?",
+      "back": "Zaokrąglenie rogów. Jedna wartość: wszystkie rogi. Cztery wartości: każdy róg osobno (od lewego górnego). border-radius: 50% tworzy koło."
+    },
+    {
+      "id": 118,
+      "front": "Jak zdefiniować zmienną CSS?",
+      "back": "--nazwa-zmiennej: wartość; Definiuje się w selektorze (często :root dla globalnych). Np. :root { --primary: #3b82f6; }"
+    },
+    {
+      "id": 119,
+      "front": "Jak użyć zmiennej CSS?",
+      "back": "var(--nazwa-zmiennej) lub var(--nazwa, wartość-domyślna). Np. color: var(--primary); lub color: var(--primary, blue);"
+    },
+    {
+      "id": 120,
+      "front": "Co oznacza :root w CSS?",
+      "back": "Pseudoklasa wskazująca element główny dokumentu (<html>). Używana do definiowania globalnych zmiennych CSS dostępnych w całym dokumencie."
+    },
+    {
+      "id": 121,
+      "front": "Co robi właściwość cursor: pointer?",
+      "back": "Zmienia kursor na rękę wskazującą (sugeruje możliwość kliknięcia). Inne wartości: default, text, move, not-allowed, grab, none."
+    },
+    {
+      "id": 122,
+      "front": "Co robi user-select: none?",
+      "back": "Zapobiega zaznaczaniu tekstu przez użytkownika. Przydatne dla elementów UI jak przyciski, gdzie zaznaczanie jest niepożądane."
+    },
+    {
+      "id": 123,
+      "front": "Co robi pointer-events: none?",
+      "back": "Element nie reaguje na zdarzenia myszy (kliknięcia, hover). Zdarzenia przechodzą do elementów pod spodem. Przydatne dla nakładek dekoracyjnych."
+    },
+    {
+      "id": 124,
+      "front": "Jak wyświetlić wielokropek przy obcięciu tekstu?",
+      "back": "Wymagane 3 właściwości: text-overflow: ellipsis; overflow: hidden; white-space: nowrap; Element musi mieć określoną szerokość."
+    },
+    {
+      "id": 125,
+      "front": "Co robi white-space: nowrap?",
+      "back": "Zapobiega automatycznemu łamaniu tekstu do nowej linii. Tekst pozostaje w jednej linii, nawet jeśli przekracza szerokość kontenera."
+    },
+    {
+      "id": 126,
+      "front": "Co robi object-fit: cover dla obrazu?",
+      "back": "Skaluje obraz wypełniając kontener, zachowując proporcje (może przyciąć). Odpowiednik background-size: cover dla elementów <img>."
+    },
+    {
+      "id": 127,
+      "front": "Jak zapisać komentarz w CSS?",
+      "back": "/* treść komentarza */ - może być jedno- lub wieloliniowy. // nie jest prawidłowym komentarzem w CSS (działa tylko w preprocesorach)."
+    },
+    {
+      "id": 128,
+      "front": "Co robi właściwość outline?",
+      "back": "Linia wokół elementu (poza border), nie zajmuje miejsca w układzie. Często używana dla stanu :focus. outline: 2px solid blue;"
+    },
+    {
+      "id": 129,
+      "front": "Czym różni się outline od border?",
+      "back": "outline nie zajmuje miejsca w układzie (nie przesuwa elementów), może mieć outline-offset, nie ma osobnych stron (zawsze wokół całego elementu)."
+    },
+    {
+      "id": 130,
+      "front": "Co robi właściwość resize?",
+      "back": "Pozwala użytkownikowi zmieniać rozmiar elementu. Wartości: none, both, horizontal, vertical. Wymaga overflow != visible. Domyślnie dla <textarea>."
+    }
+  ]
+}

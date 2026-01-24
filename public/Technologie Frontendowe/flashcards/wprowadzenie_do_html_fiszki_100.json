@@ -1,0 +1,507 @@
+{
+  "title": "Wprowadzenie do HTML - Kompleksowe Fiszki",
+  "description": "Rozbudowany zestaw 100 fiszek do nauki HTML, obejmujący strukturę dokumentów, znaczniki tekstowe, formularze, multimedia, tabele i semantykę HTML5.",
+  "category": "Frontend / HTML",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co to jest HTML?",
+      "back": "HyperText Markup Language (Hipertekstowy Język Znaczników) - język służący do tworzenia struktury stron internetowych. Stworzony przez Tima Bernersa-Lee w 1991 roku."
+    },
+    {
+      "id": 2,
+      "front": "Jakie trzy technologie tworzą kompletną stronę WWW?",
+      "back": "HTML (struktura i treść), CSS (wygląd i stylizacja), JavaScript (interaktywność i dynamika)."
+    },
+    {
+      "id": 3,
+      "front": "Do czego służy deklaracja <!DOCTYPE html>?",
+      "back": "Informuje przeglądarkę o wersji HTML (HTML5), włącza tryb standardowy renderowania i zapobiega przejściu w tryb quirks. Musi być pierwszą linią dokumentu."
+    },
+    {
+      "id": 4,
+      "front": "Jaka jest różnica między elementami <head> a <body>?",
+      "back": "<head> zawiera metadane niewidoczne dla użytkownika (tytuł, style, skrypty, meta tagi). <body> zawiera całą treść widoczną na stronie."
+    },
+    {
+      "id": 5,
+      "front": "Do czego służy znacznik <meta charset=\"UTF-8\">?",
+      "back": "Określa kodowanie znaków dokumentu. UTF-8 zapewnia prawidłowe wyświetlanie polskich znaków i innych znaków diakrytycznych."
+    },
+    {
+      "id": 6,
+      "front": "Co to jest meta viewport i do czego służy?",
+      "back": "Znacznik <meta name=\"viewport\" content=\"...\"> kontroluje sposób wyświetlania strony na urządzeniach mobilnych. Jest niezbędny do tworzenia stron responsywnych."
+    },
+    {
+      "id": 7,
+      "front": "Ile nagłówków <h1> powinno być na stronie i dlaczego?",
+      "back": "Dokładnie jeden. H1 to główny tytuł dokumentu - jego unikalność jest ważna dla SEO i dostępności. Hierarchia nagłówków: h1 → h2 → h3 (bez pomijania poziomów)."
+    },
+    {
+      "id": 8,
+      "front": "Jaka jest różnica między <strong> a <b>?",
+      "back": "<strong> ma znaczenie semantyczne - oznacza tekst ważny. <b> wpływa tylko na wygląd (pogrubienie). Dla SEO i dostępności lepiej używać <strong>."
+    },
+    {
+      "id": 9,
+      "front": "Jaka jest różnica między <em> a <i>?",
+      "back": "<em> ma znaczenie semantyczne - oznacza tekst wymagający nacisku/akcentu. <i> wpływa tylko na wygląd (kursywa). Dla dostępności lepiej używać <em>."
+    },
+    {
+      "id": 10,
+      "front": "Jak utworzyć link otwierający się w nowej karcie?",
+      "back": "Dodając atrybut target=\"_blank\" do elementu <a>. Przykład: <a href=\"url\" target=\"_blank\">tekst</a>"
+    },
+    {
+      "id": 11,
+      "front": "Jaka jest różnica między <ul> a <ol>?",
+      "back": "<ul> (unordered list) - lista nieuporządkowana z wypunktowaniem. <ol> (ordered list) - lista uporządkowana z numeracją. Oba używają <li> dla elementów."
+    },
+    {
+      "id": 12,
+      "front": "Jakie są podstawowe elementy struktury tabeli HTML?",
+      "back": "<table> - kontener, <thead> - nagłówek, <tbody> - ciało, <tr> - wiersz, <th> - komórka nagłówkowa, <td> - komórka danych."
+    },
+    {
+      "id": 13,
+      "front": "Dlaczego atrybut alt w <img> jest ważny?",
+      "back": "Tekst alternatywny jest odczytywany przez czytniki ekranowe (dostępność), wyświetlany gdy obraz się nie załaduje, oraz wykorzystywany przez wyszukiwarki (SEO)."
+    },
+    {
+      "id": 14,
+      "front": "Jakie atrybuty kontrolują odtwarzanie multimediów w HTML5?",
+      "back": "controls - interfejs odtwarzacza, autoplay - automatyczne odtwarzanie, loop - odtwarzanie w pętli, poster (tylko video) - obraz przed odtwarzaniem."
+    },
+    {
+      "id": 15,
+      "front": "Jakie są główne atrybuty elementu <form>?",
+      "back": "action - adres URL do wysłania danych, method - metoda przesyłania (GET lub POST)."
+    },
+    {
+      "id": 16,
+      "front": "Wymień 5 typów elementu <input>",
+      "back": "text (pole tekstowe), password (hasło), checkbox (wielokrotny wybór), radio (pojedynczy wybór), submit (przycisk wysyłania), email, date, number."
+    },
+    {
+      "id": 17,
+      "front": "Do czego służą semantyczne znaczniki HTML5: <header>, <nav>, <main>, <footer>?",
+      "back": "<header> - nagłówek strony/sekcji, <nav> - nawigacja, <main> - główna treść (jeden na stronę), <footer> - stopka. Poprawiają dostępność i SEO."
+    },
+    {
+      "id": 18,
+      "front": "Jaka jest różnica między <article> a <section>?",
+      "back": "<article> - samodzielny, kompletny fragment treści (np. wpis blogowy). <section> - tematyczna grupa treści, część większej całości."
+    },
+    {
+      "id": 19,
+      "front": "Jakie są trzy sposoby dołączania CSS do HTML?",
+      "back": "1) Zewnętrzny arkusz: <link rel=\"stylesheet\" href=\"style.css\">, 2) Wewnętrzny: <style>...</style>, 3) Inline: style=\"...\" (niezalecane)."
+    },
+    {
+      "id": 20,
+      "front": "Dlaczego style inline są niezalecane?",
+      "back": "Utrudniają utrzymanie kodu, mieszają strukturę z prezentacją, nie pozwalają na ponowne wykorzystanie stylów i zwiększają rozmiar HTML."
+    },
+    {
+      "id": 21,
+      "front": "Kto stworzył HTML i w którym roku?",
+      "back": "Tim Berners-Lee stworzył HTML w 1991 roku w CERN. Jest również twórcą protokołu HTTP i koncepcji World Wide Web."
+    },
+    {
+      "id": 22,
+      "front": "Co to jest tryb quirks?",
+      "back": "Tryb kompatybilności wstecznej, w który przeglądarka przechodzi bez poprawnej deklaracji DOCTYPE. Emuluje zachowanie starszych przeglądarek, powodując niespójne renderowanie."
+    },
+    {
+      "id": 23,
+      "front": "Który element jest korzeniem dokumentu HTML?",
+      "back": "Element <html> jest elementem głównym (root) dokumentu. Zawiera wszystkie inne elementy i występuje bezpośrednio po deklaracji DOCTYPE."
+    },
+    {
+      "id": 24,
+      "front": "Do czego służy element <title>?",
+      "back": "Definiuje tytuł strony wyświetlany na karcie przeglądarki i w wynikach wyszukiwania. Umieszczany w sekcji <head>, jest wymagany w każdym dokumencie HTML."
+    },
+    {
+      "id": 25,
+      "front": "Jakie rozszerzenie powinien mieć plik HTML?",
+      "back": ".html (lub rzadziej .htm). Plik strony głównej zwykle nazywa się index.html - serwery WWW domyślnie szukają tego pliku w katalogu."
+    },
+    {
+      "id": 26,
+      "front": "Do czego służy znacznik <meta name=\"description\">?",
+      "back": "Zawiera opis strony wyświetlany w wynikach wyszukiwania Google. Jest ważny dla SEO - powinien być unikalny i zachęcający do kliknięcia (ok. 150-160 znaków)."
+    },
+    {
+      "id": 27,
+      "front": "Ile poziomów nagłówków oferuje HTML?",
+      "back": "Sześć poziomów: od <h1> (najważniejszy) do <h6> (najmniej ważny). Tworzą hierarchiczną strukturę treści dokumentu."
+    },
+    {
+      "id": 28,
+      "front": "Dlaczego nie należy pomijać poziomów nagłówków?",
+      "back": "Prawidłowa hierarchia (h1→h2→h3) jest kluczowa dla SEO i dostępności. Czytniki ekranowe wykorzystują nagłówki do nawigacji po stronie."
+    },
+    {
+      "id": 29,
+      "front": "Do czego służy znacznik <p>?",
+      "back": "Definiuje akapit tekstu (paragraph). Jest jednym z najczęściej używanych znaczników blokowych do strukturyzacji treści tekstowej."
+    },
+    {
+      "id": 30,
+      "front": "Do czego służy znacznik <br>?",
+      "back": "Wymusza przejście do nowej linii (line break) wewnątrz bloku tekstu. Jest elementem pustym - nie ma znacznika zamykającego."
+    },
+    {
+      "id": 31,
+      "front": "Do czego służy znacznik <hr>?",
+      "back": "Tworzy poziomą linię (horizontal rule) oddzielającą sekcje treści. Jest elementem pustym, często używanym do wizualnego podziału zawartości."
+    },
+    {
+      "id": 32,
+      "front": "Do czego służą znaczniki <sub> i <sup>?",
+      "back": "<sub> tworzy indeks dolny (np. H₂O), <sup> tworzy indeks górny (np. 10²). Używane we wzorach chemicznych, matematycznych i przypisach."
+    },
+    {
+      "id": 33,
+      "front": "Do czego służy znacznik <s>?",
+      "back": "Przekreśla tekst, oznaczając treść nieaktualną lub nieprawidłową. Podobne działanie ma <del> (tekst usunięty) i przestarzały <strike>."
+    },
+    {
+      "id": 34,
+      "front": "Do czego służy znacznik <u>?",
+      "back": "Podkreśla tekst. Stosowany rzadko, ponieważ podkreślenie kojarzy się z hiperłączami i może wprowadzać użytkowników w błąd."
+    },
+    {
+      "id": 35,
+      "front": "Jaki atrybut elementu <a> określa adres docelowy linku?",
+      "back": "Atrybut href (hypertext reference) określa URL, do którego prowadzi link. Może być adresem bezwzględnym (http://...) lub względnym (strona.html)."
+    },
+    {
+      "id": 36,
+      "front": "Co oznacza target=\"_self\" w elemencie <a>?",
+      "back": "Otwiera link w tym samym oknie/karcie przeglądarki. Jest to domyślne zachowanie - nie trzeba go jawnie określać."
+    },
+    {
+      "id": 37,
+      "front": "Jak utworzyć link do adresu e-mail?",
+      "back": "Używając protokołu mailto: w atrybucie href: <a href=\"mailto:adres@example.com\">Napisz do nas</a>. Otwiera domyślny program pocztowy."
+    },
+    {
+      "id": 38,
+      "front": "Jak utworzyć link do numeru telefonu?",
+      "back": "Używając protokołu tel: w atrybucie href: <a href=\"tel:+48123456789\">Zadzwoń</a>. Szczególnie przydatne na urządzeniach mobilnych."
+    },
+    {
+      "id": 39,
+      "front": "Jaka jest różnica między linkiem wewnętrznym a zewnętrznym?",
+      "back": "Link wewnętrzny prowadzi do innej strony tej samej witryny (może używać ścieżki względnej). Link zewnętrzny prowadzi do innej witryny (wymaga pełnego URL z http/https)."
+    },
+    {
+      "id": 40,
+      "front": "Do czego służy element <li>?",
+      "back": "Definiuje pojedynczy element listy (list item). Używany wewnątrz <ul> (lista nieuporządkowana) lub <ol> (lista uporządkowana)."
+    },
+    {
+      "id": 41,
+      "front": "Czy można zagnieżdżać listy w HTML?",
+      "back": "Tak, umieszczając nową listę <ul> lub <ol> wewnątrz elementu <li> innej listy. Pozwala to tworzyć wielopoziomowe struktury hierarchiczne."
+    },
+    {
+      "id": 42,
+      "front": "Jaki atrybut zmienia typ numeracji w liście <ol>?",
+      "back": "Atrybut type: type=\"1\" (liczby), type=\"a\" (małe litery), type=\"A\" (wielkie litery), type=\"i\" (małe rzymskie), type=\"I\" (wielkie rzymskie)."
+    },
+    {
+      "id": 43,
+      "front": "Do czego służy atrybut start w liście <ol>?",
+      "back": "Określa wartość początkową numeracji, np. <ol start=\"5\"> rozpocznie listę od numeru 5 zamiast od 1."
+    },
+    {
+      "id": 44,
+      "front": "Co oznacza znacznik <tr> w tabeli?",
+      "back": "Table Row - definiuje wiersz tabeli. Wewnątrz niego umieszcza się komórki <th> (nagłówkowe) lub <td> (danych)."
+    },
+    {
+      "id": 45,
+      "front": "Jaka jest różnica między <th> a <td>?",
+      "back": "<th> (table header) to komórka nagłówkowa - domyślnie pogrubiona i wycentrowana. <td> (table data) to zwykła komórka danych - wyrównana do lewej."
+    },
+    {
+      "id": 46,
+      "front": "Do czego służą elementy <thead>, <tbody>, <tfoot>?",
+      "back": "Grupują wiersze tabeli: <thead> - nagłówek, <tbody> - główne dane, <tfoot> - stopka. Pomagają w organizacji kodu i umożliwiają osobne stylowanie."
+    },
+    {
+      "id": 47,
+      "front": "Do czego służy atrybut colspan?",
+      "back": "Określa ile kolumn ma zajmować komórka, łącząc je w poziomie. Np. colspan=\"3\" sprawia, że komórka rozciąga się na 3 kolumny."
+    },
+    {
+      "id": 48,
+      "front": "Do czego służy atrybut rowspan?",
+      "back": "Określa ile wierszy ma zajmować komórka, łącząc je w pionie. Np. rowspan=\"2\" sprawia, że komórka rozciąga się na 2 wiersze."
+    },
+    {
+      "id": 49,
+      "front": "Do czego służy element <caption> w tabeli?",
+      "back": "Definiuje tytuł/podpis tabeli. Powinien być pierwszym elementem wewnątrz <table>. Pomaga w dostępności i zrozumieniu zawartości tabeli."
+    },
+    {
+      "id": 50,
+      "front": "Który atrybut elementu <img> określa ścieżkę do obrazu?",
+      "back": "Atrybut src (source) określa ścieżkę do pliku obrazu - może być URL-em lub ścieżką lokalną względem dokumentu HTML."
+    },
+    {
+      "id": 51,
+      "front": "Do czego służą atrybuty width i height w <img>?",
+      "back": "Określają szerokość i wysokość obrazu w pikselach. Pomagają przeglądarce zarezerwować miejsce przed załadowaniem, zapobiegając przeskakiwaniu layoutu."
+    },
+    {
+      "id": 52,
+      "front": "Jakie formaty obrazów są obsługiwane w HTML?",
+      "back": "JPEG (zdjęcia), PNG (grafika z przezroczystością), GIF (animacje, ograniczona paleta), SVG (grafika wektorowa), WebP (nowoczesny format Google)."
+    },
+    {
+      "id": 53,
+      "front": "Do czego służy element <picture>?",
+      "back": "Pozwala na definiowanie różnych źródeł obrazu dla różnych warunków (rozmiar ekranu, format). Zawiera elementy <source> i <img> jako fallback."
+    },
+    {
+      "id": 54,
+      "front": "Który znacznik HTML5 służy do osadzania wideo?",
+      "back": "Element <video> umożliwia natywne osadzanie materiałów wideo bez zewnętrznych wtyczek. Obsługuje formaty MP4, WebM, Ogg."
+    },
+    {
+      "id": 55,
+      "front": "Który znacznik HTML5 służy do osadzania audio?",
+      "back": "Element <audio> umożliwia natywne osadzanie plików dźwiękowych. Obsługuje formaty MP3, WAV, Ogg."
+    },
+    {
+      "id": 56,
+      "front": "Do czego służy atrybut controls w elementach multimedialnych?",
+      "back": "Wyświetla domyślny interfejs sterowania odtwarzaniem (play/pause, przewijanie, głośność, pełny ekran)."
+    },
+    {
+      "id": 57,
+      "front": "Do czego służy atrybut autoplay?",
+      "back": "Automatycznie rozpoczyna odtwarzanie po załadowaniu strony. Uwaga: wiele przeglądarek blokuje autoplay z dźwiękiem bez interakcji użytkownika."
+    },
+    {
+      "id": 58,
+      "front": "Do czego służy atrybut loop?",
+      "back": "Powoduje ciągłe odtwarzanie multimediów w pętli - po zakończeniu automatycznie rozpoczyna się od nowa."
+    },
+    {
+      "id": 59,
+      "front": "Do czego służy atrybut poster w <video>?",
+      "back": "Określa obraz (miniaturkę/okładkę) wyświetlany przed rozpoczęciem odtwarzania wideo."
+    },
+    {
+      "id": 60,
+      "front": "Do czego służy atrybut muted?",
+      "back": "Wycisza dźwięk multimediów. Często używany z autoplay, ponieważ przeglądarki zazwyczaj pozwalają na automatyczne odtwarzanie wyciszonych treści."
+    },
+    {
+      "id": 61,
+      "front": "Do czego służy element <source> w multimediach?",
+      "back": "Definiuje alternatywne źródła plików wideo/audio w różnych formatach. Przeglądarka wybiera pierwszy obsługiwany format."
+    },
+    {
+      "id": 62,
+      "front": "Który element jest kontenerem formularza?",
+      "back": "Element <form> jest głównym kontenerem, grupującym wszystkie pola formularza i określającym gdzie (action) i jak (method) wysłać dane."
+    },
+    {
+      "id": 63,
+      "front": "Jaka jest różnica między metodami GET a POST?",
+      "back": "GET przesyła dane w URL (widoczne, ograniczone do ~2000 znaków, dla wyszukiwania). POST przesyła w ciele żądania (niewidoczne, bez limitu, dla wrażliwych danych)."
+    },
+    {
+      "id": 64,
+      "front": "Co tworzy <input type=\"text\">?",
+      "back": "Jednoliniowe pole tekstowe do wprowadzania krótkich danych. Jest domyślnym typem input, jeśli atrybut type nie jest określony."
+    },
+    {
+      "id": 65,
+      "front": "Co tworzy <input type=\"password\">?",
+      "back": "Pole do wprowadzania hasła - wpisywane znaki są maskowane (wyświetlane jako kropki lub gwiazdki) dla bezpieczeństwa."
+    },
+    {
+      "id": 66,
+      "front": "Co tworzy <input type=\"checkbox\">?",
+      "back": "Pole wyboru wielokrotnego (checkbox). Można zaznaczyć dowolną liczbę opcji niezależnie od siebie."
+    },
+    {
+      "id": 67,
+      "front": "Co tworzy <input type=\"radio\">?",
+      "back": "Przycisk radiowy - pole wyboru pojedynczego. Przyciski o tej samej nazwie (atrybut name) tworzą grupę, z której można wybrać tylko jedną opcję."
+    },
+    {
+      "id": 68,
+      "front": "Co tworzy <input type=\"submit\">?",
+      "back": "Przycisk wysyłający formularz. Po kliknięciu dane formularza są przesyłane pod adres określony w atrybucie action."
+    },
+    {
+      "id": 69,
+      "front": "Co tworzy <input type=\"email\">?",
+      "back": "Pole do wprowadzania adresu e-mail z wbudowaną walidacją formatu. Na urządzeniach mobilnych wyświetla klawiaturę z @."
+    },
+    {
+      "id": 70,
+      "front": "Co tworzy <input type=\"number\">?",
+      "back": "Pole do wprowadzania liczb z przyciskami zwiększania/zmniejszania. Atrybuty min, max, step kontrolują dozwolony zakres i krok."
+    },
+    {
+      "id": 71,
+      "front": "Co tworzy <input type=\"date\">?",
+      "back": "Pole wyboru daty z natywnym selektorem kalendarza przeglądarki. Format zależy od ustawień regionalnych użytkownika."
+    },
+    {
+      "id": 72,
+      "front": "Co tworzy <input type=\"file\">?",
+      "back": "Pole do przesyłania plików. Atrybut accept określa dozwolone typy plików, multiple pozwala na wybór wielu plików."
+    },
+    {
+      "id": 73,
+      "front": "Co tworzy <input type=\"hidden\">?",
+      "back": "Ukryte pole formularza niewidoczne dla użytkownika. Służy do przesyłania dodatkowych danych (np. tokenów, identyfikatorów)."
+    },
+    {
+      "id": 74,
+      "front": "Do czego służy element <select>?",
+      "back": "Tworzy listę rozwijaną (dropdown). Poszczególne opcje definiuje się elementami <option> wewnątrz <select>."
+    },
+    {
+      "id": 75,
+      "front": "Do czego służy element <option>?",
+      "back": "Definiuje pojedynczą opcję w liście <select>. Atrybut value określa wartość wysyłaną do serwera, treść elementu to tekst widoczny dla użytkownika."
+    },
+    {
+      "id": 76,
+      "front": "Do czego służy element <optgroup>?",
+      "back": "Grupuje powiązane opcje w liście <select>. Atrybut label określa nazwę grupy wyświetlaną jako nagłówek (nie można jej wybrać)."
+    },
+    {
+      "id": 77,
+      "front": "Do czego służy element <textarea>?",
+      "back": "Tworzy wieloliniowe pole tekstowe. Atrybuty rows i cols określają domyślną liczbę wierszy i kolumn."
+    },
+    {
+      "id": 78,
+      "front": "Do czego służy element <label>?",
+      "back": "Powiązuje tekstowy opis z polem formularza. Kliknięcie etykiety aktywuje powiązane pole, poprawiając użyteczność i dostępność."
+    },
+    {
+      "id": 79,
+      "front": "Jak powiązać <label> z polem formularza?",
+      "back": "Dwa sposoby: 1) Atrybut for w <label> odpowiadający id pola, 2) Umieszczenie pola wewnątrz elementu <label>."
+    },
+    {
+      "id": 80,
+      "front": "Do czego służy element <fieldset>?",
+      "back": "Grupuje powiązane pola formularza wizualnie (ramką). Element <legend> definiuje tytuł/opis grupy."
+    },
+    {
+      "id": 81,
+      "front": "Do czego służy atrybut placeholder?",
+      "back": "Wyświetla tekst podpowiedzi w polu formularza, który znika po rozpoczęciu wpisywania. Nie zastępuje <label>."
+    },
+    {
+      "id": 82,
+      "front": "Do czego służy atrybut required?",
+      "back": "Oznacza pole jako wymagane - formularz nie zostanie wysłany bez wypełnienia tego pola. Przeglądarka wyświetli komunikat błędu."
+    },
+    {
+      "id": 83,
+      "front": "Do czego służy atrybut disabled?",
+      "back": "Wyłącza pole formularza - jest nieaktywne, nie można go edytować i jego wartość nie jest wysyłana z formularzem."
+    },
+    {
+      "id": 84,
+      "front": "Do czego służy atrybut readonly?",
+      "back": "Pole tylko do odczytu - użytkownik nie może go edytować, ale wartość jest wysyłana z formularzem (w przeciwieństwie do disabled)."
+    },
+    {
+      "id": 85,
+      "front": "Do czego służy semantyczny znacznik <header>?",
+      "back": "Definiuje nagłówek strony lub sekcji - zazwyczaj zawiera logo, tytuł, nawigację. Nie mylić z <head> (metadane dokumentu)."
+    },
+    {
+      "id": 86,
+      "front": "Do czego służy semantyczny znacznik <nav>?",
+      "back": "Oznacza sekcję nawigacyjną zawierającą główne linki do innych części witryny. Pomaga czytnikom ekranowym w nawigacji."
+    },
+    {
+      "id": 87,
+      "front": "Do czego służy semantyczny znacznik <main>?",
+      "back": "Zawiera główną, unikalną treść dokumentu. Powinien występować tylko raz na stronie i nie być zagnieżdżany w innych elementach semantycznych."
+    },
+    {
+      "id": 88,
+      "front": "Do czego służy semantyczny znacznik <article>?",
+      "back": "Oznacza samodzielny, kompletny fragment treści, który może być niezależnie dystrybuowany (np. wpis blogowy, artykuł prasowy, komentarz)."
+    },
+    {
+      "id": 89,
+      "front": "Do czego służy semantyczny znacznik <section>?",
+      "back": "Grupuje powiązane tematycznie treści, zwykle z własnym nagłówkiem. Jest częścią większej całości, w przeciwieństwie do samodzielnego <article>."
+    },
+    {
+      "id": 90,
+      "front": "Do czego służy semantyczny znacznik <aside>?",
+      "back": "Definiuje treść poboczną, luźno powiązaną z główną treścią - panele boczne, reklamy, powiązane linki, cytaty."
+    },
+    {
+      "id": 91,
+      "front": "Do czego służy semantyczny znacznik <footer>?",
+      "back": "Definiuje stopkę strony lub sekcji - zazwyczaj zawiera informacje o autorze, prawa autorskie, linki kontaktowe, mapę witryny."
+    },
+    {
+      "id": 92,
+      "front": "Jaka jest różnica między <div> a znacznikami semantycznymi?",
+      "back": "<div> jest neutralnym kontenerem bez znaczenia semantycznego. Znaczniki jak <nav>, <article>, <section> informują o rodzaju treści, pomagając przeglądarkom i czytnikom ekranowym."
+    },
+    {
+      "id": 93,
+      "front": "Do czego służy element <figure>?",
+      "back": "Grupuje samodzielną treść ilustracyjną (obrazy, diagramy, wykresy, fragmenty kodu) wraz z opcjonalnym podpisem <figcaption>."
+    },
+    {
+      "id": 94,
+      "front": "Do czego służy element <figcaption>?",
+      "back": "Definiuje podpis dla treści w elemencie <figure>. Może być pierwszym lub ostatnim elementem wewnątrz <figure>."
+    },
+    {
+      "id": 95,
+      "front": "Do czego służy element <mark>?",
+      "back": "Oznacza tekst wyróżniony ze względu na jego znaczenie w bieżącym kontekście (np. wyniki wyszukiwania). Domyślnie ma żółte tło."
+    },
+    {
+      "id": 96,
+      "front": "Do czego służy element <time>?",
+      "back": "Semantycznie oznacza daty, godziny lub przedziały czasowe. Atrybut datetime zawiera format zrozumiały dla maszyn (np. datetime=\"2024-01-15\")."
+    },
+    {
+      "id": 97,
+      "front": "Do czego służy element <progress>?",
+      "back": "Reprezentuje postęp wykonania zadania (np. pobierania pliku). Atrybuty value i max określają aktualną i maksymalną wartość."
+    },
+    {
+      "id": 98,
+      "front": "Jaka jest różnica między <progress> a <meter>?",
+      "back": "<progress> pokazuje postęp zadania (dynamiczny, np. pobieranie). <meter> mierzy wartość w określonym zakresie (statyczny, np. poziom baterii, ocena)."
+    },
+    {
+      "id": 99,
+      "front": "Do czego służy element <details> i <summary>?",
+      "back": "<details> tworzy rozwijalny widget z ukrytą treścią. <summary> definiuje widoczny nagłówek - po kliknięciu rozwija się ukryta treść."
+    },
+    {
+      "id": 100,
+      "front": "Do czego służy element <abbr>?",
+      "back": "Oznacza skrót lub akronim. Atrybut title może zawierać pełne rozwinięcie, wyświetlane jako tooltip po najechaniu kursorem."
+    }
+  ]
+}

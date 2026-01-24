@@ -1,0 +1,507 @@
+{
+  "title": "React - Kompleksowy przewodnik (rozszerzony)",
+  "description": "Obszerny zestaw 100 fiszek do nauki React: podstawy biblioteki, JSX, komponenty, props, hooks (useState, useEffect), formularze, pobieranie danych z API, localStorage, Context API i najlepsze praktyki.",
+  "category": "Frontend / React",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest React?",
+      "back": "Biblioteka JavaScript do tworzenia interfejsów użytkownika, stworzona przez Facebook (Meta). Wykorzystuje podejście komponentowe i jest przeznaczona głównie do budowania aplikacji Single Page Application (SPA)."
+    },
+    {
+      "id": 2,
+      "front": "Co oznacza skrót SPA?",
+      "back": "Single Page Application - aplikacja jednostronicowa, gdzie nawigacja odbywa się dynamicznie bez przeładowywania całej strony. React Router obsługuje routing po stronie klienta."
+    },
+    {
+      "id": 3,
+      "front": "Co to jest Virtual DOM?",
+      "back": "Lekka reprezentacja rzeczywistego DOM przechowywana w pamięci. React porównuje Virtual DOM z poprzednią wersją (algorytm reconciliation) i wprowadza tylko minimalne niezbędne zmiany do prawdziwego DOM, co zwiększa wydajność."
+    },
+    {
+      "id": 4,
+      "front": "Co to jest reconciliation?",
+      "back": "Algorytm React porównujący nowy Virtual DOM z poprzednią wersją w celu określenia minimalnego zestawu zmian potrzebnych do aktualizacji rzeczywistego DOM."
+    },
+    {
+      "id": 5,
+      "front": "Czym różni się biblioteka od frameworka?",
+      "back": "Biblioteka (jak React) to narzędzie które wywołujesz - ty kontrolujesz przepływ. Framework (jak Angular) narzuca strukturę i sam wywołuje twój kod - on kontroluje przepływ (Inversion of Control)."
+    },
+    {
+      "id": 6,
+      "front": "Co to jest JSX?",
+      "back": "JavaScript XML - rozszerzenie składni JavaScript umożliwiające pisanie kodu przypominającego HTML w plikach JavaScript. JSX jest kompilowany do standardowych wywołań funkcji React.createElement()."
+    },
+    {
+      "id": 7,
+      "front": "Jak osadzić wyrażenie JavaScript w JSX?",
+      "back": "Używając pojedynczych nawiasów klamrowych: {wyrażenie}. Można osadzać zmienne, wyniki obliczeń, wywołania funkcji. Przykład: <p>Suma: {2 + 2}</p>"
+    },
+    {
+      "id": 8,
+      "front": "Jakie są główne różnice między JSX a HTML?",
+      "back": "class → className, onclick → onClick, style jako obiekt JS {{ }}, samozamykające tagi wymagają /, każdy komponent musi zwracać jeden element nadrzędny (lub fragment <>)."
+    },
+    {
+      "id": 9,
+      "front": "Jak zapisać styl inline w JSX?",
+      "back": "Jako obiekt JavaScript w podwójnych klamrach: style={{ color: 'red', fontSize: '16px' }}. Właściwości CSS zapisuje się w camelCase."
+    },
+    {
+      "id": 10,
+      "front": "Co to jest fragment w React?",
+      "back": "Pusty wrapper (<></> lub <React.Fragment>) pozwalający zwrócić wiele elementów bez tworzenia dodatkowego węzła w DOM. Przydatny gdy nie chcemy dodatkowego diva."
+    },
+    {
+      "id": 11,
+      "front": "Dlaczego Vite jest zalecany do tworzenia projektów React?",
+      "back": "Vite oferuje błyskawiczny start serwera deweloperskiego (natywne ES modules), Hot Module Replacement (HMR) oraz zoptymalizowaną kompilację produkcyjną. Jest znacznie szybszy niż Create React App."
+    },
+    {
+      "id": 12,
+      "front": "Jak utworzyć nowy projekt React z Vite?",
+      "back": "npm create vite@latest nazwa-projektu, wybrać React i wariant JS/TS, następnie cd nazwa-projektu, npm install, npm run dev."
+    },
+    {
+      "id": 13,
+      "front": "Jaka jest struktura folderów projektu Vite z React?",
+      "back": "node_modules/ (zależności), public/ (zasoby statyczne), src/ (kod źródłowy z App.jsx, main.jsx), index.html (punkt wejścia), package.json, vite.config.js."
+    },
+    {
+      "id": 14,
+      "front": "Co to jest Hot Module Replacement (HMR)?",
+      "back": "Funkcja pozwalająca aktualizować kod w przeglądarce bez pełnego przeładowania strony. Zachowuje stan aplikacji podczas developmentu, przyspieszając cykl rozwoju."
+    },
+    {
+      "id": 15,
+      "front": "Co to jest komponent funkcyjny?",
+      "back": "Funkcja JavaScript (zwykła lub strzałkowa) która przyjmuje props jako argument i zwraca elementy JSX. Współcześnie preferowany sposób definiowania komponentów w React."
+    },
+    {
+      "id": 16,
+      "front": "Jaka jest konwencja nazewnictwa komponentów React?",
+      "back": "PascalCase - wielka litera na początku każdego słowa: UserCard, HomePage, NavigationMenu. Pozwala React odróżnić komponenty od zwykłych elementów HTML."
+    },
+    {
+      "id": 17,
+      "front": "Jak wyeksportować komponent domyślnie?",
+      "back": "export default function Component() { } lub export default Component na końcu pliku. Import: import Component from './Component'."
+    },
+    {
+      "id": 18,
+      "front": "Jak wyeksportować komponent jako named export?",
+      "back": "export function Component() { } lub export { Component }. Import: import { Component } from './Component'."
+    },
+    {
+      "id": 19,
+      "front": "Co to jest kompozycja komponentów?",
+      "back": "Wzorzec budowania złożonych interfejsów poprzez zagnieżdżanie mniejszych, reużywalnych komponentów. Promuje modularność, reużywalność i łatwość utrzymania kodu."
+    },
+    {
+      "id": 20,
+      "front": "Co oznacza zasada Single Responsibility Principle dla komponentów?",
+      "back": "Każdy komponent powinien mieć jedną, jasno określoną odpowiedzialność. Ułatwia testowanie, debugowanie i ponowne wykorzystanie komponentów."
+    },
+    {
+      "id": 21,
+      "front": "Co to są props w React?",
+      "back": "Properties - mechanizm przekazywania danych z komponentu rodzica do dziecka. Props są tylko do odczytu (immutable) i realizują jednokierunkowy przepływ danych (unidirectional data flow)."
+    },
+    {
+      "id": 22,
+      "front": "Co oznacza 'unidirectional data flow'?",
+      "back": "Jednokierunkowy przepływ danych - dane przekazywane są tylko z komponentu rodzica do dziecka przez props. Dziecko nie może bezpośrednio modyfikować danych rodzica."
+    },
+    {
+      "id": 23,
+      "front": "Jak przekazać props do komponentu?",
+      "back": "Jako atrybuty JSX: <UserCard name=\"Jan\" age={25} isActive={true} />. Stringi w cudzysłowach, inne wartości w klamrach."
+    },
+    {
+      "id": 24,
+      "front": "Co to jest destrukturyzacja props?",
+      "back": "Technika wyodrębniania wartości props bezpośrednio w parametrze funkcji: function User({ name, age }) zamiast function User(props). Zwiększa czytelność kodu."
+    },
+    {
+      "id": 25,
+      "front": "Jak ustawić wartość domyślną dla props?",
+      "back": "W destrukturyzacji: function Button({ text = 'Kliknij' }) lub przez Component.defaultProps = { text: 'Kliknij' }."
+    },
+    {
+      "id": 26,
+      "front": "Co to jest children prop?",
+      "back": "Specjalny prop zawierający wszystko, co znajduje się między otwierającym a zamykającym tagiem komponentu. Przydatny dla komponentów opakowujących (karty, modale, layouty)."
+    },
+    {
+      "id": 27,
+      "front": "Jak użyć children prop?",
+      "back": "function Card({ children }) { return <div className=\"card\">{children}</div>; } Użycie: <Card><h1>Tytuł</h1><p>Treść</p></Card>"
+    },
+    {
+      "id": 28,
+      "front": "Co to jest prop drilling?",
+      "back": "Anty-wzorzec polegający na przekazywaniu props przez wiele poziomów komponentów, mimo że pośrednie komponenty ich nie używają. Prowadzi do trudnego w utrzymaniu kodu."
+    },
+    {
+      "id": 29,
+      "front": "Jak rozwiązać problem prop drilling?",
+      "back": "Użyć Context API (wbudowane w React) lub bibliotek zarządzania stanem (Redux, Zustand, Jotai). Pozwalają udostępnić dane bez przekazywania przez każdy poziom."
+    },
+    {
+      "id": 30,
+      "front": "Jak przekazać obiekt jako props?",
+      "back": "W podwójnych klamrach: <User data={{ name: 'Jan', age: 25 }} />. Zewnętrzne klamry to składnia JSX, wewnętrzne to literał obiektu."
+    },
+    {
+      "id": 31,
+      "front": "Jak przekazać wszystkie props do komponentu dziecka?",
+      "back": "Używając spread operator: <Child {...props} />. Przekazuje wszystkie właściwości obiektu props jako osobne atrybuty."
+    },
+    {
+      "id": 32,
+      "front": "Co zwraca hook useState?",
+      "back": "Tablicę dwuelementową: [aktualna wartość stanu, funkcja setter]. Konwencja: const [count, setCount] = useState(0)."
+    },
+    {
+      "id": 33,
+      "front": "Jak zaimportować hook useState?",
+      "back": "import { useState } from 'react'; - jako named import z pakietu react."
+    },
+    {
+      "id": 34,
+      "front": "Jakie typy wartości można przekazać do useState?",
+      "back": "Dowolne: liczby, stringi, booleany, tablice, obiekty, null. Przykłady: useState(0), useState(''), useState(true), useState([]), useState({})."
+    },
+    {
+      "id": 35,
+      "front": "Co robi funkcja setter z useState?",
+      "back": "Aktualizuje wartość stanu i wyzwala ponowne renderowanie komponentu. React planuje aktualizację, która wykona się przed następnym renderem."
+    },
+    {
+      "id": 36,
+      "front": "Dlaczego aktualizacja stanu jest asynchroniczna?",
+      "back": "React grupuje (batching) wiele aktualizacji stanu w jednym cyklu renderowania dla lepszej wydajności. Dlatego odczyt stanu zaraz po setterze zwróci starą wartość."
+    },
+    {
+      "id": 37,
+      "front": "Co to jest lazy initialization w useState?",
+      "back": "Przekazanie funkcji zamiast wartości: useState(() => expensiveCalculation()). Funkcja wykonuje się tylko przy pierwszym renderowaniu, optymalizując wydajność."
+    },
+    {
+      "id": 38,
+      "front": "Kiedy używać lazy initialization?",
+      "back": "Gdy wartość początkowa wymaga kosztownych obliczeń, odczytu z localStorage, lub innych operacji które nie powinny wykonywać się przy każdym renderze."
+    },
+    {
+      "id": 39,
+      "front": "Jak użyć funkcji aktualizującej w setterze?",
+      "back": "setCount(prev => prev + 1) - funkcja otrzymuje poprzedni stan jako argument. Gwarantuje poprawność przy wielu aktualizacjach w jednym cyklu."
+    },
+    {
+      "id": 40,
+      "front": "Kiedy używać funkcji aktualizującej zamiast wartości?",
+      "back": "Gdy nowa wartość zależy od poprzedniej: setCount(prev => prev + 1) zamiast setCount(count + 1). Szczególnie ważne przy wielokrotnych aktualizacjach."
+    },
+    {
+      "id": 41,
+      "front": "Dlaczego nie należy mutować stanu bezpośrednio?",
+      "back": "React porównuje referencje obiektów. Mutacja nie zmienia referencji, więc React nie wykrywa zmiany i nie renderuje ponownie. Zawsze twórz nowe obiekty/tablice."
+    },
+    {
+      "id": 42,
+      "front": "Jak zaktualizować obiekt w stanie?",
+      "back": "Używając spread operator: setUser({ ...user, name: 'Nowy' }). Tworzy nowy obiekt z kopiami właściwości i nadpisaną wartością."
+    },
+    {
+      "id": 43,
+      "front": "Jak zaktualizować zagnieżdżony obiekt w stanie?",
+      "back": "Spread na każdym poziomie: setUser({ ...user, address: { ...user.address, city: 'Warszawa' } }). Każdy poziom musi być nowym obiektem."
+    },
+    {
+      "id": 44,
+      "front": "Jak dodać element do tablicy w stanie?",
+      "back": "setItems([...items, newItem]) - na końcu, lub setItems([newItem, ...items]) - na początku. Spread tworzy nową tablicę."
+    },
+    {
+      "id": 45,
+      "front": "Jak usunąć element z tablicy w stanie?",
+      "back": "setItems(items.filter(item => item.id !== idToRemove)). filter() zwraca nową tablicę bez elementów spełniających warunek."
+    },
+    {
+      "id": 46,
+      "front": "Jak zaktualizować element w tablicy w stanie?",
+      "back": "setItems(items.map(item => item.id === id ? { ...item, name: 'Nowy' } : item)). map() zwraca nową tablicę z przekształconymi elementami."
+    },
+    {
+      "id": 47,
+      "front": "Które metody tablicowe NIE mutują oryginału?",
+      "back": "map(), filter(), slice(), concat(), spread [...arr] - zwracają nowe tablice. MUTUJĄ: push(), pop(), splice(), sort(), reverse()."
+    },
+    {
+      "id": 48,
+      "front": "Co to są efekty uboczne (side effects)?",
+      "back": "Operacje wykraczające poza renderowanie UI: pobieranie danych z API, zapis do localStorage, subskrypcje, modyfikacja document.title, timery, manipulacja DOM."
+    },
+    {
+      "id": 49,
+      "front": "Który hook służy do obsługi efektów ubocznych?",
+      "back": "useEffect - wykonuje kod po renderowaniu komponentu. Przyjmuje funkcję efektu i opcjonalną tablicę zależności."
+    },
+    {
+      "id": 50,
+      "front": "Jaka jest składnia useEffect?",
+      "back": "useEffect(() => { /* efekt */ return () => { /* cleanup */ }; }, [dependencies]); Funkcja efektu, opcjonalny cleanup, tablica zależności."
+    },
+    {
+      "id": 51,
+      "front": "Co oznacza pusta tablica zależności [] w useEffect?",
+      "back": "Efekt wykona się tylko raz - przy pierwszym zamontowaniu komponentu (mounting). Odpowiednik componentDidMount w komponentach klasowych."
+    },
+    {
+      "id": 52,
+      "front": "Co oznacza tablica z wartościami [value] w useEffect?",
+      "back": "Efekt wykona się przy montowaniu oraz przy każdej zmianie wartości w tablicy. React porównuje wartości między renderami."
+    },
+    {
+      "id": 53,
+      "front": "Co się stanie gdy pominiesz tablicę zależności w useEffect?",
+      "back": "Efekt wykona się po KAŻDYM renderowaniu komponentu. Rzadko pożądane - może powodować problemy z wydajnością i nieskończone pętle."
+    },
+    {
+      "id": 54,
+      "front": "Co to jest funkcja czyszcząca (cleanup) w useEffect?",
+      "back": "Funkcja zwracana z useEffect: return () => { cleanup }. Wykonuje się przed następnym efektem i przy odmontowywaniu. Służy do sprzątania: anulowania subskrypcji, timerów, zapytań."
+    },
+    {
+      "id": 55,
+      "front": "Kiedy wykonuje się cleanup function?",
+      "back": "1) Przed każdym kolejnym wykonaniem efektu (gdy zależności się zmienią), 2) Przy odmontowywaniu komponentu (unmounting)."
+    },
+    {
+      "id": 56,
+      "front": "Do czego służy AbortController?",
+      "back": "Pozwala anulować zapytania fetch. Tworzy się controller, przekazuje signal do fetch, wywołuje abort() w cleanup. Zapobiega aktualizacji stanu odmontowanego komponentu."
+    },
+    {
+      "id": 57,
+      "front": "Jak użyć AbortController w useEffect?",
+      "back": "const controller = new AbortController(); fetch(url, { signal: controller.signal }); return () => controller.abort(); - anuluje zapytanie przy cleanup."
+    },
+    {
+      "id": 58,
+      "front": "Dlaczego funkcja w useEffect nie może być async?",
+      "back": "useEffect oczekuje funkcji zwracającej cleanup (funkcję) lub undefined. Funkcja async zwraca Promise. Rozwiązanie: zdefiniuj wewnętrzną async funkcję i wywołaj ją."
+    },
+    {
+      "id": 59,
+      "front": "Jak wykonać async operację w useEffect?",
+      "back": "useEffect(() => { const fetchData = async () => { const data = await fetch(url); }; fetchData(); }, []); - wewnętrzna funkcja async."
+    },
+    {
+      "id": 60,
+      "front": "Jak obsłużyć stany loading i error przy fetch?",
+      "back": "Trzy zmienne stanu: data, loading (boolean), error. Przed fetch: setLoading(true). W catch: setError(). W finally: setLoading(false). Renderowanie warunkowe."
+    },
+    {
+      "id": 61,
+      "front": "Co to jest kontrolowany komponent (controlled component)?",
+      "back": "Element formularza którego wartość jest w pełni kontrolowana przez stan React. Atrybut value powiązany ze stanem, onChange aktualizuje stan. React jest 'single source of truth'."
+    },
+    {
+      "id": 62,
+      "front": "Jak stworzyć kontrolowany input tekstowy?",
+      "back": "const [value, setValue] = useState(''); <input value={value} onChange={(e) => setValue(e.target.value)} />"
+    },
+    {
+      "id": 63,
+      "front": "Co zwraca e.target.value?",
+      "back": "Aktualną wartość elementu formularza który wywołał zdarzenie. Dla input/textarea to wpisany tekst, dla select to wybrana opcja."
+    },
+    {
+      "id": 64,
+      "front": "Jak obsłużyć checkbox w React?",
+      "back": "Używając checked (nie value) i e.target.checked: <input type=\"checkbox\" checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} />"
+    },
+    {
+      "id": 65,
+      "front": "Jak obsłużyć radio buttons w React?",
+      "back": "<input type=\"radio\" value=\"opcja1\" checked={selected === 'opcja1'} onChange={() => setSelected('opcja1')} /> - checked porównuje z aktualnym stanem."
+    },
+    {
+      "id": 66,
+      "front": "Jak obsłużyć select w React?",
+      "back": "<select value={selected} onChange={(e) => setSelected(e.target.value)}><option value=\"a\">A</option></select> - value na select, nie na option."
+    },
+    {
+      "id": 67,
+      "front": "Co oznacza 'single source of truth' w formularzach?",
+      "back": "Stan React jest jedynym źródłem wartości pól formularza. Nie ma rozbieżności między tym co widzi użytkownik a tym co przechowuje aplikacja."
+    },
+    {
+      "id": 68,
+      "front": "Jak obsłużyć submit formularza w React?",
+      "back": "<form onSubmit={handleSubmit}> gdzie handleSubmit = (e) => { e.preventDefault(); // logika }. preventDefault() zapobiega przeładowaniu strony."
+    },
+    {
+      "id": 69,
+      "front": "Co robi e.preventDefault()?",
+      "back": "Blokuje domyślne zachowanie przeglądarki - przy formularzu zapobiega przeładowaniu strony, przy linku zapobiega nawigacji."
+    },
+    {
+      "id": 70,
+      "front": "Co to jest lifting state up?",
+      "back": "Technika przenoszenia stanu do najbliższego wspólnego przodka komponentów które go potrzebują. Rodzic przechowuje stan i przekazuje go potomkom przez props."
+    },
+    {
+      "id": 71,
+      "front": "Kiedy stosować lifting state up?",
+      "back": "Gdy kilka komponentów potrzebuje dostępu do tych samych danych lub musi reagować na te same zmiany. Stan przenosi się do wspólnego rodzica."
+    },
+    {
+      "id": 72,
+      "front": "Jak przekazać funkcję callback z rodzica do dziecka?",
+      "back": "Przez props: <Child onAction={handleAction} />. Dziecko wywołuje props.onAction() gdy chce zakomunikować zmianę rodzicowi."
+    },
+    {
+      "id": 73,
+      "front": "Jak dziecko komunikuje się z rodzicem w React?",
+      "back": "Przez wywołanie funkcji callback otrzymanej w props. Rodzic przekazuje funkcję, dziecko ją wywołuje z danymi: onAdd(newItem)."
+    },
+    {
+      "id": 74,
+      "front": "Jak zapisać dane do localStorage?",
+      "back": "localStorage.setItem('key', JSON.stringify(value)). localStorage przechowuje tylko stringi, więc obiekty/tablice trzeba serializować."
+    },
+    {
+      "id": 75,
+      "front": "Jak odczytać dane z localStorage?",
+      "back": "const data = JSON.parse(localStorage.getItem('key')). Pamiętaj o obsłudze null gdy klucz nie istnieje."
+    },
+    {
+      "id": 76,
+      "front": "Jak usunąć dane z localStorage?",
+      "back": "localStorage.removeItem('key') - usuwa jeden klucz. localStorage.clear() - usuwa wszystkie dane."
+    },
+    {
+      "id": 77,
+      "front": "Jak zsynchronizować stan z localStorage?",
+      "back": "Odczyt: lazy init w useState. Zapis: useEffect z zależnością od stanu. useEffect(() => { localStorage.setItem('key', JSON.stringify(state)); }, [state]);"
+    },
+    {
+      "id": 78,
+      "front": "Dlaczego używać lazy initialization przy localStorage?",
+      "back": "1) Odczyt wykonuje się tylko raz (optymalizacja), 2) Zapobiega problemom z SSR gdzie window/localStorage nie istnieją, 3) Unika błędów hydration."
+    },
+    {
+      "id": 79,
+      "front": "Dlaczego używać try-catch przy localStorage?",
+      "back": "localStorage może być niedostępne (SSR, tryb prywatny), JSON.parse może rzucić wyjątek dla niepoprawnych danych. Try-catch zapewnia graceful fallback."
+    },
+    {
+      "id": 80,
+      "front": "Co to jest custom hook?",
+      "back": "Funkcja JavaScript zaczynająca się od 'use' która może używać innych hooków. Enkapsuluje reużywalną logikę stanową. Np. useLocalStorage, useFetch."
+    },
+    {
+      "id": 81,
+      "front": "Jakie są zasady tworzenia custom hooków?",
+      "back": "1) Nazwa zaczyna się od 'use', 2) Może używać innych hooków, 3) Może zwracać cokolwiek (wartość, tablicę, obiekt), 4) Przestrzega zasad hooków."
+    },
+    {
+      "id": 82,
+      "front": "Co to jest Context API?",
+      "back": "Wbudowany w React mechanizm do udostępniania danych wszystkim komponentom potomnym bez jawnego przekazywania przez każdy poziom (rozwiązuje prop drilling)."
+    },
+    {
+      "id": 83,
+      "front": "Jak utworzyć Context?",
+      "back": "const MyContext = React.createContext(defaultValue); - tworzy obiekt Context z opcjonalną wartością domyślną."
+    },
+    {
+      "id": 84,
+      "front": "Co to jest Provider w Context API?",
+      "back": "Komponent dostarczający wartość Context potomkom: <MyContext.Provider value={data}>{children}</MyContext.Provider>. Wszystkie dzieci mają dostęp do value."
+    },
+    {
+      "id": 85,
+      "front": "Jak konsumować Context w komponencie funkcyjnym?",
+      "back": "const value = useContext(MyContext); - hook zwraca aktualną wartość najbliższego Provider w drzewie."
+    },
+    {
+      "id": 86,
+      "front": "Do czego służy hook useRef?",
+      "back": "Przechowuje mutowalną wartość w .current która: 1) przetrwa rerendery, 2) NIE powoduje rerenderów przy zmianie. Używany do referencji DOM i przechowywania wartości."
+    },
+    {
+      "id": 87,
+      "front": "Jak uzyskać referencję do elementu DOM?",
+      "back": "const ref = useRef(null); <div ref={ref}>. Dostęp przez ref.current który będzie elementem DOM po zamontowaniu."
+    },
+    {
+      "id": 88,
+      "front": "Kiedy używać useRef zamiast useState?",
+      "back": "Gdy zmiana wartości NIE powinna powodować rerenderu: timer ID, poprzednia wartość, referencje DOM, wartości używane tylko w efektach."
+    },
+    {
+      "id": 89,
+      "front": "Co to jest useReducer?",
+      "back": "Alternatywa dla useState do zarządzania złożonym stanem. Przyjmuje reducer(state, action) => newState i initialState. Zwraca [state, dispatch]."
+    },
+    {
+      "id": 90,
+      "front": "Kiedy używać useReducer zamiast useState?",
+      "back": "Gdy stan ma wiele powiązanych wartości, logika aktualizacji jest złożona, lub następny stan zależy od poprzedniego w skomplikowany sposób."
+    },
+    {
+      "id": 91,
+      "front": "Do czego służy useMemo?",
+      "back": "Zapamiętuje wynik kosztownych obliczeń: const memoized = useMemo(() => expensiveCalc(a, b), [a, b]). Przelicza tylko gdy zależności się zmienią."
+    },
+    {
+      "id": 92,
+      "front": "Do czego służy useCallback?",
+      "back": "Zapamiętuje referencję funkcji: const memoizedFn = useCallback(() => doSomething(a), [a]). Przydatne gdy funkcja jest przekazywana do zoptymalizowanych komponentów."
+    },
+    {
+      "id": 93,
+      "front": "Jak renderować listę elementów w React?",
+      "back": "Używając map(): {items.map(item => <li key={item.id}>{item.name}</li>)}. Każdy element musi mieć unikalny atrybut key."
+    },
+    {
+      "id": 94,
+      "front": "Do czego służy atrybut key przy listach?",
+      "back": "Pomaga React identyfikować które elementy się zmieniły, zostały dodane lub usunięte. Optymalizuje renderowanie i zachowuje stan komponentów."
+    },
+    {
+      "id": 95,
+      "front": "Dlaczego index jako key jest problematyczny?",
+      "back": "Gdy kolejność elementów się zmienia, React może błędnie zachować stan komponentów. Używaj unikalnych ID z danych zamiast indeksów."
+    },
+    {
+      "id": 96,
+      "front": "Jak warunkowo renderować komponent?",
+      "back": "Operator &&: {isLoggedIn && <Dashboard />} lub ternary: {isLoggedIn ? <Dashboard /> : <Login />}. Można też return null w komponencie."
+    },
+    {
+      "id": 97,
+      "front": "Co to jest mounting i unmounting?",
+      "back": "Mounting: pierwsze renderowanie i wstawienie komponentu do DOM. Unmounting: usunięcie komponentu z DOM. useEffect z [] uruchamia się przy mount, cleanup przy unmount."
+    },
+    {
+      "id": 98,
+      "front": "Co to jest React.StrictMode?",
+      "back": "Komponent pomocniczy wykrywający potencjalne problemy. W dev mode wywołuje niektóre funkcje dwukrotnie (efekty, rendery) aby wykryć side effects."
+    },
+    {
+      "id": 99,
+      "front": "Czym jest React Router?",
+      "back": "Zewnętrzna biblioteka do nawigacji w aplikacjach React SPA. Umożliwia routing po stronie klienta bez przeładowania strony. Komponenty: BrowserRouter, Routes, Route, Link."
+    },
+    {
+      "id": 100,
+      "front": "Jakie są best practices w React?",
+      "back": "1) Komponenty funkcyjne z hookami, 2) Niemutowalność stanu, 3) Funkcja aktualizująca dla prev state, 4) Cleanup w useEffect, 5) Lifting state up zamiast prop drilling, 6) Lazy initialization dla localStorage."
+    }
+  ]
+}
