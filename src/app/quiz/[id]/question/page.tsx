@@ -11,10 +11,12 @@ export default function QuizQuestionPage() {
   const router = useRouter();
   const {
     quiz,
+    activeQuiz,
     quizState,
     selectedAnswer,
     timeElapsed,
     loadQuiz,
+    startQuiz,
     setSelectedSubject,
     handleAnswerSelect,
     handleConfirmAnswer,
@@ -31,7 +33,7 @@ export default function QuizQuestionPage() {
     setSelectedSubject(subject);
   }, [subject, setSelectedSubject]);
 
-  // Load quiz if not already loaded
+  // Load quiz if not already loaded, and start if activeQuiz is not set
   useEffect(() => {
     const fetchQuiz = async () => {
       if (!quiz) {
@@ -50,12 +52,19 @@ export default function QuizQuestionPage() {
     fetchQuiz();
   }, [quiz, quizId, loadQuiz, router]);
 
+  // Start quiz if loaded but activeQuiz is not set (direct navigation)
+  useEffect(() => {
+    if (quiz && !activeQuiz && !isLoading) {
+      startQuiz();
+    }
+  }, [quiz, activeQuiz, isLoading, startQuiz]);
+
   // Start timer when quiz is ready
   useEffect(() => {
-    if (quiz && quizState && !quizState.isFinished) {
+    if (activeQuiz && quizState && !quizState.isFinished) {
       startTimer();
     }
-  }, [quiz, quizState, startTimer]);
+  }, [activeQuiz, quizState, startTimer]);
 
   const handleNext = () => {
     const isFinished = handleNextQuestion();
@@ -64,7 +73,7 @@ export default function QuizQuestionPage() {
     }
   };
 
-  if (isLoading || !quiz || !quizState) {
+  if (isLoading || !activeQuiz || !quizState) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-gray-800 text-xl">Ładowanie...</div>
@@ -74,7 +83,7 @@ export default function QuizQuestionPage() {
 
   return (
     <QuizQuestionScreen
-      quiz={quiz}
+      quiz={activeQuiz}
       quizState={quizState}
       selectedAnswer={selectedAnswer}
       handleAnswerSelect={handleAnswerSelect}

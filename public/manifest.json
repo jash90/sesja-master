@@ -462,8 +462,45 @@
       "url": "/In%C5%BCynieria%20transportu/quizzes/zapasy_magazynowanie_quiz.json"
     }
   ],
-  "pdfs": [],
-  "generatedAt": "2026-01-24T00:50:58.507Z",
+  "pdfs": [
+    {
+      "id": "React - Kompleksowy przewodnik",
+      "filename": "React - Kompleksowy przewodnik.pdf",
+      "title": "React   Kompleksowy przewodnik",
+      "subject": "Technologie Frontendowe",
+      "size": 4598183,
+      "createdAt": "2026-01-23T23:55:27.877Z",
+      "url": "/Technologie%20Frontendowe/pdfs/React%20-%20Kompleksowy%20przewodnik.pdf"
+    },
+    {
+      "id": "Wprowadzenie do HTML",
+      "filename": "Wprowadzenie do HTML.pdf",
+      "title": "Wprowadzenie do HTML",
+      "subject": "Technologie Frontendowe",
+      "size": 2550554,
+      "createdAt": "2026-01-23T23:54:43.278Z",
+      "url": "/Technologie%20Frontendowe/pdfs/Wprowadzenie%20do%20HTML.pdf"
+    },
+    {
+      "id": "JavaScript - Kompletny Przewodnik",
+      "filename": "JavaScript - Kompletny Przewodnik.pdf",
+      "title": "JavaScript   Kompletny Przewodnik",
+      "subject": "Technologie Frontendowe",
+      "size": 3975458,
+      "createdAt": "2026-01-23T23:52:22.063Z",
+      "url": "/Technologie%20Frontendowe/pdfs/JavaScript%20-%20Kompletny%20Przewodnik.pdf"
+    },
+    {
+      "id": "Kompletny Kurs CSS",
+      "filename": "Kompletny Kurs CSS.pdf",
+      "title": "Kompletny Kurs CSS",
+      "subject": "Technologie Frontendowe",
+      "size": 3808554,
+      "createdAt": "2026-01-17T05:34:38.252Z",
+      "url": "/Technologie%20Frontendowe/pdfs/Kompletny%20Kurs%20CSS.pdf"
+    }
+  ],
+  "generatedAt": "2026-01-24T07:43:41.402Z",
   "subjects": [
     "Technologie Frontendowe",
     "Zarządzanie Strategiczne dla Inżynierów",

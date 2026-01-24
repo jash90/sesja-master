@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams, useSearchParams, useRouter } from 'next/navigation';
 import { useQuiz } from '@/context/QuizContext';
 import { QuizStartScreen } from '@/components/screens/QuizStartScreen';
@@ -9,7 +9,7 @@ export default function QuizStartPage() {
   const params = useParams();
   const searchParams = useSearchParams();
   const router = useRouter();
-  const { quiz, loadQuiz, setSelectedSubject } = useQuiz();
+  const { quiz, loadQuiz, setSelectedSubject, questionLimit, setQuestionLimit, startQuiz } = useQuiz();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -36,6 +36,11 @@ export default function QuizStartPage() {
 
     fetchQuiz();
   }, [quizId, loadQuiz]);
+
+  const handleStartQuiz = useCallback(() => {
+    startQuiz();
+    router.push(`/quiz/${quizId}/question?subject=${encodeURIComponent(subject)}`);
+  }, [startQuiz, router, quizId, subject]);
 
   if (isLoading) {
     return (
@@ -64,7 +69,9 @@ export default function QuizStartPage() {
   return (
     <QuizStartScreen
       quiz={quiz}
-      onStartQuiz={() => router.push(`/quiz/${quizId}/question?subject=${encodeURIComponent(subject)}`)}
+      questionLimit={questionLimit}
+      onQuestionLimitChange={setQuestionLimit}
+      onStartQuiz={handleStartQuiz}
       onGoHome={() => router.push('/')}
     />
   );

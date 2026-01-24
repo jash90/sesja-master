@@ -11,6 +11,11 @@ interface QuizContextType {
   selectedAnswer: number | null;
   timeElapsed: number;
 
+  // Question limit state
+  questionLimit: number | null;
+  setQuestionLimit: (limit: number | null) => void;
+  activeQuiz: Quiz | null; // Quiz with selected questions
+
   // Content state
   currentMaterial: MaterialContent | null;
   currentAudio: AudioMaterial | null;
@@ -23,6 +28,7 @@ interface QuizContextType {
 
   // Quiz actions
   loadQuiz: (quizId: string) => Promise<void>;
+  startQuiz: () => void;
   resetQuiz: () => void;
   handleAnswerSelect: (answerIndex: number) => void;
   handleConfirmAnswer: () => void;
@@ -49,13 +55,24 @@ interface QuizContextType {
 
 const QuizContext = createContext<QuizContextType | undefined>(undefined);
 
+// Helper function to select random questions
+function selectRandomQuestions(questions: Quiz['questions'], limit: number): Quiz['questions'] {
+  if (limit >= questions.length) {
+    return questions;
+  }
+  const shuffled = [...questions].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, limit);
+}
+
 export function QuizProvider({ children }: { children: ReactNode }) {
   // Quiz state
   const [quiz, setQuiz] = useState<Quiz | null>(null);
+  const [activeQuiz, setActiveQuiz] = useState<Quiz | null>(null); // Quiz with selected questions
   const [quizState, setQuizState] = useState<QuizState | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
+  const [questionLimit, setQuestionLimit] = useState<number | null>(null);
 
   // Content state
   const [currentMaterial, setCurrentMaterial] = useState<MaterialContent | null>(null);
@@ -92,55 +109,90 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     setIsTimerRunning(false);
   }, []);
 
-  // Load quiz by ID
+  // Load quiz by ID (does NOT start the quiz, just loads data)
   const loadQuiz = useCallback(async (quizId: string) => {
     try {
       const res = await fetch(`/api/quiz/${quizId}?subject=${encodeURIComponent(selectedSubject)}`);
       if (!res.ok) throw new Error('Failed to load quiz');
       const quizData: Quiz = await res.json();
       setQuiz(quizData);
-      // Initialize quiz state with shuffled answer indices
-      const optionsCount = quizData.questions[0]?.options.length ?? 4;
-      setQuizState({
-        currentQuestion: 0,
-        answers: new Map(),
-        confirmedAnswers: new Set(),
-        isFinished: false,
-        score: 0,
-        shuffledIndices: generateShuffledIndices(quizData.questions.length, optionsCount),
-      });
+      setActiveQuiz(null);
+      setQuizState(null);
       setSelectedAnswer(null);
       setTimeElapsed(0);
+      // Default to all questions
+      setQuestionLimit(quizData.questions.length);
     } catch (error) {
       console.error('Error loading quiz:', error);
       throw error;
     }
   }, [selectedSubject]);
 
-  // Reset quiz state
-  const resetQuiz = useCallback(() => {
+  // Start quiz with selected number of questions
+  const startQuiz = useCallback(() => {
     if (!quiz) return;
-    const optionsCount = quiz.questions[0]?.options.length ?? 4;
+
+    const limit = questionLimit ?? quiz.questions.length;
+    const selectedQuestions = selectRandomQuestions(quiz.questions, limit);
+
+    const quizWithSelectedQuestions: Quiz = {
+      ...quiz,
+      questions: selectedQuestions,
+    };
+
+    setActiveQuiz(quizWithSelectedQuestions);
+
+    // Initialize quiz state with shuffled answer indices
+    const optionsCount = selectedQuestions[0]?.options.length ?? 4;
     setQuizState({
       currentQuestion: 0,
       answers: new Map(),
       confirmedAnswers: new Set(),
       isFinished: false,
       score: 0,
-      shuffledIndices: generateShuffledIndices(quiz.questions.length, optionsCount),
+      shuffledIndices: generateShuffledIndices(selectedQuestions.length, optionsCount),
+    });
+    setSelectedAnswer(null);
+    setTimeElapsed(0);
+  }, [quiz, questionLimit]);
+
+  // Reset quiz state (re-selects questions based on current limit)
+  const resetQuiz = useCallback(() => {
+    if (!quiz) return;
+
+    const limit = questionLimit ?? quiz.questions.length;
+    const selectedQuestions = selectRandomQuestions(quiz.questions, limit);
+
+    const quizWithSelectedQuestions: Quiz = {
+      ...quiz,
+      questions: selectedQuestions,
+    };
+
+    setActiveQuiz(quizWithSelectedQuestions);
+
+    const optionsCount = selectedQuestions[0]?.options.length ?? 4;
+    setQuizState({
+      currentQuestion: 0,
+      answers: new Map(),
+      confirmedAnswers: new Set(),
+      isFinished: false,
+      score: 0,
+      shuffledIndices: generateShuffledIndices(selectedQuestions.length, optionsCount),
     });
     setSelectedAnswer(null);
     setTimeElapsed(0);
     setIsTimerRunning(false);
-  }, [quiz]);
+  }, [quiz, questionLimit]);
 
   // Clear quiz completely
   const clearQuiz = useCallback(() => {
     setQuiz(null);
+    setActiveQuiz(null);
     setQuizState(null);
     setSelectedAnswer(null);
     setTimeElapsed(0);
     setIsTimerRunning(false);
+    setQuestionLimit(null);
   }, []);
 
   // Handle answer selection
@@ -152,13 +204,13 @@ export function QuizProvider({ children }: { children: ReactNode }) {
 
   // Confirm answer
   const handleConfirmAnswer = useCallback(() => {
-    if (!quiz || !quizState || selectedAnswer === null) return;
+    if (!activeQuiz || !quizState || selectedAnswer === null) return;
 
     const questionIndex = quizState.currentQuestion;
     const newAnswers = new Map(quizState.answers);
     newAnswers.set(questionIndex, selectedAnswer);
 
-    const isCorrect = selectedAnswer === quiz.questions[questionIndex].correctAnswer;
+    const isCorrect = selectedAnswer === activeQuiz.questions[questionIndex].correctAnswer;
     const newScore = quizState.score + (isCorrect ? 1 : 0);
 
     const newConfirmed = new Set(quizState.confirmedAnswers);
@@ -170,13 +222,13 @@ export function QuizProvider({ children }: { children: ReactNode }) {
       confirmedAnswers: newConfirmed,
       score: newScore,
     });
-  }, [quiz, quizState, selectedAnswer]);
+  }, [activeQuiz, quizState, selectedAnswer]);
 
   // Move to next question - returns true if quiz finished
   const handleNextQuestion = useCallback((): boolean => {
-    if (!quiz || !quizState) return false;
+    if (!activeQuiz || !quizState) return false;
 
-    if (quizState.currentQuestion < quiz.questions.length - 1) {
+    if (quizState.currentQuestion < activeQuiz.questions.length - 1) {
       const nextQuestionIndex = quizState.currentQuestion + 1;
       setQuizState({
         ...quizState,
@@ -192,11 +244,11 @@ export function QuizProvider({ children }: { children: ReactNode }) {
       setIsTimerRunning(false);
       return true;
     }
-  }, [quiz, quizState]);
+  }, [activeQuiz, quizState]);
 
   // Move to previous question
   const handlePreviousQuestion = useCallback(() => {
-    if (!quiz || !quizState || quizState.currentQuestion === 0) return;
+    if (!activeQuiz || !quizState || quizState.currentQuestion === 0) return;
 
     const prevQuestionIndex = quizState.currentQuestion - 1;
     setQuizState({
@@ -204,7 +256,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
       currentQuestion: prevQuestionIndex,
     });
     setSelectedAnswer(quizState.answers.get(prevQuestionIndex) ?? null);
-  }, [quiz, quizState]);
+  }, [activeQuiz, quizState]);
 
   // Load material by ID
   const loadMaterial = useCallback(async (materialId: string) => {
@@ -269,6 +321,9 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     quizState,
     selectedAnswer,
     timeElapsed,
+    questionLimit,
+    setQuestionLimit,
+    activeQuiz,
     currentMaterial,
     currentAudio,
     currentFlashcardSet,
@@ -276,6 +331,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     selectedSubject,
     setSelectedSubject,
     loadQuiz,
+    startQuiz,
     resetQuiz,
     handleAnswerSelect,
     handleConfirmAnswer,

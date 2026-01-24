@@ -1,0 +1,1293 @@
+{
+  "title": "Wprowadzenie do HTML - Kompleksowy Quiz",
+  "description": "Rozbudowany quiz sprawdzający wiedzę z zakresu HTML, struktury dokumentów, znaczników, formularzy, multimediów i semantyki HTML5. Zawiera 100 pytań o różnym poziomie trudności.",
+  "questions": [
+    {
+      "question": "Co oznacza skrót HTML?",
+      "options": [
+        "HyperText Markup Language",
+        "High Technology Modern Language",
+        "HyperText Machine Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HTML to skrót od HyperText Markup Language, czyli Hipertekstowy Język Znaczników. Jest to język służący do tworzenia struktury stron internetowych."
+    },
+    {
+      "question": "Kto jest twórcą języka HTML?",
+      "options": [
+        "Bill Gates",
+        "Tim Berners-Lee",
+        "Steve Jobs",
+        "Linus Torvalds"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tim Berners-Lee stworzył HTML w 1991 roku. Jest również twórcą protokołu HTTP i koncepcji World Wide Web."
+    },
+    {
+      "question": "W którym roku powstał HTML?",
+      "options": [
+        "1985",
+        "1991",
+        "1995",
+        "2000"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTML został stworzony w 1991 roku przez Tima Bernersa-Lee w CERN. Od tego czasu język przeszedł wiele ewolucji aż do obecnej wersji HTML5."
+    },
+    {
+      "question": "Jaki procent stron internetowych wykorzystuje HTML?",
+      "options": [
+        "Około 50%",
+        "Około 75%",
+        "Ponad 94%",
+        "Dokładnie 100%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ponad 94% wszystkich witryn internetowych wykorzystuje HTML jako podstawę swojej struktury. Jest to fundamentalna technologia webowa."
+    },
+    {
+      "question": "Który element HTML zawiera treść widoczną dla użytkownika?",
+      "options": [
+        "<head>",
+        "<meta>",
+        "<body>",
+        "<title>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <body> zawiera całą treść widoczną na stronie internetowej. Element <head> zawiera metadane, które nie są bezpośrednio wyświetlane użytkownikowi."
+    },
+    {
+      "question": "Jakie trzy technologie tworzą kompletną stronę internetową?",
+      "options": [
+        "HTML, PHP, MySQL",
+        "HTML, CSS, JavaScript",
+        "HTML, Python, Ruby",
+        "HTML, Java, C++"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTML (struktura), CSS (wygląd) i JavaScript (interaktywność) to trzy podstawowe technologie front-endowe tworzące kompletną stronę WWW."
+    },
+    {
+      "question": "Za co odpowiada CSS w kontekście stron internetowych?",
+      "options": [
+        "Za strukturę dokumentu",
+        "Za interaktywność",
+        "Za wygląd i stylizację",
+        "Za połączenie z bazą danych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "CSS (Cascading Style Sheets) odpowiada za wygląd strony - kolory, czcionki, marginesy, pozycjonowanie elementów i ogólny layout."
+    },
+    {
+      "question": "Za co odpowiada JavaScript w kontekście stron internetowych?",
+      "options": [
+        "Za strukturę dokumentu",
+        "Za interaktywność i dynamikę",
+        "Za stylizację",
+        "Za hosting strony"
+      ],
+      "correctAnswer": 1,
+      "explanation": "JavaScript odpowiada za interaktywność strony - reakcje na działania użytkownika, animacje, walidację formularzy i dynamiczne zmiany treści."
+    },
+    {
+      "question": "Jakie rozszerzenie powinien mieć plik HTML?",
+      "options": [
+        ".txt",
+        ".doc",
+        ".html",
+        ".web"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pliki HTML powinny mieć rozszerzenie .html (lub rzadziej .htm). To rozszerzenie informuje przeglądarkę, że plik zawiera kod HTML."
+    },
+    {
+      "question": "Jak nazywa się domyślny plik strony głównej?",
+      "options": [
+        "home.html",
+        "main.html",
+        "index.html",
+        "start.html"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Plik index.html jest standardową nazwą dla strony głównej witryny. Serwery WWW domyślnie szukają tego pliku w katalogu."
+    },
+    {
+      "question": "Gdzie w dokumencie HTML powinna znajdować się deklaracja DOCTYPE?",
+      "options": [
+        "Wewnątrz elementu <head>",
+        "Wewnątrz elementu <body>",
+        "Na końcu dokumentu",
+        "Na samym początku dokumentu, przed wszystkimi innymi znacznikami"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Deklaracja <!DOCTYPE html> musi być pierwszą linią dokumentu HTML, przed wszystkimi innymi znacznikami. Informuje przeglądarkę o wersji HTML."
+    },
+    {
+      "question": "Jaka jest prawidłowa składnia deklaracji DOCTYPE dla HTML5?",
+      "options": [
+        "<!DOCTYPE HTML5>",
+        "<!DOCTYPE html>",
+        "<DOCTYPE html>",
+        "<?DOCTYPE html?>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prawidłowa składnia dla HTML5 to <!DOCTYPE html>. Jest to uproszczona wersja w porównaniu do starszych wersji HTML."
+    },
+    {
+      "question": "Co to jest tryb quirks?",
+      "options": [
+        "Tryb debugowania kodu",
+        "Tryb emulacji starszych przeglądarek powodujący niespójne renderowanie",
+        "Tryb szybkiego ładowania strony",
+        "Tryb oszczędzania pamięci"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tryb quirks to tryb kompatybilności wstecznej, w który przeglądarka może przejść bez poprawnej deklaracji DOCTYPE. Powoduje niespójne renderowanie."
+    },
+    {
+      "question": "Co się stanie, jeśli pominiesz deklarację DOCTYPE?",
+      "options": [
+        "Strona w ogóle się nie wyświetli",
+        "Przeglądarka może przejść w tryb quirks",
+        "Zostaną usunięte wszystkie style CSS",
+        "JavaScript przestanie działać"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Brak deklaracji DOCTYPE może spowodować przejście przeglądarki w tryb quirks, który emuluje zachowanie starszych przeglądarek i może prowadzić do nieoczekiwanych różnic w wyświetlaniu."
+    },
+    {
+      "question": "Który element jest korzeniem (root) dokumentu HTML?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<html>",
+        "<root>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <html> jest elementem głównym (korzeniem) dokumentu HTML. Zawiera wszystkie inne elementy strony."
+    },
+    {
+      "question": "Co zawiera element <head>?",
+      "options": [
+        "Treść widoczną na stronie",
+        "Metadane dokumentu",
+        "Stopkę strony",
+        "Menu nawigacyjne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <head> zawiera metadane dokumentu - tytuł strony, odnośniki do stylów, skrypty, znaczniki meta. Te informacje nie są bezpośrednio wyświetlane."
+    },
+    {
+      "question": "Jaka jest prawidłowa składnia znacznika meta określającego kodowanie UTF-8?",
+      "options": [
+        "<meta encoding=\"UTF-8\">",
+        "<meta charset=\"UTF-8\">",
+        "<charset>UTF-8</charset>",
+        "<meta type=\"UTF-8\">"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prawidłowa składnia to <meta charset=\"UTF-8\">. Atrybut charset określa kodowanie znaków dokumentu."
+    },
+    {
+      "question": "Do czego służy kodowanie UTF-8?",
+      "options": [
+        "Do kompresji plików",
+        "Do szyfrowania danych",
+        "Do obsługi polskich i innych znaków diakrytycznych",
+        "Do przyspieszenia ładowania strony"
+      ],
+      "correctAnswer": 2,
+      "explanation": "UTF-8 to uniwersalne kodowanie znaków, które obsługuje polskie znaki (ą, ę, ó, etc.) oraz znaki diakrytyczne z innych języków."
+    },
+    {
+      "question": "Do czego służy znacznik <meta name=\"description\">?",
+      "options": [
+        "Do określenia autora strony",
+        "Do opisu strony widocznego w wynikach wyszukiwania",
+        "Do określenia słów kluczowych",
+        "Do ustawienia tytułu strony"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Znacznik meta description zawiera opis strony, który może być wyświetlany w wynikach wyszukiwania Google i innych wyszukiwarek."
+    },
+    {
+      "question": "Do czego służy znacznik <meta name=\"viewport\">?",
+      "options": [
+        "Do określenia rozdzielczości ekranu",
+        "Do kontroli wyświetlania na urządzeniach mobilnych",
+        "Do ustawienia koloru tła",
+        "Do określenia języka strony"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Meta viewport kontroluje sposób wyświetlania strony na urządzeniach mobilnych i jest niezbędny do tworzenia stron responsywnych."
+    },
+    {
+      "question": "Gdzie umieszcza się znaczniki meta?",
+      "options": [
+        "W elemencie <body>",
+        "W elemencie <head>",
+        "W elemencie <footer>",
+        "Przed deklaracją DOCTYPE"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Znaczniki meta umieszcza się w sekcji <head> dokumentu HTML. Są to metadane niewidoczne bezpośrednio dla użytkownika."
+    },
+    {
+      "question": "Ile nagłówków pierwszego poziomu (h1) powinno znajdować się na jednej stronie?",
+      "options": [
+        "Dowolna ilość",
+        "Maksymalnie trzy",
+        "Dokładnie jeden",
+        "Co najmniej dwa"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Na każdej stronie powinien znajdować się dokładnie jeden nagłówek <h1>, który stanowi główny tytuł dokumentu. Jest to ważne dla SEO i dostępności."
+    },
+    {
+      "question": "Ile poziomów nagłówków oferuje HTML?",
+      "options": [
+        "3 (h1-h3)",
+        "4 (h1-h4)",
+        "6 (h1-h6)",
+        "10 (h1-h10)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTML oferuje sześć poziomów nagłówków: od h1 (najważniejszy) do h6 (najmniej ważny). Tworzą one hierarchiczną strukturę treści."
+    },
+    {
+      "question": "Jaka jest prawidłowa kolejność nagłówków na stronie?",
+      "options": [
+        "h1 → h3 → h5",
+        "h1 → h2 → h3",
+        "h2 → h1 → h3",
+        "h6 → h3 → h1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nagłówki powinny zachowywać logiczną hierarchię: h1 → h2 → h3. Nie należy pomijać poziomów (np. przechodzić z h1 bezpośrednio do h3)."
+    },
+    {
+      "question": "Dlaczego prawidłowa hierarchia nagłówków jest ważna?",
+      "options": [
+        "Tylko ze względów estetycznych",
+        "Dla SEO i dostępności strony",
+        "Dla szybkości ładowania",
+        "Dla kompatybilności z IE"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prawidłowa hierarchia nagłówków jest kluczowa dla SEO (pozycjonowania) oraz dostępności - czytniki ekranowe wykorzystują nagłówki do nawigacji."
+    },
+    {
+      "question": "Który nagłówek ma domyślnie największy rozmiar czcionki?",
+      "options": [
+        "<h6>",
+        "<h3>",
+        "<h1>",
+        "Wszystkie mają taki sam rozmiar"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Nagłówek <h1> ma domyślnie największy rozmiar czcionki, a <h6> najmniejszy. Rozmiar maleje wraz z numerem nagłówka."
+    },
+    {
+      "question": "Który znacznik definiuje akapit tekstu?",
+      "options": [
+        "<paragraph>",
+        "<text>",
+        "<p>",
+        "<a>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <p> (paragraph) definiuje akapit tekstu. Jest to jeden z najczęściej używanych znaczników blokowych."
+    },
+    {
+      "question": "Który znacznik wymusza przejście do nowej linii?",
+      "options": [
+        "<newline>",
+        "<br>",
+        "<nl>",
+        "<lb>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <br> (line break) wymusza przejście do nowej linii wewnątrz bloku tekstu. Jest to element pusty (nie ma znacznika zamykającego)."
+    },
+    {
+      "question": "Który znacznik tworzy poziomą linię oddzielającą?",
+      "options": [
+        "<line>",
+        "<hr>",
+        "<hl>",
+        "<separator>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <hr> (horizontal rule) tworzy poziomą linię oddzielającą sekcje treści. Jest to element pusty."
+    },
+    {
+      "question": "Jaka jest różnica między znacznikami <strong> a <b>?",
+      "options": [
+        "Nie ma żadnej różnicy",
+        "<strong> ma znaczenie semantyczne (ważność), <b> wpływa tylko na wygląd",
+        "<b> ma znaczenie semantyczne, <strong> wpływa tylko na wygląd",
+        "<strong> działa tylko w HTML5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <strong> niesie znaczenie semantyczne - oznacza tekst o szczególnej ważności. Element <b> wpływa tylko na wygląd (pogrubienie)."
+    },
+    {
+      "question": "Jaka jest różnica między znacznikami <em> a <i>?",
+      "options": [
+        "Nie ma żadnej różnicy",
+        "<em> oznacza akcent/nacisk, <i> tylko zmienia styl na kursywę",
+        "<i> ma znaczenie semantyczne, <em> nie",
+        "<em> działa tylko w starszych przeglądarkach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <em> (emphasis) ma znaczenie semantyczne - oznacza tekst wymagający nacisku. Element <i> (italic) wpływa tylko na wygląd."
+    },
+    {
+      "question": "Który znacznik służy do podkreślenia tekstu?",
+      "options": [
+        "<underline>",
+        "<u>",
+        "<ul>",
+        "<un>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <u> (underline) podkreśla tekst. Jego stosowanie jest rzadkie, ponieważ podkreślenie kojarzy się z hiperłączami."
+    },
+    {
+      "question": "Który znacznik służy do przekreślenia tekstu?",
+      "options": [
+        "<strike>",
+        "<del>",
+        "<s>",
+        "Wszystkie powyższe"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Wszystkie wymienione znaczniki mogą przekreślać tekst: <s> i <strike> dla tekstu nieaktualnego, <del> dla tekstu usuniętego (z znaczeniem semantycznym)."
+    },
+    {
+      "question": "Do czego służy znacznik <sub>?",
+      "options": [
+        "Do tworzenia podtytułów",
+        "Do indeksu dolnego (np. H₂O)",
+        "Do podkreślenia tekstu",
+        "Do tworzenia podstron"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <sub> (subscript) tworzy indeks dolny, używany np. we wzorach chemicznych (H₂O) lub matematycznych."
+    },
+    {
+      "question": "Do czego służy znacznik <sup>?",
+      "options": [
+        "Do tworzenia nagłówków",
+        "Do indeksu górnego (np. 10²)",
+        "Do superformatowania",
+        "Do tworzenia przypisu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <sup> (superscript) tworzy indeks górny, używany np. w potęgach matematycznych (10²) lub oznaczeniach przypisów."
+    },
+    {
+      "question": "Dlaczego zaleca się używanie CSS zamiast znaczników formatujących?",
+      "options": [
+        "CSS jest szybszy",
+        "Oddziela strukturę od prezentacji i ułatwia utrzymanie kodu",
+        "Znaczniki formatujące nie działają w HTML5",
+        "CSS jest obowiązkowy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CSS oddziela strukturę (HTML) od prezentacji (wygląd), co ułatwia utrzymanie kodu, umożliwia ponowne wykorzystanie stylów i jest zgodne z dobrymi praktykami."
+    },
+    {
+      "question": "Który znacznik tworzy hiperłącze?",
+      "options": [
+        "<link>",
+        "<href>",
+        "<a>",
+        "<url>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <a> (anchor) tworzy hiperłącze. Atrybut href określa adres docelowy linku."
+    },
+    {
+      "question": "Jaki atrybut określa adres docelowy linku?",
+      "options": [
+        "src",
+        "href",
+        "url",
+        "link"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut href (hypertext reference) określa adres URL, do którego prowadzi link. Jest to obowiązkowy atrybut elementu <a>."
+    },
+    {
+      "question": "Który atrybut elementu <a> powoduje otwarcie linku w nowej karcie?",
+      "options": [
+        "href=\"_blank\"",
+        "target=\"_blank\"",
+        "new=\"true\"",
+        "open=\"new\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut target=\"_blank\" powoduje otwarcie linku w nowej karcie przeglądarki. Atrybut href określa adres docelowy."
+    },
+    {
+      "question": "Co oznacza target=\"_self\"?",
+      "options": [
+        "Otwarcie linku w nowej karcie",
+        "Otwarcie linku w tym samym oknie (domyślne)",
+        "Otwarcie linku w ramce",
+        "Otwarcie linku w oknie nadrzędnym"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wartość _self oznacza otwarcie linku w tym samym oknie/karcie. Jest to domyślne zachowanie, jeśli atrybut target nie jest określony."
+    },
+    {
+      "question": "Jaka jest różnica między linkiem wewnętrznym a zewnętrznym?",
+      "options": [
+        "Link wewnętrzny używa https, zewnętrzny http",
+        "Link wewnętrzny prowadzi do tej samej witryny, zewnętrzny do innej",
+        "Link wewnętrzny jest szybszy",
+        "Nie ma różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Link wewnętrzny prowadzi do innej strony w obrębie tej samej witryny (może używać ścieżki względnej). Link zewnętrzny prowadzi do innej witryny (pełny URL)."
+    },
+    {
+      "question": "Jak utworzyć link do adresu e-mail?",
+      "options": [
+        "<a href=\"email:adres@example.com\">",
+        "<a href=\"mailto:adres@example.com\">",
+        "<a href=\"mail:adres@example.com\">",
+        "<email>adres@example.com</email>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Protokół mailto: w atrybucie href tworzy link otwierający domyślny program pocztowy z wypełnionym adresem odbiorcy."
+    },
+    {
+      "question": "Jak utworzyć link do numeru telefonu?",
+      "options": [
+        "<a href=\"phone:+48123456789\">",
+        "<a href=\"tel:+48123456789\">",
+        "<a href=\"call:+48123456789\">",
+        "<phone>+48123456789</phone>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Protokół tel: w atrybucie href tworzy link umożliwiający wykonanie połączenia telefonicznego, szczególnie przydatny na urządzeniach mobilnych."
+    },
+    {
+      "question": "Który element HTML tworzy listę nieuporządkowaną?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <ul> (unordered list) tworzy listę nieuporządkowaną (wypunktowaną), gdzie kolejność elementów nie ma znaczenia."
+    },
+    {
+      "question": "Który element HTML tworzy listę uporządkowaną?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<nl>",
+        "<numbered>"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Element <ol> (ordered list) tworzy listę uporządkowaną (numerowaną), gdzie kolejność elementów jest istotna."
+    },
+    {
+      "question": "Który znacznik definiuje pojedynczy element listy?",
+      "options": [
+        "<item>",
+        "<li>",
+        "<el>",
+        "<list-item>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <li> (list item) definiuje pojedynczy element zarówno w liście uporządkowanej <ol>, jak i nieuporządkowanej <ul>."
+    },
+    {
+      "question": "Czy można zagnieżdżać listy w HTML?",
+      "options": [
+        "Nie, to niemożliwe",
+        "Tak, umieszczając listę wewnątrz elementu <li>",
+        "Tak, ale tylko listy tego samego typu",
+        "Tak, ale maksymalnie 2 poziomy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Listy można zagnieżdżać, umieszczając nową listę <ul> lub <ol> wewnątrz elementu <li> innej listy. Pozwala to tworzyć struktury hierarchiczne."
+    },
+    {
+      "question": "Do czego najczęściej wykorzystuje się listy w HTML?",
+      "options": [
+        "Tylko do prezentacji danych",
+        "Tylko do menu nawigacyjnych",
+        "Do prezentacji danych, menu nawigacyjnych i organizacji treści",
+        "Do tworzenia tabel"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Listy są wszechstronne - służą do prezentacji danych, tworzenia menu nawigacyjnych, organizacji treści hierarchicznej i wielu innych zastosowań."
+    },
+    {
+      "question": "Jaki atrybut zmienia typ numeracji w liście <ol>?",
+      "options": [
+        "style",
+        "type",
+        "list-style",
+        "numbering"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut type elementu <ol> zmienia typ numeracji (np. type=\"a\" dla liter, type=\"I\" dla cyfr rzymskich). Alternatywnie można użyć CSS."
+    },
+    {
+      "question": "Który element jest głównym kontenerem tabeli?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<table>",
+        "<tbody>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <table> jest głównym kontenerem tabeli, zawierającym wszystkie pozostałe elementy struktury tabelarycznej."
+    },
+    {
+      "question": "Co oznacza znacznik <tr>?",
+      "options": [
+        "Table row (wiersz tabeli)",
+        "Table right",
+        "Text row",
+        "Table reference"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Element <tr> (table row) definiuje wiersz tabeli. Wewnątrz niego umieszcza się komórki <th> lub <td>."
+    },
+    {
+      "question": "Jaka jest różnica między <th> a <td>?",
+      "options": [
+        "Nie ma różnicy",
+        "<th> to komórka nagłówkowa (pogrubiona), <td> to komórka danych",
+        "<td> to komórka nagłówkowa, <th> to komórka danych",
+        "<th> służy do tekstu, <td> do liczb"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <th> (table header) to komórka nagłówkowa - domyślnie pogrubiona i wycentrowana. Element <td> (table data) to zwykła komórka danych."
+    },
+    {
+      "question": "Do czego służy element <thead>?",
+      "options": [
+        "Do określenia szerokości tabeli",
+        "Do grupowania wierszy nagłówkowych tabeli",
+        "Do tworzenia tytułu tabeli",
+        "Do stylizacji tabeli"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <thead> grupuje wiersze nagłówkowe tabeli. Pomaga w organizacji kodu i umożliwia osobne stylowanie nagłówka."
+    },
+    {
+      "question": "Do czego służy element <tbody>?",
+      "options": [
+        "Do określenia obramowania tabeli",
+        "Do grupowania wierszy z danymi tabeli",
+        "Do tworzenia stopki tabeli",
+        "Do dodania tła tabeli"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <tbody> grupuje główne wiersze z danymi tabeli. Oddziela je od nagłówka (<thead>) i stopki (<tfoot>)."
+    },
+    {
+      "question": "Do czego służy element <tfoot>?",
+      "options": [
+        "Do grupowania wierszy stopki tabeli",
+        "Do określenia czcionki tabeli",
+        "Do dodania przypisu",
+        "Do numerowania wierszy"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Element <tfoot> grupuje wiersze stopki tabeli, często zawierające podsumowania lub sumy kolumn."
+    },
+    {
+      "question": "Który atrybut łączy komórki w poziomie?",
+      "options": [
+        "rowspan",
+        "colspan",
+        "merge",
+        "span"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut colspan określa ile kolumn ma zajmować komórka, łącząc je w poziomie. Np. colspan=\"2\" łączy dwie komórki."
+    },
+    {
+      "question": "Który atrybut łączy komórki w pionie?",
+      "options": [
+        "rowspan",
+        "colspan",
+        "merge",
+        "vspan"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Atrybut rowspan określa ile wierszy ma zajmować komórka, łącząc je w pionie. Np. rowspan=\"3\" łączy trzy komórki."
+    },
+    {
+      "question": "Który znacznik służy do osadzania obrazów?",
+      "options": [
+        "<picture>",
+        "<image>",
+        "<img>",
+        "<photo>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <img> służy do osadzania obrazów na stronie. Jest to element pusty - nie ma znacznika zamykającego."
+    },
+    {
+      "question": "Który atrybut elementu <img> określa ścieżkę do pliku obrazu?",
+      "options": [
+        "href",
+        "src",
+        "path",
+        "url"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut src (source) określa ścieżkę do pliku obrazu - może to być ścieżka lokalna lub pełny URL."
+    },
+    {
+      "question": "Do czego służy atrybut alt w elemencie <img>?",
+      "options": [
+        "Do określenia alternatywnego obrazu",
+        "Do tekstu alternatywnego wyświetlanego gdy obraz się nie załaduje",
+        "Do zmiany koloru obrazu",
+        "Do określenia rozmiaru alternatywnego"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut alt zawiera tekst alternatywny - jest wyświetlany gdy obraz się nie załaduje i odczytywany przez czytniki ekranowe. Jest kluczowy dla dostępności."
+    },
+    {
+      "question": "Dlaczego atrybut alt jest ważny dla SEO?",
+      "options": [
+        "Przyspiesza ładowanie strony",
+        "Roboty wyszukiwarek nie widzą obrazów, ale czytają tekst alt",
+        "Zwiększa kontrast obrazu",
+        "Kompresuje obraz"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Roboty wyszukiwarek nie interpretują treści obrazów, ale czytają tekst alt. Opisowy alt pomaga w indeksowaniu i pozycjonowaniu."
+    },
+    {
+      "question": "Które atrybuty określają wymiary obrazu?",
+      "options": [
+        "size i scale",
+        "width i height",
+        "w i h",
+        "dimension i ratio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybuty width i height określają szerokość i wysokość obrazu w pikselach. Pomagają przeglądarce zarezerwować miejsce przed załadowaniem."
+    },
+    {
+      "question": "Który znacznik HTML5 służy do osadzania wideo?",
+      "options": [
+        "<movie>",
+        "<media>",
+        "<video>",
+        "<film>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <video> wprowadzony w HTML5 służy do natywnego osadzania materiałów wideo bez potrzeby zewnętrznych wtyczek."
+    },
+    {
+      "question": "Który znacznik HTML5 służy do osadzania audio?",
+      "options": [
+        "<sound>",
+        "<music>",
+        "<audio>",
+        "<mp3>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <audio> wprowadzony w HTML5 służy do natywnego osadzania plików dźwiękowych bez potrzeby zewnętrznych wtyczek."
+    },
+    {
+      "question": "Co robi atrybut controls w elementach multimedialnych?",
+      "options": [
+        "Kontroluje głośność",
+        "Wyświetla interfejs sterowania odtwarzaniem",
+        "Kontroluje jakość",
+        "Włącza napisy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut controls wyświetla domyślny interfejs sterowania odtwarzaniem (play/pause, przewijanie, głośność)."
+    },
+    {
+      "question": "Co robi atrybut autoplay?",
+      "options": [
+        "Automatycznie pobiera plik",
+        "Automatycznie rozpoczyna odtwarzanie po załadowaniu",
+        "Automatycznie przewija do końca",
+        "Automatycznie powtarza"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut autoplay powoduje automatyczne rozpoczęcie odtwarzania po załadowaniu strony. Uwaga: wiele przeglądarek blokuje autoplay z dźwiękiem."
+    },
+    {
+      "question": "Co robi atrybut loop?",
+      "options": [
+        "Zapętla stronę",
+        "Odtwarza multimedia w pętli",
+        "Tworzy pętlę w kodzie",
+        "Łączy pliki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut loop powoduje ciągłe odtwarzanie multimediów w pętli - po zakończeniu rozpoczyna się od nowa."
+    },
+    {
+      "question": "Do czego służy atrybut poster w elemencie <video>?",
+      "options": [
+        "Do określenia formatu wideo",
+        "Do wyświetlenia obrazu przed rozpoczęciem odtwarzania",
+        "Do dodania napisów",
+        "Do określenia autora"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut poster określa obraz (miniaturkę) wyświetlany przed rozpoczęciem odtwarzania wideo."
+    },
+    {
+      "question": "Jaka jest główna zaleta natywnej obsługi multimediów w HTML5?",
+      "options": [
+        "Lepsza jakość",
+        "Mniejszy rozmiar plików",
+        "Brak potrzeby zewnętrznych wtyczek",
+        "Szybsze ładowanie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTML5 oferuje natywną obsługę multimediów bez potrzeby instalowania zewnętrznych wtyczek (jak Flash), co zapewnia lepszą kompatybilność i bezpieczeństwo."
+    },
+    {
+      "question": "Który element jest kontenerem formularza?",
+      "options": [
+        "<input>",
+        "<form>",
+        "<field>",
+        "<fieldset>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <form> jest głównym kontenerem formularza, grupującym wszystkie pola i określającym gdzie i jak wysłać dane."
+    },
+    {
+      "question": "Co określa atrybut action w formularzu?",
+      "options": [
+        "Akcję JavaScript",
+        "Adres URL do wysłania danych",
+        "Metodę walidacji",
+        "Typ formularza"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut action określa adres URL, pod który zostaną przesłane dane formularza po jego wysłaniu."
+    },
+    {
+      "question": "Co określa atrybut method w formularzu?",
+      "options": [
+        "Metodę szyfrowania",
+        "Metodę przesyłania danych (GET lub POST)",
+        "Metodę walidacji",
+        "Metodę sortowania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut method określa metodę HTTP używaną do przesyłania danych: GET (dane w URL) lub POST (dane w ciele żądania)."
+    },
+    {
+      "question": "Jaka jest różnica między metodami GET a POST?",
+      "options": [
+        "GET jest szybszy",
+        "GET przesyła dane w URL, POST w ciele żądania",
+        "POST przesyła dane w URL, GET w ciele żądania",
+        "Nie ma różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "GET przesyła dane jako parametry w URL (widoczne, ograniczone), POST przesyła dane w ciele żądania (niewidoczne w URL, większa pojemność, bezpieczniejsze)."
+    },
+    {
+      "question": "Który element tworzy pole tekstowe w formularzu?",
+      "options": [
+        "<text>",
+        "<input type=\"text\">",
+        "<textfield>",
+        "<field>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <input> z atrybutem type=\"text\" tworzy jednoliniowe pole tekstowe. Jest to domyślny typ, jeśli type nie jest określony."
+    },
+    {
+      "question": "Który typ input tworzy pole hasła?",
+      "options": [
+        "type=\"hidden\"",
+        "type=\"password\"",
+        "type=\"secret\"",
+        "type=\"secure\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut type=\"password\" tworzy pole, w którym wpisywane znaki są maskowane (wyświetlane jako kropki lub gwiazdki)."
+    },
+    {
+      "question": "Który typ input tworzy pole wyboru wielokrotnego?",
+      "options": [
+        "type=\"select\"",
+        "type=\"checkbox\"",
+        "type=\"multi\"",
+        "type=\"check\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut type=\"checkbox\" tworzy pole wyboru, które można zaznaczać niezależnie od innych. Umożliwia wybór wielu opcji."
+    },
+    {
+      "question": "Który typ input tworzy pole wyboru pojedynczego?",
+      "options": [
+        "type=\"radio\"",
+        "type=\"single\"",
+        "type=\"option\"",
+        "type=\"one\""
+      ],
+      "correctAnswer": 0,
+      "explanation": "Atrybut type=\"radio\" tworzy przycisk radiowy. Przyciski o tej samej nazwie (atrybut name) tworzą grupę, z której można wybrać tylko jedną opcję."
+    },
+    {
+      "question": "Który typ input tworzy przycisk wysyłający formularz?",
+      "options": [
+        "type=\"send\"",
+        "type=\"submit\"",
+        "type=\"button\"",
+        "type=\"post\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut type=\"submit\" tworzy przycisk wysyłający formularz. Po kliknięciu dane są przesyłane pod adres określony w action."
+    },
+    {
+      "question": "Który element tworzy listę rozwijaną?",
+      "options": [
+        "<dropdown>",
+        "<list>",
+        "<select>",
+        "<menu>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <select> tworzy listę rozwijaną. Poszczególne opcje definiuje się za pomocą elementów <option>."
+    },
+    {
+      "question": "Który element definiuje opcję w liście rozwijanej?",
+      "options": [
+        "<item>",
+        "<option>",
+        "<choice>",
+        "<li>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <option> definiuje pojedynczą opcję wewnątrz elementu <select>. Atrybut value określa wartość wysyłaną do serwera."
+    },
+    {
+      "question": "Który element tworzy wieloliniowe pole tekstowe?",
+      "options": [
+        "<input type=\"multiline\">",
+        "<textbox>",
+        "<textarea>",
+        "<text>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <textarea> tworzy wieloliniowe pole tekstowe pozwalające na wprowadzenie dłuższych fragmentów tekstu."
+    },
+    {
+      "question": "Do czego służy element <label>?",
+      "options": [
+        "Do tworzenia etykiet produktów",
+        "Do powiązania opisu z polem formularza",
+        "Do tworzenia nagłówków formularza",
+        "Do walidacji formularza"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <label> powiązuje tekstowy opis z polem formularza. Kliknięcie etykiety aktywuje powiązane pole, poprawiając użyteczność."
+    },
+    {
+      "question": "Jak powiązać <label> z polem formularza?",
+      "options": [
+        "Przez atrybut link",
+        "Przez atrybut for odpowiadający id pola",
+        "Przez atrybut name",
+        "Automatycznie przez pozycję"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut for elementu <label> musi odpowiadać atrybutowi id pola formularza. Alternatywnie można umieścić pole wewnątrz <label>."
+    },
+    {
+      "question": "Który semantyczny znacznik HTML5 definiuje nagłówek strony?",
+      "options": [
+        "<head>",
+        "<header>",
+        "<heading>",
+        "<top>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <header> definiuje nagłówek strony lub sekcji. Nie mylić z <head>, który zawiera metadane dokumentu."
+    },
+    {
+      "question": "Który semantyczny znacznik definiuje nawigację?",
+      "options": [
+        "<navigation>",
+        "<menu>",
+        "<nav>",
+        "<links>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <nav> oznacza sekcję nawigacyjną zawierającą główne linki do innych części witryny lub dokumentu."
+    },
+    {
+      "question": "Który semantyczny znacznik definiuje główną treść?",
+      "options": [
+        "<content>",
+        "<main>",
+        "<body>",
+        "<primary>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <main> zawiera główną treść dokumentu. Powinien występować tylko raz na stronie i nie być zagnieżdżany w innych elementach semantycznych."
+    },
+    {
+      "question": "Który semantyczny znacznik definiuje samodzielny artykuł?",
+      "options": [
+        "<post>",
+        "<story>",
+        "<article>",
+        "<text>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <article> oznacza samodzielny, kompletny fragment treści, który może być niezależnie dystrybuowany (np. wpis blogowy, artykuł prasowy)."
+    },
+    {
+      "question": "Który semantyczny znacznik grupuje powiązane tematycznie treści?",
+      "options": [
+        "<group>",
+        "<section>",
+        "<div>",
+        "<part>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <section> grupuje powiązane tematycznie treści, zwykle z własnym nagłówkiem. Jest częścią większej całości."
+    },
+    {
+      "question": "Który semantyczny znacznik definiuje treść poboczną?",
+      "options": [
+        "<sidebar>",
+        "<side>",
+        "<aside>",
+        "<secondary>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <aside> definiuje treść poboczną, luźno powiązaną z główną treścią - często używany do paneli bocznych, reklam, powiązanych linków."
+    },
+    {
+      "question": "Który semantyczny znacznik definiuje stopkę?",
+      "options": [
+        "<bottom>",
+        "<footer>",
+        "<foot>",
+        "<end>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <footer> definiuje stopkę strony lub sekcji, zwykle zawierającą informacje o autorze, prawa autorskie, linki kontaktowe."
+    },
+    {
+      "question": "Jaka jest różnica między <div> a znacznikami semantycznymi?",
+      "options": [
+        "<div> jest szybszy",
+        "<div> jest neutralny, znaczniki semantyczne niosą informację o rodzaju treści",
+        "Nie ma różnicy",
+        "<div> działa tylko w starszych przeglądarkach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <div> jest neutralnym kontenerem bez znaczenia semantycznego. Znaczniki jak <nav>, <article>, <section> informują o rodzaju treści, co pomaga przeglądarkom i czytnikom ekranowym."
+    },
+    {
+      "question": "Dlaczego znaczniki semantyczne są ważne dla dostępności?",
+      "options": [
+        "Są większe i łatwiej je kliknąć",
+        "Czytniki ekranowe wykorzystują je do nawigacji po stronie",
+        "Zmieniają kolory dla osób niewidomych",
+        "Zwiększają czcionkę"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Czytniki ekranowe wykorzystują znaczniki semantyczne do zrozumienia struktury strony i umożliwienia użytkownikom szybkiej nawigacji (np. przeskakiwanie do nawigacji lub głównej treści)."
+    },
+    {
+      "question": "Jak dołączyć zewnętrzny arkusz stylów CSS?",
+      "options": [
+        "<css href=\"style.css\">",
+        "<link rel=\"stylesheet\" href=\"style.css\">",
+        "<style src=\"style.css\">",
+        "<import css=\"style.css\">"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <link> z atrybutami rel=\"stylesheet\" i href wskazującym na plik CSS dołącza zewnętrzny arkusz stylów."
+    },
+    {
+      "question": "Gdzie umieszcza się element <link> do CSS?",
+      "options": [
+        "W elemencie <body>",
+        "W elemencie <head>",
+        "Na końcu dokumentu",
+        "Przed DOCTYPE"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <link> do arkuszy stylów umieszcza się w sekcji <head>, aby style były załadowane przed renderowaniem treści."
+    },
+    {
+      "question": "Jak dodać style CSS wewnątrz dokumentu HTML?",
+      "options": [
+        "Używając elementu <css>",
+        "Używając elementu <style>",
+        "Używając atrybutu css",
+        "Używając elementu <stylesheet>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <style> umieszczony w <head> pozwala na zdefiniowanie stylów CSS bezpośrednio w dokumencie HTML."
+    },
+    {
+      "question": "Co to są style inline?",
+      "options": [
+        "Style w osobnym pliku",
+        "Style w elemencie <style>",
+        "Style dodane bezpośrednio do elementu przez atrybut style",
+        "Style dziedziczone"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Style inline to style dodane bezpośrednio do elementu HTML przez atrybut style, np. <p style=\"color: red;\">. Są niezalecane."
+    },
+    {
+      "question": "Dlaczego style inline są niezalecane?",
+      "options": [
+        "Są wolniejsze",
+        "Utrudniają utrzymanie kodu i mieszają strukturę z prezentacją",
+        "Nie działają w HTML5",
+        "Są niezgodne z CSS3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Style inline utrudniają utrzymanie kodu, nie można ich ponownie wykorzystać, mieszają strukturę (HTML) z prezentacją (CSS) i zwiększają rozmiar dokumentu."
+    },
+    {
+      "question": "Jak dołączyć zewnętrzny plik JavaScript?",
+      "options": [
+        "<js src=\"script.js\">",
+        "<script src=\"script.js\"></script>",
+        "<javascript href=\"script.js\">",
+        "<link rel=\"script\" href=\"script.js\">"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <script> z atrybutem src wskazującym na plik JavaScript dołącza zewnętrzny skrypt. Wymaga znacznika zamykającego."
+    },
+    {
+      "question": "Gdzie najlepiej umieszczać element <script>?",
+      "options": [
+        "Zawsze w <head>",
+        "Przed </body> lub w <head> z atrybutem defer",
+        "Przed DOCTYPE",
+        "Wewnątrz <title>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Skrypty najlepiej umieszczać przed zamykającym </body> lub w <head> z atrybutem defer, aby nie blokować ładowania strony."
+    },
+    {
+      "question": "Co robi atrybut defer w elemencie <script>?",
+      "options": [
+        "Wyłącza skrypt",
+        "Odkłada wykonanie skryptu do momentu załadowania dokumentu",
+        "Przyspiesza wykonanie skryptu",
+        "Szyfruje skrypt"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut defer odkłada wykonanie skryptu do momentu pełnego załadowania i sparsowania dokumentu HTML, nie blokując renderowania."
+    },
+    {
+      "question": "Co robi atrybut async w elemencie <script>?",
+      "options": [
+        "Ładuje skrypt synchronicznie",
+        "Ładuje skrypt asynchronicznie i wykonuje natychmiast po załadowaniu",
+        "Wyłącza asynchroniczność",
+        "Dodaje animację"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut async ładuje skrypt asynchronicznie (równolegle z parsowaniem HTML) i wykonuje go natychmiast po załadowaniu, co może być przed zakończeniem parsowania."
+    },
+    {
+      "question": "Który element HTML5 służy do rysowania grafiki za pomocą JavaScript?",
+      "options": [
+        "<draw>",
+        "<graphics>",
+        "<canvas>",
+        "<svg>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <canvas> tworzy obszar do rysowania grafiki za pomocą JavaScript. Jest używany do gier, wizualizacji danych i animacji."
+    },
+    {
+      "question": "Czym różni się <canvas> od <svg>?",
+      "options": [
+        "Niczym",
+        "<canvas> to grafika rastrowa, <svg> to grafika wektorowa",
+        "<svg> to grafika rastrowa, <canvas> to grafika wektorowa",
+        "<canvas> służy do tekstu, <svg> do obrazów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Canvas generuje grafikę rastrową (pikselową) przez JavaScript. SVG to grafika wektorowa opisana znacznikami XML, skalowalna bez utraty jakości."
+    },
+    {
+      "question": "Do czego służy element <figure>?",
+      "options": [
+        "Do tworzenia wykresów",
+        "Do grupowania ilustracji z podpisem",
+        "Do wstawiania liczb",
+        "Do tworzenia figur geometrycznych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <figure> grupuje samodzielną treść ilustracyjną (obrazy, diagramy, wykresy) wraz z opcjonalnym podpisem <figcaption>."
+    },
+    {
+      "question": "Do czego służy element <figcaption>?",
+      "options": [
+        "Do tworzenia nagłówka strony",
+        "Do podpisu pod ilustracją w elemencie <figure>",
+        "Do tworzenia przypisów",
+        "Do opisu formularza"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <figcaption> definiuje podpis dla treści w elemencie <figure>. Może być umieszczony jako pierwszy lub ostatni element wewnątrz <figure>."
+    },
+    {
+      "question": "Który element HTML5 oznacza fragment tekstu wyróżniony (podświetlony)?",
+      "options": [
+        "<highlight>",
+        "<mark>",
+        "<em>",
+        "<strong>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <mark> oznacza tekst wyróżniony ze względu na jego znaczenie w bieżącym kontekście, np. wyniki wyszukiwania. Domyślnie ma żółte tło."
+    },
+    {
+      "question": "Do czego służy element <time>?",
+      "options": [
+        "Do wyświetlania zegara",
+        "Do semantycznego oznaczania dat i godzin",
+        "Do ustawiania opóźnienia",
+        "Do tworzenia timera"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <time> semantycznie oznacza daty, godziny lub przedziały czasowe. Atrybut datetime zawiera format zrozumiały dla maszyn."
+    },
+    {
+      "question": "Który element HTML5 reprezentuje postęp wykonania zadania?",
+      "options": [
+        "<loading>",
+        "<status>",
+        "<progress>",
+        "<meter>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <progress> reprezentuje postęp wykonania zadania (np. pobierania pliku). Atrybuty value i max określają aktualną i maksymalną wartość."
+    },
+    {
+      "question": "Jaka jest różnica między <progress> a <meter>?",
+      "options": [
+        "Nie ma różnicy",
+        "<progress> pokazuje postęp zadania, <meter> mierzy wartość w określonym zakresie",
+        "<meter> pokazuje postęp, <progress> mierzy wartość",
+        "<progress> jest dla tekstu, <meter> dla liczb"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<progress> reprezentuje postęp ukończenia zadania (dynamiczny). <meter> reprezentuje skalarną wartość w znanym zakresie (np. poziom baterii, ocena)."
+    },
+    {
+      "question": "Który element HTML służy do definiowania skrótów?",
+      "options": [
+        "<short>",
+        "<abbr>",
+        "<acr>",
+        "<acronym>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <abbr> oznacza skrót lub akronim. Atrybut title może zawierać pełne rozwinięcie, wyświetlane jako tooltip."
+    },
+    {
+      "question": "Do czego służy element <details>?",
+      "options": [
+        "Do wyświetlania szczegółów produktu",
+        "Do tworzenia rozwijalnego widgetu z ukrytą treścią",
+        "Do dodawania metadanych",
+        "Do tworzenia opisów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Element <details> tworzy rozwijalny widget, który użytkownik może otworzyć lub zamknąć. Element <summary> definiuje widoczny nagłówek."
+    },
+    {
+      "question": "Który element definiuje widoczny nagłówek dla <details>?",
+      "options": [
+        "<header>",
+        "<title>",
+        "<summary>",
+        "<heading>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Element <summary> definiuje widoczny nagłówek (klikalne podsumowanie) dla elementu <details>. Po kliknięciu rozwija się ukryta treść."
+    },
+    {
+      "question": "Jaka jest poprawna struktura minimalnego dokumentu HTML5?",
+      "options": [
+        "Tylko <html> i <body>",
+        "DOCTYPE, <html>, <head>, <body>",
+        "Tylko <body>",
+        "DOCTYPE i <body>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Poprawny minimalny dokument HTML5 zawiera: deklarację <!DOCTYPE html>, element <html>, sekcję <head> (z <title>) i sekcję <body>."
+    },
+    {
+      "question": "Czy HTML rozróżnia wielkość liter w nazwach znaczników?",
+      "options": [
+        "Tak, zawsze",
+        "Nie, HTML jest case-insensitive dla znaczników",
+        "Tylko w HTML5",
+        "Tylko w XHTML"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTML nie rozróżnia wielkości liter w nazwach znaczników (<DIV>, <div>, <Div> są równoważne). Jednak konwencją jest pisanie małymi literami."
+    },
+    {
+      "question": "Który typ dokumentu wymaga zamykania wszystkich znaczników?",
+      "options": [
+        "HTML5",
+        "HTML4",
+        "XHTML",
+        "Żaden"
+      ],
+      "correctAnswer": 2,
+      "explanation": "XHTML (eXtensible HTML) wymaga zamykania wszystkich znaczników, w tym pustych (np. <br />). HTML5 jest bardziej tolerancyjny."
+    },
+    {
+      "question": "Co oznacza atrybut lang w elemencie <html>?",
+      "options": [
+        "Wersję języka HTML",
+        "Język naturalny treści dokumentu",
+        "Język programowania",
+        "Lokalizację serwera"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atrybut lang określa język naturalny treści dokumentu (np. lang=\"pl\" dla polskiego). Jest ważny dla dostępności i SEO."
+    },
+    {
+      "question": "Jaką wartość ma atrybut lang dla języka polskiego?",
+      "options": [
+        "lang=\"polish\"",
+        "lang=\"pol\"",
+        "lang=\"pl\"",
+        "lang=\"PL\""
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dla języka polskiego używa się kodu lang=\"pl\" zgodnie ze standardem ISO 639-1. Kody są dwuliterowe i pisane małymi literami."
+    }
+  ]
+}

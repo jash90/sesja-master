@@ -1,0 +1,1117 @@
+{
+  "title": "JavaScript - Kompletny Przewodnik: Rozszerzony Quiz",
+  "description": "Obszerny quiz sprawdzający wiedzę z zakresu języka JavaScript - 100 pytań obejmujących zmienne, typy danych, funkcje, tablice, obiekty, DOM, asynchroniczność, klasy, moduły i dobre praktyki.",
+  "questions": [
+    {
+      "question": "Które słowo kluczowe służy do deklarowania stałej, której wartości nie można zmienić po przypisaniu?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "static"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Słowo kluczowe 'const' służy do deklarowania stałych. Po przypisaniu wartości nie można jej zmienić. 'let' i 'var' pozwalają na zmianę wartości, a 'static' służy do definiowania metod statycznych w klasach."
+    },
+    {
+      "question": "Jaki będzie wynik porównania: 5 == '5'?",
+      "options": [
+        "false",
+        "true",
+        "undefined",
+        "TypeError"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operator == wykonuje porównanie z koercją typów. Ciąg tekstowy '5' jest konwertowany na liczbę 5 przed porównaniem, więc wynik to true. Operator === zwróciłby false, ponieważ porównuje bez konwersji typów."
+    },
+    {
+      "question": "Która wartość NIE jest uznawana za 'falsy' w JavaScript?",
+      "options": [
+        "0",
+        "'' (pusty string)",
+        "[] (pusta tablica)",
+        "null"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pusta tablica [] jest wartością 'truthy' w JavaScript. Wartości 'falsy' to: 0, '' (pusty string), null, undefined, NaN oraz false. Puste tablice i obiekty są traktowane jako prawdziwe."
+    },
+    {
+      "question": "Jak nazywa się mechanizm, dzięki któremu funkcja wewnętrzna zachowuje dostęp do zmiennych z funkcji zewnętrznej nawet po jej zakończeniu?",
+      "options": [
+        "Hoisting",
+        "Closure (domknięcie)",
+        "Scope chain",
+        "Callback"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Closure (domknięcie) to mechanizm pozwalający funkcji na zachowanie dostępu do zmiennych z zakresu, w którym została utworzona. Hoisting to przenoszenie deklaracji, scope chain to łańcuch zakresów, a callback to funkcja zwrotna."
+    },
+    {
+      "question": "Która metoda tablicowa zwraca nową tablicę z elementami spełniającymi określony warunek?",
+      "options": [
+        "map()",
+        "forEach()",
+        "filter()",
+        "reduce()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Metoda filter() tworzy nową tablicę zawierającą tylko elementy, dla których funkcja testująca zwróciła true. map() transformuje elementy, forEach() iteruje bez zwracania, a reduce() agreguje do pojedynczej wartości."
+    },
+    {
+      "question": "Co zwróci typeof null w JavaScript?",
+      "options": [
+        "\"null\"",
+        "\"undefined\"",
+        "\"object\"",
+        "\"boolean\""
+      ],
+      "correctAnswer": 2,
+      "explanation": "typeof null zwraca \"object\" - jest to historyczny błąd w JavaScript, który pozostał dla zachowania kompatybilności wstecznej. Do sprawdzenia czy wartość to null, należy użyć porównania === null."
+    },
+    {
+      "question": "Jaka jest różnica między metodami call() i apply()?",
+      "options": [
+        "call() działa tylko na obiektach, apply() na funkcjach",
+        "call() przyjmuje argumenty pojedynczo, apply() w tablicy",
+        "apply() tworzy nową funkcję, call() nie",
+        "Nie ma różnicy, to aliasy tej samej metody"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Obie metody wywołują funkcję z określonym kontekstem this, ale różnią się sposobem przekazywania argumentów: call(thisArg, arg1, arg2) przyjmuje argumenty pojedynczo, a apply(thisArg, [arg1, arg2]) w tablicy."
+    },
+    {
+      "question": "W jakim stanie NIE może znajdować się obiekt Promise?",
+      "options": [
+        "pending",
+        "fulfilled",
+        "rejected",
+        "cancelled"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Promise może znajdować się w trzech stanach: pending (oczekujący), fulfilled (spełniony) lub rejected (odrzucony). Nie istnieje stan 'cancelled' - do anulowania operacji służy AbortController."
+    },
+    {
+      "question": "Co oznacza słowo kluczowe 'async' przed definicją funkcji?",
+      "options": [
+        "Funkcja będzie wykonywana w osobnym wątku",
+        "Funkcja automatycznie zwraca Promise",
+        "Funkcja może przyjmować tylko argumenty asynchroniczne",
+        "Funkcja zostanie wykonana natychmiast"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Słowo kluczowe 'async' sprawia, że funkcja automatycznie zwraca Promise. Umożliwia też użycie słowa 'await' wewnątrz funkcji. JavaScript pozostaje jednowątkowy - async nie tworzy nowych wątków."
+    },
+    {
+      "question": "Która metoda służy do konwersji obiektu JavaScript na ciąg tekstowy w formacie JSON?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "Object.toString()",
+        "JSON.convert()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "JSON.stringify() konwertuje obiekt JavaScript na ciąg tekstowy JSON. JSON.parse() wykonuje operację odwrotną - parsuje ciąg JSON na obiekt. Object.toString() zwraca '[object Object]', a JSON.convert() nie istnieje."
+    },
+    {
+      "question": "Jaki będzie wynik wykonania poniższego kodu?\nconsole.log(1);\nPromise.resolve().then(() => console.log(2));\nsetTimeout(() => console.log(3), 0);\nconsole.log(4);",
+      "options": [
+        "1, 2, 3, 4",
+        "1, 4, 3, 2",
+        "1, 4, 2, 3",
+        "1, 2, 4, 3"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kod synchroniczny (1, 4) wykonuje się najpierw. Następnie mikrozadania (Promise.then → 2) mają priorytet nad makrozadaniami (setTimeout → 3). Wynik: 1, 4, 2, 3."
+    },
+    {
+      "question": "Jak oznaczyć pole prywatne w klasie JavaScript?",
+      "options": [
+        "Słowem kluczowym private",
+        "Prefiksem _ (podkreślnik)",
+        "Prefiksem # (hash)",
+        "Metodą Object.definePrivate()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pola prywatne w JavaScript oznacza się prefiksem # (hash), np. #privateField. Prefiks _ jest tylko konwencją nazewniczą bez wymuszenia prywatności. Słowo 'private' nie istnieje w JavaScript (istnieje w TypeScript)."
+    },
+    {
+      "question": "Co zwraca funkcja fetch() po wykonaniu żądania HTTP?",
+      "options": [
+        "Bezpośrednio dane z serwera",
+        "Promise rozwiązywany do obiektu Response",
+        "Obiekt XMLHttpRequest",
+        "Promise rozwiązywany do sparsowanych danych JSON"
+      ],
+      "correctAnswer": 1,
+      "explanation": "fetch() zwraca Promise rozwiązywany do obiektu Response. Aby uzyskać dane, należy wywołać metodę jak .json() lub .text() na obiekcie Response, która również zwraca Promise."
+    },
+    {
+      "question": "Która z poniższych cech NIE dotyczy funkcji strzałkowych (arrow functions)?",
+      "options": [
+        "Posiadają zwięzłą składnię",
+        "Nie mają własnego kontekstu this",
+        "Mogą być używane jako konstruktory z operatorem new",
+        "Dziedziczą this z otaczającego zakresu"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Funkcje strzałkowe NIE mogą być używane jako konstruktory - próba użycia new ze strzałką powoduje TypeError. Funkcje strzałkowe nie mają własnego this, arguments ani super, i dziedziczą je z zakresu leksykalnego."
+    },
+    {
+      "question": "Jaka jest główna różnica między Map a zwykłym obiektem {} w JavaScript?",
+      "options": [
+        "Map jest szybszy przy iteracji",
+        "Map może mieć klucze dowolnego typu, obiekt tylko stringi i symbole",
+        "Map automatycznie sortuje elementy",
+        "Obiekt może przechowywać funkcje, Map nie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Główną różnicą jest to, że Map może mieć klucze dowolnego typu (w tym obiekty i funkcje), podczas gdy klucze zwykłego obiektu są konwertowane na stringi (lub mogą być symbolami). Map też zachowuje kolejność wstawiania i ma właściwość size."
+    },
+    {
+      "question": "Jaki jest zalecany sposób dołączania zewnętrznych plików JavaScript do dokumentu HTML?",
+      "options": [
+        "W sekcji <head> bez żadnych atrybutów",
+        "Inline w atrybutach onclick",
+        "Na końcu <body> lub z atrybutem defer/async",
+        "Wewnątrz znacznika <style>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Zaleca się umieszczanie skryptów na końcu <body> lub używanie atrybutu defer/async w <head>. Zapewnia to, że HTML jest najpierw sparsowany, a skrypt nie blokuje renderowania strony."
+    },
+    {
+      "question": "Co to jest Temporal Dead Zone (TDZ)?",
+      "options": [
+        "Strefa czasowa używana przez obiekt Date",
+        "Okres między deklaracją let/const a jej inicjalizacją, gdy zmienna jest niedostępna",
+        "Mechanizm garbage collection",
+        "Opóźnienie w wykonaniu setTimeout"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Temporal Dead Zone to okres od początku bloku do miejsca deklaracji let/const, w którym próba dostępu do zmiennej powoduje ReferenceError. Zmienne var nie mają TDZ - są hoistowane z wartością undefined."
+    },
+    {
+      "question": "Który typ danych NIE jest typem prymitywnym w JavaScript?",
+      "options": [
+        "String",
+        "Symbol",
+        "Array",
+        "BigInt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Array (tablica) jest typem obiektowym, nie prymitywnym. Typy prymitywne to: String, Number, Boolean, Null, Undefined, Symbol i BigInt. Typy prymitywne są niemutowalne i przekazywane przez wartość."
+    },
+    {
+      "question": "Co zwróci wyrażenie: typeof []?",
+      "options": [
+        "\"array\"",
+        "\"object\"",
+        "\"list\"",
+        "\"Array\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "typeof [] zwraca \"object\", ponieważ tablice w JavaScript są specjalnym rodzajem obiektów. Do sprawdzenia czy coś jest tablicą, należy użyć Array.isArray()."
+    },
+    {
+      "question": "Jaka jest różnica między null a undefined?",
+      "options": [
+        "Nie ma różnicy, to synonimy",
+        "null oznacza celowy brak wartości, undefined oznacza brak przypisania",
+        "undefined jest błędem, null nie",
+        "null jest typem obiektowym, undefined jest funkcją"
+      ],
+      "correctAnswer": 1,
+      "explanation": "null reprezentuje celowy, świadomy brak wartości przypisany przez programistę. undefined oznacza, że zmienna została zadeklarowana, ale nie otrzymała wartości, lub właściwość obiektu nie istnieje."
+    },
+    {
+      "question": "Co robi operator spread (...) w kontekście tablicy?",
+      "options": [
+        "Łączy dwie tablice w obiekt",
+        "Rozpakowuje elementy tablicy",
+        "Sprawdza długość tablicy",
+        "Sortuje tablicę"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operator spread (...) rozpakowuje elementy tablicy (lub obiektu iterowalnego) w miejscu, gdzie oczekiwane są pojedyncze elementy. Używany do kopiowania tablic, łączenia ich, lub przekazywania elementów jako argumentów funkcji."
+    },
+    {
+      "question": "Który operator ma najwyższy priorytet w JavaScript?",
+      "options": [
+        "Dodawanie (+)",
+        "Mnożenie (*)",
+        "Nawiasy ()",
+        "Porównanie (===)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Nawiasy () mają najwyższy priorytet i pozwalają na kontrolowanie kolejności wykonywania operacji. Następnie są operatory jednoargumentowe, mnożenie/dzielenie, dodawanie/odejmowanie, porównania i operatory logiczne."
+    },
+    {
+      "question": "Co oznacza zapis: const square = x => x * x?",
+      "options": [
+        "Deklarację klasy Square",
+        "Funkcję strzałkową przyjmującą jeden argument i zwracającą jego kwadrat",
+        "Przypisanie wartości x do stałej square",
+        "Błąd składni"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Jest to funkcja strzałkowa z jednym parametrem x, która zwraca x * x. Przy jednym parametrze można pominąć nawiasy, a przy pojedynczym wyrażeniu zwracanym można pominąć słowo return i nawiasy klamrowe."
+    },
+    {
+      "question": "Która pętla gwarantuje wykonanie bloku kodu przynajmniej raz?",
+      "options": [
+        "for",
+        "while",
+        "do...while",
+        "for...of"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pętla do...while sprawdza warunek po wykonaniu bloku kodu, więc blok zawsze wykona się przynajmniej raz. Pozostałe pętle sprawdzają warunek przed pierwszą iteracją."
+    },
+    {
+      "question": "Co robi instrukcja break w pętli?",
+      "options": [
+        "Przeskakuje do następnej iteracji",
+        "Natychmiast kończy pętlę",
+        "Wstrzymuje wykonanie na 1 sekundę",
+        "Restartuje pętlę od początku"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Instrukcja break natychmiast kończy wykonanie pętli i przechodzi do kodu po pętli. Instrukcja continue przeskakuje do następnej iteracji bez kończenia pętli."
+    },
+    {
+      "question": "Jaka jest różnica między for...in a for...of?",
+      "options": [
+        "Nie ma różnicy",
+        "for...in iteruje po kluczach, for...of po wartościach",
+        "for...in jest szybszy",
+        "for...of działa tylko na stringach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "for...in iteruje po kluczach (właściwościach) obiektu lub indeksach tablicy. for...of iteruje po wartościach obiektów iterowalnych (tablice, stringi, Map, Set). Dla tablic zaleca się for...of."
+    },
+    {
+      "question": "Co zwraca funkcja bez instrukcji return?",
+      "options": [
+        "null",
+        "0",
+        "undefined",
+        "false"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Funkcja bez instrukcji return lub z pustym return zwraca undefined. Jest to domyślna wartość zwracana przez wszystkie funkcje, które nie zwracają jawnie żadnej wartości."
+    },
+    {
+      "question": "Co to jest IIFE?",
+      "options": [
+        "Interfejs do obsługi błędów",
+        "Natychmiast wywoływane wyrażenie funkcyjne",
+        "Typ danych w ES6",
+        "Metoda obsługi zdarzeń"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IIFE (Immediately Invoked Function Expression) to funkcja definiowana i wywoływana natychmiast: (function() { ... })(). Tworzy prywatny zakres, zapobiegając zanieczyszczeniu przestrzeni globalnej."
+    },
+    {
+      "question": "Która metoda dodaje element na końcu tablicy?",
+      "options": [
+        "unshift()",
+        "push()",
+        "pop()",
+        "shift()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "push() dodaje element(y) na końcu tablicy i zwraca nową długość. unshift() dodaje na początku, pop() usuwa z końca, shift() usuwa z początku."
+    },
+    {
+      "question": "Co zwraca metoda pop() wywołana na tablicy?",
+      "options": [
+        "Nową długość tablicy",
+        "Usunięty ostatni element",
+        "true lub false",
+        "Kopię tablicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metoda pop() usuwa ostatni element z tablicy i zwraca go. Jeśli tablica jest pusta, zwraca undefined. Metoda ta modyfikuje oryginalną tablicę."
+    },
+    {
+      "question": "Która metoda tablicowa NIE modyfikuje oryginalnej tablicy?",
+      "options": [
+        "push()",
+        "sort()",
+        "map()",
+        "splice()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "map() zwraca nową tablicę i nie modyfikuje oryginału. push() dodaje elementy, sort() sortuje w miejscu, splice() usuwa/dodaje elementy - wszystkie te metody modyfikują oryginalną tablicę."
+    },
+    {
+      "question": "Co robi metoda find() na tablicy?",
+      "options": [
+        "Zwraca indeks pierwszego pasującego elementu",
+        "Zwraca pierwszy element spełniający warunek",
+        "Zwraca wszystkie pasujące elementy",
+        "Zwraca true jeśli element istnieje"
+      ],
+      "correctAnswer": 1,
+      "explanation": "find() zwraca pierwszy element, dla którego funkcja testująca zwróci true. Jeśli nie znajdzie, zwraca undefined. findIndex() zwraca indeks, filter() zwraca wszystkie pasujące, includes() zwraca boolean."
+    },
+    {
+      "question": "Jak sprawdzić czy tablica zawiera określony element?",
+      "options": [
+        "array.has(element)",
+        "array.contains(element)",
+        "array.includes(element)",
+        "array.exists(element)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Metoda includes() sprawdza czy tablica zawiera określony element i zwraca true lub false. Metody has(), contains() i exists() nie istnieją dla tablic (has() istnieje dla Map i Set)."
+    },
+    {
+      "question": "Co zwraca Object.keys(obj)?",
+      "options": [
+        "Liczbę właściwości obiektu",
+        "Tablicę wartości obiektu",
+        "Tablicę kluczy (nazw właściwości) obiektu",
+        "Obiekt z kluczami jako wartościami"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Object.keys() zwraca tablicę nazw własnych właściwości obiektu (kluczy). Object.values() zwraca wartości, Object.entries() zwraca pary [klucz, wartość]."
+    },
+    {
+      "question": "Jak usunąć właściwość z obiektu?",
+      "options": [
+        "object.remove('property')",
+        "delete object.property",
+        "object.property = null",
+        "object.delete('property')"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operator delete usuwa właściwość z obiektu: delete object.property lub delete object['property']. Przypisanie null lub undefined zmienia tylko wartość, ale właściwość nadal istnieje."
+    },
+    {
+      "question": "Co robi Object.freeze()?",
+      "options": [
+        "Kopiuje obiekt",
+        "Zamraża obiekt, uniemożliwiając modyfikacje",
+        "Konwertuje obiekt na tablicę",
+        "Usuwa wszystkie właściwości"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Object.freeze() zamraża obiekt - nie można dodawać, usuwać ani modyfikować jego właściwości. Obiekt staje się niemutowalny (płytko - zagnieżdżone obiekty nie są zamrożone)."
+    },
+    {
+      "question": "Która metoda służy do wybierania elementu DOM po selektorze CSS?",
+      "options": [
+        "document.getElement()",
+        "document.findElement()",
+        "document.querySelector()",
+        "document.selectElement()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "querySelector() przyjmuje selektor CSS i zwraca pierwszy pasujący element. querySelectorAll() zwraca wszystkie pasujące elementy. Są to nowoczesne, elastyczne metody wybierania elementów DOM."
+    },
+    {
+      "question": "Jaka jest różnica między textContent a innerHTML?",
+      "options": [
+        "Nie ma różnicy",
+        "textContent zwraca/ustawia czysty tekst, innerHTML obsługuje HTML",
+        "innerHTML jest szybszy",
+        "textContent działa tylko na divach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "textContent obsługuje czysty tekst (bezpieczny), innerHTML obsługuje HTML (może prowadzić do XSS). textContent jest szybszy i bezpieczniejszy przy danych od użytkownika."
+    },
+    {
+      "question": "Jak dodać klasę CSS do elementu?",
+      "options": [
+        "element.class = 'nazwa'",
+        "element.addClass('nazwa')",
+        "element.classList.add('nazwa')",
+        "element.style.class = 'nazwa'"
+      ],
+      "correctAnswer": 2,
+      "explanation": "classList.add() dodaje klasę do elementu. classList oferuje też metody remove(), toggle() i contains(). element.className pozwala na bezpośrednie przypisanie, ale nadpisuje wszystkie klasy."
+    },
+    {
+      "question": "Która metoda tworzy nowy element HTML?",
+      "options": [
+        "document.newElement()",
+        "document.createElement()",
+        "document.buildElement()",
+        "document.addElement()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "document.createElement('tagName') tworzy nowy element HTML określonego typu. Utworzony element trzeba następnie dodać do dokumentu metodą appendChild() lub insertBefore()."
+    },
+    {
+      "question": "Jak usunąć element z DOM?",
+      "options": [
+        "element.delete()",
+        "element.remove()",
+        "element.destroy()",
+        "document.removeElement(element)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "element.remove() usuwa element z DOM. Alternatywnie można użyć parent.removeChild(element). Metody delete(), destroy() i removeElement() nie istnieją."
+    },
+    {
+      "question": "Która metoda służy do rejestrowania nasłuchu zdarzeń?",
+      "options": [
+        "element.onEvent()",
+        "element.addEventListener()",
+        "element.attachEvent()",
+        "element.listenTo()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "addEventListener() to nowoczesna metoda rejestrowania nasłuchów zdarzeń. Przyjmuje typ zdarzenia, funkcję obsługi i opcjonalnie opcje. attachEvent() to przestarzała metoda IE."
+    },
+    {
+      "question": "Co zawiera właściwość event.target?",
+      "options": [
+        "Typ zdarzenia",
+        "Element, na którym zarejestrowano nasłuch",
+        "Element, który wywołał zdarzenie",
+        "Pozycję kursora"
+      ],
+      "correctAnswer": 2,
+      "explanation": "event.target zawiera element, który faktycznie wywołał zdarzenie (np. kliknięty element). event.currentTarget zawiera element, na którym zarejestrowano nasłuch. Różnica jest istotna przy delegacji zdarzeń."
+    },
+    {
+      "question": "Co robi event.preventDefault()?",
+      "options": [
+        "Zatrzymuje propagację zdarzenia",
+        "Blokuje domyślne zachowanie przeglądarki",
+        "Usuwa nasłuch zdarzenia",
+        "Anuluje zdarzenie całkowicie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "preventDefault() blokuje domyślne zachowanie przeglądarki (np. nawigację przy kliknięciu linku, wysłanie formularza). stopPropagation() zatrzymuje propagację zdarzenia w DOM."
+    },
+    {
+      "question": "Co to jest event bubbling (bąbelkowanie)?",
+      "options": [
+        "Animacja zdarzenia",
+        "Propagacja zdarzenia w górę drzewa DOM",
+        "Opóźnienie zdarzenia",
+        "Wielokrotne wywołanie zdarzenia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Event bubbling to propagacja zdarzenia od elementu docelowego w górę przez wszystkich przodków do korzenia dokumentu. Przeciwieństwem jest capturing (w dół). Można zatrzymać przez stopPropagation()."
+    },
+    {
+      "question": "Co to jest delegacja zdarzeń?",
+      "options": [
+        "Przekazywanie zdarzeń między oknami",
+        "Przypisanie jednego nasłuchu do rodzica zamiast wielu do potomków",
+        "Automatyczne usuwanie nasłuchów",
+        "Konwersja zdarzeń na Promise"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Delegacja zdarzeń to wzorzec, gdzie jeden nasłuch na elemencie nadrzędnym obsługuje zdarzenia potomków (wykorzystując bubbling i event.target). Wydajniejsze i obsługuje dynamicznie dodawane elementy."
+    },
+    {
+      "question": "Co robi setTimeout()?",
+      "options": [
+        "Wstrzymuje wykonanie kodu na określony czas",
+        "Planuje wykonanie funkcji po upływie określonego czasu",
+        "Ustawia limit czasu dla operacji",
+        "Mierzy czas wykonania kodu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "setTimeout() planuje jednokrotne wykonanie funkcji po upływie określonej liczby milisekund. Nie blokuje wykonania - kod po setTimeout kontynuuje się natychmiast. Zwraca ID do anulowania przez clearTimeout()."
+    },
+    {
+      "question": "Jaka jest różnica między setTimeout a setInterval?",
+      "options": [
+        "setTimeout jest szybszy",
+        "setTimeout wykonuje funkcję raz, setInterval cyklicznie",
+        "setInterval działa tylko w pętlach",
+        "Nie ma różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "setTimeout wykonuje funkcję jednokrotnie po określonym opóźnieniu. setInterval wykonuje funkcję cyklicznie w określonych odstępach czasu, dopóki nie zostanie zatrzymany przez clearInterval()."
+    },
+    {
+      "question": "Co to jest callback hell?",
+      "options": [
+        "Błąd w funkcji zwrotnej",
+        "Zagnieżdżone callbacks tworzące trudny w utrzymaniu kod",
+        "Nieskończona pętla callbacks",
+        "Brak obsługi błędów w callback"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Callback hell to antypattern polegający na głębokim zagnieżdżaniu funkcji zwrotnych, co prowadzi do kodu trudnego do czytania i utrzymania. Rozwiązaniem są Promises i async/await."
+    },
+    {
+      "question": "Jak utworzyć nowy obiekt Promise?",
+      "options": [
+        "Promise.create()",
+        "new Promise((resolve, reject) => {})",
+        "Promise.new()",
+        "createPromise()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Promise tworzy się przez new Promise() z funkcją wykonawczą przyjmującą resolve i reject. resolve() oznacza sukces, reject() błąd. Promise.resolve() i Promise.reject() tworzą gotowe Promise."
+    },
+    {
+      "question": "Co robi metoda Promise.all()?",
+      "options": [
+        "Wykonuje wszystkie Promise sekwencyjnie",
+        "Czeka na wszystkie Promise i zwraca tablicę wyników lub odrzuca przy pierwszym błędzie",
+        "Zwraca pierwszy rozwiązany Promise",
+        "Łączy Promise w jeden"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Promise.all() przyjmuje tablicę Promise i zwraca Promise rozwiązywany do tablicy wszystkich wyników. Jeśli którykolwiek Promise zostanie odrzucony, cały Promise.all() jest odrzucany."
+    },
+    {
+      "question": "Co robi Promise.race()?",
+      "options": [
+        "Wykonuje Promise równolegle",
+        "Zwraca wynik pierwszego zakończonego Promise (sukces lub błąd)",
+        "Sprawdza który Promise jest szybszy",
+        "Anuluje wolniejsze Promise"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Promise.race() zwraca Promise rozwiązywany/odrzucany wynikiem pierwszego zakończonego Promise z przekazanej tablicy, niezależnie czy to sukces czy błąd. Przydatne do timeoutów."
+    },
+    {
+      "question": "Gdzie można użyć słowa kluczowego await?",
+      "options": [
+        "Wszędzie w kodzie",
+        "Tylko wewnątrz funkcji async",
+        "Tylko w pętlach",
+        "Tylko w bloku try"
+      ],
+      "correctAnswer": 1,
+      "explanation": "await można używać tylko wewnątrz funkcji oznaczonych jako async (lub na najwyższym poziomie modułów ES). await wstrzymuje wykonanie funkcji do rozwiązania Promise."
+    },
+    {
+      "question": "Jak obsłużyć błędy w async/await?",
+      "options": [
+        "Używając .catch() na funkcji",
+        "Używając bloku try...catch",
+        "Błędy są automatycznie obsługiwane",
+        "Używając if...else"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W async/await błędy obsługuje się blokiem try...catch. Odrzucony Promise w await rzuca wyjątek, który można złapać w catch. Alternatywnie można użyć .catch() na wywołaniu funkcji async."
+    },
+    {
+      "question": "Co to jest Event Loop?",
+      "options": [
+        "Pętla for do obsługi zdarzeń",
+        "Mechanizm zarządzający asynchronicznym wykonaniem kodu",
+        "Typ zdarzenia DOM",
+        "Biblioteka do obsługi zdarzeń"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Event Loop to mechanizm JavaScript monitorujący stos wywołań i kolejki zadań. Gdy stos jest pusty, przenosi zadania z kolejek na stos do wykonania, umożliwiając asynchroniczność w jednowątkowym środowisku."
+    },
+    {
+      "question": "Które zadania mają wyższy priorytet w Event Loop?",
+      "options": [
+        "Makrozadania (setTimeout)",
+        "Mikrozadania (Promise.then)",
+        "Mają ten sam priorytet",
+        "Zależy od przeglądarki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mikrozadania (Promise.then, queueMicrotask) mają wyższy priorytet - wszystkie są wykonywane przed następnym makrozadaniem (setTimeout, setInterval, zdarzenia I/O)."
+    },
+    {
+      "question": "Co to jest Call Stack?",
+      "options": [
+        "Lista wywołań API",
+        "Stos ramek funkcji aktualnie wykonywanych (LIFO)",
+        "Historia wywołań funkcji",
+        "Kolejka zadań asynchronicznych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Call Stack to stos przechowujący ramki funkcji według zasady LIFO (ostatni na wejściu, pierwszy na wyjściu). Każde wywołanie funkcji dodaje ramkę, zakończenie usuwa ją ze stosu."
+    },
+    {
+      "question": "Do czego odnosi się 'this' w metodzie obiektu?",
+      "options": [
+        "Do obiektu globalnego",
+        "Do obiektu, na którym metoda została wywołana",
+        "Do funkcji",
+        "Do undefined"
+      ],
+      "correctAnswer": 1,
+      "explanation": "W metodzie obiektu 'this' odnosi się do obiektu, na którym metoda została wywołana. Pozwala to metodom na dostęp do innych właściwości tego samego obiektu."
+    },
+    {
+      "question": "Co zwraca 'this' w globalnym zakresie (bez strict mode)?",
+      "options": [
+        "undefined",
+        "null",
+        "window (w przeglądarce)",
+        "Pusty obiekt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W globalnym zakresie bez strict mode, 'this' odnosi się do obiektu globalnego: window w przeglądarce lub global w Node.js. W strict mode 'this' jest undefined."
+    },
+    {
+      "question": "Co robi metoda bind()?",
+      "options": [
+        "Wywołuje funkcję natychmiast",
+        "Tworzy nową funkcję z trwale związanym this",
+        "Łączy dwie funkcje",
+        "Blokuje zmianę this"
+      ],
+      "correctAnswer": 1,
+      "explanation": "bind() tworzy nową funkcję z trwale związanym kontekstem this i opcjonalnie wstępnie ustawionymi argumentami. Nowa funkcja może być wywołana później. call() i apply() wywołują natychmiast."
+    },
+    {
+      "question": "Dlaczego funkcje strzałkowe nie nadają się na metody obiektów?",
+      "options": [
+        "Są zbyt wolne",
+        "Nie mają własnego this, dziedziczą z otoczenia",
+        "Nie mogą zwracać wartości",
+        "Nie mogą przyjmować argumentów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Funkcje strzałkowe dziedziczą this z zakresu leksykalnego, nie z kontekstu wywołania. Jako metody obiektu, this nie będzie wskazywać na obiekt, tylko na zewnętrzny zakres (często window lub undefined)."
+    },
+    {
+      "question": "Co robi słowo kluczowe 'class' w JavaScript?",
+      "options": [
+        "Tworzy nowy typ danych",
+        "Definiuje klasę (syntactic sugar dla prototypów)",
+        "Importuje moduł",
+        "Tworzy interfejs"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Słowo kluczowe 'class' definiuje klasę, która jest syntaktycznym cukrem nad mechanizmem prototypów JavaScript. Klasy ułatwiają tworzenie obiektów i dziedziczenie w stylu OOP."
+    },
+    {
+      "question": "Co to jest konstruktor w klasie?",
+      "options": [
+        "Metoda wywoływana przy tworzeniu instancji",
+        "Pierwsza zdefiniowana metoda",
+        "Metoda statyczna",
+        "Getter właściwości"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Konstruktor (constructor) to specjalna metoda wywoływana automatycznie przy tworzeniu instancji klasy przez new. Służy do inicjalizacji właściwości instancji."
+    },
+    {
+      "question": "Jak zdefiniować metodę statyczną w klasie?",
+      "options": [
+        "function static methodName()",
+        "static methodName()",
+        "methodName: static function()",
+        "@static methodName()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metody statyczne definiuje się słowem kluczowym static przed nazwą metody. Należą do klasy, nie do instancji, i wywołuje się je na klasie: ClassName.methodName()."
+    },
+    {
+      "question": "Co robi słowo kluczowe 'extends'?",
+      "options": [
+        "Rozszerza obiekt o nowe właściwości",
+        "Tworzy klasę potomną dziedziczącą po klasie nadrzędnej",
+        "Eksportuje klasę",
+        "Dodaje interfejs do klasy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "extends tworzy klasę potomną (podklasę) dziedziczącą właściwości i metody klasy nadrzędnej. Klasa potomna może nadpisywać metody i dodawać własne."
+    },
+    {
+      "question": "Kiedy należy wywołać super() w konstruktorze klasy potomnej?",
+      "options": [
+        "Na końcu konstruktora",
+        "Przed użyciem this",
+        "Nigdy, jest automatyczne",
+        "Tylko przy nadpisywaniu metod"
+      ],
+      "correctAnswer": 1,
+      "explanation": "super() musi być wywołane przed pierwszym użyciem this w konstruktorze klasy potomnej. Wywołuje konstruktor klasy nadrzędnej i inicjalizuje odziedziczone właściwości."
+    },
+    {
+      "question": "Jaka jest różnica między eksportem nazwanym a domyślnym?",
+      "options": [
+        "Nazwany jest szybszy",
+        "Nazwany pozwala na wiele eksportów, domyślny jeden na moduł",
+        "Domyślny wymaga nawiasów klamrowych przy imporcie",
+        "Nie ma różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eksport nazwany (export const x) pozwala na wiele eksportów z modułu, import wymaga {}. Eksport domyślny (export default) - jeden na moduł, import bez {} z dowolną nazwą."
+    },
+    {
+      "question": "Jak zaimportować wszystkie eksporty z modułu?",
+      "options": [
+        "import all from './module'",
+        "import * as name from './module'",
+        "import { * } from './module'",
+        "import everything from './module'"
+      ],
+      "correctAnswer": 1,
+      "explanation": "import * as name tworzy obiekt przestrzeni nazw zawierający wszystkie eksporty modułu. Dostęp do nich przez name.export1, name.export2 itd."
+    },
+    {
+      "question": "Co to jest dynamiczny import?",
+      "options": [
+        "Import zależny od warunku",
+        "Import wykonywany w runtime, zwracający Promise",
+        "Import bez podania ścieżki",
+        "Automatyczny import"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dynamiczny import import('./module') ładuje moduł w czasie wykonania i zwraca Promise rozwiązywany do obiektu modułu. Umożliwia lazy loading i warunkowe ładowanie kodu."
+    },
+    {
+      "question": "Jaka jest różnica między CommonJS a ESM?",
+      "options": [
+        "CommonJS jest nowszy",
+        "CommonJS używa require/module.exports, ESM używa import/export",
+        "ESM działa tylko w Node.js",
+        "Nie ma różnicy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CommonJS (Node.js) używa require() i module.exports, ładowanie synchroniczne. ESM (standard) używa import/export, ładowanie może być asynchroniczne. ESM jest nowoczesnym standardem."
+    },
+    {
+      "question": "Do czego służy Set w JavaScript?",
+      "options": [
+        "Do ustawiania wartości zmiennych",
+        "Do przechowywania unikalnych wartości",
+        "Do sortowania danych",
+        "Do grupowania obiektów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Set to kolekcja przechowująca unikalne wartości - duplikaty są automatycznie eliminowane. Często używany do usuwania duplikatów: [...new Set(array)]."
+    },
+    {
+      "question": "Czym WeakMap różni się od Map?",
+      "options": [
+        "WeakMap jest szybszy",
+        "WeakMap przyjmuje tylko obiekty jako klucze i nie blokuje garbage collection",
+        "WeakMap ma więcej metod",
+        "WeakMap przechowuje więcej danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "WeakMap przyjmuje tylko obiekty jako klucze, a referencje są słabe - nie blokują garbage collection. Nie można iterować po WeakMap. Przydatne do przechowywania prywatnych danych obiektów."
+    },
+    {
+      "question": "Jak utworzyć obiekt Date reprezentujący aktualny czas?",
+      "options": [
+        "Date.now()",
+        "new Date()",
+        "Date.current()",
+        "new Date.today()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "new Date() tworzy obiekt Date z aktualną datą i czasem. Date.now() zwraca timestamp (liczbę milisekund od 1970), nie obiekt Date."
+    },
+    {
+      "question": "Która metoda Date zwraca miesiąc (0-11)?",
+      "options": [
+        "getMonth()",
+        "getMonthIndex()",
+        "month()",
+        "getMonthNumber()"
+      ],
+      "correctAnswer": 0,
+      "explanation": "getMonth() zwraca miesiąc jako liczbę 0-11 (styczeń = 0, grudzień = 11). To częste źródło błędów - należy pamiętać o dodaniu 1 dla wyświetlania."
+    },
+    {
+      "question": "Co robi blok try...catch?",
+      "options": [
+        "Próbuje wykonać kod, a przy błędzie wykonuje catch",
+        "Porównuje dwa bloki kodu",
+        "Powtarza kod aż się powiedzie",
+        "Testuje wydajność kodu"
+      ],
+      "correctAnswer": 0,
+      "explanation": "try zawiera kod który może rzucić błąd. Jeśli błąd wystąpi, wykonanie przechodzi do catch, który otrzymuje obiekt błędu. Kod w finally wykonuje się zawsze."
+    },
+    {
+      "question": "Jak rzucić własny błąd?",
+      "options": [
+        "error('message')",
+        "throw new Error('message')",
+        "raise Error('message')",
+        "Error.throw('message')"
+      ],
+      "correctAnswer": 1,
+      "explanation": "throw new Error('message') rzuca nowy obiekt błędu. Można też rzucać inne wartości, ale Error zapewnia stack trace. Istnieją też TypeError, ReferenceError itd."
+    },
+    {
+      "question": "Który wbudowany typ błędu oznacza odwołanie do nieistniejącej zmiennej?",
+      "options": [
+        "TypeError",
+        "SyntaxError",
+        "ReferenceError",
+        "RangeError"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ReferenceError występuje przy odwołaniu do niezadeklarowanej zmiennej. TypeError - operacja na niewłaściwym typie, SyntaxError - błąd składni, RangeError - wartość poza zakresem."
+    },
+    {
+      "question": "Co zawiera właściwość error.stack?",
+      "options": [
+        "Liczbę błędów",
+        "Ślad stosu wywołań (stack trace)",
+        "Typ błędu",
+        "Listę zmiennych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "error.stack zawiera stack trace - historię wywołań funkcji prowadzącą do miejsca błędu. Nieocenione przy debugowaniu, pokazuje ścieżkę wykonania kodu."
+    },
+    {
+      "question": "Która metoda console wyświetla dane w formie tabeli?",
+      "options": [
+        "console.log()",
+        "console.table()",
+        "console.grid()",
+        "console.list()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "console.table() wyświetla dane (tablice, obiekty) w czytelnej formie tabelarycznej w konsoli. Szczególnie przydatne dla tablic obiektów."
+    },
+    {
+      "question": "Co robi słowo kluczowe 'debugger' w kodzie?",
+      "options": [
+        "Usuwa błędy automatycznie",
+        "Wstrzymuje wykonanie w tym miejscu (breakpoint)",
+        "Wyświetla informacje debugowania",
+        "Włącza tryb debugowania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Słowo 'debugger' tworzy breakpoint - gdy DevTools są otwarte, wykonanie zatrzymuje się w tym miejscu, umożliwiając inspekcję stanu programu."
+    },
+    {
+      "question": "Jak zmierzyć czas wykonania kodu w konsoli?",
+      "options": [
+        "console.time() i console.timeEnd()",
+        "console.start() i console.stop()",
+        "console.measure()",
+        "console.benchmark()"
+      ],
+      "correctAnswer": 0,
+      "explanation": "console.time('label') rozpoczyna pomiar, console.timeEnd('label') kończy i wyświetla czas. Przydatne do prostego profilowania wydajności."
+    },
+    {
+      "question": "Co sprawdza właściwość response.ok w Fetch API?",
+      "options": [
+        "Czy odpowiedź jest w formacie JSON",
+        "Czy kod statusu HTTP jest w zakresie 200-299",
+        "Czy połączenie jest bezpieczne",
+        "Czy odpowiedź jest kompletna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "response.ok jest true gdy status HTTP jest 200-299 (sukces). fetch() nie odrzuca Promise przy błędach HTTP (404, 500) - trzeba sprawdzać ok lub status ręcznie."
+    },
+    {
+      "question": "Jak przerwać żądanie fetch?",
+      "options": [
+        "fetch.cancel()",
+        "response.abort()",
+        "Używając AbortController",
+        "Nie można przerwać fetch"
+      ],
+      "correctAnswer": 2,
+      "explanation": "AbortController pozwala przerwać fetch: const controller = new AbortController(); fetch(url, {signal: controller.signal}); controller.abort(). Przydatne przy timeoutach i anulowaniu."
+    },
+    {
+      "question": "Która metoda Response parsuje odpowiedź jako JSON?",
+      "options": [
+        "response.toJSON()",
+        "response.json()",
+        "response.parseJSON()",
+        "JSON.parse(response)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "response.json() parsuje treść odpowiedzi jako JSON i zwraca Promise. Inne metody: .text() dla tekstu, .blob() dla danych binarnych, .arrayBuffer() dla bufora."
+    },
+    {
+      "question": "Jak wysłać dane JSON w żądaniu POST fetch?",
+      "options": [
+        "fetch(url, {data: obj})",
+        "fetch(url, {method: 'POST', body: JSON.stringify(obj), headers: {'Content-Type': 'application/json'}})",
+        "fetch.post(url, obj)",
+        "fetch(url, {json: obj})"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trzeba ustawić method: 'POST', body z JSON.stringify() i header Content-Type: application/json. fetch nie serializuje automatycznie obiektów."
+    },
+    {
+      "question": "Co oznacza 'use strict' na początku skryptu?",
+      "options": [
+        "Włącza kompilację TypeScript",
+        "Włącza tryb ścisły z surowszymi regułami",
+        "Blokuje użycie var",
+        "Wymusza średniki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "'use strict' włącza tryb ścisły: zabrania niezadeklarowanych zmiennych, this jest undefined w funkcjach globalnych, zabrania duplikatów parametrów itp. Pomaga unikać błędów."
+    },
+    {
+      "question": "Która praktyka jest zalecana w nowoczesnym JavaScript?",
+      "options": [
+        "Używanie var zamiast let/const",
+        "Używanie == do porównań",
+        "Używanie const domyślnie, let gdy zmienna się zmienia",
+        "Unikanie funkcji strzałkowych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Zaleca się const domyślnie (niemutowalność), let gdy wartość musi się zmieniać, === zamiast ==, funkcje strzałkowe dla callbacków. var i == są odradzane."
+    },
+    {
+      "question": "Co robi ESLint?",
+      "options": [
+        "Kompiluje JavaScript",
+        "Minifikuje kod",
+        "Analizuje kod i wykrywa potencjalne błędy",
+        "Testuje kod"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ESLint to narzędzie do statycznej analizy kodu JavaScript. Wykrywa błędy, niespójności stylu i potencjalne problemy przed uruchomieniem kodu. Konfigurowalny przez reguły."
+    },
+    {
+      "question": "Do czego służy Prettier?",
+      "options": [
+        "Do testowania kodu",
+        "Do automatycznego formatowania kodu",
+        "Do kompilacji",
+        "Do debugowania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prettier to narzędzie do automatycznego formatowania kodu. Wymusza spójny styl (wcięcia, cudzysłowy, średniki) w całym projekcie, eliminując dyskusje o formatowaniu."
+    },
+    {
+      "question": "Co to jest TypeScript w kontekście JavaScript?",
+      "options": [
+        "Nowa wersja JavaScript",
+        "Nadzbiór JavaScript dodający statyczne typowanie",
+        "Biblioteka do typowania",
+        "Alternatywna składnia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TypeScript to nadzbiór JavaScript dodający opcjonalne statyczne typowanie. Kompiluje się do JavaScript. Pomaga wykrywać błędy na etapie pisania kodu, nie w runtime."
+    },
+    {
+      "question": "Jaki jest wynik: [] == false?",
+      "options": [
+        "true",
+        "false",
+        "TypeError",
+        "undefined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "[] == false zwraca true przez koercję: [] → '' → 0, false → 0, więc 0 == 0. To jeden z powodów, dla których === jest zalecany - unika takich nieintuicyjnych wyników."
+    },
+    {
+      "question": "Co zwróci: typeof NaN?",
+      "options": [
+        "\"NaN\"",
+        "\"undefined\"",
+        "\"number\"",
+        "\"object\""
+      ],
+      "correctAnswer": 2,
+      "explanation": "typeof NaN zwraca \"number\", mimo że NaN oznacza 'Not a Number'. NaN jest specjalną wartością typu Number reprezentującą nieprawidłowy wynik numeryczny."
+    },
+    {
+      "question": "Jak sprawdzić czy wartość to NaN?",
+      "options": [
+        "value == NaN",
+        "value === NaN",
+        "Number.isNaN(value)",
+        "typeof value === 'NaN'"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Number.isNaN() poprawnie sprawdza NaN. NaN === NaN zwraca false (NaN nie jest równe samemu sobie). Globalne isNaN() może dawać fałszywe pozytywy po koercji."
+    },
+    {
+      "question": "Co to jest optional chaining (?.) w JavaScript?",
+      "options": [
+        "Operator warunkowy",
+        "Bezpieczny dostęp do właściwości które mogą nie istnieć",
+        "Łączenie stringów",
+        "Sprawdzanie typu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Optional chaining (?.) pozwala bezpiecznie odczytywać zagnieżdżone właściwości. obj?.prop?.nested zwraca undefined zamiast rzucać błąd, gdy obj lub prop jest null/undefined."
+    },
+    {
+      "question": "Co robi nullish coalescing operator (??)?",
+      "options": [
+        "Sprawdza czy wartość jest falsy",
+        "Zwraca prawą stronę tylko gdy lewa jest null lub undefined",
+        "Konwertuje na boolean",
+        "Porównuje dwie wartości"
+      ],
+      "correctAnswer": 1,
+      "explanation": "?? zwraca prawą stronę tylko gdy lewa jest null lub undefined (nie przy 0 czy ''). Różni się od ||, które traktuje wszystkie falsy wartości jako 'brak wartości'."
+    },
+    {
+      "question": "Co to jest destructuring w JavaScript?",
+      "options": [
+        "Usuwanie właściwości obiektu",
+        "Wypakowywanie wartości z tablic/obiektów do zmiennych",
+        "Niszczenie obiektu",
+        "Dzielenie kodu na moduły"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Destructuring to składnia wypakowywania wartości: const {name, age} = person; lub const [first, second] = array; Upraszcza dostęp do właściwości i elementów."
+    },
+    {
+      "question": "Co robi operator rest (...args) w parametrach funkcji?",
+      "options": [
+        "Rozpakowuje tablicę",
+        "Zbiera pozostałe argumenty w tablicę",
+        "Kopiuje argumenty",
+        "Sprawdza liczbę argumentów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rest parameter (...args) zbiera wszystkie pozostałe argumenty w tablicę. function sum(...numbers) pozwala na wywołanie sum(1,2,3,4) gdzie numbers = [1,2,3,4]."
+    },
+    {
+      "question": "Jak utworzyć płytką kopię tablicy?",
+      "options": [
+        "array.copy()",
+        "[...array] lub array.slice()",
+        "array.clone()",
+        "Object.copy(array)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Płytką kopię tablicy tworzy spread [...array], slice() lub Array.from(array). Płytka kopia oznacza, że zagnieżdżone obiekty są nadal współdzielone."
+    },
+    {
+      "question": "Co zwraca Array.isArray([])?",
+      "options": [
+        "false",
+        "true",
+        "\"array\"",
+        "undefined"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Array.isArray() zwraca true dla tablic, false dla innych wartości. Jest to jedyny pewny sposób sprawdzenia tablicy, ponieważ typeof [] zwraca \"object\"."
+    },
+    {
+      "question": "Co robi metoda Array.from()?",
+      "options": [
+        "Usuwa elementy z tablicy",
+        "Tworzy tablicę z obiektu iterowalnego lub array-like",
+        "Konwertuje tablicę na string",
+        "Filtruje tablicę"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Array.from() tworzy nową tablicę z obiektu iterowalnego (string, Set, Map) lub array-like (arguments, NodeList). Może też przyjąć funkcję mapującą."
+    },
+    {
+      "question": "Co to jest template literal w JavaScript?",
+      "options": [
+        "Szablon HTML",
+        "String w backtickach z interpolacją ${wyrażenie}",
+        "Wzorzec regex",
+        "Typ danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Template literals używają backticks (`) i pozwalają na interpolację wyrażeń ${...} oraz wieloliniowe stringi. Przykład: `Hello ${name}, you are ${age} years old`."
+    }
+  ]
+}

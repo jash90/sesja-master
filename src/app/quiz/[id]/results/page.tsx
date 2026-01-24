@@ -11,9 +11,11 @@ export default function QuizResultsPage() {
   const router = useRouter();
   const {
     quiz,
+    activeQuiz,
     quizState,
     timeElapsed,
     loadQuiz,
+    startQuiz,
     resetQuiz,
     clearQuiz,
     setSelectedSubject,
@@ -46,6 +48,13 @@ export default function QuizResultsPage() {
     fetchQuiz();
   }, [quiz, quizId, loadQuiz, router]);
 
+  // Start quiz if loaded but activeQuiz is not set (direct navigation)
+  useEffect(() => {
+    if (quiz && !activeQuiz && !isLoading) {
+      startQuiz();
+    }
+  }, [quiz, activeQuiz, isLoading, startQuiz]);
+
   const handleTryAgain = () => {
     resetQuiz();
     router.push(`/quiz/${quizId}/question?subject=${encodeURIComponent(subject)}`);
@@ -56,7 +65,7 @@ export default function QuizResultsPage() {
     router.push('/');
   };
 
-  if (isLoading || !quiz || !quizState) {
+  if (isLoading || !activeQuiz || !quizState) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-gray-800 text-xl">Ładowanie wyników...</div>
@@ -66,7 +75,7 @@ export default function QuizResultsPage() {
 
   return (
     <ResultsScreen
-      quiz={quiz}
+      quiz={activeQuiz}
       quizState={quizState}
       timeElapsed={timeElapsed}
       onTryAgain={handleTryAgain}
