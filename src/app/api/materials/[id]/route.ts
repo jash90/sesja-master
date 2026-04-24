@@ -1,20 +1,6 @@
+import { readFile } from 'node:fs/promises';
 import { NextResponse } from 'next/server';
-
-interface Material {
-  id: string;
-  filename: string;
-  title: string;
-  subject: string;
-  size: number;
-  createdAt: string;
-  url: string;
-}
-
-interface Manifest {
-  materials: Material[];
-  generatedAt: string;
-  subjects: string[];
-}
+import { readManifest, resolvePublicPath } from '@/lib/manifest';
 
 export async function GET(
   request: Request,
@@ -25,25 +11,7 @@ export async function GET(
     const { searchParams } = new URL(request.url);
     const subject = searchParams.get('subject') || 'test';
 
-    // Fetch manifest from static file
-    const baseUrl = process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-
-    const manifestRes = await fetch(`${baseUrl}/manifest.json`, {
-      next: { revalidate: 60 },
-    });
-
-    if (!manifestRes.ok) {
-      return NextResponse.json(
-        { error: 'Manifest not found' },
-        { status: 404 }
-      );
-    }
-
-    const manifest: Manifest = await manifestRes.json();
-
-    // Find the material
+    const manifest = await readManifest();
     const material = manifest.materials.find(
       (m) => m.id === id && m.subject === subject
     );
@@ -55,17 +23,7 @@ export async function GET(
       );
     }
 
-    // Fetch the content from static file
-    const contentRes = await fetch(`${baseUrl}${material.url}`);
-
-    if (!contentRes.ok) {
-      return NextResponse.json(
-        { error: 'Failed to load material content' },
-        { status: 404 }
-      );
-    }
-
-    const content = await contentRes.text();
+    const content = await readFile(resolvePublicPath(material.url), 'utf-8');
 
     return NextResponse.json({
       id: material.id,
