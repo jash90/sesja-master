@@ -1,0 +1,187 @@
+{
+  "title": "Proste metody oceny opłacalności przedsięwzięć inwestycyjnych",
+  "description": "Fiszki dotyczące metod oceny opłacalności inwestycji: okres zwrotu, prosta i księgowa stopa zwrotu, próg rentowności oraz wprowadzenie do NPV i IRR",
+  "category": "Finanse przedsiębiorstwa / Ocena inwestycji",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest inwestycja?",
+      "back": "Zaangażowanie kapitału w celu uzyskania przyszłych korzyści ekonomicznych."
+    },
+    {
+      "id": 2,
+      "front": "Dlaczego decyzje inwestycyjne wymagają dokładnej analizy?",
+      "back": "Bo wymagają dużych nakładów, mają długookresowe skutki i wymagają profesjonalnej analizy ekonomicznej przed podjęciem."
+    },
+    {
+      "id": 3,
+      "front": "Jakie są cztery etapy analizy inwestycji?",
+      "back": "1) Określenie nakładów, 2) Prognoza przepływów pieniężnych, 3) Ocena efektywności, 4) Podjęcie decyzji inwestycyjnej."
+    },
+    {
+      "id": 4,
+      "front": "Jak dzieli się metody oceny przedsięwzięć inwestycyjnych?",
+      "back": "Na metody proste (statyczne) oraz metody dyskontowe (dynamiczne)."
+    },
+    {
+      "id": 5,
+      "front": "Do czego służą proste metody oceny opłacalności?",
+      "back": "Zwłaszcza do wstępnej selekcji projektów inwestycyjnych na etapie studiów przedrealizacyjnych."
+    },
+    {
+      "id": 6,
+      "front": "Jakie trzy metody zalicza się do prostych metod oceny?",
+      "back": "1) Okres zwrotu nakładów, 2) Prosta i księgowa stopa zwrotu, 3) Analiza progu rentowności (BEP)."
+    },
+    {
+      "id": 7,
+      "front": "Co to jest okres zwrotu nakładów?",
+      "back": "Czas potrzebny do odzyskania poniesionych nakładów inwestycyjnych, w którym nakłady zwracają się z zysków netto i amortyzacji."
+    },
+    {
+      "id": 8,
+      "front": "Jaki jest ogólnie przyjęty maksymalny okres zwrotu nakładów kapitałowych?",
+      "back": "Na ogół przyjmuje się, że nie powinien przekraczać 5 lat."
+    },
+    {
+      "id": 9,
+      "front": "Jak oblicza się okres zwrotu przy stałych zyskach?",
+      "back": "Okres zwrotu = Nakłady inwestycyjne / Roczna nadwyżka finansowa."
+    },
+    {
+      "id": 10,
+      "front": "Co to jest nadwyżka finansowa?",
+      "back": "Zysk netto przedsiębiorstwa powiększony o amortyzację."
+    },
+    {
+      "id": 11,
+      "front": "Oblicz okres zwrotu: nakłady = 500 000 zł, nadwyżka finansowa = 100 000 zł rocznie.",
+      "back": "Okres zwrotu = 500 000 / 100 000 = 5 lat."
+    },
+    {
+      "id": 12,
+      "front": "Kiedy inwestycja jest akceptowana na podstawie okresu zwrotu?",
+      "back": "Gdy okres zwrotu jest krótszy od okresu dopuszczalnego (maksymalnego)."
+    },
+    {
+      "id": 13,
+      "front": "Co oznaczają skróty ARR i RC?",
+      "back": "Prosta stopa zwrotu (Accounting Rate of Return / Return on Capital) – relacja rocznego zysku do zainwestowanego kapitału."
+    },
+    {
+      "id": 14,
+      "front": "Jaki jest najprostszy wzór na prostą stopę zwrotu?",
+      "back": "ARR = Zysk netto / Kapitał zainwestowany. Im wyższa wartość, tym inwestycja bardziej opłacalna."
+    },
+    {
+      "id": 15,
+      "front": "Jak oblicza się prostą stopę zwrotu z kapitału własnego (Rw)?",
+      "back": "Rw = (Zn / Kw) × 100%, gdzie Zn to roczny zysk netto, a Kw to kapitał własny."
+    },
+    {
+      "id": 16,
+      "front": "Jak oblicza się prostą stopę zwrotu całości kapitału (Rc)?",
+      "back": "Rc = [(Zn + Or) / (Kw + B)] × 100%, gdzie Or to roczne odsetki od długu, a B to dług."
+    },
+    {
+      "id": 17,
+      "front": "Co uwzględnia księgowa stopa zwrotu, czego nie uwzględniają zwykłe stopy zwrotu?",
+      "back": "Uwzględnia stopniowe odzyskiwanie kapitału w miarę umarzania stworzonego majątku – używa średniej z kapitału początkowego i końcowego."
+    },
+    {
+      "id": 18,
+      "front": "Jak oblicza się księgową stopę zwrotu (Rk)?",
+      "back": "Rk = Zn / [(Kcp + Kck) / 2] × 100%, gdzie Kcp to kapitał początkowy, a Kck – końcowy."
+    },
+    {
+      "id": 19,
+      "front": "Co oznacza skrót BEP?",
+      "back": "Break-Even Point – próg rentowności, punkt w którym przychody ze sprzedaży zrównują się z kosztami (zysk = 0)."
+    },
+    {
+      "id": 20,
+      "front": "Jakie trzy czynniki wpływają na poziom rentowności?",
+      "back": "Wielkość produkcji (sprzedaży), ceny wyrobu oraz jednostkowe koszty zmienne i stałe koszty produkcji."
+    },
+    {
+      "id": 21,
+      "front": "Jaki jest wzór na próg rentowności w ujęciu ilościowym?",
+      "back": "BEP = Koszty stałe / (Cena jednostkowa – Jednostkowy koszt zmienny)."
+    },
+    {
+      "id": 22,
+      "front": "Jak obliczyć próg rentowności w ujęciu wartościowym?",
+      "back": "BEP' = BEP × cena jednostkowa – czyli próg ilościowy pomnożony przez cenę."
+    },
+    {
+      "id": 23,
+      "front": "Co pokazuje próg rentowności w ujęciu procentowym?",
+      "back": "Stopień wykorzystania zdolności produkcyjnych (lub stopień zaspokojenia prognozowanego popytu) – relację progu ilościowego do maksymalnej sprzedaży."
+    },
+    {
+      "id": 24,
+      "front": "Jakie są zalety prostych metod oceny inwestycji?",
+      "back": "Łatwe obliczenia, szybka ocena inwestycji, niewielkie wymagania dotyczące danych."
+    },
+    {
+      "id": 25,
+      "front": "Jakie są główne wady prostych metod oceny?",
+      "back": "Brak uwzględnienia wartości pieniądza w czasie oraz ograniczona dokładność analizy."
+    },
+    {
+      "id": 26,
+      "front": "Czym są metody dyskontowe (dynamiczne)?",
+      "back": "Metody oceny inwestycji uwzględniające wartość pieniądza w czasie – najważniejsze to NPV oraz IRR."
+    },
+    {
+      "id": 27,
+      "front": "Co to jest NPV?",
+      "back": "Net Present Value – wartość bieżąca netto; różnica między zdyskontowanymi wpływami a zdyskontowanymi wydatkami inwestycyjnymi."
+    },
+    {
+      "id": 28,
+      "front": "Jaka jest interpretacja NPV?",
+      "back": "NPV > 0 → inwestycja się opłaca; NPV = 0 → nie zarabia ani nie traci; NPV < 0 → inwestycja nieopłacalna."
+    },
+    {
+      "id": 29,
+      "front": "Co to jest dyskontowanie?",
+      "back": "Przeliczenie przyszłych przepływów pieniężnych na wartość dzisiejszą z uwzględnieniem zmiany wartości pieniądza w czasie."
+    },
+    {
+      "id": 30,
+      "front": "Oblicz NPV: inwestycja 10 000 zł, zdyskontowane wpływy 12 000 zł.",
+      "back": "NPV = 12 000 – 10 000 = 2 000 zł. Inwestycja realnie zarabia 2 000 zł."
+    },
+    {
+      "id": 31,
+      "front": "Co to jest IRR?",
+      "back": "Internal Rate of Return – wewnętrzna stopa zwrotu; stopa dyskontowa, przy której NPV = 0; pokazuje, ile procent rocznie zarabia inwestycja."
+    },
+    {
+      "id": 32,
+      "front": "Jaka jest interpretacja IRR?",
+      "back": "IRR > oczekiwana stopa zwrotu (koszt kapitału) → inwestycja opłacalna; IRR < oczekiwana stopa zwrotu → inwestycja nieopłacalna."
+    },
+    {
+      "id": 33,
+      "front": "Przykład: IRR = 14%, oczekiwany zwrot = 10%. Czy inwestycja jest opłacalna?",
+      "back": "Tak, ponieważ 14% > 10% – inwestycja przekracza oczekiwaną stopę zwrotu."
+    },
+    {
+      "id": 34,
+      "front": "Czym różnią się NPV i IRR?",
+      "back": "NPV mówi, ile pieniędzy zarobimy na inwestycji (kwota), a IRR mówi, jaki procent inwestycja zarabia (stopa)."
+    },
+    {
+      "id": 35,
+      "front": "Dlaczego 1000 zł dziś jest więcej warte niż 1000 zł za 5 lat?",
+      "back": "Ze względu na zmianę wartości pieniądza w czasie – wpływ inflacji, stopę procentową oraz możliwość zainwestowania pieniędzy."
+    },
+    {
+      "id": 36,
+      "front": "Co robi się z przyszłymi wpływami w metodzie NPV?",
+      "back": "Dyskontuje się je, czyli przelicza na wartość dzisiejszą przy określonej stopie dyskontowej."
+    }
+  ]
+}

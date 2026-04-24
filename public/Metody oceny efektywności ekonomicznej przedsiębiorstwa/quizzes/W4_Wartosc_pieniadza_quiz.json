@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Wartość pieniądza w czasie",
+  "description": "Quiz sprawdzający wiedzę o stopach procentowych (nominalnej, realnej, efektywnej), inflacji, kapitalizacji i wpływie podatku",
+  "questions": [
+    {
+      "question": "Dlaczego 10 000 zł dziś nie jest tym samym, co 10 000 zł za rok?",
+      "options": [
+        "Bo banknoty się starzeją",
+        "Bo pieniądz zmienia wartość w czasie – wpływ inflacji, stopy procentowej i ryzyka",
+        "Bo bank zawsze zabiera prowizję",
+        "Bo kwoty są nominalnie różne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Na wartość pieniądza w czasie wpływają czas, stopa procentowa, inflacja, ryzyko, preferencja płynności oraz polityka pieniężna. Dlatego pieniądz dziś jest wart więcej niż w przyszłości."
+    },
+    {
+      "question": "Które z poniższych NIE jest czynnikiem wpływającym na zmianę wartości pieniądza w czasie?",
+      "options": [
+        "Czas",
+        "Inflacja",
+        "Stopa procentowa",
+        "Kolor banknotu"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Na wartość pieniądza wpływają m.in.: czas, stopa procentowa, inflacja, ryzyko, preferencja płynności, polityka pieniężna. Kolor banknotu nie ma znaczenia ekonomicznego."
+    },
+    {
+      "question": "Co to jest stopa nominalna?",
+      "options": [
+        "Stopa po uwzględnieniu inflacji",
+        "Stopa zapisana w umowie, stanowiąca punkt wyjścia",
+        "Średnia stopa rynkowa",
+        "Stopa po odliczeniu podatku"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stopa nominalna to roczna stawka oprocentowania zapisana w umowie – nie uwzględnia inflacji, prowizji ani częstotliwości kapitalizacji."
+    },
+    {
+      "question": "Jaki jest prawidłowy wzór na realną stopę procentową?",
+      "options": [
+        "ir = in + iin",
+        "ir = (in – iin) / (1 + iin)",
+        "ir = in × iin",
+        "ir = iin / in"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Poprawny wzór to ir = (in – iin) / (1 + iin). Proste odejmowanie (ir ≈ in – iin) jest tylko przybliżeniem przy niskich stopach."
+    },
+    {
+      "question": "Lokata oprocentowana 10% rocznie, inflacja 8%. Jaka jest przybliżona realna stopa zysku?",
+      "options": [
+        "18%",
+        "Około 2%",
+        "10%",
+        "80%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Realna stopa = (0,10 – 0,08)/(1 + 0,08) ≈ 1,85% ≈ około 2%. Przybliżenie (różnica nominalnej i inflacji) daje 2 p.p."
+    },
+    {
+      "question": "Od czego zależy efektywna stopa procentowa?",
+      "options": [
+        "Od stopy inflacji",
+        "Od częstotliwości kapitalizacji odsetek",
+        "Od podatku dochodowego",
+        "Od kursu walutowego"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Efektywna stopa procentowa zależy od częstotliwości kapitalizacji – im częstsza kapitalizacja, tym wyższa efektywna stopa przy tej samej nominalnej."
+    },
+    {
+      "question": "Jaki jest wzór na efektywną stopę procentową?",
+      "options": [
+        "ief = in × m",
+        "ief = (1 + in/m)^m – 1",
+        "ief = in / m",
+        "ief = in – m"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Efektywna stopa procentowa: ief = (1 + in/m)^m – 1, gdzie in to stopa nominalna, a m to liczba okresów kapitalizacji w roku."
+    },
+    {
+      "question": "Czy 8% nominalnie z kapitalizacją roczną i 8% z kapitalizacją miesięczną to ta sama oferta?",
+      "options": [
+        "Tak, są identyczne",
+        "Nie – miesięczna kapitalizacja daje wyższy rzeczywisty dochód",
+        "Tak, różnica jest pomijalna",
+        "Nie – roczna kapitalizacja jest lepsza"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nie są identyczne. Przy kapitalizacji miesięcznej efektywna stopa wynosi ok. 8,30%, a odsetki pracują same na siebie (procent składany)."
+    },
+    {
+      "question": "Ile wyniesie zysk z lokaty 20 000 zł przy 8% z kapitalizacją roczną na 1 rok?",
+      "options": [
+        "800 zł",
+        "1 200 zł",
+        "1 600 zł",
+        "2 000 zł"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kapitał końcowy = 20 000 × 1,08 = 21 600 zł. Zysk = 21 600 – 20 000 = 1 600 zł."
+    },
+    {
+      "question": "Ile wyniesie zysk z lokaty 20 000 zł przy 8% z kapitalizacją miesięczną na 1 rok (w przybliżeniu)?",
+      "options": [
+        "Około 1 600 zł",
+        "Około 1 660 zł",
+        "Około 2 000 zł",
+        "Około 800 zł"
+      ],
+      "correctAnswer": 1,
+      "explanation": "K = 20 000 × (1 + 0,08/12)^12 ≈ 21 660,40 zł. Zysk ≈ 1 660,40 zł – o ok. 60 zł więcej niż przy kapitalizacji rocznej."
+    },
+    {
+      "question": "Jak nazywa się stopa stosowana, gdy oprocentowanie zmienia się w czasie?",
+      "options": [
+        "Nominalna",
+        "Realna",
+        "Przeciętna",
+        "Efektywna"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Przeciętna stopa procentowa pozwala uśrednić poziom oprocentowania dla analizowanego okresu, gdy stopa zmienia się w czasie."
+    },
+    {
+      "question": "Czym różni się stopa płatna z dołu od stopy płatnej z góry?",
+      "options": [
+        "Wysokością",
+        "Momentem zapłaty odsetek",
+        "Walutą",
+        "Terminem umowy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Różnica dotyczy momentu zapłaty odsetek: z dołu – po upływie okresu; z góry – na początku okresu. Aby je porównać, trzeba je przeliczyć do wspólnej podstawy."
+    },
+    {
+      "question": "Jak podatek dochodowy wpływa na rzeczywistą stopę procentową?",
+      "options": [
+        "Zwiększa ją",
+        "Obniża ją zgodnie ze wzorem: irz = in × (1 – T)",
+        "Nie wpływa w ogóle",
+        "Zwiększa ją w skali geometrycznej"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podatek dochodowy obniża rzeczywistą stopę procentową zgodnie ze wzorem: irz = in × (1 – T), gdzie T to stopa podatku dochodowego."
+    },
+    {
+      "question": "Stopa nominalna wynosi 10%, podatek dochodowy 20%. Jaka jest rzeczywista stopa po podatku?",
+      "options": [
+        "10%",
+        "8%",
+        "12%",
+        "2%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "irz = 0,10 × (1 – 0,20) = 0,10 × 0,80 = 0,08, czyli 8%. Podatek zmniejsza dochód realny z kapitału."
+    },
+    {
+      "question": "Dlaczego zagadnienie wartości pieniądza w czasie jest fundamentem metod NPV i IRR?",
+      "options": [
+        "Bo wymagają drogiego oprogramowania",
+        "Bo przeliczają przyszłe przepływy na wartość dzisiejszą (dyskontowanie)",
+        "Bo są używane tylko w bankach",
+        "Bo tak wymaga ustawa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metody dyskontowe (NPV, IRR) opierają się na przeliczaniu przyszłych przepływów pieniężnych na wartość dzisiejszą – bez uwzględnienia wartości pieniądza w czasie byłyby bezużyteczne przy projektach wieloletnich."
+    }
+  ]
+}

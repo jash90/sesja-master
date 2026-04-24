@@ -1,0 +1,45 @@
+Wartość pieniądza w czasie jako podstawa oceny opłacalności decyzji ekonomicznych przedsiębiorstwa.
+
+Niniejszy wykład poświęcony jest jednemu z fundamentalnych zagadnień finansów przedsiębiorstwa, czyli wartości pieniądza w czasie. Omawia różne rodzaje stóp procentowych wykorzystywanych w praktyce gospodarczej – stopę nominalną, realną oraz efektywną.
+
+Wykład rozpoczyna się od podstawowego pytania – czy dziesięć tysięcy złotych dzisiaj to to samo, co dziesięć tysięcy złotych za rok. Odpowiedź na to pytanie stanowi punkt wyjścia do zrozumienia całego zagadnienia wartości pieniądza w czasie.
+
+Temat wartości pieniądza w czasie jest istotny dla przedsiębiorstwa z kilku powodów. Firma podejmuje decyzje dzisiaj, a efekty finansowe pojawiają się później, często po wielu latach. Konieczne jest porównywanie wpływów i wydatków pochodzących z różnych momentów w czasie. Z tego względu niezbędne jest przeliczenie wartości pieniądza z różnych okresów do wspólnej podstawy.
+
+Na zmianę wartości pieniądza w czasie wpływa kilka czynników. Do najważniejszych należą czas, stopa procentowa, inflacja, ryzyko, preferencja płynności oraz polityka pieniężna państwa. Każdy z tych czynników w odmienny sposób oddziałuje na wartość pieniądza w poszczególnych okresach.
+
+Najważniejszym parametrem umożliwiającym porównywanie wartości pieniądza w czasie jest stopa procentowa. Stanowi ona cenę kapitału w czasie. Pozwala porównywać pieniądz dzisiejszy i przyszły, a wykorzystywana jest w ocenie lokat, kredytów oraz inwestycji.
+
+Pierwszym rodzajem stopy procentowej jest stopa nominalna. Jest to określona w umowie roczna stawka oprocentowania kredytu lub depozytu, stanowiąca podstawę do wyliczenia odsetek. Nominalna stopa procentowa nie uwzględnia kosztów dodatkowych, takich jak prowizje, ubezpieczenia czy inflacja. Wskazuje jedynie bezpośredni przychód lub koszt kapitału w skali roku. Przykładowo stopa nominalna może wynosić osiem procent rocznie.
+
+Istotnym czynnikiem wpływającym na realną wartość pieniądza jest inflacja. Obniża ona siłę nabywczą pieniądza, a zatem nominalny przyrost kwoty nie zawsze oznacza realny zysk. Z tego względu konieczne jest odróżnienie stopy nominalnej od realnej.
+
+Realna stopa procentowa jest skorygowana o stopę inflacji. Jeden z czynników kształtujących poziom stopy procentowej stanowi inflacja. Aby ustalić realny dochód osiągany przez pożyczkodawcę w warunkach inflacji, należy obliczyć realną stopę procentową. Stopa realna pokazuje, ile naprawdę się zarabia po uwzględnieniu inflacji.
+
+Zakładając, że pożyczkodawca otrzymuje procent po upływie pełnego roku, realną roczną stopę procentową oblicza się na podstawie równania – realna roczna stopa procentowa równa się ilorazowi różnicy między nominalną stopą procentową a stopą inflacji przez sumę jedności i stopy inflacji. Można to zapisać również w postaci przekształconej jako iloraz sumy jedności i nominalnej stopy procentowej przez sumę jedności i stopy inflacji, pomniejszony o jedność. W obu wzorach symbol oznaczający realną roczną stopę procentową to i z indeksem r, symbol nominalnej rocznej stopy procentowej to i z indeksem n, natomiast roczna stopa inflacji oznaczana jest jako i z indeksem in.
+
+Zilustrować to można prostym przykładem. Jeżeli lokata daje osiem procent rocznie, ale inflacja wynosi pięć procent, to realny zysk jest dużo mniejszy niż osiem procent.
+
+Trzecim rodzajem stopy procentowej jest stopa efektywna. Zależy ona od częstotliwości kapitalizacji. Im częstsza kapitalizacja, tym wyższy rzeczywisty dochód po roku. Efektywna stopa procentowa służy do porównania ofert finansowych. Pokazuje, ile faktycznie zarobi się po roku, gdy odsetki są kapitalizowane częściej niż raz w roku.
+
+Efektywną stopę procentową oblicza się na podstawie równania – efektywna stopa procentowa równa się sumie jedności i ilorazu nominalnej stopy procentowej przez liczbę okresów kapitalizacji, podniesionej do potęgi równej liczbie okresów kapitalizacji, pomniejszonej o jedność. We wzorze symbol oznaczający efektywną stopę procentową to i z indeksem ef, nominalna stopa procentowa oznaczana jest jako i z indeksem n, natomiast liczba okresów kapitalizacji odsetek w ciągu roku oznaczana jest jako m.
+
+Z tego wzoru wynika, że osiem procent rocznie z kapitalizacją roczną i osiem procent rocznie z kapitalizacją miesięczną nie stanowią dwóch identycznych ofert. Nominalna stopa procentowa jest ta sama, jednak efektywna stopa – a więc rzeczywisty dochód – będzie wyższa przy częstszej kapitalizacji.
+
+Kolejnym zagadnieniem jest przeciętna stopa procentowa, stosowana gdy stopa zmienia się w czasie. Pozwala ona uśrednić poziom oprocentowania dla analizowanego okresu. Oblicza się ją jako iloraz sumy iloczynów nominalnych stóp procentowych w kolejnych podokresach i długości tych podokresów w dniach przez sumę długości podokresów. We wzorze symbol oznaczający przeciętną stopę procentową to i, nominalna stopa procentowa w kolejnych podokresach to i z indeksem nj, długość kolejnych podokresów w dniach to m z indeksem j, natomiast litera p oznacza kolejny poziom stopy procentowej w okresie kapitalizacji.
+
+Następnie omawiany jest podział stóp ze względu na moment zapłaty odsetek. Stopa płatna z dołu oraz z góry różnią się momentem zapłaty odsetek. Aby porównać oferty, trzeba przeliczyć je do wspólnej podstawy. Płatność odsetek może następować po upływie określonego okresu, czyli z dołu, lub na początku okresu, czyli z góry. W celu porównania warunków oprocentowania w przypadku płatności odsetek z dołu lub z góry konieczne jest odpowiednie przeliczenie stóp procentowych. Zależność między nimi opisują dwa wzory – stopa odsetek płatnych z dołu równa się ilorazowi stopy dyskonta przez różnicę jedności i stopy dyskonta, natomiast stopa dyskonta równa się ilorazowi stopy odsetek płatnych z dołu przez sumę jedności i tej stopy. We wzorach symbol oznaczający stopę odsetek płatnych z dołu to i z indeksem o, natomiast stopa dyskonta – odsetki płatne z góry – oznaczana jest jako i z indeksem d.
+
+Osobnym zagadnieniem jest wpływ podatku dochodowego na stopę procentową. Wpływ ten można ustalić na podstawie równania – rzeczywista stopa procentowa równa się iloczynowi nominalnej rocznej stopy procentowej i różnicy jedności oraz stopy podatku dochodowego. We wzorze symbol oznaczający nominalną roczną stopę procentową to i z indeksem n, rzeczywista stopa procentowa to i z indeksem rz, natomiast stopa podatku dochodowego oznaczana jest literą T.
+
+Dla czytelności całości wykładu warto zebrać różnice między trzema głównymi rodzajami stóp procentowych. Stopa nominalna to stopa zapisana w umowie, stanowiąca punkt wyjścia do wszelkich obliczeń. Stopa realna to stopa po uwzględnieniu inflacji, służąca ocenie rzeczywistego zysku. Stopa efektywna uwzględnia kapitalizację i służy do porównania ofert finansowych.
+
+Zagadnienie to ilustruje przykład z praktyki biznesowej. Firma rozważa dwie możliwości ulokowania dwudziestu tysięcy złotych wolnych środków. Lokata A oferuje osiem procent rocznie z kapitalizacją roczną. Lokata B oferuje osiem procent rocznie z kapitalizacją miesięczną. Powstaje pytanie, która opcja da wyższy rzeczywisty dochód po roku.
+
+Dla lokaty A z kapitalizacją roczną obliczenie jest proste. Kapitał końcowy to dwadzieścia tysięcy pomnożone przez sumę jedności i ośmiu setnych, co daje dwadzieścia jeden tysięcy sześćset złotych. Zysk wynosi tysiąc sześćset złotych.
+
+Dla lokaty B z kapitalizacją miesięczną odsetki dopisywane są co miesiąc, dzięki czemu w kolejnym miesiącu pracują już także wcześniejsze odsetki. Kapitał końcowy oblicza się jako dwadzieścia tysięcy pomnożone przez sumę jedności i ilorazu ośmiu setnych przez dwanaście, podniesioną do potęgi dwunastej. Wynik wynosi około dwudziestu jeden tysięcy sześciuset sześćdziesięciu złotych i czterdziestu groszy. Zysk wynosi zatem około tysiąca sześciuset sześćdziesięciu złotych i czterdziestu groszy.
+
+Odpowiedź na pytanie jest zatem następująca – korzystniejsza jest lokata z kapitalizacją miesięczną, mimo że obie mają tę samą nominalną stopę osiem procent. Różnica w zysku wynika wyłącznie z częstotliwości kapitalizacji.
+
+Podsumowując wykład można wskazać cztery zasadnicze wnioski. Pieniądz dzisiaj ma większą wartość niż ten sam pieniądz w przyszłości. Stopa procentowa umożliwia porównania w czasie. Inflacja, ryzyko oraz płynność wpływają na jej poziom. Zagadnienie wartości pieniądza w czasie stanowi podstawę oceny efektywności ekonomicznej inwestycji i jest fundamentem wszystkich metod dyskontowych, takich jak wartość bieżąca netto czy wewnętrzna stopa zwrotu.

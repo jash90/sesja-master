@@ -1,0 +1,45 @@
+Metody oceny efektywności ekonomicznej przedsiębiorstw – proste metody oceny opłacalności przedsięwzięć inwestycyjnych.
+
+Niniejszy wykład dotyczy oceny opłacalności przedsięwzięć inwestycyjnych. Omawia zarówno proste, statyczne metody oceny, jak i wprowadza pojęcia metod dyskontowych, takich jak wartość bieżąca netto oraz wewnętrzna stopa zwrotu.
+
+Decyzje inwestycyjne w przedsiębiorstwie wymagają szczególnej uwagi z kilku względów. Inwestycje wymagają dużych nakładów finansowych, a podejmowane decyzje mają długookresowe skutki dla funkcjonowania jednostki. Z tego powodu konieczne jest przeprowadzenie rzetelnej analizy ekonomicznej przed podjęciem decyzji inwestycyjnej.
+
+Inwestycja, w podstawowym ujęciu, jest zaangażowaniem kapitału w celu uzyskania przyszłych korzyści ekonomicznych. Analiza inwestycji obejmuje kilka następujących po sobie etapów. Pierwszym z nich jest określenie nakładów potrzebnych do realizacji projektu. Następnie sporządzana jest prognoza przepływów pieniężnych generowanych przez inwestycję. Kolejnym etapem jest ocena efektywności projektu, a na końcu podejmowana jest decyzja inwestycyjna.
+
+Metody oceny przedsięwzięć inwestycyjnych dzieli się na dwie główne grupy – metody proste, określane również jako statyczne, oraz metody dyskontowe, nazywane dynamicznymi. Jedną z ważniejszych grup metod oceny opłacalności są tak zwane proste metody oceny. Wykorzystuje się je zwłaszcza do wstępnej selekcji projektów inwestycyjnych na etapie studiów przedrealizacyjnych.
+
+Do grupy prostych metod oceny zalicza się trzy podstawowe metody. Pierwszą jest okres zwrotu nakładów, drugą jest prosta i księgowa stopa zwrotu, a trzecią – analiza progu rentowności.
+
+Okres zwrotu nakładów określa czas potrzebny do odzyskania poniesionych nakładów inwestycyjnych. Okres zwrotu nakładów kapitałowych to czas mierzony w latach, w którym poniesione nakłady inwestycyjne zwrócą się z uzyskanych zysków netto oraz amortyzacji. Na ogół przyjmuje się, że maksymalny okres zwrotu nakładów kapitałowych nie powinien przekraczać pięciu lat.
+
+W uproszczonej metodzie okresu zwrotu zakłada się stały poziom zysków w kolejnych latach. Okres zwrotu inwestycji oblicza się wówczas jako iloraz nakładów inwestycyjnych przez roczną nadwyżkę finansową. Nadwyżka finansowa to zysk netto przedsiębiorstwa powiększony o amortyzację.
+
+Przykład ilustrujący tę metodę zakłada nakłady inwestycyjne wynoszące pięćset tysięcy złotych oraz roczną nadwyżkę finansową wynoszącą sto tysięcy złotych. W takim przypadku okres zwrotu wynosi pięć lat.
+
+Zwykła metoda okresu zwrotu jest stosowana przy założeniu różnego poziomu zysków w kolejnych latach. Okres zwrotu oblicza się jako liczbę lat poprzedzających zwrot powiększoną o ułamek wyrażający stosunek brakującej kwoty nakładów do nadwyżki finansowej w roku zwrotu. Interpretacja okresu zwrotu jest następująca – inwestycja jest akceptowana, gdy okres zwrotu jest krótszy od okresu dopuszczalnego.
+
+Drugą metodą prostą jest prosta stopa zwrotu, oznaczana skrótami ARR lub RC. Jest to relacja rocznego zysku do wartości zainwestowanego kapitału. Stopa ta określa stosunek rocznego zysku osiąganego w trakcie funkcjonowania przedsięwzięcia do wartości kapitału służącego sfinansowaniu początkowych nakładów inwestycyjnych. Najprostszy wzór na prostą stopę zwrotu to iloraz zysku netto przez zainwestowany kapitał. Im wyższa wartość tego wskaźnika, tym inwestycja jest bardziej opłacalna.
+
+W praktyce stosuje się kilka odmian prostej stopy zwrotu. Pierwszą jest prosta stopa zwrotu całości kapitału, zarówno własnego jak i długu, zaangażowanego w finansowanie przedsięwzięcia. Oblicza się ją jako stosunek rocznego zysku netto powiększonego o roczne odsetki od długu do sumy kapitału własnego i długu, wyrażony w procentach. Drugą odmianą jest prosta stopa zwrotu kapitału własnego, obliczana jako iloraz rocznego zysku netto przez kapitał własny, wyrażony w procentach. Trzecią odmianą jest prosta stopa zwrotu obliczana na podstawie wielkości przeciętnych, gdzie w miejsce wartości rocznych podstawia się średnie roczne zyski netto oraz średnie roczne odsetki od długu.
+
+Przedstawione formuły stóp zwrotu wykorzystują w mianowniku cały kapitał zaangażowany w początkowym okresie finansowania projektu. W praktyce jednak kapitał początkowo zaangażowany będzie odzyskiwany w miarę umarzania stworzonego zasobu majątku. Aby uwzględnić to zjawisko, stosuje się księgową stopę zwrotu. Oblicza się ją jako iloraz zysku netto przez średnią arytmetyczną początkowego i końcowego kapitału zaangażowanego, wyrażony w procentach.
+
+Trzecią prostą metodą oceny jest analiza progu rentowności, określana skrótem BEP od angielskiego Break-Even Point. Analiza ta obejmuje badanie tak zwanych punktów wyrównania, w których realizowane przychody ze sprzedaży pokrywają poniesione koszty. Przedsiębiorstwo nie osiąga wówczas zysku, ale też nie ponosi strat. Rentowność przychodów ze sprzedaży jest równa zero, co oznacza osiągnięcie progu rentowności. Na poziom rentowności wpływają trzy główne czynniki – wielkość produkcji lub sprzedaży, ceny wyrobu oraz jednostkowe koszty zmienne i stałe koszty produkcji.
+
+Próg rentowności w ujęciu ilościowym oblicza się jako iloraz kosztów stałych przez różnicę między ceną jednostkową a jednostkowym kosztem zmiennym. Próg rentowności w ujęciu wartościowym uzyskuje się przez pomnożenie progu ilościowego przez cenę jednostkową. Próg rentowności w ujęciu procentowym, czyli stopień wykorzystania zdolności produkcyjnych, oblicza się jako stosunek progu ilościowego do maksymalnej możliwej wielkości sprzedaży, pomnożony przez sto procent. Maksymalna wielkość sprzedaży określana jest na podstawie prognozy popytu lub zdolności produkcyjnej przedsiębiorstwa.
+
+Metody proste mają swoje zalety oraz wady. Do zalet zalicza się łatwość obliczeń, szybką ocenę inwestycji oraz niewielkie wymagania dotyczące danych wejściowych. Do wad należy brak uwzględnienia wartości pieniądza w czasie oraz ograniczona dokładność analizy.
+
+Kolejnym zagadnieniem są metody dyskontowe, określane jako dynamiczne. Do najważniejszych z nich należy wartość bieżąca netto, oznaczana skrótem NPV, oraz wewnętrzna stopa zwrotu, oznaczana skrótem IRR. Wartość bieżąca netto jest różnicą między zdyskontowanymi wpływami a wydatkami inwestycyjnymi. Wewnętrzna stopa zwrotu jest stopą dyskontową, przy której wartość bieżąca netto wynosi zero.
+
+Wartość bieżąca netto odpowiada na jedno proste pytanie – czy inwestycja zarobi więcej pieniędzy niż kosztuje dzisiaj. Ponieważ pieniądz zmienia swoją wartość w czasie, tysiąc złotych dzisiaj jest więcej warte niż tysiąc złotych za pięć lat, dlatego przyszłe wpływy należy przeliczyć na wartość dzisiejszą, czyli poddać dyskontowaniu. Wartość bieżąca netto to różnica między pieniędzmi, które zostaną zarobione, a pieniędzmi zainwestowanymi, przy czym wszystkie przyszłe przepływy są przeliczone na wartość dzisiejszą.
+
+Interpretacja wartości bieżącej netto jest następująca. Gdy wskaźnik jest większy od zera, inwestycja się opłaca. Gdy wskaźnik wynosi zero, inwestycja ani nie zarabia, ani nie traci. Gdy wskaźnik jest mniejszy od zera, inwestycja jest nieopłacalna.
+
+Prosty przykład ilustruje mechanizm tej metody. Inwestycja kosztuje dziesięć tysięcy złotych. Po przeliczeniu przyszłych wpływów na wartość dzisiejszą otrzymuje się kwotę dwunastu tysięcy złotych. Wartość bieżąca netto wynosi zatem dwanaście tysięcy minus dziesięć tysięcy, czyli dwa tysiące złotych. Oznacza to, że inwestycja realnie zarabia dwa tysiące złotych.
+
+Wewnętrzna stopa zwrotu pokazuje, ile procent rocznie zarabia dana inwestycja. Jest to prawdziwa stopa zwrotu inwestycji. Formalnie jest to taka stopa dyskontowa, przy której wartość bieżąca netto jest równa zero, czyli moment, w którym zdyskontowane wpływy są równe kosztom inwestycji.
+
+Interpretacja wewnętrznej stopy zwrotu opiera się na porównaniu jej z oczekiwaną stopą zwrotu, na przykład z kosztem kapitału. Gdy wewnętrzna stopa zwrotu jest większa od oczekiwanej stopy zwrotu, inwestycja jest opłacalna. Gdy jest mniejsza, inwestycja jest nieopłacalna. Przykładowo, jeżeli inwestycja ma wewnętrzną stopę zwrotu równą czternaście procent, a firma oczekuje dziesięciu procent zwrotu, to czternaście procent jest większe od dziesięciu procent, co oznacza, że inwestycja jest dobra.
+
+Podsumowując różnicę między wartością bieżącą netto a wewnętrzną stopą zwrotu, pierwsza mówi, ile konkretnie zostanie zarobione na inwestycji, natomiast druga wskazuje, ile procent inwestycja zarabia. Obie metody dyskontowe stanowią fundament współczesnej oceny opłacalności przedsięwzięć inwestycyjnych i pozwalają przezwyciężyć ograniczenia metod prostych dzięki uwzględnieniu wartości pieniądza w czasie.

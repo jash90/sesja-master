@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Proste metody oceny opłacalności przedsięwzięć inwestycyjnych",
+  "description": "Quiz sprawdzający wiedzę z zakresu metod oceny inwestycji: okres zwrotu, stopa zwrotu, próg rentowności, NPV i IRR",
+  "questions": [
+    {
+      "question": "Czym jest inwestycja?",
+      "options": [
+        "Bieżącym kosztem działalności",
+        "Zaangażowaniem kapitału w celu uzyskania przyszłych korzyści ekonomicznych",
+        "Nadwyżką finansową",
+        "Wynagrodzeniem pracowników"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inwestycja to zaangażowanie kapitału w celu uzyskania przyszłych korzyści ekonomicznych – to jej podstawowa definicja w finansach przedsiębiorstwa."
+    },
+    {
+      "question": "Na jakie dwie główne grupy dzieli się metody oceny przedsięwzięć inwestycyjnych?",
+      "options": [
+        "Ilościowe i jakościowe",
+        "Proste (statyczne) i dyskontowe (dynamiczne)",
+        "Krótko- i długoterminowe",
+        "Publiczne i prywatne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metody dzielą się na proste (statyczne), które nie uwzględniają wartości pieniądza w czasie, oraz dyskontowe (dynamiczne), które to uwzględniają."
+    },
+    {
+      "question": "Co to jest nadwyżka finansowa?",
+      "options": [
+        "Przychód ze sprzedaży",
+        "Zysk brutto",
+        "Zysk netto powiększony o amortyzację",
+        "Kapitał zakładowy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Nadwyżka finansowa to zysk netto przedsiębiorstwa powiększony o amortyzację – jest podstawą obliczania okresu zwrotu."
+    },
+    {
+      "question": "Jaki jest wzór na okres zwrotu przy stałych zyskach?",
+      "options": [
+        "Nakłady × nadwyżka finansowa",
+        "Nakłady / nadwyżka finansowa",
+        "Nadwyżka finansowa / nakłady",
+        "Nakłady + nadwyżka finansowa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Przy stałych zyskach okres zwrotu = nakłady inwestycyjne / roczna nadwyżka finansowa. To podstawowa uproszczona formuła."
+    },
+    {
+      "question": "Jaki jest maksymalny akceptowalny okres zwrotu nakładów kapitałowych?",
+      "options": [
+        "1 rok",
+        "3 lata",
+        "5 lat",
+        "10 lat"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Na ogół przyjmuje się, że maksymalny okres zwrotu nakładów kapitałowych nie powinien przekraczać 5 lat."
+    },
+    {
+      "question": "Inwestycja wymaga nakładów 400 000 zł i daje stałą nadwyżkę 80 000 zł rocznie. Ile wynosi okres zwrotu?",
+      "options": [
+        "3 lata",
+        "4 lata",
+        "5 lat",
+        "6 lat"
+      ],
+      "correctAnswer": 2,
+      "explanation": "OZ = 400 000 / 80 000 = 5 lat. Jest to maksymalny akceptowalny okres zwrotu."
+    },
+    {
+      "question": "Co oznacza prosta stopa zwrotu ARR?",
+      "options": [
+        "Stosunek zysku do przychodów",
+        "Stosunek rocznego zysku do wartości zainwestowanego kapitału",
+        "Stosunek amortyzacji do kosztów",
+        "Stosunek przychodów do długu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ARR (Accounting Rate of Return) to prosta stopa zwrotu – relacja rocznego zysku do wartości zainwestowanego kapitału. Im wyższa, tym inwestycja bardziej opłacalna."
+    },
+    {
+      "question": "Czym próg rentowności (BEP) różni się od zysku?",
+      "options": [
+        "BEP to maksymalna produkcja",
+        "BEP to punkt gdzie przychody pokrywają koszty (zysk = 0)",
+        "BEP to wartość firmy",
+        "BEP to wysokość kredytu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Próg rentowności (Break-Even Point) to poziom sprzedaży, przy którym przychody pokrywają koszty, a firma nie osiąga ani zysku ani straty."
+    },
+    {
+      "question": "Jaki jest wzór na próg rentowności w ujęciu ilościowym?",
+      "options": [
+        "Koszty stałe × cena",
+        "Koszty stałe / (cena – koszt zmienny jednostkowy)",
+        "Cena / koszty zmienne",
+        "Koszty zmienne / koszty stałe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BEP ilościowy = Koszty stałe / (cena jednostkowa – jednostkowy koszt zmienny). Różnica cena minus koszt zmienny to jednostkowa marża pokrycia."
+    },
+    {
+      "question": "Koszty stałe = 100 000 zł, cena = 50 zł, koszt zmienny jednostkowy = 30 zł. Ile wynosi BEP ilościowy?",
+      "options": [
+        "2 000 szt.",
+        "3 333 szt.",
+        "5 000 szt.",
+        "10 000 szt."
+      ],
+      "correctAnswer": 2,
+      "explanation": "BEP = 100 000 / (50 – 30) = 100 000 / 20 = 5 000 sztuk. Jest to minimalna sprzedaż, przy której firma wychodzi na zero."
+    },
+    {
+      "question": "Jaka jest główna wada metod prostych?",
+      "options": [
+        "Zbyt długi czas obliczeń",
+        "Brak uwzględnienia wartości pieniądza w czasie",
+        "Zbyt skomplikowane wzory",
+        "Wymagają drogiego oprogramowania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Główną wadą metod prostych jest brak uwzględnienia wartości pieniądza w czasie – dlatego do decyzji długookresowych preferuje się metody dyskontowe."
+    },
+    {
+      "question": "Co oznacza NPV?",
+      "options": [
+        "Net Profit Value – wartość zysku netto",
+        "Net Present Value – wartość bieżąca netto",
+        "Net Production Value – wartość produkcji netto",
+        "New Project Valuation – wycena nowego projektu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NPV oznacza Net Present Value, czyli wartość bieżącą netto – różnicę między zdyskontowanymi wpływami a wydatkami inwestycyjnymi."
+    },
+    {
+      "question": "Co oznacza NPV = 0?",
+      "options": [
+        "Inwestycja jest bardzo opłacalna",
+        "Inwestycja ani nie zarabia, ani nie traci",
+        "Inwestycja przynosi gigantyczne zyski",
+        "Inwestycja jest niemożliwa do realizacji"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NPV = 0 oznacza, że zdyskontowane wpływy dokładnie pokrywają wydatki – inwestycja ani nie zarabia, ani nie traci. NPV > 0 oznaczałoby zysk."
+    },
+    {
+      "question": "Co to jest IRR?",
+      "options": [
+        "Stopa inflacji",
+        "Stopa dyskontowa, przy której NPV = 0",
+        "Stopa podatkowa",
+        "Stopa zatrudnienia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IRR (Internal Rate of Return) to wewnętrzna stopa zwrotu – taka stopa dyskontowa, przy której NPV inwestycji = 0. Pokazuje, ile procent rocznie zarabia inwestycja."
+    },
+    {
+      "question": "Inwestycja ma IRR = 12%, a oczekiwana stopa zwrotu firmy to 15%. Czy inwestycja jest opłacalna?",
+      "options": [
+        "Tak, IRR jest dodatnie",
+        "Tak, każda inwestycja z IRR > 0 się opłaca",
+        "Nie, bo IRR < oczekiwana stopa zwrotu",
+        "Nie da się ocenić bez dodatkowych danych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Inwestycja nie jest opłacalna, ponieważ IRR (12%) < oczekiwana stopa zwrotu (15%). Aby projekt był akceptowalny, IRR musi być większe od oczekiwanej stopy zwrotu."
+    }
+  ]
+}

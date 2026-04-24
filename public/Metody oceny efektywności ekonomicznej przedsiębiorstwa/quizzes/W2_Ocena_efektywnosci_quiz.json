@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Ocena efektywności na podstawie sprawozdań finansowych",
+  "description": "Quiz sprawdzający wiedzę o sprawozdaniach finansowych, ich użytkownikach, funkcjach, cechach jakościowych i elementach",
+  "questions": [
+    {
+      "question": "Co jest głównym celem sprawozdań finansowych?",
+      "options": [
+        "Dostarczanie informacji o sytuacji finansowej, wynikach i zmianach sytuacji jednostki",
+        "Wyłącznie rozliczenie z urzędem skarbowym",
+        "Tylko informowanie pracowników o zarobkach",
+        "Reklama firmy w mediach"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Głównym celem sprawozdań jest dostarczanie informacji o sytuacji finansowej, wynikach działalności i zmianach sytuacji finansowej jednostki – użytecznych dla wielu użytkowników przy podejmowaniu decyzji."
+    },
+    {
+      "question": "W jakich jednostkach prezentowane są dane w sprawozdaniach finansowych?",
+      "options": [
+        "W jednostkach naturalnych (sztuki, tony)",
+        "W jednostkach wartościowych (pieniężnych)",
+        "W procentach",
+        "W jednostkach czasu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sprawozdania finansowe prezentują dane w jednostkach wartościowych (pieniężnych). Dane w jednostkach naturalnych prezentowane są w sprawozdaniach rzeczowych."
+    },
+    {
+      "question": "Który użytkownik NIE jest użytkownikiem wewnętrznym sprawozdania?",
+      "options": [
+        "Kierownicy jednostki",
+        "Pracownicy",
+        "Związki zawodowe",
+        "Kredytodawcy"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Kredytodawcy są użytkownikami zewnętrznymi. Do wewnętrznych zalicza się kierowników jednostki, pracowników i związki zawodowe."
+    },
+    {
+      "question": "Co interesuje kredytodawców w sprawozdaniu finansowym?",
+      "options": [
+        "Strategia marketingowa",
+        "Zdolność kredytowa jednostki",
+        "Liczba pracowników",
+        "Plan urlopowy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kredytodawców interesuje możliwość zwrotu pożyczonych pieniędzy wraz z odsetkami w terminie, czyli zdolność kredytowa jednostki."
+    },
+    {
+      "question": "Jakie cztery funkcje pełnią sprawozdania finansowe?",
+      "options": [
+        "Informacyjna, dokumentacyjna, analityczna, kontrolna",
+        "Marketingowa, sprzedażowa, reklamowa, promocyjna",
+        "Techniczna, produkcyjna, magazynowa, logistyczna",
+        "Personalna, kadrowa, socjalna, szkoleniowa"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Sprawozdania finansowe pełnią cztery funkcje: informacyjną, dokumentacyjną, analityczną i kontrolną."
+    },
+    {
+      "question": "Która funkcja sprawozdania oznacza, że jest ono wiarygodnym źródłem informacji historycznych?",
+      "options": [
+        "Informacyjna",
+        "Dokumentacyjna",
+        "Analityczna",
+        "Kontrolna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Funkcja dokumentacyjna oznacza, że sprawozdanie stanowi wiarygodne źródło udokumentowanych informacji historycznych o jednostce."
+    },
+    {
+      "question": "Co oznacza skrót MSSF?",
+      "options": [
+        "Międzynarodowe Stowarzyszenie Specjalistów Finansowych",
+        "Międzynarodowe Standardy Sprawozdawczości Finansowej",
+        "Ministerialny System Sprawozdawczości Firmowej",
+        "Metoda Systematycznej Sprawozdawczości Fiskalnej"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MSSF to Międzynarodowe Standardy Sprawozdawczości Finansowej – standardy regulujące sposób sporządzania sprawozdań finansowych w skali międzynarodowej."
+    },
+    {
+      "question": "Która cecha jakościowa oznacza, że informacje są obiektywne?",
+      "options": [
+        "Neutralność",
+        "Ciągłość",
+        "Przejrzystość",
+        "Istotność"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Neutralność oznacza obiektywność informacji – brak stronniczości. Pozostałe cechy mają inne znaczenie (ciągłość, przejrzystość, istotność)."
+    },
+    {
+      "question": "Sprawozdania finansowe ze względu na okres sprawozdawczy dzielą się na:",
+      "options": [
+        "Jednostkowe i skonsolidowane",
+        "Systematyczne i sporadyczne",
+        "Roczne, półroczne i kwartalne",
+        "Szczegółowe i uproszczone"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ze względu na okres sprawozdawczy wyróżniamy sprawozdania roczne, półroczne i kwartalne. Pozostałe dotyczą innych kryteriów podziału."
+    },
+    {
+      "question": "Które z poniższych NIE jest elementem sprawozdania finansowego?",
+      "options": [
+        "Bilans",
+        "Rachunek zysków i strat",
+        "Faktura sprzedażowa",
+        "Rachunek przepływów pieniężnych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Faktura sprzedażowa jest dokumentem źródłowym, a nie elementem sprawozdania finansowego. Bilans, RZiS i RPP są elementami sprawozdania."
+    },
+    {
+      "question": "Jakie elementy sprawozdania sporządza jednostka NIE podlegająca badaniu przez biegłego rewidenta?",
+      "options": [
+        "Bilans, RZiS, informacja dodatkowa",
+        "Bilans, RZiS, RPP, informacja dodatkowa, zestawienie zmian w kapitale własnym",
+        "Tylko bilans",
+        "Tylko rachunek zysków i strat"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Jednostki nie podlegające badaniu sporządzają 3 elementy: bilans, rachunek zysków i strat oraz informację dodatkową. Jednostki badane sporządzają dodatkowo RPP i zestawienie zmian w kapitale."
+    },
+    {
+      "question": "Jaki jest termin sporządzenia sprawozdania finansowego?",
+      "options": [
+        "30 dni od dnia bilansowego",
+        "3 miesiące od dnia bilansowego",
+        "6 miesięcy od dnia bilansowego",
+        "12 miesięcy od dnia bilansowego"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sprawozdanie należy sporządzić nie później niż w ciągu 3 miesięcy od dnia bilansowego, a zatwierdzić – w ciągu 6 miesięcy."
+    },
+    {
+      "question": "Który próg NIE kwalifikuje jednostki do obowiązku badania przez biegłego rewidenta?",
+      "options": [
+        "Średnioroczne zatrudnienie 50+ osób",
+        "Suma aktywów co najmniej 2 500 000 euro",
+        "Przychody netto co najmniej 5 000 000 euro",
+        "Zysk netto co najmniej 1 000 000 zł"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Trzy progi to: zatrudnienie 50+, aktywa 2,5 mln euro, przychody 5 mln euro. Zysk netto nie jest jednym z kryteriów."
+    },
+    {
+      "question": "W jakim dzienniku publikowane są sprawozdania spółdzielni podlegających badaniu?",
+      "options": [
+        "Dziennik Ustaw",
+        "Monitor Polski B",
+        "Monitor Spółdzielczy",
+        "Monitor Sądowy i Gospodarczy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sprawozdania spółdzielni publikowane są w Monitorze Spółdzielczym. Inne jednostki badane – w Monitorze Polskim B."
+    },
+    {
+      "question": "Co to jest zasada 'wiernego i rzeczywistego obrazu' w sprawozdawczości?",
+      "options": [
+        "Zasada ilustrowania sprawozdań zdjęciami",
+        "Obowiązek rzetelnego i jasnego przedstawienia sytuacji majątkowej, finansowej i wyniku finansowego",
+        "Wymóg zamieszczania loga firmy",
+        "Zasada cyfryzacji sprawozdań"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zasada wiernego i rzeczywistego obrazu nakłada obowiązek rzetelnego i jasnego przedstawienia sytuacji majątkowej i finansowej oraz wyniku finansowego jednostki – stanowi podstawę cech jakościowych SF."
+    }
+  ]
+}

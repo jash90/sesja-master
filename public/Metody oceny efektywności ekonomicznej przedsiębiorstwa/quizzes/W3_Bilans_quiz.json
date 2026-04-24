@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Bilans jako sprawozdanie finansowe przedsiębiorstw",
+  "description": "Quiz sprawdzający wiedzę o bilansie, aktywach, pasywach, kapitałach i zasadach jego sporządzania",
+  "questions": [
+    {
+      "question": "Czym jest bilans?",
+      "options": [
+        "Zestawieniem przychodów i kosztów",
+        "Dwustronnym zestawieniem aktywów i pasywów sporządzonym na określony dzień",
+        "Wykazem pracowników",
+        "Listą klientów"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bilans to dwustronne zestawienie wartości środków gospodarczych (aktywów) oraz źródeł ich pochodzenia (pasywów) sporządzone na określony dzień i w określonej formie."
+    },
+    {
+      "question": "Jaka jest podstawowa zasada bilansu?",
+      "options": [
+        "Aktywa > Pasywa",
+        "Aktywa = Pasywa",
+        "Aktywa < Pasywa",
+        "Aktywa + Pasywa = 0"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podstawową zasadą jest równowaga bilansowa: AKTYWA = PASYWA. Jest to fundament funkcjonowania księgowości podwójnego zapisu."
+    },
+    {
+      "question": "Według jakiej zasady grupowane są aktywa w bilansie?",
+      "options": [
+        "Według wartości – od najwyższej do najniższej",
+        "Według zasady wzrastającej płynności",
+        "Według daty nabycia",
+        "Alfabetycznie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Aktywa są grupowane według zasady wzrastającej płynności – od najmniej płynnych (majątek trwały) do najbardziej płynnych (środki pieniężne)."
+    },
+    {
+      "question": "Według jakiej zasady porządkuje się pasywa?",
+      "options": [
+        "Według wartości",
+        "Według wymagalności spłaty",
+        "Według rodzaju wierzyciela",
+        "Według daty powstania"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pasywa są porządkowane według zasady wymagalności spłaty – od najdłuższego terminu zapłaty (kapitał własny) do najkrótszego (zobowiązania krótkoterminowe)."
+    },
+    {
+      "question": "Co różni aktywa trwałe od obrotowych?",
+      "options": [
+        "Ich wartość księgowa",
+        "Termin ich realizacji – trwałe > 12 miesięcy, obrotowe ≤ 12 miesięcy",
+        "Miejsce przechowywania",
+        "Forma prawna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Aktywa trwałe mają termin realizacji dłuższy niż 12 miesięcy, a aktywa obrotowe – krótszy niż 12 miesięcy (są w ciągłym ruchu)."
+    },
+    {
+      "question": "Które aktywa NIE są częścią majątku trwałego?",
+      "options": [
+        "Wartości niematerialne i prawne",
+        "Środki trwałe",
+        "Zapasy",
+        "Inwestycje długoterminowe"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Zapasy należą do majątku obrotowego, nie trwałego. Pozostałe kategorie to części majątku trwałego."
+    },
+    {
+      "question": "Który z poniższych składników NIE jest środkiem trwałym?",
+      "options": [
+        "Budynek produkcyjny",
+        "Maszyna obróbkowa",
+        "Licencja na oprogramowanie",
+        "Samochód dostawczy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Licencja na oprogramowanie to wartość niematerialna i prawna, nie środek trwały. Środki trwałe to rzeczowe aktywa trwałe, np. nieruchomości, maszyny, pojazdy."
+    },
+    {
+      "question": "Co łączy środki trwałe oraz wartości niematerialne i prawne?",
+      "options": [
+        "Obie grupy można kupić za gotówkę",
+        "Stopniowa utrata wartości (umarzanie)",
+        "Obie są materialne",
+        "Obie są krótkoterminowe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cechą wspólną jest stopniowa utrata wartości, czyli umarzanie (amortyzacja) – oba te aktywa zużywają się w czasie."
+    },
+    {
+      "question": "Co to są półprodukty?",
+      "options": [
+        "Materiały zakupione od dostawców",
+        "Produkty pracy, które przeszły niektóre (ale nie wszystkie) etapy przetwarzania",
+        "Gotowe wyroby do sprzedaży",
+        "Towary kupione do odsprzedaży"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Półprodukty to produkty pracy, które przeszły określone etapy przetwarzania w jednostce, ale nie wszystkie – należą do produkcji niezakończonej."
+    },
+    {
+      "question": "Czym różnią się produkty gotowe od towarów?",
+      "options": [
+        "Ich ceną",
+        "Produkty gotowe są wytworzone przez jednostkę, towary są nabyte od innych i odsprzedawane",
+        "Wielkością",
+        "Jakością"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Produkty gotowe to wyroby wytworzone przez jednostkę i przeznaczone do sprzedaży. Towary to wyroby innych podmiotów, nabywane i odsprzedawane w niezmienionej postaci."
+    },
+    {
+      "question": "Które z poniższych NIE jest składnikiem kapitału własnego?",
+      "options": [
+        "Kapitał podstawowy",
+        "Kapitał zapasowy",
+        "Zobowiązania długoterminowe",
+        "Wynik finansowy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Zobowiązania długoterminowe są częścią kapitału obcego, nie własnego. Do kapitału własnego zalicza się kapitał podstawowy, zapasowy, rezerwowy oraz wynik finansowy."
+    },
+    {
+      "question": "Co finansuje kapitał własny?",
+      "options": [
+        "Wszystkie aktywa jednostki",
+        "Aktywa netto (aktywa pomniejszone o zobowiązania)",
+        "Tylko aktywa trwałe",
+        "Tylko zapasy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kapitał własny finansuje aktywa netto, czyli aktywa pomniejszone o zobowiązania – reprezentuje 'czysty' majątek należący do właścicieli."
+    },
+    {
+      "question": "Co to są rezerwy w bilansie?",
+      "options": [
+        "Środki pieniężne w kasie",
+        "Pozycje kapitału obcego, których termin wymagalności i kwota nie są pewne",
+        "Zapasy surowców",
+        "Nadwyżki produkcyjne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rezerwy należą do kapitału obcego; charakteryzują się tym, że ich termin wymagalności oraz kwota nie są pewne (np. rezerwy na gwarancje)."
+    },
+    {
+      "question": "Zobowiązania wymagalne w okresie do 12 miesięcy od dnia bilansowego to:",
+      "options": [
+        "Zobowiązania długoterminowe",
+        "Zobowiązania krótkoterminowe",
+        "Kapitał zapasowy",
+        "Rezerwy długoterminowe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zobowiązania krótkoterminowe to te, których wymagalność dotyczy okresu do 12 miesięcy od dnia bilansowego (m.in. kredyty, zobowiązania wobec dostawców)."
+    },
+    {
+      "question": "Firma ma aktywa łącznie 800 000 zł, kapitał własny 300 000 zł. Ile wynoszą zobowiązania?",
+      "options": [
+        "100 000 zł",
+        "300 000 zł",
+        "500 000 zł",
+        "800 000 zł"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Z zasady równowagi bilansowej: Aktywa = Kapitał własny + Zobowiązania, czyli 800 000 = 300 000 + Zobowiązania, więc Zobowiązania = 500 000 zł."
+    }
+  ]
+}

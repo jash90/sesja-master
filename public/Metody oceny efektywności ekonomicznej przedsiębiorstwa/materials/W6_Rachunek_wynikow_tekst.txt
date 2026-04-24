@@ -1,0 +1,53 @@
+Ekonomiczna ocena efektywności przedsięwzięć na podstawie rachunku wyników, czyli rachunku zysków i strat.
+
+Niniejszy wykład poświęcony jest rachunkowi zysków i strat – drugiemu po bilansie, najważniejszemu składnikowi sprawozdania finansowego jednostki gospodarczej. Rachunek zysków i strat jest ściśle związany z bilansem, ponieważ obrazuje sposób wykorzystania majątku jednostki.
+
+Rachunek wyników, znany również jako rachunek zysków i strat, wyraża rezultaty działania przedsiębiorstwa w kategoriach przychodów, kosztów oraz zysków i strat nadzwyczajnych. Stanowi on dokumentację działań przedsiębiorstwa w określonym okresie, najczęściej dwunastomiesięcznym.
+
+Miernikiem rentowności działań jednostki gospodarczej jest wypracowany wynik finansowy. Podstawowymi elementami kształtującymi wynik finansowy są kategorie wynikowe, takie jak przychody i koszty oraz zyski i straty. Rachunek zysków i strat jest zestawieniem osiągniętych w danym okresie obrotowym przychodów i wszystkich poniesionych w tym czasie kosztów. Stanowi narzędzie ustalania wyniku finansowego poprzez porównanie przychodów i kosztów. Podstawowa zasada rachunku wyników wyraża się równaniem – przychody minus koszty równają się wynik finansowy.
+
+Wynik finansowy dodatni określa się mianem zysku. Wynik finansowy ujemny określa się mianem straty. Jeżeli suma zrealizowanych przychodów jest równa sumie poniesionych kosztów, to działalność gospodarcza jednostki jest bezwynikowa.
+
+Podstawowym czynnikiem kształtującym wielkość osiągniętego w danym czasie zysku są uzyskane w tym okresie przychody. Przychodem ze sprzedaży jest kwota uzyskana lub należna od odbiorcy z tytułu dokonanej sprzedaży składników aktywów jednostki, pomniejszona o należny podatek od towarów i usług, czyli VAT.
+
+Ustawa o rachunkowości definiuje przychody, traktując je na równi z zyskami. Przez przychody i zyski w świetle znowelizowanej ustawy rozumie się uprawdopodobnione powstanie w okresie sprawozdawczym korzyści ekonomicznych o wiarygodnie określonej wartości, w formie zwiększenia wartości aktywów lub zmniejszenia wartości zobowiązań, które doprowadzą do wzrostu kapitału własnego lub zmniejszenia jego niedoboru w inny sposób niż wniesienie środków przez udziałowców lub właścicieli.
+
+Osiąganie przychodów jest nieodłącznie związane z ponoszeniem kosztów. Koszty ponoszone przez jednostkę odzwierciedlają równowartość zużytych środków trwałych, wartości niematerialnych i prawnych, materiałów, usług obcych oraz zaangażowanej pracy ludzkiej.
+
+Koszty mogą dotyczyć dwóch głównych obszarów. Pierwszym są koszty wytworzenia produktów, związane ściśle z procesem technologicznym. Drugim są koszty bieżącej działalności jednostki, które nie tworzą wartości produktów, ponieważ nie są związane z ich wytworzeniem. Do tej grupy zalicza się na przykład koszty zarządu.
+
+Według znowelizowanej ustawy o rachunkowości przez koszty i straty rozumie się uprawdopodobnione zmniejszenie w okresie sprawozdawczym korzyści ekonomicznych, o wiarygodnie określonej wartości, w formie zmniejszenia wartości aktywów albo zwiększenia wartości zobowiązań i rezerw, które doprowadzają do zmniejszenia kapitału własnego lub zwiększenia niedoboru w inny sposób niż wycofanie środków przez udziałowców lub właścicieli.
+
+Mianem strat określa się pozycje w rachunku zysków i strat, które spełniają wymogi definicyjne kosztów, a faktycznie są nadwyżką kosztów nad przychodami z nich osiągniętymi. Do strat zalicza się między innymi stratę ze zbycia niefinansowanych aktywów trwałych oraz stratę ze zbycia innowacji.
+
+Istotnym zagadnieniem są warunki ujmowania przychodów i kosztów w rachunku zysków i strat. Przychody i koszty należy uwzględnić w rachunku wówczas, gdy spełnione są trzy warunki. Po pierwsze, jednostka osiągnęła korzyści ekonomiczne w postaci zwiększenia określonego składnika aktywów lub zmniejszenia kwoty zobowiązań, co stanowi o przychodach. Po drugie, nastąpiło zmniejszenie korzyści ekonomicznych związanych ze zmniejszeniem stanu aktywów lub zwiększeniem kwoty zobowiązań, co stanowi o kosztach. Po trzecie, przychody i koszty można wiarygodnie ustalić.
+
+Działalność gospodarcza jednostki jest przyporządkowana do czterech obszarów. Pierwszym jest działalność operacyjna, nazywana również podstawową. Drugim jest pozostała działalność operacyjna. Trzecim jest działalność finansowa. Czwartym są straty i zyski nadzwyczajne.
+
+W ramach działalności operacyjnej podstawowej jednostki realizują swoją podstawową działalność oraz każdą inną z nią związaną, która nie ma charakteru działalności inwestycyjnej ani finansowej. Za działalność podstawową uważa się tę działalność, do której prowadzenia jednostka została powołana i zarejestrowana w sądzie, czyli jest to działalność statutowa.
+
+Pozostała działalność operacyjna jest pośrednio związana z działalnością podstawową. W jej ramach ponoszone są koszty i uzyskiwane przychody związane między innymi z działalnością socjalną, sprzedażą środków trwałych czy wartości niematerialnych i prawnych.
+
+Działalność finansowa obejmuje przychody i koszty związane z gospodarowaniem majątkiem finansowym jednostki. Może ona dotyczyć zwłaszcza obrotu papierami wartościowymi oraz zaciągania i udzielania kredytów i pożyczek.
+
+Zyski i straty nadzwyczajne to zdarzenia i transakcje, które można odróżnić od działalności operacyjnej jednostki. Nie są one związane z ryzykiem prowadzenia działalności ani nie powtarzają się regularnie. Do zdarzeń takich można zaliczyć na przykład trzęsienie ziemi, pożar czy powódź.
+
+Ogólny schemat rachunku zysków i strat według ustawy o rachunkowości obejmuje zestawienie przychodów i kosztów w poszczególnych obszarach działalności. W ramach działalności podstawowej, czyli operacyjnej, wyróżnia się przychody z działalności podstawowej, koszty działalności podstawowej oraz zysk lub stratę ze sprzedaży, którą wylicza się jako różnicę tych dwóch pozycji. Następnie w ramach pozostałej działalności operacyjnej uwzględnia się pozostałe przychody operacyjne oraz pozostałe koszty operacyjne, a z ich uwzględnieniem oblicza się zysk lub stratę z działalności operacyjnej. Kolejnym obszarem jest działalność finansowa, z której wynikają przychody finansowe i koszty finansowe, a po ich uwzględnieniu oblicza się zysk lub stratę z działalności gospodarczej. Działalność losowa generuje zyski nadzwyczajne oraz straty nadzwyczajne, które razem prowadzą do wyniku brutto. Po uwzględnieniu podatku dochodowego uzyskuje się wynik netto, stanowiący końcowy rezultat rachunku zysków i strat.
+
+Wynik finansowy jednostki może być ustalany za pomocą różnych form rachunku zysków i strat. Znowelizowana ustawa o rachunkowości wyróżnia dwie formy – wariant porównawczy oraz wariant kalkulacyjny.
+
+Metoda prezentacji kosztów w układzie porównawczym grupuje koszty zgodnie z ich rodzajem, na przykład amortyzacja, zużycie materiałów, i nie są one rozliczane na poszczególne typy działalności. Drugi sposób, zwany metodą prezentacji kosztów w układzie funkcjonalnym, czyli kalkulacyjnym, klasyfikuje koszty zgodnie z przyporządkowaniem do rodzaju działalności – jako koszty sprzedanych produktów, koszty zarządu oraz koszty sprzedaży. Wybór między wariantem porównawczym, czyli rodzajowym, a wariantem kalkulacyjnym zależy od uwarunkowań i rodzaju działalności jednostki gospodarczej. Obie metody prezentują koszty, które mogą się zmieniać pośrednio lub bezpośrednio wraz ze zmianą wielkości sprzedaży lub produkcji.
+
+Co bardzo istotne, wynik ze sprzedaży ustalony za pomocą porównawczego oraz kalkulacyjnego rachunku zysków i strat jest zawsze jednakowy. Różne są tylko sposoby dochodzenia do tego wyniku. Niezależnie od wariantu rachunku zysków i strat uzyskuje się taki sam wynik finansowy. W każdym wariancie rachunku zysków i strat ustalanych jest pięć rodzajów wyniku finansowego – wynik ze sprzedaży, wynik z działalności operacyjnej, wynik z działalności gospodarczej, wynik brutto oraz wynik netto.
+
+Wariant porównawczy rachunku zysków i strat zalecany jest przede wszystkim mniejszym jednostkom produkcyjnym, handlowym czy usługowym, gdzie nie ma potrzeby rozliczania kosztów na poszczególne rodzaje działalności. Wariant kalkulacyjny jest natomiast bardziej właściwy dla większych jednostek wytwórczych, w których koszty klasyfikuje się zgodnie z ich funkcją, a mianowicie jako koszty wytworzenia sprzedanych produktów, koszty sprzedaży oraz koszty ogólnego zarządu.
+
+W zależności od przyjętej formy prezentacji przychodów i kosztów wyróżnia się trzy metody sporządzania rachunku wyników. Pierwszą jest metoda brutto, drugą metoda netto, a trzecią metoda mieszana.
+
+Metoda brutto polega na wykazywaniu w rachunku wyników wszystkich przychodów i kosztów z danego okresu obrotowego. Zaletą tej metody jest możliwość poznania rozmiarów osiągniętych przychodów jednostki w roku obrotowym i określenia na tej podstawie jej miejsca i pozycji na rynku.
+
+Metoda netto polega na wykazywaniu w rachunku wyników ostatecznych kwot wyników uzyskanych na poszczególnych rodzajach działalności. Metoda ta daje syntetyczny obraz rezultatów pracy jednostki, ale nie pozwala na zorientowanie się, jakie były rozmiary sprzedaży i jakie zostały poniesione koszty w poszczególnych rodzajach jej działalności.
+
+Metoda mieszana jest kompromisem pomiędzy metodą brutto a netto. Za pomocą metody brutto wykazuje się wszystkie ważniejsze obszary działalności jednostki, które są niezbędne do jej szczegółowej analizy. Natomiast wynik mniej istotnych obszarów działalności jednostki wykazuje się przy zastosowaniu metody netto.
+
+Podsumowując, rachunek zysków i strat jest jednym z podstawowych narzędzi oceny efektywności ekonomicznej przedsiębiorstwa. Pozwala ustalić wynik finansowy, przeanalizować strukturę przychodów i kosztów oraz ocenić efekty działalności w różnych obszarach. Jest to dokument niezwykle ważny nie tylko dla księgowości, ale także dla zarządzania przedsiębiorstwem i podejmowania decyzji gospodarczych.

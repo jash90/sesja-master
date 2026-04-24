@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Podsumowanie wykładów – Metody oceny efektywności ekonomicznej przedsiębiorstw",
+  "description": "Quiz syntezujący całą wiedzę z kursu: efektywność, sprawozdania finansowe, bilans, rachunek wyników, wartość pieniądza w czasie oraz metody oceny inwestycji",
+  "questions": [
+    {
+      "question": "Co oznacza efektywność ekonomiczna?",
+      "options": [
+        "Wartość księgową firmy",
+        "Relację między uzyskanym rezultatem a poniesionym nakładem oraz stopień realizacji celu",
+        "Sumę aktywów przedsiębiorstwa",
+        "Wysokość wynagrodzeń pracowników"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Efektywność to relacja rezultatu do nakładu oraz stopień realizacji celu. W ujęciu ekonomicznym porównuje się efekty z kosztami i kapitałem."
+    },
+    {
+      "question": "Które kryterium oceny efektywności odpowiada na pytanie 'czy zasoby są wykorzystywane racjonalnie'?",
+      "options": [
+        "Płynność",
+        "Rentowność",
+        "Sprawność",
+        "Zadłużenie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kryterium sprawności bada racjonalne wykorzystanie zasobów. Płynność dotyczy terminowych zobowiązań, rentowność – tworzenia wartości, zadłużenie – struktury kapitałowej."
+    },
+    {
+      "question": "Które z poniższych NIE jest sposobem pomiaru efektywności?",
+      "options": [
+        "Podejście wskaźnikowe",
+        "Podejście czasowe",
+        "Podejście inwestycyjne",
+        "Podejście astrologiczne"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Efektywność mierzy się poprzez 3 podejścia: wskaźnikowe, oparte na czasie (wartość pieniądza) i inwestycyjne. Podejście astrologiczne nie jest metodą naukową."
+    },
+    {
+      "question": "Co pokazuje bilans?",
+      "options": [
+        "Przychody i koszty działalności",
+        "Przepływy gotówki",
+        "Majątek i źródła jego finansowania",
+        "Wykaz pracowników"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Bilans jest fotografią majątku (aktywa) i źródeł finansowania (pasywa) na określony dzień – stanowi podstawę oceny sytuacji majątkowej i finansowej."
+    },
+    {
+      "question": "Podstawową zasadą bilansu jest:",
+      "options": [
+        "Aktywa ≥ Pasywa",
+        "Aktywa = Pasywa",
+        "Aktywa + Pasywa = Zysk",
+        "Aktywa × Pasywa = Wynik"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podstawową zasadą równowagi bilansowej jest: AKTYWA = PASYWA – sumy bilansowe muszą być sobie zawsze równe."
+    },
+    {
+      "question": "Który wskaźnik NIE jest oparty na bilansie?",
+      "options": [
+        "Wskaźnik płynności",
+        "Wskaźnik zadłużenia",
+        "Wskaźnik wartości marki w mediach społecznościowych",
+        "Wskaźnik sprawności (obrotu)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Na bilansie oparte są: płynność, zadłużenie, sprawność i bezpieczeństwo finansowe. Wartość marki w mediach społecznościowych to wskaźnik marketingowy, nie bilansowy."
+    },
+    {
+      "question": "Jakie jest podstawowe równanie rachunku zysków i strat?",
+      "options": [
+        "Aktywa – Pasywa = Wynik",
+        "Przychody – Koszty = Wynik finansowy",
+        "Zysk + Strata = Netto",
+        "Kapitał własny × Stopa = Wynik"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rachunek zysków i strat opiera się na równaniu: PRZYCHODY – KOSZTY = WYNIK FINANSOWY. Dodatni wynik = zysk, ujemny = strata."
+    },
+    {
+      "question": "Ile poziomów wyniku finansowego wyróżnia się w RZiS?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "W RZiS ustala się 5 poziomów: wynik ze sprzedaży, z działalności operacyjnej, z działalności gospodarczej, brutto oraz netto."
+    },
+    {
+      "question": "Dlaczego 10 000 zł dziś ≠ 10 000 zł za rok?",
+      "options": [
+        "Bo banknoty się zużywają",
+        "Bo wpływ mają czas, stopa procentowa, inflacja, ryzyko i preferencja płynności",
+        "Bo kwoty są różne",
+        "Bo banki pobierają prowizje"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Na wartość pieniądza w czasie wpływają: czas, stopa procentowa, inflacja, ryzyko i preferencja płynności – dlatego te same nominalne kwoty mają różną rzeczywistą wartość."
+    },
+    {
+      "question": "Który rodzaj stopy procentowej uwzględnia częstotliwość kapitalizacji?",
+      "options": [
+        "Nominalna",
+        "Realna",
+        "Efektywna",
+        "Przeciętna"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Stopa efektywna uwzględnia częstotliwość kapitalizacji – im częstsza kapitalizacja, tym wyższa stopa efektywna przy tej samej nominalnej."
+    },
+    {
+      "question": "Co to jest dyskontowanie?",
+      "options": [
+        "Obniżka ceny w sklepie",
+        "Sprowadzenie przyszłych wpływów do chwili obecnej",
+        "Podwyższenie ceny sprzedaży",
+        "Wyliczenie marży"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dyskontowanie to sprowadzenie przyszłych przepływów pieniężnych do wartości bieżącej (PV). Jest fundamentem metod dynamicznych jak NPV i IRR."
+    },
+    {
+      "question": "Która metoda NIE należy do prostych metod oceny inwestycji?",
+      "options": [
+        "Okres zwrotu",
+        "ARR (prosta stopa zwrotu)",
+        "BEP (próg rentowności)",
+        "NPV (wartość bieżąca netto)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "NPV należy do metod dynamicznych (dyskontowych). Metody proste to: okres zwrotu, ARR/księgowa stopa zwrotu oraz BEP."
+    },
+    {
+      "question": "Co oznacza NPV > 0?",
+      "options": [
+        "Projekt jest nieopłacalny",
+        "Projekt jest opłacalny – tworzy dodatkową wartość",
+        "Projekt nie zarabia ani nie traci",
+        "Projekt ma wysoki podatek"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NPV > 0 oznacza, że projekt jest opłacalny i tworzy dodatkową wartość. NPV = 0 – zwrot na poziomie kosztu kapitału; NPV < 0 – projekt nieopłacalny."
+    },
+    {
+      "question": "Który etap NIE należy do modelowego toku oceny efektywności?",
+      "options": [
+        "Cel analizy",
+        "Dane (sprawozdania i prognozy)",
+        "Degustacja produktów",
+        "Decyzja (wybór wariantu i ocena ryzyka)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "5 etapów to: cel analizy, dane, wskaźniki, czas (PV/FV), decyzja. Degustacja produktów nie jest etapem oceny efektywności ekonomicznej."
+    },
+    {
+      "question": "Który z błędów interpretacyjnych jest typowy przy ocenie efektywności?",
+      "options": [
+        "Korzystanie z wielu wskaźników",
+        "Utożsamianie zysku księgowego z gotówką",
+        "Analizowanie kontekstu branżowego",
+        "Stosowanie metod dyskontowych do inwestycji wieloletnich"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Częstym błędem jest utożsamianie zysku z gotówką – zysk księgowy nie równa się saldu kasy. Pozostałe odpowiedzi to dobre praktyki, a nie błędy."
+    }
+  ]
+}

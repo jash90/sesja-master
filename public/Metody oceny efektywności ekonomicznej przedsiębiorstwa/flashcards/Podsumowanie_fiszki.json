@@ -1,0 +1,182 @@
+{
+  "title": "Podsumowanie wykładów – Metody oceny efektywności ekonomicznej przedsiębiorstw",
+  "description": "Fiszki stanowiące syntezę całego kursu: efektywność, sprawozdania finansowe, bilans, rachunek wyników, wartość pieniądza w czasie, metody oceny inwestycji",
+  "category": "Efektywność ekonomiczna / Synteza",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Jakie 5 obszarów obejmuje mapa kursu 'Metody oceny efektywności ekonomicznej'?",
+      "back": "1) Istota efektywności i metody pomiaru, 2) Sprawozdania finansowe, 3) Bilans i rachunek wyników, 4) Wartość pieniądza w czasie, 5) Ocena opłacalności projektów."
+    },
+    {
+      "id": 2,
+      "front": "Co oznacza efektywność ekonomiczna?",
+      "back": "Relację między uzyskanym rezultatem a poniesionym nakładem oraz stopień realizacji celu przedsiębiorstwa."
+    },
+    {
+      "id": 3,
+      "front": "Jakie są 3 rodzaje efektywności?",
+      "back": "Efektywność kosztowa (minimalizacja kosztu), dochodowa (relacja przychodów do potencjału), zysku (stopień realizacji celu zyskowności)."
+    },
+    {
+      "id": 4,
+      "front": "Jakie są 3 podstawowe kryteria oceny efektywności?",
+      "back": "Kryterium płynności (terminowa regulacja zobowiązań), rentowności (tworzenie wartości), sprawności (racjonalne wykorzystanie zasobów)."
+    },
+    {
+      "id": 5,
+      "front": "Jakie są 3 podejścia do pomiaru efektywności?",
+      "back": "Wskaźnikowe (zadłużenie, płynność, rentowność, sprawność), oparte na czasie (wartość pieniądza) oraz inwestycyjne (OZ, ARR, BEP, NPV, IRR)."
+    },
+    {
+      "id": 6,
+      "front": "Dlaczego nie istnieje jeden 'najlepszy' miernik efektywności?",
+      "back": "Bo wiarygodna ocena wymaga łączenia kilku perspektyw – każde podejście daje inny obraz kondycji przedsiębiorstwa."
+    },
+    {
+      "id": 7,
+      "front": "Co stanowi źródło oceny efektywności przedsiębiorstwa?",
+      "back": "Roczne sprawozdanie finansowe – bilans, rachunek zysków i strat, rachunek przepływów pieniężnych oraz informacja dodatkowa."
+    },
+    {
+      "id": 8,
+      "front": "Kto korzysta z danych sprawozdań finansowych?",
+      "back": "Inwestorzy, kredytodawcy, kontrahenci, organy publiczne oraz kierownictwo jednostki."
+    },
+    {
+      "id": 9,
+      "front": "Jakich 5 cech jakościowych musi mieć sprawozdanie finansowe, aby analiza była wiarygodna?",
+      "back": "Zrozumiałość, wiarygodność, porównywalność, istotność oraz ciągłość."
+    },
+    {
+      "id": 10,
+      "front": "Dlaczego należy sprawdzić jakość danych przed oceną efektywności?",
+      "back": "Bo błędne lub nieporównywalne dane prowadzą do złych wniosków, nawet gdy wskaźnik jest poprawnie obliczony."
+    },
+    {
+      "id": 11,
+      "front": "Co pokazuje bilans?",
+      "back": "Fotografia majątku (aktywa) i źródeł finansowania (pasywa) na określony dzień. Aktywa wg rosnącej płynności, pasywa wg wymagalności."
+    },
+    {
+      "id": 12,
+      "front": "Jak interpretować aktywa trwałe z punktu widzenia efektywności?",
+      "back": "Jako potencjał produkcyjny i długookresowe zaangażowanie kapitału."
+    },
+    {
+      "id": 13,
+      "front": "Co oznacza kapitał obcy z punktu widzenia oceny efektywności?",
+      "back": "Koszt finansowania oraz poziom ryzyka jednostki."
+    },
+    {
+      "id": 14,
+      "front": "Na jakie 4 pytania odpowiadają wskaźniki bilansowe?",
+      "back": "Płynność (regulacja zobowiązań), zadłużenie (udział kapitału obcego), sprawność (tempo obrotu), bezpieczeństwo (relacja kapitałów własnych do aktywów)."
+    },
+    {
+      "id": 15,
+      "front": "Co przedstawia rachunek zysków i strat?",
+      "back": "Rezultaty działalności w danym okresie – przychody minus koszty = wynik finansowy; pozwala ocenić rentowność."
+    },
+    {
+      "id": 16,
+      "front": "Jakie 5 poziomów wyniku finansowego wyróżnia się w RZiS?",
+      "back": "Wynik ze sprzedaży, wynik z działalności operacyjnej, wynik z działalności gospodarczej, wynik brutto oraz wynik netto."
+    },
+    {
+      "id": 17,
+      "front": "Czy wariant porównawczy i kalkulacyjny dają różne końcowe wyniki finansowe?",
+      "back": "Nie – końcowy wynik finansowy jest ten sam, różne są jedynie sposoby prezentacji i klasyfikacji kosztów."
+    },
+    {
+      "id": 18,
+      "front": "Co wpływa na wartość pieniądza w czasie?",
+      "back": "Czas, stopa procentowa, inflacja, ryzyko oraz preferencja płynności."
+    },
+    {
+      "id": 19,
+      "front": "Jakie 3 rodzaje stóp procentowych należy rozróżniać?",
+      "back": "Stopa nominalna (z umowy), realna (po korekcie inflacji) oraz efektywna (uwzględnia częstotliwość kapitalizacji)."
+    },
+    {
+      "id": 20,
+      "front": "Co to jest wartość przyszła (FV)?",
+      "back": "Pokazuje, ile będzie wart kapitał w przyszłości przy określonej stopie procentowej – obliczana przez kapitalizację."
+    },
+    {
+      "id": 21,
+      "front": "Co to jest wartość obecna (PV)?",
+      "back": "Pokazuje, ile warte są dziś przyszłe przepływy pieniężne – obliczana przez dyskontowanie."
+    },
+    {
+      "id": 22,
+      "front": "Czym różni się kapitalizacja od dyskontowania?",
+      "back": "Kapitalizacja to przejście od wartości dzisiejszej do przyszłej (PV → FV). Dyskontowanie to sprowadzenie przyszłych wpływów do chwili obecnej (FV → PV)."
+    },
+    {
+      "id": 23,
+      "front": "Wymień 3 proste metody oceny opłacalności inwestycji.",
+      "back": "Okres zwrotu (ile czasu potrzeba na odzyskanie nakładów), ARR/księgowa stopa zwrotu, BEP (próg rentowności – sprzedaż przy zysku = 0)."
+    },
+    {
+      "id": 24,
+      "front": "Jaka jest główna zaleta i główna wada metod prostych?",
+      "back": "Zaleta: prostota, szybkość, małe wymagania informacyjne. Wada zasadnicza: brak uwzględnienia wartości pieniądza w czasie."
+    },
+    {
+      "id": 25,
+      "front": "Co to jest NPV?",
+      "back": "Wartość bieżąca netto – różnica między zdyskontowanymi wpływami a zdyskontowanymi wydatkami. NPV > 0 → projekt opłacalny."
+    },
+    {
+      "id": 26,
+      "front": "Co to jest IRR?",
+      "back": "Wewnętrzna stopa zwrotu – stopa dyskontowa, przy której NPV = 0. IRR > koszt kapitału → projekt akceptowany."
+    },
+    {
+      "id": 27,
+      "front": "Czym różnią się NPV i IRR w interpretacji?",
+      "back": "NPV mówi, ile projekt tworzy wartości (w jednostkach pieniężnych); IRR pokazuje, jaką stopę zwrotu osiąga inwestycja (procentowo)."
+    },
+    {
+      "id": 28,
+      "front": "Porównaj metody proste i dynamiczne pod względem czasu.",
+      "back": "Metody proste nie uwzględniają czasu (statyczne). Metody dynamiczne uwzględniają dyskontowanie – wartość pieniądza w czasie."
+    },
+    {
+      "id": 29,
+      "front": "Do jakich inwestycji lepiej nadają się metody dynamiczne?",
+      "back": "Do inwestycji strategicznych i kapitałochłonnych, decyzji długookresowych – metody proste są użyteczne raczej dla wstępnego screeningu."
+    },
+    {
+      "id": 30,
+      "front": "Jakich 5 etapów obejmuje modelowy tok oceny efektywności?",
+      "back": "1) Cel analizy, 2) Dane (sprawozdania i prognozy), 3) Wskaźniki (płynność, zadłużenie, rentowność, sprawność), 4) Czas (PV, FV, stopa), 5) Decyzja (wybór wariantu i ocena ryzyka)."
+    },
+    {
+      "id": 31,
+      "front": "Wymień 5 najczęstszych błędów interpretacyjnych w ocenie efektywności.",
+      "back": "1) Jeden wskaźnik zamiast pełnej analizy, 2) Pomijanie kontekstu branży i czasu, 3) Utożsamianie zysku z gotówką, 4) Mylenie stóp nominalnej/realnej/efektywnej, 5) Stosowanie metod prostych do decyzji długookresowych."
+    },
+    {
+      "id": 32,
+      "front": "Jakie 4 wnioski końcowe wynikają z całego kursu?",
+      "back": "1) Efektywność ma charakter wielowymiarowy, 2) Sprawozdania finansowe są podstawą oceny bieżącej, 3) Wartość pieniądza w czasie jest niezbędna przy inwestycjach, 4) Najlepiej łączyć metody wskaźnikowe, proste i dyskontowe."
+    },
+    {
+      "id": 33,
+      "front": "Na czym polega wielowymiarowy charakter efektywności ekonomicznej?",
+      "back": "Obejmuje wynik finansowy, płynność, sprawność i bezpieczeństwo finansowe – nie można jej sprowadzić do jednej liczby."
+    },
+    {
+      "id": 34,
+      "front": "Co jest błędem: utożsamianie zysku księgowego z gotówką?",
+      "back": "Tak – zysk księgowy obejmuje np. amortyzację i memoriałowe rozpoznanie przychodów; nie oznacza, że firma ma taką kwotę w kasie. Gotówkę pokazuje rachunek przepływów pieniężnych."
+    },
+    {
+      "id": 35,
+      "front": "Dlaczego analiza wyniku powinna być łączona z bilansem i przepływami pieniężnymi?",
+      "back": "Żeby uzyskać kompletny obraz – RZiS pokazuje rentowność, bilans strukturę majątku i kapitału, cash flow rzeczywistą sytuację gotówkową."
+    }
+  ]
+}

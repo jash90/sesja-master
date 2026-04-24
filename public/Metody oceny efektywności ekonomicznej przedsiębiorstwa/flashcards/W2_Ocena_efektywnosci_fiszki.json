@@ -1,0 +1,192 @@
+{
+  "title": "Ocena efektywności ekonomicznej na podstawie sprawozdań finansowych",
+  "description": "Fiszki dotyczące sprawozdań finansowych – ich istoty, celów, kryteriów podziału, użytkowników, funkcji oraz cech jakościowych",
+  "category": "Rachunkowość / Sprawozdawczość finansowa",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co to jest sprawozdawczość?",
+      "back": "Zbiór różnorodnych zestawień i danych liczbowych dotyczących pewnego okresu, opracowanych według ustalonych zasad i wzorców."
+    },
+    {
+      "id": 2,
+      "front": "Jakie dwa typy sprawozdawczości wyróżnia się ze względu na zakres?",
+      "back": "Sprawozdawczość makroekonomiczną oraz mikroekonomiczną (sporządzaną przez pojedyncze jednostki gospodarcze)."
+    },
+    {
+      "id": 3,
+      "front": "Jaki jest główny cel sprawozdań finansowych?",
+      "back": "Dostarczanie informacji o sytuacji finansowej, wynikach działalności oraz zmianach sytuacji finansowej jednostki – użytecznych do podejmowania decyzji gospodarczych."
+    },
+    {
+      "id": 4,
+      "front": "Z czego składa się roczne sprawozdanie finansowe przedsiębiorstwa działającego w grupie kapitałowej?",
+      "back": "Z jednostkowego sprawozdania finansowego oraz skonsolidowanego sprawozdania finansowego."
+    },
+    {
+      "id": 5,
+      "front": "Jakie są dwa podstawowe typy sprawozdań ze względu na sposób prezentacji danych?",
+      "back": "Sprawozdania rzeczowe (dane w jednostkach naturalnych) oraz sprawozdania finansowe (dane w jednostkach wartościowych)."
+    },
+    {
+      "id": 6,
+      "front": "Jaka jest forma danych w sprawozdaniach rzeczowych?",
+      "back": "Jednostki naturalne, np. sztuki, tony, metry kwadratowe."
+    },
+    {
+      "id": 7,
+      "front": "Co jest podstawowym źródłem danych sprawozdań finansowych?",
+      "back": "Ewidencja księgowa – dane są uporządkowane, doprowadzone do porównywalności i zweryfikowane przed sporządzeniem sprawozdania."
+    },
+    {
+      "id": 8,
+      "front": "Na jakie dwie kategorie dzieli się użytkowników sprawozdań finansowych?",
+      "back": "Użytkowników zewnętrznych oraz użytkowników wewnętrznych jednostki."
+    },
+    {
+      "id": 9,
+      "front": "Wymień użytkowników zewnętrznych sprawozdań finansowych.",
+      "back": "Inwestorzy, kredytodawcy, kontrahenci, organy podatkowe, rząd i społeczeństwo."
+    },
+    {
+      "id": 10,
+      "front": "Wymień użytkowników wewnętrznych sprawozdań finansowych.",
+      "back": "Kierownicy jednostki, pracownicy, związki zawodowe."
+    },
+    {
+      "id": 11,
+      "front": "Co ocenia inwestor na podstawie sprawozdania finansowego?",
+      "back": "Opłacalność lokat kapitałowych, stopień ryzyka inwestowania kapitału oraz sprawność działania jednostki i jej strategie rozwojowe."
+    },
+    {
+      "id": 12,
+      "front": "Co interesuje kredytodawcę w sprawozdaniu finansowym?",
+      "back": "Zdolność kredytowa – możliwość zwrotu pożyczonych pieniędzy wraz z odsetkami w ustalonym terminie."
+    },
+    {
+      "id": 13,
+      "front": "Co ocenia kontrahent na podstawie sprawozdania finansowego?",
+      "back": "Zdolność płatniczą jednostki oraz możliwość otrzymania należnych kwot w ustalonym terminie za dostarczone produkty lub usługi."
+    },
+    {
+      "id": 14,
+      "front": "Co interesuje organy podatkowe w sprawozdaniu finansowym?",
+      "back": "Prawidłowość i terminowość wywiązywania się jednostki ze zobowiązań podatkowych."
+    },
+    {
+      "id": 15,
+      "front": "Jakie cztery funkcje pełnią sprawozdania finansowe?",
+      "back": "Funkcja informacyjna, dokumentacyjna, analityczna oraz kontrolna."
+    },
+    {
+      "id": 16,
+      "front": "Na czym polega funkcja informacyjna sprawozdania?",
+      "back": "Pozwala określić stan faktyczny, tworzy podstawy planowania oraz ułatwia podejmowanie decyzji."
+    },
+    {
+      "id": 17,
+      "front": "Na czym polega funkcja dokumentacyjna sprawozdania?",
+      "back": "Sprawozdanie stanowi wiarygodne źródło udokumentowanych informacji historycznych."
+    },
+    {
+      "id": 18,
+      "front": "Na czym polega funkcja analityczna sprawozdania?",
+      "back": "Sprawozdanie zawiera zbiór informacji niezbędnych do przeprowadzenia analizy ekonomiczno-finansowej jednostki."
+    },
+    {
+      "id": 19,
+      "front": "Co to jest MSSF?",
+      "back": "Międzynarodowe Standardy Sprawozdawczości Finansowej – standardy określające zasady sporządzania sprawozdań finansowych na skalę międzynarodową."
+    },
+    {
+      "id": 20,
+      "front": "Jaki jest cel sprawozdania finansowego według ustawy o rachunkowości?",
+      "back": "Rzetelna i jasna prezentacja sytuacji majątkowej i finansowej oraz wyniku finansowego jednostki."
+    },
+    {
+      "id": 21,
+      "front": "Co oznacza cecha jakościowa 'zrozumiałość' sprawozdania?",
+      "back": "Informacje są zrozumiałe dla użytkowników, co umożliwia poprawne odczytanie treści sprawozdania i analizę danych."
+    },
+    {
+      "id": 22,
+      "front": "Co oznacza cecha jakościowa 'wiarygodność'?",
+      "back": "Informacje wiernie odzwierciedlają rzeczywistość gospodarczą, są wolne od błędów rachunkowych, bezstronne i obiektywne."
+    },
+    {
+      "id": 23,
+      "front": "Co oznacza cecha 'porównywalność' sprawozdania?",
+      "back": "Informacje są porównywalne w wymiarze wewnętrznym (różne okresy) oraz zewnętrznym (inne podmioty)."
+    },
+    {
+      "id": 24,
+      "front": "Co oznacza cecha 'ciągłość' sprawozdania?",
+      "back": "Informacje z końca okresu poprzedniego pokrywają się z informacjami z początku kolejnego okresu."
+    },
+    {
+      "id": 25,
+      "front": "Wymień cztery kryteria klasyfikacji sprawozdań finansowych.",
+      "back": "Złożoność podmiotu, powtarzalność, okres sprawozdawczy, stopień szczegółowości."
+    },
+    {
+      "id": 26,
+      "front": "Jakie są rodzaje sprawozdań ze względu na złożoność podmiotu?",
+      "back": "Jednostkowe, łączne oraz skonsolidowane."
+    },
+    {
+      "id": 27,
+      "front": "Wymień 6 elementów sprawozdania finansowego.",
+      "back": "Bilans, rachunek zysków i strat, rachunek przepływów pieniężnych, informacja dodatkowa, zestawienie zmian w kapitale własnym oraz sprawozdanie z działalności."
+    },
+    {
+      "id": 28,
+      "front": "Co zawiera bilans?",
+      "back": "Majątek jednostki (aktywa) oraz źródła jego finansowania (pasywa)."
+    },
+    {
+      "id": 29,
+      "front": "Co zawiera rachunek przepływów pieniężnych?",
+      "back": "Wpływy i wydatki gotówkowe jednostki w danym okresie sprawozdawczym."
+    },
+    {
+      "id": 30,
+      "front": "Jakie elementy sprawozdania sporządza jednostka NIE podlegająca badaniu przez biegłego rewidenta?",
+      "back": "Bilans, rachunek zysków i strat oraz informację dodatkową (3 elementy)."
+    },
+    {
+      "id": 31,
+      "front": "Jakie dodatkowe elementy sprawozdania sporządzają jednostki badane przez biegłego rewidenta?",
+      "back": "Rachunek przepływów pieniężnych oraz zestawienie zmian w kapitale własnym (łącznie 5 elementów)."
+    },
+    {
+      "id": 32,
+      "front": "Które podmioty podlegają obowiązkowemu badaniu przez biegłego rewidenta?",
+      "back": "Banki, zakłady ubezpieczeń, spółki akcyjne, fundusze inwestycyjne i emerytalne, grupy kapitałowe oraz jednostki spełniające 2 z 3 progów (zatrudnienie, aktywa, przychody)."
+    },
+    {
+      "id": 33,
+      "front": "Kiedy sporządza się sprawozdanie finansowe?",
+      "back": "Obowiązkowo na koniec roku obrotowego (najczęściej 31 grudnia); spółki giełdowe – co pół roku; także przed ogłoszeniem upadłości lub likwidacji."
+    },
+    {
+      "id": 34,
+      "front": "W jakim terminie należy sporządzić sprawozdanie finansowe?",
+      "back": "Nie później niż w ciągu 3 miesięcy od dnia bilansowego."
+    },
+    {
+      "id": 35,
+      "front": "W jakim terminie należy zatwierdzić sprawozdanie finansowe?",
+      "back": "Nie później niż w ciągu 6 miesięcy od dnia bilansowego."
+    },
+    {
+      "id": 36,
+      "front": "Gdzie publikowane są sprawozdania finansowe spółdzielni?",
+      "back": "W Monitorze Spółdzielczym (sprawozdania innych jednostek badanych – w Monitorze Polskim B)."
+    },
+    {
+      "id": 37,
+      "front": "Gdzie składane jest sprawozdanie finansowe po zatwierdzeniu?",
+      "back": "W rejestrze sądowym, w ciągu 15 dni od dnia zatwierdzenia, wraz z opinią biegłego rewidenta."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "title": "Wartość pieniądza w czasie",
+  "description": "Fiszki dotyczące stóp procentowych: nominalnej, realnej, efektywnej, przeciętnej oraz wpływu inflacji, kapitalizacji i podatku na wartość pieniądza",
+  "category": "Finanse / Wartość pieniądza w czasie",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czy 10 000 zł dziś to to samo, co 10 000 zł za rok?",
+      "back": "Nie – pieniądz zmienia wartość w czasie pod wpływem inflacji, stopy procentowej, ryzyka i preferencji płynności. 10 000 zł dziś jest warte więcej."
+    },
+    {
+      "id": 2,
+      "front": "Dlaczego wartość pieniądza w czasie jest ważna dla przedsiębiorstwa?",
+      "back": "Bo decyzje są podejmowane dziś, a efekty pojawiają się później – konieczne jest porównywanie wpływów i wydatków z różnych momentów."
+    },
+    {
+      "id": 3,
+      "front": "Jakie 6 czynników wpływa na zmianę wartości pieniądza w czasie?",
+      "back": "Czas, stopa procentowa, inflacja, ryzyko, preferencja płynności oraz polityka pieniężna państwa."
+    },
+    {
+      "id": 4,
+      "front": "Co to jest stopa procentowa?",
+      "back": "Cena kapitału w czasie; pozwala porównywać pieniądz dziś i w przyszłości; używana w ocenie lokat, kredytów i inwestycji."
+    },
+    {
+      "id": 5,
+      "front": "Co to jest nominalna stopa procentowa?",
+      "back": "Określona w umowie roczna stawka oprocentowania kredytu lub depozytu, stanowiąca podstawę do wyliczenia odsetek. Nie uwzględnia inflacji, prowizji ani ubezpieczeń."
+    },
+    {
+      "id": 6,
+      "front": "Jak inflacja wpływa na wartość pieniądza?",
+      "back": "Obniża siłę nabywczą pieniądza – nominalny przyrost kwoty nie zawsze oznacza realny zysk."
+    },
+    {
+      "id": 7,
+      "front": "Co to jest realna stopa procentowa?",
+      "back": "Stopa procentowa skorygowana o inflację – pokazuje, ile naprawdę się zarabia po uwzględnieniu spadku siły nabywczej pieniądza."
+    },
+    {
+      "id": 8,
+      "front": "Jaki jest wzór na realną stopę procentową?",
+      "back": "ir = (in – iin) / (1 + iin) lub równoważnie: ir = (1 + in) / (1 + iin) – 1, gdzie in – stopa nominalna, iin – stopa inflacji."
+    },
+    {
+      "id": 9,
+      "front": "Lokata daje 8%, inflacja wynosi 5%. Co można powiedzieć o realnym zysku?",
+      "back": "Realny zysk jest dużo mniejszy niż 8%. Przybliżenie: ≈ 8% – 5% = 3%; dokładnie: (0,08 – 0,05)/(1 + 0,05) ≈ 2,86%."
+    },
+    {
+      "id": 10,
+      "front": "Co to jest efektywna stopa procentowa?",
+      "back": "Stopa uwzględniająca częstotliwość kapitalizacji odsetek – pokazuje rzeczywisty dochód po roku, gdy odsetki są kapitalizowane częściej niż raz w roku."
+    },
+    {
+      "id": 11,
+      "front": "Jaki jest wzór na efektywną stopę procentową?",
+      "back": "ief = (1 + in/m)^m – 1, gdzie in – stopa nominalna, m – liczba okresów kapitalizacji w ciągu roku."
+    },
+    {
+      "id": 12,
+      "front": "Czy 8% z kapitalizacją roczną i 8% z kapitalizacją miesięczną to ta sama oferta?",
+      "back": "Nie. Nominalnie są takie same, ale efektywnie – kapitalizacja miesięczna daje wyższy rzeczywisty dochód."
+    },
+    {
+      "id": 13,
+      "front": "Do czego służy efektywna stopa procentowa?",
+      "back": "Do porównania ofert finansowych o różnej częstotliwości kapitalizacji w jednej, wspólnej podstawie."
+    },
+    {
+      "id": 14,
+      "front": "Co to jest przeciętna stopa procentowa?",
+      "back": "Stopa stosowana, gdy oprocentowanie zmienia się w czasie – pozwala uśrednić poziom oprocentowania dla analizowanego okresu."
+    },
+    {
+      "id": 15,
+      "front": "Na czym polega różnica między stopą płatną z dołu a z góry?",
+      "back": "Dotyczy momentu zapłaty odsetek. Z dołu – odsetki płacone po upływie okresu; z góry – odsetki płacone na początku okresu."
+    },
+    {
+      "id": 16,
+      "front": "Jak przelicza się stopę płatną z góry na z dołu?",
+      "back": "io = id / (1 – id), gdzie io – stopa odsetek płatnych z dołu, id – stopa dyskonta (odsetki płatne z góry)."
+    },
+    {
+      "id": 17,
+      "front": "Jak przelicza się stopę płatną z dołu na z góry?",
+      "back": "id = io / (1 + io)."
+    },
+    {
+      "id": 18,
+      "front": "Jak podatek dochodowy wpływa na stopę procentową?",
+      "back": "Rzeczywista stopa procentowa irz = in × (1 – T), gdzie in – stopa nominalna, T – stopa podatku dochodowego."
+    },
+    {
+      "id": 19,
+      "front": "Co oznacza stopa 8% nominalnie przy 19% podatku dochodowego?",
+      "back": "Rzeczywista stopa = 0,08 × (1 – 0,19) = 0,08 × 0,81 = 6,48%."
+    },
+    {
+      "id": 20,
+      "front": "Porównaj: nominalna vs realna vs efektywna stopa procentowa.",
+      "back": "Nominalna – z umowy (punkt wyjścia); Realna – po uwzględnieniu inflacji (ocena zysku); Efektywna – uwzględnia kapitalizację (porównanie ofert)."
+    },
+    {
+      "id": 21,
+      "front": "Oblicz zysk z lokaty: 20 000 zł, 8% rocznie, kapitalizacja roczna, 1 rok.",
+      "back": "Kapitał końcowy = 20 000 × 1,08 = 21 600 zł. Zysk = 1 600 zł."
+    },
+    {
+      "id": 22,
+      "front": "Oblicz zysk z lokaty: 20 000 zł, 8% rocznie, kapitalizacja miesięczna, 1 rok.",
+      "back": "K = 20 000 × (1 + 0,08/12)^12 ≈ 21 660,40 zł. Zysk ≈ 1 660,40 zł."
+    },
+    {
+      "id": 23,
+      "front": "Dlaczego kapitalizacja miesięczna jest korzystniejsza niż roczna przy tej samej stopie nominalnej?",
+      "back": "Bo odsetki dopisywane są co miesiąc i w kolejnych miesiącach pracują już także wcześniejsze odsetki – działa tu mechanizm procentu składanego."
+    },
+    {
+      "id": 24,
+      "front": "Ile wynosi efektywna stopa procentowa przy 8% nominalnej z kapitalizacją miesięczną?",
+      "back": "ief = (1 + 0,08/12)^12 – 1 ≈ 0,0830 czyli ≈ 8,30% (różnica 0,30 p.p. względem stopy nominalnej)."
+    },
+    {
+      "id": 25,
+      "front": "Co mówi podsumowanie wykładu o wartości pieniądza w czasie?",
+      "back": "Pieniądz dziś jest wart więcej niż w przyszłości; stopa procentowa umożliwia porównania w czasie; inflacja, ryzyko i płynność wpływają na jej poziom."
+    },
+    {
+      "id": 26,
+      "front": "Jak wartość pieniądza w czasie łączy się z oceną efektywności inwestycji?",
+      "back": "Stanowi fundament metod dyskontowych (NPV, IRR) – bez przeliczania wartości w czasie niemożliwa jest poprawna ocena projektów wieloletnich."
+    },
+    {
+      "id": 27,
+      "front": "Jakie trzy 'nominalne' oznaczenia pojawiają się w wykładzie?",
+      "back": "Nominalna stopa procentowa (z umowy), nominalny przyrost kwoty (bez uwzględnienia inflacji), wartość nominalna vs realna pieniądza."
+    },
+    {
+      "id": 28,
+      "front": "Czym jest 'preferencja płynności' jako czynnik wpływający na wartość pieniądza?",
+      "back": "Preferencja posiadania pieniądza w formie płynnej (gotówki) dziś, co zwiększa wartość bieżącą kapitału względem przyszłego."
+    },
+    {
+      "id": 29,
+      "front": "Jak liczba okresów kapitalizacji (m) wpływa na stopę efektywną?",
+      "back": "Im większe m, tym wyższa stopa efektywna przy tej samej stopie nominalnej – dochód rośnie coraz wolniej (zbliża się do kapitalizacji ciągłej)."
+    },
+    {
+      "id": 30,
+      "front": "Co to jest kapitalizacja odsetek?",
+      "back": "Doliczanie odsetek do kapitału po zakończeniu okresu kapitalizacji, dzięki czemu w kolejnym okresie odsetki są naliczane od większej podstawy."
+    }
+  ]
+}

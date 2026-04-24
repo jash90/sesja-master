@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Rachunek zysków i strat",
+  "description": "Quiz sprawdzający wiedzę o rachunku wyników: przychodach, kosztach, wyniku finansowym, obszarach działalności oraz wariantach RZiS",
+  "questions": [
+    {
+      "question": "Jaka jest podstawowa zasada rachunku zysków i strat?",
+      "options": [
+        "Przychody + koszty = wynik",
+        "Przychody – koszty = wynik finansowy",
+        "Koszty / przychody = rentowność",
+        "Aktywa – pasywa = wynik"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podstawowa zasada RZiS: PRZYCHODY – KOSZTY = WYNIK FINANSOWY. Dodatni wynik to zysk, ujemny – strata."
+    },
+    {
+      "question": "Jak nazywa się wynik finansowy dodatni?",
+      "options": [
+        "Strata",
+        "Zysk",
+        "Nadwyżka",
+        "Dywidenda"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wynik finansowy dodatni to zysk. Wynik ujemny to strata; jeśli przychody = koszty, działalność jest bezwynikowa."
+    },
+    {
+      "question": "Co to jest przychód ze sprzedaży?",
+      "options": [
+        "Wszystkie otrzymane pieniądze łącznie z VAT",
+        "Kwota uzyskana lub należna za sprzedaż, pomniejszona o należny VAT",
+        "Zysk po opodatkowaniu",
+        "Marża operacyjna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Przychodem ze sprzedaży jest kwota uzyskana lub należna od odbiorcy z tytułu sprzedaży składników aktywów, pomniejszona o należny VAT."
+    },
+    {
+      "question": "Które z poniższych NIE należy do 4 obszarów działalności w RZiS?",
+      "options": [
+        "Działalność operacyjna (podstawowa)",
+        "Pozostała działalność operacyjna",
+        "Działalność marketingowa",
+        "Działalność finansowa"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Obszary działalności to: operacyjna podstawowa, pozostała operacyjna, finansowa oraz straty i zyski nadzwyczajne. Działalność marketingowa nie jest odrębnym obszarem RZiS."
+    },
+    {
+      "question": "Co rozumie się przez działalność operacyjną podstawową?",
+      "options": [
+        "Działalność inwestycyjną",
+        "Działalność statutową, do której jednostka została powołana",
+        "Działalność finansową",
+        "Sprzedaż środków trwałych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Działalność operacyjna podstawowa to działalność statutowa – ta, do której jednostka została powołana i zarejestrowana w sądzie."
+    },
+    {
+      "question": "Do którego obszaru zalicza się sprzedaż środków trwałych?",
+      "options": [
+        "Działalność operacyjna podstawowa",
+        "Pozostała działalność operacyjna",
+        "Działalność finansowa",
+        "Zyski nadzwyczajne"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sprzedaż środków trwałych oraz wartości niematerialnych i prawnych zalicza się do pozostałej działalności operacyjnej – pośrednio związanej z działalnością podstawową."
+    },
+    {
+      "question": "Które zdarzenie jest typowym przykładem straty/zysku nadzwyczajnego?",
+      "options": [
+        "Sprzedaż wyrobów gotowych",
+        "Odsetki bankowe",
+        "Trzęsienie ziemi, pożar, powódź",
+        "Wypłata wynagrodzeń"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Straty/zyski nadzwyczajne to zdarzenia odróżnialne od działalności operacyjnej, nie związane z jej ryzykiem (np. trzęsienie ziemi, pożar, powódź)."
+    },
+    {
+      "question": "Jak oblicza się zysk/stratę z działalności gospodarczej?",
+      "options": [
+        "Wynik operacyjny + przychody finansowe – koszty finansowe",
+        "Przychody – koszty całkowite",
+        "Zysk brutto + podatek",
+        "Aktywa – pasywa"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wynik z działalności gospodarczej = wynik z działalności operacyjnej + przychody finansowe – koszty finansowe (wg schematu RZiS: I = F + G – H)."
+    },
+    {
+      "question": "Jakie dwa warianty rachunku zysków i strat wyróżnia ustawa o rachunkowości?",
+      "options": [
+        "Krótki i długi",
+        "Porównawczy i kalkulacyjny",
+        "Roczny i półroczny",
+        "Pełny i uproszczony"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ustawa o rachunkowości wyróżnia wariant porównawczy (koszty wg rodzaju) i wariant kalkulacyjny (koszty wg funkcji)."
+    },
+    {
+      "question": "Jak klasyfikuje koszty wariant porównawczy RZiS?",
+      "options": [
+        "Wg funkcji (koszty wytworzenia, sprzedaży, zarządu)",
+        "Wg rodzaju (amortyzacja, zużycie materiałów itp.)",
+        "Wg miesięcy",
+        "Wg działów firmy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wariant porównawczy grupuje koszty zgodnie z ich rodzajem (amortyzacja, zużycie materiałów, wynagrodzenia), bez rozliczania na typy działalności."
+    },
+    {
+      "question": "Czy wynik ze sprzedaży różni się w zależności od wyboru wariantu RZiS?",
+      "options": [
+        "Tak – w wariancie kalkulacyjnym jest wyższy",
+        "Tak – w wariancie porównawczym jest wyższy",
+        "Nie – wynik jest zawsze jednakowy, różne są tylko sposoby dochodzenia do niego",
+        "Zależy od branży"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Wynik ze sprzedaży ustalony za pomocą obu wariantów jest zawsze taki sam. Różne są tylko sposoby dochodzenia do wyniku; końcowy wynik finansowy jest identyczny."
+    },
+    {
+      "question": "Ile poziomów wyniku finansowego ustala się w rachunku zysków i strat?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ustala się 5 poziomów wyniku: wynik ze sprzedaży, wynik z działalności operacyjnej, wynik z działalności gospodarczej, wynik brutto i wynik netto."
+    },
+    {
+      "question": "Dla jakiego typu jednostek odpowiedni jest wariant kalkulacyjny RZiS?",
+      "options": [
+        "Dla małych sklepów spożywczych",
+        "Dla większych jednostek wytwórczych, gdzie koszty klasyfikuje się wg funkcji",
+        "Dla jednoosobowych działalności gospodarczych",
+        "Wyłącznie dla banków"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wariant kalkulacyjny jest odpowiedni dla większych jednostek wytwórczych, gdzie koszty klasyfikuje się zgodnie z ich funkcją (koszty wytworzenia, sprzedaży, zarządu)."
+    },
+    {
+      "question": "Ile metod sporządzania rachunku wyników wyróżnia się ze względu na formę prezentacji?",
+      "options": [
+        "Dwie: brutto i netto",
+        "Trzy: brutto, netto, mieszana",
+        "Cztery: roczna, półroczna, kwartalna, miesięczna",
+        "Jedną, uniwersalną"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wyróżnia się trzy metody: brutto (wszystkie przychody i koszty), netto (ostateczne wyniki z obszarów) oraz mieszana (kompromis między dwoma pierwszymi)."
+    },
+    {
+      "question": "Co jest główną zaletą metody brutto rachunku wyników?",
+      "options": [
+        "Oszczędność czasu",
+        "Pokazuje rozmiary przychodów i pozycję jednostki na rynku",
+        "Jest najkrótsza",
+        "Wymaga mniej danych"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zaletą metody brutto jest możliwość poznania rozmiarów osiągniętych przychodów i określenia pozycji jednostki na rynku – zestawia wszystkie przychody i koszty."
+    }
+  ]
+}

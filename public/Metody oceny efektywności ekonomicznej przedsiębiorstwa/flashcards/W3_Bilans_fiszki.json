@@ -1,0 +1,197 @@
+{
+  "title": "Bilans jako sprawozdanie finansowe przedsiębiorstw",
+  "description": "Fiszki dotyczące bilansu: definicja, struktura, aktywa (trwałe i obrotowe), pasywa (kapitał własny i obcy), zasady sporządzania",
+  "category": "Rachunkowość / Bilans",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest bilans?",
+      "back": "Dwustronne zestawienie wartości środków gospodarczych (aktywów) oraz źródeł ich pochodzenia (pasywów) sporządzone na określony dzień i w określonej formie. Podstawa oceny sytuacji majątkowej i finansowej jednostki."
+    },
+    {
+      "id": 2,
+      "front": "Jakie dwa zasadnicze zadania spełnia bilans?",
+      "back": "Jest dokumentem księgowym oraz sprawozdaniem finansowym."
+    },
+    {
+      "id": 3,
+      "front": "Kiedy najczęściej sporządza się bilans?",
+      "back": "Na koniec roku obrotowego liczącego 12 miesięcy – najczęściej 31 grudnia."
+    },
+    {
+      "id": 4,
+      "front": "Co oznacza 'dzień bilansowy'?",
+      "back": "Dzień, na który sporządza się bilans, czyli moment oceny sytuacji majątkowej i finansowej jednostki."
+    },
+    {
+      "id": 5,
+      "front": "Jaka jest podstawowa zasada równowagi bilansowej?",
+      "back": "AKTYWA = PASYWA – sumy bilansowe muszą być sobie równe."
+    },
+    {
+      "id": 6,
+      "front": "Kto podpisuje bilans?",
+      "back": "Osoba sporządzająca bilans oraz kierownik jednostki – odpowiedzialni za rzetelność (zgodność ze stanem rzeczywistym) i prawidłowość (zgodność z przepisami)."
+    },
+    {
+      "id": 7,
+      "front": "Według jakiej zasady grupowane są aktywa w bilansie?",
+      "back": "Według zasady wzrastającej płynności – stopnia możliwości ich spieniężenia (upłynnienia)."
+    },
+    {
+      "id": 8,
+      "front": "Według jakiej zasady porządkowane są pasywa?",
+      "back": "Według zasady wymagalności spłaty (terminu zapłaty)."
+    },
+    {
+      "id": 9,
+      "front": "Co to są aktywa?",
+      "back": "Składniki majątkowe (środki gospodarcze), którymi rozporządza jednostka gospodarcza."
+    },
+    {
+      "id": 10,
+      "front": "Na jakie dwie grupy dzielą się aktywa?",
+      "back": "Majątek trwały (aktywa trwałe) oraz majątek obrotowy (aktywa obrotowe)."
+    },
+    {
+      "id": 11,
+      "front": "Czym różnią się aktywa trwałe od obrotowych?",
+      "back": "Aktywa trwałe mają termin realizacji dłuższy niż 12 miesięcy; aktywa obrotowe – krótszy niż 12 miesięcy (są w ciągłym ruchu)."
+    },
+    {
+      "id": 12,
+      "front": "Wymień 5 grup majątku trwałego.",
+      "back": "Wartości niematerialne i prawne, rzeczowy majątek trwały, należności długoterminowe, inwestycje długoterminowe, długoterminowe rozliczenia międzyokresowe."
+    },
+    {
+      "id": 13,
+      "front": "Co zalicza się do wartości niematerialnych i prawnych?",
+      "back": "Nabyte prawa majątkowe (prawa autorskie, licencje, oprogramowanie) oraz koszty zakończonych prac rozwojowych."
+    },
+    {
+      "id": 14,
+      "front": "Co to są środki trwałe?",
+      "back": "Rzeczowe aktywa trwałe o przewidywanym okresie użyteczności dłuższym niż rok, kompletne, zdatne do użytku, przeznaczone na potrzeby jednostki."
+    },
+    {
+      "id": 15,
+      "front": "Wymień 3 grupy środków trwałych.",
+      "back": "Nieruchomości (grunty, budynki, budowle, prawo wieczystego użytkowania), maszyny/urządzenia/środki transportu oraz inwentarz żywy."
+    },
+    {
+      "id": 16,
+      "front": "Co to są 'środki trwałe w budowie'?",
+      "back": "Wydatki poniesione na budowę lub zakup i montaż nowych lub na ulepszenie istniejących środków trwałych."
+    },
+    {
+      "id": 17,
+      "front": "Co łączy środki trwałe oraz wartości niematerialne i prawne?",
+      "back": "Stopniowa utrata wartości w czasie, czyli umarzanie (amortyzacja)."
+    },
+    {
+      "id": 18,
+      "front": "Co to są należności długoterminowe?",
+      "back": "Należności, których okres spłaty jest dłuższy niż rok (ponad 12 miesięcy)."
+    },
+    {
+      "id": 19,
+      "front": "Co to są inwestycje długoterminowe?",
+      "back": "Aktywa nabyte przez jednostkę w celu osiągnięcia korzyści ekonomicznych z przyrostu ich wartości lub uzyskania przychodów (odsetki, dywidendy)."
+    },
+    {
+      "id": 20,
+      "front": "Wymień 4 grupy majątku obrotowego.",
+      "back": "Zapasy, należności krótkoterminowe, inwestycje krótkoterminowe, krótkoterminowe rozliczenia międzyokresowe."
+    },
+    {
+      "id": 21,
+      "front": "Jakie kategorie obejmują zapasy?",
+      "back": "Materiały, produkcja niezakończona (półprodukty, produkty w toku), produkty gotowe, towary."
+    },
+    {
+      "id": 22,
+      "front": "Czym są materiały w bilansie?",
+      "back": "Składniki służące do jednorazowego zużycia w jednym cyklu produkcyjnym, przenoszące całą swoją wartość na wytwarzane produkty."
+    },
+    {
+      "id": 23,
+      "front": "Czym różnią się produkty gotowe od towarów?",
+      "back": "Produkty gotowe są wytwarzane przez jednostkę; towary są nabywane od innych jednostek i przeznaczone do dalszej odprzedaży w niezmienionej postaci."
+    },
+    {
+      "id": 24,
+      "front": "Co to są należności krótkoterminowe?",
+      "back": "Ogół należności wymagających zapłaty przez dłużników w ciągu 12 miesięcy od dnia bilansowego."
+    },
+    {
+      "id": 25,
+      "front": "Wymień rodzaje należności krótkoterminowych.",
+      "back": "Z tytułu dostaw i usług, z tytułu podatków/dotacji/składek ZUS, pozostałe (np. od pracowników z zaliczek), dochodzone drogą sądową."
+    },
+    {
+      "id": 26,
+      "front": "Co obejmują inwestycje krótkoterminowe?",
+      "back": "Akcje i papiery wartościowe przeznaczone do sprzedaży, udzielone pożyczki, środki pieniężne (w kasie, banku, lokatach), czeki i weksle obce."
+    },
+    {
+      "id": 27,
+      "front": "Co to są pasywa?",
+      "back": "Źródła pochodzenia środków gospodarczych, czyli źródła finansowania. Wskazują, kto wyposażył jednostkę w środki."
+    },
+    {
+      "id": 28,
+      "front": "Na jakie dwie główne grupy dzielą się pasywa?",
+      "back": "Kapitały (fundusze) własne oraz kapitały (fundusze) obce."
+    },
+    {
+      "id": 29,
+      "front": "Wymień 4 składniki kapitału własnego.",
+      "back": "Kapitał podstawowy, kapitał zapasowy, kapitał rezerwowy oraz wynik finansowy."
+    },
+    {
+      "id": 30,
+      "front": "Co finansuje kapitał własny?",
+      "back": "Aktywa netto, czyli aktywa pomniejszone o zobowiązania."
+    },
+    {
+      "id": 31,
+      "front": "Z czego może być tworzony kapitał zapasowy?",
+      "back": "Z dopłat wspólników, z przeznaczonej na ten cel części zysku netto oraz z innych źródeł."
+    },
+    {
+      "id": 32,
+      "front": "Co to jest wynik finansowy?",
+      "back": "Efekt działalności jednostki w roku obrotowym. Dodatni = zysk, ujemny = strata."
+    },
+    {
+      "id": 33,
+      "front": "Wymień 4 składniki kapitału obcego.",
+      "back": "Rezerwy, zobowiązania długoterminowe, zobowiązania krótkoterminowe oraz rozliczenia międzyokresowe."
+    },
+    {
+      "id": 34,
+      "front": "Wymień 3 grupy rezerw w rachunkowości.",
+      "back": "Rezerwy na odroczony podatek dochodowy, rezerwy na świadczenia emerytalne i podobne, pozostałe rezerwy (np. na gwarancje, poręczenia)."
+    },
+    {
+      "id": 35,
+      "front": "Czym różnią się zobowiązania długoterminowe od krótkoterminowych?",
+      "back": "Długoterminowe są wymagalne w okresie dłuższym niż 12 miesięcy od dnia bilansowego, krótkoterminowe – w okresie do 12 miesięcy."
+    },
+    {
+      "id": 36,
+      "front": "Wymień przykłady zobowiązań krótkoterminowych.",
+      "back": "Z tytułu dostaw i usług, kredytów i pożyczek, emisji papierów wartościowych, zaliczek, zobowiązań wekslowych, podatków, ceł, wynagrodzeń, funduszy specjalnych."
+    },
+    {
+      "id": 37,
+      "front": "Co to są rozliczenia międzyokresowe po stronie pasywów?",
+      "back": "Rezerwy tworzone na pokrycie zobowiązań przypadających na bieżący okres sprawozdawczy (np. na naprawy gwarancyjne)."
+    },
+    {
+      "id": 38,
+      "front": "Co oznacza 'zasada wzrastającej płynności' w aktywach?",
+      "back": "Aktywa są ustawione od najmniej płynnych (majątek trwały) do najbardziej płynnych (środki pieniężne)."
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "title": "Rachunek zysków i strat (rachunek wyników)",
+  "description": "Fiszki dotyczące rachunku zysków i strat: przychody, koszty, wynik finansowy, obszary działalności, warianty i metody sporządzania",
+  "category": "Rachunkowość / Rachunek zysków i strat",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Jakie miejsce zajmuje rachunek zysków i strat wśród elementów sprawozdania finansowego?",
+      "back": "Drugim po bilansie najważniejszym składnikiem sprawozdania finansowego jednostki gospodarczej; ściśle związany z bilansem."
+    },
+    {
+      "id": 2,
+      "front": "Czym jest rachunek wyników?",
+      "back": "Wyraża rezultaty działania przedsiębiorstwa w kategoriach przychodów, kosztów oraz zysków i strat nadzwyczajnych; dokumentuje działania w okresie (najczęściej 12-miesięcznym)."
+    },
+    {
+      "id": 3,
+      "front": "Jaka jest podstawowa zasada rachunku wyników?",
+      "back": "PRZYCHODY – KOSZTY = WYNIK FINANSOWY."
+    },
+    {
+      "id": 4,
+      "front": "Co oznacza wynik finansowy dodatni (+)?",
+      "back": "ZYSK – przychody przewyższają koszty."
+    },
+    {
+      "id": 5,
+      "front": "Co oznacza wynik finansowy ujemny (–)?",
+      "back": "STRATĘ – koszty przewyższają przychody."
+    },
+    {
+      "id": 6,
+      "front": "Co oznacza 'działalność bezwynikowa'?",
+      "back": "Sytuacja, gdy suma przychodów równa jest sumie kosztów – wynik finansowy wynosi zero."
+    },
+    {
+      "id": 7,
+      "front": "Czym jest przychód ze sprzedaży?",
+      "back": "Kwota uzyskana lub należna od odbiorcy z tytułu sprzedaży składników aktywów jednostki, pomniejszona o należny VAT."
+    },
+    {
+      "id": 8,
+      "front": "Jak definiuje przychody znowelizowana ustawa o rachunkowości?",
+      "back": "Uprawdopodobnione powstanie korzyści ekonomicznych o wiarygodnej wartości, w formie zwiększenia aktywów lub zmniejszenia zobowiązań, prowadzących do wzrostu kapitału własnego (innym niż wniesienie środków przez właścicieli)."
+    },
+    {
+      "id": 9,
+      "front": "Co odzwierciedlają koszty ponoszone przez jednostkę?",
+      "back": "Równowartość zużytych środków trwałych, wartości niematerialnych i prawnych, materiałów, usług obcych oraz zaangażowanej pracy ludzkiej."
+    },
+    {
+      "id": 10,
+      "front": "Na jakie dwa główne obszary dzieli się koszty?",
+      "back": "Koszty wytworzenia produktów (związane z procesem technologicznym) oraz koszty bieżącej działalności jednostki (np. koszty zarządu)."
+    },
+    {
+      "id": 11,
+      "front": "Co to są 'straty' w rachunku zysków i strat?",
+      "back": "Pozycje spełniające wymogi definicyjne kosztów, stanowiące nadwyżkę kosztów nad przychodami (np. strata ze zbycia niefinansowanych aktywów trwałych)."
+    },
+    {
+      "id": 12,
+      "front": "Jakie warunki muszą być spełnione, aby ująć przychody i koszty w rachunku wyników?",
+      "back": "1) Jednostka osiągnęła korzyści (przychody), 2) Nastąpiło zmniejszenie korzyści (koszty), 3) Można je wiarygodnie ustalić."
+    },
+    {
+      "id": 13,
+      "front": "Jakie są 4 obszary działalności jednostki gospodarczej w rachunku zysków i strat?",
+      "back": "1) Działalność operacyjna (podstawowa), 2) Pozostała działalność operacyjna, 3) Działalność finansowa, 4) Straty i zyski nadzwyczajne."
+    },
+    {
+      "id": 14,
+      "front": "Co to jest działalność operacyjna podstawowa?",
+      "back": "Podstawowa działalność jednostki oraz związana z nią, niemająca charakteru inwestycyjnego ani finansowego – działalność statutowa, do której jednostka została powołana."
+    },
+    {
+      "id": 15,
+      "front": "Co obejmuje pozostała działalność operacyjna?",
+      "back": "Koszty i przychody pośrednio związane z działalnością podstawową, np. działalność socjalna, sprzedaż środków trwałych, sprzedaż wartości niematerialnych i prawnych."
+    },
+    {
+      "id": 16,
+      "front": "Co obejmuje działalność finansowa?",
+      "back": "Przychody i koszty związane z gospodarowaniem majątkiem finansowym: obrót papierami wartościowymi, zaciąganie i udzielanie kredytów/pożyczek."
+    },
+    {
+      "id": 17,
+      "front": "Co to są zyski i straty nadzwyczajne?",
+      "back": "Zdarzenia odróżnialne od działalności operacyjnej, nie związane z jej ryzykiem i nieregularnie powtarzające się (np. trzęsienie ziemi, pożar, powódź)."
+    },
+    {
+      "id": 18,
+      "front": "Jaki jest wynik ze sprzedaży w schemacie RZiS?",
+      "back": "Różnica A – B: przychody z działalności podstawowej (A) minus koszty działalności podstawowej (B) = ZYSK/STRATA ze sprzedaży (C)."
+    },
+    {
+      "id": 19,
+      "front": "Jak oblicza się zysk/stratę z działalności operacyjnej?",
+      "back": "F = C + D – E, gdzie C = wynik ze sprzedaży, D = pozostałe przychody operacyjne, E = pozostałe koszty operacyjne."
+    },
+    {
+      "id": 20,
+      "front": "Jak oblicza się zysk/stratę z działalności gospodarczej?",
+      "back": "I = F + G – H, gdzie F = wynik operacyjny, G = przychody finansowe, H = koszty finansowe."
+    },
+    {
+      "id": 21,
+      "front": "Jak oblicza się zysk/stratę brutto?",
+      "back": "L = I + J – K, gdzie I = wynik z działalności gospodarczej, J = zyski nadzwyczajne, K = straty nadzwyczajne."
+    },
+    {
+      "id": 22,
+      "front": "Jak oblicza się zysk/stratę netto?",
+      "back": "N = L – M (lub L + M, gdy strata), gdzie L = wynik brutto, M = podatek dochodowy."
+    },
+    {
+      "id": 23,
+      "front": "Jakie dwa warianty rachunku zysków i strat wyróżnia ustawa o rachunkowości?",
+      "back": "1) Wariant porównawczy (rodzajowy), 2) Wariant kalkulacyjny (funkcjonalny)."
+    },
+    {
+      "id": 24,
+      "front": "Jak klasyfikuje koszty wariant porównawczy?",
+      "back": "Zgodnie z rodzajem kosztów (np. amortyzacja, zużycie materiałów) – bez rozliczania na poszczególne typy działalności."
+    },
+    {
+      "id": 25,
+      "front": "Jak klasyfikuje koszty wariant kalkulacyjny?",
+      "back": "Zgodnie z funkcją – jako koszty sprzedanych produktów, koszty zarządu oraz koszty sprzedaży."
+    },
+    {
+      "id": 26,
+      "front": "Czy wynik ze sprzedaży zależy od wyboru wariantu RZiS?",
+      "back": "Nie – wynik ze sprzedaży oraz wynik finansowy są zawsze jednakowe, niezależnie od wariantu. Różne są tylko sposoby dochodzenia do nich."
+    },
+    {
+      "id": 27,
+      "front": "Jakie 5 poziomów wyniku ustala się w każdym wariancie RZiS?",
+      "back": "Wynik ze sprzedaży, wynik z działalności operacyjnej, wynik z działalności gospodarczej, wynik brutto, wynik netto."
+    },
+    {
+      "id": 28,
+      "front": "Komu zaleca się wariant porównawczy RZiS?",
+      "back": "Mniejszym jednostkom produkcyjnym, handlowym lub usługowym, gdzie nie ma potrzeby rozliczania kosztów na poszczególne rodzaje działalności."
+    },
+    {
+      "id": 29,
+      "front": "Dla kogo odpowiedni jest wariant kalkulacyjny RZiS?",
+      "back": "Dla większych jednostek wytwórczych, w których koszty klasyfikuje się wg funkcji (wytworzenie sprzedanych produktów, sprzedaży, zarządu)."
+    },
+    {
+      "id": 30,
+      "front": "Jakie 3 metody sporządzania rachunku wyników wyróżnia się ze względu na formę prezentacji?",
+      "back": "1) Metoda brutto, 2) Metoda netto, 3) Metoda mieszana."
+    },
+    {
+      "id": 31,
+      "front": "Na czym polega metoda brutto rachunku wyników?",
+      "back": "Na wykazywaniu wszystkich przychodów i kosztów z danego okresu obrotowego – pozwala poznać rozmiary przychodów i pozycję jednostki na rynku."
+    },
+    {
+      "id": 32,
+      "front": "Na czym polega metoda netto rachunku wyników?",
+      "back": "Na wykazywaniu ostatecznych kwot wyników uzyskanych na poszczególnych rodzajach działalności – daje syntetyczny obraz, ale nie pokazuje rozmiarów sprzedaży i kosztów."
+    },
+    {
+      "id": 33,
+      "front": "Na czym polega metoda mieszana rachunku wyników?",
+      "back": "Kompromis między metodami brutto i netto – ważniejsze obszary prezentowane są metodą brutto, a mniej istotne – metodą netto."
+    },
+    {
+      "id": 34,
+      "front": "Do czego służy rachunek zysków i strat w ocenie efektywności?",
+      "back": "Pozwala ustalić wynik finansowy, przeanalizować strukturę przychodów i kosztów oraz ocenić efekty działalności w różnych obszarach."
+    },
+    {
+      "id": 35,
+      "front": "Jakie jest powiązanie rachunku zysków i strat z bilansem?",
+      "back": "RZiS obrazuje wykorzystanie majątku – wynik finansowy przechodzi do bilansu jako składnik kapitału własnego; wartości z RZiS są konsekwencją operacji na aktywach i pasywach."
+    }
+  ]
+}

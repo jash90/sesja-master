@@ -1,0 +1,232 @@
+{
+  "title": "Systematyka pojęć związanych z efektywnością przedsięwzięć gospodarczych",
+  "description": "Fiszki obejmujące definicje efektywności, rodzaje efektywności ekonomicznej, metody pomiaru oraz podstawy sprawozdawczości finansowej przedsiębiorstw",
+  "category": "Ekonomia / Efektywność ekonomiczna przedsiębiorstw",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Czym jest efektywność?",
+      "back": "Podstawowe pojęcie w ekonomii i zarządzaniu o interdyscyplinarnym charakterze, określające relację między efektami a nakładami. Często utożsamiana ze sprawnością i skutecznością."
+    },
+    {
+      "id": 2,
+      "front": "Jak definiuje efektywność Słownik ekonomiczny przedsiębiorcy?",
+      "back": "Efektywność to najlepsze rezultaty w produkcji, dystrybucji i usługach, uzyskane po najniższych kosztach."
+    },
+    {
+      "id": 3,
+      "front": "Jak definiuje efektywność Drucker?",
+      "back": "Efektywność to stopień realizacji celów."
+    },
+    {
+      "id": 4,
+      "front": "Jakie trzy mierniki wyznaczają efektywność według Pawlaka?",
+      "back": "Jakość, koszty i czas."
+    },
+    {
+      "id": 5,
+      "front": "Jak ujmuje efektywność Begg?",
+      "back": "Efektywność utożsamiana jest z brakiem marnotrawstwa – efektywne przedsiębiorstwa znajdują się na najniższej możliwej krzywej kosztów, osiągając rezultaty w możliwie najtańszy sposób."
+    },
+    {
+      "id": 6,
+      "front": "Co to jest efektywność ekonomiczna?",
+      "back": "Rezultat działalności podmiotu gospodarczego lub przedsięwzięcia wynikający z relacji uzyskanych efektów do poniesionych nakładów. Dotyczy całej gospodarki, sektora lub przedsiębiorstwa."
+    },
+    {
+      "id": 7,
+      "front": "Jakie wyróżnia się trzy rodzaje efektywności ekonomicznej?",
+      "back": "Efektywność kosztowa, efektywność dochodowa oraz efektywność według kryterium zysku."
+    },
+    {
+      "id": 8,
+      "front": "Co to jest efektywność kosztowa?",
+      "back": "Efektywność związana z minimalizacją kosztów; obejmuje relację nakładów minimalizujących koszt (przy danych cenach czynników) do kosztu rzeczywistego ponoszonego przez przedsiębiorstwo."
+    },
+    {
+      "id": 9,
+      "front": "Co to jest efektywność dochodowa?",
+      "back": "Iloraz osiągniętych przychodów do maksymalnych przychodów możliwych do uzyskania w danych warunkach."
+    },
+    {
+      "id": 10,
+      "front": "Co to jest efektywność zysku?",
+      "back": "Stosunek faktycznie wygenerowanego zysku do zysku optymalnego – wiąże się z maksymalizacją zysku w teorii ekonomii."
+    },
+    {
+      "id": 11,
+      "front": "Jakie są trzy podejścia do pomiaru efektywności według Szymańskiej?",
+      "back": "Podejście wskaźnikowe, parametryczne oraz nieparametryczne."
+    },
+    {
+      "id": 12,
+      "front": "Na czym polega analiza wskaźnikowa?",
+      "back": "Sprowadza się do konstruowania relacji pomiędzy różnymi wielkościami ekonomicznymi w celu oceny efektywności przedsiębiorstwa."
+    },
+    {
+      "id": 13,
+      "front": "Jakie cztery grupy wskaźników wyróżniają Sierpińska i Jachna?",
+      "back": "Wskaźniki zadłużenia, płynności, rentowności oraz sprawności działania."
+    },
+    {
+      "id": 14,
+      "front": "Jakie dwie grupy wskaźników wyróżnił Kulawik?",
+      "back": "Wskaźniki produktywności (wydajności) odzwierciedlające efektywność produkcyjną oraz wskaźniki dochodowości (zyskowności, rentowności) mierzące efektywność ekonomiczno-finansową."
+    },
+    {
+      "id": 15,
+      "front": "Czego dotyczy podejście parametryczne do pomiaru efektywności?",
+      "back": "Wartości pieniądza w czasie – stopy procentowej, wartości przyszłej i obecnej pieniądza."
+    },
+    {
+      "id": 16,
+      "front": "Czego dotyczy podejście nieparametryczne?",
+      "back": "Oceny opłacalności przedsięwzięć inwestycyjnych – metod prostych, dyskontowych oraz ryzyka w decyzjach inwestycyjnych."
+    },
+    {
+      "id": 17,
+      "front": "Jakie dokumenty służą ocenie efektywności na podstawie sprawozdań finansowych?",
+      "back": "Bilans, rachunek wyników (zysków i strat) oraz rachunek przepływów pieniężnych (cash flow)."
+    },
+    {
+      "id": 18,
+      "front": "Czy istnieje jedno najlepsze kryterium oceny efektywności?",
+      "back": "Nie. Według Bielskiego wybór kryterium ma charakter subiektywny i zależy od wartości, preferencji i interesów podmiotu dokonującego oceny."
+    },
+    {
+      "id": 19,
+      "front": "Co to jest sprawozdawczość?",
+      "back": "Zbiór różnorodnych zestawień i danych liczbowych dotyczących określonego okresu, opracowanych według ustalonych zasad i wzorców."
+    },
+    {
+      "id": 20,
+      "front": "Co jest głównym celem sprawozdań finansowych?",
+      "back": "Dostarczanie informacji o sytuacji finansowej, wynikach działalności i zmianach sytuacji finansowej jednostki – użytecznych dla podejmowania decyzji gospodarczych."
+    },
+    {
+      "id": 21,
+      "front": "Czym różnią się sprawozdania rzeczowe od finansowych?",
+      "back": "Sprawozdania rzeczowe prezentują dane w jednostkach naturalnych (sztuki, tony), sprawozdania finansowe – w jednostkach wartościowych (pieniężnych)."
+    },
+    {
+      "id": 22,
+      "front": "Na jakie dwie grupy dzielą się użytkownicy sprawozdań finansowych?",
+      "back": "Użytkownicy zewnętrzni (inwestorzy, kredytodawcy, kontrahenci, organy podatkowe, rząd i społeczeństwo) oraz wewnętrzni (kierownicy, pracownicy, związki zawodowe)."
+    },
+    {
+      "id": 23,
+      "front": "Czego poszukują w sprawozdaniach finansowych inwestorzy?",
+      "back": "Informacji o opłacalności lokat kapitałowych, stopniu ryzyka inwestowania oraz o sprawności działania i strategii rozwojowej jednostki."
+    },
+    {
+      "id": 24,
+      "front": "Co interesuje kredytodawców w sprawozdaniach finansowych?",
+      "back": "Zdolność kredytowa jednostki – możliwość zwrotu pożyczonych pieniędzy wraz z odsetkami w ustalonym terminie."
+    },
+    {
+      "id": 25,
+      "front": "Jakie cztery funkcje pełnią sprawozdania finansowe?",
+      "back": "Funkcja informacyjna, dokumentacyjna, analityczna oraz kontrolna."
+    },
+    {
+      "id": 26,
+      "front": "Co oznacza funkcja dokumentacyjna sprawozdania finansowego?",
+      "back": "Sprawozdanie stanowi wiarygodne źródło udokumentowanych informacji historycznych o działalności jednostki."
+    },
+    {
+      "id": 27,
+      "front": "Co jest celem sprawozdania finansowego według ustawy o rachunkowości?",
+      "back": "Rzetelna i jasna prezentacja sytuacji majątkowej i finansowej oraz wyniku finansowego jednostki."
+    },
+    {
+      "id": 28,
+      "front": "Wymień 5 wybranych cech jakościowych sprawozdania finansowego.",
+      "back": "Zrozumiałość, prawdziwość, przejrzystość, wiarygodność i porównywalność (inne: istotność, rzetelność, sprawdzalność, neutralność, ciągłość, przydatność)."
+    },
+    {
+      "id": 29,
+      "front": "Co oznacza cecha porównywalności sprawozdania finansowego?",
+      "back": "Informacje są porównywalne w wymiarze wewnętrznym (różne okresy) oraz zewnętrznym (inne podmioty)."
+    },
+    {
+      "id": 30,
+      "front": "Co oznacza cecha ciągłości sprawozdania finansowego?",
+      "back": "Informacje z końca okresu poprzedniego pokrywają się z informacjami z początku kolejnego okresu."
+    },
+    {
+      "id": 31,
+      "front": "Jakie wyróżnia się rodzaje sprawozdań ze względu na złożoność podmiotu?",
+      "back": "Sprawozdania jednostkowe, łączne oraz skonsolidowane."
+    },
+    {
+      "id": 32,
+      "front": "Jakie są rodzaje sprawozdań ze względu na okres sprawozdawczy?",
+      "back": "Sprawozdania roczne, półroczne oraz kwartalne."
+    },
+    {
+      "id": 33,
+      "front": "Jakie są podstawowe elementy sprawozdania finansowego?",
+      "back": "Bilans, rachunek zysków i strat, rachunek przepływów pieniężnych, informacja dodatkowa, zestawienie zmian w kapitale własnym oraz sprawozdanie z działalności."
+    },
+    {
+      "id": 34,
+      "front": "Co przedstawia bilans?",
+      "back": "Majątek jednostki oraz źródła jego finansowania."
+    },
+    {
+      "id": 35,
+      "front": "Co przedstawia rachunek zysków i strat?",
+      "back": "Przychody i koszty działalności oraz wynik finansowy jednostki."
+    },
+    {
+      "id": 36,
+      "front": "Co przedstawia rachunek przepływów pieniężnych (cash flow)?",
+      "back": "Wpływy i wydatki gotówkowe jednostki w danym okresie."
+    },
+    {
+      "id": 37,
+      "front": "Jakie elementy sprawozdania finansowego sporządza każda jednostka prowadząca księgi rachunkowe?",
+      "back": "Bilans, rachunek zysków i strat oraz informację dodatkową."
+    },
+    {
+      "id": 38,
+      "front": "Jakie dodatkowe elementy sporządzają jednostki podlegające badaniu przez biegłego rewidenta?",
+      "back": "Rachunek przepływów pieniężnych oraz zestawienie zmian w kapitale (funduszu) własnym."
+    },
+    {
+      "id": 39,
+      "front": "Które jednostki podlegają obowiązkowemu badaniu przez biegłego rewidenta?",
+      "back": "Banki, zakłady ubezpieczeń, spółki akcyjne, fundusze inwestycyjne i emerytalne, grupy kapitałowe oraz jednostki spełniające co najmniej 2 z 3 progów (zatrudnienie 50+, aktywa 2,5 mln euro, przychody 5 mln euro)."
+    },
+    {
+      "id": 40,
+      "front": "Jakie trzy progi decydują o obowiązku badania zwykłych jednostek przez biegłego rewidenta?",
+      "back": "Zatrudnienie co najmniej 50 osób, suma aktywów bilansu ≥ 2 500 000 euro, przychody netto ze sprzedaży ≥ 5 000 000 euro – spełnione co najmniej dwa."
+    },
+    {
+      "id": 41,
+      "front": "Na jaki dzień sporządza się obowiązkowo sprawozdanie finansowe?",
+      "back": "Na koniec roku obrotowego (najczęściej 31 grudnia). Spółki giełdowe – co pół roku. Także przed upadłością lub likwidacją."
+    },
+    {
+      "id": 42,
+      "front": "W jakim terminie należy sporządzić i zatwierdzić sprawozdanie finansowe?",
+      "back": "Sporządzić – nie później niż 3 miesiące od dnia bilansowego; zatwierdzić – nie później niż 6 miesięcy od dnia bilansowego."
+    },
+    {
+      "id": 43,
+      "front": "Gdzie składane jest sprawozdanie finansowe po zatwierdzeniu?",
+      "back": "W rejestrze sądowym w ciągu 15 dni od dnia zatwierdzenia. Sprawozdania jednostek badanych są ogłaszane w Monitorze Polskim B, a spółdzielni – w Monitorze Spółdzielczym."
+    },
+    {
+      "id": 44,
+      "front": "Jakie są podstawowe normy regulujące prowadzenie rachunkowości?",
+      "back": "Zasady rachunkowości, Międzynarodowe Standardy Rachunkowości, dyrektywy Unii Europejskiej oraz krajowe prawo bilansowe."
+    },
+    {
+      "id": 45,
+      "front": "Co to są wskaźniki produktywności według Kulawika?",
+      "back": "Relacja produkcji do czynników produkcji, nakładów lub kosztów; odzwierciedlają techniczno-ekonomiczny aspekt działalności."
+    }
+  ]
+}

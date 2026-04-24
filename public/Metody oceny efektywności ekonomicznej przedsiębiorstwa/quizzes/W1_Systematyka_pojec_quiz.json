@@ -1,0 +1,171 @@
+{
+  "title": "Quiz: Systematyka pojęć związanych z efektywnością przedsięwzięć gospodarczych",
+  "description": "Quiz sprawdzający wiedzę o efektywności ekonomicznej, metodach jej pomiaru oraz sprawozdaniach finansowych przedsiębiorstw",
+  "questions": [
+    {
+      "question": "Jak Peter Drucker definiuje efektywność?",
+      "options": [
+        "Jako brak marnotrawstwa",
+        "Jako stopień realizacji celów",
+        "Jako najlepsze rezultaty po najniższych kosztach",
+        "Jako relację jakości, kosztów i czasu"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Według Druckera efektywność to stopień realizacji celów. Pozostałe definicje przypisane są odpowiednio Beggowi, Słownikowi ekonomicznemu przedsiębiorcy oraz Pawlakowi."
+    },
+    {
+      "question": "Efektywność ekonomiczna wyraża:",
+      "options": [
+        "Wartość księgową aktywów",
+        "Relację uzyskiwanych efektów do poniesionych nakładów",
+        "Wartość rynkową przedsiębiorstwa",
+        "Zysk netto przedsiębiorstwa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Efektywność ekonomiczna to rezultat działalności będący wynikiem relacji efektów do nakładów. Pozostałe odpowiedzi dotyczą innych kategorii ekonomicznych."
+    },
+    {
+      "question": "Które z poniższych NIE jest rodzajem efektywności ekonomicznej?",
+      "options": [
+        "Efektywność kosztowa",
+        "Efektywność dochodowa",
+        "Efektywność zysku",
+        "Efektywność medialna"
+      ],
+      "correctAnswer": 3,
+      "explanation": "W ramach efektywności ekonomicznej wyróżnia się efektywność kosztową, dochodową oraz według kryterium zysku. Efektywność medialna nie jest kategorią ekonomiczną."
+    },
+    {
+      "question": "Które wskaźniki NIE należą do klasyfikacji Sierpińskiej i Jachny?",
+      "options": [
+        "Wskaźniki zadłużenia",
+        "Wskaźniki płynności",
+        "Wskaźniki marketingowe",
+        "Wskaźniki rentowności"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sierpińska i Jachna wyróżniają 4 grupy: wskaźniki zadłużenia, płynności, rentowności oraz sprawności działania. Wskaźniki marketingowe nie są częścią tego podziału."
+    },
+    {
+      "question": "Jakie jest podstawowe kryterium podziału sprawozdań na rzeczowe i finansowe?",
+      "options": [
+        "Ilość stron",
+        "Sposób prezentowania danych",
+        "Termin sporządzenia",
+        "Osoba sporządzająca"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podstawowym kryterium podziału jest przedmiot i sposób prezentowania danych: rzeczowe w jednostkach naturalnych, finansowe w jednostkach wartościowych."
+    },
+    {
+      "question": "Który z poniższych użytkowników sprawozdań finansowych NIE jest użytkownikiem zewnętrznym?",
+      "options": [
+        "Inwestorzy",
+        "Kredytodawcy",
+        "Kierownicy jednostki",
+        "Organy podatkowe"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kierownicy jednostki są użytkownikami wewnętrznymi. Do zewnętrznych zaliczają się inwestorzy, kredytodawcy, kontrahenci, organy podatkowe oraz rząd i społeczeństwo."
+    },
+    {
+      "question": "Co NIE jest elementem sprawozdania finansowego?",
+      "options": [
+        "Bilans",
+        "Rachunek zysków i strat",
+        "Faktura VAT",
+        "Rachunek przepływów pieniężnych"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Faktura VAT jest dokumentem księgowym źródłowym, nie elementem sprawozdania finansowego. Pozostałe to elementy sprawozdania finansowego."
+    },
+    {
+      "question": "W jakim terminie należy sporządzić sprawozdanie finansowe?",
+      "options": [
+        "W ciągu 1 miesiąca od dnia bilansowego",
+        "W ciągu 3 miesięcy od dnia bilansowego",
+        "W ciągu 6 miesięcy od dnia bilansowego",
+        "W ciągu 12 miesięcy od dnia bilansowego"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sprawozdanie finansowe powinno zostać sporządzone w ciągu 3 miesięcy od dnia bilansowego, a zatwierdzone w ciągu 6 miesięcy."
+    },
+    {
+      "question": "Które jednostki NIE podlegają obowiązkowemu badaniu przez biegłego rewidenta?",
+      "options": [
+        "Banki",
+        "Spółki akcyjne",
+        "Małe jednoosobowe działalności gospodarcze spełniające tylko 1 z 3 warunków",
+        "Zakłady ubezpieczeń"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Badaniu podlegają banki, zakłady ubezpieczeń, spółki akcyjne, fundusze i grupy kapitałowe bezwarunkowo. Małe jednostki tylko jeśli spełnią co najmniej 2 z 3 progów."
+    },
+    {
+      "question": "Który z warunków NIE jest progiem decydującym o obowiązku badania sprawozdania małych jednostek?",
+      "options": [
+        "Średnioroczne zatrudnienie co najmniej 50 osób",
+        "Suma aktywów bilansu co najmniej 2 500 000 euro",
+        "Przychody netto co najmniej 5 000 000 euro",
+        "Wartość rynkowa firmy co najmniej 10 000 000 euro"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Trzy progi to: zatrudnienie 50+, aktywa 2,5 mln euro oraz przychody 5 mln euro. Wartość rynkowa firmy nie jest jednym z kryteriów."
+    },
+    {
+      "question": "Co oznacza cecha 'neutralność' sprawozdania finansowego?",
+      "options": [
+        "Informacje są obiektywne",
+        "Informacje są zrozumiałe",
+        "Informacje są porównywalne",
+        "Informacje są szczegółowe"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Neutralność oznacza, że informacje są obiektywne, wolne od tendencyjności. Każda z pozostałych opcji opisuje inną cechę jakościową."
+    },
+    {
+      "question": "Która funkcja sprawozdania finansowego umożliwia ocenę realizacji zamierzeń i działalności jednostki?",
+      "options": [
+        "Funkcja informacyjna",
+        "Funkcja dokumentacyjna",
+        "Funkcja analityczna",
+        "Funkcja kontrolna"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Funkcja kontrolna umożliwia ocenę realizacji zamierzeń oraz ocenę działalności jednostki. Pozostałe funkcje mają inny charakter."
+    },
+    {
+      "question": "Jakie podejście do pomiaru efektywności obejmuje analizę wartości pieniądza w czasie?",
+      "options": [
+        "Wskaźnikowe",
+        "Parametryczne",
+        "Nieparametryczne",
+        "Jakościowe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Podejście parametryczne obejmuje wartość pieniądza w czasie: stopę procentową, wartość przyszłą i obecną pieniądza. Nieparametryczne dotyczy opłacalności inwestycji."
+    },
+    {
+      "question": "Wskaźniki produktywności według Kulawika liczy się jako:",
+      "options": [
+        "Relację produkcji do nakładów lub kosztów",
+        "Relację zysku do kapitału",
+        "Relację przychodów do zysku",
+        "Relację aktywów do pasywów"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wskaźniki produktywności (wydajności) liczone są jako relacja produkcji do czynników produkcji, nakładów albo kosztów i odzwierciedlają efektywność produkcyjną."
+    },
+    {
+      "question": "Co oznacza zdaniem Bielskiego subiektywny charakter oceny efektywności?",
+      "options": [
+        "Efektywność jest zawsze taka sama dla wszystkich",
+        "Nie istnieje jedno najlepsze kryterium – wybór zależy od wartości, preferencji i interesów oceniającego",
+        "Efektywność może być mierzona tylko ilościowo",
+        "Tylko inwestorzy mogą oceniać efektywność"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zdaniem Bielskiego nie ma jednego najlepszego kryterium oceny efektywności – wybór jest subiektywny i dokonywany pod wpływem wartości, preferencji i interesów oceniającego."
+    }
+  ]
+}
