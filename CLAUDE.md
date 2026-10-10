@@ -150,7 +150,7 @@ This enables dynamic content discovery without hardcoded file lists.
 ### Core Framework
 - **Next.js 15** with App Router
 - **React 19** with Server Components
-- **TypeScript 5** for type safety
+- **TypeScript 7** for type safety (`tsc` = TS 7; tooling that loads `typescript` as a library gets the TS 6.0 API)
 - **Bun** as package manager and runtime
 
 ### UI Components
