@@ -75,7 +75,7 @@ bun run lint
 ### Core Framework
 - **Next.js 15.3.8** - React framework with App Router
 - **React 19** - Latest React with Server Components
-- **TypeScript 5** - Type-safe development
+- **TypeScript 7** - Type-safe development (`tsc` = TS 7; Next.js and ESLint use the TS 6.0 API)
 - **Bun** - Fast JavaScript runtime and package manager
 
 ### UI & Styling
